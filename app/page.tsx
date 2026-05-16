@@ -14,6 +14,7 @@ import {
 } from "@/lib/data"
 import { Database, FolderGit2, Cpu, Layers } from "lucide-react"
 import Link from "next/link"
+import { FadeIn, StaggerChildren, StaggerItem } from "@/components/ui/fade-in"
 
 export default async function HomePage() {
   const [stats, componentData, capabilities, capabilityMarkdown] =
@@ -38,71 +39,71 @@ export default async function HomePage() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="border-b border-border bg-gradient-to-b from-muted/50 to-background">
-          <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-            <div className="text-center">
-              <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl text-balance">
+        <section className="border-b border-white/5 bg-gradient-to-b from-accent/10 to-transparent relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 relative z-10">
+            <FadeIn className="text-center">
+              <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl text-balance bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
                 Human / Machine Catalog
               </h1>
-              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground text-pretty">
+              <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground text-pretty font-light">
                 A comprehensive index of repositories, capabilities, and
                 components. Designed for both human browsing and machine
                 scanning.
               </p>
-            </div>
+            </FadeIn>
 
             {/* Stats Grid */}
-            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              <StatCard
+            <StaggerChildren className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-8">
+              <StaggerItem><StatCard
                 title="Components"
                 value={stats.totalComponents}
-                icon={<Layers className="h-5 w-5" />}
-              />
-              <StatCard
+                icon={<Layers className="h-6 w-6" />}
+              /></StaggerItem>
+              <StaggerItem><StatCard
                 title="Repositories"
                 value={stats.totalRepositories}
-                icon={<FolderGit2 className="h-5 w-5" />}
-              />
-              <StatCard
+                icon={<FolderGit2 className="h-6 w-6" />}
+              /></StaggerItem>
+              <StaggerItem><StatCard
                 title="Capabilities"
                 value={stats.totalCapabilities}
-                icon={<Cpu className="h-5 w-5" />}
-              />
-              <StatCard
+                icon={<Cpu className="h-6 w-6" />}
+              /></StaggerItem>
+              <StaggerItem><StatCard
                 title="Unique Repos"
                 value={uniqueRepos.length}
-                icon={<Database className="h-5 w-5" />}
-              />
-            </div>
+                icon={<Database className="h-6 w-6" />}
+              /></StaggerItem>
+            </StaggerChildren>
           </div>
         </section>
 
         {/* Classification Breakdown */}
-        <section className="border-b border-border">
-          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-            <h2 className="text-xl font-semibold text-foreground">
+        <FadeIn className="border-b border-white/5 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-white tracking-tight">
               Component Classifications
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="mt-2 text-base text-muted-foreground">
               Distribution of components by classification status
             </p>
-            <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <StaggerChildren className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-6">
               {Object.entries(stats.classifications).map(([name, count]) => (
-                <div
-                  key={name}
-                  className="rounded-lg border border-border bg-card p-4"
-                >
-                  <p className="text-2xl font-bold text-foreground">
-                    {count.toLocaleString()}
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground capitalize">
-                    {name.replace(/-/g, " ")}
-                  </p>
-                </div>
+                <StaggerItem key={name}>
+                  <div className="glass rounded-xl p-6 group transition-all hover:border-accent/30 hover:shadow-lg hover:-translate-y-1">
+                    <p className="text-3xl font-black text-white group-hover:text-accent transition-colors">
+                      {count.toLocaleString()}
+                    </p>
+                    <p className="mt-2 text-sm font-medium text-muted-foreground capitalize">
+                      {name.replace(/-/g, " ")}
+                    </p>
+                  </div>
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerChildren>
           </div>
-        </section>
+        </FadeIn>
 
         {/* Top Capability Domains */}
         <section className="border-b border-border">
@@ -133,108 +134,111 @@ export default async function HomePage() {
         </section>
 
         {/* Top Repositories */}
-        <section className="border-b border-border">
-          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between">
+        <FadeIn className="border-b border-white/5 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex items-end justify-between">
               <div>
-                <h2 className="text-xl font-semibold text-foreground">
+                <h2 className="text-2xl font-bold text-white tracking-tight">
                   Top Repositories
                 </h2>
-                <p className="mt-1 text-sm text-muted-foreground">
+                <p className="mt-2 text-base text-muted-foreground">
                   Repositories with the most capabilities
                 </p>
               </div>
               <Link
                 href="/repositories"
-                className="text-sm text-accent hover:underline"
+                className="text-sm font-medium text-accent hover:text-accent/80 transition-colors"
               >
-                View all
+                View all &rarr;
               </Link>
             </div>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <StaggerChildren className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {topRepos.map((repo) => (
-                <RepositoryCard
-                  key={repo.id}
-                  name={repo.name}
-                  capabilityCount={repo.capabilityCount}
-                />
+                <StaggerItem key={repo.id}>
+                  <RepositoryCard
+                    name={repo.name}
+                    capabilityCount={repo.capabilityCount}
+                  />
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerChildren>
           </div>
-        </section>
+        </FadeIn>
 
         {/* Capabilities Preview */}
-        <section className="border-b border-border">
-          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between">
+        <FadeIn className="border-b border-white/5 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex items-end justify-between">
               <div>
-                <h2 className="text-xl font-semibold text-foreground">
+                <h2 className="text-2xl font-bold text-white tracking-tight">
                   Capabilities
                 </h2>
-                <p className="mt-1 text-sm text-muted-foreground">
+                <p className="mt-2 text-base text-muted-foreground">
                   Detected technical capabilities across repositories
                 </p>
               </div>
               <Link
                 href="/capabilities"
-                className="text-sm text-accent hover:underline"
+                className="text-sm font-medium text-accent hover:text-accent/80 transition-colors"
               >
-                View all
+                View all &rarr;
               </Link>
             </div>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <StaggerChildren className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {topCapabilities.map((cap) => (
-                <CapabilityCard
-                  key={cap.id}
-                  id={cap.id}
-                  name={cap.name}
-                  type={cap.type}
-                  description={cap.description}
-                  reuseScore={cap.reuse_score}
-                  implementations={cap.implementations}
-                />
+                <StaggerItem key={cap.id}>
+                  <CapabilityCard
+                    id={cap.id}
+                    name={cap.name}
+                    type={cap.type}
+                    description={cap.description}
+                    reuseScore={cap.reuse_score}
+                    implementations={cap.implementations}
+                  />
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerChildren>
           </div>
-        </section>
+        </FadeIn>
 
         {/* Components Preview */}
-        <section>
-          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between">
+        <FadeIn className="py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex items-end justify-between">
               <div>
-                <h2 className="text-xl font-semibold text-foreground">
+                <h2 className="text-2xl font-bold text-white tracking-tight">
                   Components
                 </h2>
-                <p className="mt-1 text-sm text-muted-foreground">
+                <p className="mt-2 text-base text-muted-foreground">
                   Reusable UI components discovered across repositories
                 </p>
               </div>
               <Link
                 href="/components"
-                className="text-sm text-accent hover:underline"
+                className="text-sm font-medium text-accent hover:text-accent/80 transition-colors"
               >
-                View all
+                View all &rarr;
               </Link>
             </div>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <StaggerChildren className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {topComponents.map((comp) => (
-                <ComponentCard
-                  key={comp.id}
-                  id={comp.id}
-                  name={comp.name}
-                  path={comp.path}
-                  repo={comp.repo}
-                  framework={comp.framework}
-                  classification={comp.classification}
-                  componentScore={comp.component_score}
-                  duplicates={comp.duplicates}
-                  usage={comp.usage}
-                />
+                <StaggerItem key={comp.id}>
+                  <ComponentCard
+                    id={comp.id}
+                    name={comp.name}
+                    path={comp.path}
+                    repo={comp.repo}
+                    framework={comp.framework}
+                    classification={comp.classification}
+                    componentScore={comp.component_score}
+                    duplicates={comp.duplicates}
+                    usage={comp.usage}
+                  />
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerChildren>
           </div>
-        </section>
+        </FadeIn>
       </main>
 
       <Footer />

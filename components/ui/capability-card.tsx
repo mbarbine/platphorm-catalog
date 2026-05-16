@@ -1,5 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { motion } from "framer-motion"
 import { ChevronRight, Cpu, AlertCircle } from "lucide-react"
 
 interface CapabilityCardProps {
@@ -26,13 +29,19 @@ export function CapabilityCard({
   const hasRisk = riskSummary && !riskSummary.includes("0 risk")
 
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.02, translateY: -2 }}
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
       className={cn(
-        "group rounded-lg border border-border bg-card p-4 transition-all hover:border-accent/50 hover:bg-card/80",
+        "glass group relative overflow-hidden rounded-xl p-5 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10",
         className
       )}
     >
-      <div className="flex items-start justify-between gap-3">
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="flex items-start justify-between gap-3 relative z-10">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <Cpu className="h-4 w-4 shrink-0 text-accent" />
@@ -79,6 +88,6 @@ export function CapabilityCard({
           <ChevronRight className="h-4 w-4" />
         </Link>
       </div>
-    </div>
+    </motion.div>
   )
 }

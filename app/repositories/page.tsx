@@ -1,6 +1,7 @@
 import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { RepositoriesList } from "@/components/repositories-list"
+import { FadeIn } from "@/components/ui/fade-in"
 import {
   loadCapabilityCatalog,
   parseCapabilityIndex,
@@ -76,19 +77,19 @@ export default async function RepositoriesPage() {
       <TopBar />
 
       <main className="flex-1">
-        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        <FadeIn className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="mb-8">
-            <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
               Repositories
             </h1>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-3 text-lg text-muted-foreground font-light">
               Browse all {repositories.length} repositories in the catalog with
               their capabilities and components.
             </p>
           </div>
 
           <RepositoriesList repositories={repositories} />
-        </div>
+        </FadeIn>
       </main>
 
       <Footer />
