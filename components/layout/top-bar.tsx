@@ -11,6 +11,7 @@ const navigation = [
   { name: "Repositories", href: "/repositories", icon: FolderGit2 },
   { name: "Capabilities", href: "/capabilities", icon: Cpu },
   { name: "Components", href: "/components", icon: Layers },
+  { name: "Analysis", href: "/analysis", icon: Menu },
 ]
 
 export function TopBar() {

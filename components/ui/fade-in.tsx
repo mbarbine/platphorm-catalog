@@ -12,6 +12,7 @@ export function FadeIn({ children, delay = 0, className }: { children: ReactNode
       transition={{ duration: 0.5, delay, ease: "easeOut" }}
       className={className}
     >
+      {/* @ts-ignore: React 19 type mismatch */}
       {children}
     </motion.div>
   )
@@ -33,6 +34,7 @@ export function StaggerChildren({ children, className }: { children: ReactNode; 
       }}
       className={className}
     >
+      {/* @ts-ignore: React 19 type mismatch */}
       {children}
     </motion.div>
   )
@@ -47,6 +49,7 @@ export function StaggerItem({ children, className }: { children: ReactNode; clas
       }}
       className={className}
     >
+      {/* @ts-ignore: React 19 type mismatch */}
       {children}
     </motion.div>
   )
