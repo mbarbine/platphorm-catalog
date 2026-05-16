@@ -1,4 +1,6 @@
 export function Footer() {
+  const generatedAt = "2026-05-16"
+
   return (
     <footer className="border-t border-border bg-muted/50 mt-auto">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -7,7 +9,8 @@ export function Footer() {
             <span className="font-mono text-xs bg-card px-2 py-1 rounded">
               v1.0.0
             </span>
-            <span>Human / Machine Catalog</span>
+            <span>PlatPhorm Catalog</span>
+            <span className="hidden sm:inline">Generated {generatedAt}</span>
           </div>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <a
@@ -15,6 +18,12 @@ export function Footer() {
               className="hover:text-foreground transition-colors"
             >
               API
+            </a>
+            <a
+              href="/catalog/generated/search-index.json"
+              className="hover:text-foreground transition-colors"
+            >
+              Search JSON
             </a>
             <a
               href="/llms.txt"

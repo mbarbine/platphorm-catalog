@@ -27,7 +27,6 @@ export default async function AnalysisPage() {
 
       <main className="flex-1 bg-background">
         <FadeIn className="border-b border-white/5 bg-gradient-to-b from-accent/5 to-transparent relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 relative z-10">
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
               Platform Analysis
@@ -41,7 +40,7 @@ export default async function AnalysisPage() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 grid gap-12 lg:grid-cols-3">
           {/* Executive Summary Markdown */}
           <FadeIn className="lg:col-span-2">
-            <div className="glass rounded-xl p-6 sm:p-10 relative overflow-hidden">
+            <div className="glass rounded-lg p-6 sm:p-10 relative overflow-hidden">
               <div className="prose prose-invert prose-accent max-w-none">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {summary}
@@ -78,9 +77,13 @@ export default async function AnalysisPage() {
                         </p>
                       </div>
                     </div>
-                    <button className="shrink-0 rounded-full p-2 text-muted-foreground hover:bg-muted hover:text-white transition-colors" title="Download placeholder">
+                    <a
+                      className="shrink-0 rounded-full p-2 text-muted-foreground hover:bg-muted hover:text-white transition-colors"
+                      title={`Download ${file.name}`}
+                      href={`/platform-analysis-output/${encodeURIComponent(file.name)}`}
+                    >
                       <Download className="h-4 w-4" />
-                    </button>
+                    </a>
                   </div>
                 </StaggerItem>
               ))}

@@ -8,30 +8,41 @@ import {
   getCatalogStats,
   loadComponentIndex,
   loadCapabilities,
-  loadCapabilityCatalog,
-  parseCapabilityIndex,
+  loadGeneratedRepositories,
+  loadBestImplementations,
   getUniqueRepositories,
+  toRepositoryCards,
 } from "@/lib/data"
-import { Database, FolderGit2, Cpu, Layers } from "lucide-react"
+import { Database, FolderGit2, Cpu, Layers, ShieldCheck, Network, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/ui/fade-in"
 
 export default async function HomePage() {
-  const [stats, componentData, capabilities, capabilityMarkdown] =
+  const [stats, componentData, capabilities, generatedRepos, bestIndex] =
     await Promise.all([
       getCatalogStats(),
       loadComponentIndex(),
       loadCapabilities(),
-      loadCapabilityCatalog(),
+      loadGeneratedRepositories(),
+      loadBestImplementations(),
     ])
 
-  const { repositories: capRepos } = parseCapabilityIndex(capabilityMarkdown)
   const uniqueRepos = getUniqueRepositories(componentData.components)
+  const repositoryCards = toRepositoryCards(generatedRepos, uniqueRepos)
 
   // Get top items for preview
-  const topRepos = capRepos.slice(0, 6)
-  const topCapabilities = capabilities.slice(0, 6)
+  const topRepos = repositoryCards
+    .slice()
+    .sort((a, b) => b.capabilityCount - a.capabilityCount)
+    .slice(0, 6)
+  const topCapabilities = capabilities
+    .slice()
+    .sort((a, b) => (b.implementations ?? 0) - (a.implementations ?? 0))
+    .slice(0, 6)
   const topComponents = componentData.components.slice(0, 6)
+  const bestReuse = bestIndex.global_capabilities
+    .filter((capability) => capability.recommended_source)
+    .slice(0, 5)
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -40,16 +51,15 @@ export default async function HomePage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="border-b border-white/5 bg-gradient-to-b from-accent/10 to-transparent relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 relative z-10">
             <FadeIn className="text-center">
               <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl text-balance bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
-                Human / Machine Catalog
+                PlatPhorm Capability Catalog
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-xl text-muted-foreground text-pretty font-light">
-                A comprehensive index of repositories, capabilities, and
-                components. Designed for both human browsing and machine
-                scanning.
+                A schema-validated reuse map for repositories, capabilities,
+                components, source evidence, risk signals, and best
+                implementation candidates.
               </p>
             </FadeIn>
 
@@ -71,11 +81,40 @@ export default async function HomePage() {
                 icon={<Cpu className="h-6 w-6" />}
               /></StaggerItem>
               <StaggerItem><StatCard
-                title="Unique Repos"
-                value={uniqueRepos.length}
-                icon={<Database className="h-6 w-6" />}
+                title="Implementations"
+                value={stats.capabilityImplementations ?? 0}
+                icon={<Network className="h-6 w-6" />}
               /></StaggerItem>
             </StaggerChildren>
+            <div className="mx-auto mt-8 grid max-w-4xl gap-3 sm:grid-cols-3">
+              <div className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-left">
+                <div className="flex items-center gap-2 text-sm font-medium text-emerald-300">
+                  <ShieldCheck className="h-4 w-4" />
+                  {stats.validationFailures ?? 0} validation failures
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {stats.validatedManifests?.toLocaleString()} manifests validated against JSON Schema.
+                </p>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-left">
+                <div className="flex items-center gap-2 text-sm font-medium text-sky-300">
+                  <Sparkles className="h-4 w-4" />
+                  Best-source scoring
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Reuse candidates ranked by tests, maturity, coupling, docs, and risk.
+                </p>
+              </div>
+              <div className="rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-left">
+                <div className="flex items-center gap-2 text-sm font-medium text-violet-300">
+                  <Database className="h-4 w-4" />
+                  Public machine outputs
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  JSON, NDJSON, graph, search, LLMs, OpenAPI, and docs artifacts.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -91,7 +130,7 @@ export default async function HomePage() {
             <StaggerChildren className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-6">
               {Object.entries(stats.classifications).map(([name, count]) => (
                 <StaggerItem key={name}>
-                  <div className="glass rounded-xl p-6 group transition-all hover:border-accent/30 hover:shadow-lg hover:-translate-y-1">
+                  <div className="glass rounded-lg p-6 group transition-all hover:border-accent/30 hover:shadow-lg hover:-translate-y-1">
                     <p className="text-3xl font-black text-white group-hover:text-accent transition-colors">
                       {count.toLocaleString()}
                     </p>
@@ -156,12 +195,57 @@ export default async function HomePage() {
               {topRepos.map((repo) => (
                 <StaggerItem key={repo.id}>
                   <RepositoryCard
+                    id={repo.id}
                     name={repo.name}
                     capabilityCount={repo.capabilityCount}
+                    componentCount={repo.componentCount}
+                    language={repo.language}
+                    htmlUrl={repo.htmlUrl}
+                    maturity={repo.maturity}
+                    confidence={repo.confidence}
                   />
                 </StaggerItem>
               ))}
             </StaggerChildren>
+          </div>
+        </FadeIn>
+
+        <FadeIn className="border-b border-white/5 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-white tracking-tight">
+                  Best Reuse Candidates
+                </h2>
+                <p className="mt-2 text-base text-muted-foreground">
+                  Highest-ranked source implementations for repeated global capabilities.
+                </p>
+              </div>
+              <a
+                href="/catalog/generated/best-implementations.json"
+                className="text-sm font-medium text-accent hover:text-accent/80 transition-colors"
+              >
+                JSON index &rarr;
+              </a>
+            </div>
+            <div className="mt-8 grid gap-3 lg:grid-cols-5">
+              {bestReuse.map((entry) => (
+                <Link
+                  key={entry.id}
+                  href={`/capabilities/${encodeURIComponent(entry.id)}`}
+                  className="glass rounded-lg p-4 hover:border-accent/40 hover:bg-card/80"
+                >
+                  <p className="font-mono text-xs text-accent">{entry.id}</p>
+                  <p className="mt-2 text-sm font-semibold text-foreground">{entry.name}</p>
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    {entry.recommended_source?.repo_id}
+                  </p>
+                  <p className="mt-3 text-2xl font-black text-white">
+                    {entry.recommended_source?.score}
+                  </p>
+                </Link>
+              ))}
+            </div>
           </div>
         </FadeIn>
 

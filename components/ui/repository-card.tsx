@@ -6,22 +6,28 @@ import { motion } from "framer-motion"
 import { ChevronRight, ExternalLink, GitFork } from "lucide-react"
 
 interface RepositoryCardProps {
+  id?: string
   name: string
   componentCount?: number
   capabilityCount?: number
   language?: string | null
   htmlUrl?: string
   isPrivate?: boolean
+  maturity?: string
+  confidence?: string
   className?: string
 }
 
 export function RepositoryCard({
+  id,
   name,
   componentCount,
   capabilityCount,
   language,
   htmlUrl,
   isPrivate,
+  maturity,
+  confidence,
   className,
 }: RepositoryCardProps) {
   // Clean up display name
@@ -37,7 +43,7 @@ export function RepositoryCard({
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
       className={cn(
-        "glass group relative overflow-hidden rounded-xl p-5 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10",
+        "glass group relative overflow-hidden rounded-lg p-5 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10",
         className
       )}
     >
@@ -62,6 +68,16 @@ export function RepositoryCard({
                 Private
               </span>
             )}
+            {maturity && (
+              <span className="inline-flex items-center rounded-full bg-accent/10 px-2 py-0.5 text-accent">
+                {maturity}
+              </span>
+            )}
+            {confidence && (
+              <span className="inline-flex items-center rounded-full bg-muted px-2 py-0.5">
+                {confidence}
+              </span>
+            )}
             {componentCount !== undefined && (
               <span>{componentCount} components</span>
             )}
@@ -84,7 +100,7 @@ export function RepositoryCard({
             </a>
           )}
           <Link
-            href={`/repositories/${encodeURIComponent(name)}`}
+            href={`/repositories/${encodeURIComponent(id ?? name)}`}
             className="rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
             aria-label="View details"
           >

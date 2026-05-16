@@ -12,6 +12,8 @@ interface Repository {
   language?: string | null
   htmlUrl?: string
   isPrivate?: boolean
+  maturity?: string
+  confidence?: string
 }
 
 interface RepositoriesListProps {
@@ -86,12 +88,15 @@ export function RepositoriesList({ repositories }: RepositoriesListProps) {
         {filteredAndSorted.map((repo) => (
           <RepositoryCard
             key={repo.id}
+            id={repo.id}
             name={repo.name}
             capabilityCount={repo.capabilityCount}
             componentCount={repo.componentCount}
             language={repo.language}
             htmlUrl={repo.htmlUrl}
             isPrivate={repo.isPrivate}
+            maturity={repo.maturity}
+            confidence={repo.confidence}
           />
         ))}
       </div>

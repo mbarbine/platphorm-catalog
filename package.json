@@ -4,23 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "tsx scripts/sync-public-catalog.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "discover": "tsx scripts/discover-repos.ts",
-    "scan": "tsx scripts/scan-repo.ts",
-    "analyze": "tsx scripts/analyze-with-codex.ts",
-    "validate": "tsx scripts/validate-manifest.ts",
-    "validate:all": "tsx scripts/validate-manifest.ts --all",
-    "repair": "tsx scripts/repair-manifest.ts",
-    "build:index": "tsx scripts/build-index.ts",
-    "normalize": "tsx scripts/normalize-capabilities.ts",
-    "select:best": "tsx scripts/select-best-implementations.ts",
-    "docs": "tsx scripts/generate-docs.ts",
-    "catalog:subset": "tsx scripts/catalog-all-repos.ts --limit 3",
-    "catalog:all": "tsx scripts/catalog-all-repos.ts"
+    "discover": "npm --prefix global-capability-catalog run discover",
+    "scan": "npm --prefix global-capability-catalog run scan",
+    "analyze": "npm --prefix global-capability-catalog run analyze",
+    "validate": "npm --prefix global-capability-catalog run validate",
+    "validate:all": "npm --prefix global-capability-catalog run validate:all",
+    "repair": "npm --prefix global-capability-catalog run repair",
+    "build:index": "npm --prefix global-capability-catalog run build:index",
+    "normalize": "npm --prefix global-capability-catalog run normalize",
+    "select:best": "npm --prefix global-capability-catalog run select:best",
+    "docs": "npm --prefix global-capability-catalog run docs",
+    "catalog:subset": "npm --prefix global-capability-catalog run catalog:subset",
+    "catalog:all": "npm --prefix global-capability-catalog run catalog:all",
+    "sync:public": "tsx scripts/sync-public-catalog.ts"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/mbarbine/platphorm-catalog/issues"
   },

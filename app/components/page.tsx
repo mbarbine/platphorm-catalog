@@ -2,10 +2,13 @@ import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { ComponentsList } from "@/components/components-list"
 import { FadeIn } from "@/components/ui/fade-in"
-import { loadComponentIndex } from "@/lib/data"
+import { catalogRepoHref, loadComponentIndex, loadGeneratedRepositories } from "@/lib/data"
 
 export default async function ComponentsPage() {
-  const data = await loadComponentIndex()
+  const [data, repos] = await Promise.all([
+    loadComponentIndex(),
+    loadGeneratedRepositories(),
+  ])
 
   // Get unique classifications and frameworks
   const classifications = [
@@ -14,6 +17,15 @@ export default async function ComponentsPage() {
   const frameworks = [
     ...new Set(data.components.map((c) => c.framework)),
   ].sort()
+  const repoHrefByName = Object.fromEntries(
+    repos.flatMap((repo) => {
+      const shortName = repo.name.split("__").at(-1) ?? repo.name
+      return [
+        [repo.name, catalogRepoHref(repo.id)],
+        [shortName, catalogRepoHref(repo.id)],
+      ]
+    })
+  )
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -36,6 +48,7 @@ export default async function ComponentsPage() {
             components={data.components}
             classifications={classifications}
             frameworks={frameworks}
+            repoHrefByName={repoHrefByName}
           />
         </FadeIn>
       </main>

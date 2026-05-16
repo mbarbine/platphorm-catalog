@@ -18,6 +18,7 @@ interface ComponentCardProps {
   usage?: number
   hasTest?: boolean
   hasStory?: boolean
+  repoHref?: string
   className?: string
 }
 
@@ -34,6 +35,7 @@ export function ComponentCard({
   usage,
   hasTest,
   hasStory,
+  repoHref,
   className,
 }: ComponentCardProps) {
   const classificationColor: Record<string, string> = {
@@ -51,7 +53,7 @@ export function ComponentCard({
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
       className={cn(
-        "glass group relative overflow-hidden rounded-xl p-5 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10",
+        "glass group relative overflow-hidden rounded-lg p-5 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10",
         className
       )}
     >
@@ -119,7 +121,7 @@ export function ComponentCard({
           <p className="mt-2 text-xs text-muted-foreground truncate">
             From:{" "}
             <Link
-              href={`/repositories/${encodeURIComponent(repo)}`}
+              href={repoHref ?? `/repositories?search=${encodeURIComponent(repo)}`}
               className="hover:text-foreground transition-colors"
             >
               {repo}

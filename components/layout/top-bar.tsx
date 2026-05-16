@@ -29,10 +29,10 @@ export function TopBar() {
           </div>
           <div className="hidden sm:block">
             <h1 className="text-lg font-semibold tracking-tight">
-              Human / Machine Catalog
+              PlatPhorm Catalog
             </h1>
             <p className="text-xs text-muted-foreground">
-              Repositories, Capabilities, Components
+              Capability Memory System
             </p>
           </div>
         </div>

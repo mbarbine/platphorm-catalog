@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useEffect, useState, useMemo } from "react"
 import { CapabilityCard } from "@/components/ui/capability-card"
 import { SearchInput } from "@/components/ui/search-input"
 import type { Capability } from "@/lib/types"
@@ -19,6 +19,14 @@ export function CapabilitiesList({
   const [sortBy, setSortBy] = useState<"implementations" | "reuse" | "name">(
     "implementations"
   )
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const type = params.get("type")
+    if (type && types.includes(type)) {
+      setSelectedType(type)
+    }
+  }, [types])
 
   const filteredAndSorted = useMemo(() => {
     let result = capabilities

@@ -1,5 +1,10 @@
 const nextConfig = {
   output: 'export',
+  distDir: '.next',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   outputFileTracingIncludes: {
     '/*': [
       './components-index.json',

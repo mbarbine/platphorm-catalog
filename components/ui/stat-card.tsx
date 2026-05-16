@@ -25,7 +25,7 @@ export function StatCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       className={cn(
-        "glass rounded-xl p-4 sm:p-6 relative overflow-hidden group",
+        "glass rounded-lg p-4 sm:p-6 relative overflow-hidden group",
         className
       )}
     >

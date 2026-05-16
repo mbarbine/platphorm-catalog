@@ -9,12 +9,14 @@ interface ComponentsListProps {
   components: Component[]
   classifications: string[]
   frameworks: string[]
+  repoHrefByName?: Record<string, string>
 }
 
 export function ComponentsList({
   components,
   classifications,
   frameworks,
+  repoHrefByName = {},
 }: ComponentsListProps) {
   const [search, setSearch] = useState("")
   const [selectedClassification, setSelectedClassification] =
@@ -151,6 +153,7 @@ export function ComponentsList({
             extractionScore={comp.extraction_score}
             duplicates={comp.duplicates}
             usage={comp.usage}
+            repoHref={repoHrefByName[comp.repo]}
           />
         ))}
       </div>

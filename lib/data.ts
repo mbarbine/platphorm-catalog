@@ -7,9 +7,40 @@ import type {
   CatalogStats,
   RepositoryCapability,
   Capability,
+  GlobalCapability,
+  GlobalCapabilityIndex,
+  CatalogRepositorySummary,
+  RepositoryCatalogManifest,
+  BestImplementationIndex,
 } from "./types"
 
 const DATA_DIR = process.cwd()
+const CATALOG_DIR = path.join(DATA_DIR, "global-capability-catalog", "catalog")
+const GENERATED_DIR = path.join(CATALOG_DIR, "generated")
+
+async function readJson<T>(filePath: string): Promise<T> {
+  const data = await fs.readFile(filePath, "utf-8")
+  return JSON.parse(data) as T
+}
+
+function normalizeRepoDisplayName(name: string): string {
+  return name
+    .replace(/^github-recent__/, "")
+    .replace(/^(mbarbine__|ph3ar__|process-co__|process-charts__|process-partners__)/, "")
+    .replace(/__/g, "/")
+}
+
+export function catalogRepoHref(repoId: string): string {
+  return `/repositories/${encodeURIComponent(repoId)}`
+}
+
+export function capabilityHref(capabilityId: string): string {
+  return `/capabilities/${encodeURIComponent(capabilityId)}`
+}
+
+export function componentHref(componentId: string): string {
+  return `/components/${encodeURIComponent(componentId)}`
+}
 
 // Load the component index (lightweight)
 export async function loadComponentIndex(): Promise<{
@@ -17,8 +48,7 @@ export async function loadComponentIndex(): Promise<{
   components: Component[]
 }> {
   const filePath = path.join(DATA_DIR, "components-index.json")
-  const data = await fs.readFile(filePath, "utf-8")
-  return JSON.parse(data)
+  return readJson(filePath)
 }
 
 // Load detailed components (full data)
@@ -28,8 +58,7 @@ export async function loadDetailedComponents(): Promise<{
   components: DetailedComponent[]
 }> {
   const filePath = path.join(DATA_DIR, "components.json")
-  const data = await fs.readFile(filePath, "utf-8")
-  return JSON.parse(data)
+  return readJson(filePath)
 }
 
 // Load repositories from the manifest
@@ -39,9 +68,66 @@ export async function loadRepositories(): Promise<Repository[]> {
     "github-recent-manifest",
     "recent_repositories.json"
   )
-  const data = await fs.readFile(filePath, "utf-8")
-  const parsed = JSON.parse(data)
+  const parsed = await readJson<{ records?: Repository[] }>(filePath)
   return parsed.records || []
+}
+
+export async function loadGlobalCapabilityIndex(): Promise<GlobalCapabilityIndex> {
+  return readJson(path.join(GENERATED_DIR, "capabilities.json"))
+}
+
+export async function loadCatalogSummary(): Promise<{
+  generated_at: string
+  repositories_discovered: number
+  repositories_selected: number
+  repositories_scanned: number
+  manifests_generated: number
+  manifests_validated: number
+  validation_failures: number
+  capabilities_extracted: number
+  global_capabilities: number
+  duplicate_capabilities: number
+}> {
+  return readJson(path.join(GENERATED_DIR, "catalog-summary.json"))
+}
+
+export async function loadBestImplementations(): Promise<BestImplementationIndex> {
+  return readJson(path.join(GENERATED_DIR, "best-implementations.json"))
+}
+
+export async function loadGeneratedRepositories(): Promise<CatalogRepositorySummary[]> {
+  const data = await readJson<{ repositories: CatalogRepositorySummary[] }>(
+    path.join(GENERATED_DIR, "repos.json")
+  )
+  return data.repositories
+}
+
+export async function loadRepositoryCatalog(
+  repoId: string
+): Promise<RepositoryCatalogManifest | null> {
+  const safeId = decodeURIComponent(repoId)
+  const filePath = path.join(CATALOG_DIR, "repositories", `${safeId}.catalog.json`)
+  try {
+    return await readJson(filePath)
+  } catch {
+    return null
+  }
+}
+
+export async function loadCapabilityDetail(
+  capabilityId: string
+): Promise<GlobalCapability | null> {
+  const data = await loadGlobalCapabilityIndex()
+  const decoded = decodeURIComponent(capabilityId)
+  return data.capabilities.find((capability) => capability.id === decoded) ?? null
+}
+
+export async function loadComponentDetail(
+  componentId: string
+): Promise<DetailedComponent | null> {
+  const decoded = decodeURIComponent(componentId)
+  const data = await loadDetailedComponents()
+  return data.components.find((component) => component.id === decoded) ?? null
 }
 
 // Load capability catalog index
@@ -127,89 +213,53 @@ export function parseCapabilityIndex(markdown: string): {
 
 // Load capability files
 export async function loadCapabilities(): Promise<Capability[]> {
-  const capDir = path.join(
-    DATA_DIR,
-    "global-capability-catalog",
-    "catalog",
-    "docs",
-    "capabilities"
-  )
-  const files = await fs.readdir(capDir)
-  const capabilities: Capability[] = []
-
-  for (const file of files) {
-    if (!file.endsWith(".md")) continue
-    const content = await fs.readFile(path.join(capDir, file), "utf-8")
-    const lines = content.split("\n")
-
-    // Parse the capability file
-    const id = file.replace(".md", "")
-    let name = id
-    let type = "unknown"
-    let reuseScore = 0
-    let implementations = 0
-    let riskSummary = ""
-
-    for (const line of lines) {
-      if (line.startsWith("# ")) {
-        name = line.replace("# ", "").trim()
-      }
-      if (line.startsWith("- Name:")) {
-        name = line.replace("- Name:", "").trim()
-      }
-      if (line.startsWith("- Type:")) {
-        type = line.replace("- Type:", "").trim()
-      }
-      if (line.startsWith("- Reuse score:")) {
-        reuseScore = parseInt(line.replace("- Reuse score:", "").trim(), 10)
-      }
-      if (line.startsWith("- Implementations:")) {
-        implementations = parseInt(
-          line.replace("- Implementations:", "").trim(),
-          10
-        )
-      }
-      if (line.startsWith("- Risk summary:")) {
-        riskSummary = line.replace("- Risk summary:", "").trim()
-      }
-    }
-
-    // Get description from first paragraph
-    const descIndex = lines.findIndex(
-      (l) => l && !l.startsWith("#") && !l.startsWith("-") && !l.startsWith("##")
-    )
-    const description = descIndex > -1 ? lines[descIndex] : undefined
-
-    capabilities.push({
-      id,
-      name,
-      type,
-      reuse_score: reuseScore,
-      implementations,
-      risk_summary: riskSummary,
-      description,
-    })
-  }
-
-  return capabilities
+  const data = await loadGlobalCapabilityIndex()
+  return data.capabilities.map((capability) => ({
+    id: capability.id,
+    name: capability.name,
+    type: capability.type,
+    reuse_score: capability.reuse_score,
+    implementations: capability.implementations.length,
+    risk_summary: capability.risk_summary,
+    description: capability.summary,
+    recommended_repo_id: capability.recommended_source?.repo_id ?? null,
+    recommended_score: capability.recommended_source?.score ?? null,
+  }))
 }
 
 // Get catalog stats
 export async function getCatalogStats(): Promise<CatalogStats> {
-  const [componentData, capabilityMarkdown] = await Promise.all([
+  const [componentData, globalIndex, summary] = await Promise.all([
     loadDetailedComponents(),
-    loadCapabilityCatalog(),
+    loadGlobalCapabilityIndex(),
+    loadCatalogSummary(),
   ])
-
-  const capabilityData = parseCapabilityIndex(capabilityMarkdown)
 
   return {
     totalComponents: componentData.component_count,
-    totalRepositories: capabilityData.totalRepositories,
-    totalCapabilities: capabilityData.totalCapabilities,
+    totalRepositories: globalIndex.repositories.length,
+    totalCapabilities: globalIndex.capabilities.length,
     classifications: componentData.classifications,
-    topCapabilityDomains: capabilityData.topDomains,
+    topCapabilityDomains: getCapabilityDomainCounts(globalIndex.capabilities),
+    validatedManifests: summary.manifests_validated,
+    validationFailures: summary.validation_failures,
+    capabilityImplementations: summary.capabilities_extracted,
+    duplicateCapabilities: summary.duplicate_capabilities,
+    generatedAt: summary.generated_at,
   }
+}
+
+export function getCapabilityDomainCounts(
+  capabilities: Array<{ id: string; type?: string }>
+): Record<string, number> {
+  const counts: Record<string, number> = {}
+  for (const capability of capabilities) {
+    const domain = capability.id.split(".")[0] || capability.type || "other"
+    counts[domain] = (counts[domain] ?? 0) + 1
+  }
+  return Object.fromEntries(
+    Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  )
 }
 
 // Get unique repositories from components
@@ -226,6 +276,50 @@ export function getUniqueRepositories(
   return Array.from(repoMap.entries())
     .map(([name, componentCount]) => ({ name, componentCount }))
     .sort((a, b) => b.componentCount - a.componentCount)
+}
+
+export function toRepositoryCards(
+  repositories: CatalogRepositorySummary[],
+  componentCounts: { name: string; componentCount: number }[]
+): Array<{
+  id: string
+  name: string
+  capabilityCount: number
+  componentCount: number
+  language?: string | null
+  htmlUrl?: string
+  isPrivate?: boolean
+  maturity?: string
+  confidence?: string
+}> {
+  const componentCountByNormalizedName = new Map(
+    componentCounts.map((repo) => [repo.name.toLowerCase(), repo.componentCount])
+  )
+
+  return repositories.map((repo) => {
+    const displayName = normalizeRepoDisplayName(repo.name)
+    const suffix = repo.name.split("__").at(-1)?.toLowerCase() ?? displayName.toLowerCase()
+    const componentCount =
+      componentCountByNormalizedName.get(displayName.toLowerCase()) ??
+      componentCountByNormalizedName.get(suffix) ??
+      0
+
+    return {
+      id: repo.id,
+      name: displayName,
+      capabilityCount: repo.capability_count,
+      componentCount,
+      language: repo.primary_language,
+      htmlUrl: repo.remote_url?.startsWith("git@github.com:")
+        ? repo.remote_url
+            .replace("git@github.com:", "https://github.com/")
+            .replace(/\.git$/, "")
+        : repo.remote_url ?? undefined,
+      isPrivate: false,
+      maturity: repo.maturity,
+      confidence: repo.confidence,
+    }
+  })
 }
 
 // Get unique component names across repos

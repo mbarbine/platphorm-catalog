@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Human / Machine Catalog",
-  description: "A comprehensive catalog of repositories, capabilities, and components - readable by both humans and machines",
+  title: "PlatPhorm Capability Catalog",
+  description: "Schema-validated reusable capability, repository, component, graph, and search catalog for PlatPhormNews.",
   openGraph: {
-    title: "Human / Machine Catalog",
-    description: "Browse repositories, capabilities, and components in a unified catalog",
+    title: "PlatPhorm Capability Catalog",
+    description: "Browse reusable software capabilities, source evidence, risks, components, and best implementation candidates.",
     type: "website",
   },
 }
