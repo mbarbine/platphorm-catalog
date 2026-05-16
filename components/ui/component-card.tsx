@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { componentHref } from "@/lib/routing"
 import { motion } from "framer-motion"
 import { ChevronRight, Boxes, Check, X } from "lucide-react"
 
@@ -130,7 +131,7 @@ export function ComponentCard({
         </div>
 
         <Link
-          href={`/components/${encodeURIComponent(id)}`}
+          href={componentHref(id)}
           className="rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors shrink-0"
           aria-label="View details"
         >

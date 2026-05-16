@@ -4,11 +4,12 @@ import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { FadeIn } from "@/components/ui/fade-in"
 import { loadGeneratedRepositories, loadRepositoryCatalog } from "@/lib/data"
+import { capabilityHref, routeSlug } from "@/lib/routing"
 import { ArrowLeft, ExternalLink, FileCode2, ShieldAlert } from "lucide-react"
 
 export async function generateStaticParams() {
   const repos = await loadGeneratedRepositories()
-  return repos.map((repo) => ({ id: repo.id }))
+  return repos.map((repo) => ({ id: routeSlug(repo.id) }))
 }
 
 export default async function RepositoryDetailPage({
@@ -69,7 +70,7 @@ export default async function RepositoryDetailPage({
                 {manifest.capabilities.map((capability) => (
                   <Link
                     key={capability.id}
-                    href={`/capabilities/${encodeURIComponent(capability.id)}`}
+                    href={capabilityHref(capability.id)}
                     className="rounded-lg border border-white/10 bg-black/20 p-4 hover:border-accent/40 hover:bg-card"
                   >
                     <div className="flex flex-wrap items-start justify-between gap-3">

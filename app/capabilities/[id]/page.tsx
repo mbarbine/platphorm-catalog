@@ -4,11 +4,12 @@ import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { FadeIn } from "@/components/ui/fade-in"
 import { loadCapabilityDetail, loadGlobalCapabilityIndex } from "@/lib/data"
+import { catalogRepoHref, routeSlug } from "@/lib/routing"
 import { AlertTriangle, ArrowLeft, CheckCircle2, GitBranch, ShieldCheck } from "lucide-react"
 
 export async function generateStaticParams() {
   const data = await loadGlobalCapabilityIndex()
-  return data.capabilities.map((capability) => ({ id: capability.id }))
+  return data.capabilities.map((capability) => ({ id: routeSlug(capability.id) }))
 }
 
 export default async function CapabilityDetailPage({
@@ -62,7 +63,7 @@ export default async function CapabilityDetailPage({
                 {implementations.map((implementation) => (
                   <Link
                     key={implementation.repo_id}
-                    href={`/repositories/${encodeURIComponent(implementation.repo_id)}`}
+                    href={catalogRepoHref(implementation.repo_id)}
                     className="block rounded-lg border border-white/10 bg-black/20 p-4 hover:border-accent/40 hover:bg-card"
                   >
                     <div className="flex flex-wrap items-start justify-between gap-3">
@@ -95,7 +96,7 @@ export default async function CapabilityDetailPage({
               </div>
               {best ? (
                 <div className="mt-4">
-                  <Link href={`/repositories/${encodeURIComponent(best.repo_id)}`} className="font-mono text-sm text-accent hover:underline">
+                  <Link href={catalogRepoHref(best.repo_id)} className="font-mono text-sm text-accent hover:underline">
                     {best.repo_id}
                   </Link>
                   <p className="mt-3 text-5xl font-black text-white">{best.score}</p>

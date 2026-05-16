@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest"
 import { getUniqueRepositories, getUniqueComponentNames, parseCapabilityIndex } from "./data"
 import type { Component } from "./types"
+import { capabilityHref, catalogRepoHref, routeSlugToId } from "./routing"
 
 describe("Data Utilities", () => {
   describe("getUniqueRepositories", () => {
@@ -68,6 +69,19 @@ Duplicate capabilities: 2
         { id: "repo__one", name: "repo/one", capabilityCount: 4 },
         { id: "repo__two", name: "repo/two", capabilityCount: 6 }
       ])
+    })
+  })
+
+  describe("routing helpers", () => {
+    it("creates static-safe slugs for ids that contain dots", () => {
+      expect(capabilityHref("api.route-handlers")).toBe(
+        "/capabilities/api~2e~route-handlers"
+      )
+      expect(catalogRepoHref("github-recent__process-charts__.github")).toBe(
+        "/repositories/github-recent__process-charts__~2e~github"
+      )
+      expect(routeSlugToId("api~2e~route-handlers")).toBe("api.route-handlers")
+      expect(routeSlugToId("api%252Eroute-handlers")).toBe("api.route-handlers")
     })
   })
 })

@@ -12,6 +12,11 @@ export interface Component {
 }
 
 export interface DetailedComponent extends Component {
+  component_id?: string
+  component_name?: string
+  file_path?: string
+  duplicate_name_count?: number
+  import_usage_count?: number
   absolute_path?: string
   blockers?: string[]
   exports?: string[]

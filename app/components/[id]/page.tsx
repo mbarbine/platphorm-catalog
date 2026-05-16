@@ -3,12 +3,13 @@ import { notFound } from "next/navigation"
 import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { FadeIn } from "@/components/ui/fade-in"
-import { componentHref, loadComponentDetail, loadComponentIndex, loadGeneratedRepositories } from "@/lib/data"
+import { loadComponentDetail, loadComponentIndex, loadGeneratedRepositories } from "@/lib/data"
+import { catalogRepoHref, componentHref, routeSlug } from "@/lib/routing"
 import { ArrowLeft, Boxes, Check, X } from "lucide-react"
 
 export async function generateStaticParams() {
   const data = await loadComponentIndex()
-  return data.components.map((component) => ({ id: component.id }))
+  return data.components.map((component) => ({ id: routeSlug(component.id) }))
 }
 
 export default async function ComponentDetailPage({
@@ -77,7 +78,7 @@ export default async function ComponentDetailPage({
               <h2 className="text-lg font-semibold text-white">Source Links</h2>
               <div className="mt-4 space-y-3 text-sm">
                 {repo ? (
-                  <Link href={`/repositories/${encodeURIComponent(repo.id)}`} className="block rounded bg-black/20 px-3 py-2 text-accent hover:underline">
+                  <Link href={catalogRepoHref(repo.id)} className="block rounded bg-black/20 px-3 py-2 text-accent hover:underline">
                     {repo.name}
                   </Link>
                 ) : (

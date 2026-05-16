@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs"
 import path from "node:path"
+import { routeSlug } from "../lib/routing"
 
 const root = process.cwd()
 const publicDir = path.join(root, "public")
@@ -119,9 +120,9 @@ async function main() {
     "/.well-known/security.txt",
   ]
   const detailRoutes = [
-    ...capabilitiesIndex.capabilities.map((capability) => `/capabilities/${encodeURIComponent(capability.id)}`),
-    ...capabilitiesIndex.repositories.map((repo) => `/repositories/${encodeURIComponent(repo.id)}`),
-    ...componentIndex.components.map((component) => `/components/${encodeURIComponent(component.id)}`),
+    ...capabilitiesIndex.capabilities.map((capability) => `/capabilities/${routeSlug(capability.id)}`),
+    ...capabilitiesIndex.repositories.map((repo) => `/repositories/${routeSlug(repo.id)}`),
+    ...componentIndex.components.map((component) => `/components/${routeSlug(component.id)}`),
   ]
   const sitemapUrls = [...staticRoutes, ...detailRoutes]
   const generatedAt = summary.generated_at ?? new Date().toISOString()
@@ -297,7 +298,7 @@ async function main() {
 
   const feedItems = topCapabilities.map((capability) => ({
     title: capability.name,
-    link: `${baseUrl}/capabilities/${encodeURIComponent(capability.id)}`,
+    link: `${baseUrl}/capabilities/${routeSlug(capability.id)}`,
     description: `${capability.id}: ${capability.implementations.length} implementation(s), reuse score ${capability.reuse_score}.`,
   }))
   const rss = [

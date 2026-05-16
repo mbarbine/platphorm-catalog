@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { capabilityHref } from "@/lib/routing"
 import { motion } from "framer-motion"
 import { ChevronRight, Cpu, AlertCircle } from "lucide-react"
 
@@ -81,7 +82,7 @@ export function CapabilityCard({
         </div>
 
         <Link
-          href={`/capabilities/${encodeURIComponent(id)}`}
+          href={capabilityHref(id)}
           className="rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors shrink-0"
           aria-label="View details"
         >

@@ -13,6 +13,7 @@ import type {
   RepositoryCatalogManifest,
   BestImplementationIndex,
 } from "./types"
+import { routeSlugToId } from "./routing"
 
 const DATA_DIR = process.cwd()
 const CATALOG_DIR = path.join(DATA_DIR, "global-capability-catalog", "catalog")
@@ -28,18 +29,6 @@ function normalizeRepoDisplayName(name: string): string {
     .replace(/^github-recent__/, "")
     .replace(/^(mbarbine__|ph3ar__|process-co__|process-charts__|process-partners__)/, "")
     .replace(/__/g, "/")
-}
-
-export function catalogRepoHref(repoId: string): string {
-  return `/repositories/${encodeURIComponent(repoId)}`
-}
-
-export function capabilityHref(capabilityId: string): string {
-  return `/capabilities/${encodeURIComponent(capabilityId)}`
-}
-
-export function componentHref(componentId: string): string {
-  return `/components/${encodeURIComponent(componentId)}`
 }
 
 // Load the component index (lightweight)
@@ -58,7 +47,23 @@ export async function loadDetailedComponents(): Promise<{
   components: DetailedComponent[]
 }> {
   const filePath = path.join(DATA_DIR, "components.json")
-  return readJson(filePath)
+  const data = await readJson<{
+    component_count: number
+    classifications: Record<string, number>
+    components: DetailedComponent[]
+  }>(filePath)
+
+  return {
+    ...data,
+    components: data.components.map((component) => ({
+      ...component,
+      id: component.id ?? component.component_id ?? "",
+      name: component.name ?? component.component_name ?? "unknown component",
+      path: component.path ?? component.file_path ?? "unknown",
+      duplicates: component.duplicates ?? component.duplicate_name_count ?? 0,
+      usage: component.usage ?? component.import_usage_count ?? 0,
+    })),
+  }
 }
 
 // Load repositories from the manifest
@@ -105,7 +110,7 @@ export async function loadGeneratedRepositories(): Promise<CatalogRepositorySumm
 export async function loadRepositoryCatalog(
   repoId: string
 ): Promise<RepositoryCatalogManifest | null> {
-  const safeId = decodeURIComponent(repoId)
+  const safeId = routeSlugToId(repoId)
   const filePath = path.join(CATALOG_DIR, "repositories", `${safeId}.catalog.json`)
   try {
     return await readJson(filePath)
@@ -118,14 +123,14 @@ export async function loadCapabilityDetail(
   capabilityId: string
 ): Promise<GlobalCapability | null> {
   const data = await loadGlobalCapabilityIndex()
-  const decoded = decodeURIComponent(capabilityId)
+  const decoded = routeSlugToId(capabilityId)
   return data.capabilities.find((capability) => capability.id === decoded) ?? null
 }
 
 export async function loadComponentDetail(
   componentId: string
 ): Promise<DetailedComponent | null> {
-  const decoded = decodeURIComponent(componentId)
+  const decoded = routeSlugToId(componentId)
   const data = await loadDetailedComponents()
   return data.components.find((component) => component.id === decoded) ?? null
 }

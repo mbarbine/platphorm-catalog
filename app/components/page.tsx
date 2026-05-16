@@ -2,7 +2,8 @@ import { TopBar } from "@/components/layout/top-bar"
 import { Footer } from "@/components/layout/footer"
 import { ComponentsList } from "@/components/components-list"
 import { FadeIn } from "@/components/ui/fade-in"
-import { catalogRepoHref, loadComponentIndex, loadGeneratedRepositories } from "@/lib/data"
+import { loadComponentIndex, loadGeneratedRepositories } from "@/lib/data"
+import { catalogRepoHref } from "@/lib/routing"
 
 export default async function ComponentsPage() {
   const [data, repos] = await Promise.all([

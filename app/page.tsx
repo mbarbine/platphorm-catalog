@@ -16,6 +16,7 @@ import {
 import { Database, FolderGit2, Cpu, Layers, ShieldCheck, Network, Sparkles } from "lucide-react"
 import Link from "next/link"
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/ui/fade-in"
+import { capabilityHref } from "@/lib/routing"
 
 export default async function HomePage() {
   const [stats, componentData, capabilities, generatedRepos, bestIndex] =
@@ -232,7 +233,7 @@ export default async function HomePage() {
               {bestReuse.map((entry) => (
                 <Link
                   key={entry.id}
-                  href={`/capabilities/${encodeURIComponent(entry.id)}`}
+                  href={capabilityHref(entry.id)}
                   className="glass rounded-lg p-4 hover:border-accent/40 hover:bg-card/80"
                 >
                   <p className="font-mono text-xs text-accent">{entry.id}</p>

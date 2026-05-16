@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { catalogRepoHref } from "@/lib/routing"
 import { motion } from "framer-motion"
 import { ChevronRight, ExternalLink, GitFork } from "lucide-react"
 
@@ -100,7 +101,7 @@ export function RepositoryCard({
             </a>
           )}
           <Link
-            href={`/repositories/${encodeURIComponent(id ?? name)}`}
+            href={catalogRepoHref(id ?? name)}
             className="rounded p-1.5 text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
             aria-label="View details"
           >
