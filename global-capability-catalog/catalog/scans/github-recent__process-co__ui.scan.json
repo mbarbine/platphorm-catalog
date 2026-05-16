@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-co__ui",
+    "name": "process-co__ui",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__ui",
+    "relative_path": "github-recent/process-co__ui",
+    "remote_url": "git@github.com:process-co/ui.git",
+    "default_branch": "main",
+    "current_commit": "2fea96204c441fdf7bc0c86e9a3b2b26050d4c2f"
+  },
+  "languages": [
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 87867
+    },
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 33259
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 2577
+    },
+    {
+      "language": "JSON",
+      "files": 1,
+      "bytes": 2119
+    },
+    {
+      "language": "TypeScript",
+      "files": 1,
+      "bytes": 95
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "@process.co/ui",
+        "version": "0.0.0-development",
+        "scripts": {},
+        "dependencies": {},
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/publish-ui.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": ".github/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/README.md",
+          "css/ui.css",
+          "README.md"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/README.md",
+          "package.json",
+          "README.md"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/publish-ui.yml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:32.537Z"
+}

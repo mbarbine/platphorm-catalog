@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__ph3ar__newdittyswag-commerce",
+    "name": "ph3ar__newdittyswag-commerce",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__newdittyswag-commerce",
+    "relative_path": "github-recent/ph3ar__newdittyswag-commerce",
+    "remote_url": "git@github.com:ph3ar/newdittyswag-commerce.git",
+    "default_branch": "main",
+    "current_commit": "71a14b131ecc28b6122acc91c7aba137818e0c9d"
+  },
+  "languages": [
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 92025
+    },
+    {
+      "language": "Svelte",
+      "files": 17,
+      "bytes": 35677
+    },
+    {
+      "language": "JavaScript",
+      "files": 11,
+      "bytes": 15759
+    },
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 2366
+    },
+    {
+      "language": "JSON",
+      "files": 1,
+      "bytes": 983
+    },
+    {
+      "language": "HTML",
+      "files": 1,
+      "bytes": 451
+    },
+    {
+      "language": "TypeScript",
+      "files": 1,
+      "bytes": 149
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 59
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Svelte",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vite",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": null,
+        "version": null,
+        "scripts": {
+          "dev": "vite dev",
+          "build": "vite build",
+          "package": "svelte-kit package",
+          "preview": "vite preview",
+          "check": "svelte-check --tsconfig ./jsconfig.json",
+          "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
+          "lint": "prettier --check .",
+          "format": "prettier --write ."
+        },
+        "dependencies": {
+          "@sveltejs/vite-plugin-svelte": "^3.1.2"
+        },
+        "dev_dependencies": {
+          "@sveltejs/adapter-auto": "latest",
+          "@sveltejs/adapter-vercel": "latest",
+          "@sveltejs/kit": "latest",
+          "autoprefixer": "^10.4.13",
+          "eslint": "^8.33.0",
+          "eslint-config-prettier": "8.6.0",
+          "sass": "latest",
+          "postcss": "^8.4.21",
+          "postcss-load-config": "4.0.1",
+          "prettier": "2.8.3",
+          "prettier-plugin-svelte": "2.9.0",
+          "prettier-plugin-tailwindcss": "0.2.2",
+          "svelte": "3.55.1",
+          "svelte-preprocess": "^5.0.1",
+          "tailwindcss": "^3.2.4",
+          "vite": "^4.1.1"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/cart.json",
+        "source_path": "src/routes/cart.json/+server.js",
+        "kind": "sveltekit-server-route",
+        "methods": [
+          "PATCH",
+          "POST",
+          "PUT"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/product/[handle]",
+        "source_path": "src/routes/product/[handle]/+page.svelte",
+        "kind": "sveltekit-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/search/[collection]",
+        "source_path": "src/routes/search/[collection]/+page.svelte",
+        "kind": "sveltekit-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/search",
+        "source_path": "src/routes/search/+page.svelte",
+        "kind": "sveltekit-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Carousel",
+      "kind": "ui-component",
+      "source_path": "src/components/Carousel.svelte"
+    },
+    {
+      "name": "DescriptionToggle",
+      "kind": "ui-component",
+      "source_path": "src/components/DescriptionToggle.svelte"
+    },
+    {
+      "name": "Footer",
+      "kind": "ui-component",
+      "source_path": "src/components/Footer.svelte"
+    },
+    {
+      "name": "GridTile",
+      "kind": "ui-component",
+      "source_path": "src/components/GridTile.svelte"
+    },
+    {
+      "name": "Header",
+      "kind": "ui-component",
+      "source_path": "src/components/Header.svelte"
+    },
+    {
+      "name": "Icons",
+      "kind": "ui-component",
+      "source_path": "src/components/Icons.svelte"
+    },
+    {
+      "name": "SearchBar",
+      "kind": "ui-component",
+      "source_path": "src/components/SearchBar.svelte"
+    },
+    {
+      "name": "ShoppingCart",
+      "kind": "ui-component",
+      "source_path": "src/components/ShoppingCart.svelte"
+    },
+    {
+      "name": "ThreeItemGrid",
+      "kind": "ui-component",
+      "source_path": "src/components/ThreeItemGrid.svelte"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "VITE_SHOPIFY_API_ENDPOINT",
+        "source_paths": [
+          "src/utils/shopify.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_SHOPIFY_STOREFRONT_API_TOKEN",
+        "source_paths": [
+          "src/utils/shopify.js"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.cjs"
+    },
+    {
+      "path": "svelte.config.js"
+    },
+    {
+      "path": "tailwind.config.cjs"
+    },
+    {
+      "path": "vite.config.js"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Shopify",
+      "confidence": "medium",
+      "evidence_paths": [
+        "package.json",
+        "README.md",
+        "src/global.d.ts",
+        "src/utils/shopify.js"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE.md"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 361,
+      "text": "deprecated: Use @eslint/config-array instead"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 369,
+      "text": "deprecated: Use @eslint/object-schema instead"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 522,
+      "text": "deprecated: This package is no longer supported."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 810,
+      "text": "deprecated: This package is no longer supported."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 826,
+      "text": "deprecated: Glob versions prior to v9 are no longer supported"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 883,
+      "text": "deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1074,
+      "text": "deprecated: This package is no longer supported."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1281,
+      "text": "deprecated: Rimraf versions prior to v4 are no longer supported"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1286,
+      "text": "deprecated: Rimraf versions prior to v4 are no longer supported"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "README.md",
+          "src/global.d.ts",
+          "src/utils/shopify.js"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:31.303Z"
+}

@@ -1,0 +1,2337 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__legacy-platphorm-news",
+    "name": "mbarbine__legacy-platphorm-news",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__legacy-platphorm-news",
+    "remote_url": "git@github.com:mbarbine/legacy-platphorm-news.git",
+    "description": "Package repository for @platphorm/news.",
+    "primary_language": "Svelte",
+    "languages": [
+      "Svelte",
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "JSON",
+      "YAML",
+      "Markdown",
+      "Dockerfile",
+      "Shell"
+    ],
+    "frameworks": [
+      "Playwright",
+      "Svelte",
+      "Tailwind CSS",
+      "Vite",
+      "Vitest"
+    ],
+    "package_manager": "npm",
+    "databases": [],
+    "deployment": [
+      "docker",
+      "github-actions",
+      "vercel"
+    ],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__legacy-platphorm-news.scan.json",
+    "analyzed_at": "2026-05-16T16:44:10.000Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "api_key",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "OpenAI"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI"
+        ],
+        "env_vars": [
+          "OPENAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "vite.config.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Supabase",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Supabase",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/routes/api/auth/login/+server.ts",
+        "src/routes/api/auth/signup/+server.ts",
+        "src/routes/api/getLatestNews/+server.ts",
+        "src/routes/api/getNewsDetails/+server.ts",
+        "src/routes/api/getTopStories/+server.ts",
+        "src/routes/api/hackernews/getAskStories/+server.ts",
+        "src/routes/api/hackernews/getBestStories/+server.ts",
+        "src/routes/api/hackernews/getJobStories/+server.ts",
+        "src/routes/api/hackernews/getShowStories/+server.ts",
+        "src/routes/api/hackernews/getStoryDetails/+server.ts",
+        "src/routes/api/hackernews/getTopStories/+server.ts",
+        "src/routes/llms.txt/+server.ts",
+        "src/routes/sitemap-main.xml/+server.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /api/getLatestNews",
+          "GET /api/getNewsDetails",
+          "GET /api/getTopStories",
+          "GET /api/hackernews/getAskStories",
+          "GET /api/hackernews/getBestStories",
+          "GET /api/hackernews/getJobStories",
+          "GET /api/hackernews/getShowStories",
+          "GET /api/hackernews/getStoryDetails",
+          "GET /api/hackernews/getTopStories",
+          "POST /api/auth/login",
+          "POST /api/auth/signup",
+          "UNKNOWN /llms.txt",
+          "UNKNOWN /sitemap-main.xml"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Google",
+          "OpenAI",
+          "Supabase",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@fullhuman/postcss-purgecss",
+          "@neoconfetti/svelte",
+          "@poppanator/sveltekit-svg",
+          "@supabase/supabase-js",
+          "@sveltejs/adapter-auto",
+          "@sveltejs/adapter-vercel",
+          "@sveltejs/kit",
+          "@sveltejs/vite-plugin-svelte",
+          "@tailwindcss/typography",
+          "@tsconfig/svelte",
+          "@types/sanitize-html",
+          "@vercel/analytics",
+          "autoprefixer",
+          "cookie",
+          "dotenv",
+          "firebase",
+          "newsapi",
+          "node-fetch",
+          "playwright",
+          "postcss",
+          "postcss-preset-env",
+          "prettier",
+          "prettier-plugin-svelte",
+          "sanitize-html",
+          "svelte",
+          "svelte-check",
+          "svelte-preprocess",
+          "tailwindcss",
+          "typescript",
+          "vite",
+          "vite-imagetools",
+          "vite-plugin-node-polyfills",
+          "vitest",
+          "web-vitals"
+        ],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "OpenAI",
+          "Supabase",
+          "Vercel"
+        ],
+        "env_vars": [
+          "EXPERIMENTATION_CONFIG",
+          "EXPERIMENTATION_CONFIG_ITEM_KEY",
+          "GOOGLE_API_KEY",
+          "HACKER_NEWS_API_KEY",
+          "HACKER_NEWS_API_URL",
+          "NEWS_API_KEY",
+          "NEWS_API_URL",
+          "NEXT_PUBLIC_STATSIG_CLIENT_KEY",
+          "OPENAI_API_KEY",
+          "STATSIG_SERVER_API_KEY",
+          "VERCEL_ANALYTICS_ID",
+          "VERCEL_OIDC_TOKEN",
+          "XAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts",
+            "src/routes/api/getTopStories/+server.ts",
+            "src/routes/api/hackernews/getAskStories/+server.ts",
+            "src/routes/api/hackernews/getStoryDetails/+server.ts",
+            "src/routes/api/hackernews/getTopStories/+server.ts",
+            "src/routes/show.svelte",
+            "src/routes/show/+page.svelte",
+            "src/routes/story/[id]/+page.svelte",
+            "src/services/hackernewsService.js",
+            "src/utils/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/components/Auth.svelte",
+        "src/routes/api/auth/login/+server.ts",
+        "src/routes/api/auth/signup/+server.ts",
+        "src/routes/login/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/components/JobDetails.svelte",
+        "src/components/JobStories.svelte",
+        "src/routes/api/hackernews/getAskStories/+server.ts",
+        "src/routes/api/hackernews/getJobStories/+server.ts",
+        "src/routes/jobs/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts",
+            "src/routes/api/getTopStories/+server.ts",
+            "src/routes/api/hackernews/getAskStories/+server.ts",
+            "src/routes/api/hackernews/getStoryDetails/+server.ts",
+            "src/routes/api/hackernews/getTopStories/+server.ts",
+            "src/routes/show.svelte",
+            "src/routes/show/+page.svelte",
+            "src/routes/story/[id]/+page.svelte",
+            "src/services/hackernewsService.js",
+            "src/utils/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Supabase",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Supabase",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "jsconfig.json",
+        "package.json",
+        "src/routes/sitemap-main.xml/+server.ts",
+        "src/vercel.json",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Google",
+          "OpenAI",
+          "Supabase",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "OpenAI",
+          "Supabase",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/test-docker-no-compose.yml",
+        ".github/workflows/test-docker.yml",
+        "compose.yaml",
+        "docker-compose.override.yml",
+        "docker-compose.yml",
+        "Dockerfile",
+        "src/vercel.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.google",
+      "name": "Google Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Google integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Google configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Google API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Google configuration or SDK inputs"
+        ],
+        "writes": [
+          "Google API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Google"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google"
+        ],
+        "env_vars": [
+          "GOOGLE_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.openai",
+      "name": "OpenAI Integration",
+      "type": "ai-model",
+      "summary": "Repository has source-backed indicators for a OpenAI integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "OpenAI configuration or SDK inputs"
+        ],
+        "outputs": [
+          "OpenAI API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "OpenAI configuration or SDK inputs"
+        ],
+        "writes": [
+          "OpenAI API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "OpenAI"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI"
+        ],
+        "env_vars": [
+          "OPENAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.supabase",
+      "name": "Supabase Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Supabase integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Supabase configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Supabase API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Supabase configuration or SDK inputs"
+        ],
+        "writes": [
+          "Supabase API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Supabase"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@supabase/supabase-js"
+        ],
+        "internal": [],
+        "external_services": [
+          "Supabase"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "package.json",
+        "src/+layout.svelte",
+        "src/app.svelte",
+        "src/components/NewsHeader.svelte",
+        "src/routes/+layout.svelte",
+        "src/routes/app.svelte",
+        "src/routes/news.svelte",
+        "src/routes/show.svelte",
+        "vite.config.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@sveltejs/adapter-vercel",
+          "@vercel/analytics"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": [
+          "VERCEL_ANALYTICS_ID",
+          "VERCEL_OIDC_TOKEN"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts",
+            "src/routes/api/getTopStories/+server.ts",
+            "src/routes/api/hackernews/getAskStories/+server.ts",
+            "src/routes/api/hackernews/getStoryDetails/+server.ts",
+            "src/routes/api/hackernews/getTopStories/+server.ts",
+            "src/routes/show.svelte",
+            "src/routes/show/+page.svelte",
+            "src/routes/story/[id]/+page.svelte",
+            "src/services/hackernewsService.js",
+            "src/utils/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/routes/api/auth/login/+server.ts",
+        "src/routes/login/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/routes/ask/+page.svelte",
+        "src/routes/best/+page.svelte",
+        "src/routes/jobs/+page.svelte",
+        "src/routes/login/+page.svelte",
+        "src/routes/show/+page.svelte",
+        "src/routes/signup/+page.svelte",
+        "src/routes/story/[id]/+page.svelte",
+        "src/routes/top/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /ask",
+          "GET /best",
+          "GET /jobs",
+          "GET /login",
+          "GET /show",
+          "GET /signup",
+          "GET /story/[id]",
+          "GET /top"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@fullhuman/postcss-purgecss",
+          "@neoconfetti/svelte",
+          "@poppanator/sveltekit-svg",
+          "@supabase/supabase-js",
+          "@sveltejs/adapter-auto",
+          "@sveltejs/adapter-vercel",
+          "@sveltejs/kit",
+          "@sveltejs/vite-plugin-svelte",
+          "@tailwindcss/typography",
+          "@tsconfig/svelte",
+          "@types/sanitize-html",
+          "@vercel/analytics",
+          "autoprefixer",
+          "cookie",
+          "dotenv",
+          "firebase",
+          "newsapi",
+          "node-fetch",
+          "playwright",
+          "postcss",
+          "postcss-preset-env",
+          "prettier",
+          "prettier-plugin-svelte",
+          "sanitize-html",
+          "svelte",
+          "svelte-check",
+          "svelte-preprocess",
+          "tailwindcss",
+          "typescript",
+          "vite",
+          "vite-imagetools",
+          "vite-plugin-node-polyfills",
+          "vitest",
+          "web-vitals"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts",
+            "src/routes/api/getTopStories/+server.ts",
+            "src/routes/api/hackernews/getAskStories/+server.ts",
+            "src/routes/api/hackernews/getStoryDetails/+server.ts",
+            "src/routes/api/hackernews/getTopStories/+server.ts",
+            "src/routes/show.svelte",
+            "src/routes/show/+page.svelte",
+            "src/routes/story/[id]/+page.svelte",
+            "src/services/hackernewsService.js",
+            "src/utils/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/components/SearchBar.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "src/routes/api/getLatestNews/+server.ts",
+        "src/routes/api/getNewsDetails/+server.ts",
+        "src/routes/api/getTopStories/+server.ts",
+        "src/routes/api/hackernews/getAskStories/+server.ts",
+        "src/routes/api/hackernews/getTopStories/+server.ts",
+        "vite.config.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "EXPERIMENTATION_CONFIG_ITEM_KEY",
+          "GOOGLE_API_KEY",
+          "HACKER_NEWS_API_KEY",
+          "NEWS_API_KEY",
+          "NEXT_PUBLIC_STATSIG_CLIENT_KEY",
+          "OPENAI_API_KEY",
+          "STATSIG_SERVER_API_KEY",
+          "VERCEL_OIDC_TOKEN",
+          "XAI_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "EXPERIMENTATION_CONFIG",
+          "EXPERIMENTATION_CONFIG_ITEM_KEY",
+          "GOOGLE_API_KEY",
+          "HACKER_NEWS_API_KEY",
+          "HACKER_NEWS_API_URL",
+          "NEWS_API_KEY",
+          "NEWS_API_URL",
+          "NEXT_PUBLIC_STATSIG_CLIENT_KEY",
+          "OPENAI_API_KEY",
+          "STATSIG_SERVER_API_KEY",
+          "VERCEL_ANALYTICS_ID",
+          "VERCEL_OIDC_TOKEN",
+          "XAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts",
+            "src/routes/api/getTopStories/+server.ts",
+            "src/routes/api/hackernews/getAskStories/+server.ts",
+            "src/routes/api/hackernews/getStoryDetails/+server.ts",
+            "src/routes/api/hackernews/getTopStories/+server.ts",
+            "src/routes/show.svelte",
+            "src/routes/show/+page.svelte",
+            "src/routes/story/[id]/+page.svelte",
+            "src/services/hackernewsService.js",
+            "src/utils/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env",
+            "src/routes/api/getLatestNews/+server.ts",
+            "src/routes/api/getNewsDetails/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/static/robots.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/tests/legacy.test.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "playwright",
+          "vitest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/components/AskStories.svelte",
+        "src/components/Auth.svelte",
+        "src/components/BestStories.svelte",
+        "src/components/Footer.svelte",
+        "src/components/Header.svelte",
+        "src/components/JobDetails.svelte",
+        "src/components/JobStories.svelte",
+        "src/components/Layout.svelte",
+        "src/components/NavigationTree.svelte",
+        "src/components/News.svelte",
+        "src/components/NewsComments.svelte",
+        "src/components/NewsHeader.svelte",
+        "src/components/NewsMore.svelte",
+        "src/components/SearchBar.svelte",
+        "src/components/ShowStories.svelte",
+        "src/components/Story.svelte",
+        "src/components/TopStories.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "AskStories",
+          "Auth",
+          "BestStories",
+          "Footer",
+          "Header",
+          "JobDetails",
+          "JobStories",
+          "Layout",
+          "NavigationTree",
+          "News",
+          "NewsComments",
+          "NewsHeader",
+          "NewsMore",
+          "SearchBar",
+          "ShowStories",
+          "Story",
+          "TopStories"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@fullhuman/postcss-purgecss",
+          "@neoconfetti/svelte",
+          "@poppanator/sveltekit-svg",
+          "@supabase/supabase-js",
+          "@sveltejs/adapter-auto",
+          "@sveltejs/adapter-vercel",
+          "@sveltejs/kit",
+          "@sveltejs/vite-plugin-svelte",
+          "@tailwindcss/typography",
+          "@tsconfig/svelte",
+          "@types/sanitize-html",
+          "@vercel/analytics",
+          "autoprefixer",
+          "cookie",
+          "dotenv",
+          "firebase",
+          "newsapi",
+          "node-fetch",
+          "playwright",
+          "postcss",
+          "postcss-preset-env",
+          "prettier",
+          "prettier-plugin-svelte",
+          "sanitize-html",
+          "svelte",
+          "svelte-check",
+          "svelte-preprocess",
+          "tailwindcss",
+          "typescript",
+          "vite",
+          "vite-imagetools",
+          "vite-plugin-node-polyfills",
+          "vitest",
+          "web-vitals"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "src/tests/legacy.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": false,
+        "docs_paths": [],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.secret-like-values",
+      "severity": "critical",
+      "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+      "evidence_paths": [
+        ".env"
+      ],
+      "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+    },
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "src/routes/api/getLatestNews/+server.ts",
+        "src/routes/api/getNewsDetails/+server.ts",
+        "src/routes/api/getTopStories/+server.ts",
+        "src/routes/api/hackernews/getAskStories/+server.ts",
+        "src/routes/api/hackernews/getStoryDetails/+server.ts",
+        "src/routes/api/hackernews/getTopStories/+server.ts",
+        "src/routes/show.svelte",
+        "src/routes/show/+page.svelte",
+        "src/routes/story/[id]/+page.svelte",
+        "src/services/hackernewsService.js",
+        "src/utils/utils.ts"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env",
+        "src/routes/api/getLatestNews/+server.ts",
+        "src/routes/api/getNewsDetails/+server.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": false,
+      "docs": false,
+      "routes": true,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "README not detected",
+      "LLMs context files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:10.021Z"
+  }
+}

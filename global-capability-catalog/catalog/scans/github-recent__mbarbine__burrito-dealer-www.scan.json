@@ -1,0 +1,1025 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__burrito-dealer-www",
+    "name": "mbarbine__burrito-dealer-www",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__burrito-dealer-www",
+    "relative_path": "github-recent/mbarbine__burrito-dealer-www",
+    "remote_url": "git@github.com:mbarbine/burrito-dealer-www.git",
+    "default_branch": "main",
+    "current_commit": "dcef18d58702d1d43ac4b7cf0b028435a55e487a"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 56,
+      "bytes": 293583
+    },
+    {
+      "language": "YAML",
+      "files": 5,
+      "bytes": 195605
+    },
+    {
+      "language": "JavaScript",
+      "files": 33,
+      "bytes": 158018
+    },
+    {
+      "language": "SQL",
+      "files": 12,
+      "bytes": 36459
+    },
+    {
+      "language": "Markdown",
+      "files": 6,
+      "bytes": 33005
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 7404
+    },
+    {
+      "language": "JSON",
+      "files": 4,
+      "bytes": 2624
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 1454
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-v0-project",
+        "version": "0.1.0",
+        "scripts": {
+          "build": "next build",
+          "dev": "next dev",
+          "lint": "next lint",
+          "seed": "node scripts/seed-complete-database.js",
+          "seed:basic": "node scripts/seed-basic-data.js",
+          "seed:dealers": "tsx scripts/seed-dealers.ts",
+          "seed:users": "node scripts/create-test-users.js",
+          "start": "next start"
+        },
+        "dependencies": {
+          "@next/third-parties": "14.2.32",
+          "@radix-ui/react-dialog": "^1.1.1",
+          "@radix-ui/react-dropdown-menu": "latest",
+          "@radix-ui/react-label": "latest",
+          "@radix-ui/react-select": "^2.1.1",
+          "@radix-ui/react-slot": "latest",
+          "@radix-ui/react-switch": "^1.1.1",
+          "@radix-ui/react-toast": "^1.2.1",
+          "@supabase/ssr": "latest",
+          "@supabase/supabase-js": "latest",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "dotenv": "latest",
+          "lucide-react": "^0.454.0",
+          "next": "14.2.35",
+          "next-themes": "latest",
+          "react": "^18",
+          "react-dom": "^18",
+          "recharts": "2.15.4",
+          "sonner": "latest",
+          "tailwind-merge": "^2.5.5",
+          "tailwindcss-animate": "^1.0.7",
+          "tw-animate-css": "latest",
+          "vaul": "^0.9.9",
+          "zod": "3.25.67"
+        },
+        "dev_dependencies": {
+          "@types/node": "^22",
+          "@types/react": "^18",
+          "@types/react-dom": "^18",
+          "autoprefixer": "^10.4.21",
+          "eslint": "^8",
+          "eslint-config-next": "14.2.16",
+          "postcss": "^8.5",
+          "tailwindcss": "^3.4.1",
+          "tsx": "^4.19.0",
+          "typescript": "^5"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/dealers/onboard",
+        "source_path": "app/api/dealers/onboard/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/mock-data",
+        "source_path": "app/api/mock-data/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/admin/analytics",
+        "source_path": "app/admin/analytics/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin/burritos",
+        "source_path": "app/admin/burritos/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin/orders",
+        "source_path": "app/admin/orders/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin",
+        "source_path": "app/admin/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin/plans",
+        "source_path": "app/admin/plans/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin/users",
+        "source_path": "app/admin/users/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/check-email",
+        "source_path": "app/auth/check-email/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/login",
+        "source_path": "app/auth/login/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/signup",
+        "source_path": "app/auth/signup/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/customize-order",
+        "source_path": "app/dashboard/customize-order/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/orders",
+        "source_path": "app/dashboard/orders/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/plans",
+        "source_path": "app/dashboard/plans/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/profile",
+        "source_path": "app/dashboard/profile/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/subscription",
+        "source_path": "app/dashboard/subscription/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dealers/onboarding",
+        "source_path": "app/dealers/onboarding/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dealers/onboarding/success",
+        "source_path": "app/dealers/onboarding/success/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dealers",
+        "source_path": "app/dealers/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/plans",
+        "source_path": "app/plans/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "add-burrito-form",
+      "kind": "ui-component",
+      "source_path": "components/add-burrito-form.tsx"
+    },
+    {
+      "name": "add-plan-form",
+      "kind": "ui-component",
+      "source_path": "components/add-plan-form.tsx"
+    },
+    {
+      "name": "burrito-toggle",
+      "kind": "ui-component",
+      "source_path": "components/burrito-toggle.tsx"
+    },
+    {
+      "name": "customize-order-form",
+      "kind": "ui-component",
+      "source_path": "components/customize-order-form.tsx"
+    },
+    {
+      "name": "dealer-onboarding-form",
+      "kind": "ui-component",
+      "source_path": "components/dealer-onboarding-form.tsx"
+    },
+    {
+      "name": "edit-profile-form",
+      "kind": "ui-component",
+      "source_path": "components/edit-profile-form.tsx"
+    },
+    {
+      "name": "launch-readiness-checker",
+      "kind": "ui-component",
+      "source_path": "components/launch-readiness-checker.tsx"
+    },
+    {
+      "name": "logout-button",
+      "kind": "ui-component",
+      "source_path": "components/logout-button.tsx"
+    },
+    {
+      "name": "navigation",
+      "kind": "ui-component",
+      "source_path": "components/navigation.tsx"
+    },
+    {
+      "name": "order-status-updater",
+      "kind": "ui-component",
+      "source_path": "components/order-status-updater.tsx"
+    },
+    {
+      "name": "plan-selector",
+      "kind": "ui-component",
+      "source_path": "components/plan-selector.tsx"
+    },
+    {
+      "name": "meta-tags",
+      "kind": "ui-component",
+      "source_path": "components/seo/meta-tags.tsx"
+    },
+    {
+      "name": "subscribe-button",
+      "kind": "ui-component",
+      "source_path": "components/subscribe-button.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [
+      {
+        "path": "scripts/check-schema.js"
+      },
+      {
+        "path": "scripts/explore-orders-schema.js"
+      },
+      {
+        "path": "scripts/explore-schema.js"
+      }
+    ],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "comprehensive-dealer-test.js",
+      "kind": "unit-or-integration",
+      "source_path": "comprehensive-dealer-test.js"
+    },
+    {
+      "name": "comprehensive-fix-test.js",
+      "kind": "unit-or-integration",
+      "source_path": "comprehensive-fix-test.js"
+    },
+    {
+      "name": "dealer-subscriber-integration-test.js",
+      "kind": "unit-or-integration",
+      "source_path": "dealer-subscriber-integration-test.js"
+    },
+    {
+      "name": "detailed-dealer-test.js",
+      "kind": "unit-or-integration",
+      "source_path": "detailed-dealer-test.js"
+    },
+    {
+      "name": "integration-test.js",
+      "kind": "unit-or-integration",
+      "source_path": "integration-test.js"
+    },
+    {
+      "name": "create-test-users.js",
+      "kind": "unit-or-integration",
+      "source_path": "scripts/create-test-users.js"
+    },
+    {
+      "name": "test-and-seed.js",
+      "kind": "unit-or-integration",
+      "source_path": "scripts/test-and-seed.js"
+    },
+    {
+      "name": "test-order-creation.js",
+      "kind": "unit-or-integration",
+      "source_path": "scripts/test-order-creation.js"
+    },
+    {
+      "name": "test-user-experience.js",
+      "kind": "unit-or-integration",
+      "source_path": "scripts/test-user-experience.js"
+    },
+    {
+      "name": "test-dealer-functionality.js",
+      "kind": "unit-or-integration",
+      "source_path": "test-dealer-functionality.js"
+    }
+  ],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/ci.yml"
+      },
+      {
+        "path": ".github/workflows/lint.yml"
+      },
+      {
+        "path": ".github/workflows/require-tests.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "NEXT_PUBLIC_BURRITO_DEALERSUPABASE_ANON_KEY",
+        "source_paths": [
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_BURRITO_DEALERSUPABASE_URL",
+        "source_paths": [
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL",
+        "source_paths": [
+          "app/auth/signup/page.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "source_paths": [
+          "components/launch-readiness-checker.tsx",
+          "lib/supabase/browser.ts",
+          "lib/supabase/client.ts",
+          "lib/supabase/middleware.ts",
+          "lib/supabase/server.ts",
+          "scripts/check-schema.js",
+          "scripts/seed-basic-data.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_URL",
+        "source_paths": [
+          "app/api/dealers/onboard/route.ts",
+          "check-database.js",
+          "components/launch-readiness-checker.tsx",
+          "comprehensive-fix-test.js",
+          "fix-rls-policies.js",
+          "lib/supabase/browser.ts",
+          "lib/supabase/client.ts",
+          "lib/supabase/middleware.ts",
+          "lib/supabase/server.ts",
+          "scripts/check-schema.js",
+          "scripts/create-sample-orders.js",
+          "scripts/create-test-users.js",
+          "scripts/database-summary.js",
+          "scripts/explore-orders-schema.js",
+          "scripts/full-schema-explore.js",
+          "scripts/inspect-tables.js",
+          "scripts/seed-basic-data.js",
+          "scripts/seed-dealers.ts",
+          "scripts/test-order-creation.js",
+          "scripts/test-user-experience.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SUPABASE_SERVICE_ROLE_KEY",
+        "source_paths": [
+          "app/api/dealers/onboard/route.ts",
+          "check-database.js",
+          "comprehensive-fix-test.js",
+          "fix-rls-policies.js",
+          "scripts/create-sample-orders.js",
+          "scripts/create-test-users.js",
+          "scripts/database-summary.js",
+          "scripts/enhanced-seed.js",
+          "scripts/explore-orders-schema.js",
+          "scripts/explore-schema.js",
+          "scripts/full-schema-explore.js",
+          "scripts/inspect-tables.js",
+          "scripts/seed-dealers.ts",
+          "scripts/seed-final.js",
+          "scripts/test-and-seed.js",
+          "scripts/test-order-creation.js",
+          "scripts/test-user-experience.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SUPABASE_URL",
+        "source_paths": [
+          "scripts/enhanced-seed.js",
+          "scripts/explore-schema.js",
+          "scripts/seed-final.js",
+          "scripts/test-and-seed.js"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Supabase",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/dealers/onboard/route.ts",
+        "app/auth/signup/page.tsx",
+        "check-database.js",
+        "components/launch-readiness-checker.tsx",
+        "components/navigation.tsx",
+        "comprehensive-fix-test.js",
+        "fix-rls-policies.js",
+        "lib/supabase/browser.ts",
+        "lib/supabase/client.ts",
+        "lib/supabase/middleware.ts",
+        "lib/supabase/server.ts",
+        "package.json",
+        "pnpm-lock.yaml",
+        "scripts/check-and-seed.js",
+        "scripts/check-schema.js",
+        "scripts/create-sample-orders.js",
+        "scripts/create-test-users.js",
+        "scripts/database-summary.js",
+        "scripts/enhanced-seed.js",
+        "scripts/seed-basic-data.js"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "components/launch-readiness-checker.tsx",
+      "line": 95,
+      "text": "name: \"Row Level Security\","
+    },
+    {
+      "kind": "security",
+      "source_path": "components/launch-readiness-checker.tsx",
+      "line": 96,
+      "text": "description: \"Database security policies are active\","
+    },
+    {
+      "kind": "security",
+      "source_path": "DEALER_FIX_REPORT.md",
+      "line": 7,
+      "text": "**Root Cause**: Row Level Security (RLS) policies on the dealers table were blocking inserts"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 12,
+      "text": "The Burrito Dealer application is **functional** for basic operations but requires improvements in validation, security, and user experience."
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 47,
+      "text": "#### 1. Critical Security Issues"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 110,
+      "text": "### Priority 1: Security & Validation"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 180,
+      "text": "- **Security**: 30% Complete"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 186,
+      "text": "- **Security measures**: 30% → 85%"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 194,
+      "text": "The Burrito Dealer application demonstrates solid foundational architecture with working user interfaces and basic API functionality. However, **critical security and validation gaps** need immediate attention before production deployment."
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_TESTING_REPORT.md",
+      "line": 200,
+      "text": "4. Complete authentication security checks"
+    },
+    {
+      "kind": "security",
+      "source_path": "LAUNCH_SUMMARY.md",
+      "line": 92,
+      "text": "- **Row Level Security (RLS)** policies"
+    },
+    {
+      "kind": "security",
+      "source_path": "LAUNCH_SUMMARY.md",
+      "line": 129,
+      "text": "## 🔒 SECURITY & VALIDATION"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 329,
+      "text": "deprecated: Use @eslint/config-array instead"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 337,
+      "text": "deprecated: Use @eslint/object-schema instead"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1552,
+      "text": "deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1698,
+      "text": "deprecated: Glob versions prior to v9 are no longer supported"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1767,
+      "text": "deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 2340,
+      "text": "deprecated: Rimraf versions prior to v4 are no longer supported"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_setup_rls_policies.sql",
+      "line": 2,
+      "text": "ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_setup_rls_policies.sql",
+      "line": 3,
+      "text": "ALTER TABLE user_subscriptions ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_setup_rls_policies.sql",
+      "line": 4,
+      "text": "ALTER TABLE orders ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/002_create_profile_trigger.sql",
+      "line": 5,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/003_admin_roles_and_policies.sql",
+      "line": 82,
+      "text": "ALTER TABLE subscriber_limits ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/005_security_functions.sql",
+      "line": 1,
+      "text": "-- Security functions for better access control"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/005_security_functions.sql",
+      "line": 7,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/005_security_functions.sql",
+      "line": 23,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/005_security_functions.sql",
+      "line": 42,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/005_security_functions.sql",
+      "line": 69,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/006_audit_logging.sql",
+      "line": 14,
+      "text": "ALTER TABLE audit_logs ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/006_audit_logging.sql",
+      "line": 26,
+      "text": "SECURITY definer"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/011_create_dealer_system.sql",
+      "line": 57,
+      "text": "ALTER TABLE dealers ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/011_create_dealer_system.sql",
+      "line": 71,
+      "text": "ALTER TABLE dealer_profiles ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/011_create_dealer_system.sql",
+      "line": 80,
+      "text": "ALTER TABLE dealer_reviews ENABLE ROW LEVEL SECURITY;"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/seo/meta-tags.tsx"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "comprehensive-dealer-test.js",
+          "debug-issues.js",
+          "test-dealer-functionality.js"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/analytics/page.tsx",
+          "app/admin/burritos/page-new.tsx",
+          "app/admin/burritos/page-old.tsx",
+          "app/admin/burritos/page.tsx",
+          "app/admin/orders/page.tsx",
+          "app/admin/page.tsx",
+          "app/admin/plans/page.tsx",
+          "app/admin/users/page.tsx",
+          "app/auth/check-email/page.tsx",
+          "app/auth/login/page.tsx",
+          "app/auth/signup/page.tsx",
+          "app/dashboard/customize-order/page.tsx",
+          "app/dashboard/orders/page.tsx",
+          "app/dashboard/page.tsx",
+          "app/dashboard/plans/page.tsx",
+          "app/dashboard/profile/page-new.tsx",
+          "app/dashboard/profile/page-old.tsx",
+          "app/dashboard/profile/page.tsx",
+          "app/dashboard/subscription/page.tsx",
+          "app/dealers/onboarding/page.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/orders/page.tsx",
+          "app/admin/page.tsx",
+          "app/admin/users/page.tsx",
+          "app/api/dealers/onboard/route.ts",
+          "app/api/mock-data/route.ts",
+          "app/auth/check-email/page.tsx",
+          "app/auth/login/page.tsx",
+          "app/auth/signup/page.tsx",
+          "app/dashboard/page.tsx",
+          "app/dashboard/profile/page-new.tsx",
+          "app/dashboard/profile/page-old.tsx",
+          "app/dashboard/profile/page.tsx",
+          "app/dealers/onboarding/page.tsx",
+          "app/dealers/onboarding/success/page.tsx",
+          "check-database.js",
+          "components/dealer-onboarding-form.tsx",
+          "components/edit-profile-form.tsx",
+          "components/launch-readiness-checker.tsx",
+          "components/navigation.tsx",
+          "comprehensive-dealer-test.js"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/page.tsx",
+          "profile-debug.js"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/auth/signup/page.tsx",
+          "app/dealers/page.tsx",
+          "profile-debug.js",
+          "README.md",
+          "scripts/011_create_dealer_system.sql",
+          "TESTING_REPORT.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/auth/login/page.tsx",
+          "app/auth/signup/page.tsx",
+          "comprehensive-dealer-test.js",
+          "scripts/008_seed_test_data.sql",
+          "scripts/create-test-users.js",
+          "scripts/seed-complete-database.js",
+          "scripts/seed-complete.js",
+          "scripts/seed-corrected.js",
+          "scripts/seed-final.js",
+          "scripts/test-and-seed.js"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "ENHANCEMENT_SUMMARY.md",
+          "LAUNCH_SUMMARY.md"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/globals.css",
+          "pnpm-lock.yaml",
+          "scripts/create-test-users.js",
+          "scripts/enhanced-seed.js",
+          "scripts/explore-schema.js",
+          "scripts/seed-complete-database.js",
+          "scripts/seed-complete.js",
+          "scripts/seed-corrected.js",
+          "scripts/seed-final.js",
+          "scripts/test-and-seed.js"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:06.512Z"
+}

@@ -1,0 +1,2507 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__ph3ar-chatbot",
+    "name": "mbarbine__ph3ar-chatbot",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-chatbot",
+    "remote_url": "git@github.com:mbarbine/ph3ar-chatbot.git",
+    "description": "<a href=\"https://blog.ph3ar.com/\">",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "YAML",
+      "JSON",
+      "JavaScript",
+      "SQL",
+      "CSS",
+      "Markdown"
+    ],
+    "frameworks": [
+      "Drizzle ORM",
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "package_manager": "pnpm",
+    "databases": [
+      "drizzle",
+      "postgres"
+    ],
+    "deployment": [
+      "vercel"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__ph3ar-chatbot.scan.json",
+    "analyzed_at": "2026-05-16T16:44:11.960Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/(chat)/api/files/upload/route.ts",
+        "app/(chat)/chat/[id]/page.tsx",
+        "app/(chat)/page.tsx",
+        "components/chat-header.tsx",
+        "components/chat.tsx",
+        "lib/ai/models.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "ai"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/(auth)/auth.ts",
+        "app/(auth)/login/page.tsx",
+        "app/(auth)/register/page.tsx",
+        "components/auth-form.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "next-auth"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": [
+          "AUTH_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "app/(auth)/auth.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "drizzle.config.ts",
+        "lib/db/helpers/01-core-to-parts.ts",
+        "lib/db/migrate.ts",
+        "lib/db/migrations/meta/_journal.json",
+        "lib/db/migrations/meta/0000_snapshot.json",
+        "lib/db/migrations/meta/0001_snapshot.json",
+        "lib/db/migrations/meta/0002_snapshot.json",
+        "lib/db/queries.ts",
+        "package.json",
+        "pnpm-lock.yaml",
+        "postcss.config.mjs"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "app/(auth)/auth.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "lib/db/migrations/meta/_journal.json",
+        "lib/db/migrations/meta/0000_snapshot.json",
+        "lib/db/migrations/meta/0001_snapshot.json",
+        "lib/db/migrations/meta/0002_snapshot.json",
+        "package.json",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@types/papaparse",
+          "papaparse"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "lib/db/migrations/0000_keen_devos.sql",
+        "lib/db/migrations/0001_sparkling_blue_marvel.sql",
+        "lib/db/migrations/0002_wandering_riptide.sql",
+        "lib/db/migrations/0003_cloudy_glorian.sql",
+        "lib/db/migrations/0004_odd_slayback.sql",
+        "lib/db/migrations/0005_wooden_whistler.sql",
+        "lib/db/migrations/meta/_journal.json",
+        "lib/db/migrations/meta/0000_snapshot.json",
+        "lib/db/migrations/meta/0001_snapshot.json",
+        "lib/db/migrations/meta/0002_snapshot.json",
+        "lib/db/migrations/meta/0003_snapshot.json",
+        "lib/db/migrations/meta/0004_snapshot.json",
+        "lib/db/migrations/meta/0005_snapshot.json",
+        "lib/db/schema.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": [
+          "database migrations"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [
+          "database migrations"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "location",
+          "oauth",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/react",
+          "@ai-sdk/xai",
+          "@biomejs/biome",
+          "@codemirror/lang-javascript",
+          "@codemirror/lang-python",
+          "@codemirror/state",
+          "@codemirror/theme-one-dark",
+          "@codemirror/view",
+          "@playwright/test",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-icons",
+          "@radix-ui/react-label",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-tooltip",
+          "@radix-ui/react-visually-hidden",
+          "@tailwindcss/typography",
+          "@types/d3-scale",
+          "@types/node",
+          "@types/papaparse",
+          "@types/pdf-parse",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/blob",
+          "@vercel/postgres",
+          "ai",
+          "bcrypt-ts",
+          "class-variance-authority",
+          "classnames",
+          "clsx",
+          "codemirror",
+          "date-fns",
+          "diff-match-patch",
+          "dotenv",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "eslint-config-prettier",
+          "eslint-import-resolver-typescript",
+          "eslint-plugin-tailwindcss",
+          "fast-deep-equal",
+          "framer-motion",
+          "geist",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-auth",
+          "next-themes",
+          "orderedmap",
+          "papaparse",
+          "postcss",
+          "postgres",
+          "prosemirror-example-setup",
+          "prosemirror-inputrules",
+          "prosemirror-markdown",
+          "prosemirror-model",
+          "prosemirror-schema-basic",
+          "prosemirror-schema-list",
+          "prosemirror-state",
+          "prosemirror-view",
+          "react",
+          "react-data-grid",
+          "react-dom",
+          "react-markdown",
+          "react-resizable-panels",
+          "remark-gfm",
+          "server-only",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tsx",
+          "typescript",
+          "usehooks-ts",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "document.processing",
+      "name": "Document Processing",
+      "type": "document-processing",
+      "summary": "Source evidence indicates PDF, DOCX, document conversion, extraction, or rendering behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/document-preview.tsx",
+        "components/document-skeleton.tsx",
+        "components/document.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "document files or document metadata"
+        ],
+        "outputs": [
+          "processed document outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "document files or document metadata"
+        ],
+        "writes": [
+          "processed document outputs"
+        ],
+        "sensitive_data": [
+          "document contents"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@types/pdf-parse"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "ecommerce.product-catalog",
+      "name": "Ecommerce Product Catalog",
+      "type": "ecommerce",
+      "summary": "Source evidence indicates products, cart, checkout, orders, Shopify, or commerce flows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "product, cart, or order data"
+        ],
+        "outputs": [
+          "commerce UI or checkout/order responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "product, cart, or order data"
+        ],
+        "writes": [
+          "commerce UI or checkout/order responses"
+        ],
+        "sensitive_data": [
+          "payment data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/(chat)/api/files/upload/route.ts",
+        "components/preview-attachment.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "token",
+          "user file contents"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/blob"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "app/(auth)/auth.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/auth-form.tsx",
+        "components/sign-out-form.tsx",
+        "components/submit-button.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "drizzle.config.ts",
+        "lib/db/helpers/01-core-to-parts.ts",
+        "lib/db/migrate.ts",
+        "lib/db/migrations/meta/_journal.json",
+        "lib/db/migrations/meta/0000_snapshot.json",
+        "lib/db/migrations/meta/0001_snapshot.json",
+        "lib/db/migrations/meta/0002_snapshot.json",
+        "lib/db/queries.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "location",
+          "oauth",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/postgres",
+          "postgres"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": [
+          "POSTGRES_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "app/(auth)/auth.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/(chat)/api/files/upload/route.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "location",
+          "oauth",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/analytics",
+          "@vercel/blob",
+          "@vercel/postgres"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/(auth)/login/page.tsx",
+        "components/ui/alert-dialog.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/(auth)/login/page.tsx",
+        "app/(auth)/register/page.tsx",
+        "app/(chat)/chat/[id]/page.tsx",
+        "app/(chat)/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /(chat)",
+          "GET /chat/[id]",
+          "GET /login",
+          "GET /register"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/react",
+          "@ai-sdk/xai",
+          "@biomejs/biome",
+          "@codemirror/lang-javascript",
+          "@codemirror/lang-python",
+          "@codemirror/state",
+          "@codemirror/theme-one-dark",
+          "@codemirror/view",
+          "@playwright/test",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-icons",
+          "@radix-ui/react-label",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-tooltip",
+          "@radix-ui/react-visually-hidden",
+          "@tailwindcss/typography",
+          "@types/d3-scale",
+          "@types/node",
+          "@types/papaparse",
+          "@types/pdf-parse",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/blob",
+          "@vercel/postgres",
+          "ai",
+          "bcrypt-ts",
+          "class-variance-authority",
+          "classnames",
+          "clsx",
+          "codemirror",
+          "date-fns",
+          "diff-match-patch",
+          "dotenv",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "eslint-config-prettier",
+          "eslint-import-resolver-typescript",
+          "eslint-plugin-tailwindcss",
+          "fast-deep-equal",
+          "framer-motion",
+          "geist",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-auth",
+          "next-themes",
+          "orderedmap",
+          "papaparse",
+          "postcss",
+          "postgres",
+          "prosemirror-example-setup",
+          "prosemirror-inputrules",
+          "prosemirror-markdown",
+          "prosemirror-model",
+          "prosemirror-schema-basic",
+          "prosemirror-schema-list",
+          "prosemirror-state",
+          "prosemirror-view",
+          "react",
+          "react-data-grid",
+          "react-dom",
+          "react-markdown",
+          "react-resizable-panels",
+          "remark-gfm",
+          "server-only",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tsx",
+          "typescript",
+          "usehooks-ts",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/(auth)/auth.ts",
+        "drizzle.config.ts",
+        "lib/constants.ts",
+        "lib/db/helpers/01-core-to-parts.ts",
+        "lib/db/migrate.ts",
+        "lib/db/queries.ts",
+        "playwright.config.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "AUTH_SECRET",
+          "BLOB_READ_WRITE_TOKEN",
+          "XAI_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "auth framework dependency",
+          "auth/session environment variables"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "AUTH_SECRET",
+          "BLOB_READ_WRITE_TOKEN",
+          "CI_PLAYWRIGHT",
+          "NODE_ENV",
+          "PLAYWRIGHT",
+          "PLAYWRIGHT_TEST_BASE_URL",
+          "PORT",
+          "POSTGRES_URL",
+          "XAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "app/(auth)/auth.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ui/label.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "lib/ai/models.test.ts",
+        "playwright.config.ts",
+        "tests/artifacts.test.ts",
+        "tests/auth.test.ts",
+        "tests/chat.test.ts",
+        "tests/reasoning.test.ts",
+        "tests/routes/document.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@playwright/test"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/app-sidebar.tsx",
+        "components/artifact-actions.tsx",
+        "components/artifact-close-button.tsx",
+        "components/artifact-messages.tsx",
+        "components/artifact.tsx",
+        "components/auth-form.tsx",
+        "components/chat-header.tsx",
+        "components/chat.tsx",
+        "components/code-block.tsx",
+        "components/code-editor.tsx",
+        "components/console.tsx",
+        "components/create-artifact.tsx",
+        "components/data-stream-handler.tsx",
+        "components/diffview.tsx",
+        "components/document-preview.tsx",
+        "components/document-skeleton.tsx",
+        "components/document.tsx",
+        "components/greeting.tsx",
+        "components/icons.tsx",
+        "components/image-editor.tsx",
+        "components/markdown.tsx",
+        "components/message-actions.tsx",
+        "components/message-editor.tsx",
+        "components/message-reasoning.tsx",
+        "components/message.tsx",
+        "components/messages.tsx",
+        "components/model-selector.tsx",
+        "components/multimodal-input.tsx",
+        "components/preview-attachment.tsx",
+        "components/sheet-editor.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "alert-dialog",
+          "app-sidebar",
+          "artifact",
+          "artifact-actions",
+          "artifact-close-button",
+          "artifact-messages",
+          "auth-form",
+          "button",
+          "card",
+          "chat",
+          "chat-header",
+          "code-block",
+          "code-editor",
+          "console",
+          "create-artifact",
+          "data-stream-handler",
+          "diffview",
+          "document",
+          "document-preview",
+          "document-skeleton",
+          "dropdown-menu",
+          "greeting",
+          "icons",
+          "image-editor",
+          "input",
+          "label",
+          "markdown",
+          "message",
+          "message-actions",
+          "message-editor",
+          "message-reasoning",
+          "messages",
+          "model-selector",
+          "multimodal-input",
+          "preview-attachment",
+          "select",
+          "separator",
+          "sheet",
+          "sheet-editor",
+          "sidebar",
+          "sidebar-history",
+          "sidebar-history-item",
+          "sidebar-toggle",
+          "sidebar-user-nav",
+          "sign-out-form",
+          "skeleton",
+          "submit-button",
+          "suggested-actions",
+          "suggestion",
+          "text-editor",
+          "textarea",
+          "theme-provider",
+          "toast",
+          "toolbar",
+          "tooltip",
+          "version-footer",
+          "visibility-selector",
+          "weather"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "pii",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle",
+          "postgres"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/react",
+          "@ai-sdk/xai",
+          "@biomejs/biome",
+          "@codemirror/lang-javascript",
+          "@codemirror/lang-python",
+          "@codemirror/state",
+          "@codemirror/theme-one-dark",
+          "@codemirror/view",
+          "@playwright/test",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-icons",
+          "@radix-ui/react-label",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-tooltip",
+          "@radix-ui/react-visually-hidden",
+          "@tailwindcss/typography",
+          "@types/d3-scale",
+          "@types/node",
+          "@types/papaparse",
+          "@types/pdf-parse",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/blob",
+          "@vercel/postgres",
+          "ai",
+          "bcrypt-ts",
+          "class-variance-authority",
+          "classnames",
+          "clsx",
+          "codemirror",
+          "date-fns",
+          "diff-match-patch",
+          "dotenv",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "eslint-config-prettier",
+          "eslint-import-resolver-typescript",
+          "eslint-plugin-tailwindcss",
+          "fast-deep-equal",
+          "framer-motion",
+          "geist",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-auth",
+          "next-themes",
+          "orderedmap",
+          "papaparse",
+          "postcss",
+          "postgres",
+          "prosemirror-example-setup",
+          "prosemirror-inputrules",
+          "prosemirror-markdown",
+          "prosemirror-model",
+          "prosemirror-schema-basic",
+          "prosemirror-schema-list",
+          "prosemirror-state",
+          "prosemirror-view",
+          "react",
+          "react-data-grid",
+          "react-dom",
+          "react-markdown",
+          "react-resizable-panels",
+          "remark-gfm",
+          "server-only",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tsx",
+          "typescript",
+          "usehooks-ts",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/layout.tsx",
+            "components/diffview.tsx",
+            "lib/editor/functions.tsx",
+            "lib/utils.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/ai/models.test.ts",
+          "playwright.config.ts",
+          "tests/artifacts.test.ts",
+          "tests/auth.test.ts",
+          "tests/chat.test.ts",
+          "tests/reasoning.test.ts",
+          "tests/routes/document.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "app/layout.tsx",
+        "components/diffview.tsx",
+        "lib/editor/functions.tsx",
+        "lib/utils.ts"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env.example",
+        "app/(auth)/auth.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "CI workflows not detected",
+      "LLMs context files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:11.982Z"
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__stannp-nextjs-bp",
+    "name": "mbarbine__stannp-nextjs-bp",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__stannp-nextjs-bp",
+    "relative_path": "github-recent/mbarbine__stannp-nextjs-bp",
+    "remote_url": "git@github.com:mbarbine/stannp-nextjs-bp.git",
+    "default_branch": "main",
+    "current_commit": "a89b715c0732fcfbdb8d0d39bdb1db533faf5548"
+  },
+  "languages": [
+    {
+      "language": "JSON",
+      "files": 3,
+      "bytes": 207104
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 183783
+    },
+    {
+      "language": "TypeScript",
+      "files": 34,
+      "bytes": 43289
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 5179
+    },
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 1450
+    },
+    {
+      "language": "Prisma",
+      "files": 1,
+      "bytes": 1247
+    },
+    {
+      "language": "JavaScript",
+      "files": 3,
+      "bytes": 543
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 345
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Prisma",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "mailapp",
+        "version": "1.0.0",
+        "scripts": {
+          "dev": "next dev --turbopack",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint",
+          "prisma": "prisma generate"
+        },
+        "dependencies": {
+          "@prisma/client": "^5.0.0",
+          "axios": "^1.4.0",
+          "bcryptjs": "^2.4.3",
+          "crypto-js": "^4.1.1",
+          "micro": "^10.0.1",
+          "next": "^15.1.6",
+          "next-auth": "^4.22.1",
+          "pdf-lib": "^1.17.1",
+          "pdfjs-dist": "^4.10.38",
+          "react": "^19.0.0",
+          "react-dom": "^19.0.0",
+          "react-quill": "^2.0.0",
+          "stripe": "^12.0.0",
+          "tailwindcss": "^3.4.1",
+          "vercel": "^41.2.0"
+        },
+        "dev_dependencies": {
+          "@eslint/eslintrc": "^3",
+          "@types/bcryptjs": "^2.4.2",
+          "@types/crypto-js": "^4.1.1",
+          "@types/node": "^20",
+          "@types/react": "^19",
+          "@types/react-dom": "^19",
+          "@typescript-eslint/eslint-plugin": "^8.24.1",
+          "autoprefixer": "^10.4.14",
+          "eslint": "^9",
+          "eslint-config-next": "15.1.6",
+          "postcss": "^8",
+          "prisma": "^5.0.0",
+          "typescript": "^5"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/auth/register",
+        "source_path": "app/api/auth/register/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/mail/cancel",
+        "source_path": "app/api/mail/cancel/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/mail/preview",
+        "source_path": "app/api/mail/preview/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/mail/send",
+        "source_path": "app/api/mail/send/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/mail/status",
+        "source_path": "app/api/mail/status/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/recipients/create",
+        "source_path": "app/api/recipients/create/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/recipients/list",
+        "source_path": "app/api/recipients/list/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/stripe/create-checkout",
+        "source_path": "app/api/stripe/create-checkout/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/stripe/webhook",
+        "source_path": "app/api/stripe/webhook/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/api/recipients",
+        "source_path": "app/api/recipients/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/new",
+        "source_path": "app/dashboard/new/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/recipients",
+        "source_path": "app/dashboard/recipients/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/sent",
+        "source_path": "app/dashboard/sent/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/login",
+        "source_path": "app/login/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/register",
+        "source_path": "app/register/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "LoginForm",
+      "kind": "ui-component",
+      "source_path": "app/components/Auth/LoginForm.tsx"
+    },
+    {
+      "name": "RegisterForm",
+      "kind": "ui-component",
+      "source_path": "app/components/Auth/RegisterForm.tsx"
+    },
+    {
+      "name": "CancelMailButton",
+      "kind": "ui-component",
+      "source_path": "app/components/Dashboard/CancelMailButton.tsx"
+    },
+    {
+      "name": "MailDetailView",
+      "kind": "ui-component",
+      "source_path": "app/components/Dashboard/MailDetailView.tsx"
+    },
+    {
+      "name": "RecipientSelector",
+      "kind": "ui-component",
+      "source_path": "app/components/Dashboard/RecipientSelector.tsx"
+    },
+    {
+      "name": "SentMailList",
+      "kind": "ui-component",
+      "source_path": "app/components/Dashboard/SentMailList.tsx"
+    },
+    {
+      "name": "DragDropUpload",
+      "kind": "ui-component",
+      "source_path": "app/components/Upload/DragDropUpload.tsx"
+    },
+    {
+      "name": "MessageEditor",
+      "kind": "ui-component",
+      "source_path": "app/components/Upload/MessageEditor.tsx"
+    },
+    {
+      "name": "PdfPreview",
+      "kind": "ui-component",
+      "source_path": "app/components/Upload/PdfPreview.tsx"
+    }
+  ],
+  "data_models": [
+    {
+      "name": "schema",
+      "kind": "prisma-schema",
+      "source_path": "prisma/schema.prisma"
+    }
+  ],
+  "database": {
+    "databases": [
+      "prisma"
+    ],
+    "schemas": [
+      {
+        "path": "prisma/schema.prisma"
+      }
+    ],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "ENCRYPTION_SECRET",
+        "source_paths": [
+          "app/api/auth/register/route.ts",
+          "app/api/mail/cancel/route.ts",
+          "app/api/mail/send/route.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXTAUTH_SECRET",
+        "source_paths": [
+          "app/api/auth/[...nextauth].ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_SECRET_KEY",
+        "source_paths": [
+          "app/api/stripe/create-checkout/route.ts",
+          "app/api/stripe/webhook/route.ts",
+          "app/lib/api/stripe.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_WEBHOOK_SECRET",
+        "source_paths": [
+          "app/api/stripe/webhook/route.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "next.config.ts"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.js"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "public/vercel.svg"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Stripe",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/stripe/create-checkout/route.ts",
+        "app/api/stripe/webhook/route.ts",
+        "app/lib/api/stripe.ts",
+        "package.json",
+        "pnpm-lock.yaml",
+        "prisma/schema.prisma",
+        "tree.sh"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "package.json",
+        "pnpm-lock.yaml",
+        "README.md"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1525,
+      "text": "deprecated: Glob versions prior to v9 are no longer supported"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1602,
+      "text": "deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 2688,
+      "text": "deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details."
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/mail/preview/route.ts",
+          "app/api/stripe/create-checkout/route.ts",
+          "app/dashboard/new/page.tsx",
+          "app/layout.tsx",
+          "app/lib/api/stannp.ts",
+          "app/utils/pdfUtils.ts",
+          "prisma/schema.prisma"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/auth/[...nextauth].ts",
+          "app/api/auth/register/route.ts",
+          "app/components/Auth/LoginForm.tsx",
+          "app/components/Auth/RegisterForm.tsx",
+          "app/dashboard/page.tsx",
+          "app/utils/validation.ts",
+          "pnpm-lock.yaml",
+          "prisma/schema.prisma"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/components/Dashboard/CancelMailButton.tsx"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/auth/[...nextauth].ts",
+          "app/api/auth/register/route.ts",
+          "app/components/Auth/LoginForm.tsx",
+          "app/components/Auth/RegisterForm.tsx",
+          "app/utils/validation.ts",
+          "prisma/schema.prisma",
+          "tree.sh"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/stripe/create-checkout/route.ts"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/auth/[...nextauth].ts",
+          "app/api/mail/cancel/route.ts",
+          "app/api/recipients/create/route.ts",
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:26.489Z"
+}

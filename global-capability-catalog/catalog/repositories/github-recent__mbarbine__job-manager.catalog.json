@@ -1,0 +1,981 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__job-manager",
+    "name": "mbarbine__job-manager",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__job-manager",
+    "remote_url": "git@github.com:mbarbine/job-manager.git",
+    "description": "This guide explains how to use the DigitalOcean App Platform to run a Job Manager that demonstrates leases in a scalable environment.",
+    "primary_language": "JSON",
+    "languages": [
+      "JSON",
+      "JavaScript",
+      "YAML",
+      "Markdown",
+      "Prisma",
+      "CSS",
+      "SQL",
+      "TOML"
+    ],
+    "frameworks": [
+      "Jest",
+      "Next.js",
+      "Prisma",
+      "React",
+      "Tailwind CSS"
+    ],
+    "package_manager": "npm",
+    "databases": [
+      "prisma"
+    ],
+    "deployment": [
+      "github-actions"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__job-manager.scan.json",
+    "analyzed_at": "2026-05-16T16:44:09.765Z"
+  },
+  "capabilities": [
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/.env",
+        "task-service/eslint.config.mjs",
+        "task-service/jsconfig.json",
+        "task-service/next.config.mjs",
+        "task-service/package.json",
+        "task-service/postcss.config.mjs",
+        "task-service/prisma/migrations/20250114235715_initial/migration.sql",
+        "task-service/prisma/schema.prisma",
+        "task-service/README.md",
+        "task-service/src/app/lib/generator.js",
+        "task-service/src/app/lib/tasks-client.js",
+        "task-service/tailwind.config.mjs",
+        "task-worker/.env",
+        "task-worker/main.js",
+        "task-worker/package.json",
+        "task-worker/tasks-client.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "leases/.env",
+            "task-service/.env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".do/app.yaml",
+        "leases/.env",
+        "leases/package.json",
+        "leases/postcss.config.mjs",
+        "leases/prisma/schema.prisma",
+        "package.json",
+        "task-service/.env",
+        "task-service/package.json",
+        "task-service/postcss.config.mjs",
+        "task-service/prisma/schema.prisma",
+        "task-worker/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "leases/.env",
+            "task-service/.env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "leases/jsconfig.json",
+        "leases/package.json",
+        "package.json",
+        "task-service/jsconfig.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "leases/package.json",
+        "leases/prisma/migrations/20250114235748_initial/migration.sql",
+        "leases/prisma/schema.prisma",
+        "package.json",
+        "task-service/package.json",
+        "task-service/prisma/migrations/20250114235715_initial/migration.sql",
+        "task-service/prisma/schema.prisma",
+        "task-worker/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": [
+          "database migrations"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [
+          "database migrations"
+        ],
+        "sensitive_data": [
+          "health",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@eslint/eslintrc",
+          "@job-manager/leases",
+          "@prisma/client",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "async-mutex",
+          "eslint",
+          "eslint-config-next",
+          "jest",
+          "jest-environment-jsdom",
+          "next",
+          "postcss",
+          "prisma",
+          "react",
+          "react-dom",
+          "swr",
+          "tailwind-scrollbar",
+          "tailwindcss",
+          "ts-node"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/build-test.yaml",
+        ".github/workflows/validate-app-spec.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".do/app.yaml",
+        "leases/.env",
+        "leases/package.json",
+        "leases/prisma/schema.prisma",
+        "package.json",
+        "task-service/.env",
+        "task-service/package.json",
+        "task-service/prisma/schema.prisma",
+        "task-worker/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "health",
+          "password",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "leases/.env",
+            "task-service/.env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "leases/.env",
+        "task-service/.env",
+        "task-service/src/app/lib/generator.js",
+        "task-service/src/app/lib/tasks-client.js",
+        "task-worker/.env",
+        "task-worker/main.js",
+        "task-worker/tasks-client.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "DATABASE_URL"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "DATABASE_URL",
+          "HEARTBEAT_INTERVAL",
+          "HOSTNAME",
+          "NEXT_PUBLIC_URL",
+          "PORT",
+          "SERVICE_LEASES_URL",
+          "TASK_SERVICE_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "leases/.env",
+            "task-service/.env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "leases/src/app/lib/leases-client.test.js",
+        "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+        "task-service/src/app/lib/worker-manager.test.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "prisma"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "jest",
+          "jest-environment-jsdom"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "leases/src/app/lib/leases-client.test.js",
+          "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js",
+          "task-service/src/app/lib/worker-manager.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "task-service/README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "leases/src/app/page.js",
+        "task-service/src/app/components/TaskGenerator.js",
+        "task-service/src/app/components/TasksView.js"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "leases/.env",
+        "task-service/.env"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:09.784Z"
+  }
+}

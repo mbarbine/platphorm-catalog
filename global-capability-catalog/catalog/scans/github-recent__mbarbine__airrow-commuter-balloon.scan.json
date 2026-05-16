@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__airrow-commuter-balloon",
+    "name": "mbarbine__airrow-commuter-balloon",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__airrow-commuter-balloon",
+    "relative_path": "github-recent/mbarbine__airrow-commuter-balloon",
+    "remote_url": "git@github.com:mbarbine/airrow-commuter-balloon.git",
+    "default_branch": "main",
+    "current_commit": "788a14e705cc82b774c30ae17a062adbaf469a60"
+  },
+  "languages": [
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 200974
+    },
+    {
+      "language": "TypeScript",
+      "files": 39,
+      "bytes": 89706
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 13866
+    },
+    {
+      "language": "JSON",
+      "files": 15,
+      "bytes": 11947
+    },
+    {
+      "language": "Markdown",
+      "files": 5,
+      "bytes": 7823
+    },
+    {
+      "language": "XML",
+      "files": 3,
+      "bytes": 908
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 441
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-v0-project",
+        "version": "0.1.0",
+        "scripts": {
+          "build": "next build",
+          "dev": "next dev",
+          "lint": "eslint .",
+          "start": "next start"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.10.0",
+          "@radix-ui/react-accordion": "1.2.2",
+          "@radix-ui/react-alert-dialog": "1.1.4",
+          "@radix-ui/react-aspect-ratio": "1.1.1",
+          "@radix-ui/react-avatar": "1.1.2",
+          "@radix-ui/react-checkbox": "1.1.3",
+          "@radix-ui/react-collapsible": "1.1.2",
+          "@radix-ui/react-context-menu": "2.2.4",
+          "@radix-ui/react-dialog": "1.1.4",
+          "@radix-ui/react-dropdown-menu": "2.1.4",
+          "@radix-ui/react-hover-card": "1.1.4",
+          "@radix-ui/react-label": "2.1.1",
+          "@radix-ui/react-menubar": "1.1.4",
+          "@radix-ui/react-navigation-menu": "1.2.3",
+          "@radix-ui/react-popover": "1.1.4",
+          "@radix-ui/react-progress": "1.1.1",
+          "@radix-ui/react-radio-group": "1.2.2",
+          "@radix-ui/react-scroll-area": "1.2.2",
+          "@radix-ui/react-select": "2.1.4",
+          "@radix-ui/react-separator": "1.1.1",
+          "@radix-ui/react-slider": "1.2.2",
+          "@radix-ui/react-slot": "1.1.1",
+          "@radix-ui/react-switch": "1.1.2",
+          "@radix-ui/react-tabs": "1.1.2",
+          "@radix-ui/react-toast": "1.2.4",
+          "@radix-ui/react-toggle": "1.1.1",
+          "@radix-ui/react-toggle-group": "1.1.1",
+          "@radix-ui/react-tooltip": "1.1.6",
+          "@vercel/analytics": "1.3.1",
+          "autoprefixer": "^10.4.20",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.0.4",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.5.1",
+          "input-otp": "1.4.1",
+          "lucide-react": "^0.454.0",
+          "next": "16.0.10",
+          "next-intl": "^4.8.3",
+          "next-themes": "^0.4.6",
+          "react": "19.2.0",
+          "react-day-picker": "9.8.0",
+          "react-dom": "19.2.0",
+          "react-hook-form": "^7.60.0",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "2.15.4",
+          "sonner": "^1.7.4",
+          "tailwind-merge": "^3.3.1",
+          "tailwindcss-animate": "^1.0.7",
+          "vaul": "^1.1.2",
+          "zod": "3.25.76"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.1.9",
+          "@testing-library/dom": "^10.4.1",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@testing-library/user-event": "^14.6.1",
+          "@types/node": "^22",
+          "@types/react": "^19",
+          "@types/react-dom": "^19",
+          "@vitejs/plugin-react": "^5.1.4",
+          "jsdom": "^28.1.0",
+          "postcss": "^8.5",
+          "tailwindcss": "^4.1.9",
+          "tw-animate-css": "1.3.3",
+          "typescript": "^5",
+          "vitest": "^4.0.18"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/mcp-stats",
+        "source_path": "app/api/mcp-stats/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/og",
+        "source_path": "app/api/og/route.tsx",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/stats",
+        "source_path": "app/api/v1/stats/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/webhooks/n8n",
+        "source_path": "app/api/webhooks/n8n/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/[locale]",
+        "source_path": "app/[locale]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/api/docs",
+        "source_path": "app/api/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "concept-video",
+      "kind": "ui-component",
+      "source_path": "components/concept-video.tsx"
+    },
+    {
+      "name": "features-section",
+      "kind": "ui-component",
+      "source_path": "components/features-section.tsx"
+    },
+    {
+      "name": "footer",
+      "kind": "ui-component",
+      "source_path": "components/footer.tsx"
+    },
+    {
+      "name": "header",
+      "kind": "ui-component",
+      "source_path": "components/header.tsx"
+    },
+    {
+      "name": "hero-section",
+      "kind": "ui-component",
+      "source_path": "components/hero-section.tsx"
+    },
+    {
+      "name": "how-it-works",
+      "kind": "ui-component",
+      "source_path": "components/how-it-works.tsx"
+    },
+    {
+      "name": "local-storage-manager",
+      "kind": "ui-component",
+      "source_path": "components/local-storage-manager.tsx"
+    },
+    {
+      "name": "safety-section",
+      "kind": "ui-component",
+      "source_path": "components/safety-section.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/sidebar.tsx"
+    },
+    {
+      "name": "tech-specs-section",
+      "kind": "ui-component",
+      "source_path": "components/tech-specs-section.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "timeline-section",
+      "kind": "ui-component",
+      "source_path": "components/timeline-section.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "waitlist-section",
+      "kind": "ui-component",
+      "source_path": "components/waitlist-section.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "api.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/api.test.ts"
+    },
+    {
+      "name": "sitemap-check.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/sitemap-check.test.ts"
+    },
+    {
+      "name": "ui-ux.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/ui-ux.test.tsx"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "N8N_WEBHOOK_SECRET",
+        "source_paths": [
+          "app/api/webhooks/n8n/route.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms-index.json"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms-index.json"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "public/.well-known/mcp"
+      },
+      {
+        "path": "public/.well-known/security.txt"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/[locale]/layout.tsx",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".jules/sentinel.md",
+      "line": 3,
+      "text": "**Learning:** This is a common security pitfall known as reverse tabnabbing, allowing newly opened tabs to manipulate the origin tab. It must be paired with `rel=\"noopener noreferrer\"` when used with external links."
+    },
+    {
+      "kind": "security",
+      "source_path": ".jules/sentinel.md",
+      "line": 5,
+      "text": "## 2026-03-28 - [N8N Webhook Unauthorized Access]\\n**Vulnerability:** Found missing authentication check in `app/api/webhooks/n8n/route.ts` which would allow unauthorized access to trigger automations.\\n**Learning:** This is a critical secu"
+    },
+    {
+      "kind": "security",
+      "source_path": "middleware.ts",
+      "line": 26,
+      "text": "// Security Headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "middleware.ts",
+      "line": 30,
+      "text": "response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/[locale]/layout.tsx"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/[locale]/layout.tsx",
+          "app/globals.css",
+          "components/concept-video.tsx",
+          "components/how-it-works.tsx",
+          "components/safety-section.tsx",
+          "components/tech-specs-section.tsx",
+          "components/timeline-section.tsx",
+          "components/waitlist-section.tsx",
+          "package.json",
+          "pnpm-lock.yaml",
+          "styles/globals.css"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/waitlist-section.tsx",
+          "tests/ui-ux.test.tsx"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/docs/page.tsx"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/waitlist-section.tsx"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".jules/sentinel.md"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".jules/sentinel.md",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:05.551Z"
+}

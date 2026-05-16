@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-co__npm-element-dev-server",
+    "name": "process-co__npm-element-dev-server",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-dev-server",
+    "relative_path": "github-recent/process-co__npm-element-dev-server",
+    "remote_url": "git@github.com:process-co/npm-element-dev-server.git",
+    "default_branch": "main",
+    "current_commit": "0895273e34500965b85ac60b077789330c41ec8a"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 7,
+      "bytes": 48936
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 21878
+    },
+    {
+      "language": "Markdown",
+      "files": 4,
+      "bytes": 18468
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 3892
+    },
+    {
+      "language": "JSON",
+      "files": 2,
+      "bytes": 3134
+    },
+    {
+      "language": "HTML",
+      "files": 1,
+      "bytes": 681
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 313
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Jest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vite",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "@process.co/element-dev-server",
+        "version": "0.0.0-development",
+        "scripts": {
+          "build": "rm -rf ./dist && echo '{\"version\":'$(jq '.version' ./package.json)'}' > ./src/version.json && tsup && chmod +x ./dist/cli.js",
+          "dev": "tsx src/cli.tsx",
+          "cli": "tsx dist/cli.js",
+          "test": "jest"
+        },
+        "dependencies": {
+          "@fortawesome/react-fontawesome": "^0.2.2",
+          "@monaco-editor/react": "^4.7.0",
+          "@process.co/element-dev-support": "github:process-co/npm-element-dev-support#main",
+          "@process.co/ui": "workspace:0.0.0-development",
+          "@process.co/utilities": "workspace:0.0.0-development",
+          "uuid": "^11.1.0",
+          "@radix-ui/react-accordion": "^1.2.3",
+          "@radix-ui/react-dialog": "^1.1.6",
+          "@radix-ui/react-dropdown-menu": "^2.1.6",
+          "@radix-ui/react-popover": "^1.1.6",
+          "@radix-ui/react-progress": "^1.1.2",
+          "@radix-ui/react-radio-group": "^1.2.3",
+          "@radix-ui/react-scroll-area": "^1.2.3",
+          "@radix-ui/react-select": "^2.1.6",
+          "@radix-ui/react-separator": "^1.1.2",
+          "@radix-ui/react-slider": "^1.2.3",
+          "@radix-ui/react-slot": "^1.1.2",
+          "@radix-ui/react-switch": "^1.1.3",
+          "@radix-ui/react-tabs": "^1.1.3",
+          "@radix-ui/react-toggle": "^1.1.2",
+          "@radix-ui/react-toggle-group": "^1.1.2",
+          "@radix-ui/react-tooltip": "^1.1.8",
+          "@vitejs/plugin-react": "^4.3.4",
+          "axios": "^1.8.4",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "ink": "^6.0.1",
+          "ink-select-input": "^6.2.0",
+          "io-ts": "^2.2.22",
+          "meow": "^13.2.0",
+          "querystring": "^0.2.1",
+          "react": "^19.1.0",
+          "react-dom": "^19.1.0",
+          "react-error-boundary": "^5.0.0",
+          "tailwind-merge": "^3.0.2",
+          "tsup": "^8.5.0",
+          "tsx": "^4.19.1",
+          "type-fest": "^4.21.0",
+          "vite": "^7.0.2",
+          "zustand": "^5.0.3"
+        },
+        "dev_dependencies": {
+          "@babel/core": "^7.26.9",
+          "@babel/preset-env": "^7.26.9",
+          "@babel/preset-typescript": "^7.26.0",
+          "@repo/config-jest": "workspace:^",
+          "@repo/config-typescript": "workspace:^",
+          "@types/jest": "^29.5.14",
+          "@types/node": "22.13.17",
+          "@types/react": "19.1.0",
+          "@vercel/ncc": "^0.38.1",
+          "babel-jest": "^29.7.0",
+          "jest": "^29.7.0",
+          "ts-jest": "^29.2.6",
+          "typescript": "^5.7.3"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/publish-element-dev-server.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "PROC_DEV_DEBUG",
+        "source_paths": [
+          ".process/vite.config.cjs"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_ACTION_SIGNAL_KEY",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_CURRENT_ACTION_SIGNAL",
+        "source_paths": [
+          ".process/index.tsx",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_ELEMENT_MODULE",
+        "source_paths": [
+          ".process/index.tsx",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_ELEMENT_NAME",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_ELEMENT_PATH",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_ELEMENT_TYPE",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_HAS_LOCAL_UI_SOURCE",
+        "source_paths": [
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_MODULE_PATH",
+        "source_paths": [
+          ".process/index.tsx",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_PROPERTY_KEY",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_PROPERTY_TYPE",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_PROPERTY_UI_PATH",
+        "source_paths": [
+          ".process/index.tsx",
+          ".process/vite.config.cjs",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_SELECTED_PROPERTY",
+        "source_paths": [
+          ".process/index.tsx",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VITE_UI_DIRECTORY",
+        "source_paths": [
+          ".process/index.tsx",
+          "src/ui.tsx"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": ".process/vite.config.cjs"
+    },
+    {
+      "path": "package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": ".github/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "child-process-exec",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/publish-element-dev-server.yml"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".process/index.tsx"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".process/index.tsx",
+          "DEPENDENCY-RESOLUTION.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/publish-element-dev-server.yml",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:32.287Z"
+}

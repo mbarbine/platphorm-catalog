@@ -1,0 +1,1234 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-sheets",
+    "name": "mbarbine__platphorm-sheets",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-sheets",
+    "relative_path": "github-recent/mbarbine__platphorm-sheets",
+    "remote_url": "git@github.com:mbarbine/platphorm-sheets.git",
+    "default_branch": "main",
+    "current_commit": "ed28c46cb56017ea34372b33b7d40953bd826bff"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 140,
+      "bytes": 422331
+    },
+    {
+      "language": "YAML",
+      "files": 2,
+      "bytes": 276332
+    },
+    {
+      "language": "JSON",
+      "files": 15,
+      "bytes": 55150
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 9494
+    },
+    {
+      "language": "Markdown",
+      "files": 3,
+      "bytes": 3762
+    },
+    {
+      "language": "JavaScript",
+      "files": 3,
+      "bytes": 500
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Playwright",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-project",
+        "version": "0.1.0",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "eslint .",
+          "test": "vitest run"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.9.1",
+          "@radix-ui/react-accordion": "1.2.12",
+          "@radix-ui/react-alert-dialog": "1.1.15",
+          "@radix-ui/react-aspect-ratio": "1.1.8",
+          "@radix-ui/react-avatar": "1.1.11",
+          "@radix-ui/react-checkbox": "1.3.3",
+          "@radix-ui/react-collapsible": "1.1.12",
+          "@radix-ui/react-context-menu": "2.2.16",
+          "@radix-ui/react-dialog": "1.1.15",
+          "@radix-ui/react-dropdown-menu": "2.1.16",
+          "@radix-ui/react-hover-card": "1.1.15",
+          "@radix-ui/react-label": "2.1.8",
+          "@radix-ui/react-menubar": "1.1.16",
+          "@radix-ui/react-navigation-menu": "1.2.14",
+          "@radix-ui/react-popover": "1.1.15",
+          "@radix-ui/react-progress": "1.1.8",
+          "@radix-ui/react-radio-group": "1.3.8",
+          "@radix-ui/react-scroll-area": "1.2.10",
+          "@radix-ui/react-select": "2.2.6",
+          "@radix-ui/react-separator": "1.1.8",
+          "@radix-ui/react-slider": "1.3.6",
+          "@radix-ui/react-slot": "1.2.4",
+          "@radix-ui/react-switch": "1.2.6",
+          "@radix-ui/react-tabs": "1.1.13",
+          "@radix-ui/react-toast": "1.2.15",
+          "@radix-ui/react-toggle": "1.1.10",
+          "@radix-ui/react-toggle-group": "1.1.11",
+          "@radix-ui/react-tooltip": "1.2.8",
+          "@vercel/analytics": "1.6.1",
+          "@vercel/speed-insights": "^1.3.1",
+          "autoprefixer": "^10.4.20",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.1.1",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.6.0",
+          "input-otp": "1.4.2",
+          "lucide-react": "^0.564.0",
+          "next": "16.1.6",
+          "next-themes": "^0.4.6",
+          "react": "19.2.4",
+          "react-day-picker": "9.13.2",
+          "react-dom": "19.2.4",
+          "react-hook-form": "^7.54.1",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.1",
+          "tailwind-merge": "^3.3.1",
+          "vaul": "^1.1.2",
+          "xlsx": "^0.18.5",
+          "zod": "^3.24.1"
+        },
+        "dev_dependencies": {
+          "@eslint/eslintrc": "^3.3.5",
+          "@tailwindcss/postcss": "^4.2.0",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@types/node": "^22",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "@vitejs/plugin-react": "^6.0.1",
+          "@vitest/ui": "^4.1.1",
+          "eslint": "^9.39.4",
+          "eslint-config-next": "^16.2.1",
+          "jsdom": "^29.0.1",
+          "playwright": "^1.58.2",
+          "postcss": "^8.5",
+          "tailwindcss": "^4.2.0",
+          "tw-animate-css": "1.3.3",
+          "typescript": "5.7.3",
+          "vitest": "^4.1.1"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/network/graph",
+        "source_path": "app/api/network/graph/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/categories",
+        "source_path": "app/api/v1/categories/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/ingest/[id]/confirm",
+        "source_path": "app/api/v1/ingest/[id]/confirm/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/ingest/[id]",
+        "source_path": "app/api/v1/ingest/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/ingest/paste",
+        "source_path": "app/api/v1/ingest/paste/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/ingest/upload",
+        "source_path": "app/api/v1/ingest/upload/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/ingest/url",
+        "source_path": "app/api/v1/ingest/url/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/discovery-compliance",
+        "source_path": "app/api/v1/network/discovery-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph",
+        "source_path": "app/api/v1/network/graph/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph/sync",
+        "source_path": "app/api/v1/network/graph/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/route-compliance",
+        "source_path": "app/api/v1/network/route-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/sites",
+        "source_path": "app/api/v1/network/sites/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/trusted-domains",
+        "source_path": "app/api/v1/network/trusted-domains/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/search",
+        "source_path": "app/api/v1/search/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/share/[id]",
+        "source_path": "app/api/v1/share/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/charts",
+        "source_path": "app/api/v1/sheets/[id]/charts/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/columns",
+        "source_path": "app/api/v1/sheets/[id]/columns/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/export/csv",
+        "source_path": "app/api/v1/sheets/[id]/export/csv/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/export/pdf",
+        "source_path": "app/api/v1/sheets/[id]/export/pdf/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/filter",
+        "source_path": "app/api/v1/sheets/[id]/filter/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]",
+        "source_path": "app/api/v1/sheets/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/rows",
+        "source_path": "app/api/v1/sheets/[id]/rows/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/share",
+        "source_path": "app/api/v1/sheets/[id]/share/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/summary",
+        "source_path": "app/api/v1/sheets/[id]/summary/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets/[id]/trace",
+        "source_path": "app/api/v1/sheets/[id]/trace/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sheets",
+        "source_path": "app/api/v1/sheets/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/tags",
+        "source_path": "app/api/v1/tags/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/api-docs",
+        "source_path": "app/api-docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/ingest",
+        "source_path": "app/ingest/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/mcp/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/search",
+        "source_path": "app/search/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/settings",
+        "source_path": "app/settings/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/sheets/[id]",
+        "source_path": "app/sheets/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/sheets",
+        "source_path": "app/sheets/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "data-grid",
+      "kind": "ui-component",
+      "source_path": "components/data-grid.tsx"
+    },
+    {
+      "name": "home-local-overview",
+      "kind": "ui-component",
+      "source_path": "components/home-local-overview.tsx"
+    },
+    {
+      "name": "sheets-layout",
+      "kind": "ui-component",
+      "source_path": "components/sheets-layout.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "alert-dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "aspect-ratio",
+      "kind": "ui-component",
+      "source_path": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/button-group.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "calendar",
+      "kind": "ui-component",
+      "source_path": "components/ui/calendar.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "carousel",
+      "kind": "ui-component",
+      "source_path": "components/ui/carousel.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "checkbox",
+      "kind": "ui-component",
+      "source_path": "components/ui/checkbox.tsx"
+    },
+    {
+      "name": "collapsible",
+      "kind": "ui-component",
+      "source_path": "components/ui/collapsible.tsx"
+    },
+    {
+      "name": "command",
+      "kind": "ui-component",
+      "source_path": "components/ui/command.tsx"
+    },
+    {
+      "name": "context-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/context-menu.tsx"
+    },
+    {
+      "name": "dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/dialog.tsx"
+    },
+    {
+      "name": "drawer",
+      "kind": "ui-component",
+      "source_path": "components/ui/drawer.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "empty",
+      "kind": "ui-component",
+      "source_path": "components/ui/empty.tsx"
+    },
+    {
+      "name": "field",
+      "kind": "ui-component",
+      "source_path": "components/ui/field.tsx"
+    },
+    {
+      "name": "form",
+      "kind": "ui-component",
+      "source_path": "components/ui/form.tsx"
+    },
+    {
+      "name": "hover-card",
+      "kind": "ui-component",
+      "source_path": "components/ui/hover-card.tsx"
+    },
+    {
+      "name": "input-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-group.tsx"
+    },
+    {
+      "name": "input-otp",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-otp.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "item",
+      "kind": "ui-component",
+      "source_path": "components/ui/item.tsx"
+    },
+    {
+      "name": "kbd",
+      "kind": "ui-component",
+      "source_path": "components/ui/kbd.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "menubar",
+      "kind": "ui-component",
+      "source_path": "components/ui/menubar.tsx"
+    },
+    {
+      "name": "navigation-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "name": "pagination",
+      "kind": "ui-component",
+      "source_path": "components/ui/pagination.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "components/ui/popover.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "radio-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/radio-group.tsx"
+    },
+    {
+      "name": "resizable",
+      "kind": "ui-component",
+      "source_path": "components/ui/resizable.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "components/ui/slider.tsx"
+    },
+    {
+      "name": "sonner",
+      "kind": "ui-component",
+      "source_path": "components/ui/sonner.tsx"
+    },
+    {
+      "name": "spinner",
+      "kind": "ui-component",
+      "source_path": "components/ui/spinner.tsx"
+    },
+    {
+      "name": "switch",
+      "kind": "ui-component",
+      "source_path": "components/ui/switch.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "toaster",
+      "kind": "ui-component",
+      "source_path": "components/ui/toaster.tsx"
+    },
+    {
+      "name": "toggle-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle-group.tsx"
+    },
+    {
+      "name": "toggle",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    },
+    {
+      "name": "use-mobile",
+      "kind": "ui-component",
+      "source_path": "components/ui/use-mobile.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/health/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/mcp/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/network/graph/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/sheets/route.test.ts"
+    },
+    {
+      "name": "discovery.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/sheets/discovery.test.ts"
+    },
+    {
+      "name": "parser.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/sheets/parser.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "lib/sheets/server-state.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_BASE_URL",
+        "source_paths": [
+          "app/api-docs/page.tsx",
+          "app/layout.tsx",
+          "app/mcp/page.tsx",
+          "app/page.tsx",
+          "lib/sheets/discovery.ts",
+          "lib/sheets/trace.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "lib/sheets/api-handlers.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "lib/sheets/auth.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VERCEL_ENV",
+        "source_paths": [
+          "lib/sheets/api-handlers.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [
+      {
+        "path": "schemas/openapi.json"
+      }
+    ],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.test.ts"
+      },
+      {
+        "path": "app/api/mcp/route.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/agents.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/.well-known/agents.json/route.ts",
+        "app/.well-known/ai-plugin.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/api-docs/page.tsx",
+        "app/api/mcp/route.test.ts",
+        "app/api/mcp/route.ts",
+        "app/api/v1/sheets/route.test.ts",
+        "app/mcp/page.tsx",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api-docs/page.tsx",
+        "app/openapi.yaml/route.ts",
+        "lib/sheets/api-handlers.ts",
+        "lib/sheets/discovery.ts",
+        "lib/sheets/server-state.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/layout.tsx",
+        "lib/sheets/api-handlers.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 10,
+      "text": "Canonical: ${getBaseUrl()}/.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 13,
+      "text": "security:"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 51,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 58,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 65,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 80,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 110,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 130,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 135,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/openapi.yaml/route.ts",
+      "line": 141,
+      "text": "security: []"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/file-parser.ts",
+      "line": 5,
+      "text": "import { validateIngestUrl } from './sheets/security'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/sheets/api-handlers.ts",
+      "line": 7,
+      "text": "import { validateIngestUrl } from './security'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/sheets/server-state.ts",
+      "line": 70,
+      "text": "'/.well-known/security.txt',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/sheets/server-state.ts",
+      "line": 104,
+      "text": "'/.well-known/security.txt',"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/page.tsx",
+          "components/ui/chart.tsx"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/sheets/discovery.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/file-parser.ts"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/agents.json/route.ts",
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/api-docs/page.tsx",
+          "app/api/mcp/route.test.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/sheets/route.test.ts",
+          "app/mcp/page.tsx",
+          "app/openapi.yaml/route.ts",
+          "app/page.tsx",
+          "app/settings/page.tsx",
+          "lib/sheets/api-handlers.ts",
+          "lib/sheets/auth.ts",
+          "lib/sheets/discovery.test.ts",
+          "lib/sheets/discovery.ts"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api-docs/page.tsx",
+          "app/faq/page.tsx",
+          "app/globals.css",
+          "app/ingest/page.tsx",
+          "app/layout.tsx",
+          "app/mcp/page.tsx",
+          "app/page.tsx",
+          "app/search/page.tsx",
+          "app/settings/page.tsx",
+          "app/sheets/[id]/page.tsx",
+          "app/sheets/page.tsx",
+          "components/home-local-overview.tsx",
+          "components/ui/alert.tsx",
+          "components/ui/calendar.tsx",
+          "components/ui/card.tsx",
+          "components/ui/hover-card.tsx",
+          "package.json",
+          "pnpm-lock.yaml",
+          "schemas/core.schema.json",
+          "styles/globals.css"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "schemas/core.schema.json",
+          "schemas/item.schema.json",
+          "schemas/observability.schema.json",
+          "schemas/realm.schema.json"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/health/route.test.ts",
+          "app/api/health/route.ts",
+          "app/api/v1/health/route.ts",
+          "app/openapi.yaml/route.ts",
+          "lib/sheets/api-handlers.ts",
+          "lib/sheets/discovery.ts",
+          "lib/sheets/server-state.ts",
+          "schemas/core.schema.json",
+          "schemas/realm.schema.json"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/sheets/[id]/page.tsx",
+          "app/sheets/page.tsx",
+          "components/data-grid.tsx",
+          "lib/file-parser.ts"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/settings/page.tsx"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "lib/sheets/discovery.ts",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:20.699Z"
+}

@@ -1,0 +1,1569 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__aws-lab",
+    "name": "mbarbine__aws-lab",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__aws-lab",
+    "remote_url": "git@github.com:mbarbine/aws-lab.git",
+    "description": "These files are default error files that can be customized",
+    "primary_language": "YAML",
+    "languages": [
+      "YAML",
+      "Shell",
+      "JSON",
+      "Markdown",
+      "Dockerfile",
+      "JavaScript"
+    ],
+    "frameworks": [],
+    "package_manager": "npm",
+    "databases": [],
+    "deployment": [
+      "docker",
+      "github-actions"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__aws-lab.scan.json",
+    "analyzed_at": "2026-05-16T16:44:05.860Z"
+  },
+  "capabilities": [
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "TRAEFIK_BASIC_AUTH"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env",
+        "terraform/lambda/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "S3"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "burninglan-s3-trigger"
+        ],
+        "internal": [],
+        "external_services": [
+          "S3"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "AWS",
+          "S3"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "S3"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/build-deepstack.yml",
+        ".github/workflows/build-portainer.yml",
+        ".github/workflows/build-privatebin.yml",
+        ".github/workflows/build-uptime-kuma.yml",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/main.yml",
+        ".github/workflows/static.yml",
+        "docker-compose.yml",
+        "docker/deepstack/Dockerfile",
+        "docker/haproxy/Dockerfile",
+        "docker/portainer/Dockerfile",
+        "docker/privatebin/Dockerfile",
+        "docker/uptime-kuma/Dockerfile"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "AWS"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "terraform/lambda/index.js",
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "AWS",
+          "S3"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "S3"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "gameplay.browser-game",
+      "name": "Browser Gameplay",
+      "type": "gameplay",
+      "summary": "Source evidence indicates game, canvas, realtime, player, or gameplay implementation.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "player input or game state"
+        ],
+        "outputs": [
+          "rendered gameplay or score state"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "player input or game state"
+        ],
+        "writes": [
+          "rendered gameplay or score state"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.aws",
+      "name": "AWS Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a AWS integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "docker-compose.yml",
+        "README.md",
+        "run_all.sh",
+        "terraform/lambda/index.js",
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "AWS configuration or SDK inputs"
+        ],
+        "outputs": [
+          "AWS API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "AWS configuration or SDK inputs"
+        ],
+        "writes": [
+          "AWS API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "email",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "AWS"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "aws-sdk"
+        ],
+        "internal": [],
+        "external_services": [
+          "AWS"
+        ],
+        "env_vars": [
+          "AWS_ACCESS_KEY_ID",
+          "AWS_DEFAULT_REGION",
+          "AWS_SECRET_ACCESS_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.s3",
+      "name": "S3 Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a S3 integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env",
+        "backup/s3_backup.sh",
+        "docker-compose.yml",
+        "README.md",
+        "run_all.sh",
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "S3 configuration or SDK inputs"
+        ],
+        "outputs": [
+          "S3 API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "S3 configuration or SDK inputs"
+        ],
+        "writes": [
+          "S3 API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "email",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "S3"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "burninglan-s3-trigger"
+        ],
+        "internal": [],
+        "external_services": [
+          "S3"
+        ],
+        "env_vars": [
+          "S3_BUCKET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "AWS_ACCESS_KEY_ID",
+          "AWS_SECRET_ACCESS_KEY",
+          "CF_API_KEY",
+          "GITHUB_TOKEN",
+          "TRAEFIK_BASIC_AUTH"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [
+          "auth/session environment variables"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ARCH",
+          "AWS_ACCESS_KEY_ID",
+          "AWS_DEFAULT_REGION",
+          "AWS_SECRET_ACCESS_KEY",
+          "BACKUP_RETENTION_DAYS",
+          "BACKUP_SCHEDULE",
+          "CF_API_EMAIL",
+          "CF_API_KEY",
+          "CF_SUBDOMAIN",
+          "CF_ZONE",
+          "CF_ZONE_ID",
+          "CONTAINER_RUNTIME",
+          "DEEPSTACK_CPU_LIMIT",
+          "DEEPSTACK_MEMORY_LIMIT",
+          "ENABLE_ACCESS_LOGS",
+          "ENABLE_ERROR_LOGS",
+          "ENABLE_METRICS",
+          "ENVIRONMENT",
+          "GITHUB_REPOSITORY",
+          "GITHUB_RUNNER_CPU_LIMIT",
+          "GITHUB_RUNNER_MEMORY_LIMIT",
+          "GITHUB_TOKEN",
+          "GRAFANA_ENABLED",
+          "HEALTH_CHECK_INTERVAL",
+          "HEALTH_CHECK_RETRIES",
+          "HEALTH_CHECK_TIMEOUT",
+          "LOG_LEVEL",
+          "PORTAINER_CPU_LIMIT",
+          "PORTAINER_MEMORY_LIMIT",
+          "PROMETHEUS_ENABLED",
+          "RUNNER_GROUP",
+          "RUNNER_LABELS",
+          "RUNNER_NAME",
+          "S3_BUCKET",
+          "TRAEFIK_BASIC_AUTH"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-like-values",
+          "severity": "critical",
+          "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "docker/haproxy/errors/README",
+          "README.md",
+          "tests/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.secret-like-values",
+      "severity": "critical",
+      "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+      "evidence_paths": [
+        ".env"
+      ],
+      "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    },
+    {
+      "id": "quality.missing-tests",
+      "severity": "medium",
+      "summary": "No automated test files were detected.",
+      "evidence_paths": [
+        "docker/haproxy/errors/README",
+        "README.md",
+        "terraform/lambda/package.json",
+        "tests/readme.md"
+      ],
+      "recommendation": "Add focused tests before treating capabilities as production-ready reuse candidates."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": false,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "test files not detected",
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:05.882Z"
+  }
+}

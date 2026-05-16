@@ -1,0 +1,1793 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__reflux-site-webby",
+    "name": "mbarbine__reflux-site-webby",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__reflux-site-webby",
+    "remote_url": "git@github.com:mbarbine/reflux-site-webby.git",
+    "description": "Reflux Landing Page",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JSON",
+      "YAML",
+      "JavaScript",
+      "CSS",
+      "XML",
+      "Markdown"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "package_manager": "pnpm",
+    "databases": [],
+    "deployment": [],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__reflux-site-webby.scan.json",
+    "analyzed_at": "2026-05-16T16:44:22.672Z"
+  },
+  "capabilities": [
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/api/catalog/[slug]/route.ts",
+        "app/api/catalog/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/etsy/sync/route.ts",
+        "app/api/health/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/network/graph/route.ts",
+        "app/api/search/route.ts",
+        "app/api/spotify/authorize/route.ts",
+        "app/api/spotify/callback/route.ts",
+        "app/api/spotify/token/route.ts",
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/zapier/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /catalog",
+          "GET /catalog/[slug]",
+          "GET /docs",
+          "GET /etsy/sync",
+          "GET /health",
+          "GET /network/graph",
+          "GET /search",
+          "GET /spotify/authorize",
+          "GET /spotify/callback",
+          "GET /spotify/token",
+          "GET|POST /mcp",
+          "POST /webhooks/n8n",
+          "POST /webhooks/zapier"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "oauth",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "autoprefixer",
+          "clsx",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "tailwindcss",
+          "typescript"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ADMIN_SECRET",
+          "ETSY_API_KEY",
+          "NEXT_PUBLIC_SITE_URL",
+          "SPOTIFY_CLIENT_ID",
+          "SPOTIFY_CLIENT_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/etsy/sync/route.ts",
+            "lib/etsy.ts",
+            "lib/spotify.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/spotify/authorize/route.ts",
+        "app/api/spotify/callback/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "authorization.access-control",
+      "name": "Access Control",
+      "type": "authorization",
+      "summary": "Source evidence indicates roles, permissions, admin boundaries, or access-control checks.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/etsy/sync/route.ts",
+        "app/api/spotify/authorize/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "user role or permission state"
+        ],
+        "outputs": [
+          "authorization decisions"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "user role or permission state"
+        ],
+        "writes": [
+          "authorization decisions"
+        ],
+        "sensitive_data": [
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/etsy/sync/route.ts",
+            "lib/etsy.ts",
+            "lib/spotify.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/[lang]/docs/page.tsx",
+        "app/api/docs/route.ts",
+        "package.json",
+        "postcss.config.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/etsy/sync/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/etsy/sync/route.ts",
+            "lib/etsy.ts",
+            "lib/spotify.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/mcp/server-card.json/route.ts",
+        "app/llms-index.json/route.ts",
+        "components/json-ld.tsx",
+        "package.json",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "components/json-ld.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "ecommerce.product-catalog",
+      "name": "Ecommerce Product Catalog",
+      "type": "ecommerce",
+      "summary": "Source evidence indicates products, cart, checkout, orders, Shopify, or commerce flows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/product-card.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "product, cart, or order data"
+        ],
+        "outputs": [
+          "commerce UI or checkout/order responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "product, cart, or order data"
+        ],
+        "writes": [
+          "commerce UI or checkout/order responses"
+        ],
+        "sensitive_data": [
+          "card",
+          "payment data",
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "gameplay.browser-game",
+      "name": "Browser Gameplay",
+      "type": "gameplay",
+      "summary": "Source evidence indicates game, canvas, realtime, player, or gameplay implementation.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/spotify-player.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "player input or game state"
+        ],
+        "outputs": [
+          "rendered gameplay or score state"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "player input or game state"
+        ],
+        "writes": [
+          "rendered gameplay or score state"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "mcp.tool-server",
+      "name": "MCP Tool Server",
+      "type": "mcp",
+      "summary": "Repository contains MCP-related routes, manifests, files, or dependencies.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/mcp/route.ts",
+        "package.json",
+        "public/.well-known/mcp.json"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET|POST /mcp"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "outputs": [
+          "JSON-RPC responses or MCP metadata"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "writes": [
+          "JSON-RPC responses or MCP metadata"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/catalog/[slug]/route.ts",
+        "app/api/catalog/route.ts",
+        "app/api/health/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/[lang]/docs/page.tsx",
+        "app/[lang]/faq/page.tsx",
+        "app/[lang]/music/page.tsx",
+        "app/[lang]/page.tsx",
+        "app/[lang]/shop/[slug]/page.tsx",
+        "app/[lang]/shop/page.tsx",
+        "app/[lang]/story/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /[lang]",
+          "GET /[lang]/docs",
+          "GET /[lang]/faq",
+          "GET /[lang]/music",
+          "GET /[lang]/shop",
+          "GET /[lang]/shop/[slug]",
+          "GET /[lang]/story"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "autoprefixer",
+          "clsx",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "tailwindcss",
+          "typescript"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/search/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/mcp/server-card.json/route.ts",
+        "app/api/etsy/sync/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/network/graph/route.ts",
+        "app/llms-full.txt/route.ts",
+        "app/llms-index.json/route.ts",
+        "app/llms.txt/route.ts",
+        "app/robots.ts",
+        "app/sitemap.ts",
+        "lib/etsy.ts",
+        "lib/spotify.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "ADMIN_SECRET",
+          "ETSY_API_KEY",
+          "SPOTIFY_CLIENT_SECRET"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ADMIN_SECRET",
+          "ETSY_API_KEY",
+          "NEXT_PUBLIC_SITE_URL",
+          "SPOTIFY_CLIENT_ID",
+          "SPOTIFY_CLIENT_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/etsy/sync/route.ts",
+            "lib/etsy.ts",
+            "lib/spotify.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/manifest.webmanifest",
+        "public/rss.xml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "tests/api.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/breadcrumbs.tsx",
+        "components/footer.tsx",
+        "components/header.tsx",
+        "components/json-ld.tsx",
+        "components/product-card.tsx",
+        "components/shop-filters.tsx",
+        "components/shop-grid.tsx",
+        "components/spotify-player.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "breadcrumbs",
+          "footer",
+          "header",
+          "json-ld",
+          "product-card",
+          "shop-filters",
+          "shop-grid",
+          "spotify-player"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "autoprefixer",
+          "clsx",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "tailwindcss",
+          "typescript"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "components/json-ld.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "webhooks.event-receiver",
+      "name": "Webhook Event Receiver",
+      "type": "webhooks",
+      "summary": "Source evidence indicates webhook receiving, event delivery, or signature validation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/zapier/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "outputs": [
+          "event handling responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "writes": [
+          "event handling responses"
+        ],
+        "sensitive_data": [
+          "webhook secrets"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "tests/api.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "components/json-ld.tsx"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "app/api/etsy/sync/route.ts",
+        "lib/etsy.ts",
+        "lib/spotify.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "CI workflows not detected",
+      "LLMs context files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:22.692Z"
+  }
+}

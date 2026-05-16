@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-charts__.github",
+    "name": "process-charts__.github",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-charts__.github",
+    "relative_path": "github-recent/process-charts__.github",
+    "remote_url": "git@github.com:process-charts/.github.git",
+    "default_branch": "main",
+    "current_commit": "d89e96b09e7abfe568694d804aaf8faf26df70d2"
+  },
+  "languages": [
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 1564
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "profile/README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": []
+  },
+  "generated_at": "2026-05-16T16:44:32.088Z"
+}

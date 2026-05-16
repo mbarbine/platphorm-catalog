@@ -1,0 +1,801 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__process-co__npm-element-dev-server",
+    "name": "process-co__npm-element-dev-server",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-dev-server",
+    "remote_url": "git@github.com:process-co/npm-element-dev-server.git",
+    "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Felement-dev-server\" />](https://www.npmjs.com/package/@process.co/element-dev-server)",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Markdown",
+      "YAML",
+      "JSON",
+      "HTML",
+      "CSS"
+    ],
+    "frameworks": [
+      "Jest",
+      "React",
+      "Vite"
+    ],
+    "package_manager": "npm",
+    "databases": [],
+    "deployment": [
+      "github-actions",
+      "vercel"
+    ],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__process-co__npm-element-dev-server.scan.json",
+    "analyzed_at": "2026-05-16T16:44:32.301Z"
+  },
+  "capabilities": [
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/publish-element-dev-server.yml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".github/workflows/publish-element-dev-server.yml",
+            ".process/index.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "email",
+          "location",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/ncc"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".process/index.tsx",
+        ".process/vite.config.cjs",
+        "src/ui.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "VITE_ACTION_SIGNAL_KEY",
+          "VITE_PROPERTY_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "PROC_DEV_DEBUG",
+          "VITE_ACTION_SIGNAL_KEY",
+          "VITE_CURRENT_ACTION_SIGNAL",
+          "VITE_ELEMENT_MODULE",
+          "VITE_ELEMENT_NAME",
+          "VITE_ELEMENT_PATH",
+          "VITE_ELEMENT_TYPE",
+          "VITE_HAS_LOCAL_UI_SOURCE",
+          "VITE_MODULE_PATH",
+          "VITE_PROPERTY_KEY",
+          "VITE_PROPERTY_TYPE",
+          "VITE_PROPERTY_UI_PATH",
+          "VITE_SELECTED_PROPERTY",
+          "VITE_UI_DIRECTORY"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".github/workflows/publish-element-dev-server.yml",
+            ".process/index.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".process/index.tsx",
+            ".process/vite.config.cjs",
+            "src/ui.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          ".github/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        ".github/workflows/publish-element-dev-server.yml",
+        ".process/index.tsx"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".process/index.tsx",
+        ".process/vite.config.cjs",
+        "src/ui.tsx"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    },
+    {
+      "id": "quality.missing-tests",
+      "severity": "medium",
+      "summary": "No automated test files were detected.",
+      "evidence_paths": [
+        ".github/README.md",
+        "package.json",
+        "README.md"
+      ],
+      "recommendation": "Add focused tests before treating capabilities as production-ready reuse candidates."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": false,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "test files not detected",
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:32.319Z"
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__ph3ar__hope-auto-checkin",
+    "name": "ph3ar__hope-auto-checkin",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__hope-auto-checkin",
+    "remote_url": "git@github.com:ph3ar/hope-auto-checkin.git",
+    "description": "Smart volunteer shift automation for HOPE conference staff and volunteers.",
+    "primary_language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "Markdown",
+      "YAML"
+    ],
+    "frameworks": [],
+    "package_manager": null,
+    "databases": [],
+    "deployment": [
+      "github-actions"
+    ],
+    "maturity": "prototype",
+    "confidence": "medium",
+    "scan_artifact": "catalog/scans/github-recent__ph3ar__hope-auto-checkin.scan.json",
+    "analyzed_at": "2026-05-16T16:44:30.996Z"
+  },
+  "capabilities": [
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "prototype",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/main.yml",
+        ".github/workflows/test.yml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "prototype",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "ENGELSYSTEM_APIKEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ENGELSYSTEM_APIKEY",
+          "ENGELSYSTEM_PASS",
+          "ENGELSYSTEM_USER",
+          "MATRIX_PASS",
+          "MATRIX_USER"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "unknown",
+          "database": "low",
+          "external_services": "low",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": false,
+        "test_paths": [],
+        "notes": [
+          "No repository test files were detected for this capability."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env.example"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    },
+    {
+      "id": "quality.missing-tests",
+      "severity": "medium",
+      "summary": "No automated test files were detected.",
+      "evidence_paths": [
+        "README.md"
+      ],
+      "recommendation": "Add focused tests before treating capabilities as production-ready reuse candidates."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": false,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "test files not detected",
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:31.015Z"
+  }
+}

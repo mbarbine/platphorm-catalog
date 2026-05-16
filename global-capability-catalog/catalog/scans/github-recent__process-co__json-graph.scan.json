@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-co__json-graph",
+    "name": "process-co__json-graph",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__json-graph",
+    "relative_path": "github-recent/process-co__json-graph",
+    "remote_url": "git@github.com:process-co/json-graph.git",
+    "default_branch": "main",
+    "current_commit": "46821c36fa06bcc48669eaa8f999f1f34c83fce4"
+  },
+  "languages": [
+    {
+      "language": "CSS",
+      "files": 11,
+      "bytes": 214735
+    },
+    {
+      "language": "TypeScript",
+      "files": 43,
+      "bytes": 100527
+    },
+    {
+      "language": "YAML",
+      "files": 2,
+      "bytes": 4271
+    },
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 3888
+    },
+    {
+      "language": "JSON",
+      "files": 5,
+      "bytes": 2303
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 521
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "tailwind.config.ts"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "@process.co/json-graph",
+        "version": "0.0.0-development",
+        "scripts": {
+          "build": "tsup src/index.ts --dts-resolve --format cjs,esm --out-dir dist --clean",
+          "test": "vitest run",
+          "storybook": "storybook dev -p 6007",
+          "build-storybook": "storybook build",
+          "dev": "tsup --watch & storybook dev -p 6007",
+          "chromatic": "chromatic"
+        },
+        "dependencies": {
+          "@xyflow/react": "^12.0.0",
+          "zustand": "^5.0.0"
+        },
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [
+    {
+      "name": "JsonGraphEdge",
+      "kind": "ui-component",
+      "source_path": "src/components/edges/JsonGraphEdge.tsx"
+    },
+    {
+      "name": "LinkBreakIcon",
+      "kind": "ui-component",
+      "source_path": "src/components/icons/LinkBreakIcon.tsx"
+    },
+    {
+      "name": "LinkIcon",
+      "kind": "ui-component",
+      "source_path": "src/components/icons/LinkIcon.tsx"
+    },
+    {
+      "name": "JsonGraph.stories",
+      "kind": "ui-component",
+      "source_path": "src/components/JsonGraph.stories.tsx"
+    },
+    {
+      "name": "JsonGraph",
+      "kind": "ui-component",
+      "source_path": "src/components/JsonGraph.tsx"
+    },
+    {
+      "name": "CustomNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/CustomNode.tsx"
+    },
+    {
+      "name": "ForeignNodeWrapper",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/ForeignNodeWrapper.tsx"
+    },
+    {
+      "name": "IntermediateNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/IntermediateNode.tsx"
+    },
+    {
+      "name": "LeafNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/LeafNode.tsx"
+    },
+    {
+      "name": "LinkBreakButton",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/LinkBreakButton.tsx"
+    },
+    {
+      "name": "ObjectNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/ObjectNode.tsx"
+    },
+    {
+      "name": "PrimitiveNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/PrimitiveNode.tsx"
+    },
+    {
+      "name": "RootNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/RootNode.tsx"
+    },
+    {
+      "name": "TextNode",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/TextNode.tsx"
+    },
+    {
+      "name": "TextRenderer",
+      "kind": "ui-component",
+      "source_path": "src/components/nodes/TextRenderer.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "src/components/ui/popover.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "src/components/ui/slider.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "src/components/ui/tooltip.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "jsonParser.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "src/parser/jsonParser.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/chromatic-json-graph.yml"
+      },
+      {
+        "path": ".github/workflows/publish-json-graph.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "postcss.config.js",
+          "tsup.config.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.js"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.base.json"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "tsconfig.library.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": ".github/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "tailwind.shared.config.ts",
+      "line": 11,
+      "text": "// TailwindCSS has deprecated some colors, so we need to remove them before spreading the colors object."
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "css/ui.css",
+          "src/themes/base.css",
+          "src/themes/doflo.css",
+          "src/themes/proc.css",
+          "tailwind.config.ts",
+          "tailwind.shared.config.ts"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "src/styles/monoLisa.css"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/chromatic-json-graph.yml",
+          ".github/workflows/publish-json-graph.yml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:32.222Z"
+}

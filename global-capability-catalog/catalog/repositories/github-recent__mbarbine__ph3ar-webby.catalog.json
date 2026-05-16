@@ -1,0 +1,2341 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__ph3ar-webby",
+    "name": "mbarbine__PH3AR-WEBBY",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__PH3AR-WEBBY",
+    "remote_url": "git@github.com:mbarbine/PH3AR-WEBBY.git",
+    "description": "PH3AR: Cutting-Edge Tech Platform",
+    "primary_language": "Svelte",
+    "languages": [
+      "Svelte",
+      "TypeScript",
+      "JavaScript",
+      "Markdown",
+      "JSON",
+      "HTML",
+      "Python",
+      "Shell",
+      "CSS",
+      "YAML"
+    ],
+    "frameworks": [
+      "Svelte",
+      "Tailwind CSS",
+      "Vite",
+      "Vitest"
+    ],
+    "package_manager": "bun",
+    "databases": [],
+    "deployment": [
+      "vercel"
+    ],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__ph3ar-webby.scan.json",
+    "analyzed_at": "2026-05-16T16:44:12.119Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "src/benchmark.test.js",
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getRecommendation/_temp_server.cjs",
+        "src/routes/api/getRecommendation/+server.ts",
+        "src/routes/api/getRecommendation/server.test.ts",
+        "src/routes/api/jobs/generate/+server.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "api_key",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "ai",
+          "openai"
+        ],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": [
+          "MOCK_OPENAI_KEY",
+          "OPENAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "src/routes/+layout.server.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getRecommendation/+server.ts",
+        "src/routes/api/health/+server.ts",
+        "src/routes/api/jobs/generate/+server.ts",
+        "src/routes/api/verify-secret/+server.ts",
+        "src/routes/feed.xml/+server.ts",
+        "src/routes/rss.xml/+server.ts",
+        "src/routes/sitemap.xml/+server.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /api/health",
+          "GET /feed.xml",
+          "GET /rss.xml",
+          "GET /sitemap.xml",
+          "POST /api/getMediaDetails",
+          "POST /api/getMediaDetailsBatch",
+          "POST /api/getRecommendation",
+          "POST /api/jobs/generate",
+          "UNKNOWN /api/verify-secret"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@fullhuman/postcss-purgecss",
+          "@mapbox/node-pre-gyp",
+          "@neoconfetti/svelte",
+          "@playwright/test",
+          "@poppanator/sveltekit-svg",
+          "@sveltejs/adapter-auto",
+          "@sveltejs/adapter-static",
+          "@sveltejs/adapter-vercel",
+          "@sveltejs/kit",
+          "@sveltejs/package",
+          "@sveltejs/vite-plugin-svelte",
+          "@sveltejs/vite-plugin-svelte-inspector",
+          "@tailwindcss/typography",
+          "@testing-library/jest-dom",
+          "@testing-library/svelte",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vercel/analytics",
+          "@vercel/kv",
+          "ai",
+          "autoprefixer",
+          "colord",
+          "cssnano",
+          "dequal",
+          "devalue",
+          "esbuild",
+          "eslint",
+          "eslint-config-prettier",
+          "eslint-plugin-svelte",
+          "eventsource-parser",
+          "graceful-fs",
+          "jsdom",
+          "magic-string",
+          "mkdirp",
+          "openai",
+          "postcss",
+          "postcss-load-config",
+          "postcss-nested",
+          "postcss-preset-env",
+          "prettier",
+          "prettier-plugin-svelte",
+          "purgecss",
+          "rimraf",
+          "sass",
+          "svelte",
+          "svelte-add",
+          "svelte-check",
+          "svelte-file-dropzone",
+          "svelte-i18n",
+          "svelte-preprocess",
+          "svelte-subscribe",
+          "svelte-transitions",
+          "tailwindcss",
+          "typescript",
+          "vite",
+          "vite-imagetools",
+          "vitest",
+          "web-vitals"
+        ],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": [
+          "GTM_ID",
+          "KV_REST_API_TOKEN",
+          "KV_REST_API_URL",
+          "MOCK_KV_TOKEN",
+          "MOCK_KV_URL",
+          "MOCK_OPENAI_KEY",
+          "OMDB_API_KEY",
+          "OPENAI_API_KEY",
+          "VERCEL_ANALYTICS_ID"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/routes/api/jobs/generate/+server.ts",
+        "src/routes/jobs/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [
+          "api_key"
+        ],
+        "external_data_flows": [
+          "OpenAI"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "postcss.config.cjs",
+        "src/routes/api-docs/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "jsconfig.json",
+        "package.json",
+        "src/routes/feed.xml/+server.ts",
+        "src/routes/rss.xml/+server.ts",
+        "src/routes/sitemap.xml/+server.ts",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "discovery.llms-files",
+      "name": "LLMs Discovery Files",
+      "type": "discovery",
+      "summary": "Repository provides local LLMs discovery/context files that can guide machine-readable understanding.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "static/llms-full.txt",
+        "static/llms.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "repository-provided LLMs context"
+        ],
+        "outputs": [
+          "machine-readable discovery context"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "repository-provided LLMs context"
+        ],
+        "writes": [
+          "machine-readable discovery context"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Use as context for interpretation; verify behavioral claims against source files."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Use as context for interpretation; verify behavioral claims against source files."
+      ]
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+        "src/routes/api/getMediaDetails/kv.test.ts",
+        "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+        "src/routes/api/getMediaDetails/server.test.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/benchmark.ts",
+        "src/routes/api/getMediaDetailsBatch/server.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "token",
+          "user file contents"
+        ],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "src/routes/contact/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "OpenAI",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.openai",
+      "name": "OpenAI Integration",
+      "type": "ai-model",
+      "summary": "Repository has source-backed indicators for a OpenAI integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "src/__mocks__/env.js",
+        "src/benchmark.test.js",
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+        "src/routes/api/getMediaDetails/server.test.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/server.test.ts",
+        "src/routes/api/getRecommendation/_temp_server.cjs",
+        "src/routes/api/getRecommendation/+server.ts",
+        "src/routes/api/getRecommendation/server.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "OpenAI configuration or SDK inputs"
+        ],
+        "outputs": [
+          "OpenAI API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "OpenAI configuration or SDK inputs"
+        ],
+        "writes": [
+          "OpenAI API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "OpenAI"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "openai"
+        ],
+        "internal": [],
+        "external_services": [
+          "OpenAI"
+        ],
+        "env_vars": [
+          "MOCK_OPENAI_KEY",
+          "OPENAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json",
+        "src/benchmark.test.js",
+        "src/routes/+layout.server.js",
+        "src/routes/+layout.svelte",
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetails/kv.test.ts",
+        "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/benchmark.ts",
+        "src/routes/api/getMediaDetailsBatch/server.test.ts",
+        "svelte.config.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@sveltejs/adapter-vercel",
+          "@vercel/analytics",
+          "@vercel/kv"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": [
+          "VERCEL_ANALYTICS_ID"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/routes/api/health/+server.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "src/routes/about/+page.js",
+        "src/routes/about/+page.svelte",
+        "src/routes/api-docs/+page.svelte",
+        "src/routes/careers/+page.svelte",
+        "src/routes/contact/+page.svelte",
+        "src/routes/faq/+page.svelte",
+        "src/routes/jobs/+page.svelte",
+        "src/routes/privacy/+page.svelte",
+        "src/routes/roadmap/+page.svelte",
+        "src/routes/watch-this/+page.svelte"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /about",
+          "GET /api-docs",
+          "GET /careers",
+          "GET /contact",
+          "GET /faq",
+          "GET /jobs",
+          "GET /privacy",
+          "GET /roadmap",
+          "GET /watch-this"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@fullhuman/postcss-purgecss",
+          "@mapbox/node-pre-gyp",
+          "@neoconfetti/svelte",
+          "@playwright/test",
+          "@poppanator/sveltekit-svg",
+          "@sveltejs/adapter-auto",
+          "@sveltejs/adapter-static",
+          "@sveltejs/adapter-vercel",
+          "@sveltejs/kit",
+          "@sveltejs/package",
+          "@sveltejs/vite-plugin-svelte",
+          "@sveltejs/vite-plugin-svelte-inspector",
+          "@tailwindcss/typography",
+          "@testing-library/jest-dom",
+          "@testing-library/svelte",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vercel/analytics",
+          "@vercel/kv",
+          "ai",
+          "autoprefixer",
+          "colord",
+          "cssnano",
+          "dequal",
+          "devalue",
+          "esbuild",
+          "eslint",
+          "eslint-config-prettier",
+          "eslint-plugin-svelte",
+          "eventsource-parser",
+          "graceful-fs",
+          "jsdom",
+          "magic-string",
+          "mkdirp",
+          "openai",
+          "postcss",
+          "postcss-load-config",
+          "postcss-nested",
+          "postcss-preset-env",
+          "prettier",
+          "prettier-plugin-svelte",
+          "purgecss",
+          "rimraf",
+          "sass",
+          "svelte",
+          "svelte-add",
+          "svelte-check",
+          "svelte-file-dropzone",
+          "svelte-i18n",
+          "svelte-preprocess",
+          "svelte-subscribe",
+          "svelte-transitions",
+          "tailwindcss",
+          "typescript",
+          "vite",
+          "vite-imagetools",
+          "vitest",
+          "web-vitals"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "src/benchmark.test.js",
+        "src/routes/+layout.server.js",
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getRecommendation/_temp_server.cjs",
+        "src/routes/api/getRecommendation/+server.ts",
+        "src/routes/api/getRecommendation/server.test.ts",
+        "src/routes/api/jobs/generate/+server.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "KV_REST_API_TOKEN",
+          "MOCK_KV_TOKEN",
+          "MOCK_OPENAI_KEY",
+          "OMDB_API_KEY",
+          "OPENAI_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "GTM_ID",
+          "KV_REST_API_TOKEN",
+          "KV_REST_API_URL",
+          "MOCK_KV_TOKEN",
+          "MOCK_KV_URL",
+          "MOCK_OPENAI_KEY",
+          "OMDB_API_KEY",
+          "OPENAI_API_KEY",
+          "VERCEL_ANALYTICS_ID"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "static/robots.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "playwright.config.js",
+        "run_test.cjs",
+        "run-test.cjs",
+        "src/benchmark.test.js",
+        "src/lib/SecretModal.spec.ts",
+        "src/lib/vitals.spec.js",
+        "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+        "src/routes/api/getMediaDetails/kv.test.ts",
+        "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+        "src/routes/api/getMediaDetails/server.test.ts",
+        "src/routes/api/getMediaDetailsBatch/server.test.ts",
+        "src/routes/api/getRecommendation/server.test.ts",
+        "src/routes/api/health/health.test.ts",
+        "src/routes/sitemap.xml/sitemap.spec.ts",
+        "src/routes/watch-this/page.test.ts",
+        "tests/performance.spec.js",
+        "tests/test.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@playwright/test",
+          "@testing-library/jest-dom",
+          "@testing-library/svelte",
+          "vitest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "run_test.cjs",
+            "run-test.cjs"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "src/benchmark.test.js",
+            "src/routes/api/getMediaDetails/+server.ts",
+            "src/routes/api/getMediaDetailsBatch/+server.ts",
+            "src/routes/api/getRecommendation/_temp_server.cjs",
+            "src/routes/api/getRecommendation/+server.ts",
+            "src/routes/api/getRecommendation/server.test.ts",
+            "src/routes/api/jobs/generate/+server.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "playwright.config.js",
+          "run_test.cjs",
+          "run-test.cjs",
+          "src/benchmark.test.js",
+          "src/lib/SecretModal.spec.ts",
+          "src/lib/vitals.spec.js",
+          "src/routes/api/getMediaDetails/getMediaDetails.test.ts",
+          "src/routes/api/getMediaDetails/kv.test.ts",
+          "src/routes/api/getMediaDetails/kvWriteFailure.test.ts",
+          "src/routes/api/getMediaDetails/server.test.ts",
+          "src/routes/api/getMediaDetailsBatch/server.test.ts",
+          "src/routes/api/getRecommendation/server.test.ts",
+          "src/routes/api/health/health.test.ts",
+          "src/routes/sitemap.xml/sitemap.spec.ts",
+          "src/routes/watch-this/page.test.ts",
+          "tests/performance.spec.js",
+          "tests/test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "static/llms-full.txt",
+          "static/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "run_test.cjs",
+        "run-test.cjs"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "src/benchmark.test.js",
+        "src/routes/api/getMediaDetails/+server.ts",
+        "src/routes/api/getMediaDetailsBatch/+server.ts",
+        "src/routes/api/getRecommendation/_temp_server.cjs",
+        "src/routes/api/getRecommendation/+server.ts",
+        "src/routes/api/getRecommendation/server.test.ts",
+        "src/routes/api/jobs/generate/+server.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": true
+    },
+    "missing_evidence": [
+      "CI workflows not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation.",
+      "Local LLMs files were included as context evidence, not treated as code behavior proof."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:12.142Z"
+  }
+}

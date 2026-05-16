@@ -1,0 +1,1948 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__ph3ar__js_mongo_app_boilerplate",
+    "name": "ph3ar__js_mongo_app_boilerplate",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__js_mongo_app_boilerplate",
+    "remote_url": "git@github.com:ph3ar/js_mongo_app_boilerplate.git",
+    "description": "This is the place for your application front-end files.",
+    "primary_language": "CSS",
+    "languages": [
+      "CSS",
+      "JSON",
+      "JavaScript",
+      "Markdown",
+      "SCSS",
+      "YAML",
+      "Dockerfile"
+    ],
+    "frameworks": [
+      "Express",
+      "Mongoose"
+    ],
+    "package_manager": "npm",
+    "databases": [
+      "mongodb"
+    ],
+    "deployment": [
+      "docker"
+    ],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__ph3ar__js_mongo_app_boilerplate.scan.json",
+    "analyzed_at": "2026-05-16T16:44:31.084Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "config/passport.js",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "email",
+          "oauth",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".Jules/bolt.md",
+            "config/passport.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app.js",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "oauth",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "passport",
+          "passport-facebook",
+          "passport-github2",
+          "passport-google-oauth",
+          "passport-instagram",
+          "passport-linkedin-oauth2",
+          "passport-local",
+          "passport-oauth",
+          "passport-oauth2-refresh",
+          "passport-openid",
+          "passport-snapchat",
+          "passport-twitch-new",
+          "passport-twitter"
+        ],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": [
+          "SESSION_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [
+          "email",
+          "oauth"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "oauth"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package-lock.json",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [
+          "email",
+          "oauth"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@fortawesome/fontawesome-free",
+          "@ladjs/bootstrap-social",
+          "@octokit/rest",
+          "@sendgrid/mail",
+          "axios",
+          "bcrypt",
+          "body-parser",
+          "bootstrap",
+          "chai",
+          "chalk",
+          "chart.js",
+          "cheerio",
+          "clockwork",
+          "compression",
+          "connect-mongo",
+          "dotenv",
+          "errorhandler",
+          "eslint",
+          "eslint-config-airbnb-base",
+          "eslint-plugin-chai-friendly",
+          "eslint-plugin-import",
+          "express",
+          "express-flash",
+          "express-handlebars",
+          "express-session",
+          "express-status-monitor",
+          "fbgraph",
+          "googleapis",
+          "instagram-node",
+          "jquery",
+          "lastfm",
+          "lob",
+          "lodash",
+          "lusca",
+          "mailchecker",
+          "mocha",
+          "moment",
+          "mongoose",
+          "morgan",
+          "multer",
+          "nock",
+          "node-quickbooks",
+          "nodemailer",
+          "nyc",
+          "passport",
+          "passport-facebook",
+          "passport-github2",
+          "passport-google-oauth",
+          "passport-instagram",
+          "passport-linkedin-oauth2",
+          "passport-local",
+          "passport-oauth",
+          "passport-oauth2-refresh",
+          "passport-openid",
+          "passport-snapchat",
+          "passport-twitch-new",
+          "passport-twitter",
+          "paypal-rest-sdk",
+          "popper.js",
+          "pug",
+          "sass",
+          "sass-middleware",
+          "sinon",
+          "stripe",
+          "supertest",
+          "telnet-client",
+          "tumblr.js",
+          "twilio",
+          "twit",
+          "validator"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "docker-compose.yml",
+        "Dockerfile"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "user file contents"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "multer"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "controllers/contact.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.google",
+      "name": "Google Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Google integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app.js",
+        "config/passport.js",
+        "controllers/api.js",
+        "package-lock.json",
+        "package.json",
+        "public/css/themes/flatly/_flatly.scss",
+        "public/css/themes/modern/_variables.scss"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Google configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Google API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Google configuration or SDK inputs"
+        ],
+        "writes": [
+          "Google API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Google"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "googleapis",
+          "passport-google-oauth"
+        ],
+        "internal": [],
+        "external_services": [
+          "Google"
+        ],
+        "env_vars": [
+          "GOOGLE_ID",
+          "GOOGLE_MAP_API_KEY",
+          "GOOGLE_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".Jules/bolt.md",
+            "config/passport.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "email",
+          "IP address",
+          "oauth",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "payments.stripe",
+      "name": "Stripe Integration",
+      "type": "payments",
+      "summary": "Repository has source-backed indicators for a Stripe integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app.js",
+        "controllers/api.js",
+        "package.json",
+        "prod-checklist.md",
+        "public/css/main.css",
+        "test/app.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Stripe configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Stripe API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Stripe configuration or SDK inputs"
+        ],
+        "writes": [
+          "Stripe API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "stripe"
+        ],
+        "internal": [],
+        "external_services": [
+          "Stripe"
+        ],
+        "env_vars": [
+          "STRIPE_PKEY",
+          "STRIPE_SKEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [
+          "email",
+          "oauth"
+        ],
+        "external_data_flows": [
+          "Google",
+          "Stripe"
+        ],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Google",
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app.js",
+        "config/passport.js",
+        "controllers/api.js",
+        "controllers/contact.js",
+        "controllers/user.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "ALPHA_VANTAGE_KEY",
+          "CLOCKWORK_KEY",
+          "FACEBOOK_SECRET",
+          "FOURSQUARE_SECRET",
+          "GITHUB_SECRET",
+          "GOOGLE_MAP_API_KEY",
+          "GOOGLE_SECRET",
+          "INSTAGRAM_SECRET",
+          "LASTFM_KEY",
+          "LASTFM_SECRET",
+          "LINKEDIN_SECRET",
+          "LOB_KEY",
+          "NYT_KEY",
+          "PAYPAL_SECRET",
+          "PINTEREST_SECRET",
+          "QUICKBOOKS_CLIENT_SECRET",
+          "SENDGRID_PASSWORD",
+          "SESSION_SECRET",
+          "SNAPCHAT_SECRET",
+          "STEAM_KEY",
+          "STRIPE_PKEY",
+          "STRIPE_SKEY",
+          "TUMBLR_KEY",
+          "TUMBLR_SECRET",
+          "TWILIO_TOKEN",
+          "TWITCH_CLIENT_SECRET",
+          "TWITTER_KEY",
+          "TWITTER_SECRET"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "auth framework dependency",
+          "auth/session environment variables"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ALPHA_VANTAGE_KEY",
+          "BASE_URL",
+          "CLOCKWORK_KEY",
+          "FACEBOOK_ID",
+          "FACEBOOK_SECRET",
+          "FOURSQUARE_ID",
+          "FOURSQUARE_REDIRECT_URL",
+          "FOURSQUARE_SECRET",
+          "GITHUB_ID",
+          "GITHUB_SECRET",
+          "GOOGLE_ID",
+          "GOOGLE_MAP_API_KEY",
+          "GOOGLE_SECRET",
+          "HERE_APP_CODE",
+          "HERE_APP_ID",
+          "INSTAGRAM_ID",
+          "INSTAGRAM_SECRET",
+          "LASTFM_KEY",
+          "LASTFM_SECRET",
+          "LINKEDIN_ID",
+          "LINKEDIN_SECRET",
+          "LOB_KEY",
+          "MONGODB_URI",
+          "NODE_ENV",
+          "NYT_KEY",
+          "OPENSHIFT_NODEJS_IP",
+          "OPENSHIFT_NODEJS_PORT",
+          "PAYPAL_CANCEL_URL",
+          "PAYPAL_ID",
+          "PAYPAL_RETURN_URL",
+          "PAYPAL_SECRET",
+          "PINTEREST_ID",
+          "PINTEREST_REDIRECT_URL",
+          "PINTEREST_SECRET",
+          "PORT",
+          "QUICKBOOKS_CLIENT_ID",
+          "QUICKBOOKS_CLIENT_SECRET",
+          "SENDGRID_PASSWORD",
+          "SENDGRID_USER",
+          "SESSION_SECRET",
+          "SNAPCHAT_ID",
+          "SNAPCHAT_SECRET",
+          "STEAM_KEY",
+          "STRIPE_PKEY",
+          "STRIPE_SKEY",
+          "TUMBLR_KEY",
+          "TUMBLR_SECRET",
+          "TWILIO_SID",
+          "TWILIO_TOKEN",
+          "TWITCH_CLIENT_ID",
+          "TWITCH_CLIENT_SECRET",
+          "TWITTER_KEY",
+          "TWITTER_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".Jules/bolt.md",
+            "config/passport.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app.js",
+            "config/passport.js",
+            "controllers/api.js",
+            "controllers/contact.js",
+            "controllers/user.js"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "test_injection.js",
+        "test_passport.js",
+        "test/app.js",
+        "test/models.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "mongodb"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "test_injection.js",
+          "test_passport.js",
+          "test/app.js",
+          "test/models.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "client/README.md",
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        ".Jules/bolt.md",
+        "config/passport.js",
+        "controllers/user.js"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "app.js",
+        "config/passport.js",
+        "controllers/api.js",
+        "controllers/contact.js",
+        "controllers/user.js"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "CI workflows not detected",
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:31.106Z"
+  }
+}

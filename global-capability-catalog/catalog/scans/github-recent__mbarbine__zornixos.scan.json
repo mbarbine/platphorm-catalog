@@ -1,0 +1,1585 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__zornixos",
+    "name": "mbarbine__zornixOS",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__zornixOS",
+    "relative_path": "github-recent/mbarbine__zornixOS",
+    "remote_url": "git@github.com:mbarbine/zornixOS.git",
+    "default_branch": "master",
+    "current_commit": "c77abc62ab075ef9d9db1c8b0aa16c7ce67fc69f"
+  },
+  "languages": [
+    {
+      "language": "Shell",
+      "files": 147,
+      "bytes": 171639
+    },
+    {
+      "language": "Python",
+      "files": 6,
+      "bytes": 100637
+    },
+    {
+      "language": "Java",
+      "files": 1,
+      "bytes": 35262
+    },
+    {
+      "language": "YAML",
+      "files": 3,
+      "bytes": 3505
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 3167
+    },
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 1397
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      },
+      {
+        "path": "tools/lib/gcc/x86_64-lfs-linux-gnu/8.2.0/include-fixed/README"
+      },
+      {
+        "path": "tools/lib/gcc/x86_64-lfs-linux-gnu/8.2.0/install-tools/include/README"
+      },
+      {
+        "path": "tools/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed/README"
+      },
+      {
+        "path": "tools/lib/gcc/x86_64-pc-linux-gnu/8.2.0/install-tools/include/README"
+      },
+      {
+        "path": "tools/lib/perl5/5.28.0/Encode/README.e2x"
+      },
+      {
+        "path": "tools/lib/perl5/5.28.0/Unicode/README"
+      },
+      {
+        "path": "tools/lib/perl5/5.28.0/unicore/README.perl"
+      },
+      {
+        "path": "tools/lib/perl5/5.28.0/unicore/ReadMe.txt"
+      },
+      {
+        "path": "tools/lib64/gcc/x86_64-lfs-linux-gnu/8.2.0/include-fixed/README"
+      },
+      {
+        "path": "tools/lib64/gcc/x86_64-lfs-linux-gnu/8.2.0/install-tools/include/README"
+      },
+      {
+        "path": "tools/lib64/gcc/x86_64-pc-linux-gnu/8.2.0/include-fixed/README"
+      },
+      {
+        "path": "tools/lib64/gcc/x86_64-pc-linux-gnu/8.2.0/install-tools/include/README"
+      },
+      {
+        "path": "tools/lib64/perl5/5.28.0/Encode/README.e2x"
+      },
+      {
+        "path": "tools/lib64/perl5/5.28.0/Unicode/README"
+      },
+      {
+        "path": "tools/lib64/perl5/5.28.0/unicore/README.perl"
+      },
+      {
+        "path": "tools/lib64/perl5/5.28.0/unicore/ReadMe.txt"
+      },
+      {
+        "path": "tools/share/bison/README"
+      },
+      {
+        "path": "tools/share/dejagnu/baseboards/README"
+      },
+      {
+        "path": "tools/share/dejagnu/config/README"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "todo",
+      "source_path": "book/chapter-7/7.5-configure-network.sh",
+      "line": 6,
+      "text": "# TODO make params configurable"
+    },
+    {
+      "kind": "todo",
+      "source_path": "book/chapter-7/7.5-configure-network.sh",
+      "line": 28,
+      "text": "# TODO values need to be changed for specific uses or requirements"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/Unicode/Collate/allkeys.txt",
+      "line": 966,
+      "text": "1806  ; [*0211.0020.0002] # MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 465,
+      "text": "1806; MONGOLIAN TODO SOFT HYPHEN; U; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 504,
+      "text": "1843; MONGOLIAN TODO LONG VOWEL SIGN; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 505,
+      "text": "1844; MONGOLIAN TODO E; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 506,
+      "text": "1845; MONGOLIAN TODO I; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 507,
+      "text": "1846; MONGOLIAN TODO O; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 508,
+      "text": "1847; MONGOLIAN TODO U; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 509,
+      "text": "1848; MONGOLIAN TODO OE; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 510,
+      "text": "1849; MONGOLIAN TODO UE; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 511,
+      "text": "184A; MONGOLIAN TODO ANG; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 512,
+      "text": "184B; MONGOLIAN TODO BA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 513,
+      "text": "184C; MONGOLIAN TODO PA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 514,
+      "text": "184D; MONGOLIAN TODO QA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 515,
+      "text": "184E; MONGOLIAN TODO GA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 516,
+      "text": "184F; MONGOLIAN TODO MA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 517,
+      "text": "1850; MONGOLIAN TODO TA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 518,
+      "text": "1851; MONGOLIAN TODO DA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 519,
+      "text": "1852; MONGOLIAN TODO CHA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 520,
+      "text": "1853; MONGOLIAN TODO JA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 521,
+      "text": "1854; MONGOLIAN TODO TSA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 522,
+      "text": "1855; MONGOLIAN TODO YA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 523,
+      "text": "1856; MONGOLIAN TODO WA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 524,
+      "text": "1857; MONGOLIAN TODO KA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 525,
+      "text": "1858; MONGOLIAN TODO GAA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 526,
+      "text": "1859; MONGOLIAN TODO HAA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 527,
+      "text": "185A; MONGOLIAN TODO JIA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 528,
+      "text": "185B; MONGOLIAN TODO NIA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 529,
+      "text": "185C; MONGOLIAN TODO DZA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 581,
+      "text": "1898; MONGOLIAN TODO ALI GALI TA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 582,
+      "text": "1899; MONGOLIAN TODO ALI GALI ZHA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/auxiliary/SentenceBreakProperty.txt",
+      "line": 2044,
+      "text": "1843          ; OLetter # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/auxiliary/SentenceBreakProperty.txt",
+      "line": 2045,
+      "text": "1844..1877    ; OLetter # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/auxiliary/WordBreakProperty.txt",
+      "line": 785,
+      "text": "1843          ; ALetter # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/auxiliary/WordBreakProperty.txt",
+      "line": 786,
+      "text": "1844..1877    ; ALetter # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 638,
+      "text": "1843          ; Alphabetic # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 639,
+      "text": "1844..1877    ; Alphabetic # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 2908,
+      "text": "1843          ; Case_Ignorable # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 12,
+      "text": "# Derived Property: FC_NFKC_Closure  (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2144,
+      "text": "# Derived Property: Expands_On_NFD (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2377,
+      "text": "# Derived Property: Expands_On_NFC (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2424,
+      "text": "# Derived Property: Expands_On_NFKD (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2739,
+      "text": "# Derived Property: Expands_On_NFKC (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 738,
+      "text": "1806;N           # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 744,
+      "text": "1843;N           # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 745,
+      "text": "1844..1877;N     # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 371,
+      "text": "1843          ; L # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 372,
+      "text": "1844..1877    ; L # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 1351,
+      "text": "1806          ; ON # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 561,
+      "text": "1806          ; 0 # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 567,
+      "text": "1843          ; 0 # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 568,
+      "text": "1844..1877    ; 0 # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 602,
+      "text": "1806          ; N # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 608,
+      "text": "1843          ; N # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 609,
+      "text": "1844..1877    ; N # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 1985,
+      "text": "1843          ; Lm #       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 2206,
+      "text": "1844..1877    ; Lo #  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 3216,
+      "text": "1806          ; Pd #       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DJoinType.txt",
+      "line": 77,
+      "text": "1843          ; D # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DJoinType.txt",
+      "line": 78,
+      "text": "1844..1877    ; D # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 749,
+      "text": "1843          ; AL # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 750,
+      "text": "1844..1877    ; AL # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 2144,
+      "text": "1806          ; BB # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Index.txt",
+      "line": 2541,
+      "text": "HYPHEN, MONGOLIAN TODO SOFT\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Index.txt",
+      "line": 3478,
+      "text": "MONGOLIAN TODO SOFT HYPHEN\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Index.txt",
+      "line": 4855,
+      "text": "SOFT HYPHEN, MONGOLIAN TODO\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Index.txt",
+      "line": 5500,
+      "text": "TODO SOFT HYPHEN, MONGOLIAN\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 705,
+      "text": "1806;BB           # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 713,
+      "text": "1843;AL           # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 714,
+      "text": "1844..1877;AL     # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 978,
+      "text": "@\t\tDeprecated letter"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 981,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 3872,
+      "text": "@\t\tDeprecated letter"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 3875,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 6685,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 6690,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropertyAliases.txt",
+      "line": 147,
+      "text": "Dep                      ; Deprecated"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 47,
+      "text": "1806          ; Dash # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 72,
+      "text": "1806          ; Hyphen # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1005,
+      "text": "1843          ; Extender # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1174,
+      "text": "0149          ; Deprecated # L&       LATIN SMALL LETTER N PRECEDED BY APOSTROPHE"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1175,
+      "text": "0673          ; Deprecated # Lo       ARABIC LETTER ALEF WITH WAVY HAMZA BELOW"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1176,
+      "text": "0F77          ; Deprecated # Mn       TIBETAN VOWEL SIGN VOCALIC RR"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1177,
+      "text": "0F79          ; Deprecated # Mn       TIBETAN VOWEL SIGN VOCALIC LL"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1178,
+      "text": "17A3..17A4    ; Deprecated # Lo   [2] KHMER INDEPENDENT VOWEL QAQ..KHMER INDEPENDENT VOWEL QAA"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1179,
+      "text": "206A..206F    ; Deprecated # Cf   [6] INHIBIT SYMMETRIC SWAPPING..NOMINAL DIGIT SHAPES"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1180,
+      "text": "2329          ; Deprecated # Ps       LEFT-POINTING ANGLE BRACKET"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1181,
+      "text": "232A          ; Deprecated # Pe       RIGHT-POINTING ANGLE BRACKET"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1182,
+      "text": "E0001         ; Deprecated # Cf       LANGUAGE TAG"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/PropValueAliases.txt",
+      "line": 570,
+      "text": "# Deprecated (Dep)"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1449,
+      "text": "1806          ; Mongolian # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1455,
+      "text": "1843          ; Mongolian # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1456,
+      "text": "1844..1877    ; Mongolian # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 156,
+      "text": "1844 180B; second form; medial # MONGOLIAN LETTER TODO E"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 157,
+      "text": "1845 180B; second form; medial # MONGOLIAN LETTER TODO I"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 158,
+      "text": "1846 180B; second form; medial # MONGOLIAN LETTER TODO O"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 159,
+      "text": "1847 180B; second form; isolate medial final # MONGOLIAN LETTER TODO U"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 160,
+      "text": "1847 180C; third form; medial # MONGOLIAN LETTER TODO U"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 161,
+      "text": "1848 180B; second form; medial # MONGOLIAN LETTER TODO OE"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 162,
+      "text": "1849 180B; second form; isolate medial # MONGOLIAN LETTER TODO UE"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 163,
+      "text": "184D 180B; second form; initial medial # MONGOLIAN LETTER TODO QA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 164,
+      "text": "184E 180B; second form; medial # MONGOLIAN LETTER TODO GA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 666,
+      "text": "1806           ; R  # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 672,
+      "text": "1843           ; R  # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 673,
+      "text": "1844..1877     ; R  # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/Unicode/Collate/allkeys.txt",
+      "line": 966,
+      "text": "1806  ; [*0211.0020.0002] # MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 465,
+      "text": "1806; MONGOLIAN TODO SOFT HYPHEN; U; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 504,
+      "text": "1843; MONGOLIAN TODO LONG VOWEL SIGN; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 505,
+      "text": "1844; MONGOLIAN TODO E; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 506,
+      "text": "1845; MONGOLIAN TODO I; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 507,
+      "text": "1846; MONGOLIAN TODO O; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 508,
+      "text": "1847; MONGOLIAN TODO U; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 509,
+      "text": "1848; MONGOLIAN TODO OE; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 510,
+      "text": "1849; MONGOLIAN TODO UE; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 511,
+      "text": "184A; MONGOLIAN TODO ANG; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 512,
+      "text": "184B; MONGOLIAN TODO BA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 513,
+      "text": "184C; MONGOLIAN TODO PA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 514,
+      "text": "184D; MONGOLIAN TODO QA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 515,
+      "text": "184E; MONGOLIAN TODO GA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 516,
+      "text": "184F; MONGOLIAN TODO MA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 517,
+      "text": "1850; MONGOLIAN TODO TA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 518,
+      "text": "1851; MONGOLIAN TODO DA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 519,
+      "text": "1852; MONGOLIAN TODO CHA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 520,
+      "text": "1853; MONGOLIAN TODO JA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 521,
+      "text": "1854; MONGOLIAN TODO TSA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 522,
+      "text": "1855; MONGOLIAN TODO YA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 523,
+      "text": "1856; MONGOLIAN TODO WA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 524,
+      "text": "1857; MONGOLIAN TODO KA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 525,
+      "text": "1858; MONGOLIAN TODO GAA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 526,
+      "text": "1859; MONGOLIAN TODO HAA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 527,
+      "text": "185A; MONGOLIAN TODO JIA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 528,
+      "text": "185B; MONGOLIAN TODO NIA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 529,
+      "text": "185C; MONGOLIAN TODO DZA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 581,
+      "text": "1898; MONGOLIAN TODO ALI GALI TA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/ArabicShaping.txt",
+      "line": 582,
+      "text": "1899; MONGOLIAN TODO ALI GALI ZHA; D; No_Joining_Group"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/auxiliary/SentenceBreakProperty.txt",
+      "line": 2044,
+      "text": "1843          ; OLetter # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/auxiliary/SentenceBreakProperty.txt",
+      "line": 2045,
+      "text": "1844..1877    ; OLetter # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/auxiliary/WordBreakProperty.txt",
+      "line": 785,
+      "text": "1843          ; ALetter # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/auxiliary/WordBreakProperty.txt",
+      "line": 786,
+      "text": "1844..1877    ; ALetter # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 638,
+      "text": "1843          ; Alphabetic # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 639,
+      "text": "1844..1877    ; Alphabetic # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DCoreProperties.txt",
+      "line": 2908,
+      "text": "1843          ; Case_Ignorable # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 12,
+      "text": "# Derived Property: FC_NFKC_Closure  (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2144,
+      "text": "# Derived Property: Expands_On_NFD (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2377,
+      "text": "# Derived Property: Expands_On_NFC (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2424,
+      "text": "# Derived Property: Expands_On_NFKD (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/DNormalizationProps.txt",
+      "line": 2739,
+      "text": "# Derived Property: Expands_On_NFKC (DEPRECATED as of Unicode 6.0.0)"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 738,
+      "text": "1806;N           # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 744,
+      "text": "1843;N           # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/EastAsianWidth.txt",
+      "line": 745,
+      "text": "1844..1877;N     # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 371,
+      "text": "1843          ; L # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 372,
+      "text": "1844..1877    ; L # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+      "line": 1351,
+      "text": "1806          ; ON # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 561,
+      "text": "1806          ; 0 # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 567,
+      "text": "1843          ; 0 # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+      "line": 568,
+      "text": "1844..1877    ; 0 # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 602,
+      "text": "1806          ; N # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 608,
+      "text": "1843          ; N # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+      "line": 609,
+      "text": "1844..1877    ; N # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 1985,
+      "text": "1843          ; Lm #       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 2206,
+      "text": "1844..1877    ; Lo #  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+      "line": 3216,
+      "text": "1806          ; Pd #       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DJoinType.txt",
+      "line": 77,
+      "text": "1843          ; D # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DJoinType.txt",
+      "line": 78,
+      "text": "1844..1877    ; D # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 749,
+      "text": "1843          ; AL # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 750,
+      "text": "1844..1877    ; AL # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+      "line": 2144,
+      "text": "1806          ; BB # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Index.txt",
+      "line": 2541,
+      "text": "HYPHEN, MONGOLIAN TODO SOFT\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Index.txt",
+      "line": 3478,
+      "text": "MONGOLIAN TODO SOFT HYPHEN\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Index.txt",
+      "line": 4855,
+      "text": "SOFT HYPHEN, MONGOLIAN TODO\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Index.txt",
+      "line": 5500,
+      "text": "TODO SOFT HYPHEN, MONGOLIAN\t1806"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 705,
+      "text": "1806;BB           # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 713,
+      "text": "1843;AL           # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/LineBreak.txt",
+      "line": 714,
+      "text": "1844..1877;AL     # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 978,
+      "text": "@\t\tDeprecated letter"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 981,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 3872,
+      "text": "@\t\tDeprecated letter"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 3875,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 6685,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/NamesList.txt",
+      "line": 6690,
+      "text": "* this character is deprecated and its use is strongly discouraged"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropertyAliases.txt",
+      "line": 147,
+      "text": "Dep                      ; Deprecated"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 47,
+      "text": "1806          ; Dash # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 72,
+      "text": "1806          ; Hyphen # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1005,
+      "text": "1843          ; Extender # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1174,
+      "text": "0149          ; Deprecated # L&       LATIN SMALL LETTER N PRECEDED BY APOSTROPHE"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1175,
+      "text": "0673          ; Deprecated # Lo       ARABIC LETTER ALEF WITH WAVY HAMZA BELOW"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1176,
+      "text": "0F77          ; Deprecated # Mn       TIBETAN VOWEL SIGN VOCALIC RR"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1177,
+      "text": "0F79          ; Deprecated # Mn       TIBETAN VOWEL SIGN VOCALIC LL"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1178,
+      "text": "17A3..17A4    ; Deprecated # Lo   [2] KHMER INDEPENDENT VOWEL QAQ..KHMER INDEPENDENT VOWEL QAA"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1179,
+      "text": "206A..206F    ; Deprecated # Cf   [6] INHIBIT SYMMETRIC SWAPPING..NOMINAL DIGIT SHAPES"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1180,
+      "text": "2329          ; Deprecated # Ps       LEFT-POINTING ANGLE BRACKET"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1181,
+      "text": "232A          ; Deprecated # Pe       RIGHT-POINTING ANGLE BRACKET"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropList.txt",
+      "line": 1182,
+      "text": "E0001         ; Deprecated # Cf       LANGUAGE TAG"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/PropValueAliases.txt",
+      "line": 570,
+      "text": "# Deprecated (Dep)"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1449,
+      "text": "1806          ; Mongolian # Pd       MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1455,
+      "text": "1843          ; Mongolian # Lm       MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/Scripts.txt",
+      "line": 1456,
+      "text": "1844..1877    ; Mongolian # Lo  [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 156,
+      "text": "1844 180B; second form; medial # MONGOLIAN LETTER TODO E"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 157,
+      "text": "1845 180B; second form; medial # MONGOLIAN LETTER TODO I"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 158,
+      "text": "1846 180B; second form; medial # MONGOLIAN LETTER TODO O"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 159,
+      "text": "1847 180B; second form; isolate medial final # MONGOLIAN LETTER TODO U"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 160,
+      "text": "1847 180C; third form; medial # MONGOLIAN LETTER TODO U"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 161,
+      "text": "1848 180B; second form; medial # MONGOLIAN LETTER TODO OE"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 162,
+      "text": "1849 180B; second form; isolate medial # MONGOLIAN LETTER TODO UE"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 163,
+      "text": "184D 180B; second form; initial medial # MONGOLIAN LETTER TODO QA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/StandardizedVariants.txt",
+      "line": 164,
+      "text": "184E 180B; second form; medial # MONGOLIAN LETTER TODO GA"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 666,
+      "text": "1806           ; R  # Pd         MONGOLIAN TODO SOFT HYPHEN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 672,
+      "text": "1843           ; R  # Lm         MONGOLIAN LETTER TODO LONG VOWEL SIGN"
+    },
+    {
+      "kind": "todo",
+      "source_path": "tools/lib64/perl5/5.28.0/unicore/VerticalOrientation.txt",
+      "line": 673,
+      "text": "1844..1877     ; R  # Lo    [52] MONGOLIAN LETTER TODO E..MONGOLIAN LETTER MANCHU ZHA"
+    },
+    {
+      "kind": "fixme",
+      "source_path": "tools/share/bison/lalr1.java",
+      "line": 948,
+      "text": "/* FIXME: This method of building the message is not compatible"
+    },
+    {
+      "kind": "fixme",
+      "source_path": "tools/share/gcc-8.2.0/python/libstdcxx/v6/printers.py",
+      "line": 29,
+      "text": "# FIXME: The handling of e.g. std::basic_string (at least on char)"
+    },
+    {
+      "kind": "fixme",
+      "source_path": "tools/share/gcc-8.2.0/python/libstdcxx/v6/printers.py",
+      "line": 661,
+      "text": "# FIXME: this is weird ... what to do?"
+    },
+    {
+      "kind": "fixme",
+      "source_path": "tools/share/gcc-8.2.0/python/libstdcxx/v6/printers.py",
+      "line": 1049,
+      "text": "# FIXME need to expand 'std::string' so that gdb.lookup_type works"
+    },
+    {
+      "kind": "fixme",
+      "source_path": "tools/share/gcc-8.2.0/python/libstdcxx/v6/printers.py",
+      "line": 1264,
+      "text": "# FIXME"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "book/chapter-6/6.60-make-findutils.sh"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "tools/lib/perl5/5.28.0/unicore/Blocks.txt",
+          "tools/lib/perl5/5.28.0/unicore/DAge.txt",
+          "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+          "tools/lib/perl5/5.28.0/unicore/Index.txt",
+          "tools/lib/perl5/5.28.0/unicore/LineBreak.txt",
+          "tools/lib/perl5/5.28.0/unicore/PropValueAliases.txt",
+          "tools/lib/perl5/5.28.0/unicore/Scripts.txt",
+          "tools/lib/perl5/5.28.0/unicore/VerticalOrientation.txt",
+          "tools/lib64/perl5/5.28.0/unicore/Blocks.txt",
+          "tools/lib64/perl5/5.28.0/unicore/DAge.txt",
+          "tools/lib64/perl5/5.28.0/unicore/EastAsianWidth.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "book/chapter-6/6.50-make-openssl.sh"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          "book/chapter-7/7.5-configure-network.sh"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "book/chapter-6/6.13-make-readline.sh",
+          "book/chapter-6/6.20-make-shadow.sh",
+          "book/chapter-6/6.22-make-bzip2.sh",
+          "book/chapter-6/6.55-make-e2fsprogs.sh",
+          "book/chapter-6/6.56-make-coreutils.sh",
+          "book/chapter-6/6.72-make-eudev.sh",
+          "book/chapter-6/6.77-make-vim.sh",
+          "Dockerfile",
+          "tools/lib/itcl4.1.1/itclConfig.sh",
+          "tools/lib/perl5/5.28.0/Unicode/Collate/allkeys.txt",
+          "tools/lib/perl5/5.28.0/unicore/auxiliary/GraphemeBreakProperty.txt",
+          "tools/lib/perl5/5.28.0/unicore/auxiliary/SentenceBreakProperty.txt",
+          "tools/lib/perl5/5.28.0/unicore/auxiliary/WordBreakProperty.txt",
+          "tools/lib/perl5/5.28.0/unicore/Blocks.txt",
+          "tools/lib/perl5/5.28.0/unicore/DAge.txt",
+          "tools/lib/perl5/5.28.0/unicore/DCoreProperties.txt",
+          "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "book/chapter-6/6.20-make-shadow.sh",
+          "Dockerfile"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "tools/lib/perl5/5.28.0/Unicode/Collate/allkeys.txt",
+          "tools/lib/perl5/5.28.0/unicore/auxiliary/LBTest.txt",
+          "tools/lib/perl5/5.28.0/unicore/EastAsianWidth.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DCombiningClass.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DEastAsianWidth.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DGeneralCategory.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DLineBreak.txt",
+          "tools/lib/perl5/5.28.0/unicore/extracted/DNumValues.txt",
+          "tools/lib/perl5/5.28.0/unicore/LineBreak.txt",
+          "tools/lib/perl5/5.28.0/unicore/NamedSequences.txt",
+          "tools/lib/perl5/5.28.0/unicore/NamesList.txt",
+          "tools/lib/perl5/5.28.0/unicore/PropList.txt",
+          "tools/lib/perl5/5.28.0/unicore/Scripts.txt",
+          "tools/lib/perl5/5.28.0/unicore/VerticalOrientation.txt",
+          "tools/lib64/perl5/5.28.0/Unicode/Collate/allkeys.txt",
+          "tools/lib64/perl5/5.28.0/unicore/auxiliary/LBTest.txt",
+          "tools/lib64/perl5/5.28.0/unicore/EastAsianWidth.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DBidiClass.txt",
+          "tools/lib64/perl5/5.28.0/unicore/extracted/DCombiningClass.txt"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "tools/share/bison/lalr1.java",
+          "tools/share/gcc-8.2.0/python/libstdcxx/v6/printers.py"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:30.672Z"
+}

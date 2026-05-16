@@ -1,0 +1,3290 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__scripts",
+    "name": "mbarbine__Scripts",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__Scripts",
+    "remote_url": "git@github.com:mbarbine/Scripts.git",
+    "description": "READ",
+    "primary_language": "JavaScript",
+    "languages": [
+      "JavaScript",
+      "PHP",
+      "Python",
+      "HTML",
+      "XML",
+      "CSS",
+      "Markdown",
+      "JSON",
+      "Shell",
+      "Ruby",
+      "YAML",
+      "Java",
+      "SCSS",
+      "SQL",
+      "Dockerfile",
+      "Go",
+      "C#"
+    ],
+    "frameworks": [
+      "Express"
+    ],
+    "package_manager": "npm",
+    "databases": [],
+    "deployment": [
+      "docker"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__scripts.scan.json",
+    "analyzed_at": "2026-05-16T16:44:26.156Z"
+  },
+  "capabilities": [
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env.example",
+        "svs-automation/svs-rails-app/.env.example"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ICAM_AUTH_METHOD",
+          "TWILIO_AUTH_TOKEN",
+          "USE_ICAM_AUTH",
+          "USE_SVS_WEB_SERVICE_SSL_AUTH"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+            "svs-automation/svs-rails-app/.env.example",
+            "svs-automation/svs-vis-mock/.env.example"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "authorization.access-control",
+      "name": "Access Control",
+      "type": "authorization",
+      "summary": "Source evidence indicates roles, permissions, admin boundaries, or access-control checks.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/iam-permissions.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/iam-permissions.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "user role or permission state"
+        ],
+        "outputs": [
+          "authorization decisions"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "user role or permission state"
+        ],
+        "writes": [
+          "authorization decisions"
+        ],
+        "sensitive_data": [
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+        "h4x/dagah-server/html/components/bootstrap/package.json",
+        "svs-automation/Auto-Pipeline/jmeter_ami/README.md",
+        "svs-automation/Auto-Pipeline/README.md",
+        "svs-automation/style-guide/README.md",
+        "svs-automation/style-guide/test/dummy/README.rdoc",
+        "svs-automation/svs-base-ami/cookbooks/mcafee/README.md",
+        "svs-automation/svs-base-ami/README.md",
+        "svs-automation/svs-common-utils/README.md",
+        "svs-automation/svs-pipeline/jmeter_ami/README.md",
+        "svs-automation/svs-pipeline/README.md",
+        "svs-automation/svs-rails-app/.env.example",
+        "svs-automation/svs-rails-app/.pipeline/cookbooks/status-verification-system/README.md",
+        "svs-automation/svs-rails-app/.pipeline/README.md",
+        "svs-automation/svs-rails-app/app/models/account_detail.rb",
+        "svs-automation/svs-rails-app/app/models/additional_verification.rb",
+        "svs-automation/svs-rails-app/app/models/address.rb",
+        "svs-automation/svs-rails-app/app/models/agency.rb",
+        "svs-automation/svs-rails-app/app/models/api_ref_data.rb",
+        "svs-automation/svs-rails-app/app/models/case_activity.rb",
+        "svs-automation/svs-rails-app/app/models/case_response.rb",
+        "svs-automation/svs-rails-app/app/models/case_summary.rb",
+        "svs-automation/svs-rails-app/app/models/case.rb",
+        "svs-automation/svs-rails-app/app/models/department.rb",
+        "svs-automation/svs-rails-app/app/models/eads_data.rb",
+        "svs-automation/svs-rails-app/app/models/eads_history.rb",
+        "svs-automation/svs-rails-app/app/models/employer_input.rb",
+        "svs-automation/svs-rails-app/app/models/employer.rb",
+        "svs-automation/svs-rails-app/app/models/ev3_response.rb",
+        "svs-automation/svs-rails-app/app/models/ev3_verification.rb"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [
+          "password"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+            "svs-automation/svs-rails-app/.env.example",
+            "svs-automation/svs-vis-mock/.env.example"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+        "docs/NS8_server_notes.txt",
+        "docs/Windows Servers.txt",
+        "h4x/dagah-ios/docs/appl_dev_portal_setup.md",
+        "h4x/dagah-ios/docs/customCerts.md",
+        "h4x/dagah-server/html/js/codemirror/package.json",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/autoscaling.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/enable-docker-bridge-network.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/faq.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/iam-permissions.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/spot-instances.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/autoscaling.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/enable-docker-bridge-network.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/faq.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/iam-permissions.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/spot-instances.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "svs-automation/svs-rails-app/.pipeline/cookbooks/status-verification-system/README.md",
+        "svs-automation/svs-rails-app/app/models/reference_data/case_status.rb",
+        "svs-automation/svs-rails-app/test/models/reference_data/case_status_test.rb"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "h4x/dagah-android/build.xml",
+        "h4x/dagah-modem-bridge/build.xml",
+        "h4x/dagah-server/html/components/bootstrap/package.json",
+        "h4x/dagah-server/html/components/flot/package.json",
+        "h4x/dagah-server/html/components/holderjs/package.json",
+        "h4x/dagah-server/html/components/metisMenu/package.json",
+        "h4x/dagah-server/html/components/morrisjs/package.json",
+        "h4x/dagah-server/html/js/codemirror/package.json",
+        "h4x/dagah-server/html/js/intro/example/bootstrap/v3/package.json",
+        "h4x/dagah-server/html/js/intro/package.json",
+        "SORT/OpsClick_UI/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Gmail"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Gmail"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "ansible/magento/magento2/repos/magento2/lib/web/mage/adminhtml/wysiwyg/tiny_mce/html5-schema.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/classes/html/Schema.js",
+        "h4x/dagah-server/dagah_db_schema.sql",
+        "h4x/dagah-server/html/components/bootstrap/package.json",
+        "h4x/dagah-server/html/components/flot/package.json",
+        "h4x/dagah-server/html/components/holderjs/package.json",
+        "h4x/dagah-server/html/components/metisMenu/package.json",
+        "h4x/dagah-server/html/components/morrisjs/package.json",
+        "h4x/dagah-server/html/js/codemirror/package.json",
+        "h4x/dagah-server/html/js/intro/example/bootstrap/v3/package.json",
+        "h4x/dagah-server/html/js/intro/package.json",
+        "h4x/dagah-server/html/upload/update_schema.sql",
+        "h4x/dagah-server/pipeline/packer/releases/dagahv2/scripts/dagah_db_schema.sql",
+        "h4x/dagah-server/pipeline/packer/scripts/dagah_db_schema.sql",
+        "h4x/dagah-server/updated_schema.sql",
+        "SORT/OpsClick_UI/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "password_hash",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "angular",
+          "angular-animate",
+          "angular-aria",
+          "angular-bootstrap",
+          "angular-cookies",
+          "angular-material",
+          "angular-material-data-table",
+          "angular-resource",
+          "angular-sanitize",
+          "angular-ui-router",
+          "apache-server-configs",
+          "babel",
+          "babel-core",
+          "babel-eslint",
+          "babelify",
+          "blint",
+          "body-parser",
+          "bootstrap",
+          "bower",
+          "browser-sync",
+          "browserify",
+          "browserify-shim",
+          "btoa",
+          "connect-history-api-fallback",
+          "cookie-parser",
+          "debug",
+          "del",
+          "envify",
+          "eslint",
+          "eslint-plugin-react",
+          "event-stream",
+          "exorcist",
+          "express",
+          "font-awesome",
+          "glob",
+          "grunt",
+          "grunt-autoprefixer",
+          "grunt-contrib-clean",
+          "grunt-contrib-coffee",
+          "grunt-contrib-compress",
+          "grunt-contrib-concat",
+          "grunt-contrib-connect",
+          "grunt-contrib-copy",
+          "grunt-contrib-csslint",
+          "grunt-contrib-cssmin",
+          "grunt-contrib-htmlmin",
+          "grunt-contrib-jade",
+          "grunt-contrib-jshint",
+          "grunt-contrib-less",
+          "grunt-contrib-qunit",
+          "grunt-contrib-uglify",
+          "grunt-contrib-watch",
+          "grunt-csscomb",
+          "grunt-exec",
+          "grunt-html",
+          "grunt-jekyll",
+          "grunt-jscs",
+          "grunt-mocha",
+          "grunt-saucelabs",
+          "grunt-sed",
+          "grunt-shell",
+          "gulp",
+          "gulp-autoprefixer",
+          "gulp-cache",
+          "gulp-clean-css",
+          "gulp-concat",
+          "gulp-csso",
+          "gulp-eslint",
+          "gulp-header",
+          "gulp-if",
+          "gulp-imagemin",
+          "gulp-jshint",
+          "gulp-less",
+          "gulp-load-plugins",
+          "gulp-minify-css",
+          "gulp-minify-html",
+          "gulp-mustache",
+          "gulp-ng-annotate",
+          "gulp-plumber",
+          "gulp-preprocess",
+          "gulp-rename",
+          "gulp-rev",
+          "gulp-rev-replace",
+          "gulp-sass",
+          "gulp-size",
+          "gulp-sourcemaps",
+          "gulp-todo",
+          "gulp-uglify",
+          "gulp-useref",
+          "gulp-util",
+          "http",
+          "http-proxy-middleware",
+          "jade",
+          "jquery",
+          "jshint",
+          "keymirror",
+          "load-grunt-tasks",
+          "lodash",
+          "markdown-it",
+          "matchdep",
+          "material-design-icons",
+          "minifyify",
+          "mkdirp",
+          "moment",
+          "morgan",
+          "ng-file-upload",
+          "node-fs-extra",
+          "node-minify",
+          "node-static",
+          "npm-shrinkwrap",
+          "phantomjs-prebuilt",
+          "rollup",
+          "rollup-plugin-buble",
+          "rollup-watch",
+          "serve-favicon",
+          "time-grunt",
+          "vinyl-buffer",
+          "vinyl-source-stream",
+          "watchify"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "docker/builders/Dockerfile",
+        "docker/builders/Dockerfile.Truestats",
+        "docker/compose/docker-compose.yml",
+        "docker/Dockerfiles/Dockerfile.all",
+        "docker/Dockerfiles/Dockerfile.base",
+        "docker/Dockerfiles/Dockerfile.debug",
+        "docker/Dockerfiles/Dockerfile.old",
+        "docker/Dockerfiles/Dockerfile.Staylive",
+        "docker/Dockerfiles/Dockerfile.Truestats",
+        "docker/Dockerfiles/Dockerfile.tsdev",
+        "docker/Dockerfiles/Dockerfile.www",
+        "docker/imagers/Dockerfile.base",
+        "docker/imagers/Dockerfile.old",
+        "docker/imagers/Dockerfile.Staylive",
+        "docker/imagers/Dockerfile.Truestats",
+        "docker/imagers/Dockerfile.www",
+        "docker/scripts/cleanup/Dockerfile",
+        "h4x/dagah-server/html/js/codemirror/mode/dockerfile/dockerfile.js",
+        "python/Dockerfile",
+        "SORT/OpsClick_BE_Ansible/docker-compose.yml",
+        "SORT/OpsClick_BE_Ansible/Dockerfile",
+        "SORT/OpsClick_BE_Pricing/docker-compose.yml",
+        "SORT/OpsClick_BE_Pricing/Dockerfile",
+        "SORT/OpsClick_website/docker-compose.yml",
+        "SORT/OpsClick_website/Dockerfile"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "document.processing",
+      "name": "Document Processing",
+      "type": "document-processing",
+      "summary": "Source evidence indicates PDF, DOCX, document conversion, extraction, or rendering behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "svs-automation/svs-rails-app/app/models/list_bc_document_data.rb",
+        "svs-automation/svs-vis-mock/app/models/list_bc_document_datum.rb",
+        "svs-automation/svs-vis-mock/test/models/list_bc_document_datum_test.rb"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "document files or document metadata"
+        ],
+        "outputs": [
+          "processed document outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "document files or document metadata"
+        ],
+        "writes": [
+          "processed document outputs"
+        ],
+        "sensitive_data": [
+          "document contents"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "email.gmail",
+      "name": "Gmail Integration",
+      "type": "email",
+      "summary": "Repository has source-backed indicators for a Gmail integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "bash/kumar_asshole.rb",
+        "h4x/dagah-server/html/components/bootstrap/package.json",
+        "h4x/dagah-server/html/components/flot/package.json",
+        "h4x/dagah-server/html/components/holderjs/package.json",
+        "h4x/dagah-server/html/components/metisMenu/package.json",
+        "h4x/dagah-server/html/components/morrisjs/package.json",
+        "nodejs/kumar_asshole.js",
+        "python3/kumar_asshole.py"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Gmail configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Gmail API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Gmail configuration or SDK inputs"
+        ],
+        "writes": [
+          "Gmail API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "password_hash",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Gmail"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Gmail"
+        ],
+        "env_vars": [
+          "GMAIL_PASSWORD",
+          "GMAIL_USERNAME"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+            "svs-automation/svs-rails-app/.env.example",
+            "svs-automation/svs-vis-mock/.env.example"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "h4x/dagah-server/upload/readme.md",
+        "SORT/OpsClick_UI/package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "user file contents"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+        "aws/cloudformation/README.md",
+        "h4x/dagah-server/pipeline/tests/performanceTests/readme.md",
+        "h4x/dagah-server/pipeline/tests/platformTests/readme.md",
+        "helm/HHLP-DEV/HelmCharts/terraform/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/autoscaling.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/enable-docker-bridge-network.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/faq.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/iam-permissions.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/spot-instances.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/examples/irsa/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/examples/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/modules/node_groups/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/complete-vpc/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/ipv6/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/issue-108-route-already-exists/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/issue-44-asymmetric-private-subnets/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/issue-46-no-private-subnets/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/manage-default-vpc/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/network-acls/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/secondary-cidr-blocks/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/simple-vpc/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/test_fixture/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/examples/vpc-separate-private-route-tables/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/.terraform/modules/eks-vpc/terraform-aws-vpc-2.25.0/README.md",
+        "helm/HHLP/bandwidth/HelmCharts/terraform/README.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/autoscaling.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/enable-docker-bridge-network.md",
+        "helm/HHLP/HelmCharts/terraform/.terraform/modules/eks-cluster/terraform-aws-eks-10.0.0/docs/faq.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "h4x/dagah-server/pipeline/cookbooks/rsyslog/README.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "h4x/dagah-server/html/js/intro/example/bootstrap/v3/package.json",
+        "svs-automation/svs-rails-app/app/models/reference_data/search_option.rb",
+        "svs-automation/svs-rails-app/app/models/search.rb",
+        "svs-automation/svs-rails-app/test/models/reference_data/search_option_test.rb"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "h4x/dagah-android/build.xml",
+        "h4x/dagah-modem-bridge/build.xml",
+        "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+        "h4x/dagah-server/html/components/mocha/mocha.js",
+        "SORT/OpsClick_UI/protractor.conf.js",
+        "svs-automation/svs-rails-app/.env.example",
+        "svs-automation/svs-vis-mock/.env.example"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "DB_PASSWORD",
+          "GMAIL_PASSWORD",
+          "ICAM_AUTH_METHOD",
+          "ISSUER_PRIVATE_KEY",
+          "ISSUER_PRIVATE_KEY_PASSPHRASE",
+          "SAUCE_ACCESS_KEY",
+          "SECRET_KEY_BASE",
+          "TWILIO_AUTH_TOKEN",
+          "USE_ICAM_AUTH",
+          "USE_SVS_WEB_SERVICE_SSL_AUTH"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [
+          "auth/session environment variables"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ANDROID_HOME",
+          "API_VERSION",
+          "DB_HOST",
+          "DB_PASSWORD",
+          "DB_USERNAME",
+          "GMAIL_PASSWORD",
+          "GMAIL_USERNAME",
+          "ICAM_AUTH_METHOD",
+          "ICAM_CALLBACK_URL",
+          "IDP_CERT",
+          "IDP_SERVER_NAME",
+          "ISSUER_CERT",
+          "ISSUER_NAME",
+          "ISSUER_PRIVATE_KEY",
+          "ISSUER_PRIVATE_KEY_PASSPHRASE",
+          "MOCHA_COLORS",
+          "PORT",
+          "SAUCE_ACCESS_KEY",
+          "SECRET_KEY_BASE",
+          "SIGNED",
+          "SUPPORTED_CASE_TYPE",
+          "SVS_WEB_SERVICE_BASE_URI",
+          "TRAVIS_JOB_ID",
+          "TRAVIS_REPO_SLUG",
+          "TWBS_DO_SAUCE",
+          "TWBS_DO_VALIDATOR",
+          "TWBS_TEST",
+          "TWILIO_ACCOUNT_SID",
+          "TWILIO_AUTH_TOKEN",
+          "USE_ICAM_AUTH",
+          "USE_SVS_WEB_SERVICE_SSL_AUTH"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+            "svs-automation/svs-rails-app/.env.example",
+            "svs-automation/svs-vis-mock/.env.example"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "ansible/magento/magento2/repos/magento2/dev/tests/functional/tests/app/Magento/Sitemap/Test/Fixture/Sitemap.xml",
+        "ansible/magento/magento2/repos/magento2/dev/tests/functional/tests/app/Magento/Sitemap/Test/Repository/Sitemap.xml",
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Config/Model/_files/robots.txt",
+        "SORT/OpsClick_UI/public/robots.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "h4x/dagah-server/pipeline/tests/unittests/licTests/campaignlabels/readme.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/expected/test.min.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Framework/View/_files/static/theme/web/js/test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Theme/Model/_files/design/frontend/Test/default/web/js/tabs.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/index.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/connect.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/spec_runner/tasks/jasmine.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Msrp/frontend/js/msrp.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/PageCache/frontend/js/page-cache.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/core/layout.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/adapter.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/client.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/area.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/collection/item.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/html.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab_group.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/components/tab.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/abstract.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/boolean.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/date.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/file-uploader.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/multiselect.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/post-code.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/region.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/select.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/element/textarea.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/form.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/provider.test.js",
+          "ansible/magento/magento2/repos/magento2/dev/tests/js/jasmine/tests/app/code/Magento/Ui/base/js/form/ui-select.test.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "ansible/magento/magento1/README.MD",
+          "ansible/magento/magento2/README.MD",
+          "ansible/magento/magento2/repos/magento2/lib/internal/LinLibertineFont/Readme",
+          "ansible/magento/magento2/repos/magento2/lib/web/css/docs/source/README.md",
+          "ansible/magento/magento2/repos/magento2/lib/web/extjs/resources/css/README.txt",
+          "ansible/magento/magento2/repos/magento2/lib/web/prototype/windows/README",
+          "ansible/magento/magento2/repos/magento2/phpserver/README.md",
+          "ansible/magento/magento2/repos/magento2/setup/performance-toolkit/README.txt",
+          "ansible/magento/magento2/repos/magento2/update/README.md",
+          "ansible/magento/README.MD",
+          "ansible/prestashop/readme.md",
+          "aws/cloudformation/README.md",
+          "aws/README.md",
+          "aws/scripts/elb-v2/README.md",
+          "bash/block_daemon/README",
+          "bash/jail_make/README",
+          "bash/README",
+          "Batch Scripts/batch-scraper/README.MD",
+          "docker/builders/README.MD",
+          "docker/README.MD",
+          "docker/scripts/setup/osx/readme.md",
+          "docker/scripts/setup/win/readme.md",
+          "h4x/dagah-android/README.md",
+          "h4x/dagah-ios/README.md",
+          "h4x/dagah-ios/readme.txt",
+          "h4x/dagah-modem-bridge/README.md",
+          "h4x/dagah-server/agents/readme.md",
+          "h4x/dagah-server/archive/readme.md",
+          "h4x/dagah-server/campaigns/readme.md",
+          "h4x/dagah-server/codemirror/readme.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.secret-like-values",
+      "severity": "critical",
+      "summary": "Secret-like literal values were detected in source. Samples are redacted in scan output.",
+      "evidence_paths": [
+        "aws_automation/aws_post.sh",
+        "aws_automation/packer_clone_provision_ami.json",
+        "h4x/dagah-server/pipeline/cookbooks/brakeman_python/files/default/brakeman_python/ConfigConsts.py",
+        "h4x/dagah-server/pipeline/packer/providers/aws/archive/dagah_aws_east_backup.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws_east_developer.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws_east_jenkins.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws_east.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws_jenkins.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws_nossh.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_aws.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_virtualbox.json",
+        "h4x/dagah-server/pipeline/packer/providers/aws/dagah_vmware.json",
+        "h4x/dagah-server/pipeline/packer/providers/virtualbox/dagah_virtualbox.json",
+        "h4x/dagah-server/pipeline/packer/providers/virtualbox/dagah_vmware.json",
+        "h4x/dagah-server/pipeline/packer/providers/vmware/dagah_vmware.json",
+        "h4x/dagah-server/pipeline/packer/releases/dagahv2/scripts/import_instance_to_s3.sh",
+        "h4x/dagah-server/pipeline/packer/scripts/import_instance_to_s3.sh",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Deploy-EC2-AMI/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Deploy-Selenium-Executor-01/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Deploy-Selenium-Executor-02/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Dev-Slave-Node/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/NS8-CodeDeploy/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Selenium-Hub/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Stage-Slave-Node/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Update-Deploy-Image-AMI/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Update-DNS-Image-AMI/config.xml",
+        "jenkins/ansible/jenkins-auto/jenkins/provisioning/roles/server/files/jobs/Update-Slave-Image-AMI/config.xml",
+        "SORT/OpsClick_UI/public/app/core/tests/services/upload.service.spec.js",
+        "SORT/OpsClick_UI/public/app/modules/dashboard/controllers/aws-key-modal.js",
+        "SORT/OpsClick_UI/src/js/controllers/aws-key-dialog.js"
+      ],
+      "recommendation": "Remove committed credentials, rotate affected secrets, and keep only variable names in catalog outputs."
+    },
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "ansible/magento/magento2/repos/magento2/CHANGELOG.md",
+        "ansible/magento/magento2/repos/magento2/dev/tests/functional/isolation.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/functional/lib/Magento/Mtf/App/State/AbstractState.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/functional/utils/command.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Backend/Controller/Adminhtml/Cache/MassActionTest.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/integration/testsuite/Magento/Test/Integrity/DatabaseTest.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/JsTestDriver/framework/qunit/qunit-1.14.0.js",
+        "ansible/magento/magento2/repos/magento2/dev/tests/js/JsTestDriver/run_js_tests.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/static/framework/Magento/TestFramework/CodingStandard/Tool/CopyPasteDetector.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/static/framework/Magento/TestFramework/Inspection/AbstractCommand.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/static/framework/Magento/TestFramework/Inspection/JsHint/Command.php",
+        "ansible/magento/magento2/repos/magento2/dev/tests/static/get_github_changes.php",
+        "ansible/magento/magento2/repos/magento2/dev/tools/grunt/assets/legacy-build/shim.js",
+        "ansible/magento/magento2/repos/magento2/dev/tools/grunt/tasks/deploy.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/actions-toolbar.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/breadcrumbs.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/components.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/docs.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/dropdowns.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/icons.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/index.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/layout.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/lib.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/loaders.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/messages.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/pages.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/popups.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/rating.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/resets.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/responsive.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/sections.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/tooltips.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/css/docs/utilities.html",
+        "ansible/magento/magento2/repos/magento2/lib/web/extjs/ext-tree-checkbox.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/extjs/ext-tree.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/editableMultiselect/js/jquery.editable.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery-migrate.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery-ui-1.9.2.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery-ui-timepicker-addon.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery-ui.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery.metadata.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jquery.min.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/jquery/jstree/jquery.jstree.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/knockoutjs/knockout.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/legacy-build.min.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/less/less.min.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/mage/adminhtml/grid.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/mage/requirejs/static.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/mage/utils/template.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/prototype/prototype.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/prototype/validation.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/requirejs/require.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/classes/firebug/firebug-lite.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/classes/Popup.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/classes/util/JSON.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/tiny_mce_jquery_src.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/tiny_mce/tiny_mce_jquery.js",
+        "ansible/magento/magento2/repos/magento2/lib/web/underscore.js",
+        "ansible/magento/magento2/repos/magento2/setup/pub/angular/angular.min.js",
+        "ansible/magento/magento2/repos/magento2/update/pub/js/lib/angular/angular.min.js",
+        "bash/057-get-iam-access-key.sh",
+        "bash/101-get-vpc-cidr.sh",
+        "bash/107-get-network-acl.sh",
+        "bash/360-get-appmesh-mesh.sh",
+        "bash/370-get-emr-cluster.sh",
+        "bash/371-get-emr-sec-config.sh",
+        "bash/450-get-secrets.sh",
+        "bash/get-appmesh-no.sh",
+        "bash/get-appmesh-r.sh",
+        "bash/get-appmesh-vgw-routes.sh",
+        "bash/get-appmesh-vgw.sh",
+        "bash/get-appmesh-vr.sh",
+        "bash/get-appmesh-vs.sh",
+        "bash/get-emr-inst-group.sh",
+        "bash/get-emr-scal-policy.sh",
+        "docker/builders/nodesource_setup.sh",
+        "docker/nodesource_setup.sh",
+        "h4x/dagah-server/html/components/flot/jquery.js",
+        "SORT/OpsClick_UI/src/js/apis/auth-api.js",
+        "SORT/OpsClick_UI/src/js/apis/config-api.js",
+        "SORT/OpsClick_UI/static/about/js/jquery.min.js"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env.example",
+        "h4x/dagah-server/html/components/bootstrap/Gruntfile.js",
+        "svs-automation/svs-rails-app/.env.example",
+        "svs-automation/svs-vis-mock/.env.example"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": false,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "CI workflows not detected",
+      "LLMs context files not detected",
+      "framework route files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:26.191Z"
+  }
+}

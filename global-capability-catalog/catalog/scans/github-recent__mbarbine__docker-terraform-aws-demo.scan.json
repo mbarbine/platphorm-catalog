@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__docker-terraform-aws-demo",
+    "name": "mbarbine__docker-terraform-aws-demo",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__docker-terraform-aws-demo",
+    "relative_path": "github-recent/mbarbine__docker-terraform-aws-demo",
+    "remote_url": "git@github.com:mbarbine/docker-terraform-aws-demo.git",
+    "default_branch": "main",
+    "current_commit": "0eadf11b70911c088377ee422bba672391c7f70f"
+  },
+  "languages": [
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 6884
+    },
+    {
+      "language": "YAML",
+      "files": 2,
+      "bytes": 1192
+    },
+    {
+      "language": "HTML",
+      "files": 1,
+      "bytes": 1139
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 226
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 146
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yaml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yaml"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": "Apache-2.0",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 103,
+      "text": "And for security of the Terrform State we can use remote state backend along with lock functionality so you can work on it from anywhere or many members can work on it."
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docker-compose.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:07.447Z"
+}

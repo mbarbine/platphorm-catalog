@@ -1,0 +1,4662 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-trace",
+    "name": "mbarbine__platphorm-trace",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-trace",
+    "remote_url": "git@github.com:mbarbine/platphorm-trace.git",
+    "description": "This project now includes complete OpenTelemetry support.",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JSON",
+      "YAML",
+      "Markdown",
+      "CSS",
+      "SQL",
+      "JavaScript",
+      "Dockerfile",
+      "Shell"
+    ],
+    "frameworks": [
+      "Jest",
+      "Next.js",
+      "Playwright",
+      "React",
+      "Tailwind CSS"
+    ],
+    "package_manager": "pnpm",
+    "databases": [
+      "redis"
+    ],
+    "deployment": [
+      "docker",
+      "vercel"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__platphorm-trace.scan.json",
+    "analyzed_at": "2026-05-16T16:44:21.593Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/v1/ai/analyze/route.ts",
+        "components/lcars/ai-panel.tsx",
+        "components/observatory/ai-analysis-panel.tsx",
+        "package.json",
+        "tests/app/api/v1/ai/analyze/route.test.ts",
+        "tests/components/observatory/ai-analysis-panel.test.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "api_key",
+          "card",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "ai"
+        ],
+        "internal": [],
+        "external_services": [
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/observatory/health-score-badge.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [
+          "card",
+          "health"
+        ],
+        "external_data_flows": [
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.openapi-docs",
+      "name": "OpenAPI Documentation",
+      "type": "api",
+      "summary": "Repository includes OpenAPI or Swagger documentation files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/openapi.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "API contract files"
+        ],
+        "outputs": [
+          "machine-readable API documentation"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "API contract files"
+        ],
+        "writes": [
+          "machine-readable API documentation"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/api/[...path]/route.ts",
+        "app/api/capabilities/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/health/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/schemas/route.ts",
+        "app/api/telemetry/route.ts",
+        "app/api/v1/ai/analyze/route.ts",
+        "app/api/v1/capabilities/route.ts",
+        "app/api/v1/docs/route.ts",
+        "app/api/v1/feeds/route.ts",
+        "app/api/v1/feeds/sync/route.ts",
+        "app/api/v1/forks/[id]/route.ts",
+        "app/api/v1/forks/route.ts",
+        "app/api/v1/health/route.ts",
+        "app/api/v1/live/route.ts",
+        "app/api/v1/mcp/route.ts",
+        "app/api/v1/network/[...path]/route.ts",
+        "app/api/v1/network/route.ts",
+        "app/api/v1/otel/v1/traces/route.ts",
+        "app/api/v1/propagation/tests/route.ts",
+        "app/api/v1/propagation/tests/run/route.ts",
+        "app/api/v1/replay/[id]/route.ts",
+        "app/api/v1/replay/route.ts",
+        "app/api/v1/sessions/[sessionId]/route.ts",
+        "app/api/v1/sessions/route.ts",
+        "app/api/v1/sitemaps/sync/route.ts",
+        "app/api/v1/sites/[slug]/observability/route.ts",
+        "app/api/v1/sites/[slug]/route-compliance/route.ts",
+        "app/api/v1/sites/[slug]/vercel/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /capabilities",
+          "GET /docs",
+          "GET /schemas",
+          "GET /v1/capabilities",
+          "GET /v1/docs",
+          "GET /v1/feeds",
+          "GET /v1/forks/[id]",
+          "GET /v1/health",
+          "GET /v1/live",
+          "GET /v1/mcp",
+          "GET /v1/propagation/tests",
+          "GET /v1/replay/[id]",
+          "GET /v1/sessions",
+          "GET /v1/sessions/[sessionId]",
+          "GET /v1/sites/[slug]/observability",
+          "GET /v1/sites/[slug]/route-compliance",
+          "GET /v1/sites/[slug]/vercel",
+          "GET /v1/spans/orphans",
+          "GET /v1/stats",
+          "GET /v1/traces/[traceId]/completeness",
+          "GET /v1/traces/[traceId]/export",
+          "GET /v1/traces/[traceId]/service-map",
+          "GET /v1/traces/[traceId]/timeline",
+          "GET /v1/traces/[traceId]/tree",
+          "GET /v1/traces/[traceId]/waterfall",
+          "GET /v1/traces/compare",
+          "GET|OPTIONS /health",
+          "GET|OPTIONS /v1/network",
+          "GET|PATCH /v1/traces/[traceId]",
+          "GET|POST /[...path]",
+          "GET|POST /mcp",
+          "GET|POST /v1/ai/analyze",
+          "GET|POST /v1/network/[...path]",
+          "GET|POST /v1/traces",
+          "GET|POST /v1/traces/[traceId]/annotations",
+          "GET|POST /v1/traces/[traceId]/spans",
+          "GET|POST /v1/workflows",
+          "POST /telemetry",
+          "POST /v1/feeds/sync",
+          "POST /v1/forks",
+          "POST /v1/otel/v1/traces",
+          "POST /v1/propagation/tests/run",
+          "POST /v1/replay",
+          "POST /v1/sitemaps/sync",
+          "POST /v1/spans",
+          "POST /v1/traces/[traceId]/analyze",
+          "POST /v1/traces/[traceId]/fork",
+          "POST /v1/workflows/[id]/dry-run",
+          "POST /v1/workflows/[id]/run"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [
+          "zod dependency detected"
+        ],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/xai",
+          "@babel/core",
+          "@babel/preset-env",
+          "@babel/preset-typescript",
+          "@hookform/resolvers",
+          "@jest/globals",
+          "@neondatabase/serverless",
+          "@next/eslint-plugin-next",
+          "@opentelemetry/api",
+          "@opentelemetry/auto-instrumentations-node",
+          "@opentelemetry/exporter-trace-otlp-http",
+          "@opentelemetry/instrumentation",
+          "@opentelemetry/resources",
+          "@opentelemetry/sdk-node",
+          "@opentelemetry/sdk-trace-node",
+          "@opentelemetry/semantic-conventions",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/jest",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@upstash/redis",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "ai",
+          "autoprefixer",
+          "babel-jest",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dotenv",
+          "embla-carousel-react",
+          "eslint",
+          "identity-obj-proxy",
+          "input-otp",
+          "jest",
+          "jest-environment-jsdom",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-themes",
+          "playwright",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "shadcn",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "ts-jest",
+          "ts-node",
+          "tsx",
+          "tw-animate-css",
+          "typescript",
+          "undici",
+          "vaul",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": [
+          "ALLOWED_ORIGIN",
+          "DATABASE_URL",
+          "JA4MLAB_TRACE_MEMORY",
+          "JA4MLAB_TRACE_STORE_DIR",
+          "KV_REST_API_TOKEN",
+          "KV_REST_API_URL",
+          "LOG_LEVEL",
+          "MCP_PROTOCOL_VERSION",
+          "NEXT_PUBLIC_APP_URL",
+          "NEXT_RUNTIME",
+          "NODE_ENV",
+          "OTEL_EXPORTER_OTLP_ENDPOINT",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_NETWORK_TOKEN",
+          "SERVICE_NAME",
+          "VERCEL_ENV",
+          "XAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/v1/sessions/[sessionId]/route.ts",
+        "app/api/v1/sessions/route.ts",
+        "app/session/[sessionId]/page.tsx",
+        "components/session/session-observatory.tsx",
+        "lib/security/platform-auth.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/v1/workflows/[id]/dry-run/route.ts",
+        "app/api/v1/workflows/[id]/run/route.ts",
+        "app/api/v1/workflows/route.ts",
+        "app/jobs/page.tsx",
+        "scripts/publish-job.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/docs/route.ts",
+        "app/api/v1/docs/route.ts",
+        "app/docs/page.tsx",
+        "components/about/about-content.tsx",
+        "components/faq/faq-content.tsx",
+        "lib/db.ts",
+        "lib/env.ts",
+        "lib/platform/route-probe-storage.ts",
+        "lib/platform/route-probes.ts",
+        "package.json",
+        "postcss.config.mjs",
+        "scripts/publish-job.ts",
+        "tests/components/about/about-content.test.tsx",
+        "tests/lib/route-probe-storage.test.ts",
+        "tests/lib/route-probe-tracing.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [
+          "card",
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/status/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/agent.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/.well-known/trust.json/route.ts",
+        "app/api/v1/traces/[traceId]/export/route.ts",
+        "components/seo/json-ld.tsx",
+        "instrumentation.node.ts",
+        "package-lock.json",
+        "package.json",
+        "tsconfig.jest.json",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/xai",
+          "@babel/core",
+          "@babel/preset-env",
+          "@babel/preset-typescript",
+          "@hookform/resolvers",
+          "@jest/globals",
+          "@neondatabase/serverless",
+          "@next/eslint-plugin-next",
+          "@opentelemetry/api",
+          "@opentelemetry/auto-instrumentations-node",
+          "@opentelemetry/exporter-trace-otlp-http",
+          "@opentelemetry/instrumentation",
+          "@opentelemetry/resources",
+          "@opentelemetry/sdk-node",
+          "@opentelemetry/sdk-trace-node",
+          "@opentelemetry/semantic-conventions",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/jest",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@upstash/redis",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "ai",
+          "autoprefixer",
+          "babel-jest",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dotenv",
+          "embla-carousel-react",
+          "eslint",
+          "identity-obj-proxy",
+          "input-otp",
+          "jest",
+          "jest-environment-jsdom",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-themes",
+          "playwright",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "shadcn",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "ts-jest",
+          "ts-node",
+          "tsx",
+          "tw-animate-css",
+          "typescript",
+          "undici",
+          "vaul",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "Dockerfile"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "discovery.llms-files",
+      "name": "LLMs Discovery Files",
+      "type": "discovery",
+      "summary": "Repository provides local LLMs discovery/context files that can guide machine-readable understanding.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/llms-full.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "repository-provided LLMs context"
+        ],
+        "outputs": [
+          "machine-readable discovery context"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "repository-provided LLMs context"
+        ],
+        "writes": [
+          "machine-readable discovery context"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Use as context for interpretation; verify behavioral claims against source files."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Use as context for interpretation; verify behavioral claims against source files."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ui/form.tsx",
+        "lib/platform/route-probe-storage.ts",
+        "lib/platform/route-probes.ts",
+        "lib/security/platform-auth.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "react-hook-form"
+        ],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "gameplay.browser-game",
+      "name": "Browser Gameplay",
+      "type": "gameplay",
+      "summary": "Source evidence indicates game, canvas, realtime, player, or gameplay implementation.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/observatory/health-score-badge.tsx",
+        "lib/logging/index.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "player input or game state"
+        ],
+        "outputs": [
+          "rendered gameplay or score state"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "player input or game state"
+        ],
+        "writes": [
+          "rendered gameplay or score state"
+        ],
+        "sensitive_data": [
+          "health"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.platphorm",
+      "name": "PlatPhorm Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a PlatPhorm integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/[...path]/route.ts",
+        "app/.well-known/agent.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/.well-known/trust.json/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/mcp/route.ts",
+        "app/docs/page.tsx",
+        "app/llms-full.txt/route.ts",
+        "lib/env.ts",
+        "package.json",
+        "scripts/publish-job.ts",
+        "scripts/register-network.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "outputs": [
+          "PlatPhorm API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "writes": [
+          "PlatPhorm API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": [
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_NETWORK_TOKEN"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/db.ts",
+        "lib/env.ts",
+        "lib/platform/route-probe-storage.ts",
+        "lib/platform/route-probes.ts",
+        "package.json",
+        "tests/lib/route-probe-storage.test.ts",
+        "tests/lib/route-probe-tracing.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.redis",
+      "name": "Redis Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Redis integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/redis.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "tests/lib/redis.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Redis configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Redis API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Redis configuration or SDK inputs"
+        ],
+        "writes": [
+          "Redis API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Redis"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@upstash/redis"
+        ],
+        "internal": [],
+        "external_services": [
+          "Redis"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/health/route.ts",
+        "app/layout.tsx",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/analytics",
+          "@vercel/speed-insights"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": [
+          "VERCEL_ENV"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "mcp.tool-server",
+      "name": "MCP Tool Server",
+      "type": "mcp",
+      "summary": "Repository contains MCP-related routes, manifests, files, or dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/mcp/route.ts",
+        "app/api/v1/mcp/route.ts",
+        "package.json",
+        "tests/app/api/mcp/route.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /v1/mcp",
+          "GET|POST /mcp"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "outputs": [
+          "JSON-RPC responses or MCP metadata"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "writes": [
+          "JSON-RPC responses or MCP metadata"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/health/route.ts",
+        "app/api/v1/health/route.ts",
+        "app/api/v1/otel/v1/traces/route.ts",
+        "app/api/v1/sites/[slug]/observability/route.ts",
+        "app/api/v1/spans/orphans/route.ts",
+        "app/api/v1/spans/route.ts",
+        "app/api/v1/traces/[traceId]/analyze/route.ts",
+        "app/api/v1/traces/[traceId]/annotations/route.ts",
+        "app/api/v1/traces/[traceId]/completeness/route.ts",
+        "app/api/v1/traces/[traceId]/export/route.ts",
+        "app/api/v1/traces/[traceId]/fork/route.ts",
+        "app/api/v1/traces/[traceId]/route.ts",
+        "app/api/v1/traces/[traceId]/service-map/route.ts",
+        "app/api/v1/traces/[traceId]/spans/route.ts",
+        "app/api/v1/traces/[traceId]/timeline/route.ts",
+        "app/api/v1/traces/[traceId]/tree/route.ts",
+        "app/api/v1/traces/[traceId]/waterfall/route.ts",
+        "app/api/v1/traces/compare/route.ts",
+        "app/api/v1/traces/route.ts",
+        "app/trace/[traceId]/page.tsx",
+        "app/traces/page.tsx",
+        "components/home/live-trace-feed.tsx",
+        "components/home/trace-preview-row.tsx",
+        "components/observatory/health-score-badge.tsx",
+        "components/observatory/span-detail-panel.tsx",
+        "components/observatory/trace-observatory.tsx",
+        "components/trace/trace-card.tsx",
+        "components/traces/traces-explorer.tsx",
+        "components/ui/alert-dialog.tsx",
+        "components/ui/dialog.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "card",
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@opentelemetry/api",
+          "@opentelemetry/auto-instrumentations-node",
+          "@opentelemetry/exporter-trace-otlp-http",
+          "@opentelemetry/instrumentation",
+          "@opentelemetry/resources",
+          "@opentelemetry/sdk-node",
+          "@opentelemetry/sdk-trace-node",
+          "@opentelemetry/semantic-conventions"
+        ],
+        "internal": [],
+        "external_services": [
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/about/page.tsx",
+        "app/docs/page.tsx",
+        "app/faq/page.tsx",
+        "app/jobs/page.tsx",
+        "app/network/page.tsx",
+        "app/roadmap/page.tsx",
+        "app/session/[sessionId]/page.tsx",
+        "app/status/page.tsx",
+        "app/trace/[traceId]/page.tsx",
+        "app/traces/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /about",
+          "GET /docs",
+          "GET /faq",
+          "GET /jobs",
+          "GET /network",
+          "GET /roadmap",
+          "GET /session/[sessionId]",
+          "GET /status",
+          "GET /trace/[traceId]",
+          "GET /traces"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/xai",
+          "@babel/core",
+          "@babel/preset-env",
+          "@babel/preset-typescript",
+          "@hookform/resolvers",
+          "@jest/globals",
+          "@neondatabase/serverless",
+          "@next/eslint-plugin-next",
+          "@opentelemetry/api",
+          "@opentelemetry/auto-instrumentations-node",
+          "@opentelemetry/exporter-trace-otlp-http",
+          "@opentelemetry/instrumentation",
+          "@opentelemetry/resources",
+          "@opentelemetry/sdk-node",
+          "@opentelemetry/sdk-trace-node",
+          "@opentelemetry/semantic-conventions",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/jest",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@upstash/redis",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "ai",
+          "autoprefixer",
+          "babel-jest",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dotenv",
+          "embla-carousel-react",
+          "eslint",
+          "identity-obj-proxy",
+          "input-otp",
+          "jest",
+          "jest-environment-jsdom",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-themes",
+          "playwright",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "shadcn",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "ts-jest",
+          "ts-node",
+          "tsx",
+          "tw-animate-css",
+          "typescript",
+          "undici",
+          "vaul",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/[...path]/route.ts",
+        "app/api/health/route.ts",
+        "app/api/v1/ai/analyze/route.ts",
+        "app/traces/page.tsx",
+        "instrumentation.node.ts",
+        "instrumentation.ts",
+        "lib/db.ts",
+        "lib/lab-trace-store.ts",
+        "lib/logging/index.ts",
+        "lib/redis.ts",
+        "lib/security/headers.ts",
+        "lib/security/platform-auth.ts",
+        "lib/security/trust.ts",
+        "scripts/publish-job.ts",
+        "scripts/register-network.ts",
+        "tests/app/api/v1/ai/analyze/route.test.ts",
+        "tests/lib/logging/index.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "DATABASE_URL",
+          "KV_REST_API_TOKEN",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_NETWORK_TOKEN",
+          "XAI_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "ALLOWED_ORIGIN",
+          "DATABASE_URL",
+          "JA4MLAB_TRACE_MEMORY",
+          "JA4MLAB_TRACE_STORE_DIR",
+          "KV_REST_API_TOKEN",
+          "KV_REST_API_URL",
+          "LOG_LEVEL",
+          "MCP_PROTOCOL_VERSION",
+          "NEXT_PUBLIC_APP_URL",
+          "NEXT_RUNTIME",
+          "NODE_ENV",
+          "OTEL_EXPORTER_OTLP_ENDPOINT",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_NETWORK_TOKEN",
+          "SERVICE_NAME",
+          "VERCEL_ENV",
+          "XAI_API_KEY"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/robots.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ui/label.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "card",
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Redis",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Redis",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/tests/app/docs/page.test.tsx",
+        "lib/openapi/spec.ts",
+        "test-sdk-network.ts",
+        "test-sdk.ts",
+        "test-ux.js",
+        "tests/analysis/plain-english.test.ts",
+        "tests/app/api/health/route.test.ts",
+        "tests/app/api/mcp/route.test.ts",
+        "tests/app/api/telemetry/route.test.ts",
+        "tests/app/api/v1/ai/analyze/route.test.ts",
+        "tests/app/api/v1/live/route.test.ts",
+        "tests/app/api/v1/network/route.test.ts",
+        "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+        "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+        "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+        "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+        "tests/app/api/v1/traces/[traceId]/route.test.ts",
+        "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+        "tests/app/api/v1/traces/compare/route.test.ts",
+        "tests/app/api/v1/traces/route.test.ts",
+        "tests/app/feed.xml/route.test.ts",
+        "tests/app/sitemap.test.ts",
+        "tests/benchmark.test.ts",
+        "tests/components/about/about-content.test.tsx",
+        "tests/components/home/hero-panel.test.tsx",
+        "tests/components/home/left-sidebar.test.tsx",
+        "tests/components/home/live-trace-feed.test.tsx",
+        "tests/components/home/right-sidebar.test.tsx",
+        "tests/components/observatory/ai-analysis-panel.test.tsx",
+        "tests/components/observatory/annotation-panel.test.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@jest/globals",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/jest",
+          "babel-jest",
+          "jest",
+          "jest-environment-jsdom",
+          "playwright",
+          "ts-jest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/api/v1/ai/analyze/route.ts",
+            "lib/db.ts",
+            "lib/redis.ts",
+            "lib/security/platform-auth.ts",
+            "lib/security/trust.ts",
+            "scripts/publish-job.ts",
+            "scripts/register-network.ts",
+            "tests/app/api/v1/ai/analyze/route.test.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/network/components/network-constellation.tsx",
+        "app/network/components/site-card.tsx",
+        "app/network/components/site-details-panel.tsx",
+        "components/about/about-content.tsx",
+        "components/faq/faq-content.tsx",
+        "components/home/feature-panel.tsx",
+        "components/home/hero-panel.tsx",
+        "components/home/left-sidebar.tsx",
+        "components/home/live-feed-section.tsx",
+        "components/home/live-trace-feed.tsx",
+        "components/home/nav-button.tsx",
+        "components/home/right-sidebar.tsx",
+        "components/home/trace-preview-row.tsx",
+        "components/layout/footer.tsx",
+        "components/layout/header.tsx",
+        "components/layout/language-selector.tsx",
+        "components/layout/network-bar.tsx",
+        "components/layout/theme-toggle.tsx",
+        "components/lc3rs/index.tsx",
+        "components/lcars/ai-panel.tsx",
+        "components/lcars/index.tsx",
+        "components/live/live-feed.tsx",
+        "components/observatory/ai-analysis-panel.tsx",
+        "components/observatory/annotation-panel.tsx",
+        "components/observatory/health-score-badge.tsx",
+        "components/observatory/span-detail-panel.tsx",
+        "components/observatory/trace-observatory.tsx",
+        "components/observatory/waterfall-view.tsx",
+        "components/plain-english/jargon-toggle.tsx",
+        "components/seo/json-ld.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "about-content",
+          "about-content.test",
+          "accordion",
+          "ai-analysis-panel",
+          "ai-analysis-panel.test",
+          "ai-panel",
+          "alert",
+          "alert-dialog",
+          "annotation-panel",
+          "annotation-panel.test",
+          "aspect-ratio",
+          "avatar",
+          "badge",
+          "breadcrumb",
+          "button",
+          "button-group",
+          "calendar",
+          "calendar.test",
+          "card",
+          "carousel",
+          "chart",
+          "chart.test",
+          "checkbox",
+          "collapsible",
+          "command",
+          "context-menu",
+          "dialog",
+          "drawer",
+          "dropdown-menu",
+          "empty",
+          "faq-content",
+          "feature-panel",
+          "field",
+          "footer",
+          "form",
+          "header",
+          "health-score-badge",
+          "hero-panel",
+          "hero-panel.test",
+          "hover-card",
+          "index",
+          "input",
+          "input-group",
+          "input-otp",
+          "item",
+          "jargon-toggle",
+          "json-ld",
+          "kbd",
+          "label",
+          "language-selector",
+          "left-sidebar",
+          "left-sidebar.test",
+          "live-feed",
+          "live-feed-section",
+          "live-trace-feed",
+          "live-trace-feed.test",
+          "menubar",
+          "nav-button",
+          "navigation-menu",
+          "network-bar",
+          "network-constellation",
+          "pagination",
+          "popover",
+          "progress",
+          "radio-group",
+          "relative-time",
+          "resizable",
+          "right-sidebar",
+          "right-sidebar.test",
+          "scroll-area",
+          "select",
+          "separator",
+          "session-observatory",
+          "sheet",
+          "sidebar-context",
+          "sidebar-core",
+          "sidebar-group",
+          "sidebar-menu",
+          "sidebar-menu-sub",
+          "sidebar-parts",
+          "sidebar-provider",
+          "sidebar.test",
+          "site-card",
+          "site-details-panel",
+          "skeleton",
+          "slider",
+          "sonner",
+          "span-detail-panel",
+          "span-detail-panel.test",
+          "spinner",
+          "switch",
+          "table",
+          "tabs",
+          "textarea",
+          "theme-provider",
+          "theme-toggle",
+          "toast",
+          "toaster",
+          "toggle",
+          "toggle-group",
+          "tooltip",
+          "trace-card",
+          "trace-observatory",
+          "trace-preview-row",
+          "traces-explorer",
+          "traces-explorer.test",
+          "use-mobile",
+          "waterfall-view"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "payment",
+          "pii",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "redis"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@ai-sdk/xai",
+          "@babel/core",
+          "@babel/preset-env",
+          "@babel/preset-typescript",
+          "@hookform/resolvers",
+          "@jest/globals",
+          "@neondatabase/serverless",
+          "@next/eslint-plugin-next",
+          "@opentelemetry/api",
+          "@opentelemetry/auto-instrumentations-node",
+          "@opentelemetry/exporter-trace-otlp-http",
+          "@opentelemetry/instrumentation",
+          "@opentelemetry/resources",
+          "@opentelemetry/sdk-node",
+          "@opentelemetry/sdk-trace-node",
+          "@opentelemetry/semantic-conventions",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/jest",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@upstash/redis",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "ai",
+          "autoprefixer",
+          "babel-jest",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dotenv",
+          "embla-carousel-react",
+          "eslint",
+          "identity-obj-proxy",
+          "input-otp",
+          "jest",
+          "jest-environment-jsdom",
+          "lucide-react",
+          "nanoid",
+          "next",
+          "next-themes",
+          "playwright",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "shadcn",
+          "sonner",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "ts-jest",
+          "ts-node",
+          "tsx",
+          "tw-animate-css",
+          "typescript",
+          "undici",
+          "vaul",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/about/page.tsx",
+            "app/faq/page.tsx",
+            "app/page.tsx",
+            "components/live/live-feed.tsx",
+            "components/seo/json-ld.tsx",
+            "components/ui/chart.tsx",
+            "hooks/use-atlas-sensor.ts",
+            "lib/mcp/client.ts",
+            "lib/platform/network-registry.ts",
+            "lib/platform/route-probes.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "app/tests/app/docs/page.test.tsx",
+          "lib/openapi/spec.ts",
+          "test-sdk-network.ts",
+          "test-sdk.ts",
+          "test-ux.js",
+          "tests/analysis/plain-english.test.ts",
+          "tests/app/api/health/route.test.ts",
+          "tests/app/api/mcp/route.test.ts",
+          "tests/app/api/telemetry/route.test.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts",
+          "tests/app/api/v1/live/route.test.ts",
+          "tests/app/api/v1/network/route.test.ts",
+          "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/export/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/route.test.ts",
+          "tests/app/api/v1/traces/[traceId]/spans/route.test.ts",
+          "tests/app/api/v1/traces/compare/route.test.ts",
+          "tests/app/api/v1/traces/route.test.ts",
+          "tests/app/feed.xml/route.test.ts",
+          "tests/app/sitemap.test.ts",
+          "tests/benchmark.test.ts",
+          "tests/components/about/about-content.test.tsx",
+          "tests/components/home/hero-panel.test.tsx",
+          "tests/components/home/left-sidebar.test.tsx",
+          "tests/components/home/live-trace-feed.test.tsx",
+          "tests/components/home/right-sidebar.test.tsx",
+          "tests/components/observatory/ai-analysis-panel.test.tsx",
+          "tests/components/observatory/annotation-panel.test.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "app/about/page.tsx",
+        "app/faq/page.tsx",
+        "app/page.tsx",
+        "components/live/live-feed.tsx",
+        "components/seo/json-ld.tsx",
+        "components/ui/chart.tsx",
+        "hooks/use-atlas-sensor.ts",
+        "lib/mcp/client.ts",
+        "lib/platform/network-registry.ts",
+        "lib/platform/route-probes.ts"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "app/api/v1/ai/analyze/route.ts",
+        "lib/db.ts",
+        "lib/redis.ts",
+        "lib/security/platform-auth.ts",
+        "lib/security/trust.ts",
+        "scripts/publish-job.ts",
+        "scripts/register-network.ts",
+        "tests/app/api/v1/ai/analyze/route.test.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": true
+    },
+    "missing_evidence": [
+      "CI workflows not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation.",
+      "Local LLMs files were included as context evidence, not treated as code behavior proof."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:21.621Z"
+  }
+}

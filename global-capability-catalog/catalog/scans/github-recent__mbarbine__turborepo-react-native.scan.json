@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__turborepo-react-native",
+    "name": "mbarbine__turborepo-react-native",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__turborepo-react-native",
+    "relative_path": "github-recent/mbarbine__turborepo-react-native",
+    "remote_url": "git@github.com:mbarbine/turborepo-react-native.git",
+    "default_branch": "main",
+    "current_commit": "e95122d8f76d034dad9b17c5ddd780e46100cb52"
+  },
+  "languages": [
+    {
+      "language": "JSON",
+      "files": 16,
+      "bytes": 5550
+    },
+    {
+      "language": "Markdown",
+      "files": 3,
+      "bytes": 2507
+    },
+    {
+      "language": "TypeScript",
+      "files": 7,
+      "bytes": 2429
+    },
+    {
+      "language": "JavaScript",
+      "files": 4,
+      "bytes": 1652
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 232
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "apps/native/package.json",
+        "apps/web/package.json",
+        "package.json",
+        "packages/typescript-config/package.json",
+        "packages/ui/package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "apps/native/package.json",
+        "apps/web/package.json",
+        "package.json",
+        "packages/typescript-config/package.json",
+        "packages/ui/package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "yarn",
+    "manifests": [
+      {
+        "path": "apps/native/package.json",
+        "name": "native",
+        "version": "1.0.0",
+        "scripts": {
+          "dev": "expo start --web",
+          "android": "expo start --android",
+          "ios": "expo start --ios",
+          "web": "expo start --web",
+          "eject": "expo eject"
+        },
+        "dependencies": {
+          "@repo/ui": "*",
+          "expo": "^49.0.21",
+          "expo-status-bar": "~1.7.0",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "react-native": "0.73.1",
+          "react-native-web": "^0.19.10"
+        },
+        "dev_dependencies": {
+          "@babel/core": "^7.23.7",
+          "@expo/webpack-config": "^19.0.0",
+          "@types/react": "^18.2.46",
+          "@types/react-native": "^0.73.0",
+          "typescript": "5.5.4"
+        }
+      },
+      {
+        "path": "apps/web/package.json",
+        "name": "web",
+        "version": "1.0.0",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint"
+        },
+        "dependencies": {
+          "@repo/ui": "*",
+          "next": "^14.0.4",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "react-native-web": "^0.19.10"
+        },
+        "dev_dependencies": {
+          "@repo/typescript-config": "*",
+          "@types/node": "^20.10.6",
+          "@types/react": "^18.2.46",
+          "@types/react-dom": "^18.2.18",
+          "babel-plugin-react-native-web": "^0.19.10",
+          "eslint": "^8.56.0",
+          "eslint-config-next": "14.0.4",
+          "typescript": "5.5.4"
+        }
+      },
+      {
+        "path": "package.json",
+        "name": "with-react-native-web",
+        "version": null,
+        "scripts": {
+          "dev": "turbo run dev",
+          "build": "turbo run build",
+          "clean": "turbo run clean && rm -rf node_modules",
+          "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
+        },
+        "dependencies": {},
+        "dev_dependencies": {
+          "prettier": "^3.1.1",
+          "turbo": "^2.0.3"
+        }
+      },
+      {
+        "path": "packages/typescript-config/package.json",
+        "name": "@repo/typescript-config",
+        "version": "0.0.0",
+        "scripts": {},
+        "dependencies": {},
+        "dev_dependencies": {}
+      },
+      {
+        "path": "packages/ui/package.json",
+        "name": "@repo/ui",
+        "version": "0.0.0",
+        "scripts": {
+          "build": "tsup",
+          "dev": "tsup --watch",
+          "clean": "rm -rf dist"
+        },
+        "dependencies": {
+          "react": "^18.2.0",
+          "react-native": "^0.73.1"
+        },
+        "dev_dependencies": {
+          "@repo/typescript-config": "*",
+          "@types/react": "^18.2.46",
+          "@types/react-native": "^0.73.0",
+          "tsup": "^8.0.1",
+          "typescript": "5.5.4"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "packages/ui/src/button.tsx"
+    },
+    {
+      "name": "index",
+      "kind": "ui-component",
+      "source_path": "packages/ui/src/index.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "apps/native/package.json"
+    },
+    {
+      "path": "apps/native/tsconfig.json"
+    },
+    {
+      "path": "apps/web/next.config.js"
+    },
+    {
+      "path": "apps/web/package.json"
+    },
+    {
+      "path": "apps/web/tsconfig.json"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "packages/typescript-config/package.json"
+    },
+    {
+      "path": "packages/ui/package.json"
+    },
+    {
+      "path": "packages/ui/tsconfig.json"
+    },
+    {
+      "path": "turbo.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "apps/native/README.md"
+      },
+      {
+        "path": "apps/web/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": []
+  },
+  "generated_at": "2026-05-16T16:44:27.145Z"
+}

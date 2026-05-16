@@ -1,0 +1,1895 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-codex",
+    "name": "mbarbine__platphorm-codex",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-codex",
+    "relative_path": "github-recent/mbarbine__platphorm-codex",
+    "remote_url": "git@github.com:mbarbine/platphorm-codex.git",
+    "default_branch": "main",
+    "current_commit": "03ad0b087d6b54191fdb69354e301f3edbfeaa1c"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 219,
+      "bytes": 960560
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 255344
+    },
+    {
+      "language": "Markdown",
+      "files": 8,
+      "bytes": 70438
+    },
+    {
+      "language": "JSON",
+      "files": 6,
+      "bytes": 49456
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 24307
+    },
+    {
+      "language": "SQL",
+      "files": 2,
+      "bytes": 17809
+    },
+    {
+      "language": "XML",
+      "files": 1,
+      "bytes": 551
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 275
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Cypress",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "platphorm-codex",
+        "version": "0.0.1",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "eslint .",
+          "test": "vitest",
+          "test:run": "vitest run",
+          "test:coverage": "vitest run --coverage",
+          "cy:open": "cypress open",
+          "cy:run": "cypress run",
+          "test:e2e": "start-server-and-test dev http://localhost:3000 cy:run"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.10.0",
+          "@radix-ui/react-accordion": "1.2.12",
+          "@radix-ui/react-alert-dialog": "1.1.15",
+          "@radix-ui/react-aspect-ratio": "1.1.8",
+          "@radix-ui/react-avatar": "1.1.11",
+          "@radix-ui/react-checkbox": "1.3.3",
+          "@radix-ui/react-collapsible": "1.1.12",
+          "@radix-ui/react-context-menu": "2.2.16",
+          "@radix-ui/react-dialog": "1.1.15",
+          "@radix-ui/react-dropdown-menu": "2.1.16",
+          "@radix-ui/react-hover-card": "1.1.15",
+          "@radix-ui/react-label": "2.1.8",
+          "@radix-ui/react-menubar": "1.1.16",
+          "@radix-ui/react-navigation-menu": "1.2.14",
+          "@radix-ui/react-popover": "1.1.15",
+          "@radix-ui/react-progress": "1.1.8",
+          "@radix-ui/react-radio-group": "1.3.8",
+          "@radix-ui/react-scroll-area": "1.2.10",
+          "@radix-ui/react-select": "2.2.6",
+          "@radix-ui/react-separator": "1.1.8",
+          "@radix-ui/react-slider": "1.3.6",
+          "@radix-ui/react-slot": "1.2.4",
+          "@radix-ui/react-switch": "1.2.6",
+          "@radix-ui/react-tabs": "1.1.13",
+          "@radix-ui/react-toast": "1.2.15",
+          "@radix-ui/react-toggle": "1.1.10",
+          "@radix-ui/react-toggle-group": "1.1.11",
+          "@radix-ui/react-tooltip": "1.2.8",
+          "@supabase/ssr": "^0.9.0",
+          "@testing-library/react": "^16.3.2",
+          "@testing-library/user-event": "^14.6.1",
+          "autoprefixer": "^10.4.27",
+          "chat": "^4.20.2",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.1.1",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.6.0",
+          "feed": "^4.2.2",
+          "framer-motion": "^11.18.2",
+          "input-otp": "1.4.2",
+          "lucide-react": "^0.564.0",
+          "next": "16.1.6",
+          "next-sitemap": "^4.2.3",
+          "next-themes": "^0.4.6",
+          "pako": "^2.1.0",
+          "react": "19.2.4",
+          "react-day-picker": "9.13.2",
+          "react-dom": "19.2.4",
+          "react-hook-form": "^7.71.2",
+          "react-resizable-panels": "^2.1.9",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.4",
+          "swr": "^2.4.1",
+          "tailwind-merge": "^3.5.0",
+          "vaul": "^1.1.2",
+          "vitest": "^4.1.0",
+          "zod": "^3.25.76"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.2.2",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@types/node": "^22.19.15",
+          "@types/pako": "^2.0.3",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "@vitejs/plugin-react": "^4.7.0",
+          "cypress": "^13.17.0",
+          "jsdom": "^26.1.0",
+          "postcss": "^8.5.8",
+          "start-server-and-test": "^2.1.5",
+          "tailwindcss": "^4.2.2",
+          "tw-animate-css": "1.3.3",
+          "typescript": "5.7.3"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/cron/refresh-network",
+        "source_path": "app/api/cron/refresh-network/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/indexnow",
+        "source_path": "app/api/indexnow/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/network/register",
+        "source_path": "app/api/network/register/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/slides",
+        "source_path": "app/api/slides/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/browserops/capture",
+        "source_path": "app/api/v1/browserops/capture/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/browserops/captures/[id]",
+        "source_path": "app/api/v1/browserops/captures/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/chapters/[id]",
+        "source_path": "app/api/v1/chapters/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/chapters",
+        "source_path": "app/api/v1/chapters/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/dns/files/[fileId]",
+        "source_path": "app/api/v1/dns/files/[fileId]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/dns/files/[fileId]/stripes",
+        "source_path": "app/api/v1/dns/files/[fileId]/stripes/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/dns/files",
+        "source_path": "app/api/v1/dns/files/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/dns/jobs/[jobId]",
+        "source_path": "app/api/v1/dns/jobs/[jobId]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "PATCH"
+        ]
+      },
+      {
+        "route": "/v1/dns/jobs",
+        "source_path": "app/api/v1/dns/jobs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/dns/zones/[zoneId]",
+        "source_path": "app/api/v1/dns/zones/[zoneId]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PATCH"
+        ]
+      },
+      {
+        "route": "/v1/dns/zones",
+        "source_path": "app/api/v1/dns/zones/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/inspect/runs/[id]",
+        "source_path": "app/api/v1/inspect/runs/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/inspect/tool/[slug]",
+        "source_path": "app/api/v1/inspect/tool/[slug]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/discovery-compliance",
+        "source_path": "app/api/v1/network/discovery-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph",
+        "source_path": "app/api/v1/network/graph/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph/sync",
+        "source_path": "app/api/v1/network/graph/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/route-compliance",
+        "source_path": "app/api/v1/network/route-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network",
+        "source_path": "app/api/v1/network/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/sites",
+        "source_path": "app/api/v1/network/sites/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/trusted-domains",
+        "source_path": "app/api/v1/network/trusted-domains/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/slides/[id]",
+        "source_path": "app/api/v1/slides/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/slides",
+        "source_path": "app/api/v1/slides/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/slides/sync",
+        "source_path": "app/api/v1/slides/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/tools/[slug]/capabilities",
+        "source_path": "app/api/v1/tools/[slug]/capabilities/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/tools/[slug]/relationships",
+        "source_path": "app/api/v1/tools/[slug]/relationships/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/tools/[slug]",
+        "source_path": "app/api/v1/tools/[slug]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/tools/[slug]/screenshot/refresh",
+        "source_path": "app/api/v1/tools/[slug]/screenshot/refresh/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/tools/[slug]/screenshot",
+        "source_path": "app/api/v1/tools/[slug]/screenshot/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/tools",
+        "source_path": "app/api/v1/tools/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/tools/sync",
+        "source_path": "app/api/v1/tools/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/trace/spans",
+        "source_path": "app/api/v1/trace/spans/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/cinematic-scroll-v2",
+        "source_path": "app/cinematic-scroll-v2/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/files/[fileId]",
+        "source_path": "app/dns/files/[fileId]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/files",
+        "source_path": "app/dns/files/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/files/upload",
+        "source_path": "app/dns/files/upload/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/jobs",
+        "source_path": "app/dns/jobs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns",
+        "source_path": "app/dns/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/zones/new",
+        "source_path": "app/dns/zones/new/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dns/zones",
+        "source_path": "app/dns/zones/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/jobs",
+        "source_path": "app/jobs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/network/[siteId]",
+        "source_path": "app/network/[siteId]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/network",
+        "source_path": "app/network/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap",
+        "source_path": "app/roadmap/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/slides",
+        "source_path": "app/slides/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tools/[slug]",
+        "source_path": "app/tools/[slug]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tools",
+        "source_path": "app/tools/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "cinematic-slideshow.test",
+      "kind": "ui-component",
+      "source_path": "__tests__/components/cinematic-slideshow.test.tsx"
+    },
+    {
+      "name": "announcement-section",
+      "kind": "ui-component",
+      "source_path": "components/cinematic-scroll/announcement-section.tsx"
+    },
+    {
+      "name": "hero-section",
+      "kind": "ui-component",
+      "source_path": "components/cinematic-scroll/hero-section.tsx"
+    },
+    {
+      "name": "masked-text-section",
+      "kind": "ui-component",
+      "source_path": "components/cinematic-scroll/masked-text-section.tsx"
+    },
+    {
+      "name": "narrative-section",
+      "kind": "ui-component",
+      "source_path": "components/cinematic-scroll/narrative-section.tsx"
+    },
+    {
+      "name": "scroll-section",
+      "kind": "ui-component",
+      "source_path": "components/cinematic-scroll/scroll-section.tsx"
+    },
+    {
+      "name": "tool-catalog",
+      "kind": "ui-component",
+      "source_path": "components/codex/tool-catalog.tsx"
+    },
+    {
+      "name": "precision-cursor",
+      "kind": "ui-component",
+      "source_path": "components/cursor/precision-cursor.tsx"
+    },
+    {
+      "name": "dns-dashboard",
+      "kind": "ui-component",
+      "source_path": "components/dns/dns-dashboard.tsx"
+    },
+    {
+      "name": "dns-header",
+      "kind": "ui-component",
+      "source_path": "components/dns/dns-header.tsx"
+    },
+    {
+      "name": "dns-nav",
+      "kind": "ui-component",
+      "source_path": "components/dns/dns-nav.tsx"
+    },
+    {
+      "name": "file-detail",
+      "kind": "ui-component",
+      "source_path": "components/dns/file-detail.tsx"
+    },
+    {
+      "name": "file-uploader",
+      "kind": "ui-component",
+      "source_path": "components/dns/file-uploader.tsx"
+    },
+    {
+      "name": "files-list",
+      "kind": "ui-component",
+      "source_path": "components/dns/files-list.tsx"
+    },
+    {
+      "name": "jobs-list",
+      "kind": "ui-component",
+      "source_path": "components/dns/jobs-list.tsx"
+    },
+    {
+      "name": "zone-form",
+      "kind": "ui-component",
+      "source_path": "components/dns/zone-form.tsx"
+    },
+    {
+      "name": "zones-list",
+      "kind": "ui-component",
+      "source_path": "components/dns/zones-list.tsx"
+    },
+    {
+      "name": "network-categories",
+      "kind": "ui-component",
+      "source_path": "components/network/network-categories.tsx"
+    },
+    {
+      "name": "network-cta",
+      "kind": "ui-component",
+      "source_path": "components/network/network-cta.tsx"
+    },
+    {
+      "name": "network-directory",
+      "kind": "ui-component",
+      "source_path": "components/network/network-directory.tsx"
+    },
+    {
+      "name": "network-footer",
+      "kind": "ui-component",
+      "source_path": "components/network/network-footer.tsx"
+    },
+    {
+      "name": "network-hero",
+      "kind": "ui-component",
+      "source_path": "components/network/network-hero.tsx"
+    },
+    {
+      "name": "network-nav",
+      "kind": "ui-component",
+      "source_path": "components/network/network-nav.tsx"
+    },
+    {
+      "name": "network-showcase",
+      "kind": "ui-component",
+      "source_path": "components/network/network-showcase.tsx"
+    },
+    {
+      "name": "network-stats",
+      "kind": "ui-component",
+      "source_path": "components/network/network-stats.tsx"
+    },
+    {
+      "name": "site-detail",
+      "kind": "ui-component",
+      "source_path": "components/network/site-detail.tsx"
+    },
+    {
+      "name": "site-icon",
+      "kind": "ui-component",
+      "source_path": "components/network/site-icon.tsx"
+    },
+    {
+      "name": "json-ld",
+      "kind": "ui-component",
+      "source_path": "components/seo/json-ld.tsx"
+    },
+    {
+      "name": "cinematic-slides",
+      "kind": "ui-component",
+      "source_path": "components/slides/cinematic-slides.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "alert-dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "aspect-ratio",
+      "kind": "ui-component",
+      "source_path": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/button-group.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "calendar",
+      "kind": "ui-component",
+      "source_path": "components/ui/calendar.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "carousel",
+      "kind": "ui-component",
+      "source_path": "components/ui/carousel.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "checkbox",
+      "kind": "ui-component",
+      "source_path": "components/ui/checkbox.tsx"
+    },
+    {
+      "name": "collapsible",
+      "kind": "ui-component",
+      "source_path": "components/ui/collapsible.tsx"
+    },
+    {
+      "name": "command",
+      "kind": "ui-component",
+      "source_path": "components/ui/command.tsx"
+    },
+    {
+      "name": "context-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/context-menu.tsx"
+    },
+    {
+      "name": "dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/dialog.tsx"
+    },
+    {
+      "name": "drawer",
+      "kind": "ui-component",
+      "source_path": "components/ui/drawer.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "empty",
+      "kind": "ui-component",
+      "source_path": "components/ui/empty.tsx"
+    },
+    {
+      "name": "field",
+      "kind": "ui-component",
+      "source_path": "components/ui/field.tsx"
+    },
+    {
+      "name": "form",
+      "kind": "ui-component",
+      "source_path": "components/ui/form.tsx"
+    },
+    {
+      "name": "hover-card",
+      "kind": "ui-component",
+      "source_path": "components/ui/hover-card.tsx"
+    },
+    {
+      "name": "input-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-group.tsx"
+    },
+    {
+      "name": "input-otp",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-otp.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "item",
+      "kind": "ui-component",
+      "source_path": "components/ui/item.tsx"
+    },
+    {
+      "name": "kbd",
+      "kind": "ui-component",
+      "source_path": "components/ui/kbd.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "menubar",
+      "kind": "ui-component",
+      "source_path": "components/ui/menubar.tsx"
+    },
+    {
+      "name": "navigation-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "name": "pagination",
+      "kind": "ui-component",
+      "source_path": "components/ui/pagination.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "components/ui/popover.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "radio-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/radio-group.tsx"
+    },
+    {
+      "name": "resizable",
+      "kind": "ui-component",
+      "source_path": "components/ui/resizable.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "components/ui/slider.tsx"
+    },
+    {
+      "name": "sonner",
+      "kind": "ui-component",
+      "source_path": "components/ui/sonner.tsx"
+    },
+    {
+      "name": "spinner",
+      "kind": "ui-component",
+      "source_path": "components/ui/spinner.tsx"
+    },
+    {
+      "name": "switch",
+      "kind": "ui-component",
+      "source_path": "components/ui/switch.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "toaster",
+      "kind": "ui-component",
+      "source_path": "components/ui/toaster.tsx"
+    },
+    {
+      "name": "toggle-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle-group.tsx"
+    },
+    {
+      "name": "toggle",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    },
+    {
+      "name": "use-mobile",
+      "kind": "ui-component",
+      "source_path": "components/ui/use-mobile.tsx"
+    }
+  ],
+  "data_models": [
+    {
+      "name": "schema",
+      "kind": "schema-file",
+      "source_path": "lib/codex/schema.ts"
+    }
+  ],
+  "database": {
+    "databases": [],
+    "schemas": [
+      {
+        "path": "config/slideshow.schema.ts"
+      },
+      {
+        "path": "lib/codex/schema.ts"
+      },
+      {
+        "path": "scripts/001_create_schema.sql"
+      }
+    ],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "routes.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/routes.test.ts"
+    },
+    {
+      "name": "cinematic-slideshow.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/components/cinematic-slideshow.test.tsx"
+    },
+    {
+      "name": "client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/mcp/client.test.ts"
+    },
+    {
+      "name": "hooks.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/scroll-engine/hooks.test.ts"
+    },
+    {
+      "name": "interpolators.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/scroll-engine/interpolators.test.ts"
+    },
+    {
+      "name": "scroll-engine.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/scroll-engine/scroll-engine.test.ts"
+    },
+    {
+      "name": "section-manager.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/scroll-engine/section-manager.test.ts"
+    },
+    {
+      "name": "cypress.config.ts",
+      "kind": "cypress",
+      "source_path": "cypress.config.ts"
+    },
+    {
+      "name": "cinematic-slideshow.cy.ts",
+      "kind": "cypress",
+      "source_path": "cypress/e2e/cinematic-slideshow.cy.ts"
+    },
+    {
+      "name": "e2e.ts",
+      "kind": "cypress",
+      "source_path": "cypress/support/e2e.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "CODEX_LOCAL_STORAGE_DIR",
+        "source_paths": [
+          "__tests__/api/routes.test.ts",
+          "lib/codex/storage.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CYPRESS_BASE_URL",
+        "source_paths": [
+          "cypress.config.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "DNS_ENCRYPTION_KEY",
+        "source_paths": [
+          "app/api/v1/dns/zones/[zoneId]/route.ts",
+          "app/api/v1/dns/zones/route.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "INDEXNOW_KEY",
+        "source_paths": [
+          "app/api/indexnow/route.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "KV_REST_API_URL",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "source_paths": [
+          "lib/supabase/client.ts",
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_URL",
+        "source_paths": [
+          "lib/supabase/client.ts",
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/cron/refresh-network/route.ts",
+          "app/api/health/route.ts",
+          "app/cinematic-scroll-v2/scroll-progress.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "__tests__/api/routes.test.ts",
+          "app/api/cron/refresh-network/route.ts",
+          "lib/codex/auth.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "POSTGRES_URL",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "REDIS_URL",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VERCEL_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "vercel.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [
+      {
+        "path": "docs/CINEMATIC_SCROLL_ENHANCEMENT_PLAN.md"
+      },
+      {
+        "path": "docs/SLIDES_PLATFORM_ARCHITECTURE.md"
+      },
+      {
+        "path": "docs/SLIDES_PLATFORM_SPEC.md"
+      },
+      {
+        "path": "docs/SLIDES_ROADMAP.md"
+      }
+    ],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.ts"
+      },
+      {
+        "path": "lib/codex/mcp.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/agents.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      },
+      {
+        "path": "public/.well-known/apple-app-site-association"
+      },
+      {
+        "path": "public/.well-known/assetlinks.json"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "__tests__/api/routes.test.ts",
+        "app/.well-known/agents.json/route.ts",
+        "app/.well-known/ai-plugin.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/api/cron/refresh-network/route.ts",
+        "cypress/e2e/cinematic-slideshow.cy.ts",
+        "lib/codex/auth.ts",
+        "lib/codex/discovery.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Redis",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/supabase/client.ts",
+        "lib/supabase/server.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "package.json"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": [
+      {
+        "path": "LICENSE.txt"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 6,
+      "text": "'Contact: mailto:security@platphormnews.com',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 7,
+      "text": "`Canonical: ${CODEX_BASE_URL}/.well-known/security.txt`,"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 9,
+      "text": "'Policy: https://platphormnews.com/security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/network/network-footer.tsx",
+      "line": 154,
+      "text": "<a href=\"/.well-known/security.txt\" className=\"text-sm text-muted-foreground transition-colors duration-150 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/network/network-footer.tsx",
+      "line": 155,
+      "text": "Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/cinematic-slides.config.ts",
+      "line": 499,
+      "text": "subtitle: 'AI Security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex-slides.config.ts",
+      "line": 265,
+      "text": "// SECURITY"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 17,
+      "text": "| 'security'"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 97,
+      "text": "id: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 98,
+      "text": "name: 'Security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 185,
+      "text": "vertical: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 624,
+      "text": "// ========== SECURITY =========="
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 632,
+      "text": "vertical: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/codex.config.ts",
+      "line": 635,
+      "text": "features: ['Red Teaming', 'AI Security', 'Continuous Testing', 'Remediation'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network-slides-v3.config.ts",
+      "line": 228,
+      "text": "vertical: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network-slides-v3.config.ts",
+      "line": 488,
+      "text": "vertical: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network-slides-v3.config.ts",
+      "line": 491,
+      "text": "features: ['Red Teaming', 'AI Security', 'Continuous Testing', 'Remediation'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 16,
+      "text": "| 'security'"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 86,
+      "text": "id: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 87,
+      "text": "name: 'Security Tools',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 210,
+      "text": "tagline: 'Security Intelligence',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 211,
+      "text": "description: 'Real-time threat intelligence and security education. Stay ahead of emerging cyber threats.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 216,
+      "text": "features: ['Threat Intelligence', 'Security Training', 'Incident Analysis', 'Best Practices'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 396,
+      "text": "// Security Tools"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 400,
+      "text": "tagline: 'Security Intelligence',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 401,
+      "text": "description: 'Managed security intelligence. Vulnerability scanning, threat detection, and compliance monitoring.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/network.config.ts",
+      "line": 403,
+      "text": "category: 'security',"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "config/slides.config.ts",
+      "line": 78,
+      "text": "imageSrc?: string        // @deprecated - use media.src"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "config/slides.config.ts",
+      "line": 79,
+      "text": "videoSrc?: string        // @deprecated - use media.src with type: 'video'"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "config/slides.config.ts",
+      "line": 80,
+      "text": "alignment?: 'left' | 'center' | 'right'  // @deprecated - use layout.alignment"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "config/slides.config.ts",
+      "line": 81,
+      "text": "titleSize?: 'normal' | 'large' | 'massive'  // @deprecated - use type"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_ARCHITECTURE.md",
+      "line": 241,
+      "text": "| **Security** | 5+ | Claws, Red Team, MSI |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_ARCHITECTURE.md",
+      "line": 254,
+      "text": "1. **Claws** - The Network Core (Security)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_ARCHITECTURE.md",
+      "line": 257,
+      "text": "4. **Red Team** - AI-native Cybersecurity (Security)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_SPEC.md",
+      "line": 50,
+      "text": "| **Security** | Identity, auth, protection | claws, redteam |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_SPEC.md",
+      "line": 69,
+      "text": "| 1 | **claws** | Security | The network's identity core - every user's first touchpoint |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_SPEC.md",
+      "line": 72,
+      "text": "| 4 | **redteam** | Security | AI-native cybersecurity & agentic red teaming |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_PLATFORM_SPEC.md",
+      "line": 113,
+      "text": "| **Glitch Morph** | Security themes | Subtle chromatic aberration + displacement |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_ROADMAP.md",
+      "line": 37,
+      "text": "| 1 | Claws | Security | Hero reveal |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/SLIDES_ROADMAP.md",
+      "line": 40,
+      "text": "| 4 | Red Team | Security | Character sweep |"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/codex/discovery.ts",
+      "line": 29,
+      "text": "'/.well-known/security.txt',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/codex/discovery.ts",
+      "line": 81,
+      "text": "security: method === 'post' && !path.endsWith('/api/mcp') ? [{ PlatPhormApiKey: [] }] : [],"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/codex/discovery.ts",
+      "line": 288,
+      "text": "securityContact: 'security@platphormnews.com',"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "lib/codex/static-data.ts",
+      "line": 187,
+      "text": "description: 'Sandbox supports protected replay and validation workflows without exposing unsafe mutations to public views.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "License FAQ.md",
+      "line": 23,
+      "text": "Yes, if your use is non-commercial as defined by the license. Internal evaluation, research, development, testing, security review, accessibility work, and internal experimentation are generally allowed if you are not directly or indirectly"
+    },
+    {
+      "kind": "security",
+      "source_path": "LICENSE.txt",
+      "line": 13,
+      "text": "“Non-commercial purposes” include personal use by an individual, academic research and development, journalism, testing, evaluation, interoperability work, security review, accessibility work, and internal use by your own organization where"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 3474,
+      "text": "deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_create_dns_tables.sql",
+      "line": 89,
+      "text": "ALTER TABLE dns_zones ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_create_dns_tables.sql",
+      "line": 90,
+      "text": "ALTER TABLE dns_files ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_create_dns_tables.sql",
+      "line": 91,
+      "text": "ALTER TABLE dns_stripes ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_create_dns_tables.sql",
+      "line": 92,
+      "text": "ALTER TABLE dns_upload_jobs ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_create_dns_tables.sql",
+      "line": 93,
+      "text": "ALTER TABLE dns_stripe_meta ENABLE ROW LEVEL SECURITY;"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/jobs/page.tsx",
+          "app/slides/page.tsx",
+          "components/seo/json-ld.tsx",
+          "components/ui/chart.tsx"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/v1/dns/files/route.ts",
+          "app/feed.xml/route.ts",
+          "components/dns/file-detail.tsx"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/dns/zone-form.tsx",
+          "hooks/use-network-data.ts",
+          "lib/dns/cloudflare.ts"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/routes.test.ts",
+          "app/.well-known/agents.json/route.ts",
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/api/cron/refresh-network/route.ts",
+          "cypress/e2e/cinematic-slideshow.cy.ts",
+          "lib/codex/auth.ts",
+          "lib/codex/discovery.ts",
+          "lib/codex/mcp.ts",
+          "lib/codex/static-data.ts",
+          "README.md",
+          "scripts/001_create_schema.sql"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/components/cinematic-slideshow.test.tsx",
+          "app/api/v1/tools/[slug]/route.ts",
+          "app/globals.css",
+          "app/jobs/page.tsx",
+          "app/layout.tsx",
+          "app/network/[siteId]/page.tsx",
+          "app/network/page.tsx",
+          "app/page.tsx",
+          "app/roadmap/page.tsx",
+          "app/slides/page.tsx",
+          "components/codex/tool-catalog.tsx",
+          "components/dns/dns-dashboard.tsx",
+          "components/dns/file-detail.tsx",
+          "components/dns/file-uploader.tsx",
+          "components/dns/files-list.tsx",
+          "components/dns/jobs-list.tsx",
+          "components/dns/zone-form.tsx",
+          "components/dns/zones-list.tsx",
+          "components/network/network-categories.tsx",
+          "components/network/network-directory.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/layout.tsx",
+          "lib/codex/discovery.ts",
+          "scripts/001_create_schema.sql"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/network/network-showcase.tsx",
+          "components/network/site-icon.tsx",
+          "config/codex.config.ts",
+          "config/network.config.ts",
+          "public/schemas/platphorm-universal-schema-pack.json"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/routes.test.ts",
+          "app/api/health/route.ts",
+          "app/api/network/register/route.ts",
+          "app/api/v1/health/route.ts",
+          "components/network/network-footer.tsx",
+          "config/cinematic-slides.config.ts",
+          "config/codex.config.ts",
+          "config/network-slides-v3.config.ts",
+          "config/network.config.ts",
+          "docs/SLIDES_PLATFORM_ARCHITECTURE.md",
+          "docs/SLIDES_PLATFORM_SPEC.md",
+          "docs/SLIDES_ROADMAP.md",
+          "lib/codex/catalog.ts",
+          "lib/codex/discovery.ts",
+          "lib/codex/mcp.ts",
+          "lib/codex/network.ts",
+          "lib/codex/static-data.ts",
+          "public/schemas/platphorm-universal-schema-pack.json"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/indexnow/route.ts",
+          "app/jobs/page.tsx",
+          "components/dns/files-list.tsx",
+          "components/dns/jobs-list.tsx",
+          "components/dns/zones-list.tsx",
+          "config/codex.config.ts",
+          "docs/CINEMATIC_SCROLL_ENHANCEMENT_PLAN.md",
+          "docs/SLIDES_PLATFORM_SPEC.md",
+          "hooks/use-webgl-effects.ts",
+          "public/humans.txt"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/codex/tool-catalog.tsx",
+          "components/dns/zone-form.tsx"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/api/v1/dns/zones/[zoneId]/route.ts",
+          "app/api/v1/dns/zones/route.ts",
+          "components/dns/zone-form.tsx",
+          "config/network.config.ts",
+          "docs/SLIDES_PLATFORM_ARCHITECTURE.md",
+          "docs/SLIDES_ROADMAP.md",
+          "lib/codex/auth.ts",
+          "lib/dns/cloudflare.ts",
+          "lib/dns/types.ts",
+          "lib/dns/utils.server.ts",
+          "pnpm-lock.yaml",
+          "scripts/001_create_dns_tables.sql",
+          "scripts/001_create_schema.sql"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:13.484Z"
+}

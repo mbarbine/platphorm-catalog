@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-co__npm-utilities",
+    "name": "process-co__npm-utilities",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-utilities",
+    "relative_path": "github-recent/process-co__npm-utilities",
+    "remote_url": "git@github.com:process-co/npm-utilities.git",
+    "default_branch": "main",
+    "current_commit": "d101f4032f5101ac0ec35dafd2c6aa40c439daf2"
+  },
+  "languages": [
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 2459
+    },
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 2201
+    },
+    {
+      "language": "JSON",
+      "files": 1,
+      "bytes": 908
+    },
+    {
+      "language": "TypeScript",
+      "files": 1,
+      "bytes": 466
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "@process.co/utilities",
+        "version": "0.0.0-development",
+        "scripts": {
+          "tsc_build": "tsc",
+          "build": "tsup src/index.ts --dts-resolve --format cjs,esm --out-dir dist --clean --minify --sourcemap"
+        },
+        "dependencies": {
+          "short-unique-id": "^5.3.2",
+          "tsup": "^8.5.1",
+          "uuid": "^11.1.0"
+        },
+        "dev_dependencies": {
+          "@repo/config-typescript": "workspace:^",
+          "@types/node": "^22.13.14",
+          "typescript": "^5.7.3"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/publish-utilities.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": ".github/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/publish-utilities.yml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:32.472Z"
+}

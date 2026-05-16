@@ -1,0 +1,1313 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__wildduck",
+    "name": "mbarbine__wildduck",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__wildduck",
+    "relative_path": "github-recent/mbarbine__wildduck",
+    "remote_url": "git@github.com:mbarbine/wildduck.git",
+    "default_branch": "main",
+    "current_commit": "55e1d60ca63bc6dc6d3b13db8167d0bd60465d2c"
+  },
+  "languages": [
+    {
+      "language": "Shell",
+      "files": 23,
+      "bytes": 162547
+    },
+    {
+      "language": "Markdown",
+      "files": 20,
+      "bytes": 152724
+    },
+    {
+      "language": "TOML",
+      "files": 29,
+      "bytes": 49237
+    },
+    {
+      "language": "JavaScript",
+      "files": 11,
+      "bytes": 35293
+    },
+    {
+      "language": "YAML",
+      "files": 9,
+      "bytes": 23312
+    },
+    {
+      "language": "JSON",
+      "files": 5,
+      "bytes": 12186
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 9945
+    },
+    {
+      "language": "HTML",
+      "files": 1,
+      "bytes": 1737
+    },
+    {
+      "language": "Dockerfile",
+      "files": 2,
+      "bytes": 1529
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Express",
+      "confidence": "high",
+      "evidence_paths": [
+        "scripts/ja4-plus/package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "scripts/ja4-plus/package.json",
+        "name": "wildduck-ja4-plus",
+        "version": "1.0.0",
+        "scripts": {
+          "start": "node integrate-wildduck.js"
+        },
+        "dependencies": {
+          "mongodb": "^5.0.0",
+          "redis": "^4.6.0",
+          "express": "^4.18.0"
+        },
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [
+      "mongodb",
+      "redis"
+    ],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "ja4-build/Dockerfile"
+      },
+      {
+        "path": "zone-mta-build/Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose-clean.yml"
+      },
+      {
+        "path": "docker-compose-no-ssl.yml"
+      },
+      {
+        "path": "docker-compose-simple.yml"
+      },
+      {
+        "path": "docker-compose.override.yml"
+      },
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": ".env"
+      },
+      {
+        "path": ".env.ja4"
+      }
+    ],
+    "variables": [
+      {
+        "name": "API_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "COMPOSE_PROJECT_NAME",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DKIM_KEY_PATH",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "DKIM_SELECTOR",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DOMAIN",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "ENABLE_METRICS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "IMAP_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "IMAPS_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "JA4_API_KEY",
+        "source_paths": [
+          ".env",
+          ".env.ja4"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "JA4_API_PORT",
+        "source_paths": [
+          ".env",
+          ".env.ja4"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "JA4_LOG_LEVEL",
+        "source_paths": [
+          ".env",
+          ".env.ja4"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "JA4_MONGODB_URL",
+        "source_paths": [
+          ".env",
+          ".env.ja4"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "JA4_REDIS_URL",
+        "source_paths": [
+          ".env",
+          ".env.ja4"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "LMTP_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "LOG_LEVEL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MONGODB_DATABASE",
+        "source_paths": [
+          "docker-compose-no-ssl.yml"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MONGODB_ROOT_PASSWORD",
+        "source_paths": [
+          ".env",
+          "docker-compose-no-ssl.yml"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "MONGODB_ROOT_USER",
+        "source_paths": [
+          "docker-compose-no-ssl.yml"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MONGODB_URL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POP3_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POP3S_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "REDIS_URL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SMTP_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SMTP_SUBMISSION_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TLS_CERT_PATH",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TLS_KEY_PATH",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "WEBMAIL_PORT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "WEBMAIL_SECRET",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    },
+    {
+      "path": "scripts/ja4-plus/package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "docs/README.md"
+      },
+      {
+        "path": "docs/services/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [
+      {
+        "path": "docs/CLEANUP_ANALYSIS.md"
+      },
+      {
+        "path": "docs/configuration.md"
+      },
+      {
+        "path": "docs/ja4-plus.md"
+      },
+      {
+        "path": "docs/management.md"
+      },
+      {
+        "path": "docs/networking.md"
+      },
+      {
+        "path": "docs/quick-start.md"
+      },
+      {
+        "path": "docs/README.md"
+      },
+      {
+        "path": "docs/RETRO_MODERN_INSTALL.md"
+      },
+      {
+        "path": "docs/RETRO_MODERN_THEME.md"
+      },
+      {
+        "path": "docs/services/haraka.md"
+      },
+      {
+        "path": "docs/services/mongodb.md"
+      },
+      {
+        "path": "docs/services/README.md"
+      },
+      {
+        "path": "docs/services/redis.md"
+      },
+      {
+        "path": "docs/services/traefik.md"
+      },
+      {
+        "path": "docs/services/webmail.md"
+      },
+      {
+        "path": "docs/services/wildduck-server.md"
+      },
+      {
+        "path": "docs/services/zone-mta.md"
+      },
+      {
+        "path": "docs/SETUP_STATUS.md"
+      },
+      {
+        "path": "docs/ZONE_MTA_SETUP.md"
+      }
+    ],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Redis",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        ".env.ja4",
+        "archive/duplicate-configs/haraka/config/wildduck.yaml",
+        "archive/duplicate-configs/webmail/config/default.toml",
+        "archive/duplicate-configs/wildduck/config/default.toml",
+        "archive/duplicate-configs/zone-mta/config/default.toml",
+        "archive/webmail-configs/config.toml",
+        "archive/webmail-configs/email2letter-config.toml",
+        "config/ja4-plus/ja4-service.yml",
+        "docs/ja4-plus.md",
+        "docs/management.md",
+        "docs/networking.md",
+        "scripts/install-ja4-plus.sh",
+        "scripts/ja4-plus/monitor-ja4.sh",
+        "scripts/ja4-plus/package.json"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".env",
+      "line": 25,
+      "text": "# Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/duplicate-configs/webmail/config/default.toml",
+      "line": 22,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 2,
+      "text": "# This enables advanced TLS client fingerprinting for security analysis"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 21,
+      "text": "# Security Headers with JA4+ Integration"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 22,
+      "text": "[http.middlewares.security-headers]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 23,
+      "text": "[http.middlewares.security-headers.headers]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 24,
+      "text": "[http.middlewares.security-headers.headers.customRequestHeaders]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 27,
+      "text": "[http.middlewares.security-headers.headers.customResponseHeaders]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 31,
+      "text": "Strict-Transport-Security = \"max-age=31536000; includeSubDomains\""
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 32,
+      "text": "Content-Security-Policy = \"default-src 'self'; script-src 'self' 'unsafe-inline'\""
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 53,
+      "text": "middlewares = [\"ja4-fingerprint\", \"security-headers\", \"rate-limit\"]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/traefik-configs/ja4-config.toml",
+      "line": 59,
+      "text": "middlewares = [\"ja4-fingerprint\", \"security-headers\", \"rate-limit\"]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/webmail-configs/config.toml",
+      "line": 105,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "archive/webmail-configs/no-ssl.toml",
+      "line": 49,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/traefik/default.toml",
+      "line": 46,
+      "text": "customResponseHeaders = { \"Strict-Transport-Security\" = \"max-age=31536000; includeSubDomains\" }"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/traefik/default.toml",
+      "line": 51,
+      "text": "[http.middlewares.ja4plus-security-headers.headers]"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/traefik/default.toml",
+      "line": 52,
+      "text": "customResponseHeaders = { \"Strict-Transport-Security\" = \"max-age=31536000; includeSubDomains\" }"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/traefik/ja4-plugin.yml",
+      "line": 31,
+      "text": "# Security options"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/config.toml",
+      "line": 34,
+      "text": "# Security settings for development"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/config.toml",
+      "line": 35,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/config.toml",
+      "line": 79,
+      "text": "# JA4+ security enhancements"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/config.toml",
+      "line": 80,
+      "text": "[ja4plus.security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/default.toml",
+      "line": 34,
+      "text": "# Security settings for development"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/default.toml",
+      "line": 35,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/default.toml",
+      "line": 79,
+      "text": "# JA4+ security enhancements"
+    },
+    {
+      "kind": "security",
+      "source_path": "config/webmail/default.toml",
+      "line": 80,
+      "text": "[ja4plus.security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 46,
+      "text": "# - Simplified security settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 61,
+      "text": "# - Production security settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 123,
+      "text": "#### Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 136,
+      "text": "# API security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 277,
+      "text": "#### Security Settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 280,
+      "text": "# Production security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/configuration.md",
+      "line": 313,
+      "text": "### Security Variables"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 3,
+      "text": "This document covers the JA4+ fingerprinting integration for WildDuck mail server, providing advanced network security and client analysis capabilities."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 7,
+      "text": "JA4+ is a comprehensive network fingerprinting suite that provides detailed client identification through TLS, HTTP, SSH, and other protocol analysis. This integration adds advanced security monitoring and threat detection capabilities to y"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 19,
+      "text": "### Security Enhancements"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 25,
+      "text": "- Security alerting"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 259,
+      "text": "- **alerts**: Security alerts"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 276,
+      "text": "├── ja4-alerts.log          # Security alerts"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 280,
+      "text": "## Security Features"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 324,
+      "text": "Configure webhooks for security alerts:"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 458,
+      "text": "### Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 524,
+      "text": "- Security mailing list for alerts"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ja4-plus.md",
+      "line": 538,
+      "text": "**Note**: JA4+ fingerprinting provides powerful security capabilities but should be implemented thoughtfully considering privacy, performance, and compliance requirements."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 115,
+      "text": "# Generate new security tokens"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 243,
+      "text": "### Security Updates"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 246,
+      "text": "# Update security patches"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 247,
+      "text": "./maintenance.sh security-update"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 373,
+      "text": "3. **Security**: Rotate API tokens and certificates regularly"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/management.md",
+      "line": 374,
+      "text": "4. **Updates**: Keep containers updated with security patches"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 309,
+      "text": "## Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 311,
+      "text": "### Network Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 332,
+      "text": "#### SSL/TLS Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 345,
+      "text": "#### API Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 355,
+      "text": "#### Database Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/networking.md",
+      "line": 607,
+      "text": "2. **Security Updates**: Keep containers and certificates updated"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 25,
+      "text": "- **[JA4+ Fingerprinting](ja4-plus.md)** - Advanced client fingerprinting and security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 206,
+      "text": "## 🔒 Security Best Practices"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 208,
+      "text": "### Essential Security Tasks"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 215,
+      "text": "### Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 228,
+      "text": "# Monitor security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/README.md",
+      "line": 229,
+      "text": "./manage.sh security-audit"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/haraka.md",
+      "line": 320,
+      "text": "## Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/haraka.md",
+      "line": 335,
+      "text": "### Authentication Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/haraka.md",
+      "line": 338,
+      "text": "# wildduck.yaml security settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/haraka.md",
+      "line": 339,
+      "text": "security:"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 47,
+      "text": "# Security (enable for production)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 48,
+      "text": "#security:"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 97,
+      "text": "| `audit` | Audit logs | Security and access logs |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 258,
+      "text": "## Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 264,
+      "text": "security:"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/mongodb.md",
+      "line": 291,
+      "text": "### Network Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/redis.md",
+      "line": 45,
+      "text": "# Security (for production)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/redis.md",
+      "line": 314,
+      "text": "## Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/redis.md",
+      "line": 343,
+      "text": "### Network Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 262,
+      "text": "### Security Headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 265,
+      "text": "# HTTP security middleware"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 267,
+      "text": "[http.middlewares.security-headers.headers]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 268,
+      "text": "[http.middlewares.security-headers.headers.customRequestHeaders]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 270,
+      "text": "[http.middlewares.security-headers.headers.customResponseHeaders]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 274,
+      "text": "Strict-Transport-Security = \"max-age=31536000; includeSubDomains\""
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 359,
+      "text": "## Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 384,
+      "text": "middlewares = [\"rate-limit\", \"security-headers\"]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/traefik.md",
+      "line": 523,
+      "text": "middlewares = [\"oauth\", \"rate-limit\", \"security-headers\"]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 45,
+      "text": "# Security settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 46,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 79,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 183,
+      "text": "- **Security Audit** - View login history and sessions"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 284,
+      "text": "## Security Configuration"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 310,
+      "text": "[security]"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 314,
+      "text": "# Content Security Policy"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "docs/services/webmail.md",
+      "line": 315,
+      "text": "csp = \"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'\""
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 317,
+      "text": "# HTTP Security Headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/webmail.md",
+      "line": 321,
+      "text": "### File Upload Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/wildduck-server.md",
+      "line": 105,
+      "text": "# Security settings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/wildduck-server.md",
+      "line": 244,
+      "text": "## Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/services/wildduck-server.md",
+      "line": 279,
+      "text": "### Network Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 3,
+      "text": "This is a complete WildDuck mail server deployment with Docker Compose, including all necessary services, configuration files, and management tools. This setup provides a fully functional email server with web-based administration and moder"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 41,
+      "text": "- **JA4+ fingerprinting support** for advanced security and client analysis"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 409,
+      "text": "Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 415,
+      "text": "Review logs for security issues: manage.sh export-logs"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/install-ja4-plus.sh",
+      "line": 196,
+      "text": "# Security options"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 98,
+      "text": "# Check if security is properly disabled in mongod.conf"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 99,
+      "text": "if grep -q \"^security:\" mongodb/mongod.conf; then"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 100,
+      "text": "error \"MongoDB security is enabled but keyFile is not configured\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 101,
+      "text": "error \"For development, security should be commented out in mongodb/mongod.conf\""
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 118,
+      "text": "# Check for deprecated 'domains' field"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "scripts/pre-start-validation.sh",
+      "line": 120,
+      "text": "error \"Traefik configuration contains deprecated 'domains' field\""
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          ".env.ja4",
+          "archive/traefik-configs/ja4-config.toml",
+          "config/ja4-plus/ja4-config.json",
+          "config/webmail/config.toml",
+          "config/webmail/default.toml",
+          "config/wildduck/default.toml",
+          "docs/ja4-plus.md",
+          "scripts/install-ja4-plus.sh"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docs/services/haraka.md",
+          "docs/services/traefik.md"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".vscode/settings.json",
+          "archive/duplicate-configs/haraka/config/wildduck.yaml",
+          "archive/webmail-configs/config.toml",
+          "archive/webmail-configs/email2letter-config.toml",
+          "archive/wildduck-configs/api.toml",
+          "archive/wildduck-configs/default.toml",
+          "archive/wildduck-configs/minimal.toml",
+          "archive/wildduck-configs/replacement-roles.js",
+          "archive/wildduck-configs/wildduck.toml",
+          "archive/wildduck-configs/zonemta.toml",
+          "config/mongo-init/init-mongo.js",
+          "config/mongodb/init-mongo.js",
+          "config/wildduck/dbs.toml",
+          "config/wildduck/default.toml",
+          "config/zone-mta/pools.toml",
+          "config/zone-mta/zone-mta.toml",
+          "docker-compose-clean.yml",
+          "docker-compose-no-ssl.yml",
+          "docker-compose-simple.yml",
+          "docker-compose.yml"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          ".env.ja4",
+          "archive/duplicate-configs/webmail/config/default.toml",
+          "archive/traefik-configs/ja4-config.toml",
+          "config/ja4-plus/ja4-config.json",
+          "config/ja4-plus/ja4-service.yml",
+          "config/traefik/ja4-plugin.yml",
+          "config/webmail/config.toml",
+          "config/webmail/default.toml",
+          "config/wildduck/default.toml",
+          "docker-compose-no-ssl.yml",
+          "docs/ja4-plus.md",
+          "docs/README.md",
+          "manage.sh",
+          "README.md",
+          "scripts/install-ja4-plus.sh",
+          "scripts/ja4-plus-manager.sh",
+          "scripts/ja4-plus/integrate-wildduck.js",
+          "scripts/ja4-plus/mock-api.html",
+          "scripts/ja4-plus/monitor-ja4.sh"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docker-compose-no-ssl.yml",
+          "docs/configuration.md",
+          "docs/ja4-plus.md",
+          "docs/management.md",
+          "docs/networking.md",
+          "docs/quick-start.md",
+          "docs/README.md",
+          "docs/services/mongodb.md",
+          "docs/services/redis.md",
+          "docs/services/traefik.md",
+          "docs/services/webmail.md",
+          "docs/services/wildduck-server.md",
+          "docs/services/zone-mta.md",
+          "docs/SETUP_STATUS.md",
+          "ja4-build/Dockerfile",
+          "manage-users.sh",
+          "manage.sh",
+          "README.md",
+          "run-mount-analysis.sh",
+          "scripts/install-ja4-plus.sh"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          "README.md",
+          "scripts/test-redis-network.sh"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docs/configuration.md",
+          "docs/ja4-plus.md",
+          "docs/management.md",
+          "docs/README.md",
+          "docs/services/redis.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "config/wildduck/default.toml",
+          "docs/services/traefik.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          "archive/duplicate-configs/haraka/config/wildduck.yaml",
+          "archive/wildduck-configs/api.toml",
+          "archive/wildduck-configs/default.toml",
+          "config/haraka/wildduck.yaml",
+          "config/mongo-init/init-mongo.js",
+          "config/mongodb/init-mongo.js",
+          "config/mongodb/setup-admin.js",
+          "config/wildduck/dbs.toml",
+          "config/wildduck/default.toml",
+          "config/wildduck/redis.toml",
+          "docker-compose-no-ssl.yml",
+          "docs/configuration.md",
+          "docs/management.md",
+          "docs/networking.md",
+          "docs/quick-start.md",
+          "docs/README.md",
+          "docs/services/mongodb.md",
+          "docs/services/redis.md",
+          "docs/services/webmail.md"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "archive/duplicate-configs/haraka/config/wildduck.yaml",
+          "archive/webmail-configs/config.toml",
+          "archive/webmail-configs/email2letter-config.toml",
+          "archive/webmail-configs/no-ssl.toml",
+          "archive/wildduck-configs/api.toml",
+          "archive/wildduck-configs/default.toml",
+          "archive/wildduck-configs/minimal.toml",
+          "archive/wildduck-configs/no-ssl.toml",
+          "archive/wildduck-configs/wildduck.toml",
+          "config/haraka/wildduck.yaml",
+          "config/mongodb/init-mongo.js",
+          "config/webmail/config.toml",
+          "config/webmail/default.toml",
+          "config/wildduck/default.toml",
+          "config/wildduck/roles.json",
+          "docs/configuration.md",
+          "docs/management.md",
+          "docs/networking.md",
+          "docs/quick-start.md",
+          "docs/README.md"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:29.497Z"
+}

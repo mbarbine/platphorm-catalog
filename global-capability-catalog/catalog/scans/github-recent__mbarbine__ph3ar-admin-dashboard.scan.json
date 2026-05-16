@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__ph3ar-admin-dashboard",
+    "name": "mbarbine__ph3ar-admin-dashboard",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-admin-dashboard",
+    "relative_path": "github-recent/mbarbine__ph3ar-admin-dashboard",
+    "remote_url": "git@github.com:mbarbine/ph3ar-admin-dashboard.git",
+    "default_branch": "main",
+    "current_commit": "bb85616340b2a8e3931d0b7009dcb785f61b5248"
+  },
+  "languages": [
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 151535
+    },
+    {
+      "language": "TypeScript",
+      "files": 38,
+      "bytes": 62294
+    },
+    {
+      "language": "Markdown",
+      "files": 4,
+      "bytes": 6386
+    },
+    {
+      "language": "JSON",
+      "files": 6,
+      "bytes": 3363
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 2890
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 81
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Drizzle ORM",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": null,
+        "version": null,
+        "scripts": {
+          "dev": "next dev --turbopack",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {
+          "@neondatabase/serverless": "^0.9.5",
+          "@radix-ui/react-dialog": "^1.1.7",
+          "@radix-ui/react-dropdown-menu": "^2.1.7",
+          "@radix-ui/react-slot": "^1.2.0",
+          "@radix-ui/react-tabs": "^1.1.4",
+          "@radix-ui/react-tooltip": "^1.2.0",
+          "@types/node": "20.17.6",
+          "@types/react": "19.0.0",
+          "@types/react-dom": "19.0.0",
+          "@vercel/analytics": "^1.5.0",
+          "autoprefixer": "^10.4.21",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "drizzle-kit": "^0.22.8",
+          "drizzle-orm": "^0.31.4",
+          "drizzle-zod": "^0.5.1",
+          "lucide-react": "^0.400.0",
+          "next": "15.1.11",
+          "next-auth": "5.0.0-beta.25",
+          "postcss": "^8.5.3",
+          "prettier": "^3.5.3",
+          "prop-types": "^15.8.1",
+          "react": "19.0.0",
+          "react-dom": "19.0.0",
+          "server-only": "^0.0.1",
+          "tailwind-merge": "^2.6.0",
+          "tailwindcss": "^3.4.17",
+          "tailwindcss-animate": "^1.0.7",
+          "zod": "^3.24.3"
+        },
+        "dev_dependencies": {
+          "@testing-library/dom": "^10.4.1",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@vitejs/plugin-react": "^6.0.1",
+          "jsdom": "^29.0.1",
+          "typescript": "5.7.2",
+          "vitest": "^4.1.1"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/auth/[...nextauth]",
+        "source_path": "app/api/auth/[...nextauth]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/seed",
+        "source_path": "app/api/seed/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/customers",
+        "source_path": "app/(dashboard)/customers/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/(dashboard)",
+        "source_path": "app/(dashboard)/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/login",
+        "source_path": "app/login/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "icons",
+      "kind": "ui-component",
+      "source_path": "components/icons.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [
+      "drizzle"
+    ],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "utils.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/utils.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "POSTGRES_URL",
+        "source_paths": [
+          "lib/db.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.ts"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.js"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/.well-known/llms.txt"
+      },
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "public/.well-known/mcp.json"
+      }
+    ],
+    "llms": [
+      {
+        "path": "public/.well-known/llms.txt"
+      },
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "public/.well-known/ai-plugin.json"
+      },
+      {
+        "path": "public/.well-known/llms.txt"
+      },
+      {
+        "path": "public/.well-known/mcp.json"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/db.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/(dashboard)/layout.tsx",
+        "app/layout.tsx",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE.md"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 221,
+      "text": "deprecated: 'Merged into tsx: https://tsx.is'"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 225,
+      "text": "deprecated: 'Merged into tsx: https://tsx.is'"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/customers/page.tsx",
+          "app/(dashboard)/products-table.tsx",
+          "app/globals.css",
+          "app/login/page.tsx",
+          "components/ui/card.tsx",
+          "tailwind.config.ts"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/error.tsx",
+          "pnpm-lock.yaml",
+          "public/.well-known/ai-plugin.json"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "README.md"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml",
+          "README.md"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/globals.css",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:11.762Z"
+}

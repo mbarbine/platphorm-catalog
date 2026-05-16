@@ -1,0 +1,1072 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-stannp-api-wrapper",
+    "name": "mbarbine__platphorm-stannp-api-wrapper",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-stannp-api-wrapper",
+    "relative_path": "github-recent/mbarbine__platphorm-stannp-api-wrapper",
+    "remote_url": "git@github.com:mbarbine/platphorm-stannp-api-wrapper.git",
+    "default_branch": "main",
+    "current_commit": "4f89f1b0a5b9d945d303c3dcd9281cb21dc3fba0"
+  },
+  "languages": [
+    {
+      "language": "JSON",
+      "files": 5,
+      "bytes": 459650
+    },
+    {
+      "language": "TypeScript",
+      "files": 89,
+      "bytes": 237744
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 204466
+    },
+    {
+      "language": "SQL",
+      "files": 8,
+      "bytes": 18212
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 4856
+    },
+    {
+      "language": "Markdown",
+      "files": 3,
+      "bytes": 2591
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 363
+    },
+    {
+      "language": "XML",
+      "files": 1,
+      "bytes": 341
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Jest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-v0-project",
+        "version": "0.1.0",
+        "scripts": {
+          "test": "jest",
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.9.1",
+          "@neondatabase/serverless": "latest",
+          "@radix-ui/react-accordion": "1.2.2",
+          "@radix-ui/react-alert-dialog": "1.1.4",
+          "@radix-ui/react-aspect-ratio": "1.1.1",
+          "@radix-ui/react-avatar": "1.1.2",
+          "@radix-ui/react-checkbox": "1.1.3",
+          "@radix-ui/react-collapsible": "1.1.2",
+          "@radix-ui/react-context-menu": "2.2.4",
+          "@radix-ui/react-dialog": "1.1.4",
+          "@radix-ui/react-dropdown-menu": "2.1.4",
+          "@radix-ui/react-hover-card": "1.1.4",
+          "@radix-ui/react-label": "latest",
+          "@radix-ui/react-menubar": "1.1.4",
+          "@radix-ui/react-navigation-menu": "1.2.3",
+          "@radix-ui/react-popover": "1.1.4",
+          "@radix-ui/react-progress": "1.1.1",
+          "@radix-ui/react-radio-group": "1.2.2",
+          "@radix-ui/react-scroll-area": "1.2.2",
+          "@radix-ui/react-select": "latest",
+          "@radix-ui/react-separator": "1.1.1",
+          "@radix-ui/react-slider": "1.2.2",
+          "@radix-ui/react-slot": "latest",
+          "@radix-ui/react-switch": "1.1.2",
+          "@radix-ui/react-tabs": "1.1.2",
+          "@radix-ui/react-toast": "1.2.4",
+          "@radix-ui/react-toggle": "1.1.1",
+          "@radix-ui/react-toggle-group": "1.1.1",
+          "@radix-ui/react-tooltip": "1.1.6",
+          "@stripe/react-stripe-js": "latest",
+          "@stripe/stripe-js": "latest",
+          "@vercel/analytics": "latest",
+          "@vercel/blob": "latest",
+          "autoprefixer": "^10.4.20",
+          "bcryptjs": "latest",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.0.4",
+          "date-fns": "^3.0.0",
+          "embla-carousel-react": "8.5.1",
+          "input-otp": "1.4.1",
+          "jsonwebtoken": "latest",
+          "lucide-react": "^0.454.0",
+          "next": "15.2.4",
+          "next-themes": "latest",
+          "react": "^19",
+          "react-day-picker": "8.10.1",
+          "react-dom": "^19",
+          "react-hook-form": "^7.54.1",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.1",
+          "stripe": "latest",
+          "tailwind-merge": "^2.5.5",
+          "tailwindcss-animate": "^1.0.7",
+          "vaul": "^0.9.6",
+          "zod": "^3.24.1"
+        },
+        "dev_dependencies": {
+          "@babel/preset-env": "^7.29.2",
+          "@babel/preset-react": "^7.28.5",
+          "@babel/preset-typescript": "^7.28.5",
+          "@testing-library/dom": "^10.4.1",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@types/bcryptjs": "^2.4.6",
+          "@types/jest": "^30.0.0",
+          "@types/jsonwebtoken": "^9.0.5",
+          "@types/node": "^22",
+          "@types/react": "^19",
+          "@types/react-dom": "^19",
+          "jest": "^30.3.0",
+          "jest-environment-jsdom": "^30.3.0",
+          "postcss": "^8.5",
+          "tailwindcss": "^3.4.17",
+          "ts-jest": "^29.4.6",
+          "ts-node": "^10.9.2",
+          "typescript": "^5"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/admin/save-stannp-key",
+        "source_path": "app/api/admin/save-stannp-key/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/admin/stannp-status",
+        "source_path": "app/api/admin/stannp-status/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/admin/test-stannp",
+        "source_path": "app/api/admin/test-stannp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/auth/login",
+        "source_path": "app/api/auth/login/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/auth/register",
+        "source_path": "app/api/auth/register/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/claws",
+        "source_path": "app/api/claws/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/credits/purchase",
+        "source_path": "app/api/credits/purchase/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/credits/transactions",
+        "source_path": "app/api/credits/transactions/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/cron",
+        "source_path": "app/api/cron/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/network/graph",
+        "source_path": "app/api/network/graph/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/postcards/[id]/cancel",
+        "source_path": "app/api/postcards/[id]/cancel/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/postcards/[id]/events",
+        "source_path": "app/api/postcards/[id]/events/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/postcards/[id]",
+        "source_path": "app/api/postcards/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/postcards",
+        "source_path": "app/api/postcards/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/postcards/send",
+        "source_path": "app/api/postcards/send/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/recipients",
+        "source_path": "app/api/recipients/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/templates",
+        "source_path": "app/api/templates/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/test-db",
+        "source_path": "app/api/test-db/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/user/profile",
+        "source_path": "app/api/user/profile/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/webhooks/stannp",
+        "source_path": "app/api/webhooks/stannp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/admin",
+        "source_path": "app/admin/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/credits",
+        "source_path": "app/credits/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/history",
+        "source_path": "app/history/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/login",
+        "source_path": "app/login/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/postcard/[id]",
+        "source_path": "app/postcard/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/profile",
+        "source_path": "app/profile/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/register",
+        "source_path": "app/register/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap",
+        "source_path": "app/roadmap/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/send",
+        "source_path": "app/send/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "breadcrumbs.test",
+      "kind": "ui-component",
+      "source_path": "__tests__/components/breadcrumbs.test.tsx"
+    },
+    {
+      "name": "admin-link",
+      "kind": "ui-component",
+      "source_path": "components/admin-link.tsx"
+    },
+    {
+      "name": "breadcrumbs",
+      "kind": "ui-component",
+      "source_path": "components/breadcrumbs.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "badge.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.test.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "button.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.test.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "card.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.test.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "file-upload",
+      "kind": "ui-component",
+      "source_path": "components/ui/file-upload.tsx"
+    },
+    {
+      "name": "input.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.test.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "label.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.test.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "textarea.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.test.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "health.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/health.test.ts"
+    },
+    {
+      "name": "button.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/button.test.tsx"
+    },
+    {
+      "name": "breadcrumbs.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/components/breadcrumbs.test.tsx"
+    },
+    {
+      "name": "home.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/home.test.tsx"
+    },
+    {
+      "name": "route.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/admin/test-stannp/route.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/auth/login/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/auth/register/route.test.ts"
+    },
+    {
+      "name": "route.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/test-db/route.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/user/profile/route.test.ts"
+    },
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/dashboard/page.test.tsx"
+    },
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/login/page.test.tsx"
+    },
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/page.test.tsx"
+    },
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/register/page.test.tsx"
+    },
+    {
+      "name": "badge.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/badge.test.tsx"
+    },
+    {
+      "name": "button.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/button.test.tsx"
+    },
+    {
+      "name": "card.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/card.test.tsx"
+    },
+    {
+      "name": "input.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/input.test.tsx"
+    },
+    {
+      "name": "label.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/label.test.tsx"
+    },
+    {
+      "name": "textarea.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/textarea.test.tsx"
+    },
+    {
+      "name": "auth.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/auth.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "lib/db.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "JWT_SECRET",
+        "source_paths": [
+          "lib/auth.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_APP_VERSION",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_BASE_URL",
+        "source_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/.well-known/llms.txt/route.ts",
+          "app/api/credits/purchase/route.ts",
+          "app/llms-index.txt/route.ts",
+          "app/llms.txt/route.ts",
+          "app/robots.ts",
+          "app/rss.xml/route.ts",
+          "app/sitemap.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+        "source_paths": [
+          "app/credits/page.tsx"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/auth/login/route.ts",
+          "app/api/cron/route.ts",
+          "app/api/postcards/send/route.ts",
+          "lib/stannp-client.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STANNP_API_KEY",
+        "source_paths": [
+          "lib/stannp-client.ts",
+          "lib/stannp.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_SECRET_KEY",
+        "source_paths": [
+          "app/api/credits/purchase/route.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "vercel.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/[...slug]/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/llms.txt/route.ts"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/admin/page.tsx",
+        "lib/db.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Stannp",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/admin/page.tsx",
+        "app/api/admin/save-stannp-key/route.ts",
+        "app/api/admin/stannp-status/route.ts",
+        "lib/stannp-client.ts",
+        "lib/stannp.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Stripe",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/admin/page.tsx",
+        "app/api/credits/purchase/route.ts",
+        "app/credits/page.tsx",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "scripts/000-drop-and-recreate-all-tables.sql",
+        "scripts/003-add-production-fields.sql"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/layout.tsx",
+        "lib/analytics.ts",
+        "lib/blob-storage.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "todo",
+      "source_path": "app/api/postcards/send/route.ts",
+      "line": 15,
+      "text": "const userId = 1 // TODO: Replace with actual session user ID"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "jest.setup.ts",
+      "line": 11,
+      "text": "addListener: jest.fn(), // Deprecated"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "jest.setup.ts",
+      "line": 12,
+      "text": "removeListener: jest.fn(), // Deprecated"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/webhooks/stannp/route.ts",
+          "lib/auth.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/stannp-client.ts",
+          "lib/stannp.ts"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/page.tsx",
+          "app/api/admin/save-stannp-key/route.ts",
+          "app/api/admin/stannp-status/route.ts",
+          "lib/stannp-client.ts",
+          "lib/stannp.ts",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/003-add-production-fields.sql"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/page.tsx",
+          "app/api/cron/route.ts",
+          "app/api/postcards/[id]/cancel/route.ts",
+          "app/api/postcards/[id]/route.ts",
+          "app/api/postcards/route.ts",
+          "app/api/postcards/send/route.ts",
+          "app/api/templates/route.ts",
+          "app/api/test-db/route.ts",
+          "app/api/webhooks/stannp/route.ts",
+          "app/credits/page.tsx",
+          "app/dashboard/page.tsx",
+          "app/globals.css",
+          "app/history/page.tsx",
+          "app/layout.tsx",
+          "app/login/page.tsx",
+          "app/page.tsx",
+          "app/postcard/[id]/page.tsx",
+          "app/profile/page.tsx",
+          "app/register/page.tsx",
+          "app/send/page.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/api/auth/login/route.test.ts",
+          "app/api/auth/login/route.ts",
+          "app/api/auth/register/route.test.ts",
+          "app/api/auth/register/route.ts",
+          "app/api/cron/route.ts",
+          "app/api/postcards/[id]/cancel/route.ts",
+          "app/api/postcards/route.ts",
+          "app/api/recipients/route.ts",
+          "app/api/user/profile/route.test.ts",
+          "app/api/user/profile/route.ts",
+          "app/login/page.tsx",
+          "app/profile/page.tsx",
+          "app/register/page.tsx",
+          "app/send/page.tsx",
+          "lib/auth.ts",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/001-create-tables.sql",
+          "scripts/002-initialize-system.sql",
+          "scripts/002-insert-demo-user.sql"
+        ]
+      },
+      {
+        "name": "financial",
+        "confidence": "medium",
+        "evidence_paths": [
+          "scripts/000-drop-and-recreate-all-tables.sql"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/[...slug]/route.ts"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/health.test.ts",
+          "README.md",
+          "ROADMAP.md"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/llms.txt/route.ts",
+          "app/postcard/[id]/page.tsx"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "ROADMAP.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/page.tsx",
+          "app/api/auth/login/route.test.ts",
+          "app/api/auth/login/route.ts",
+          "app/api/auth/register/route.test.ts",
+          "lib/auth.test.ts",
+          "lib/auth.ts",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/003-add-production-fields.sql",
+          "scripts/006-fix-users-table.sql"
+        ]
+      },
+      {
+        "name": "password_hash",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/auth.ts",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/003-add-production-fields.sql"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/credits/purchase/route.ts",
+          "app/credits/page.tsx",
+          "ROADMAP.md",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/003-add-production-fields.sql"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/admin/page.tsx",
+          "app/api/auth/login/route.test.ts",
+          "app/api/auth/login/route.ts",
+          "app/api/postcards/[id]/cancel/route.ts",
+          "lib/auth.test.ts",
+          "lib/auth.ts",
+          "lib/blob-storage.ts",
+          "lib/session.ts",
+          "package-lock.json",
+          "package.json",
+          "pnpm-lock.yaml",
+          "scripts/000-drop-and-recreate-all-tables.sql",
+          "scripts/003-add-production-fields.sql"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:21.308Z"
+}

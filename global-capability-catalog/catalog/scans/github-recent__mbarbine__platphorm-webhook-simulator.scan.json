@@ -1,0 +1,1475 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-webhook-simulator",
+    "name": "mbarbine__platphorm-webhook-simulator",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-webhook-simulator",
+    "relative_path": "github-recent/mbarbine__platphorm-webhook-simulator",
+    "remote_url": "git@github.com:mbarbine/platphorm-webhook-simulator.git",
+    "default_branch": "main",
+    "current_commit": "ef154719aa100f5572d23a0c2842ae4523e33f2f"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 153,
+      "bytes": 278337
+    },
+    {
+      "language": "YAML",
+      "files": 2,
+      "bytes": 93510
+    },
+    {
+      "language": "JSON",
+      "files": 14,
+      "bytes": 65246
+    },
+    {
+      "language": "Markdown",
+      "files": 7,
+      "bytes": 19335
+    },
+    {
+      "language": "SQL",
+      "files": 3,
+      "bytes": 10840
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 3393
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 1312
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 268
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "webhooklab-platphormnews",
+        "version": "0.1.0",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint",
+          "typecheck": "tsc --noEmit",
+          "test": "vitest --ui"
+        },
+        "dependencies": {
+          "@neondatabase/serverless": "^1.0.2",
+          "@vercel/analytics": "^2.0.1",
+          "botid": "^1.5.11",
+          "framer-motion": "^12.38.0",
+          "next": "16.2.1",
+          "react": "19.2.4",
+          "react-dom": "19.2.4",
+          "swr": "^2.4.1",
+          "zod": "^4.3.6"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.2.2",
+          "@testing-library/dom": "^10.4.1",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@testing-library/user-event": "^14.6.1",
+          "@types/jest": "^30.0.0",
+          "@types/node": "^25.5.0",
+          "@types/react": "^19.2.14",
+          "@types/testing-library__react": "^10.2.0",
+          "@vitejs/plugin-react": "^6.0.1",
+          "@vitest/coverage-v8": "^4.1.1",
+          "@vitest/ui": "^4.1.1",
+          "autoprefixer": "^10.4.27",
+          "baseline-browser-mapping": "^2.10.10",
+          "jsdom": "^29.0.1",
+          "postcss": "^8.5.8",
+          "tailwindcss": "^4.2.2",
+          "typescript": "^5.9.3",
+          "vitest": "^4.1.1"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/agent",
+        "source_path": "app/api/v1/agent/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/api-keys",
+        "source_path": "app/api/v1/api-keys/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/contracts/[id]",
+        "source_path": "app/api/v1/contracts/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/contracts/[id]/test",
+        "source_path": "app/api/v1/contracts/[id]/test/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/contracts/[id]/validate",
+        "source_path": "app/api/v1/contracts/[id]/validate/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/contracts",
+        "source_path": "app/api/v1/contracts/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/deliveries/[id]/attempts",
+        "source_path": "app/api/v1/deliveries/[id]/attempts/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/deliveries/[id]/cancel",
+        "source_path": "app/api/v1/deliveries/[id]/cancel/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/deliveries/[id]/replay",
+        "source_path": "app/api/v1/deliveries/[id]/replay/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/deliveries/[id]",
+        "source_path": "app/api/v1/deliveries/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/deliveries",
+        "source_path": "app/api/v1/deliveries/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/endpoints/[id]",
+        "source_path": "app/api/v1/endpoints/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/endpoints/[id]/test",
+        "source_path": "app/api/v1/endpoints/[id]/test/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/endpoints",
+        "source_path": "app/api/v1/endpoints/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/events/[id]",
+        "source_path": "app/api/v1/events/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/events",
+        "source_path": "app/api/v1/events/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/feeds",
+        "source_path": "app/api/v1/feeds/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/feeds/sync",
+        "source_path": "app/api/v1/feeds/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/mcp/sync",
+        "source_path": "app/api/v1/mcp/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/mcp/tools",
+        "source_path": "app/api/v1/mcp/tools/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/metrics",
+        "source_path": "app/api/v1/metrics/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph",
+        "source_path": "app/api/v1/network/graph/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/graph/sync",
+        "source_path": "app/api/v1/network/graph/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/route-compliance",
+        "source_path": "app/api/v1/network/route-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/sites",
+        "source_path": "app/api/v1/network/sites/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/trusted-domains",
+        "source_path": "app/api/v1/network/trusted-domains/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/receive/[endpointSlug]",
+        "source_path": "app/api/v1/receive/[endpointSlug]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/receive/[endpointSlug]/status",
+        "source_path": "app/api/v1/receive/[endpointSlug]/status/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/replays/[id]",
+        "source_path": "app/api/v1/replays/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/replays",
+        "source_path": "app/api/v1/replays/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/reports/decks",
+        "source_path": "app/api/v1/reports/decks/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/reports/docs",
+        "source_path": "app/api/v1/reports/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/reports/sheets",
+        "source_path": "app/api/v1/reports/sheets/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/schemas",
+        "source_path": "app/api/v1/schemas/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/signatures/generate",
+        "source_path": "app/api/v1/signatures/generate/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/signatures/verify",
+        "source_path": "app/api/v1/signatures/verify/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sitemaps/sync",
+        "source_path": "app/api/v1/sitemaps/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/templates",
+        "source_path": "app/api/v1/templates/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/webhooks",
+        "source_path": "app/api/webhooks/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/dashboard/api-keys",
+        "source_path": "app/(dashboard)/dashboard/api-keys/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/contracts",
+        "source_path": "app/(dashboard)/dashboard/contracts/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/endpoints",
+        "source_path": "app/(dashboard)/dashboard/endpoints/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/events",
+        "source_path": "app/(dashboard)/dashboard/events/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/(dashboard)/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/replays",
+        "source_path": "app/(dashboard)/dashboard/replays/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/settings",
+        "source_path": "app/(dashboard)/dashboard/settings/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/usage",
+        "source_path": "app/(dashboard)/dashboard/usage/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/webhooks",
+        "source_path": "app/(dashboard)/dashboard/webhooks/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/lab/contracts/[id]",
+        "source_path": "app/(lab)/lab/contracts/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/lab/endpoints/[id]",
+        "source_path": "app/(lab)/lab/endpoints/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/lab/events/[id]",
+        "source_path": "app/(lab)/lab/events/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/lab",
+        "source_path": "app/(lab)/lab/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/lab/replays/[id]",
+        "source_path": "app/(lab)/lab/replays/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/changelog",
+        "source_path": "app/(public)/changelog/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/(public)/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/explore",
+        "source_path": "app/(public)/explore/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/(public)",
+        "source_path": "app/(public)/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/request-access",
+        "source_path": "app/(public)/request-access/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/simulator",
+        "source_path": "app/(public)/simulator/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/w/[id]",
+        "source_path": "app/(public)/w/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "footer.test",
+      "kind": "ui-component",
+      "source_path": "components/layout/footer.test.tsx"
+    },
+    {
+      "name": "footer",
+      "kind": "ui-component",
+      "source_path": "components/layout/footer.tsx"
+    },
+    {
+      "name": "top-bar.test",
+      "kind": "ui-component",
+      "source_path": "components/layout/top-bar.test.tsx"
+    },
+    {
+      "name": "top-bar",
+      "kind": "ui-component",
+      "source_path": "components/layout/top-bar.tsx"
+    }
+  ],
+  "data_models": [
+    {
+      "name": "route",
+      "kind": "model-file",
+      "source_path": "app/api/v1/schemas/route.ts"
+    },
+    {
+      "name": "schema",
+      "kind": "schema-file",
+      "source_path": "lib/neon/schema.ts"
+    }
+  ],
+  "database": {
+    "databases": [],
+    "schemas": [
+      {
+        "path": "lib/neon/schema.ts"
+      }
+    ],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "validation-pro.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/(public)/simulator/validation-pro.test.tsx"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/docs/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/health/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/mcp/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/api-keys/route.test.ts"
+    },
+    {
+      "name": "route.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/contracts/[id]/test/route.ts"
+    },
+    {
+      "name": "route.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/endpoints/[id]/test/route.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/events/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/feed.xml/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/llms.txt/route.test.ts"
+    },
+    {
+      "name": "footer.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/layout/footer.test.tsx"
+    },
+    {
+      "name": "top-bar.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/layout/top-bar.test.tsx"
+    },
+    {
+      "name": "correlation.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/api/correlation.test.ts"
+    },
+    {
+      "name": "errors.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/api/errors.test.ts"
+    },
+    {
+      "name": "response.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/api/response.test.ts"
+    },
+    {
+      "name": "ssrf.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/api/ssrf.test.ts"
+    },
+    {
+      "name": "env.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/config/env.test.ts"
+    },
+    {
+      "name": "policy.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/config/policy.test.ts"
+    },
+    {
+      "name": "service.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/config/service.test.ts"
+    },
+    {
+      "name": "claws-client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/claws-client.test.ts"
+    },
+    {
+      "name": "cuid.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/cuid.test.ts"
+    },
+    {
+      "name": "fingerprint.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/fingerprint.test.ts"
+    },
+    {
+      "name": "key-generator.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/key-generator.test.ts"
+    },
+    {
+      "name": "signatures.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/signatures.test.ts"
+    },
+    {
+      "name": "trace-client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/cosmic/trace-client.test.ts"
+    },
+    {
+      "name": "network-manifest.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/discovery/network-manifest.test.ts"
+    },
+    {
+      "name": "producthunt.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/producthunt.test.ts"
+    },
+    {
+      "name": "executor.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/executor.test.ts"
+    },
+    {
+      "name": "prompts.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/prompts.test.ts"
+    },
+    {
+      "name": "resources.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/resources.test.ts"
+    },
+    {
+      "name": "tools.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/tools.test.ts"
+    },
+    {
+      "name": "schema.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/neon/schema.test.ts"
+    },
+    {
+      "name": "i18n.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/standards/i18n.test.ts"
+    },
+    {
+      "name": "metadata.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/standards/metadata.test.ts"
+    },
+    {
+      "name": "universal-schemas.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/universal-schemas.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "CLAWS_SDK_ENDPOINT",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "COSMIC_NETWORK_ID",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "lib/config/env.ts",
+          "lib/neon/schema.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "DATABASE_URL_UNPOOLED",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_APP_NAME",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_APP_URL",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "lib/api/auth.ts",
+          "lib/api/request-context.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "app/api/v1/events/route.test.ts",
+          "lib/api/auth.ts",
+          "lib/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PRODUCTHUNT_API_TOKEN",
+        "source_paths": [
+          "lib/integrations/producthunt.test.ts",
+          "lib/integrations/producthunt.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TRACE_SDK_ENDPOINT",
+        "source_paths": [
+          "lib/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VERCEL_WEBHOOK_SECRET",
+        "source_paths": [
+          "app/(dashboard)/dashboard/webhooks/page.tsx",
+          "app/api/webhooks/route.ts",
+          "lib/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITEST",
+        "source_paths": [
+          "lib/api/auth.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.cjs"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [
+      {
+        "path": "public/openapi.json"
+      },
+      {
+        "path": "public/schemas/openapi.json"
+      }
+    ],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.test.ts"
+      },
+      {
+        "path": "app/api/mcp/route.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/agent.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/agents.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust-policy.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "AWS",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/config/env.ts",
+        "lib/cosmic/claws-client.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/.well-known/ai-plugin.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/.well-known/trust-policy.json/route.ts",
+        "app/.well-known/trust.json/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/v1/api-keys/route.ts",
+        "app/api/v1/events/route.test.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/config/env.ts",
+        "lib/neon/schema.ts",
+        "package.json",
+        "README.md"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".Jules/sentinel.md",
+        "app/(dashboard)/dashboard/webhooks/page.tsx",
+        "app/api/webhooks/route.ts",
+        "lib/config/env.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".Jules/sentinel.md",
+      "line": 13,
+      "text": "**Learning:** Checking for the presence of a security token before deciding whether to perform verification allows attackers to bypass the check entirely. Validation logic must enforce that if a secret is configured, the token *must* be pre"
+    },
+    {
+      "kind": "security",
+      "source_path": ".Jules/sentinel.md",
+      "line": 14,
+      "text": "**Prevention:** Change the condition to first check if the secret is configured (`if (webhookSecret)`), and then fail the request immediately if the signature header is missing (`if (!signature) throw Error(...)`). Ensure security checks fa"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 2,
+      "text": "const body = `Contact: mailto:security@platphormnews.com"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 5,
+      "text": "Canonical: https://webhooks.platphormnews.com/.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 6,
+      "text": "Policy: https://docs.platphormnews.com/security"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/trust.json/route.ts",
+      "line": 17,
+      "text": "securityContact: \"security@platphormnews.com\""
+    },
+    {
+      "kind": "security",
+      "source_path": "app/(public)/explore/page.tsx",
+      "line": 47,
+      "text": "Generate and verify HMAC signatures for your webhooks. Test your security implementation with SHA-256 and SHA-512 algorithms."
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 19,
+      "text": "\"/api/v1/events\": { get: { summary: \"List events\" }, post: { summary: \"Create event\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 20,
+      "text": "\"/api/v1/events/{id}\": { get: { summary: \"Get event by id\" }, delete: { summary: \"Delete event\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 21,
+      "text": "\"/api/v1/endpoints\": { get: { summary: \"List endpoints\" }, post: { summary: \"Register endpoint\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 22,
+      "text": "\"/api/v1/endpoints/{id}\": { get: { summary: \"Get endpoint\" }, put: { summary: \"Update endpoint\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] }, delete: { summary: \"Delete endpoint\", security: [{ platphormApiKeyH"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 26,
+      "text": "\"/api/v1/deliveries/{id}/replay\": { post: { summary: \"Replay delivery\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 27,
+      "text": "\"/api/v1/deliveries/{id}/cancel\": { post: { summary: \"Cancel delivery\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 28,
+      "text": "\"/api/v1/contracts\": { get: { summary: \"List contracts\" }, post: { summary: \"Create contract\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 29,
+      "text": "\"/api/v1/contracts/{id}\": { get: { summary: \"Get contract\" }, put: { summary: \"Update contract\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] }, delete: { summary: \"Delete contract\", security: [{ platphormApiKeyH"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 31,
+      "text": "\"/api/v1/contracts/{id}/test\": { post: { summary: \"Run contract test\", security: [{ platphormApiKeyHeader: [] }, { platphormApiKeyBearer: [] }] } },"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/layout/footer.tsx",
+      "line": 39,
+      "text": "<a href=\"#\" className=\"hover:text-foreground transition block\">Security</a>"
+    },
+    {
+      "kind": "security",
+      "source_path": "DEPLOYMENT_READY.md",
+      "line": 64,
+      "text": "- ✅ CORS and security headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "middleware.ts",
+      "line": 30,
+      "text": "\"/.well-known/security.txt\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 740,
+      "text": "deprecated: This is a stub types definition. testing-library__react provides its own type definitions, so you do not need this installed."
+    },
+    {
+      "kind": "security",
+      "source_path": "public/schemas/openapi.json",
+      "line": 13,
+      "text": "\"security\": [{ \"ApiKeyAuth\": [] }],"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/schemas/openapi.json",
+      "line": 31,
+      "text": "\"security\": [],"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 258,
+      "text": "## Security"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/feed.xml/route.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/dashboard/events/page.tsx",
+          "app/(dashboard)/dashboard/page.tsx"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/.well-known/trust-policy.json/route.ts",
+          "app/.well-known/trust.json/route.ts",
+          "app/api/docs/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/api-keys/route.ts",
+          "app/api/v1/events/route.test.ts",
+          "app/llms-index.json/route.ts",
+          "app/llms.txt/route.ts",
+          "DEPLOYMENT_READY.md",
+          "lib/api/auth.ts",
+          "lib/api/errors.ts",
+          "lib/api/request-context.ts",
+          "lib/api/response.ts",
+          "lib/config/env.ts",
+          "lib/neon/schema.ts",
+          "middleware.ts",
+          "README.md",
+          "scripts/001_core.sql"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/dashboard/events/page.tsx",
+          "app/(dashboard)/dashboard/replays/page.tsx",
+          "app/(dashboard)/dashboard/settings/page.tsx",
+          "app/(dashboard)/dashboard/usage/page.tsx",
+          "app/(lab)/lab/contracts/[id]/page.tsx",
+          "app/(lab)/lab/endpoints/[id]/page.tsx",
+          "app/(lab)/lab/events/[id]/page.tsx",
+          "app/(lab)/lab/page.tsx",
+          "app/(lab)/lab/replays/[id]/page.tsx",
+          "app/(public)/request-access/page.tsx",
+          "app/(public)/simulator/validation-pro.tsx",
+          "app/globals.css",
+          "tailwind.config.ts"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/(lab)/lab/page.tsx",
+          "app/(public)/docs/page.tsx",
+          "app/(public)/request-access/page.tsx",
+          "app/api/v1/agent/route.ts",
+          "app/feed.xml/route.ts",
+          "lib/neon/schema.ts",
+          "public/schemas/core.schema.json",
+          "public/schemas/openapi.json",
+          "README.md",
+          "scripts/001_core.sql"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/api/correlation.ts",
+          "lib/cosmic/cuid.test.ts",
+          "lib/cosmic/cuid.ts",
+          "lib/cosmic/fingerprint.test.ts",
+          "lib/cosmic/fingerprint.ts",
+          "lib/universal-schemas.ts",
+          "public/schemas/core.schema.json",
+          "public/schemas/item.schema.json",
+          "public/schemas/observability.schema.json",
+          "public/schemas/realm.schema.json"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/agent.json/route.ts",
+          "app/(public)/page.tsx",
+          "app/api/docs/route.ts",
+          "app/api/health/route.test.ts",
+          "app/api/health/route.ts",
+          "app/api/v1/health/route.ts",
+          "app/api/v1/network/route-compliance/route.ts",
+          "app/api/webhooks/route.ts",
+          "app/llms-index.json/route.ts",
+          "app/llms.txt/route.ts",
+          "app/openapi.yaml/route.ts",
+          "app/robots.txt/route.ts",
+          "components/layout/footer.tsx",
+          "components/layout/top-bar.tsx",
+          "DEPLOYMENT_READY.md",
+          "IMPLEMENTATION_NOTES.md",
+          "LAUNCH_CHECKLIST.sh",
+          "lib/config/service.ts",
+          "lib/discovery/network-manifest.ts",
+          "lib/universal-schemas.ts"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/sentinel.md",
+          "lib/api/ssrf.ts"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/dashboard/webhooks/page.tsx",
+          "app/api/mcp/route.ts",
+          "app/robots.txt/route.ts",
+          "lib/api/response.ts"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "DEPLOYMENT_READY.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(public)/simulator/validation-pro.tsx",
+          "lib/neon/schema.ts",
+          "scripts/001_core.sql"
+        ]
+      },
+      {
+        "name": "password_hash",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/neon/schema.ts",
+          "scripts/001_core.sql"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/dashboard/endpoints/page.tsx",
+          "app/(lab)/lab/page.tsx",
+          "app/(public)/docs/page.tsx",
+          "app/api/v1/agent/route.ts",
+          "public/schemas/openapi.json",
+          "public/schemas/webhook.schema.json",
+          "README.md"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/sentinel.md",
+          "app/.well-known/trust.json/route.ts",
+          "DEPLOYMENT_READY.md",
+          "lib/integrations/producthunt.test.ts",
+          "lib/integrations/producthunt.ts",
+          "pnpm-lock.yaml",
+          "README.md",
+          "scripts/001_core.sql"
+        ]
+      },
+      {
+        "name": "x-vercel-ja4-digest",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/cosmic/fingerprint.test.ts",
+          "lib/cosmic/fingerprint.ts"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:21.977Z"
+}

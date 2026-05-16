@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__ph3ar__renegade-bbs-docker",
+    "name": "ph3ar__renegade-bbs-docker",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__renegade-bbs-docker",
+    "relative_path": "github-recent/ph3ar__renegade-bbs-docker",
+    "remote_url": "git@github.com:ph3ar/renegade-bbs-docker.git",
+    "default_branch": "main",
+    "current_commit": "86dad8f76a82a54b5d460405066ce38ed4209003"
+  },
+  "languages": [
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 2820
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 1694
+    },
+    {
+      "language": "Shell",
+      "files": 2,
+      "bytes": 1508
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 480
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": []
+  },
+  "generated_at": "2026-05-16T16:44:31.745Z"
+}

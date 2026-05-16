@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__mailthing",
+    "name": "mbarbine__mailthing",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mailthing",
+    "relative_path": "github-recent/mbarbine__mailthing",
+    "remote_url": "git@github.com:mbarbine/mailthing.git",
+    "default_branch": "main",
+    "current_commit": "388df8034952b2d087110794077bf4a815138b4c"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 15,
+      "bytes": 11861
+    },
+    {
+      "language": "JSON",
+      "files": 2,
+      "bytes": 950
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Express",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "api.email2letter.com",
+        "version": "1.0.0",
+        "scripts": {
+          "build": "tsc",
+          "start": "node dist/server.js"
+        },
+        "dependencies": {
+          "express": "^4.18.2",
+          "nodemailer": "^6.6.3",
+          "nodemailer-mailgun-transport": "^2.0.0",
+          "dotenv": "^8.2.0"
+        },
+        "dev_dependencies": {
+          "@types/express": "^4.17.17",
+          "@supabase/supabase-js": "^2.47.10",
+          "cors": "^2.8.5",
+          "dotenv": "^16.4.7",
+          "express": "^4.21.2",
+          "jsonwebtoken": "^9.0.2",
+          "stripe": "^17.5.0",
+          "@types/cors": "^2.8.17",
+          "@types/jsonwebtoken": "^9.0.7",
+          "@types/node": "^18.19.68",
+          "nodemon": "^2.0.22",
+          "typescript": "^5.7.2"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": ".env"
+      }
+    ],
+    "variables": [
+      {
+        "name": "AUTH0_DOMAIN",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "src/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PORT",
+        "source_paths": [
+          "src/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STORAGE_NEXT_PUBLIC_SUPABASE_URL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_DATABASE",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_HOST",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_PASSWORD",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STORAGE_POSTGRES_PRISMA_URL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_URL",
+        "source_paths": [
+          ".env",
+          "src/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_URL_NON_POOLING",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_POSTGRES_USER",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STORAGE_SUPABASE_ANON_KEY",
+        "source_paths": [
+          ".env",
+          "src/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STORAGE_SUPABASE_JWT_SECRET",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STORAGE_SUPABASE_SERVICE_ROLE_KEY",
+        "source_paths": [
+          ".env",
+          "src/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STORAGE_SUPABASE_URL",
+        "source_paths": [
+          ".env",
+          "src/config/env.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "STRIPE_API_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_SECRET_KEY",
+        "source_paths": [
+          ".env",
+          "src/routes/create-payment-intent.ts",
+          "src/routes/get-credits.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_AUTH0_AUDIENCE",
+        "source_paths": [
+          ".env",
+          "src/config/env.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_AUTH0_CLIENT_ID",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_AUTH0_CLIENT_SECRET",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_STANNP_API_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_STRIPE_API_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_STRIPE_PUBLIC_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VITE_STRIPE_RESTRICTED_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "package.json",
+        "src/config/env.ts"
+      ]
+    },
+    {
+      "name": "Stannp",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Stripe",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "package.json",
+        "src/config/env.ts",
+        "src/controllers/creditsController.ts",
+        "src/controllers/paymentsController.ts",
+        "src/routes/create-payment-intent.ts",
+        "src/routes/credits.ts",
+        "src/routes/get-credits.ts"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "package.json",
+        "src/config/env.ts",
+        "src/config/supabase.ts"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "unsafe",
+      "source_path": "src/controllers/creditsController.ts",
+      "line": 16,
+      "text": "// Type hack for .balance"
+    },
+    {
+      "kind": "todo",
+      "source_path": "src/controllers/stannpController.ts",
+      "line": 9,
+      "text": "// TODO: call stannp's API"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          "package.json",
+          "src/config/env.ts",
+          "src/controllers/userController.ts"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "src/app.ts"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "src/app.ts",
+          "src/controllers/paymentsController.ts",
+          "src/routes/create-payment-intent.ts",
+          "src/routes/payments.ts"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json",
+          "src/middleware/auth0JWT.ts",
+          "src/routes/get-credits.ts"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:10.186Z"
+}

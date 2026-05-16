@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catalog.local/schemas/scan-artifact.schema.json",
+  "title": "Deterministic Repository Scan Artifact",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scanner",
+    "repo",
+    "languages",
+    "frameworks",
+    "packages",
+    "routes",
+    "components",
+    "data_models",
+    "database",
+    "tests",
+    "ci",
+    "containers",
+    "env",
+    "configs",
+    "docs",
+    "discovery_files",
+    "integrations",
+    "license",
+    "comments",
+    "security",
+    "generated_at"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "scanner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "repo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "path", "relative_path", "remote_url", "default_branch", "current_commit"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "relative_path": { "type": "string", "minLength": 1 },
+        "remote_url": { "type": ["string", "null"] },
+        "default_branch": { "type": ["string", "null"] },
+        "current_commit": { "type": ["string", "null"] }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/language" }
+    },
+    "frameworks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/detectedItem" }
+    },
+    "packages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["package_manager", "manifests"],
+      "properties": {
+        "package_manager": { "type": ["string", "null"] },
+        "manifests": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/packageManifest" }
+        }
+      }
+    },
+    "routes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["api_routes", "app_routes"],
+      "properties": {
+        "api_routes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/route" }
+        },
+        "app_routes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/route" }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceNamedItem" }
+    },
+    "data_models": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceNamedItem" }
+    },
+    "database": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["databases", "schemas", "migrations"],
+      "properties": {
+        "databases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "schemas": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        },
+        "migrations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        }
+      }
+    },
+    "tests": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceNamedItem" }
+    },
+    "ci": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workflows"],
+      "properties": {
+        "workflows": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        }
+      }
+    },
+    "containers": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dockerfiles", "compose_files"],
+      "properties": {
+        "dockerfiles": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        },
+        "compose_files": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        }
+      }
+    },
+    "env": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["example_files", "variables"],
+      "properties": {
+        "example_files": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        },
+        "variables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "source_paths", "likely_secret"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "source_paths": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "likely_secret": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+    "configs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceFile" }
+    },
+    "docs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["readme_paths", "doc_paths", "llms_context_paths"],
+      "properties": {
+        "readme_paths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        },
+        "doc_paths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        },
+        "llms_context_paths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        }
+      }
+    },
+    "discovery_files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["openapi", "mcp", "llms", "sitemaps", "feeds", "well_known", "robots", "manifests"],
+      "properties": {
+        "openapi": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "mcp": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "llms": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "sitemaps": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "feeds": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "well_known": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "robots": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } },
+        "manifests": { "type": "array", "items": { "$ref": "#/$defs/sourceFile" } }
+      }
+    },
+    "integrations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/detectedItem" }
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spdx", "paths"],
+      "properties": {
+        "spdx": { "type": ["string", "null"] },
+        "paths": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sourceFile" }
+        }
+      }
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "source_path", "line", "text"],
+        "properties": {
+          "kind": { "type": "string", "enum": ["todo", "fixme", "security", "deprecated", "unsafe"] },
+          "source_path": { "type": "string" },
+          "line": { "type": "integer", "minimum": 1 },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["secret_risks", "unsafe_patterns", "sensitive_data_indicators"],
+      "properties": {
+        "secret_risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "source_path", "line", "redacted_sample"],
+            "properties": {
+              "kind": { "type": "string" },
+              "source_path": { "type": "string" },
+              "line": { "type": "integer", "minimum": 1 },
+              "redacted_sample": { "type": "string" }
+            }
+          }
+        },
+        "unsafe_patterns": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/detectedItem" }
+        },
+        "sensitive_data_indicators": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/detectedItem" }
+        }
+      }
+    },
+    "generated_at": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language", "files", "bytes"],
+      "properties": {
+        "language": { "type": "string" },
+        "files": { "type": "integer", "minimum": 0 },
+        "bytes": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "sourceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sourceNamedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "kind", "source_path"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "kind": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 }
+      }
+    },
+    "detectedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "confidence", "evidence_paths"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+        "evidence_paths": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["route", "source_path", "kind", "methods"],
+      "properties": {
+        "route": { "type": "string", "minLength": 1 },
+        "source_path": { "type": "string", "minLength": 1 },
+        "kind": { "type": "string", "minLength": 1 },
+        "methods": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "packageManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "name", "version", "scripts", "dependencies", "dev_dependencies"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "name": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] },
+        "scripts": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "dependencies": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "dev_dependencies": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  }
+}

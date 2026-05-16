@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__beepboopprocess",
+    "name": "mbarbine__beepboopprocess",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__beepboopprocess",
+    "relative_path": "github-recent/mbarbine__beepboopprocess",
+    "remote_url": "git@github.com:mbarbine/beepboopprocess.git",
+    "default_branch": "master",
+    "current_commit": "bf3234e3af177c9142c767a584656f9ce8ce1cd7"
+  },
+  "languages": [
+    {
+      "language": "JSON",
+      "files": 4,
+      "bytes": 11728
+    },
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 100
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "processes/default/resources/customElementDefinition/___1cc504bb-5d02-4915-947b-ea96b24a5090.json",
+          "processes/default/resources/customElementDefinition/___ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c.json",
+          "processes/default/resources/flow/2271ef92-4e20-4a70-ae0a-ca4ffdef6671__cmgvi582y02hg7x17wrox6wbu.json"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "processes/default/resources/customElementDefinition/___1cc504bb-5d02-4915-947b-ea96b24a5090.json",
+          "processes/default/resources/customElementDefinition/___ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c.json",
+          "processes/default/resources/flow/2271ef92-4e20-4a70-ae0a-ca4ffdef6671__cmgvi582y02hg7x17wrox6wbu.json"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "processes/default/resources/flow/2271ef92-4e20-4a70-ae0a-ca4ffdef6671__cmgvi582y02hg7x17wrox6wbu.json"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:06.202Z"
+}

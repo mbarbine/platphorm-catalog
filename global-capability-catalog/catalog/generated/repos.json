@@ -1,0 +1,5213 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-16T16:44:32.736Z",
+  "repositories": [
+    {
+      "id": "github-recent__mbarbine__2025-year-in-review-webby",
+      "name": "mbarbine__2025-year-in-review-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__2025-year-in-review-webby",
+      "remote_url": "git@github.com:mbarbine/2025-year-in-review-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__ai-chat-interface-webby",
+      "name": "mbarbine__ai-chat-interface-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ai-chat-interface-webby",
+      "remote_url": "git@github.com:mbarbine/ai-chat-interface-webby.git",
+      "description": "Package repository for my-v0-project.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__airrow-commuter-balloon",
+      "name": "mbarbine__airrow-commuter-balloon",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__airrow-commuter-balloon",
+      "remote_url": "git@github.com:mbarbine/airrow-commuter-balloon.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__autographed-bibles-webby",
+      "name": "mbarbine__autographed-bibles-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__autographed-bibles-webby",
+      "remote_url": "git@github.com:mbarbine/autographed-bibles-webby.git",
+      "description": "Reliable Bibles",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__automotive-flamethrower-webby",
+      "name": "mbarbine__automotive-flamethrower-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__automotive-flamethrower-webby",
+      "remote_url": "git@github.com:mbarbine/automotive-flamethrower-webby.git",
+      "description": "**\"A picture is worth a thousand syntactical pointers\" 🙂**",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__aws-lab",
+      "name": "mbarbine__aws-lab",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__aws-lab",
+      "remote_url": "git@github.com:mbarbine/aws-lab.git",
+      "description": "These files are default error files that can be customized",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "Shell",
+        "JSON",
+        "Markdown",
+        "Dockerfile",
+        "JavaScript"
+      ],
+      "frameworks": [],
+      "capability_count": 13,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__aws-next-k8-cluster-deploy",
+      "name": "mbarbine__aws-next-k8-cluster-deploy",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__aws-next-k8-cluster-deploy",
+      "remote_url": "git@github.com:mbarbine/aws-next-k8-cluster-deploy.git",
+      "description": "Repository mbarbine__aws-next-k8-cluster-deploy; purpose requires further source review.",
+      "primary_language": "Shell",
+      "languages": [
+        "Shell",
+        "Markdown",
+        "YAML",
+        "JSON",
+        "Dockerfile"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__barbine-worldwide-2025-wwww",
+      "name": "mbarbine__barbine-worldwide-2025-wwww",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__barbine-worldwide-2025-wwww",
+      "remote_url": "git@github.com:mbarbine/barbine-worldwide-2025-wwww.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Remix",
+        "Svelte",
+        "Tailwind CSS",
+        "Vue"
+      ],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__barbineworldwide-2026-metahack",
+      "name": "mbarbine__barbineworldwide-2026-metahack",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__barbineworldwide-2026-metahack",
+      "remote_url": "git@github.com:mbarbine/barbineworldwide-2026-metahack.git",
+      "description": "Barbine Worldwide — Repository Overview",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__beepboopprocess",
+      "name": "mbarbine__beepboopprocess",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__beepboopprocess",
+      "remote_url": "git@github.com:mbarbine/beepboopprocess.git",
+      "description": "- black betty wasn't black",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__beer-museum-manager-www",
+      "name": "mbarbine__beer-museum-manager-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__beer-museum-manager-www",
+      "remote_url": "git@github.com:mbarbine/beer-museum-manager-www.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 20,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__biocyber-xr-training-nasa-webby-v0",
+      "name": "mbarbine__biocyber-xr-training-nasa-webby-v0",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__biocyber-xr-training-nasa-webby-v0",
+      "remote_url": "git@github.com:mbarbine/biocyber-xr-training-nasa-webby-v0.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__burrito-dealer-www",
+      "name": "mbarbine__burrito-dealer-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__burrito-dealer-www",
+      "remote_url": "git@github.com:mbarbine/burrito-dealer-www.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JavaScript",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__calendar-app-webby",
+      "name": "mbarbine__calendar-app-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__calendar-app-webby",
+      "remote_url": "git@github.com:mbarbine/calendar-app-webby.git",
+      "description": "Package repository for platphorm-calendar.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "SQL",
+        "CSS",
+        "JavaScript",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 22,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__car-service-records",
+      "name": "mbarbine__car-service-records",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__car-service-records",
+      "remote_url": "git@github.com:mbarbine/car-service-records.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 19,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__cdf-sanitize",
+      "name": "mbarbine__cdf-sanitize",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__cdf-sanitize",
+      "remote_url": "git@github.com:mbarbine/cdf-sanitize.git",
+      "description": "python -m app.cdf_redactor input/sample_cardiology_report.cdf output/redacted_cardiology_report.cdf --config app/config.json --llm --debug",
+      "primary_language": "Python",
+      "languages": [
+        "Python",
+        "YAML",
+        "Markdown",
+        "Dockerfile",
+        "JSON"
+      ],
+      "frameworks": [],
+      "capability_count": 4,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__chrome-shortcuts",
+      "name": "mbarbine__chrome-shortcuts",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__chrome-shortcuts",
+      "remote_url": "git@github.com:mbarbine/chrome-shortcuts.git",
+      "description": "Repository mbarbine__chrome-shortcuts; purpose requires further source review.",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__civic-engagement-platform-webby",
+      "name": "mbarbine__civic-engagement-platform-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__civic-engagement-platform-webby",
+      "remote_url": "git@github.com:mbarbine/civic-engagement-platform-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 19,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__crafted-virginia-website",
+      "name": "mbarbine__crafted-virginia-website",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__crafted-virginia-website",
+      "remote_url": "git@github.com:mbarbine/crafted-virginia-website.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__dcf-audit-scripts",
+      "name": "mbarbine__DCF-Audit-Scripts",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__DCF-Audit-Scripts",
+      "remote_url": "git@github.com:mbarbine/DCF-Audit-Scripts.git",
+      "description": "ECHO is on.",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__desert-bus",
+      "name": "mbarbine__desert-bus",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__desert-bus",
+      "remote_url": "git@github.com:mbarbine/desert-bus.git",
+      "description": "**The most authentic browser recreation of the legendary Desert Bus game**, supporting children's hospitals through [Desert Bus for Hope](https://desertbus.org/).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript",
+        "JSON",
+        "HTML",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__dinoblocks-www",
+      "name": "mbarbine__dinoblocks-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__dinoblocks-www",
+      "remote_url": "git@github.com:mbarbine/dinoblocks-www.git",
+      "description": "deploy",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__docker-terraform-aws-demo",
+      "name": "mbarbine__docker-terraform-aws-demo",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__docker-terraform-aws-demo",
+      "remote_url": "git@github.com:mbarbine/docker-terraform-aws-demo.git",
+      "description": "<h3>Terraform Ansible LAMP with RDS<h3>",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown",
+        "YAML",
+        "HTML",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__doflo-clone",
+      "name": "mbarbine__doflo-clone",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__doflo-clone",
+      "remote_url": "git@github.com:mbarbine/doflo-clone.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__dogstar-cybernetics-webby",
+      "name": "mbarbine__dogstar-cybernetics-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__dogstar-cybernetics-webby",
+      "remote_url": "git@github.com:mbarbine/dogstar-cybernetics-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__drone-reel-webby",
+      "name": "mbarbine__drone-reel-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__drone-reel-webby",
+      "remote_url": "git@github.com:mbarbine/drone-reel-webby.git",
+      "description": "Package repository for my-project.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__email-reading-service-webby",
+      "name": "mbarbine__email-reading-service-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__email-reading-service-webby",
+      "remote_url": "git@github.com:mbarbine/email-reading-service-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 12,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__evernote-js",
+      "name": "mbarbine__evernote-js",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__evernote-js",
+      "remote_url": "git@github.com:mbarbine/evernote-js.git",
+      "description": "- Node.js 16+ installed",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "JavaScript",
+        "HTML",
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "CSS"
+      ],
+      "frameworks": [
+        "Express",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 8,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__fashion-sadiepass-www",
+      "name": "mbarbine__fashion-sadiepass-WWW",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__fashion-sadiepass-WWW",
+      "remote_url": "git@github.com:mbarbine/fashion-sadiepass-WWW.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "XML",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "Playwright",
+        "React",
+        "Remix",
+        "Svelte",
+        "Tailwind CSS",
+        "Vue"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__flaskflow-www",
+      "name": "mbarbine__FlaskFlow-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__FlaskFlow-www",
+      "remote_url": "git@github.com:mbarbine/FlaskFlow-www.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__fortune-cookie-webby",
+      "name": "mbarbine__fortune-cookie-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__fortune-cookie-webby",
+      "remote_url": "git@github.com:mbarbine/fortune-cookie-webby.git",
+      "description": "Package repository for my-project.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 8,
+      "maturity": "prototype",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__fortune-cookie-webby-yj",
+      "name": "mbarbine__fortune-cookie-webby-yj",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__fortune-cookie-webby-yj",
+      "remote_url": "git@github.com:mbarbine/fortune-cookie-webby-yj.git",
+      "description": "> An immersive, interactive fortune cookie experience that reveals wisdom through fog",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript",
+        "JSON",
+        "Dockerfile",
+        "XML",
+        "TOML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__foxio-labs",
+      "name": "mbarbine__foxio-labs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__foxio-labs",
+      "remote_url": "git@github.com:mbarbine/foxio-labs.git",
+      "description": "Welcome to **Foxio Labs**, the platform designed to provide you with a **hands-on learning experience** in **network traffic analysis**, **JA4 fingerprinting**, and **advanced security techniques**.",
+      "primary_language": "MDX",
+      "languages": [
+        "MDX",
+        "JavaScript",
+        "CSS",
+        "TypeScript",
+        "Markdown",
+        "HTML",
+        "YAML"
+      ],
+      "frameworks": [
+        "Next.js"
+      ],
+      "capability_count": 12,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__front-runners-webby",
+      "name": "mbarbine__front-runners-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__front-runners-webby",
+      "remote_url": "git@github.com:mbarbine/front-runners-webby.git",
+      "description": "A comprehensive landing page for Front Runners, a regional social run club based in Front Royal, Virginia, serving the greater Shenandoah Valley region.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Python"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 17,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__game-porting-service-webby",
+      "name": "mbarbine__game-porting-service-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__game-porting-service-webby",
+      "remote_url": "git@github.com:mbarbine/game-porting-service-webby.git",
+      "description": "Game porting service",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "SQL",
+        "JavaScript",
+        "Markdown",
+        "JSON",
+        "Python"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__gamer",
+      "name": "mbarbine__gamer",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__gamer",
+      "remote_url": "git@github.com:mbarbine/gamer.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__glass-blowing-website",
+      "name": "mbarbine__glass-blowing-website",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__glass-blowing-website",
+      "remote_url": "git@github.com:mbarbine/glass-blowing-website.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__global-anti-globalist-club-webby",
+      "name": "mbarbine__global-anti-globalist-club-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__global-anti-globalist-club-webby",
+      "remote_url": "git@github.com:mbarbine/global-anti-globalist-club-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 12,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__gta-6-countdown-webby",
+      "name": "mbarbine__gta-6-countdown-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__gta-6-countdown-webby",
+      "remote_url": "git@github.com:mbarbine/gta-6-countdown-webby.git",
+      "description": "A cutting-edge countdown website tracking the release of Grand Theft Auto VI on **November 19, 2026**.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__hot-chocolate-for-profit-webby",
+      "name": "mbarbine__hot-chocolate-for-profit-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__hot-chocolate-for-profit-webby",
+      "remote_url": "git@github.com:mbarbine/hot-chocolate-for-profit-webby.git",
+      "description": "Hot Chocolate",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "SQL",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 19,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__instant-snap-postcard",
+      "name": "mbarbine__instant-snap-postcard",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__instant-snap-postcard",
+      "remote_url": "git@github.com:mbarbine/instant-snap-postcard.git",
+      "description": "**URL**: https://lovable.dev/projects/5a0f6ddb-2009-4f4f-905b-70298d5d35e7",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "CSS",
+        "SQL",
+        "Markdown",
+        "HTML",
+        "JavaScript",
+        "TOML"
+      ],
+      "frameworks": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "capability_count": 14,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__ja4-sidecar",
+      "name": "mbarbine__ja4-sidecar",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ja4-sidecar",
+      "remote_url": "git@github.com:mbarbine/ja4-sidecar.git",
+      "description": "This documentation set describes the key components of the enhanced JA4 observability stack.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Shell",
+        "JavaScript",
+        "TOML",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Express",
+        "Jest"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__ja4-vercel-lab-2",
+      "name": "mbarbine__ja4-vercel-lab-2",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ja4-vercel-lab-2",
+      "remote_url": "git@github.com:mbarbine/ja4-vercel-lab-2.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "JavaScript",
+        "TOML",
+        "SQL",
+        "Markdown",
+        "Shell",
+        "CSS",
+        "JSON"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__ja4mlab",
+      "name": "mbarbine__ja4mlab",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ja4mlab",
+      "remote_url": "git@github.com:mbarbine/ja4mlab.git",
+      "description": "This is the cleaned reviewer package for the JA4M proposal.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Python",
+        "Markdown",
+        "TypeScript",
+        "Shell",
+        "JavaScript",
+        "YAML",
+        "Dockerfile",
+        "TOML"
+      ],
+      "frameworks": [],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__jaydens-therapy-legal-www",
+      "name": "mbarbine__jaydens-therapy-legal-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__jaydens-therapy-legal-www",
+      "remote_url": "git@github.com:mbarbine/jaydens-therapy-legal-www.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__jenkinsdb",
+      "name": "mbarbine__JenkinsDB",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__JenkinsDB",
+      "remote_url": "git@github.com:mbarbine/JenkinsDB.git",
+      "description": "SUMMARY:",
+      "primary_language": "SQL",
+      "languages": [
+        "SQL",
+        "XML"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__job-manager",
+      "name": "mbarbine__job-manager",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__job-manager",
+      "remote_url": "git@github.com:mbarbine/job-manager.git",
+      "description": "This guide explains how to use the DigitalOcean App Platform to run a Job Manager that demonstrates leases in a scalable environment.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "YAML",
+        "Markdown",
+        "Prisma",
+        "CSS",
+        "SQL",
+        "TOML"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "Prisma",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 8,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__joshs-magnets-landing-page",
+      "name": "mbarbine__Joshs-magnets-landing-page",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__Joshs-magnets-landing-page",
+      "remote_url": "git@github.com:mbarbine/Joshs-magnets-landing-page.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 12,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__jts-hvac-gates-www",
+      "name": "mbarbine__jts-hvac-gates-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__jts-hvac-gates-www",
+      "remote_url": "git@github.com:mbarbine/jts-hvac-gates-www.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__legacy-platphorm-news",
+      "name": "mbarbine__legacy-platphorm-news",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__legacy-platphorm-news",
+      "remote_url": "git@github.com:mbarbine/legacy-platphorm-news.git",
+      "description": "Package repository for @platphorm/news.",
+      "primary_language": "Svelte",
+      "languages": [
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [
+        "Playwright",
+        "Svelte",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 19,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__lettuce",
+      "name": "mbarbine__lettuce",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__lettuce",
+      "remote_url": "git@github.com:mbarbine/lettuce.git",
+      "description": "Welcome to `lattice-crypto` — a modular, extensible, and transparent Rust workspace for building production-grade lattice-based cryptography tools, anchored in **FIPS 203 (ML-KEM)** and grounded in real mathematical rigor.",
+      "primary_language": "Rust",
+      "languages": [
+        "Rust",
+        "Markdown",
+        "YAML",
+        "TOML",
+        "HTML",
+        "Shell"
+      ],
+      "frameworks": [],
+      "capability_count": 6,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__logslash-w6",
+      "name": "mbarbine__LogSlash-w6",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__LogSlash-w6",
+      "remote_url": "git@github.com:mbarbine/LogSlash-w6.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__mailthing",
+      "name": "mbarbine__mailthing",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mailthing",
+      "remote_url": "git@github.com:mbarbine/mailthing.git",
+      "description": "Package repository for api.email2letter.com.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON"
+      ],
+      "frameworks": [
+        "Express"
+      ],
+      "capability_count": 11,
+      "maturity": "prototype",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__mailthing-api",
+      "name": "mbarbine__mailthing-api",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mailthing-api",
+      "remote_url": "git@github.com:mbarbine/mailthing-api.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "TOML",
+        "Shell"
+      ],
+      "frameworks": [
+        "Express",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__mailthing-client",
+      "name": "mbarbine__mailthing-client",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mailthing-client",
+      "remote_url": "git@github.com:mbarbine/mailthing-client.git",
+      "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JavaScript",
+        "CSS",
+        "JSON",
+        "HTML",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Express",
+        "React",
+        "Vite"
+      ],
+      "capability_count": 20,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 4
+    },
+    {
+      "id": "github-recent__mbarbine__mailthing-main",
+      "name": "mbarbine__mailthing-main",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mailthing-main",
+      "remote_url": "git@github.com:mbarbine/mailthing-main.git",
+      "description": "The all-in-one starter kit for high-performance SaaS applications.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "SQL",
+        "Markdown",
+        "TOML",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 21,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__mermaid-community-platform",
+      "name": "mbarbine__mermaid-community-platform",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mermaid-community-platform",
+      "remote_url": "git@github.com:mbarbine/mermaid-community-platform.git",
+      "description": "Mermaid Community Platphorm",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "SQL",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__mermaid-next-www",
+      "name": "mbarbine__mermaid-next-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__mermaid-next-www",
+      "remote_url": "git@github.com:mbarbine/mermaid-next-www.git",
+      "description": "✔️ Establish Las Vegas Mermaids as the premier mermaid entertainment brand.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Markdown",
+        "JavaScript",
+        "JSON",
+        "CSS",
+        "YAML"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__microwave-sticker-webby",
+      "name": "mbarbine__microwave-sticker-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__microwave-sticker-webby",
+      "remote_url": "git@github.com:mbarbine/microwave-sticker-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__microwave-stickers",
+      "name": "mbarbine__microwave-stickers-",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__microwave-stickers-",
+      "remote_url": "git@github.com:mbarbine/microwave-stickers-.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__msicrafter",
+      "name": "mbarbine__msicrafter",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__msicrafter",
+      "remote_url": "git@github.com:mbarbine/msicrafter.git",
+      "description": "CLI-Based MSI table editor & transform tool",
+      "primary_language": "Go",
+      "languages": [
+        "Go",
+        "Markdown",
+        "YAML",
+        "JSON"
+      ],
+      "frameworks": [],
+      "capability_count": 3,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__multiplayer-puzzle-game",
+      "name": "mbarbine__multiplayer-puzzle-game",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__multiplayer-puzzle-game",
+      "remote_url": "git@github.com:mbarbine/multiplayer-puzzle-game.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "SQL",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 14,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__my-first-nova-hbackers-preseo",
+      "name": "mbarbine__my-first-nova-hbackers-preseo",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__my-first-nova-hbackers-preseo",
+      "remote_url": "git@github.com:mbarbine/my-first-nova-hbackers-preseo.git",
+      "description": "</br>",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "Markdown",
+        "JavaScript",
+        "JSON",
+        "CSS"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__n8n",
+      "name": "mbarbine__n8n",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__n8n",
+      "remote_url": "git@github.com:mbarbine/n8n.git",
+      "description": "��#\u0000 \u0000N\u00008\u0000N\u0000 \u0000S\u0000e\u0000l\u0000f\u0000-\u0000H\u0000o\u0000s\u0000t\u0000e\u0000d\u0000 \u0000D\u0000o\u0000c\u0000k\u0000e\u0000r\u0000 \u0000S\u0000e\u0000t\u0000u\u0000p\u0000 \u0000-\u0000 \u0000C\u0000o\u0000m\u0000p\u0000l\u0000e\u0000t\u0000e\u0000 \u0000S\u0000t\u0000a\u0000g\u0000i\u0000n\u0000g\u0000 \u0000G\u0000u\u0000i\u0000d\u0000e\u0000\r\u0000",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Markdown",
+        "Shell",
+        "HTML",
+        "YAML",
+        "Vue"
+      ],
+      "frameworks": [],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__news-api",
+      "name": "mbarbine__news-api",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__news-api",
+      "remote_url": "git@github.com:mbarbine/news-api.git",
+      "description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "JSON",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Playwright",
+        "Svelte",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 13,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__nextjs-ai-4",
+      "name": "mbarbine__nextjs-ai-4",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__nextjs-ai-4",
+      "remote_url": "git@github.com:mbarbine/nextjs-ai-4.git",
+      "description": "<a href=\"https://chat.vercel.ai/\">",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "SQL"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 19,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__nextjs-ai-chatbot",
+      "name": "mbarbine__nextjs-ai-chatbot",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__nextjs-ai-chatbot",
+      "remote_url": "git@github.com:mbarbine/nextjs-ai-chatbot.git",
+      "description": "<a href=\"https://chat.vercel.ai/\">",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "JavaScript",
+        "CSS",
+        "SQL",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 19,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__nova-hackers-webby",
+      "name": "mbarbine__nova-hackers-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__nova-hackers-webby",
+      "remote_url": "git@github.com:mbarbine/nova-hackers-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__nuclear-power-plant-webby-npaas",
+      "name": "mbarbine__nuclear-power-plant-webby-NPaaS",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__nuclear-power-plant-webby-NPaaS",
+      "remote_url": "git@github.com:mbarbine/nuclear-power-plant-webby-NPaaS.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__onboard-platphorm-boilerplate-repo",
+      "name": "mbarbine__onboard-platphorm-boilerplate-repo",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__onboard-platphorm-boilerplate-repo",
+      "remote_url": "git@github.com:mbarbine/onboard-platphorm-boilerplate-repo.git",
+      "description": "MCP-enabled documentation platform. No auth. No ads. Just docs.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript",
+        "SQL",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "MCP SDK",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__ph3ar-admin-dashboard",
+      "name": "mbarbine__ph3ar-admin-dashboard",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-admin-dashboard",
+      "remote_url": "git@github.com:mbarbine/ph3ar-admin-dashboard.git",
+      "description": "<div align=\"center\"><strong>Next.js 15 Admin Dashboard Template</strong></div>",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__ph3ar-blog",
+      "name": "mbarbine__ph3ar-blog",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-blog",
+      "remote_url": "git@github.com:mbarbine/ph3ar-blog.git",
+      "description": "> ⚡ Live at: [https://blog.ph3ar.com](https://blog.ph3ar.com)",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "Python",
+        "Shell",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__ph3ar-chatbot",
+      "name": "mbarbine__ph3ar-chatbot",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-chatbot",
+      "remote_url": "git@github.com:mbarbine/ph3ar-chatbot.git",
+      "description": "<a href=\"https://blog.ph3ar.com/\">",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "JavaScript",
+        "SQL",
+        "CSS",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__ph3ar-web",
+      "name": "mbarbine__ph3ar-web",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-web",
+      "remote_url": "git@github.com:mbarbine/ph3ar-web.git",
+      "description": "This repository contains the PH3AR web application. It uses GitOps principles for continuous deployment using GitHub and GitLab.",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "JSON",
+        "CSS",
+        "HTML",
+        "Markdown",
+        "YAML",
+        "SCSS",
+        "Shell",
+        "Dockerfile",
+        "TOML"
+      ],
+      "frameworks": [
+        "Express",
+        "Sequelize"
+      ],
+      "capability_count": 6,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__ph3ar-webby",
+      "name": "mbarbine__PH3AR-WEBBY",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__PH3AR-WEBBY",
+      "remote_url": "git@github.com:mbarbine/PH3AR-WEBBY.git",
+      "description": "PH3AR: Cutting-Edge Tech Platform",
+      "primary_language": "Svelte",
+      "languages": [
+        "Svelte",
+        "TypeScript",
+        "JavaScript",
+        "Markdown",
+        "JSON",
+        "HTML",
+        "Python",
+        "Shell",
+        "CSS",
+        "YAML"
+      ],
+      "frameworks": [
+        "Svelte",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-404",
+      "name": "mbarbine__platphorm-404",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-404",
+      "remote_url": "git@github.com:mbarbine/platphorm-404.git",
+      "description": "PlatPhorm 404 is the canonical public 404 recovery layer for the PlatPhormNews web mesh.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 23,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-agentui",
+      "name": "mbarbine__platphorm-agentui",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-agentui",
+      "remote_url": "git@github.com:mbarbine/platphorm-agentui.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "SQL",
+        "CSS",
+        "Python",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 21,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-ai-photo-enrichment",
+      "name": "mbarbine__platphorm-ai-photo-enrichment",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-ai-photo-enrichment",
+      "remote_url": "git@github.com:mbarbine/platphorm-ai-photo-enrichment.git",
+      "description": "A full-stack Next.js application that automatically enhances your Google Photos using professional-grade AI to make every photo look like it was taken with a high-end camera.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 19,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-alleycats",
+      "name": "mbarbine__platphorm-alleycats",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-alleycats",
+      "remote_url": "git@github.com:mbarbine/platphorm-alleycats.git",
+      "description": "> **A Collaborative Zine with Substance** - Interactive digital zine reader supporting local artists.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-ascii",
+      "name": "mbarbine__platphorm-ascii",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-ascii",
+      "remote_url": "git@github.com:mbarbine/platphorm-ascii.git",
+      "description": "> **ascii.platphormnews.com** — Part of the [PlatPhorm News](https://www.platphormnews.com) network",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "CSS",
+        "Python",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-auction-vice",
+      "name": "mbarbine__platphorm-auction-vice",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-auction-vice",
+      "remote_url": "git@github.com:mbarbine/platphorm-auction-vice.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 25,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-base",
+      "name": "mbarbine__platphorm-base",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-base",
+      "remote_url": "git@github.com:mbarbine/platphorm-base.git",
+      "description": "> News for 8 Billion People. Free Forever. No Ads. No Paywalls.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "Python",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-bbs",
+      "name": "mbarbine__platphorm-bbs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-bbs",
+      "remote_url": "git@github.com:mbarbine/platphorm-bbs.git",
+      "description": "PlatPhorm BBS is the canonical public bulletin board and retro terminal community layer for the PlatPhormNews web mesh.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 29,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-browserops",
+      "name": "mbarbine__platphorm-browserops",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-browserops",
+      "remote_url": "git@github.com:mbarbine/platphorm-browserops.git",
+      "description": "BrowserOps is the PlatPhormNews browser proof layer. It runs real browser journeys across trusted `*.platphormnews.com` sites, captures screenshots and artifacts, checks route/discovery/UI/accessibility compliance, and propagates W3C trace context into target requests so failures can be correlated in Trace.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-business-employerservicesincorporated",
+      "name": "mbarbine__platphorm-business-EmployerServicesIncorporated",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-business-EmployerServicesIncorporated",
+      "remote_url": "git@github.com:mbarbine/platphorm-business-EmployerServicesIncorporated.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "Python",
+        "TypeScript",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "Shell"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-cobol",
+      "name": "mbarbine__platphorm-cobol",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-cobol",
+      "remote_url": "git@github.com:mbarbine/platphorm-cobol.git",
+      "description": "COBOL AI is the public-safe COBOL modernization workbench for `cobol.platphormnews.com`.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JavaScript",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 23,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-codex",
+      "name": "mbarbine__platphorm-codex",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-codex",
+      "remote_url": "git@github.com:mbarbine/platphorm-codex.git",
+      "description": "Codex is the screenshot-backed, tool-aware narrative and catalog layer for the PlatPhormNews web mesh.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "SQL",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Cypress",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 23,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-content-showback-dashboard",
+      "name": "mbarbine__platphorm-content-showback-dashboard",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-content-showback-dashboard",
+      "remote_url": "git@github.com:mbarbine/platphorm-content-showback-dashboard.git",
+      "description": "ECHO is a comprehensive content monitoring and analytics platform that helps creators, podcasters, and musicians track their content across streaming platforms, detect policy violations, monitor unauthorized usage, and recover lost revenue. Built with Next.js 15, NeonDB, and Stripe.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "SQL",
+        "CSS",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 27,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-decks",
+      "name": "mbarbine__platphorm-decks",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-decks",
+      "remote_url": "git@github.com:mbarbine/platphorm-decks.git",
+      "description": "Cinematic presentation slides for the [PlatPhorm Network](https://platphormnews.com).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Cypress",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 17,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-desa",
+      "name": "mbarbine__platphorm-desa",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-desa",
+      "remote_url": "git@github.com:mbarbine/platphorm-desa.git",
+      "description": "Dynamic Execution Script Analysis",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "SQL",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "production",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-design",
+      "name": "mbarbine__platphorm-design",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-design",
+      "remote_url": "git@github.com:mbarbine/platphorm-design.git",
+      "description": "Welcome to the documentation for Platphorm Design. This directory serves as the source of truth for all architectural, API, user experience, and testing documentation.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "Python",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-dictionary",
+      "name": "mbarbine__platphorm-dictionary",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-dictionary",
+      "remote_url": "git@github.com:mbarbine/platphorm-dictionary.git",
+      "description": "PlatPhorm Dictionary",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-emoji",
+      "name": "mbarbine__platphorm-emoji",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-emoji",
+      "remote_url": "git@github.com:mbarbine/platphorm-emoji.git",
+      "description": "> Score, explore, and propose emoji. Powered by the Unicode Standard.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-evals",
+      "name": "mbarbine__platphorm-evals",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-evals",
+      "remote_url": "git@github.com:mbarbine/platphorm-evals.git",
+      "description": "Platphorm Evals",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "Shell",
+        "SQL",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-finance",
+      "name": "mbarbine__platphorm-finance",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-finance",
+      "remote_url": "git@github.com:mbarbine/platphorm-finance.git",
+      "description": "PlatPhorm Finance is part of the PlatPhorm network.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 17,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-fingerprint-service",
+      "name": "mbarbine__platphorm-fingerprint-service",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-fingerprint-service",
+      "remote_url": "git@github.com:mbarbine/platphorm-fingerprint-service.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "SQL",
+        "JSON",
+        "JavaScript",
+        "Markdown",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 25,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-insights",
+      "name": "mbarbine__platphorm-insights",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-insights",
+      "remote_url": "git@github.com:mbarbine/platphorm-insights.git",
+      "description": "> AI-First Web Performance & Discovery Analysis Platform",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-jobs",
+      "name": "mbarbine__platphorm-jobs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-jobs",
+      "remote_url": "git@github.com:mbarbine/platphorm-jobs.git",
+      "description": "> Bring your references with you. Never face a panel alone.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 21,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-json",
+      "name": "mbarbine__platphorm-json",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-json",
+      "remote_url": "git@github.com:mbarbine/platphorm-json.git",
+      "description": "Package repository for platphorm-json.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-jules",
+      "name": "mbarbine__platphorm-jules",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-jules",
+      "remote_url": "git@github.com:mbarbine/platphorm-jules.git",
+      "description": "Jules is the PlatPhormNews coding-session workspace and Onboard-to-implementation handoff layer. It helps humans and agents turn onboarding applications, platform gaps, repo work, MCP/API tools, BrowserOps/Evals findings, docs requirements, and trace findings into trace-linked plans, tasks, and developer workflow handoffs.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 21,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-kanban",
+      "name": "mbarbine__platphorm-kanban",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-kanban",
+      "remote_url": "git@github.com:mbarbine/platphorm-kanban.git",
+      "description": "Beep Boop",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "JavaScript",
+        "CSS",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 21,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-keys",
+      "name": "mbarbine__platphorm-keys",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-keys",
+      "remote_url": "git@github.com:mbarbine/platphorm-keys.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-layout",
+      "name": "mbarbine__platphorm-layout",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-layout",
+      "remote_url": "git@github.com:mbarbine/platphorm-layout.git",
+      "description": "PlatPhorm Layout is the public layout design and responsive preview workbench for the PlatPhormNews web mesh.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Dockerfile",
+        "Python"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-mcp",
+      "name": "mbarbine__platphorm-mcp",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-mcp",
+      "remote_url": "git@github.com:mbarbine/platphorm-mcp.git",
+      "description": "> **mcp.platphormnews.com** — Central MCP federation hub for the [PlatPhorm News](https://www.platphormnews.com) network",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "Shell",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 30,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-mini-games-webby",
+      "name": "mbarbine__platphorm-mini-games-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-mini-games-webby",
+      "remote_url": "git@github.com:mbarbine/platphorm-mini-games-webby.git",
+      "description": "A curated collection of browser-based mini games. No downloads, no accounts, no ads.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "Python",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-monitor",
+      "name": "mbarbine__platphorm-monitor",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-monitor",
+      "remote_url": "git@github.com:mbarbine/platphorm-monitor.git",
+      "description": "Monitor vercel projects",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "JSON",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-msi-editor",
+      "name": "mbarbine__platphorm-msi-editor",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-msi-editor",
+      "remote_url": "git@github.com:mbarbine/platphorm-msi-editor.git",
+      "description": "Package repository for msi-tree.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-newdittyswag-www",
+      "name": "mbarbine__platphorm-newdittyswag-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-newdittyswag-www",
+      "remote_url": "git@github.com:mbarbine/platphorm-newdittyswag-www.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-news-alt-theme",
+      "name": "mbarbine__platphorm-news-alt-theme",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-news-alt-theme",
+      "remote_url": "git@github.com:mbarbine/platphorm-news-alt-theme.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "SQL",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-onboard",
+      "name": "mbarbine__platphorm-onboard",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-onboard",
+      "remote_url": "git@github.com:mbarbine/platphorm-onboard.git",
+      "description": "Canonical documentation for this repository lives in this directory.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript",
+        "Dockerfile",
+        "XML"
+      ],
+      "frameworks": [
+        "MCP SDK",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-openclaw",
+      "name": "mbarbine__platphorm-openclaw",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-openclaw",
+      "remote_url": "git@github.com:mbarbine/platphorm-openclaw.git",
+      "description": "CLAWS.platphormnews.com - OpenClaw Integration Platphorm",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "SQL",
+        "CSS",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 28,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-opencontent",
+      "name": "mbarbine__platphorm-opencontent",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-opencontent",
+      "remote_url": "git@github.com:mbarbine/platphorm-opencontent.git",
+      "description": "OpenContent is an AI-native content platform for documents, media ingestion, machine-readable discovery, and agent access.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "SQL",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "MCP SDK",
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 27,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-opendocs",
+      "name": "mbarbine__platphorm-opendocs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-opendocs",
+      "remote_url": "git@github.com:mbarbine/platphorm-opendocs.git",
+      "description": "Open-source documentation platform with MCP integration. No auth. No ads. Just docs.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "SQL",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "MCP SDK",
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-paperboy",
+      "name": "mbarbine__platphorm-paperboy",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-paperboy",
+      "remote_url": "git@github.com:mbarbine/platphorm-paperboy.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 11,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-podcasts",
+      "name": "mbarbine__platphorm-podcasts",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-podcasts",
+      "remote_url": "git@github.com:mbarbine/platphorm-podcasts.git",
+      "description": "PlatPhorm Podcasts is the canonical podcast, RSS, Atom, JSON Feed, feed archive, reader, audio discovery, and listening/navigation layer for the PlatPhormNews web mesh.",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "JSON",
+        "TypeScript",
+        "HTML",
+        "YAML",
+        "CSS",
+        "SQL",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 27,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-politics",
+      "name": "mbarbine__platphorm-politics",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-politics",
+      "remote_url": "git@github.com:mbarbine/platphorm-politics.git",
+      "description": "A modern web application that digitizes, simplifies, and streamlines the FEC Form 2 (Statement of Candidacy) filing process. Built with Next.js, Supabase, and integrated with Lob for automated physical mailing.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "Markdown",
+        "CSS",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-polymarket-rss-feed",
+      "name": "mbarbine__platphorm-polymarket-rss-feed",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-polymarket-rss-feed",
+      "remote_url": "git@github.com:mbarbine/platphorm-polymarket-rss-feed.git",
+      "description": "Real-time RSS feed for Polymarket prediction markets. Subscribe with any feed reader and stay updated on new markets, current odds, and trending predictions.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "Python",
+        "JavaScript",
+        "CSS",
+        "SQL",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-polymaths",
+      "name": "mbarbine__platphorm-polymaths",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-polymaths",
+      "remote_url": "git@github.com:mbarbine/platphorm-polymaths.git",
+      "description": "**The definitive resource for polymathic learning and development.**",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "Dockerfile",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 23,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-portfolio-webby",
+      "name": "mbarbine__platphorm-portfolio-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-portfolio-webby",
+      "remote_url": "git@github.com:mbarbine/platphorm-portfolio-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 10,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-quake",
+      "name": "mbarbine__platphorm-quake",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-quake",
+      "remote_url": "git@github.com:mbarbine/platphorm-quake.git",
+      "description": "> Quake Arena–style first-person shooter running entirely in your browser. No downloads. No plugins. Just frags.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-radio-backend",
+      "name": "mbarbine__platphorm-radio-backend",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-radio-backend",
+      "remote_url": "git@github.com:mbarbine/platphorm-radio-backend.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-reader",
+      "name": "mbarbine__platphorm-reader",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-reader",
+      "remote_url": "git@github.com:mbarbine/platphorm-reader.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-real-estate",
+      "name": "mbarbine__platphorm-real-estate",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-real-estate",
+      "remote_url": "git@github.com:mbarbine/platphorm-real-estate.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 17,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-real-estate-nad",
+      "name": "mbarbine__platphorm-real-estate-NAD",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-real-estate-NAD",
+      "remote_url": "git@github.com:mbarbine/platphorm-real-estate-NAD.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "JavaScript",
+        "Markdown",
+        "CSS",
+        "Python",
+        "JSON"
+      ],
+      "frameworks": [
+        "MCP SDK",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-real-estate-property-evaluation",
+      "name": "mbarbine__platphorm-real-estate-property-evaluation",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-real-estate-property-evaluation",
+      "remote_url": "git@github.com:mbarbine/platphorm-real-estate-property-evaluation.git",
+      "description": "Welcome to the shared documentation template for the PlatPhorm News Network.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "SQL",
+        "CSS",
+        "Shell",
+        "Markdown",
+        "Python",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 22,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-redteam-arma-landing",
+      "name": "mbarbine__platphorm-redteam-arma-landing",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-redteam-arma-landing",
+      "remote_url": "git@github.com:mbarbine/platphorm-redteam-arma-landing.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-register",
+      "name": "mbarbine__platphorm-register",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-register",
+      "remote_url": "git@github.com:mbarbine/platphorm-register.git",
+      "description": "Register",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "SQL",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-sandbox",
+      "name": "mbarbine__platphorm-sandbox",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-sandbox",
+      "remote_url": "git@github.com:mbarbine/platphorm-sandbox.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "Shell",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 23,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-sheets",
+      "name": "mbarbine__platphorm-sheets",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-sheets",
+      "remote_url": "git@github.com:mbarbine/platphorm-sheets.git",
+      "description": "OpenSheets",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-shipments",
+      "name": "mbarbine__platphorm-shipments",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-shipments",
+      "remote_url": "git@github.com:mbarbine/platphorm-shipments.git",
+      "description": "Public-safe USPS REST API v3 shipping rate calculator and logistics tooling surface for [PlatPhorm News Network](https://platphormnews.com), with VanAgain/VW parts package workflows supported as one useful e-commerce pattern.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "SQL",
+        "CSS",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-signs",
+      "name": "mbarbine__platphorm-signs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-signs",
+      "remote_url": "git@github.com:mbarbine/platphorm-signs.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-space-news",
+      "name": "mbarbine__platphorm-space-news",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-space-news",
+      "remote_url": "git@github.com:mbarbine/platphorm-space-news.git",
+      "description": "Space News is the canonical public SpaceX, Starbase, Boca Chica, South Padre Island, and Cameron County news aggregation surface for PlatPhormNews.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-spec-workbench",
+      "name": "mbarbine__platphorm-spec-workbench",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-spec-workbench",
+      "remote_url": "git@github.com:mbarbine/platphorm-spec-workbench.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 23,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-stannp-api-wrapper",
+      "name": "mbarbine__platphorm-stannp-api-wrapper",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-stannp-api-wrapper",
+      "remote_url": "git@github.com:mbarbine/platphorm-stannp-api-wrapper.git",
+      "description": "- **Health Check:** `/api/health`",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-svg-factory",
+      "name": "mbarbine__platphorm-svg-factory",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-svg-factory",
+      "remote_url": "git@github.com:mbarbine/platphorm-svg-factory.git",
+      "description": "Package repository for svg-micro-factory.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript",
+        "Shell",
+        "YAML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 19,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-trace",
+      "name": "mbarbine__platphorm-trace",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-trace",
+      "remote_url": "git@github.com:mbarbine/platphorm-trace.git",
+      "description": "This project now includes complete OpenTelemetry support.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "SQL",
+        "JavaScript",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 26,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-usl",
+      "name": "mbarbine__platphorm-usl",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-usl",
+      "remote_url": "git@github.com:mbarbine/platphorm-usl.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "SQL",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 23,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-vercel-atlas",
+      "name": "mbarbine__platphorm-vercel-atlas",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-vercel-atlas",
+      "remote_url": "git@github.com:mbarbine/platphorm-vercel-atlas.git",
+      "description": "A comprehensive threat intelligence platform for real-time JA4 fingerprint analysis, threat attribution, and security monitoring.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "SQL",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 27,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-webhook-simulator",
+      "name": "mbarbine__platphorm-webhook-simulator",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-webhook-simulator",
+      "remote_url": "git@github.com:mbarbine/platphorm-webhook-simulator.git",
+      "description": "Production-ready webhook simulator, signer, replay engine, and contract tester. Purpose-built for the PlatPhorm ecosystem with MCP integration.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "JSON",
+        "Markdown",
+        "SQL",
+        "Shell",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 21,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-wrestling-webby",
+      "name": "mbarbine__platphorm-wrestling-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-wrestling-webby",
+      "remote_url": "git@github.com:mbarbine/platphorm-wrestling-webby.git",
+      "description": "Wrestling",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "YAML",
+        "JavaScript",
+        "CSS",
+        "Markdown",
+        "SQL"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 17,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-xml",
+      "name": "mbarbine__platphorm-xml",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-xml",
+      "remote_url": "git@github.com:mbarbine/platphorm-xml.git",
+      "description": "Package repository for platphorm-xml.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 20,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__platphorm-zine-reader",
+      "name": "mbarbine__platphorm-zine-reader",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-zine-reader",
+      "remote_url": "git@github.com:mbarbine/platphorm-zine-reader.git",
+      "description": "> **A Collaborative Zine with Substance** - Interactive digital zine reader supporting local artists.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__platphormnews-www-prod",
+      "name": "mbarbine__platphormnews-www-prod",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphormnews-www-prod",
+      "remote_url": "git@github.com:mbarbine/platphormnews-www-prod.git",
+      "description": "Boop Beep...",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Svelte",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "HTML",
+        "Python",
+        "JavaScript",
+        "Dockerfile",
+        "XML",
+        "Shell"
+      ],
+      "frameworks": [
+        "React",
+        "Svelte",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 24,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__process-clone",
+      "name": "mbarbine__process-clone",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__process-clone",
+      "remote_url": "git@github.com:mbarbine/process-clone.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "Prisma",
+        "JSON",
+        "JavaScript",
+        "Markdown",
+        "CSS",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Prisma",
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "Vitest"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__reflux-site-webby",
+      "name": "mbarbine__reflux-site-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__reflux-site-webby",
+      "remote_url": "git@github.com:mbarbine/reflux-site-webby.git",
+      "description": "Reflux Landing Page",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "JavaScript",
+        "CSS",
+        "XML",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 17,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__robbie-ds-greens-webby",
+      "name": "mbarbine__robbie-ds-greens-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__robbie-ds-greens-webby",
+      "remote_url": "git@github.com:mbarbine/robbie-ds-greens-webby.git",
+      "description": "- **Health Check API**: A simple health check is available at `/api/health`.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "JSON",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__robot-clothing-marketplace",
+      "name": "mbarbine__robot-clothing-marketplace",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__robot-clothing-marketplace",
+      "remote_url": "git@github.com:mbarbine/robot-clothing-marketplace.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "SQL",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__scratchcraft",
+      "name": "mbarbine__scratchcraft",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__scratchcraft",
+      "remote_url": "git@github.com:mbarbine/scratchcraft.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__scripts",
+      "name": "mbarbine__Scripts",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__Scripts",
+      "remote_url": "git@github.com:mbarbine/Scripts.git",
+      "description": "READ",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "PHP",
+        "Python",
+        "HTML",
+        "XML",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "Shell",
+        "Ruby",
+        "YAML",
+        "Java",
+        "SCSS",
+        "SQL",
+        "Dockerfile",
+        "Go",
+        "C#"
+      ],
+      "frameworks": [
+        "Express"
+      ],
+      "capability_count": 18,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__shopify-theme-vanagain",
+      "name": "mbarbine__shopify-theme-vanagain",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__shopify-theme-vanagain",
+      "remote_url": "git@github.com:mbarbine/shopify-theme-vanagain.git",
+      "description": "This is a custom, importable Shopify Online Store 2.0 theme inspired by the layout of vanagain.com. It provides a similar structure and sections using fully configurable content. No third-party text or images are included.",
+      "primary_language": "Python",
+      "languages": [
+        "Python",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "Shell",
+        "JavaScript"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__spectrum-canine-www",
+      "name": "mbarbine__spectrum-canine-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__spectrum-canine-www",
+      "remote_url": "git@github.com:mbarbine/spectrum-canine-www.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 8,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__stannp-gpt-5-test",
+      "name": "mbarbine__stannp-gpt-5-test",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__stannp-gpt-5-test",
+      "remote_url": "git@github.com:mbarbine/stannp-gpt-5-test.git",
+      "description": "*Your complete solution for building, testing, and managing mail APIs*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JavaScript",
+        "CSS",
+        "SQL",
+        "JSON"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 22,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__stannp-nextjs-bp",
+      "name": "mbarbine__stannp-nextjs-bp",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__stannp-nextjs-bp",
+      "remote_url": "git@github.com:mbarbine/stannp-nextjs-bp.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "Shell",
+        "Markdown",
+        "Prisma",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Prisma",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 17,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__starphone-cms",
+      "name": "mbarbine__Starphone-CMS",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__Starphone-CMS",
+      "remote_url": "git@github.com:mbarbine/Starphone-CMS.git",
+      "description": "This is the Starphone-CMS repository.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__starphone-fork-webby",
+      "name": "mbarbine__starphone-fork-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__starphone-fork-webby",
+      "remote_url": "git@github.com:mbarbine/starphone-fork-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JavaScript",
+        "Markdown"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 15,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__starphone-web-svelte",
+      "name": "mbarbine__starphone-web-svelte",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__starphone-web-svelte",
+      "remote_url": "git@github.com:mbarbine/starphone-web-svelte.git",
+      "description": "> **Latest Update**: January 2026 - Major framework upgrade, SEO optimization, JA4 Atlas integration",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "Svelte",
+        "XML",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "capability_count": 16,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__stripper-mug-webby",
+      "name": "mbarbine__stripper-mug-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__stripper-mug-webby",
+      "remote_url": "git@github.com:mbarbine/stripper-mug-webby.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__threatrelay-webby",
+      "name": "mbarbine__threatrelay-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__threatrelay-webby",
+      "remote_url": "git@github.com:mbarbine/threatrelay-webby.git",
+      "description": "> An open-source educational platform for learning, practicing, and mastering JA4+ network fingerprinting methods. Part of the [PlatPhorm News Network](https://platphormnews.com).",
+      "primary_language": "MDX",
+      "languages": [
+        "MDX",
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 14,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__tiktok-clone",
+      "name": "mbarbine__tiktok-clone",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__tiktok-clone",
+      "remote_url": "git@github.com:mbarbine/tiktok-clone.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 13,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__tools",
+      "name": "mbarbine__tools",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__tools",
+      "remote_url": "git@github.com:mbarbine/tools.git",
+      "description": "tools",
+      "primary_language": "Shell",
+      "languages": [
+        "Shell",
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__turborepo-react-native",
+      "name": "mbarbine__turborepo-react-native",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__turborepo-react-native",
+      "remote_url": "git@github.com:mbarbine/turborepo-react-native.git",
+      "description": "A [react-native](https://reactnative.dev/) app built using [expo](https://docs.expo.dev/)",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "Markdown",
+        "TypeScript",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "capability_count": 4,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__two-doller-web",
+      "name": "mbarbine__two-doller-web",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__two-doller-web",
+      "remote_url": "git@github.com:mbarbine/two-doller-web.git",
+      "description": "> **America's Most Misunderstood Currency** — A comprehensive guide to the US $2 bill.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "JSON",
+        "Markdown",
+        "CSS",
+        "XML",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 18,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__uberpidgeons",
+      "name": "mbarbine__uberpidgeons",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__uberpidgeons",
+      "remote_url": "git@github.com:mbarbine/uberpidgeons.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "YAML",
+        "TypeScript",
+        "Markdown",
+        "JavaScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__uberpidgeons-www",
+      "name": "mbarbine__uberpidgeons-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__uberpidgeons-www",
+      "remote_url": "git@github.com:mbarbine/uberpidgeons-www.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 2,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__v0-2025-year-in-review",
+      "name": "mbarbine__v0-2025-year-in-review",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-2025-year-in-review",
+      "remote_url": "git@github.com:mbarbine/v0-2025-year-in-review.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__mbarbine__v0-fortune-cookie-webby",
+      "name": "mbarbine__v0-fortune-cookie-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-fortune-cookie-webby",
+      "remote_url": "git@github.com:mbarbine/v0-fortune-cookie-webby.git",
+      "description": "Repository mbarbine__v0-fortune-cookie-webby; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__v0-fortune-cookie-windshield",
+      "name": "mbarbine__v0-fortune-cookie-windshield",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-fortune-cookie-windshield",
+      "remote_url": "git@github.com:mbarbine/v0-fortune-cookie-windshield.git",
+      "description": "Repository mbarbine__v0-fortune-cookie-windshield; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__v0-fortune-cookie-windshield-5g",
+      "name": "mbarbine__v0-fortune-cookie-windshield-5g",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-fortune-cookie-windshield-5g",
+      "remote_url": "git@github.com:mbarbine/v0-fortune-cookie-windshield-5g.git",
+      "description": "Repository mbarbine__v0-fortune-cookie-windshield-5g; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__v0-fortune-cookie-windshield-75",
+      "name": "mbarbine__v0-fortune-cookie-windshield-75",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-fortune-cookie-windshield-75",
+      "remote_url": "git@github.com:mbarbine/v0-fortune-cookie-windshield-75.git",
+      "description": "Repository mbarbine__v0-fortune-cookie-windshield-75; purpose requires further source review.",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__v0-fortune-cookie-windshield-pz",
+      "name": "mbarbine__v0-fortune-cookie-windshield-pz",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__v0-fortune-cookie-windshield-pz",
+      "remote_url": "git@github.com:mbarbine/v0-fortune-cookie-windshield-pz.git",
+      "description": "Repository mbarbine__v0-fortune-cookie-windshield-pz; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__vanagain_dot_com",
+      "name": "mbarbine__vanagain_dot_com",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanagain_dot_com",
+      "remote_url": "git@github.com:mbarbine/vanagain_dot_com.git",
+      "description": "Repository mbarbine__vanagain_dot_com; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__vanagain-2025",
+      "name": "mbarbine__vanagain-2025",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanagain-2025",
+      "remote_url": "git@github.com:mbarbine/vanagain-2025.git",
+      "description": "*Automatically synced with your [v0.dev](https://v0.dev) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "SQL",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__vanagain-dot-com-prod",
+      "name": "mbarbine__vanagain-dot-com-prod",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanagain-dot-com-prod",
+      "remote_url": "git@github.com:mbarbine/vanagain-dot-com-prod.git",
+      "description": "VanAgain is a full-stack e-commerce website for selling vintage van parts, accessories, and restoration supplies. It's a modernized rebuild of what was originally a PHP/Laravel + MySQL site (the legacy code is preserved in the /admin directory for reference), now rebuilt as a modern Next.js 16 application deployed on Vercel.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "JavaScript",
+        "XML",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "Python",
+        "SQL",
+        "Shell"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Playwright",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 35,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__vanagain-site",
+      "name": "mbarbine__vanagain-site",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanagain-site",
+      "remote_url": "git@github.com:mbarbine/vanagain-site.git",
+      "description": "CKEditor SCAYT Plugin",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "PHP",
+        "XML",
+        "SCSS",
+        "Markdown",
+        "JSON",
+        "Vue"
+      ],
+      "frameworks": [
+        "Vue"
+      ],
+      "capability_count": 7,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__vanagon-website",
+      "name": "mbarbine__vanagon-website",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanagon-website",
+      "remote_url": "git@github.com:mbarbine/vanagon-website.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 12,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__vanlife-website",
+      "name": "mbarbine__vanlife-website",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__vanlife-website",
+      "remote_url": "git@github.com:mbarbine/vanlife-website.git",
+      "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "YAML",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 18,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__wildduck",
+      "name": "mbarbine__wildduck",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__wildduck",
+      "remote_url": "git@github.com:mbarbine/wildduck.git",
+      "description": "Welcome to the comprehensive documentation for WildDuck Mail Server deployment. This guide covers everything from initial setup to advanced configuration and troubleshooting.",
+      "primary_language": "Shell",
+      "languages": [
+        "Shell",
+        "Markdown",
+        "TOML",
+        "JavaScript",
+        "YAML",
+        "JSON",
+        "CSS",
+        "HTML",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Express"
+      ],
+      "capability_count": 10,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__mbarbine__www-demo-biofeedback-app-development",
+      "name": "mbarbine__www-demo-biofeedback-app-development",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__www-demo-biofeedback-app-development",
+      "remote_url": "git@github.com:mbarbine/www-demo-biofeedback-app-development.git",
+      "description": "*Automatically synced with your [v0.app](https://v0.app) deployments*",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JSON",
+        "YAML",
+        "Markdown",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 12,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__mbarbine__xsociety",
+      "name": "mbarbine__xsociety",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__xsociety",
+      "remote_url": "git@github.com:mbarbine/xsociety.git",
+      "description": "Social Buttons for Bootstrap",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "Ruby",
+        "HTML",
+        "Python",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "Java",
+        "SCSS",
+        "XML",
+        "Shell",
+        "PHP",
+        "SQL",
+        "YAML"
+      ],
+      "frameworks": [],
+      "capability_count": 7,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__mbarbine__zornixos",
+      "name": "mbarbine__zornixOS",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__zornixOS",
+      "remote_url": "git@github.com:mbarbine/zornixOS.git",
+      "description": "This repository is a collection of scripts created especially to",
+      "primary_language": "Shell",
+      "languages": [
+        "Shell",
+        "Python",
+        "Java",
+        "YAML",
+        "Dockerfile",
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "deprecated",
+      "confidence": "medium",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__ph3ar__barbine-worldwide-legacy",
+      "name": "ph3ar__barbine-worldwide-legacy",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__barbine-worldwide-legacy",
+      "remote_url": "git@github.com:ph3ar/barbine-worldwide-legacy.git",
+      "description": "Package repository for vite-react.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "YAML",
+        "JavaScript",
+        "HTML",
+        "Markdown"
+      ],
+      "frameworks": [
+        "React",
+        "Vite"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__demo-repository",
+      "name": "ph3ar__demo-repository",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__demo-repository",
+      "remote_url": "git@github.com:ph3ar/demo-repository.git",
+      "description": "This code repository (or \"repo\") is designed to demonstrate the best GitHub has to offer with the least amount of noise.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "Markdown",
+        "JSON",
+        "HTML"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__deskthing-fortunecookie",
+      "name": "ph3ar__DeskThing-FortuneCookie",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__DeskThing-FortuneCookie",
+      "remote_url": "git@github.com:ph3ar/DeskThing-FortuneCookie.git",
+      "description": "A fortune cookie app for DeskThing that displays random wisdom, life goals, and inspirational quotes on your Spotify Car Thing / DeskThing device.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "JSON",
+        "Markdown",
+        "JavaScript",
+        "HTML"
+      ],
+      "frameworks": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "capability_count": 3,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__fortune-cookie-webby",
+      "name": "ph3ar__fortune-cookie-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__fortune-cookie-webby",
+      "remote_url": "git@github.com:ph3ar/fortune-cookie-webby.git",
+      "description": "Repository ph3ar__fortune-cookie-webby; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__ph3ar__hope-auto-checkin",
+      "name": "ph3ar__hope-auto-checkin",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__hope-auto-checkin",
+      "remote_url": "git@github.com:ph3ar/hope-auto-checkin.git",
+      "description": "Smart volunteer shift automation for HOPE conference staff and volunteers.",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "Markdown",
+        "YAML"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__ph3ar__js_mongo_app_boilerplate",
+      "name": "ph3ar__js_mongo_app_boilerplate",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__js_mongo_app_boilerplate",
+      "remote_url": "git@github.com:ph3ar/js_mongo_app_boilerplate.git",
+      "description": "This is the place for your application front-end files.",
+      "primary_language": "CSS",
+      "languages": [
+        "CSS",
+        "JSON",
+        "JavaScript",
+        "Markdown",
+        "SCSS",
+        "YAML",
+        "Dockerfile"
+      ],
+      "frameworks": [
+        "Express",
+        "Mongoose"
+      ],
+      "capability_count": 15,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__ph3ar__mailthing-webby",
+      "name": "ph3ar__mailthing-webby",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__mailthing-webby",
+      "remote_url": "git@github.com:ph3ar/mailthing-webby.git",
+      "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "TypeScript",
+        "SQL",
+        "Markdown",
+        "CSS",
+        "TOML",
+        "Prisma",
+        "JavaScript",
+        "XML"
+      ],
+      "frameworks": [
+        "Next.js",
+        "Prisma",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 25,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__ph3ar__mermaid-www",
+      "name": "ph3ar__mermaid-www",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__mermaid-www",
+      "remote_url": "git@github.com:ph3ar/mermaid-www.git",
+      "description": "Repository ph3ar__mermaid-www; purpose requires further source review.",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__ph3ar__newdittyswag-commerce",
+      "name": "ph3ar__newdittyswag-commerce",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__newdittyswag-commerce",
+      "remote_url": "git@github.com:ph3ar/newdittyswag-commerce.git",
+      "description": "<img width=\"843\" alt=\"sveltekit-commerce\" src=\"https://user-images.githubusercontent.com/9113740/176811983-2bc99cac-e994-4c65-b8b2-5e2f845b3b8e.png\">",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "Svelte",
+        "JavaScript",
+        "Markdown",
+        "JSON",
+        "HTML",
+        "TypeScript",
+        "CSS"
+      ],
+      "frameworks": [
+        "Svelte",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "capability_count": 11,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 2
+    },
+    {
+      "id": "github-recent__ph3ar__ph3ar_radio_backend",
+      "name": "ph3ar__ph3ar_radio_backend",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__ph3ar_radio_backend",
+      "remote_url": "git@github.com:ph3ar/ph3ar_radio_backend.git",
+      "description": "React / Tone.js frontend for Glide Radio",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "JavaScript",
+        "TypeScript",
+        "Shell",
+        "Markdown",
+        "HTML",
+        "CSS"
+      ],
+      "frameworks": [
+        "Express",
+        "React"
+      ],
+      "capability_count": 7,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__ph3ar-docs-enhanced-labs",
+      "name": "ph3ar__ph3ar-docs-enhanced-labs",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__ph3ar-docs-enhanced-labs",
+      "remote_url": "git@github.com:ph3ar/ph3ar-docs-enhanced-labs.git",
+      "description": "Welcome to **Foxio Labs**, the platform designed to provide you with a **hands-on learning experience** in **network traffic analysis**, **JA4 fingerprinting**, and **advanced security techniques**.",
+      "primary_language": "JSON",
+      "languages": [
+        "JSON",
+        "MDX",
+        "JavaScript",
+        "CSS",
+        "TypeScript",
+        "Markdown",
+        "HTML",
+        "YAML"
+      ],
+      "frameworks": [
+        "Jest",
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 16,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__ph3ar__platphorm-admin-dashboard",
+      "name": "ph3ar__platphorm-admin-dashboard",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__platphorm-admin-dashboard",
+      "remote_url": "git@github.com:ph3ar/platphorm-admin-dashboard.git",
+      "description": "<div align=\"center\"><strong>Next.js 14 Admin Dashboard Template</strong></div>",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Drizzle ORM",
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 16,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__radio-backend",
+      "name": "ph3ar__radio-backend",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__radio-backend",
+      "remote_url": "git@github.com:ph3ar/radio-backend.git",
+      "description": "This project is a boilerplate backend for radio-style applications, built with Next.js and TypeScript. It is designed for easy integration with InfluxDB (time-series database), Prometheus (metrics), and Grafana (visualization/dashboarding). It provides API endpoints, audio processing, and a UI for managing radio events and modules.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "CSS",
+        "Markdown",
+        "JSON",
+        "Dockerfile",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Vitest"
+      ],
+      "capability_count": 14,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__renegade-bbs-docker",
+      "name": "ph3ar__renegade-bbs-docker",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__renegade-bbs-docker",
+      "remote_url": "git@github.com:ph3ar/renegade-bbs-docker.git",
+      "description": "Run a classic Renegade BBS accessible from anywhere via Cloudflare Tunnel!",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown",
+        "YAML",
+        "Shell",
+        "Dockerfile"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__ph3ar__stripe-subscription-starter",
+      "name": "ph3ar__stripe-subscription-starter",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__stripe-subscription-starter",
+      "remote_url": "git@github.com:ph3ar/stripe-subscription-starter.git",
+      "description": "The all-in-one starter kit for high-performance SaaS applications.",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "TypeScript",
+        "Markdown",
+        "SQL",
+        "TOML",
+        "JSON",
+        "CSS",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Next.js",
+        "React",
+        "Tailwind CSS"
+      ],
+      "capability_count": 19,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__ph3ar__v0-fortune-cookie-windshield",
+      "name": "ph3ar__v0-fortune-cookie-windshield",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__v0-fortune-cookie-windshield",
+      "remote_url": "git@github.com:ph3ar/v0-fortune-cookie-windshield.git",
+      "description": "Repository ph3ar__v0-fortune-cookie-windshield; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__ph3ar__v0-fortune-cookie-windshield-gf",
+      "name": "ph3ar__v0-fortune-cookie-windshield-gf",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__v0-fortune-cookie-windshield-gf",
+      "remote_url": "git@github.com:ph3ar/v0-fortune-cookie-windshield-gf.git",
+      "description": "Repository ph3ar__v0-fortune-cookie-windshield-gf; purpose requires further source review.",
+      "primary_language": null,
+      "languages": [],
+      "frameworks": [],
+      "capability_count": 0,
+      "maturity": "unknown",
+      "confidence": "low",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__ph3ar__www_js_terminal",
+      "name": "ph3ar__www_js_terminal",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__www_js_terminal",
+      "remote_url": "git@github.com:ph3ar/www_js_terminal.git",
+      "description": "> Web-based SSH/Telnet client, useful in environments where only http(s) is allowed",
+      "primary_language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "YAML",
+        "HTML",
+        "Markdown",
+        "JSON",
+        "Dockerfile",
+        "Shell"
+      ],
+      "frameworks": [
+        "Express",
+        "Playwright"
+      ],
+      "capability_count": 5,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-charts__.github",
+      "name": "process-charts__.github",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-charts__.github",
+      "remote_url": "git@github.com:process-charts/.github.git",
+      "description": "<p align=\"center\">",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-co__.github",
+      "name": "process-co__.github",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__.github",
+      "remote_url": "git@github.com:process-co/.github.git",
+      "description": "<p align=\"center\">",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-co__json-graph",
+      "name": "process-co__json-graph",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__json-graph",
+      "remote_url": "git@github.com:process-co/json-graph.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Fjson-graph\" />](https://www.npmjs.com/package/@process.co/json-graph)",
+      "primary_language": "CSS",
+      "languages": [
+        "CSS",
+        "TypeScript",
+        "YAML",
+        "Markdown",
+        "JSON",
+        "JavaScript"
+      ],
+      "frameworks": [
+        "Tailwind CSS"
+      ],
+      "capability_count": 9,
+      "maturity": "deprecated",
+      "confidence": "high",
+      "risks": 0
+    },
+    {
+      "id": "github-recent__process-co__npm-element-dev-server",
+      "name": "process-co__npm-element-dev-server",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-dev-server",
+      "remote_url": "git@github.com:process-co/npm-element-dev-server.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Felement-dev-server\" />](https://www.npmjs.com/package/@process.co/element-dev-server)",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "JavaScript",
+        "Markdown",
+        "YAML",
+        "JSON",
+        "HTML",
+        "CSS"
+      ],
+      "frameworks": [
+        "Jest",
+        "React",
+        "Vite"
+      ],
+      "capability_count": 7,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 3
+    },
+    {
+      "id": "github-recent__process-co__npm-element-dev-support",
+      "name": "process-co__npm-element-dev-support",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-dev-support",
+      "remote_url": "git@github.com:process-co/npm-element-dev-support.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Felement-dev-support\" />](https://www.npmjs.com/package/@process.co/element-dev-support)",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown",
+        "YAML",
+        "JSON",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-co__npm-element-types",
+      "name": "process-co__npm-element-types",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-types",
+      "remote_url": "git@github.com:process-co/npm-element-types.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Felement-types\" />](https://www.npmjs.com/package/@process.co/element-types)",
+      "primary_language": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Markdown",
+        "YAML",
+        "JSON"
+      ],
+      "frameworks": [],
+      "capability_count": 3,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-co__npm-utilities",
+      "name": "process-co__npm-utilities",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-utilities",
+      "remote_url": "git@github.com:process-co/npm-utilities.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Futilities\" />](https://www.npmjs.com/package/@process.co/utilities)",
+      "primary_language": "YAML",
+      "languages": [
+        "YAML",
+        "Markdown",
+        "JSON",
+        "TypeScript"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-co__ui",
+      "name": "process-co__ui",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__ui",
+      "remote_url": "git@github.com:process-co/ui.git",
+      "description": "[<img src=\"https://img.shields.io/npm/v/%40process.co%2Fui\" />](https://www.npmjs.com/package/@process.co/ui)",
+      "primary_language": "CSS",
+      "languages": [
+        "CSS",
+        "Markdown",
+        "YAML",
+        "JSON",
+        "TypeScript"
+      ],
+      "frameworks": [],
+      "capability_count": 2,
+      "maturity": "internal",
+      "confidence": "high",
+      "risks": 1
+    },
+    {
+      "id": "github-recent__process-partners__.github",
+      "name": "process-partners__.github",
+      "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-partners__.github",
+      "remote_url": "git@github.com:process-partners/.github.git",
+      "description": "<p align=\"center\">",
+      "primary_language": "Markdown",
+      "languages": [
+        "Markdown"
+      ],
+      "frameworks": [],
+      "capability_count": 1,
+      "maturity": "prototype",
+      "confidence": "medium",
+      "risks": 1
+    }
+  ]
+}

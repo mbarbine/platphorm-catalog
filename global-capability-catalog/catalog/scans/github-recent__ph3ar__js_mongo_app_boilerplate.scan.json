@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__ph3ar__js_mongo_app_boilerplate",
+    "name": "ph3ar__js_mongo_app_boilerplate",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__js_mongo_app_boilerplate",
+    "relative_path": "github-recent/ph3ar__js_mongo_app_boilerplate",
+    "remote_url": "git@github.com:ph3ar/js_mongo_app_boilerplate.git",
+    "default_branch": "master",
+    "current_commit": "00c9caa4572195dc3424e5ebdf530e168e3c3cb3"
+  },
+  "languages": [
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 313050
+    },
+    {
+      "language": "JSON",
+      "files": 9,
+      "bytes": 296263
+    },
+    {
+      "language": "JavaScript",
+      "files": 15,
+      "bytes": 102902
+    },
+    {
+      "language": "Markdown",
+      "files": 8,
+      "bytes": 27013
+    },
+    {
+      "language": "SCSS",
+      "files": 7,
+      "bytes": 16419
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 292
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 289
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Express",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Mongoose",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "PH3AR",
+        "version": "6.0.0",
+        "scripts": {
+          "postinstall": "",
+          "start": "node app.js",
+          "test": "nyc mocha --timeout=10000 --exit",
+          "lint": "eslint \"**/*.js\""
+        },
+        "dependencies": {
+          "@fortawesome/fontawesome-free": "^7.2.0",
+          "@ladjs/bootstrap-social": "^7.0.2",
+          "@octokit/rest": "^22.0.1",
+          "@sendgrid/mail": "^8.1.6",
+          "axios": "^1.13.6",
+          "bcrypt": "^6.0.0",
+          "body-parser": "^2.2.2",
+          "bootstrap": "^5.3.8",
+          "chalk": "^4.1.2",
+          "chart.js": "^4.5.1",
+          "cheerio": "^1.2.0",
+          "clockwork": "^0.1.4",
+          "compression": "^1.8.1",
+          "connect-mongo": "^6.0.0",
+          "dotenv": "^17.3.1",
+          "errorhandler": "^1.5.2",
+          "express": "^5.2.1",
+          "express-flash": "^0.0.2",
+          "express-handlebars": "^8.0.6",
+          "express-session": "^1.19.0",
+          "express-status-monitor": "^1.2.3",
+          "fbgraph": "^0.1.0",
+          "googleapis": "^171.4.0",
+          "instagram-node": "^0.5.8",
+          "jquery": "^4.0.0",
+          "lastfm": "^0.9.4",
+          "lob": "^7.1.0",
+          "lodash": "^4.17.23",
+          "lusca": "^1.7.0",
+          "mailchecker": "^6.0.19",
+          "moment": "^2.30.1",
+          "mongoose": "^9.2.4",
+          "morgan": "^1.10.1",
+          "multer": "^2.1.1",
+          "node-quickbooks": "^2.0.48",
+          "nodemailer": "^8.0.1",
+          "passport": "^0.7.0",
+          "passport-facebook": "^3.0.0",
+          "passport-github2": "^0.1.12",
+          "passport-google-oauth": "^2.0.0",
+          "passport-instagram": "^1.0.0",
+          "passport-linkedin-oauth2": "^2.0.0",
+          "passport-local": "^1.0.0",
+          "passport-oauth": "^1.0.0",
+          "passport-oauth2-refresh": "^2.2.0",
+          "passport-openid": "^0.3.1",
+          "passport-snapchat": "^1.0.0",
+          "passport-twitch-new": "^0.0.3",
+          "passport-twitter": "^0.1.5",
+          "paypal-rest-sdk": "^1.8.1",
+          "popper.js": "^1.16.1",
+          "pug": "^3.0.4",
+          "sass": "^1.97.3",
+          "sass-middleware": "^0.0.3",
+          "stripe": "^20.4.0",
+          "telnet-client": "^2.2.11",
+          "tumblr.js": "^5.0.1",
+          "twilio": "^5.12.2",
+          "twit": "^1.1.20",
+          "validator": "^13.15.26"
+        },
+        "dev_dependencies": {
+          "chai": "^6.2.2",
+          "eslint": "^10.0.2",
+          "eslint-config-airbnb-base": "^15.0.0",
+          "eslint-plugin-chai-friendly": "^1.1.0",
+          "eslint-plugin-import": "^2.32.0",
+          "mocha": "^11.3.0",
+          "nock": "^14.0.11",
+          "nyc": "^18.0.0",
+          "sinon": "^21.0.2",
+          "supertest": "^7.2.2"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [
+    {
+      "name": "User",
+      "kind": "model-file",
+      "source_path": "models/User.js"
+    },
+    {
+      "name": "models",
+      "kind": "schema-file",
+      "source_path": "test/models.js"
+    }
+  ],
+  "database": {
+    "databases": [
+      "mongodb"
+    ],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "test_injection.js",
+      "kind": "unit-or-integration",
+      "source_path": "test_injection.js"
+    },
+    {
+      "name": "test_passport.js",
+      "kind": "unit-or-integration",
+      "source_path": "test_passport.js"
+    },
+    {
+      "name": "app.js",
+      "kind": "unit-or-integration",
+      "source_path": "test/app.js"
+    },
+    {
+      "name": "models.js",
+      "kind": "unit-or-integration",
+      "source_path": "test/models.js"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "ALPHA_VANTAGE_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "BASE_URL",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CLOCKWORK_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "FACEBOOK_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "FACEBOOK_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "FOURSQUARE_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "FOURSQUARE_REDIRECT_URL",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "FOURSQUARE_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "GITHUB_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GITHUB_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "GOOGLE_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GOOGLE_MAP_API_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "GOOGLE_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "HERE_APP_CODE",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "HERE_APP_ID",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "INSTAGRAM_ID",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "INSTAGRAM_SECRET",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "LASTFM_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "LASTFM_SECRET",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "LINKEDIN_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "LINKEDIN_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "LOB_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "MONGODB_URI",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NYT_KEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "OPENSHIFT_NODEJS_IP",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "OPENSHIFT_NODEJS_PORT",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PAYPAL_CANCEL_URL",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PAYPAL_ID",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PAYPAL_RETURN_URL",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PAYPAL_SECRET",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PINTEREST_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PINTEREST_REDIRECT_URL",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PINTEREST_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PORT",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "QUICKBOOKS_CLIENT_ID",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "QUICKBOOKS_CLIENT_SECRET",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SENDGRID_PASSWORD",
+        "source_paths": [
+          "controllers/contact.js",
+          "controllers/user.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SENDGRID_USER",
+        "source_paths": [
+          "controllers/contact.js",
+          "controllers/user.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SESSION_SECRET",
+        "source_paths": [
+          "app.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SNAPCHAT_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SNAPCHAT_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STEAM_KEY",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_PKEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "STRIPE_SKEY",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TUMBLR_KEY",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TUMBLR_SECRET",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TWILIO_SID",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TWILIO_TOKEN",
+        "source_paths": [
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TWITCH_CLIENT_ID",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TWITCH_CLIENT_SECRET",
+        "source_paths": [
+          "config/passport.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TWITTER_KEY",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "TWITTER_SECRET",
+        "source_paths": [
+          "config/passport.js",
+          "controllers/api.js"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    },
+    {
+      "path": "package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "client/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Google",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app.js",
+        "config/passport.js",
+        "controllers/api.js",
+        "package-lock.json",
+        "package.json",
+        "public/css/themes/flatly/_flatly.scss",
+        "public/css/themes/modern/_variables.scss"
+      ]
+    },
+    {
+      "name": "Stripe",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app.js",
+        "controllers/api.js",
+        "package.json",
+        "prod-checklist.md",
+        "public/css/main.css",
+        "test/app.js"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 1,
+      "text": "# Security Policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 6,
+      "text": "currently being supported with security updates."
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "child-process-exec",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "config/passport.js",
+          "controllers/user.js"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "controllers/api.js"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "controllers/api.js",
+          "public/css/main.css",
+          "public/css/themes/default/_variables.scss"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          ".Jules/sentinel.md",
+          "app.js",
+          "config/passport.js",
+          "controllers/api.js",
+          "controllers/contact.js",
+          "controllers/user.js",
+          "models/User.js",
+          "package-lock.json",
+          "package.json",
+          "prod-checklist.md",
+          "test_injection.js",
+          "test_passport.js",
+          "test/models.js"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/css/main.css"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "config/passport.js",
+          "controllers/user.js",
+          "models/User.js",
+          "public/css/main.css"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app.js",
+          "config/passport.js",
+          "controllers/api.js",
+          "controllers/user.js",
+          "models/User.js",
+          "package-lock.json",
+          "package.json",
+          "prod-checklist.md",
+          "ROADMAP_CHAT_SDK.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/sentinel.md",
+          "app.js",
+          "config/passport.js",
+          "controllers/contact.js",
+          "controllers/user.js",
+          "models/User.js",
+          "prod-checklist.md",
+          "test/models.js"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "controllers/api.js"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package-lock.json"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app.js",
+          "config/passport.js",
+          "controllers/api.js",
+          "controllers/user.js",
+          "models/User.js",
+          "package-lock.json",
+          "ROADMAP_CHAT_SDK.md",
+          "server/model-config.json"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:31.070Z"
+}

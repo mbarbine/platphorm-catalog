@@ -1,0 +1,2694 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__threatrelay-webby",
+    "name": "mbarbine__threatrelay-webby",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__threatrelay-webby",
+    "relative_path": "github-recent/mbarbine__threatrelay-webby",
+    "remote_url": "git@github.com:mbarbine/threatrelay-webby.git",
+    "default_branch": "main",
+    "current_commit": "26afbea2b7c5d9b9a5e8836fada72cef7ef54c79"
+  },
+  "languages": [
+    {
+      "language": "MDX",
+      "files": 39,
+      "bytes": 562349
+    },
+    {
+      "language": "TypeScript",
+      "files": 52,
+      "bytes": 257450
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 173650
+    },
+    {
+      "language": "Markdown",
+      "files": 11,
+      "bytes": 73970
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 8839
+    },
+    {
+      "language": "JSON",
+      "files": 3,
+      "bytes": 3461
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 1638
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "foxio-labs",
+        "version": "0.1.0",
+        "scripts": {
+          "build": "next build",
+          "dev": "next dev",
+          "start": "next start",
+          "test": "vitest run"
+        },
+        "dependencies": {
+          "@radix-ui/react-accordion": "^1.2.2",
+          "@radix-ui/react-alert-dialog": "^1.1.4",
+          "@radix-ui/react-aspect-ratio": "^1.1.1",
+          "@radix-ui/react-avatar": "^1.1.2",
+          "@radix-ui/react-checkbox": "^1.1.3",
+          "@radix-ui/react-collapsible": "^1.1.2",
+          "@radix-ui/react-context-menu": "^2.2.4",
+          "@radix-ui/react-dialog": "^1.1.4",
+          "@radix-ui/react-dropdown-menu": "^2.1.4",
+          "@radix-ui/react-hover-card": "^1.1.4",
+          "@radix-ui/react-label": "^2.1.1",
+          "@radix-ui/react-menubar": "^1.1.4",
+          "@radix-ui/react-navigation-menu": "^1.2.3",
+          "@radix-ui/react-popover": "^1.1.4",
+          "@radix-ui/react-progress": "^1.1.1",
+          "@radix-ui/react-radio-group": "^1.2.2",
+          "@radix-ui/react-scroll-area": "^1.2.2",
+          "@radix-ui/react-select": "^2.1.4",
+          "@radix-ui/react-separator": "^1.1.1",
+          "@radix-ui/react-slider": "^1.2.2",
+          "@radix-ui/react-slot": "^1.1.1",
+          "@radix-ui/react-switch": "^1.1.2",
+          "@radix-ui/react-tabs": "^1.1.2",
+          "@radix-ui/react-toast": "^1.2.4",
+          "@radix-ui/react-toggle": "^1.1.1",
+          "@radix-ui/react-toggle-group": "^1.1.1",
+          "@radix-ui/react-tooltip": "^1.1.6",
+          "@vercel/analytics": "^1.5.0",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.0.4",
+          "date-fns": "^4.1.0",
+          "embla-carousel-react": "^8.5.1",
+          "input-otp": "^1.4.1",
+          "lucide-react": "^0.454.0",
+          "next": "15.3.6",
+          "next-themes": "^0.4.6",
+          "react": "19.1.0",
+          "react-day-picker": "^9.4.4",
+          "react-dom": "19.1.0",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "^2.15.0",
+          "schema-dts": "^1.1.5",
+          "sonner": "^1.7.4",
+          "tailwind-merge": "^2.6.0",
+          "tailwindcss-animate": "1.0.7",
+          "tw-animate-css": "1.4.0",
+          "vaul": "^1.1.2",
+          "zod": "^3.24.1"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.1.0",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@types/node": "^22",
+          "@types/react": "^19",
+          "@types/react-dom": "^19",
+          "@vitejs/plugin-react": "^6.0.1",
+          "@vitest/ui": "^4.1.2",
+          "jsdom": "^29.0.1",
+          "postcss": "^8.5.0",
+          "tailwindcss": "^4.1.0",
+          "typescript": "^5.7.0",
+          "vitest": "^4.1.2"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/content",
+        "source_path": "app/api/content/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/fingerprints",
+        "source_path": "app/api/fingerprints/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/mcp/register",
+        "source_path": "app/api/mcp/register/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/about",
+        "source_path": "app/about/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/guides/inbound-detection",
+        "source_path": "app/guides/inbound-detection/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/integrations",
+        "source_path": "app/integrations/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap",
+        "source_path": "app/roadmap/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/advanced-labs",
+        "source_path": "app/tutorials/advanced-labs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials",
+        "source_path": "app/tutorials/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4",
+        "source_path": "app/tutorials/quick-labs/ja4/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4h",
+        "source_path": "app/tutorials/quick-labs/ja4h/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4l",
+        "source_path": "app/tutorials/quick-labs/ja4l/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4s",
+        "source_path": "app/tutorials/quick-labs/ja4s/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4ssh",
+        "source_path": "app/tutorials/quick-labs/ja4ssh/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4t",
+        "source_path": "app/tutorials/quick-labs/ja4t/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4ts",
+        "source_path": "app/tutorials/quick-labs/ja4ts/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4tscan",
+        "source_path": "app/tutorials/quick-labs/ja4tscan/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/ja4x",
+        "source_path": "app/tutorials/quick-labs/ja4x/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs",
+        "source_path": "app/tutorials/quick-labs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/tutorials/quick-labs/wireshark-plugin",
+        "source_path": "app/tutorials/quick-labs/wireshark-plugin/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "breadcrumbs",
+      "kind": "ui-component",
+      "source_path": "components/breadcrumbs.tsx"
+    },
+    {
+      "name": "inbound-detection-content",
+      "kind": "ui-component",
+      "source_path": "components/inbound-detection-content.tsx"
+    },
+    {
+      "name": "json-ld",
+      "kind": "ui-component",
+      "source_path": "components/json-ld.tsx"
+    },
+    {
+      "name": "site-footer",
+      "kind": "ui-component",
+      "source_path": "components/site-footer.tsx"
+    },
+    {
+      "name": "site-header",
+      "kind": "ui-component",
+      "source_path": "components/site-header.tsx"
+    },
+    {
+      "name": "social-share",
+      "kind": "ui-component",
+      "source_path": "components/social-share.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "theme-toggle",
+      "kind": "ui-component",
+      "source_path": "components/theme-toggle.tsx"
+    },
+    {
+      "name": "tutorial-content",
+      "kind": "ui-component",
+      "source_path": "components/tutorial-content.tsx"
+    },
+    {
+      "name": "tutorials-shell",
+      "kind": "ui-component",
+      "source_path": "components/tutorials-shell.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "health.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/health.test.ts"
+    },
+    {
+      "name": "social-share.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/social-share.test.tsx"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "NEXT_PUBLIC_SENTRY_DSN",
+        "source_paths": [
+          "MODERNIZATION_PLAN.md"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/health/route.ts",
+          "MODERNIZATION_PLAN.md"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "app/api/mcp/register/route.ts"
+      }
+    ],
+    "llms": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/layout.tsx",
+        "MODERNIZATION_PLAN.md",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "app/about/page.tsx",
+      "line": 15,
+      "text": "keywords: ['JA4+', 'JA4', 'network fingerprinting', 'TLS fingerprinting', 'FoxIO', 'John Althouse', 'open source security'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/docs/route.ts",
+      "line": 20,
+      "text": "\"SECURITY.md\","
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/fingerprints/route.ts",
+      "line": 146,
+      "text": "\"Security assessment and vulnerability scanning\","
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/mcp/register/route.ts",
+      "line": 40,
+      "text": "\"Project documentation including roadmap, contributing guide, code of conduct, and security policy.\","
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 43,
+      "text": "\"JA4+ was created by John Althouse at FoxIO. John Althouse is also the creator of JA3 and JA3S (developed while at Salesforce), which became the most widely adopted TLS fingerprinting standards. He founded FoxIO to advance network fingerpri"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 63,
+      "text": "\"JA4SSH analyzes SSH traffic patterns by examining the sequence of packet lengths in SSH sessions. Without decrypting the traffic, JA4SSH can distinguish between interactive SSH sessions, SCP file transfers, SSH tunneling, and reverse shell"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 68,
+      "text": "\"JA4+ is supported by a growing ecosystem of security tools including Wireshark (via plugin), Arkime (native support), Zeek (via package), Suricata, AWS (VPC flow logs and Network Firewall), Google Cloud, Cloudflare, F5, HAProxy, nftables, "
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 73,
+      "text": "\"Yes, JA4+ is open source. The core specifications, reference implementations, and plugins are available on GitHub under the FoxIO-LLC organization. The code is licensed under the FoxIO License 1.1, which allows free use for internal busine"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 78,
+      "text": "\"The FoxIO License 1.1 permits the use of JA4+ for internal business purposes, security research, and education at no cost. It allows organizations to use JA4+ in their own security operations, SOC workflows, and threat hunting without any "
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 83,
+      "text": "\"JA4+ enables threat detection by creating unique fingerprints for every network connection. Security teams can build detection rules based on known-malicious fingerprints, detect anomalies when a client\\u2019s fingerprint doesn\\u2019t matc"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/faq/page.tsx",
+      "line": 93,
+      "text": "\"The JA4 fingerprint database, available at ja4db.foxio.io, is a community-maintained database of known JA4+ fingerprints mapped to applications, libraries, and tools. Security analysts can look up a fingerprint to identify what software ge"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/integrations/page.tsx",
+      "line": 13,
+      "text": "description: \"JA4+ integrations with network security tools including Wireshark, Arkime, Zeek, Suricata, AWS, Google Cloud, GreyNoise, and more.\","
+    },
+    {
+      "kind": "security",
+      "source_path": "app/integrations/page.tsx",
+      "line": 14,
+      "text": "keywords: ['JA4+ integrations', 'Wireshark JA4', 'Arkime', 'Zeek', 'Suricata', 'network security tools'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/integrations/page.tsx",
+      "line": 73,
+      "text": "JA4+ integrates with leading network security and monitoring tools. Use JA4+ fingerprints"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/integrations/page.tsx",
+      "line": 74,
+      "text": "in your existing security stack for enhanced visibility and threat detection."
+    },
+    {
+      "kind": "security",
+      "source_path": "app/roadmap/page.tsx",
+      "line": 45,
+      "text": "\"Open source documentation (CONTRIBUTING, CODE_OF_CONDUCT, SECURITY)\","
+    },
+    {
+      "kind": "security",
+      "source_path": "CODE_OF_CONDUCT.md",
+      "line": 67,
+      "text": "All community leaders are obligated to respect the privacy and security of the"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/inbound-detection-content.tsx",
+      "line": 224,
+      "text": "JA4+ is a set of fingerprinting methods utilized heavily within the security community and by many Fortune 500"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/json-ld.tsx",
+      "line": 72,
+      "text": "\"Network Security\","
+    },
+    {
+      "kind": "security",
+      "source_path": "components/json-ld.tsx",
+      "line": 196,
+      "text": "\"Network Security\","
+    },
+    {
+      "kind": "security",
+      "source_path": "components/site-footer.tsx",
+      "line": 87,
+      "text": "<Link href=\"https://github.com/mbarbine/threatrelay-webby/blob/main/SECURITY.md\" target=\"_blank\" rel=\"noopener noreferrer\" className=\"text-muted-foreground transition-colors hover:text-foreground\">"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/site-footer.tsx",
+      "line": 88,
+      "text": "Security Policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 7,
+      "text": "Enhancing TLS Fingerprinting for Advanced Network Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 11,
+      "text": "In the realm of network security, accurately identifying and monitoring TLS traffic is crucial for detecting anomalies and potential threats. Two prominent techniques in this space are **JA3** and **JA4** fingerprinting. While both serve to"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 23,
+      "text": "This fingerprinting allows security professionals to recognize patterns associated with legitimate clients or malicious actors."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 74,
+      "text": "Security teams can use JA4 fingerprints to monitor and block traffic from clients that exhibit suspicious or unknown fingerprints, thereby preventing potential attacks from compromised or malicious clients."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 150,
+      "text": "Security teams can set thresholds for acceptable latency and trigger alerts when measurements exceed normal ranges, enabling proactive investigation into potential network anomalies or malicious activities."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 177,
+      "text": "By monitoring server latency, organizations can identify and address performance bottlenecks or security incidents that impact server responsiveness, ensuring reliable and secure communications."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 205,
+      "text": "Organizations can use JA4X509 to automatically validate certificates against trusted CAs and flag or block connections presenting certificates from untrusted or unknown issuers, thereby enhancing the security of TLS communications."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 232,
+      "text": "Security teams can implement JA4SSH fingerprints to detect and block SSH sessions that use deprecated or weak algorithms, as well as to identify unusual SSH traffic that may indicate attempted intrusions or lateral movement within the netwo"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 286,
+      "text": "Security teams can monitor server TCP fingerprints to ensure consistency with known server configurations, detect unauthorized changes, and identify servers that may require updates or security patches based on their TCP behavior."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 305,
+      "text": "Active TCP fingerprinting allows organizations to proactively assess their infrastructure for vulnerable or misconfigured servers. Identifying servers running outdated TCP stacks can help in prioritizing security updates and mitigating pote"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 307,
+      "text": "Security teams can use JA4TCPScan to perform regular scans of their external-facing servers, identifying those that exhibit fingerprints indicative of known vulnerabilities. This proactive approach enables timely remediation and strengthens"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 347,
+      "text": "With JA4TCPScan (JA4TScan), your security team actively scans external servers to identify those running outdated or vulnerable TCP configurations, allowing for proactive remediation."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 363,
+      "text": "Integrate JA4+ fingerprints into your Security Information and Event Management (SIEM) system to automatically flag these anomalies. Implement rules to block connections to suspicious servers or halt communication attempts flagged by JA4+."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 367,
+      "text": "To maximize the effectiveness of JA4+ in your security infrastructure, consider the following best practices:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 373,
+      "text": "•\tEducate Your Team: Ensure that your security team understands how to interpret JA4+ fingerprints and respond to potential threats effectively."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 377,
+      "text": "JA4+ represents a significant advancement in TLS, SSH, and TCP fingerprinting techniques, offering enhanced capabilities beyond the foundational JA3 method. By accurately identifying and monitoring both client and server interactions across"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/About-JA4/JA3-&-JA4.mdx",
+      "line": 389,
+      "text": "•\tAdvanced Network Security Techniques"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/Intermediate-JA4T-Lab2.mdx",
+      "line": 163,
+      "text": "- Think about how this information could be used in network security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/Intermediate-JA4T-Lab2.mdx",
+      "line": 284,
+      "text": "- Reflect on Security Implications:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/Intermediate-JA4T-Lab2.mdx",
+      "line": 285,
+      "text": "- Consider how the identified anomalies could impact network security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/Intermediate-Lab1.mdx",
+      "line": 115,
+      "text": "2. **Security Implications**:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/JA4S-Intermediate.mdx",
+      "line": 242,
+      "text": "•\tDetect any anomalies or changes that may indicate security issues."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/JA4S-Intermediate.mdx",
+      "line": 252,
+      "text": "JA4S can be integrated with other JA4+ components and external tools to provide a comprehensive network security solution."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/JA4S-Intermediate.mdx",
+      "line": 277,
+      "text": "•\tSet up alerts to notify administrators when deviations from known fingerprints are detected, indicating potential security threats or performance issues."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Advanced-Labs/JA4T-Lab.mdx",
+      "line": 176,
+      "text": "- Think about potential applications in network security and monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 9,
+      "text": "Welcome to the **Interactive Security Operations Terminal**. This lab will introduce you to essential network security concepts and tools. You will be able to run commands related to network security and forensics directly in the terminal b"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 21,
+      "text": "This lab is designed to provide a foundational understanding of network security operations. By the end of this lab, you will have hands-on experience with the following topics:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 23,
+      "text": "### 1. **Network Security Basics**"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 24,
+      "text": "Learn the core principles of network security, including common attack vectors, essential security protocols, and best practices for safeguarding your network infrastructure."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 26,
+      "text": "- **Focus**: Understanding network security concepts, identifying vulnerabilities, and implementing security controls."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 28,
+      "text": "- **Skills**: Network monitoring, threat detection, incident response, and security policy enforcement."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 31,
+      "text": "Gain confidence in using the terminal to perform network analysis, manage files, and configure security settings. This includes learning basic commands and their applications in security operations."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 38,
+      "text": "Use powerful network tools to capture and analyze traffic, scan for vulnerabilities, and perform security assessments."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 47,
+      "text": "- **Focus**: Reinforcing command-line skills and network security concepts."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 68,
+      "text": "- Follow the instructions and complete the quiz to test your command-line skills and knowledge of network security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 77,
+      "text": "If you are new to network security or need a refresher on specific topics, the following resources can help:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 81,
+      "text": "- [Metasploit Unleashed](https://www.offensive-security.com/metasploit-unleashed/)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_0.mdx",
+      "line": 84,
+      "text": "By mastering these tools and concepts, you'll be well-prepared to tackle more advanced security challenges. Good luck, and enjoy the lab!"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Beginner_Lab_1.mdx",
+      "line": 162,
+      "text": "- Think about potential applications in network security and monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Archive/Beginner_Labs/Lab1.mdx",
+      "line": 176,
+      "text": "- Think about potential applications in network security and monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 382,
+      "text": "Usage: Detects anomalies like unexpected latency, which may indicate network issues or security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 459,
+      "text": "Usage: Helps detect outdated or vulnerable SSH versions, enhancing security monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 507,
+      "text": "Usage: Aids in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 511,
+      "text": "The JA4+ suite offers comprehensive techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods enable security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 514,
+      "text": "Detect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 515,
+      "text": "Enhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat-hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 516,
+      "text": "Measure Network Performance: Assess latency and network conditions to optimize performance and security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Calculations-Final-Draft.mdx",
+      "line": 548,
+      "text": "Share fingerprints with the security community to enhance collective knowledge."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/DetectionLab2.mdx",
+      "line": 75,
+      "text": "After completing these labs, you will have hands-on experience in detecting, analyzing, and mitigating some of the most advanced threats that security professionals face today. You will be able to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/DetectionLab2.mdx",
+      "line": 78,
+      "text": "- **Write custom detection rules** for use in real-time network security monitoring systems like **Suricata** and **Zeek**."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/DetectionLab2.mdx",
+      "line": 81,
+      "text": "By mastering these skills, you’ll be prepared to take on advanced roles in network security and defend your organization against persistent and evolving threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calc2.txt",
+      "line": 566,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calc2.txt",
+      "line": 569,
+      "text": "Detect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calc2.txt",
+      "line": 570,
+      "text": "Enhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 7,
+      "text": "The JA4+ suite encompasses advanced techniques for fingerprinting various aspects of network communications. These methods focus on different layers and protocols, providing deep insights into client and server behaviors, which are invaluab"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 245,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 248,
+      "text": "- Detect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 249,
+      "text": "- Enhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 285,
+      "text": "•\t“d” for DTLS (Datagram Transport Layer Security)."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Calculations-DRAFT.mdx",
+      "line": 286,
+      "text": "•\t“t” for standard TLS (Transport Layer Security over TCP)."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 11,
+      "text": "The JA4+ Suite is a robust collection of tools designed to enhance network security through detailed traffic fingerprinting and analysis. Within this suite:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 18,
+      "text": "This comprehensive guide will walk you through everything you need to know about JA4 and JA4S, from understanding their components to advanced integrations and customizations. Whether you’re a beginner or an advanced practitioner, this guid"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 44,
+      "text": "5.\tBest Practices and Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 46,
+      "text": "•\tSecurity Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 52,
+      "text": "The JA4+ Suite is a powerful collection of tools aimed at enhancing network security through detailed traffic fingerprinting and analysis. JA4 (TLS Client Fingerprinting) and JA4S (JA4Server - TLS Server Response/Session Fingerprinting) are"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 60,
+      "text": "•\tIntegration Capabilities: Seamlessly integrates with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 65,
+      "text": "•\tBeginners: Security enthusiasts and professionals new to TLS fingerprinting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 66,
+      "text": "•\tAdvanced Practitioners: Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 70,
+      "text": "JA4 (TLS Client Fingerprinting) is designed to measure and fingerprint the latency and handshake properties from the client to the server. By analyzing client response times, jitter, packet loss, and handshake characteristics, JA4 enables t"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 377,
+      "text": "JA4 fingerprints are powerful tools for various applications in network security and client performance monitoring. Below are detailed practical applications of JA4 fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 420,
+      "text": "•\tJA4 detects this deviation and alerts the security team to investigate potential network issues or compromise."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 452,
+      "text": "•\tRegularly audit the inventory to ensure all clients are accounted for and compliant with security policies."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 479,
+      "text": "•\tA security breach is detected involving data exfiltration."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 589,
+      "text": "Integrating JA4 fingerprints with Security Information and Event Management (SIEM) platforms like Splunk or Elastic Stack allows for centralized monitoring, analysis, and alerting."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 739,
+      "text": "•\tAnomalous Behavior: A client suddenly starts using deprecated TLS versions and unusual cipher suites, indicating potential compromise or misconfiguration."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1175,
+      "text": "JA4S fingerprints are essential for server performance monitoring, anomaly detection, and security threat identification. Below are detailed practical applications of JA4S fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1183,
+      "text": "•\tExpand the Transport Layer Security section."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1341,
+      "text": "JA4 fingerprints are powerful tools for various applications in network security and client management. Below are detailed practical applications of JA4 fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1363,
+      "text": "Purpose: Identify deviations from established client fingerprints to detect potential security threats or misconfigurations."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1424,
+      "text": "•\tDuring a security incident, retrieve relevant fingerprints from historical logs."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1437,
+      "text": "Integrating JA4 with other network analysis and security tools enhances its capabilities, allowing for automated monitoring, alerting, and comprehensive analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1500,
+      "text": "Integrating JA4 fingerprints with Security Information and Event Management (SIEM) platforms like Splunk or Elastic Stack allows for centralized monitoring, analysis, and alerting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+      "line": 1655,
+      "text": "•\tAnomalous Behavior: A client suddenly uses TLS1.3 with different cipher suites, indicating a potential security update or malicious activity."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 635,
+      "text": "•\tUnusual Latency Values may indicate network issues or potential security threats like man-in-the-middle attacks."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 878,
+      "text": "•\tFingerprinting helps in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 968,
+      "text": "•\tSecurity Configurations: Identifying specific server configurations and potential vulnerabilities."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1079,
+      "text": "•\tFingerprinting helps in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1104,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1107,
+      "text": "•\tDetect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1108,
+      "text": "•\tEnhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1109,
+      "text": "•\tMeasure Network Performance: Assess latency and network conditions to optimize performance and security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1400,
+      "text": "JA4D (JA4DNS) fingerprints DNS queries by analyzing the characteristics of DNS packets exchanged between clients and servers. It focuses on the query types, response codes, domain names, and other DNS parameters to identify client behaviors"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+      "line": 1406,
+      "text": "•\tSecurity Monitoring: Detecting suspicious or malicious DNS activities for threat hunting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4.mdx",
+      "line": 7,
+      "text": "The JA4+ suite encompasses advanced techniques for fingerprinting various aspects of network communications. These methods focus on different layers and protocols, providing deep insights into client and server behaviors, which are invaluab"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4.mdx",
+      "line": 237,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4.mdx",
+      "line": 240,
+      "text": "- Detect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4.mdx",
+      "line": 241,
+      "text": "- Enhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4H.mdx",
+      "line": 278,
+      "text": "## Integration with Security Tools"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4L.mdx",
+      "line": 7,
+      "text": "JA4L is an innovative technique designed to measure client latency by analyzing the timing of the initial packets in a network connection. This method is particularly useful for determining the physical distance between a client (or VPN exi"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4L.mdx",
+      "line": 153,
+      "text": "JA4L and JA4LS provide a powerful framework for measuring latency and distance in network connections. By applying these methods, security professionals can enhance their understanding of network behavior and detect anomalies that may indic"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4SSH.mdx",
+      "line": 131,
+      "text": "Integrate JA4SSH fingerprinting with SIEM platforms like Splunk or Elastic to centralize fingerprint data and correlate it with other security events."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4SSH.mdx",
+      "line": 177,
+      "text": "JA4SSH fingerprinting offers a unique and powerful way to monitor and secure SSH traffic. By understanding and leveraging JA4SSH fingerprints, you can enhance your ability to detect anomalies, identify threats, and ensure the security of yo"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4T.mdx",
+      "line": 9,
+      "text": "In this guide, we'll dive deep into JA4T, exploring its components, practical applications, and how to integrate it into your security infrastructure."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4T.mdx",
+      "line": 37,
+      "text": "- **IP Header Options**: Optional fields in the IP header that can specify additional processing or routing behaviors, such as Record Route, Timestamp, or Security options."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4T.mdx",
+      "line": 170,
+      "text": "JA4T fingerprints are not just theoretical constructs—they have practical applications in network security and management."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4T.mdx",
+      "line": 258,
+      "text": "- **Correlation**: Combine JA4T data with other logs (e.g., authentication logs) for comprehensive security insights."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4T.mdx",
+      "line": 269,
+      "text": "- **SOAR Platforms**: Integrate with Security Orchestration, Automation, and Response tools to automate responses to detected threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 7,
+      "text": "JA4TCPServer (JA4TS) is designed to fingerprint TCP server responses based on attributes such as TCP flags, options, and response behavior. This technique helps identify different server configurations, detect server impersonation, and moni"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 162,
+      "text": "JA4TS fingerprints have practical applications in network security, performance monitoring, and forensic analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 230,
+      "text": "- **Correlation:** Combine JA4TS data with other logs (e.g., authentication logs) for comprehensive security insights."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 241,
+      "text": "- **SOAR Platforms:** Integrate with Security Orchestration, Automation, and Response tools to automate responses to detected threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 370,
+      "text": "JA4TScan provides a proactive approach to fingerprinting TCP servers, complementing the passive techniques of JA4TS. By actively probing servers, security analysts can gain deeper insights into server behaviors and configurations, enhancing"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 376,
+      "text": "In this guide, we have explored JA4TS and JA4TScan techniques for fingerprinting TCP server responses. By understanding and applying these methods, security analysts can gain valuable insights into server behaviors, detect anomalies, and en"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 384,
+      "text": "- \"Network Security Monitoring: Basics for Beginners\" by Jacob Babbin"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+      "line": 400,
+      "text": "By leveraging these resources, you can further enhance your knowledge and skills in network security and TCP fingerprinting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 7,
+      "text": "**JA4X (JA4X509)** is a specialized tool within the JA4+ suite, designed to uniquely identify and verify TLS certificates used in secure communications. By extracting and hashing key certificate attributes, JA4X creates unique identifiers ("
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 9,
+      "text": "This comprehensive guide will walk you through everything you need to know about JA4X, from understanding its components to advanced integrations and customizations. Whether you're a beginner or an advanced practitioner, this guide provides"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 46,
+      "text": "4. [Best Practices and Security Considerations](#best-practices-and-security-considerations)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 48,
+      "text": "- [Security Considerations](#security-considerations)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 56,
+      "text": "The **JA4+ Suite** is a powerful collection of tools aimed at enhancing network security through detailed traffic fingerprinting and analysis. **JA4X (JA4X509)** is a crucial component of this suite, focusing on fingerprinting TLS certifica"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 58,
+      "text": "**JA4X509** operates by extracting key attributes from TLS certificates and generating unique fingerprints. These fingerprints can be used to verify certificate legitimacy, detect misuse or fraudulent certificates, and maintain compliance w"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 64,
+      "text": "- **Integration Capabilities:** Seamlessly integrates with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 69,
+      "text": "- **Beginners:** Security enthusiasts and professionals new to TLS certificate analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 70,
+      "text": "- **Advanced Practitioners:** Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 76,
+      "text": "**JA4X (JA4X509)** is engineered to uniquely identify and verify TLS certificates used in secure communications. By focusing on extracting and hashing key certificate attributes, JA4X enables the detection of certificate misuse, identificat"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 414,
+      "text": "JA4X509 fingerprints are powerful tools for various applications in network security and certificate management. Below are detailed practical applications of JA4X509 fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 443,
+      "text": "Purpose: Continuously monitor the certificates in use to ensure they comply with organizational security policies and standards."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 524,
+      "text": "•\tA security breach is detected involving data exfiltration."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 530,
+      "text": "Integrating JA4X with other network analysis and security tools enhances its capabilities, allowing for automated monitoring, alerting, and comprehensive analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 624,
+      "text": "### Integrating JA4X509 fingerprints with Security Information and Event Management (SIEM) platforms like Splunk or Elastic Stack allows for centralized monitoring, analysis, and alerting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 774,
+      "text": "•\tUsage: Enhances security by restricting the certificate chain’s length."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 827,
+      "text": "•\tAnomalous Behavior: A sudden increase in certificates using deprecated algorithms or unexpected CAs, indicating potential compromise or misconfiguration."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 928,
+      "text": "Enhancing the capabilities of JA4X through integration with other network analysis and security tools provides a more robust and comprehensive monitoring solution."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4-Deep-Dive/JA4X.mdx",
+      "line": 1048,
+      "text": "•\tMethod: Feed retrieved fingerprints into SIEM platforms for centralized monitoring and correlation with other security events."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 6,
+      "text": "The JA4+ Suite is a comprehensive set of tools aimed at enhancing network security through precise traffic fingerprinting across multiple protocols. By analyzing key attributes during communication handshakes and sessions, JA4+ enables the "
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 13,
+      "text": "•\tIntegration Capabilities: Seamlessly integrates with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 18,
+      "text": "•\tBeginners: Security enthusiasts and professionals new to traffic fingerprinting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 19,
+      "text": "•\tAdvanced Practitioners: Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 185,
+      "text": "•\tSecurity assessments and vulnerability scanning."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 333,
+      "text": "•\tPotentially intrusive, raising security concerns."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 608,
+      "text": "Once JA4 fingerprints are generated, it is essential to store and manage them efficiently to facilitate quick lookups, comparisons, and analyses. Proper management ensures that fingerprints can be effectively utilized for client identificat"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 933,
+      "text": "ntegrating JA4 with Other Security Tools"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 935,
+      "text": "JA4+ Suite is designed to integrate seamlessly with various network analysis and security tools, enhancing their capabilities with detailed fingerprinting data."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+ Suite Deep Dive.txt",
+      "line": 939,
+      "text": "Security Information and Event Management (SIEM) systems like Splunk, ELK Stack, or IBM QRadar can ingest JA4 fingerprint data for centralized logging, correlation, and alerting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 525,
+      "text": "Integration with existing network analysis and security tools enhances the capabilities of the JA4+ Suite, enabling more comprehensive monitoring and threat detection."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 529,
+      "text": "Security Information and Event Management (SIEM) systems like Splunk, ELK Stack, or IBM QRadar can ingest JA4 fingerprint data for centralized analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 572,
+      "text": "Enhance network monitoring tools like Nagios or Prometheus with JA4+ Suite data for comprehensive performance and security monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 606,
+      "text": "Understanding how to effectively utilize the JA4+ Suite components in real-world scenarios can significantly enhance your network security posture."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 648,
+      "text": "# Integrate with email/SIEM to alert the security team"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 798,
+      "text": "Enhancing Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 825,
+      "text": "Effective troubleshooting ensures that issues within the JA4+ Suite are identified and resolved promptly, maintaining the integrity and reliability of your network security monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 917,
+      "text": "Security Best Practices"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 922,
+      "text": "•\tKeep all JA4+ Suite components and dependencies up to date with the latest security patches and updates."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 953,
+      "text": "•\tCollect and store only the necessary fingerprint data required for your security and performance monitoring objectives."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 957,
+      "text": "The JA4+ Suite offers a robust and versatile set of tools for comprehensive network traffic fingerprinting and analysis. By leveraging its diverse components, organizations can enhance their network security posture through precise anomaly "
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 966,
+      "text": "•\tZeek Network Security Monitor"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4+-Advanced-Draft.mdx",
+      "line": 970,
+      "text": "•\tNetwork Security Through Data Analysis by Michael Collins"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4H-DRAFT.mdx",
+      "line": 277,
+      "text": "ntegration with Security Tools"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4L-DRAFT.mdx",
+      "line": 349,
+      "text": "JA4L can be integrated with other JA4+ components and external tools to provide a comprehensive view of network performance and security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4L-DRAFT.mdx",
+      "line": 370,
+      "text": "•\tSet up alerts to notify administrators when latency anomalies are detected, indicating potential network issues or security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 51,
+      "text": "JA4S fingerprints are essential for server performance monitoring, anomaly detection, and security threat identification. Below are detailed practical applications of JA4S fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 94,
+      "text": "•\tJA4S detects this deviation and alerts the security team to investigate potential network issues or compromise."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 127,
+      "text": "•\tRegularly audit the inventory to ensure all servers are accounted for and compliant with security policies."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 146,
+      "text": "•\tDuring a security incident, retrieve relevant fingerprints from historical logs."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 160,
+      "text": "Integrating JA4S with other network analysis and security tools enhances its capabilities, allowing for automated monitoring, alerting, and comprehensive analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 314,
+      "text": "•\tMethod: Feed retrieved fingerprints into SIEM platforms for centralized monitoring and correlation with other security events."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 350,
+      "text": "Best Practices and Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 352,
+      "text": "To maximize the effectiveness of JA4S and ensure secure and efficient operations, adhere to the following best practices and security considerations."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 363,
+      "text": "•\tCorrelate JA4S fingerprints with other security events and logs for comprehensive threat analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 369,
+      "text": "•\tKeep JA4S and related tools updated to leverage the latest features and security patches."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 373,
+      "text": "Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 388,
+      "text": "•\tMaintain comprehensive logs of all JA4S activities for auditing and forensic purposes. Regularly review logs to identify potential security issues."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 394,
+      "text": "JA4S (JA4Server - TLS Server Response/Session Fingerprinting) provides a comprehensive approach to measuring and fingerprinting TLS server interactions. By leveraging JA4S, security professionals can gain valuable insights into server perfo"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4S-DRAFT.mdx",
+      "line": 417,
+      "text": "•\tCase Studies: Include real-world examples or case studies demonstrating the use of JA4S in detecting performance issues or security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 12,
+      "text": "The **JA4+ Suite** encompasses a set of tools designed for advanced network traffic fingerprinting and analysis. This suite includes **JA4SSH** for SSH protocol fingerprinting and **JA4TScan** for TCP scan fingerprinting. These tools are in"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 35,
+      "text": "5. [Best Practices and Security Considerations](#best-practices-and-security-considerations)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 43,
+      "text": "The **JA4+ Suite** is a powerful collection of tools aimed at enhancing network security through detailed traffic fingerprinting. By analyzing protocol-specific handshake properties, JA4+ enables the identification of legitimate clients, de"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 52,
+      "text": "- **Integration Capabilities**: Seamlessly integrate with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 57,
+      "text": "- **Beginners**: Security enthusiasts and professionals new to network traffic analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 58,
+      "text": "- **Advanced Practitioners**: Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 216,
+      "text": "Understood! Let's create a comprehensive and detailed guide for the JA4LS (JA4LatencyServer), following the same high-quality format as the JA4+ Suite guide. This guide will cater to beginners and highly advanced security practitioners, pro"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 228,
+      "text": "The **JA4LS (JA4LatencyServer)** is a specialized tool within the JA4+ suite focused on measuring and fingerprinting server-to-client latency. By analyzing server response times, jitter, packet loss, and queue delays, JA4LS provides valuabl"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 251,
+      "text": "5. [Best Practices and Security Considerations](#best-practices-and-security-considerations)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 259,
+      "text": "The **JA4+ Suite** is a powerful collection of tools aimed at enhancing network security through detailed traffic fingerprinting and analysis. Within this suite:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 270,
+      "text": "- **Integration Capabilities:** Seamlessly integrate with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 275,
+      "text": "- **Beginners:** Security enthusiasts and professionals new to network latency analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 276,
+      "text": "- **Advanced Practitioners:** Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 402,
+      "text": "JA4LS fingerprints are powerful tools for server performance monitoring, anomaly detection, and security threat identification."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 562,
+      "text": "JA4L fingerprints are essential for client performance monitoring, anomaly detection, and security threat identification."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 647,
+      "text": "Enhancing the capabilities of JA4LS and JA4L through integration with other network analysis and security tools can provide a more robust and comprehensive monitoring solution."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 682,
+      "text": "Best Practices and Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 684,
+      "text": "To maximize the effectiveness of JA4LS and JA4L, adhere to the following best practices and security considerations:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 689,
+      "text": "Data Correlation: Correlate JA4LS and JA4L fingerprints with other security events for comprehensive threat analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 692,
+      "text": "Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 700,
+      "text": "JA4LS (JA4LatencyServer) and JA4L provide a comprehensive approach to measuring and fingerprinting server-to-client and client-to-server latency, respectively. By leveraging these tools, security professionals can gain valuable insights int"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 722,
+      "text": "- **Case Studies:** Include real-world examples or case studies demonstrating the use of JA4LS and JA4L in detecting performance issues or security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 746,
+      "text": "Certainly! Let's create an exhaustive and meticulously detailed guide for the JA4LS (JA4LatencyServer) and JA4L, ensuring it surpasses previous iterations in clarity, depth, and practicality. This guide is tailored for both beginners and hi"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 758,
+      "text": "The **JA4LS (JA4LatencyServer)** and **JA4L** tools are integral components of the JA4+ suite, designed to measure and fingerprint network latency in both directions: from server to client (**JA4LS**) and from client to server (**JA4L**). T"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 781,
+      "text": "5. [Best Practices and Security Considerations](#best-practices-and-security-considerations)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 796,
+      "text": "JA4X Fingerprinting is designed to uniquely identify and verify TLS certificates used in secure communications. It focuses on extracting and hashing key certificate attributes to create a unique identifier. This technique is useful for dete"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 959,
+      "text": "- Use fingerprints to track and alert on certificates nearing expiration or using deprecated algorithms."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1022,
+      "text": "Certainly! Below is an exhaustive and meticulously detailed guide for JA4X (JA4X509), designed to provide comprehensive knowledge for both beginners and highly advanced security practitioners. This guide builds upon your initial content, en"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1030,
+      "text": "JA4X (JA4X509) is a specialized tool within the JA4+ suite, designed to uniquely identify and verify TLS certificates used in secure communications. By extracting and hashing key certificate attributes, JA4X creates unique identifiers (fing"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1068,
+      "text": "8.\tBest Practices and Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1074,
+      "text": "The JA4+ Suite is a powerful collection of tools aimed at enhancing network security through detailed traffic fingerprinting and analysis. Within this suite:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1081,
+      "text": "JA4X (JA4X509) specifically targets the identification and verification of TLS certificates, enabling organizations to detect certificate misuse, identify fake certificates, and ensure compliance with security policies."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1087,
+      "text": "•\tIntegration Capabilities: Seamlessly integrate with popular network analysis and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1092,
+      "text": "•\tBeginners: Security enthusiasts and professionals new to TLS certificate analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1093,
+      "text": "•\tAdvanced Practitioners: Security analysts and engineers seeking deep insights and customization."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1117,
+      "text": "Understanding these components is crucial for accurately capturing and fingerprinting certificates to ensure effective security monitoring and threat detection."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1537,
+      "text": "JA4X509 fingerprints serve as powerful tools for enhancing network security, monitoring certificate usage, and detecting anomalies. Below are several practical applications of JA4X509 fingerprints."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1549,
+      "text": "•\tCompliance with Security Policies:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1550,
+      "text": "•\tEnsure that all certificates in use comply with organizational security policies, such as using approved CAs, minimum key sizes, and approved signature algorithms."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1575,
+      "text": "•\tInvestigate Security Incidents:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1576,
+      "text": "•\tDuring a security breach or incident, analyze historical JA4X509 fingerprints to identify when and where specific certificates were used."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/ja4ssh-x.txt",
+      "line": 1583,
+      "text": "Integrating JA4X509 fingerprints with other network analysis and security tools enhances their capabilities, enabling automated monitoring, alerting, and comprehensive analysis. Below are detailed integration steps with popular tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4TCPScan-DRAFT.mdx",
+      "line": 60,
+      "text": "•\tFingerprinting helps in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4TCPScan-DRAFT.mdx",
+      "line": 81,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4TCPScan-DRAFT.mdx",
+      "line": 84,
+      "text": "•\tDetect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4TCPScan-DRAFT.mdx",
+      "line": 85,
+      "text": "•\tEnhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4TCPScan-DRAFT.mdx",
+      "line": 86,
+      "text": "•\tMeasure Network Performance: Assess latency and network conditions to optimize performance and security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/JA4X.mdx",
+      "line": 7,
+      "text": "JA4X Fingerprinting is designed to uniquely identify and verify TLS certificates used in secure communications. It focuses on extracting and hashing key certificate attributes to create a unique identifier. This technique is useful for dete"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "Drafts/JA4X.mdx",
+      "line": 193,
+      "text": "- Use fingerprints to track and alert on certificates nearing expiration or using deprecated algorithms."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 7,
+      "text": "We are a forward-thinking, open-source platform dedicated to providing cutting-edge education, training, and hands-on testing in network fingerprinting and defensive security techniques. Our mission is to empower network defenders with adva"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 17,
+      "text": "- **Education**: Provide up-to-date, high-quality educational content on the latest network fingerprinting techniques, such as JA4+ and JARM, alongside traditional defensive security practices. Our platform delivers both theoretical and pra"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 29,
+      "text": "- **Foxio.io**: An open-source project offering powerful network detection and security tools, widely adopted by cybersecurity professionals to analyze and mitigate advanced threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 31,
+      "text": "- **JA4+**: Building on the success of JA3, JA4+ is an advanced method for fingerprinting encrypted traffic, providing deeper insights into Transport Layer Security (TLS) communications. This technique is indispensable for identifying malic"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 33,
+      "text": "- **JARM**: Developed by security researchers like John Althouse, JARM is a tool that fingerprints TLS servers to detect malicious infrastructure, enhancing the ability to track command-and-control (C2) systems and other malicious servers."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 54,
+      "text": "- **Real-time Detection**: JA4+ integrates seamlessly with modern intrusion detection systems (IDS) and security information and event management (SIEM) tools, allowing for real-time detection of potential threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 56,
+      "text": "- **Open-Source Collaboration**: Like its predecessor, JA4+ thrives in the open-source community, where security researchers and professionals collaborate to improve the technique and share insights into its application."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 58,
+      "text": "JA4+ plays a critical role in identifying malicious behavior within encrypted traffic, making it indispensable for today’s security operations. Its open-source nature means it is continuously evolving, with contributions from experts across"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 62,
+      "text": "## Defensive Security and Network Fingerprinting"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 64,
+      "text": "Our platform doesn't just stop at teaching network fingerprinting techniques. We provide comprehensive training in defensive security strategies, helping users understand how to use these techniques effectively in a live environment. We cov"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 68,
+      "text": "- **Incident Response**: Incorporating network fingerprinting into broader defensive security strategies to respond quickly to attacks and mitigate damage."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 84,
+      "text": "Through these tools, our users gain real-world experience in detecting, analyzing, and mitigating network-based threats. Our open-source approach ensures that anyone can contribute to or benefit from the latest advancements in network secur"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/About.mdx",
+      "line": 95,
+      "text": "Start your journey with us today and master the art of network fingerprinting and defensive security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 10,
+      "text": "The JA4+ suite of network fingerprinting techniques enhances network security, traffic analysis, and threat detection by allowing the identification of clients and servers based on their encrypted traffic patterns. Below is a comprehensive "
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 65,
+      "text": "Zeek is an open-source network security monitor that provides in-depth analysis of network traffic and is highly extensible through scripting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 111,
+      "text": "Suricata is an open-source network threat detection engine for real-time intrusion detection (IDS), inline intrusion prevention (IPS), and network security monitoring (NSM)."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 134,
+      "text": "GreyNoise collects and analyzes data on internet-wide scan and attack traffic, helping security teams distinguish between benign and malicious activities."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 156,
+      "text": "Driftnet.io is a network traffic analysis platform that visualizes network activity, helping to identify security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 232,
+      "text": "- **Usage:** Share and receive JA4+ fingerprints, integrating them into your security infrastructure for threat detection."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 273,
+      "text": "Fastly can use JA4+ fingerprints to enhance security and performance monitoring of encrypted traffic."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 290,
+      "text": "Cloudflare provides web infrastructure and website security services, including DDoS mitigation and content delivery."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 298,
+      "text": "- **Usage:** Enable JA4+ fingerprinting in Cloudflare's security settings."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 299,
+      "text": "- **Implementation:** Integrate JA4+ fingerprinting into Cloudflare's analytics and security tools."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 379,
+      "text": "F5 BIG-IP provides application delivery networking and security solutions."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 383,
+      "text": "F5 BIG-IP can use JA4+ fingerprints to enhance security and performance monitoring."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 421,
+      "text": "Censys provides internet-wide scanning and data collection for security research and threat intelligence."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 446,
+      "text": "Vercel can use JA4+ fingerprints to enhance security and performance monitoring of web applications."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Integrations.mdx",
+      "line": 463,
+      "text": "Seika provides network security solutions for threat detection and response."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 7,
+      "text": "The JA4+ suite encompasses advanced techniques for fingerprinting various aspects of network communications. These methods focus on different layers and protocols, providing deep insights into client and server behaviors, which are invaluab"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 642,
+      "text": "•\tUnusual Latency Values may indicate network issues or potential security threats like man-in-the-middle attacks."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 885,
+      "text": "•\tFingerprinting helps in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 975,
+      "text": "•\tSecurity Configurations: Identifying specific server configurations and potential vulnerabilities."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1086,
+      "text": "•\tFingerprinting helps in vulnerability assessment and security auditing."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1111,
+      "text": "The JA4+ suite provides powerful techniques for fingerprinting various aspects of network communications. By focusing on structural elements and configurations, these methods allow security professionals to:"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1114,
+      "text": "•\tDetect Anomalies: Spot deviations from normal behavior that may indicate security threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1115,
+      "text": "•\tEnhance Security Monitoring: Integrate fingerprints into intrusion detection systems and threat hunting processes."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1116,
+      "text": "•\tMeasure Network Performance: Assess latency and network conditions to optimize performance and security."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1407,
+      "text": "JA4D (JA4DNS) fingerprints DNS queries by analyzing the characteristics of DNS packets exchanged between clients and servers. It focuses on the query types, response codes, domain names, and other DNS parameters to identify client behaviors"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4-Techniques.mdx",
+      "line": 1413,
+      "text": "•\tSecurity Monitoring: Detecting suspicious or malicious DNS activities for threat hunting."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4.mdx",
+      "line": 19,
+      "text": "- **Security Monitoring:** Monitor for specific client fingerprints that may indicate threat actors or rogue devices."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4.mdx",
+      "line": 41,
+      "text": "- **Anomaly Detection:** Detect unusual client behaviors or attempts to evade security measures."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4.mdx",
+      "line": 102,
+      "text": "> **Pro Tip:** For optimal use of JA4+ fingerprints, consider integrating them into your existing threat intelligence workflows and visualization dashboards. This will provide a more holistic view of network security and potential threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4.mdx",
+      "line": 109,
+      "text": "- [Zeek: Network Security Monitoring](https://zeek.org)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4+.mdx",
+      "line": 19,
+      "text": "- **Security Monitoring:** Monitor for specific client fingerprints that may indicate threat actors or rogue devices."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4+.mdx",
+      "line": 41,
+      "text": "- **Anomaly Detection:** Detect unusual client behaviors or attempts to evade security measures."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4+.mdx",
+      "line": 102,
+      "text": "> **Pro Tip:** For optimal use of JA4+ fingerprints, consider integrating them into your existing threat intelligence workflows and visualization dashboards. This will provide a more holistic view of network security and potential threats."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/JA4+.mdx",
+      "line": 109,
+      "text": "- [Zeek: Network Security Monitoring](https://zeek.org)"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 7,
+      "text": "Enhance your network security expertise through our series of comprehensive, hands-on interactive labs. Each lab is carefully crafted to simulate real-world attack scenarios, providing a secure and controlled environment where you can apply"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 15,
+      "text": "Our beginner labs introduce the foundational concepts of **JA4 fingerprinting** and **network traffic analysis**. These labs are designed for individuals starting their journey into network security, providing hands-on experience with funda"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 119,
+      "text": "Advanced labs are for experienced users looking to deepen their expertise. These labs focus on creating custom detection rules and integrating JA4 fingerprints into **enterprise security systems** like **SIEM platforms**, allowing for advan"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 122,
+      "text": "Create automated alerts in Arkime based on specific JA4 fingerprints and integrate with security workflows."
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 157,
+      "text": "Integrate JA4 fingerprinting with a **SIEM system** such as **Splunk** or **Elastic**. Ingest JA4 fingerprints into the SIEM for real-time correlation with other security events, and create dashboards and alerts to monitor suspicious activi"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 225,
+      "text": "With each completed lab, you’ll enhance your understanding of **JA4 fingerprinting**, **malware detection**, **network traffic analysis**, and **enterprise security integration**, preparing you to tackle real-world challenges with confidenc"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 231,
+      "text": "Select a lab that suits your learning path, and start building your network security expertise. With our **Interactive Labs**, you’ll gain practical, hands-on experience that will empower you to detect and defend against sophisticated netwo"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Root/Labs.mdx",
+      "line": 233,
+      "text": "Explore the labs and elevate your network security skills today!"
+    },
+    {
+      "kind": "security",
+      "source_path": "Drafts/Vercel/ja4-vercel.md",
+      "line": 114,
+      "text": "🚀 This setup enhances Vercel’s security by leveraging JA4 fingerprinting at the edge, reducing attack surfaces before reaching your app."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "MODERNIZATION_PLAN.md",
+      "line": 119,
+      "text": "- [ ] Check for deprecated API usage"
+    },
+    {
+      "kind": "security",
+      "source_path": "MODERNIZATION_PLAN.md",
+      "line": 314,
+      "text": "key: \"Content-Security-Policy\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "MODERNIZATION_PLAN.md",
+      "line": 872,
+      "text": "if (content.toLowerCase().includes(term.toLowerCase()) && !content.includes(`(deprecated: ${term})`)) {"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "MODERNIZATION_PLAN.md",
+      "line": 873,
+      "text": "warnings.push(`Consider noting that \"${term}\" is deprecated or outdated`)"
+    },
+    {
+      "kind": "security",
+      "source_path": "MODERNIZATION_PLAN.md",
+      "line": 1255,
+      "text": "- [ ] Security headers verified"
+    },
+    {
+      "kind": "security",
+      "source_path": "next.config.mjs",
+      "line": 24,
+      "text": "{ key: \"Content-Security-Policy\", value: \"frame-ancestors 'self' https://demo.arkime.com\" },"
+    },
+    {
+      "kind": "security",
+      "source_path": "next.config.mjs",
+      "line": 30,
+      "text": "{ key: \"Content-Security-Policy\", value: \"frame-ancestors 'self' https://driftnet.io\" },"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1991,
+      "text": "deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details."
+    },
+    {
+      "kind": "security",
+      "source_path": "public/llms-full.txt",
+      "line": 7,
+      "text": "JA4+ is a suite of 19 network fingerprinting methods created by John Althouse (creator of the original JA3 fingerprinting standard). These methods allow security teams to passively and actively fingerprint network clients and servers at the"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 13,
+      "text": "JA4+ is a suite of network fingerprinting methods created by [John Althouse](https://github.com/jalthouse) at [FoxIO](https://foxio.io). It provides human- and machine-readable fingerprints for TLS, HTTP, TCP, SSH, and X.509 certificate tra"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 99,
+      "text": "## 🔒 Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 101,
+      "text": "See [SECURITY.md](SECURITY.md) for our security policy."
+    },
+    {
+      "kind": "security",
+      "source_path": "ROADMAP.md",
+      "line": 38,
+      "text": "- Open source documentation (CONTRIBUTING, CODE_OF_CONDUCT, SECURITY)"
+    },
+    {
+      "kind": "security",
+      "source_path": "ROADMAP.md",
+      "line": 68,
+      "text": "AWS Security Lake, Google SecOps, F5, Barracuda, GreyNoise, Hunt.io, Censys,"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 1,
+      "text": "# Security Policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 8,
+      "text": "| 1.0.x   | ✅ Security fixes  |"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 13,
+      "text": "We take the security of the FoxIO Labs educational platform seriously. If you"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 14,
+      "text": "discover a security vulnerability, please report it responsibly."
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 18,
+      "text": "1. **Do not** open a public GitHub issue for security vulnerabilities."
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 20,
+      "text": "[Security Advisory](https://github.com/mbarbine/threatrelay-webby/security/advisories/new)"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 23,
+      "text": "security contacts."
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 43,
+      "text": "- We will credit you in the security advisory (unless you prefer to remain"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 51,
+      "text": "The following are in scope for security reports:"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 58,
+      "text": "- **Configuration** – Misconfigurations that could lead to security issues"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 69,
+      "text": "## Security Best Practices"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 71,
+      "text": "When contributing to this project, please follow these security guidelines:"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".jules/sentinel.md",
+          "app/faq/page.tsx",
+          "app/roadmap/page.tsx",
+          "components/breadcrumbs.tsx",
+          "components/json-ld.tsx"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "Drafts/Vercel/ja4-vercel.md"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/about/page.tsx",
+          "app/globals.css",
+          "app/guides/inbound-detection/page.tsx",
+          "app/integrations/page.tsx",
+          "app/layout.tsx",
+          "app/page.tsx",
+          "app/roadmap/page.tsx",
+          "app/tutorials/advanced-labs/page.tsx",
+          "app/tutorials/page.tsx",
+          "app/tutorials/quick-labs/page.tsx",
+          "components/inbound-detection-content.tsx",
+          "components/site-footer.tsx",
+          "components/tutorial-content.tsx",
+          "components/tutorials-shell.tsx",
+          "components/ui/card.tsx",
+          "Drafts/JA4-Deep-Dive/JA4T.mdx",
+          "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+          "MODERNIZATION_PLAN.md",
+          "package.json",
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/page.tsx",
+          "CODE_OF_CONDUCT.md",
+          "components/social-share.tsx",
+          "Drafts/JA4+-Advanced-Draft.mdx",
+          "Drafts/ja4ssh-x.txt",
+          "Drafts/Root/Labs.mdx",
+          "public/llms-full.txt"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/about/page.tsx",
+          "app/api/content/route.ts",
+          "app/api/fingerprints/route.ts",
+          "app/api/mcp/register/route.ts",
+          "app/faq/page.tsx",
+          "app/guides/inbound-detection/page.tsx",
+          "app/integrations/page.tsx",
+          "app/layout.tsx",
+          "app/manifest.ts",
+          "app/page.tsx",
+          "app/roadmap/page.tsx",
+          "app/sitemap.ts",
+          "app/tutorials/advanced-labs/page.tsx",
+          "app/tutorials/page.tsx",
+          "app/tutorials/quick-labs/ja4/page.tsx",
+          "app/tutorials/quick-labs/ja4h/page.tsx",
+          "app/tutorials/quick-labs/ja4l/page.tsx",
+          "app/tutorials/quick-labs/ja4s/page.tsx",
+          "app/tutorials/quick-labs/ja4ssh/page.tsx",
+          "app/tutorials/quick-labs/ja4t/page.tsx"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/health.test.ts",
+          "app/api/health/route.ts",
+          "app/api/mcp/register/route.ts",
+          "app/sitemap.ts",
+          "CODE_OF_CONDUCT.md",
+          "components/site-footer.tsx",
+          "MODERNIZATION_PLAN.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+          "Drafts/ja4ssh-x.txt",
+          "Drafts/Root/Integrations.mdx",
+          "Drafts/Root/JA4-Techniques.mdx"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".jules/bolt.md",
+          ".jules/palette.md",
+          "app/about/page.tsx",
+          "app/api/fingerprints/route.ts",
+          "app/faq/page.tsx",
+          "app/guides/inbound-detection/page.tsx",
+          "app/page.tsx",
+          "app/tutorials/quick-labs/ja4l/page.tsx",
+          "components/inbound-detection-content.tsx",
+          "components/tutorial-content.tsx",
+          "Drafts/Advanced-Labs/JA4S-Intermediate.mdx",
+          "Drafts/Archive/Beginner_Labs/Lab0.mdx",
+          "Drafts/Calculations-Final-Draft.mdx",
+          "Drafts/JA4-complete-and-JA4S-DRAFT.mdx",
+          "Drafts/JA4-Deep-Dive/JA4-Techniques.mdx",
+          "Drafts/JA4-Deep-Dive/JA4LS.mdx",
+          "Drafts/JA4-Deep-Dive/JA4TS.mdx",
+          "Drafts/JA4+ Suite Deep Dive.txt",
+          "Drafts/JA4+-Advanced-Draft.mdx",
+          "Drafts/ja4ssh-x.txt"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "Drafts/JA4-Deep-Dive/JA4H.mdx",
+          "Drafts/JA4+ Suite Deep Dive.txt",
+          "Drafts/JA4+-Advanced-Draft.mdx",
+          "Drafts/JA4H-DRAFT.mdx"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "MODERNIZATION_PLAN.md",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:26.940Z"
+}

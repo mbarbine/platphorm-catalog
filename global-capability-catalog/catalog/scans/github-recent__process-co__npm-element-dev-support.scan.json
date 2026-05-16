@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__process-co__npm-element-dev-support",
+    "name": "process-co__npm-element-dev-support",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/process-co__npm-element-dev-support",
+    "relative_path": "github-recent/process-co__npm-element-dev-support",
+    "remote_url": "git@github.com:process-co/npm-element-dev-support.git",
+    "default_branch": "main",
+    "current_commit": "5c992a37012a776bdf8c3d29663911916f4a5117"
+  },
+  "languages": [
+    {
+      "language": "Markdown",
+      "files": 2,
+      "bytes": 2555
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 2457
+    },
+    {
+      "language": "JSON",
+      "files": 1,
+      "bytes": 1074
+    },
+    {
+      "language": "TypeScript",
+      "files": 2,
+      "bytes": 463
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 174
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "@process.co/element-dev-support",
+        "version": "0.0.0-development",
+        "scripts": {
+          "build": "tsup && rollup -c rollup.config.mjs"
+        },
+        "dependencies": {},
+        "dev_dependencies": {
+          "@fortawesome/react-fontawesome": ">=0.2.0",
+          "@monaco-editor/react": ">=4.0.0",
+          "@process.co/ui": "workspace:0.0.0-development",
+          "@repo/config-typescript": "workspace:^",
+          "@types/node": "^22.13.14",
+          "clsx": ">=2.0.0",
+          "rollup": "^4.44.2",
+          "rollup-plugin-dts": "^6.2.1",
+          "tailwind-merge": ">=3.0.0",
+          "tsup": "^8.5.0",
+          "typescript": "^5.7.3",
+          "zustand": ">=5.0.0"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/publish-element-dev-support.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [
+    {
+      "path": "package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": ".github/README.md"
+      },
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/publish-element-dev-support.yml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:32.348Z"
+}

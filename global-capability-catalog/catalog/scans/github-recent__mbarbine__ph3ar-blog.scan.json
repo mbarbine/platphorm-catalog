@@ -1,0 +1,746 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__ph3ar-blog",
+    "name": "mbarbine__ph3ar-blog",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-blog",
+    "relative_path": "github-recent/mbarbine__ph3ar-blog",
+    "remote_url": "git@github.com:mbarbine/ph3ar-blog.git",
+    "default_branch": "main",
+    "current_commit": "fdce595dc405ec31f131a814e68eaf08d978e4d7"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 46,
+      "bytes": 110071
+    },
+    {
+      "language": "YAML",
+      "files": 6,
+      "bytes": 91661
+    },
+    {
+      "language": "Markdown",
+      "files": 8,
+      "bytes": 50456
+    },
+    {
+      "language": "CSS",
+      "files": 3,
+      "bytes": 22101
+    },
+    {
+      "language": "JSON",
+      "files": 16,
+      "bytes": 14811
+    },
+    {
+      "language": "Python",
+      "files": 1,
+      "bytes": 13902
+    },
+    {
+      "language": "Shell",
+      "files": 3,
+      "bytes": 834
+    },
+    {
+      "language": "XML",
+      "files": 2,
+      "bytes": 488
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 83
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "ph3ar-blog",
+        "version": "0.1.0",
+        "scripts": {
+          "dev": "next dev --turbopack",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {
+          "@mdx-js/loader": "^3.1.1",
+          "@mdx-js/react": "^3.1.1",
+          "@next/mdx": "^16.1.6",
+          "@vercel/analytics": "^1.6.1",
+          "@vercel/functions": "^2.2.13",
+          "botid": "^1.5.10",
+          "classnames": "^2.5.1",
+          "date-fns": "^3.6.0",
+          "framer-motion": "^12.34.3",
+          "gray-matter": "^4.0.3",
+          "next": "16.1.6",
+          "react": "19.1.0",
+          "react-dom": "19.1.0",
+          "remark": "^15.0.1",
+          "remark-html": "^16.0.1",
+          "ua-parser-js": "^2.0.9",
+          "uuid": "^11.1.0"
+        },
+        "dev_dependencies": {
+          "@types/node": "^20.19.33",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "autoprefixer": "^10.4.24",
+          "postcss": "^8.5.6",
+          "tailwindcss": "^3.4.19",
+          "typescript": "^5.9.3"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/v1/health",
+        "source_path": "src/app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/openapi.json",
+        "source_path": "src/app/api/v1/openapi.json/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/posts/[slug]",
+        "source_path": "src/app/api/v1/posts/[slug]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/posts",
+        "source_path": "src/app/api/v1/posts/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/sitemap-tree",
+        "source_path": "src/app/api/v1/sitemap-tree/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/api/v1/docs",
+        "source_path": "src/app/api/v1/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/posts/[slug]",
+        "source_path": "src/app/posts/[slug]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/alert.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/avatar.tsx"
+    },
+    {
+      "name": "container",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/container.tsx"
+    },
+    {
+      "name": "cover-image",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/cover-image.tsx"
+    },
+    {
+      "name": "date-formatter",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/date-formatter.tsx"
+    },
+    {
+      "name": "easter-egg",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/easter-egg.tsx"
+    },
+    {
+      "name": "footer",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/footer.tsx"
+    },
+    {
+      "name": "header",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/header.tsx"
+    },
+    {
+      "name": "hero-post",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/hero-post.tsx"
+    },
+    {
+      "name": "intro",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/intro.tsx"
+    },
+    {
+      "name": "more-stories",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/more-stories.tsx"
+    },
+    {
+      "name": "newsletter-signup",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/newsletter-signup.tsx"
+    },
+    {
+      "name": "post-body",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/post-body.tsx"
+    },
+    {
+      "name": "post-header",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/post-header.tsx"
+    },
+    {
+      "name": "post-preview",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/post-preview.tsx"
+    },
+    {
+      "name": "post-title",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/post-title.tsx"
+    },
+    {
+      "name": "section-separator",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/section-separator.tsx"
+    },
+    {
+      "name": "social-share",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/social-share.tsx"
+    },
+    {
+      "name": "theme-switcher",
+      "kind": "ui-component",
+      "source_path": "src/app/_components/theme-switcher.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/blog-post-automation.yml"
+      },
+      {
+        "path": ".github/workflows/deploy.yml"
+      },
+      {
+        "path": ".github/workflows/nextjs.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "CONVERTKIT_API_KEY",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "CONVERTKIT_FORM_ID",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MAILCHIMP_API_KEY",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "MAILCHIMP_AUDIENCE_ID",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MAILCHIMP_DC",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "src/lib/cors.ts",
+          "src/middleware.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "RESEND_API_KEY",
+        "source_paths": [
+          "api/subscribe/route.tsx"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.ts"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.js"
+    },
+    {
+      "path": "tailwind.config.ts"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "vercel.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      },
+      {
+        "path": "scripts/README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms-index.json"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [
+      {
+        "path": "public/llms-full.txt"
+      },
+      {
+        "path": "public/llms-index.json"
+      },
+      {
+        "path": "public/llms.txt"
+      }
+    ],
+    "sitemaps": [
+      {
+        "path": "public/sitemap.xml"
+      }
+    ],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "public/.well-known/ai-plugin.json"
+      },
+      {
+        "path": "public/.well-known/humans.txt"
+      },
+      {
+        "path": "public/.well-known/manifest.json"
+      },
+      {
+        "path": "public/.well-known/security.txt"
+      }
+    ],
+    "robots": [
+      {
+        "path": "public/robots.txt"
+      }
+    ],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "package.json",
+        "pnpm-lock.yaml",
+        "UPGRADE-PLAN.md"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": ".github/copilot-instructions.md",
+      "line": 11,
+      "text": "| Framework | **Next.js 16.1.6** App Router | React 19.1.0. Turbopack default. Middleware deprecated → proxy (backwards-compat). |"
+    },
+    {
+      "kind": "security",
+      "source_path": ".github/copilot-instructions.md",
+      "line": 272,
+      "text": "next.config.ts                                # ESM config: security headers, image remotes, redirects"
+    },
+    {
+      "kind": "security",
+      "source_path": ".github/copilot-instructions.md",
+      "line": 314,
+      "text": "- `next.config.ts` — ESM syntax, security headers (HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy), image remote patterns for `*.platphormnews.com` and `*.ph3ar.com`, redirects for legacy paths (`/blog/:s"
+    },
+    {
+      "kind": "security",
+      "source_path": ".github/copilot-instructions.md",
+      "line": 406,
+      "text": "- [ ] Security headers present (HSTS, X-Frame-Options, CSP) via `next.config.ts`"
+    },
+    {
+      "kind": "todo",
+      "source_path": "api/subscribe/route.tsx",
+      "line": 27,
+      "text": "// TODO: Integrate with your email service provider"
+    },
+    {
+      "kind": "security",
+      "source_path": "next.config.ts",
+      "line": 22,
+      "text": "// Security & SEO headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "next.config.ts",
+      "line": 37,
+      "text": "key: \"Strict-Transport-Security\","
+    },
+    {
+      "kind": "security",
+      "source_path": "public/.well-known/security.txt",
+      "line": 1,
+      "text": "Contact: mailto:security@ph3ar.com"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/.well-known/security.txt",
+      "line": 2,
+      "text": "Contact: https://github.com/mbarbine/ph3ar-blog/security/advisories/new"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/.well-known/security.txt",
+      "line": 5,
+      "text": "Acknowledgments: https://blog.ph3ar.com/security-acknowledgments"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/.well-known/security.txt",
+      "line": 7,
+      "text": "Canonical: https://blog.ph3ar.com/.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/.well-known/security.txt",
+      "line": 8,
+      "text": "Policy: https://blog.ph3ar.com/security-policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/llms-full.txt",
+      "line": 87,
+      "text": "security: https://blog.ph3ar.com/.well-known/security.txt"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "src/app/_components/footer.tsx",
+      "line": 22,
+      "text": "{'>'} HACK THE CODEBASE"
+    },
+    {
+      "kind": "security",
+      "source_path": "src/app/api/v1/openapi.json/route.ts",
+      "line": 71,
+      "text": "security: [{ BearerAuth: [] }],"
+    },
+    {
+      "kind": "security",
+      "source_path": "src/app/api/v1/sitemap-tree/route.ts",
+      "line": 70,
+      "text": "{ url: `${SITE_URL}/.well-known/security.txt`, name: \"Security Policy\" },"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "src/app/feed.xml/route.ts",
+      "line": 8,
+      "text": "function escapeXml(unsafe: string): string {"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "src/app/feed.xml/route.ts",
+      "line": 9,
+      "text": "return unsafe"
+    },
+    {
+      "kind": "security",
+      "source_path": "UPGRADE-PLAN.md",
+      "line": 58,
+      "text": "- **`headers()`**: No API changes, but verify security headers pass"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "UPGRADE-PLAN.md",
+      "line": 71,
+      "text": "- **`forwardRef`**: Deprecated in React 19 — audit components using it"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/copilot-instructions.md",
+          "src/app/_components/post-body.tsx",
+          "src/app/_components/theme-switcher.tsx",
+          "src/app/api/v1/docs/page.tsx",
+          "src/app/layout.tsx",
+          "src/app/posts/[slug]/page.tsx",
+          "UPGRADE-PLAN.md"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "src/app/api/v1/health/route.ts"
+        ]
+      },
+      {
+        "name": "unsafe-eval",
+        "confidence": "medium",
+        "evidence_paths": [
+          "scripts/image-resizer.py"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "api/subscribe/route.tsx"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/copilot-instructions.md",
+          "content/posts/AI-Is-Quieter-Than-You-Think.md",
+          "content/posts/AI-Took-My-Job-And-Thats-Okay.md",
+          "src/app/globals.css",
+          "src/app/layout.tsx",
+          "src/app/posts/[slug]/page.tsx",
+          "src/interfaces/post.ts",
+          "src/lib/cors.ts",
+          "UPGRADE-PLAN.md"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "api/subscribe/route.tsx",
+          "content/posts/AI-Is-Quieter-Than-You-Think.md",
+          "content/posts/AI-Took-My-Job-And-Thats-Okay.md",
+          "public/.well-known/ai-plugin.json",
+          "src/app/_components/newsletter-signup.tsx",
+          "src/app/api/v1/openapi.json/route.ts",
+          "src/app/globals.css",
+          "src/app/page.tsx",
+          "src/messages/en.json",
+          "src/messages/fr.json",
+          "src/messages/zh.json"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/copilot-instructions.md",
+          "api/hello/route.ts",
+          "src/app/_components/easter-egg.tsx",
+          "UPGRADE-PLAN.md"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/copilot-instructions.md",
+          "content/posts/AI-Is-Quieter-Than-You-Think.md",
+          "public/llms-full.txt",
+          "public/llms-index.json",
+          "public/llms.txt",
+          "public/network.json",
+          "src/app/_components/easter-egg.tsx",
+          "src/app/api/v1/health/route.ts",
+          "src/app/api/v1/openapi.json/route.ts",
+          "UPGRADE-PLAN.md",
+          "vercel.json"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          "api/hello/route.ts"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "content/posts/AI-Took-My-Job-And-Thats-Okay.md",
+          "next.config.ts",
+          "public/.well-known/humans.txt",
+          "scripts/image-resizer.py"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "src/app/globals.css"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/copilot-instructions.md",
+          ".github/workflows/blog-post-automation.yml",
+          ".github/workflows/deploy.yml",
+          ".github/workflows/nextjs.yml",
+          "pnpm-lock.yaml",
+          "public/llms-full.txt",
+          "src/app/api/v1/openapi.json/route.ts"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:11.843Z"
+}

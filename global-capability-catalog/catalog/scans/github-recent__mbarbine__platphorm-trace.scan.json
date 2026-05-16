@@ -1,0 +1,3189 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-trace",
+    "name": "mbarbine__platphorm-trace",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-trace",
+    "relative_path": "github-recent/mbarbine__platphorm-trace",
+    "remote_url": "git@github.com:mbarbine/platphorm-trace.git",
+    "default_branch": "main",
+    "current_commit": "3d1460bc4cdaee6716fe3df539950c44b8c43f19"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 301,
+      "bytes": 1256943
+    },
+    {
+      "language": "JSON",
+      "files": 23,
+      "bytes": 740933
+    },
+    {
+      "language": "YAML",
+      "files": 2,
+      "bytes": 459547
+    },
+    {
+      "language": "Markdown",
+      "files": 12,
+      "bytes": 80850
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 28223
+    },
+    {
+      "language": "SQL",
+      "files": 3,
+      "bytes": 17473
+    },
+    {
+      "language": "JavaScript",
+      "files": 9,
+      "bytes": 5874
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 604
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 61
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Jest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Playwright",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-project",
+        "version": "0.0.2",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "eslint ."
+        },
+        "dependencies": {
+          "@ai-sdk/xai": "^3.0.83",
+          "@hookform/resolvers": "^3.10.0",
+          "@neondatabase/serverless": "^0.10.4",
+          "@opentelemetry/api": "^1.9.1",
+          "@opentelemetry/auto-instrumentations-node": "^0.71.0",
+          "@opentelemetry/exporter-trace-otlp-http": "^0.213.0",
+          "@opentelemetry/instrumentation": "^0.213.0",
+          "@opentelemetry/resources": "^2.7.0",
+          "@opentelemetry/sdk-node": "^0.213.0",
+          "@opentelemetry/sdk-trace-node": "^2.7.0",
+          "@opentelemetry/semantic-conventions": "^1.40.0",
+          "@radix-ui/react-accordion": "1.2.12",
+          "@radix-ui/react-alert-dialog": "1.1.15",
+          "@radix-ui/react-aspect-ratio": "1.1.8",
+          "@radix-ui/react-avatar": "1.1.11",
+          "@radix-ui/react-checkbox": "1.3.3",
+          "@radix-ui/react-collapsible": "1.1.12",
+          "@radix-ui/react-context-menu": "2.2.16",
+          "@radix-ui/react-dialog": "1.1.15",
+          "@radix-ui/react-dropdown-menu": "2.1.16",
+          "@radix-ui/react-hover-card": "1.1.15",
+          "@radix-ui/react-label": "2.1.8",
+          "@radix-ui/react-menubar": "1.1.16",
+          "@radix-ui/react-navigation-menu": "1.2.14",
+          "@radix-ui/react-popover": "1.1.15",
+          "@radix-ui/react-progress": "1.1.8",
+          "@radix-ui/react-radio-group": "1.3.8",
+          "@radix-ui/react-scroll-area": "1.2.10",
+          "@radix-ui/react-select": "2.2.6",
+          "@radix-ui/react-separator": "1.1.8",
+          "@radix-ui/react-slider": "1.3.6",
+          "@radix-ui/react-slot": "1.2.4",
+          "@radix-ui/react-switch": "1.2.6",
+          "@radix-ui/react-tabs": "1.1.13",
+          "@radix-ui/react-toast": "1.2.15",
+          "@radix-ui/react-toggle": "1.1.10",
+          "@radix-ui/react-toggle-group": "1.1.11",
+          "@radix-ui/react-tooltip": "1.2.8",
+          "@upstash/redis": "^1.37.0",
+          "@vercel/analytics": "1.6.1",
+          "@vercel/speed-insights": "^2.0.0",
+          "ai": "^6.0.168",
+          "autoprefixer": "^10.5.0",
+          "botid": "^1.5.11",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.1.1",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.6.0",
+          "input-otp": "1.4.2",
+          "lucide-react": "^0.564.0",
+          "nanoid": "^5.1.9",
+          "next": "16.1.6",
+          "next-themes": "^0.4.6",
+          "react": "19.2.4",
+          "react-day-picker": "9.13.2",
+          "react-dom": "19.2.4",
+          "react-hook-form": "^7.73.1",
+          "react-resizable-panels": "^2.1.9",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.4",
+          "swr": "^2.4.1",
+          "tailwind-merge": "^3.5.0",
+          "vaul": "^1.1.2",
+          "zod": "^3.25.76"
+        },
+        "dev_dependencies": {
+          "@babel/core": "^7.29.0",
+          "@babel/preset-env": "^7.29.2",
+          "@babel/preset-typescript": "^7.28.5",
+          "@jest/globals": "^30.3.0",
+          "@next/eslint-plugin-next": "^16.2.4",
+          "@tailwindcss/postcss": "^4.2.4",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@testing-library/user-event": "^14.6.1",
+          "@types/jest": "^30.0.0",
+          "@types/node": "^22.19.17",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "@typescript-eslint/eslint-plugin": "^8.59.0",
+          "@typescript-eslint/parser": "^8.59.0",
+          "babel-jest": "^30.3.0",
+          "dotenv": "^17.4.2",
+          "eslint": "^10.2.1",
+          "identity-obj-proxy": "^3.0.0",
+          "jest": "^30.3.0",
+          "jest-environment-jsdom": "^30.3.0",
+          "playwright": "^1.59.1",
+          "postcss": "^8.5.10",
+          "shadcn": "^4.4.0",
+          "tailwindcss": "^4.2.4",
+          "ts-jest": "^29.4.9",
+          "ts-node": "^10.9.2",
+          "tsx": "^4.21.0",
+          "tw-animate-css": "1.3.3",
+          "typescript": "5.7.3",
+          "undici": "^7.25.0"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/[...path]",
+        "source_path": "app/api/[...path]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/capabilities",
+        "source_path": "app/api/capabilities/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/schemas",
+        "source_path": "app/api/schemas/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/telemetry",
+        "source_path": "app/api/telemetry/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/ai/analyze",
+        "source_path": "app/api/v1/ai/analyze/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/capabilities",
+        "source_path": "app/api/v1/capabilities/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/docs",
+        "source_path": "app/api/v1/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/feeds",
+        "source_path": "app/api/v1/feeds/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/feeds/sync",
+        "source_path": "app/api/v1/feeds/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/forks/[id]",
+        "source_path": "app/api/v1/forks/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/forks",
+        "source_path": "app/api/v1/forks/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/live",
+        "source_path": "app/api/v1/live/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/mcp",
+        "source_path": "app/api/v1/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/[...path]",
+        "source_path": "app/api/v1/network/[...path]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network",
+        "source_path": "app/api/v1/network/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/otel/v1/traces",
+        "source_path": "app/api/v1/otel/v1/traces/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/propagation/tests",
+        "source_path": "app/api/v1/propagation/tests/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/propagation/tests/run",
+        "source_path": "app/api/v1/propagation/tests/run/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/replay/[id]",
+        "source_path": "app/api/v1/replay/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/replay",
+        "source_path": "app/api/v1/replay/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sessions/[sessionId]",
+        "source_path": "app/api/v1/sessions/[sessionId]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sessions",
+        "source_path": "app/api/v1/sessions/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sitemaps/sync",
+        "source_path": "app/api/v1/sitemaps/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/sites/[slug]/observability",
+        "source_path": "app/api/v1/sites/[slug]/observability/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sites/[slug]/route-compliance",
+        "source_path": "app/api/v1/sites/[slug]/route-compliance/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/sites/[slug]/vercel",
+        "source_path": "app/api/v1/sites/[slug]/vercel/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/spans/orphans",
+        "source_path": "app/api/v1/spans/orphans/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/spans",
+        "source_path": "app/api/v1/spans/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/stats",
+        "source_path": "app/api/v1/stats/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/analyze",
+        "source_path": "app/api/v1/traces/[traceId]/analyze/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/annotations",
+        "source_path": "app/api/v1/traces/[traceId]/annotations/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/completeness",
+        "source_path": "app/api/v1/traces/[traceId]/completeness/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/export",
+        "source_path": "app/api/v1/traces/[traceId]/export/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/fork",
+        "source_path": "app/api/v1/traces/[traceId]/fork/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]",
+        "source_path": "app/api/v1/traces/[traceId]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "PATCH"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/service-map",
+        "source_path": "app/api/v1/traces/[traceId]/service-map/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/spans",
+        "source_path": "app/api/v1/traces/[traceId]/spans/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/timeline",
+        "source_path": "app/api/v1/traces/[traceId]/timeline/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/tree",
+        "source_path": "app/api/v1/traces/[traceId]/tree/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/[traceId]/waterfall",
+        "source_path": "app/api/v1/traces/[traceId]/waterfall/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces/compare",
+        "source_path": "app/api/v1/traces/compare/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/traces",
+        "source_path": "app/api/v1/traces/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/workflows/[id]/dry-run",
+        "source_path": "app/api/v1/workflows/[id]/dry-run/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/workflows/[id]/run",
+        "source_path": "app/api/v1/workflows/[id]/run/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/workflows",
+        "source_path": "app/api/v1/workflows/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/about",
+        "source_path": "app/about/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/jobs",
+        "source_path": "app/jobs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/network",
+        "source_path": "app/network/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap",
+        "source_path": "app/roadmap/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/session/[sessionId]",
+        "source_path": "app/session/[sessionId]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/status",
+        "source_path": "app/status/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/trace/[traceId]",
+        "source_path": "app/trace/[traceId]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/traces",
+        "source_path": "app/traces/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "network-constellation",
+      "kind": "ui-component",
+      "source_path": "app/network/components/network-constellation.tsx"
+    },
+    {
+      "name": "site-card",
+      "kind": "ui-component",
+      "source_path": "app/network/components/site-card.tsx"
+    },
+    {
+      "name": "site-details-panel",
+      "kind": "ui-component",
+      "source_path": "app/network/components/site-details-panel.tsx"
+    },
+    {
+      "name": "about-content",
+      "kind": "ui-component",
+      "source_path": "components/about/about-content.tsx"
+    },
+    {
+      "name": "faq-content",
+      "kind": "ui-component",
+      "source_path": "components/faq/faq-content.tsx"
+    },
+    {
+      "name": "feature-panel",
+      "kind": "ui-component",
+      "source_path": "components/home/feature-panel.tsx"
+    },
+    {
+      "name": "hero-panel",
+      "kind": "ui-component",
+      "source_path": "components/home/hero-panel.tsx"
+    },
+    {
+      "name": "left-sidebar",
+      "kind": "ui-component",
+      "source_path": "components/home/left-sidebar.tsx"
+    },
+    {
+      "name": "live-feed-section",
+      "kind": "ui-component",
+      "source_path": "components/home/live-feed-section.tsx"
+    },
+    {
+      "name": "live-trace-feed",
+      "kind": "ui-component",
+      "source_path": "components/home/live-trace-feed.tsx"
+    },
+    {
+      "name": "nav-button",
+      "kind": "ui-component",
+      "source_path": "components/home/nav-button.tsx"
+    },
+    {
+      "name": "right-sidebar",
+      "kind": "ui-component",
+      "source_path": "components/home/right-sidebar.tsx"
+    },
+    {
+      "name": "trace-preview-row",
+      "kind": "ui-component",
+      "source_path": "components/home/trace-preview-row.tsx"
+    },
+    {
+      "name": "footer",
+      "kind": "ui-component",
+      "source_path": "components/layout/footer.tsx"
+    },
+    {
+      "name": "header",
+      "kind": "ui-component",
+      "source_path": "components/layout/header.tsx"
+    },
+    {
+      "name": "language-selector",
+      "kind": "ui-component",
+      "source_path": "components/layout/language-selector.tsx"
+    },
+    {
+      "name": "network-bar",
+      "kind": "ui-component",
+      "source_path": "components/layout/network-bar.tsx"
+    },
+    {
+      "name": "theme-toggle",
+      "kind": "ui-component",
+      "source_path": "components/layout/theme-toggle.tsx"
+    },
+    {
+      "name": "index",
+      "kind": "ui-component",
+      "source_path": "components/lc3rs/index.tsx"
+    },
+    {
+      "name": "ai-panel",
+      "kind": "ui-component",
+      "source_path": "components/lcars/ai-panel.tsx"
+    },
+    {
+      "name": "index",
+      "kind": "ui-component",
+      "source_path": "components/lcars/index.tsx"
+    },
+    {
+      "name": "live-feed",
+      "kind": "ui-component",
+      "source_path": "components/live/live-feed.tsx"
+    },
+    {
+      "name": "ai-analysis-panel",
+      "kind": "ui-component",
+      "source_path": "components/observatory/ai-analysis-panel.tsx"
+    },
+    {
+      "name": "annotation-panel",
+      "kind": "ui-component",
+      "source_path": "components/observatory/annotation-panel.tsx"
+    },
+    {
+      "name": "health-score-badge",
+      "kind": "ui-component",
+      "source_path": "components/observatory/health-score-badge.tsx"
+    },
+    {
+      "name": "span-detail-panel",
+      "kind": "ui-component",
+      "source_path": "components/observatory/span-detail-panel.tsx"
+    },
+    {
+      "name": "trace-observatory",
+      "kind": "ui-component",
+      "source_path": "components/observatory/trace-observatory.tsx"
+    },
+    {
+      "name": "waterfall-view",
+      "kind": "ui-component",
+      "source_path": "components/observatory/waterfall-view.tsx"
+    },
+    {
+      "name": "jargon-toggle",
+      "kind": "ui-component",
+      "source_path": "components/plain-english/jargon-toggle.tsx"
+    },
+    {
+      "name": "json-ld",
+      "kind": "ui-component",
+      "source_path": "components/seo/json-ld.tsx"
+    },
+    {
+      "name": "session-observatory",
+      "kind": "ui-component",
+      "source_path": "components/session/session-observatory.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "trace-card",
+      "kind": "ui-component",
+      "source_path": "components/trace/trace-card.tsx"
+    },
+    {
+      "name": "traces-explorer",
+      "kind": "ui-component",
+      "source_path": "components/traces/traces-explorer.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "alert-dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "aspect-ratio",
+      "kind": "ui-component",
+      "source_path": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/button-group.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "calendar",
+      "kind": "ui-component",
+      "source_path": "components/ui/calendar.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "carousel",
+      "kind": "ui-component",
+      "source_path": "components/ui/carousel.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "checkbox",
+      "kind": "ui-component",
+      "source_path": "components/ui/checkbox.tsx"
+    },
+    {
+      "name": "collapsible",
+      "kind": "ui-component",
+      "source_path": "components/ui/collapsible.tsx"
+    },
+    {
+      "name": "command",
+      "kind": "ui-component",
+      "source_path": "components/ui/command.tsx"
+    },
+    {
+      "name": "context-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/context-menu.tsx"
+    },
+    {
+      "name": "dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/dialog.tsx"
+    },
+    {
+      "name": "drawer",
+      "kind": "ui-component",
+      "source_path": "components/ui/drawer.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "empty",
+      "kind": "ui-component",
+      "source_path": "components/ui/empty.tsx"
+    },
+    {
+      "name": "field",
+      "kind": "ui-component",
+      "source_path": "components/ui/field.tsx"
+    },
+    {
+      "name": "form",
+      "kind": "ui-component",
+      "source_path": "components/ui/form.tsx"
+    },
+    {
+      "name": "hover-card",
+      "kind": "ui-component",
+      "source_path": "components/ui/hover-card.tsx"
+    },
+    {
+      "name": "input-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-group.tsx"
+    },
+    {
+      "name": "input-otp",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-otp.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "item",
+      "kind": "ui-component",
+      "source_path": "components/ui/item.tsx"
+    },
+    {
+      "name": "kbd",
+      "kind": "ui-component",
+      "source_path": "components/ui/kbd.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "menubar",
+      "kind": "ui-component",
+      "source_path": "components/ui/menubar.tsx"
+    },
+    {
+      "name": "navigation-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "name": "pagination",
+      "kind": "ui-component",
+      "source_path": "components/ui/pagination.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "components/ui/popover.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "radio-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/radio-group.tsx"
+    },
+    {
+      "name": "relative-time",
+      "kind": "ui-component",
+      "source_path": "components/ui/relative-time.tsx"
+    },
+    {
+      "name": "resizable",
+      "kind": "ui-component",
+      "source_path": "components/ui/resizable.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar-context",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-context.tsx"
+    },
+    {
+      "name": "sidebar-core",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-core.tsx"
+    },
+    {
+      "name": "sidebar-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-group.tsx"
+    },
+    {
+      "name": "sidebar-menu-sub",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-menu-sub.tsx"
+    },
+    {
+      "name": "sidebar-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-menu.tsx"
+    },
+    {
+      "name": "sidebar-parts",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-parts.tsx"
+    },
+    {
+      "name": "sidebar-provider",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar/sidebar-provider.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "components/ui/slider.tsx"
+    },
+    {
+      "name": "sonner",
+      "kind": "ui-component",
+      "source_path": "components/ui/sonner.tsx"
+    },
+    {
+      "name": "spinner",
+      "kind": "ui-component",
+      "source_path": "components/ui/spinner.tsx"
+    },
+    {
+      "name": "switch",
+      "kind": "ui-component",
+      "source_path": "components/ui/switch.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "toaster",
+      "kind": "ui-component",
+      "source_path": "components/ui/toaster.tsx"
+    },
+    {
+      "name": "toggle-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle-group.tsx"
+    },
+    {
+      "name": "toggle",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    },
+    {
+      "name": "use-mobile",
+      "kind": "ui-component",
+      "source_path": "components/ui/use-mobile.tsx"
+    },
+    {
+      "name": "about-content.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/about/about-content.test.tsx"
+    },
+    {
+      "name": "hero-panel.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/home/hero-panel.test.tsx"
+    },
+    {
+      "name": "left-sidebar.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/home/left-sidebar.test.tsx"
+    },
+    {
+      "name": "live-trace-feed.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/home/live-trace-feed.test.tsx"
+    },
+    {
+      "name": "right-sidebar.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/home/right-sidebar.test.tsx"
+    },
+    {
+      "name": "ai-analysis-panel.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/observatory/ai-analysis-panel.test.tsx"
+    },
+    {
+      "name": "annotation-panel.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/observatory/annotation-panel.test.tsx"
+    },
+    {
+      "name": "span-detail-panel.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/observatory/span-detail-panel.test.tsx"
+    },
+    {
+      "name": "traces-explorer.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/traces/traces-explorer.test.tsx"
+    },
+    {
+      "name": "calendar.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/ui/calendar.test.tsx"
+    },
+    {
+      "name": "chart.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/ui/chart.test.tsx"
+    },
+    {
+      "name": "sidebar.test",
+      "kind": "ui-component",
+      "source_path": "tests/components/ui/sidebar.test.tsx"
+    }
+  ],
+  "data_models": [
+    {
+      "name": "route",
+      "kind": "model-file",
+      "source_path": "app/api/schemas/route.ts"
+    }
+  ],
+  "database": {
+    "databases": [
+      "redis"
+    ],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/tests/app/docs/page.test.tsx"
+    },
+    {
+      "name": "spec.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/openapi/spec.ts"
+    },
+    {
+      "name": "test-sdk-network.ts",
+      "kind": "unit-or-integration",
+      "source_path": "test-sdk-network.ts"
+    },
+    {
+      "name": "test-sdk.ts",
+      "kind": "unit-or-integration",
+      "source_path": "test-sdk.ts"
+    },
+    {
+      "name": "test-ux.js",
+      "kind": "unit-or-integration",
+      "source_path": "test-ux.js"
+    },
+    {
+      "name": "plain-english.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/analysis/plain-english.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/health/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/mcp/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/telemetry/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/ai/analyze/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/live/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/network/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/sessions/[sessionId]/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/[traceId]/export/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/[traceId]/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/[traceId]/spans/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/compare/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/api/v1/traces/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/feed.xml/route.test.ts"
+    },
+    {
+      "name": "sitemap.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/app/sitemap.test.ts"
+    },
+    {
+      "name": "benchmark.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/benchmark.test.ts"
+    },
+    {
+      "name": "about-content.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/about/about-content.test.tsx"
+    },
+    {
+      "name": "hero-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/home/hero-panel.test.tsx"
+    },
+    {
+      "name": "left-sidebar.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/home/left-sidebar.test.tsx"
+    },
+    {
+      "name": "live-trace-feed.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/home/live-trace-feed.test.tsx"
+    },
+    {
+      "name": "right-sidebar.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/home/right-sidebar.test.tsx"
+    },
+    {
+      "name": "ai-analysis-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/observatory/ai-analysis-panel.test.tsx"
+    },
+    {
+      "name": "annotation-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/observatory/annotation-panel.test.tsx"
+    },
+    {
+      "name": "span-detail-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/observatory/span-detail-panel.test.tsx"
+    },
+    {
+      "name": "traces-explorer.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/traces/traces-explorer.test.tsx"
+    },
+    {
+      "name": "calendar.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/ui/calendar.test.tsx"
+    },
+    {
+      "name": "chart.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/ui/chart.test.tsx"
+    },
+    {
+      "name": "sidebar.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/ui/sidebar.test.tsx"
+    },
+    {
+      "name": "use-toast.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/components/ui/use-toast.test.ts"
+    },
+    {
+      "name": "plain-english.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/analysis/plain-english.test.ts"
+    },
+    {
+      "name": "db.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/db.test.ts"
+    },
+    {
+      "name": "i18n.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/i18n.test.ts"
+    },
+    {
+      "name": "index.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/logging/index.test.ts"
+    },
+    {
+      "name": "client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/mcp/client.test.ts"
+    },
+    {
+      "name": "network-registry.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/network-registry.test.ts"
+    },
+    {
+      "name": "platphorm.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/network/platphorm.test.ts"
+    },
+    {
+      "name": "spec.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/openapi/spec.test.ts"
+    },
+    {
+      "name": "platphorm-network.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/platphorm-network.test.ts"
+    },
+    {
+      "name": "redis.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/redis.test.ts"
+    },
+    {
+      "name": "route-probe-storage.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/route-probe-storage.test.ts"
+    },
+    {
+      "name": "route-probe-tracing.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/route-probe-tracing.test.ts"
+    },
+    {
+      "name": "sdk.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/sdk.test.ts"
+    },
+    {
+      "name": "index.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/sdk/index.test.ts"
+    },
+    {
+      "name": "sdk.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/sdk/sdk.test.ts"
+    },
+    {
+      "name": "fingerprint.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/security/fingerprint.test.ts"
+    },
+    {
+      "name": "trust.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/security/trust.test.ts"
+    },
+    {
+      "name": "parser.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/trace/parser.test.ts"
+    },
+    {
+      "name": "validator.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/trace/validator.test.ts"
+    },
+    {
+      "name": "utils.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/lib/utils.test.ts"
+    },
+    {
+      "name": "roadmap.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/roadmap.test.ts"
+    },
+    {
+      "name": "robots.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/robots.test.ts"
+    },
+    {
+      "name": "schemas.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/schemas.test.ts"
+    },
+    {
+      "name": "well-known-llms.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/well-known-llms.test.ts"
+    },
+    {
+      "name": "well-known.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "tests/well-known.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "ALLOWED_ORIGIN",
+        "source_paths": [
+          "lib/security/headers.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "lib/db.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "JA4MLAB_TRACE_MEMORY",
+        "source_paths": [
+          "lib/lab-trace-store.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "JA4MLAB_TRACE_STORE_DIR",
+        "source_paths": [
+          "lib/lab-trace-store.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "KV_REST_API_TOKEN",
+        "source_paths": [
+          "lib/redis.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "KV_REST_API_URL",
+        "source_paths": [
+          "lib/redis.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "LOG_LEVEL",
+        "source_paths": [
+          "lib/logging/index.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MCP_PROTOCOL_VERSION",
+        "source_paths": [
+          "app/.well-known/[...path]/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_APP_URL",
+        "source_paths": [
+          "app/traces/page.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_RUNTIME",
+        "source_paths": [
+          "instrumentation.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/health/route.ts",
+          "lib/logging/index.ts",
+          "lib/redis.ts",
+          "tests/lib/logging/index.test.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "OTEL_EXPORTER_OTLP_ENDPOINT",
+        "source_paths": [
+          "instrumentation.node.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "lib/security/platform-auth.ts",
+          "lib/security/trust.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PLATPHORM_NETWORK_TOKEN",
+        "source_paths": [
+          "scripts/publish-job.ts",
+          "scripts/register-network.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SERVICE_NAME",
+        "source_paths": [
+          "app/.well-known/[...path]/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VERCEL_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "XAI_API_KEY",
+        "source_paths": [
+          "app/api/v1/ai/analyze/route.ts",
+          "tests/app/api/v1/ai/analyze/route.test.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.jest.json"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/llms-full.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [
+      {
+        "path": "public/openapi.json"
+      }
+    ],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.ts"
+      },
+      {
+        "path": "tests/app/api/mcp/route.test.ts"
+      }
+    ],
+    "llms": [
+      {
+        "path": "public/llms-full.txt"
+      }
+    ],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/[...path]/route.ts"
+      },
+      {
+        "path": "app/.well-known/agent.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/humans.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/llms.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/robots.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust-policy.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      }
+    ],
+    "robots": [
+      {
+        "path": "public/robots.txt"
+      }
+    ],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/.well-known/[...path]/route.ts",
+        "app/.well-known/agent.json/route.ts",
+        "app/.well-known/mcp.json/route.ts",
+        "app/.well-known/trust.json/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/mcp/route.ts",
+        "app/docs/page.tsx",
+        "app/llms-full.txt/route.ts",
+        "lib/env.ts",
+        "package.json",
+        "scripts/publish-job.ts",
+        "scripts/register-network.ts"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/db.ts",
+        "lib/env.ts",
+        "lib/platform/route-probe-storage.ts",
+        "lib/platform/route-probes.ts",
+        "package.json",
+        "tests/lib/route-probe-storage.test.ts",
+        "tests/lib/route-probe-tracing.test.ts"
+      ]
+    },
+    {
+      "name": "Redis",
+      "confidence": "medium",
+      "evidence_paths": [
+        "lib/redis.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "tests/lib/redis.test.ts"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "app/layout.tsx",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": [
+      {
+        "path": "LICENSE.txt"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".Jules/bolt.md",
+      "line": 24,
+      "text": "## 2026-05-18 - Concurrent DB Queries and Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/ai-plugin.json/route.ts",
+      "line": 14,
+      "text": "contact_email: 'security@platphormnews.com',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 4,
+      "text": "const securityTxt = `Contact: mailto:security@platphormnews.com"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 6,
+      "text": "Acknowledgments: https://platphormnews.com/security/acknowledgments"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 8,
+      "text": "Canonical: https://trace.platphormnews.com/.well-known/security.txt`;"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/trust.json/route.ts",
+      "line": 53,
+      "text": "securityContact: 'https://platphormnews.com/security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/[...path]/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/health/route.ts",
+      "line": 2,
+      "text": "import { withAllHeaders } from '@/lib/security/headers';"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/mcp/route.ts",
+      "line": 13,
+      "text": "import { isProtectedRequestAuthorized } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/telemetry/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders, generateRequestId } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/telemetry/route.ts",
+      "line": 4,
+      "text": "import { getRequestFingerprint } from '@/lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/telemetry/route.ts",
+      "line": 5,
+      "text": "import { determineTrustLevel, recordFingerprint } from '@/lib/security/trust'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/telemetry/route.ts",
+      "line": 13,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/ai/analyze/route.ts",
+      "line": 12,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/feeds/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/feeds/sync/route.ts",
+      "line": 2,
+      "text": "import { protectedActionError, isProtectedRequestAuthorized } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/feeds/sync/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/forks/[id]/route.ts",
+      "line": 2,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/forks/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/forks/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/live/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/network/[...path]/route.ts",
+      "line": 5,
+      "text": "import { protectedActionError, isProtectedRequestAuthorized } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/network/[...path]/route.ts",
+      "line": 6,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/network/route.ts",
+      "line": 4,
+      "text": "import { withAllHeaders, withCorsHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/otel/v1/traces/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/otel/v1/traces/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/propagation/tests/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/propagation/tests/run/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/propagation/tests/run/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/replay/[id]/route.ts",
+      "line": 2,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/replay/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/replay/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sessions/[sessionId]/route.ts",
+      "line": 9,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sessions/route.ts",
+      "line": 9,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sitemaps/sync/route.ts",
+      "line": 3,
+      "text": "import { protectedActionError, isProtectedRequestAuthorized } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sitemaps/sync/route.ts",
+      "line": 4,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sites/[slug]/observability/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sites/[slug]/route-compliance/route.ts",
+      "line": 4,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/sites/[slug]/vercel/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/spans/orphans/route.ts",
+      "line": 2,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/spans/route.ts",
+      "line": 5,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/spans/route.ts",
+      "line": 6,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/stats/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/analyze/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/analyze/route.ts",
+      "line": 5,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/annotations/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/annotations/route.ts",
+      "line": 4,
+      "text": "import { generateFingerprint, extractFingerprintComponents } from '@/lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/annotations/route.ts",
+      "line": 6,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/completeness/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/export/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders, SECURITY_HEADERS } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/fork/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/fork/route.ts",
+      "line": 4,
+      "text": "import { generateFingerprint, extractFingerprintComponents } from '@/lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/fork/route.ts",
+      "line": 6,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from \"@/lib/security/headers\";"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/service-map/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/spans/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/spans/route.ts",
+      "line": 6,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/timeline/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/tree/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/[traceId]/waterfall/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/compare/route.ts",
+      "line": 3,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/route.ts",
+      "line": 10,
+      "text": "import { getRequestFingerprint } from '@/lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/route.ts",
+      "line": 11,
+      "text": "import { determineTrustLevel, recordFingerprint } from '@/lib/security/trust'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/route.ts",
+      "line": 13,
+      "text": "import { withSecurityHeaders, generateRequestId } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/traces/route.ts",
+      "line": 15,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/[id]/dry-run/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/[id]/dry-run/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/[id]/run/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/[id]/run/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/route.ts",
+      "line": 2,
+      "text": "import { isProtectedRequestAuthorized, protectedActionError } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/workflows/route.ts",
+      "line": 3,
+      "text": "import { withAllHeaders } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/docs/page.tsx",
+      "line": 285,
+      "text": "Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/ethics.txt/route.ts",
+      "line": 91,
+      "text": "- Security issues reported responsibly"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/ethics.txt/route.ts",
+      "line": 93,
+      "text": "- Regular security audits"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/jobs/page.tsx",
+      "line": 26,
+      "text": "'Ensure high performance, security, and dynamic discovery of tools.'"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/layout.tsx",
+      "line": 90,
+      "text": "'x-security-integration': 'https://claws.platphormnews.com',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/principles.txt/route.ts",
+      "line": 125,
+      "text": "- Security reviews required"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/standards.txt/route.ts",
+      "line": 80,
+      "text": "## Security Standards"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/about/about-content.tsx",
+      "line": 288,
+      "text": "<p className=\"text-sm text-muted-foreground\">OpenTelemetry conventions, API design, security, and accessibility compliance.</p>"
+    },
+    {
+      "kind": "security",
+      "source_path": "CONTRIBUTING.md",
+      "line": 109,
+      "text": "hotfix/security-patch"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 10,
+      "text": "- Whether the schema choices will work reliably in entity[\"organization\",\"PostgreSQL\",\"database project\"], including correctness of partitioning, indexing, generated columns, and row-level security primitives. citeturn2search0turn1sea"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 17,
+      "text": "### robots.txt and “discoverability vs security” semantics"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 21,
+      "text": "Crucially, RFC 9309 explicitly states that REP rules are **not access authorization** and “not a substitute for valid content security measures,” which matters directly to how findings are categorized and scored: “blocked-by-robots” is **co"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 23,
+      "text": "Schema implication (your current plan aligns): keeping `robots` in `evidence.artifacts`, with artifact-level evaluation in `results.artifact_evaluations`, lets you score parse correctness and “intent coherence” without treating it as a secu"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 25,
+      "text": "### security.txt and the well-known location rule"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 27,
+      "text": "Treating `security.txt` as first-class is correct and standards-aligned:"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 29,
+      "text": "- **RFC 9116** defines `security.txt` as a machine-parsable file at a known location, and states it **MUST** follow the ABNF grammar defined in the RFC. citeturn0search1turn0search9"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 118,
+      "text": "- PostgreSQL supports enabling row level security with `ALTER TABLE ... ENABLE ROW LEVEL SECURITY`. citeturn1search2turn1search6"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 119,
+      "text": "- Policies are created with `CREATE POLICY`, and row security must be enabled for policies to apply. citeturn1search6turn1search2"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 136,
+      "text": "- security.txt: ABNF validity + required fields presence, and correct well-known placement citeturn0search1turn0search2"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "deep-research-report-v2.md",
+      "line": 169,
+      "text": "Hardening recommendation: encode “FID is deprecated” as metadata and ensure UI/reporting labels treat FID as historical only, which your `fid_deprecated boolean` already supports. citeturn1search3turn1search7"
+    },
+    {
+      "kind": "security",
+      "source_path": "deep-research-report-v2.md",
+      "line": 196,
+      "text": "- is grounded in real standards for core surface artifacts (`robots.txt`, `security.txt`, well-known URIs, sitemaps, manifests, OG metadata) citeturn0search0turn0search1turn0search2turn0search3turn3search0turn3search1"
+    },
+    {
+      "kind": "security",
+      "source_path": "FINAL_SUITE_V1.md",
+      "line": 104,
+      "text": "- /.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/api/middleware.ts",
+      "line": 2,
+      "text": "import { enforceRateLimit, getRateLimitHeaders } from '@/lib/security/rate-limit'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/api/middleware.ts",
+      "line": 3,
+      "text": "import { withAllHeaders, generateRequestId } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/i18n/context.tsx",
+      "line": 78,
+      "text": "// Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/i18n/index.ts",
+      "line": 92,
+      "text": "// Security"
+    },
+    {
+      "kind": "todo",
+      "source_path": "lib/i18n/locales/es.ts",
+      "line": 22,
+      "text": "'common.viewAll': 'Ver todo',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/icons.tsx",
+      "line": 361,
+      "text": "// SECURITY ICONS"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/logging/index.ts",
+      "line": 203,
+      "text": "export const security = {"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/logging/index.ts",
+      "line": 309,
+      "text": "security,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/network/site-catalog.ts",
+      "line": 42,
+      "text": "[\"atlas\", \"ja4-atlas-www\", \"atlas.platphormnews.com\", \"Security / Intelligence\", \"Network\", \"Atlas site for observation, telemetry, or network intelligence.\", \"https://atlas.platphormnews.com/feed.xml\", \"https://atlas.platphormnews.com/api/"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/network/site-catalog.ts",
+      "line": 46,
+      "text": "[\"keys\", \"platphorm-keys\", \"keys.platphormnews.com\", \"Security\", \"Network\", \"API key distribution and access control site.\", \"https://keys.platphormnews.com/feed.xml\", \"https://keys.platphormnews.com/api/mcp\", \"https://keys.platphormnews.co"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/network/site-catalog.ts",
+      "line": 140,
+      "text": "[\"ja4lab\", \"ja4-vercel-lab-2\", \"ja4lab.platphormnews.com\", \"Security / Lab\", \"Technology\", \"JA4 and Vercel lab for testing and research.\", \"https://ja4lab.platphormnews.com/feed.xml\", \"https://ja4lab.platphormnews.com/api/mcp\", \"https://ja4"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/network/site-catalog.ts",
+      "line": 141,
+      "text": "[\"threatrelay\", \"threatrelay-foxiolabs-webby\", \"threatrelay.platphormnews.com\", \"Security\", \"Technology\", \"ThreatRelay security or telemetry platform.\", \"https://threatrelay.platphormnews.com/feed.xml\", \"https://threatrelay.platphormnews.co"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/network/site-catalog.ts",
+      "line": 142,
+      "text": "[\"red\", \"platphorm-redteam\", \"red.platphormnews.com\", \"Security\", \"Technology\", \"Red team themed landing page or security microsite.\", \"https://red.platphormnews.com/feed.xml\", \"https://red.platphormnews.com/api/mcp\", \"https://red.platphorm"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/openapi/spec.ts",
+      "line": 346,
+      "text": "security: [{ ApiKey: [] }, { PlatphormApiKey: [] }],"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/openapi/spec.ts",
+      "line": 692,
+      "text": "security: ["
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/platform/constants.ts",
+      "line": 33,
+      "text": "'/.well-known/security.txt',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/headers.ts",
+      "line": 1,
+      "text": "// Security headers for MCP Trace Observatory"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/headers.ts",
+      "line": 6,
+      "text": "// Content Security Policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/headers.ts",
+      "line": 7,
+      "text": "'Content-Security-Policy': ["
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "lib/security/headers.ts",
+      "line": 9,
+      "text": "\"script-src 'self' 'unsafe-inline' 'unsafe-eval'\", // Needed for Next.js"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "lib/security/headers.ts",
+      "line": 10,
+      "text": "\"style-src 'self' 'unsafe-inline'\","
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/headers.ts",
+      "line": 41,
+      "text": "'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/headers.ts",
+      "line": 81,
+      "text": "// Apply security headers to a response"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/security/trust.ts",
+      "line": 4,
+      "text": "import { isPlatformApiKeyValid } from '@/lib/security/platform-auth'"
+    },
+    {
+      "kind": "security",
+      "source_path": "License FAQ.md",
+      "line": 23,
+      "text": "Yes, if your use is non-commercial as defined by the license. Internal evaluation, research, development, testing, security review, accessibility work, and internal experimentation are generally allowed if you are not directly or indirectly"
+    },
+    {
+      "kind": "security",
+      "source_path": "LICENSE.txt",
+      "line": 13,
+      "text": "“Non-commercial purposes” include personal use by an individual, academic research and development, journalism, testing, evaluation, interoperability work, security review, accessibility work, and internal use by your own organization where"
+    },
+    {
+      "kind": "security",
+      "source_path": "middleware.ts",
+      "line": 8,
+      "text": "* - Security headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "middleware.ts",
+      "line": 78,
+      "text": "// Security headers"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 5344,
+      "text": "\"deprecated\": \"Deprecated in favor of @fastify/otel, maintained by the Fastify authors.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 1837,
+      "text": "deprecated: Deprecated in favor of @fastify/otel, maintained by the Fastify authors."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 4252,
+      "text": "deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by cont"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 4257,
+      "text": "deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by cont"
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 4371,
+      "text": "deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "pnpm-lock.yaml",
+      "line": 5002,
+      "text": "deprecated: Use your platform's native DOMException instead"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "pr_body.md",
+      "line": 5,
+      "text": "Removes unsafe explicit `any` usage from a critical trace ingestion database utility, fulfilling the goal of a code health refactor. This improves maintainability by ensuring that downstream logic using the `spans` array (e.g. iterating ove"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/ethics.txt",
+      "line": 54,
+      "text": "### Security Best Practices"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/ethics.txt",
+      "line": 56,
+      "text": "- Content Security Policy headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/llms-full.txt",
+      "line": 139,
+      "text": "## Security Model"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/llms-full.txt",
+      "line": 202,
+      "text": "- /standards.txt - Technical Standards: OpenTelemetry, API design, security, accessibility"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/principles.txt",
+      "line": 104,
+      "text": "### Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/standards.txt",
+      "line": 72,
+      "text": "## Security Standards"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/standards.txt",
+      "line": 74,
+      "text": "### Transport Security"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "public/standards.txt",
+      "line": 80,
+      "text": "Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001-create-tables.sql",
+      "line": 57,
+      "text": "-- Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001-create-tables.sql",
+      "line": 155,
+      "text": "-- Session fingerprints for security and rate limiting"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001-create-tables.sql",
+      "line": 255,
+      "text": "-- Audit log for security"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/publish-job.ts",
+      "line": 20,
+      "text": "'Ensure high performance, security, and dynamic discovery of tools.'"
+    },
+    {
+      "kind": "security",
+      "source_path": "split_3.txt",
+      "line": 84,
+      "text": "Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 22,
+      "text": "### Robots, security contact, and well-known placement"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 24,
+      "text": "- `robots.txt` has been formalized as an IETF RFC (RFC 9309). Importantly, robots/REP rules are **not access authorization** and **not a substitute for real security controls**. This directly impacts scoring language: “blocked by robots” sh"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 25,
+      "text": "- `security.txt` is an IETF RFC (RFC 9116) and is designed to be machine-discoverable at a predictable location, typically under `/.well-known/`. citeturn24search3turn24search4"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 68,
+      "text": "### JA4+ as a cross-domain security/observability reference"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 70,
+      "text": "JA4+ is published as a suite of network fingerprinting methods and is being incorporated into major platforms; for example, AWS WAF exposes JA4 fingerprint matching for requests. This is not a W3C/IETF web standard, but it is relevant as an"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 137,
+      "text": "The standards claims embedded in these documents are grounded in authoritative specifications and documentation: RFC robots/REP guidance, RFC security.txt and well-known placement, sitemap protocol rules, W3C WCAG/ARIA/manifest specs, “INP "
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 238,
+      "text": "- artifact_probe (robots, sitemaps, llms, humans, security.txt, etc.)"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 251,
+      "text": "### Trust + security disclosure surfaces"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 252,
+      "text": "- /.well-known/security.txt (IETF RFC security.txt)"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 363,
+      "text": "- RFC 9116 — security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 385,
+      "text": "- Content Security Policy Level 3 (W3C TR)"
+    },
+    {
+      "kind": "security",
+      "source_path": "standards-references.md",
+      "line": 441,
+      "text": "- Row-level security (RLS)"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/mcp/route.test.ts",
+      "line": 81,
+      "text": "jest.mock('@/lib/security/platform-auth', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/telemetry/route.test.ts",
+      "line": 4,
+      "text": "import { getRequestFingerprint } from '@/lib/security/fingerprint';"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/telemetry/route.test.ts",
+      "line": 5,
+      "text": "import { determineTrustLevel, recordFingerprint } from '@/lib/security/trust';"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/telemetry/route.test.ts",
+      "line": 15,
+      "text": "jest.mock('@/lib/security/fingerprint', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/telemetry/route.test.ts",
+      "line": 19,
+      "text": "jest.mock('@/lib/security/trust', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/live/route.test.ts",
+      "line": 10,
+      "text": "jest.mock('@/lib/security/headers', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/sessions/[sessionId]/route.test.ts",
+      "line": 10,
+      "text": "jest.mock('@/lib/security/headers', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+      "line": 4,
+      "text": "import { withSecurityHeaders } from '@/lib/security/headers';"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/[traceId]/analyze/route.test.ts",
+      "line": 12,
+      "text": "jest.mock('@/lib/security/headers', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+      "line": 5,
+      "text": "import { generateFingerprint, extractFingerprintComponents } from '@/lib/security/fingerprint';"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/[traceId]/annotations/route.test.ts",
+      "line": 16,
+      "text": "jest.mock('@/lib/security/fingerprint', () => ({"
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "tests/app/api/v1/traces/[traceId]/route.test.ts",
+      "line": 9,
+      "text": "(mockSql as any).unsafe = jest.fn((str) => str);"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 4,
+      "text": "import { getRequestFingerprint } from '@/lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 5,
+      "text": "import { determineTrustLevel, recordFingerprint } from '@/lib/security/trust'"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 10,
+      "text": "import { generateRequestId } from '@/lib/security/headers'"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 55,
+      "text": "// Mock security headers"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 56,
+      "text": "jest.mock('@/lib/security/headers', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 62,
+      "text": "// Mock security and rate limit functions"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 63,
+      "text": "jest.mock('@/lib/security/fingerprint', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/app/api/v1/traces/route.test.ts",
+      "line": 67,
+      "text": "jest.mock('@/lib/security/trust', () => ({"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/components/ui/sidebar.test.tsx",
+      "line": 10,
+      "text": "describe(\"Sidebar Cookie Security\", () => {"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/lib/security/fingerprint.test.ts",
+      "line": 8,
+      "text": "} from '../../../lib/security/fingerprint'"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/lib/security/trust.test.ts",
+      "line": 7,
+      "text": "import { validateApiKey } from '@/lib/security/trust'"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/well-known.test.ts",
+      "line": 1,
+      "text": "import { GET as getSecurity } from '../app/.well-known/security.txt/route';"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/well-known.test.ts",
+      "line": 7,
+      "text": "it('serves security.txt correctly', async () => {"
+    },
+    {
+      "kind": "security",
+      "source_path": "tests/well-known.test.ts",
+      "line": 12,
+      "text": "expect(text).toContain('Contact: mailto:security@platphormnews.com');"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/about/page.tsx",
+          "app/faq/page.tsx",
+          "components/seo/json-ld.tsx",
+          "components/ui/chart.tsx"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/mcp/client.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/page.tsx",
+          "components/live/live-feed.tsx",
+          "hooks/use-atlas-sensor.ts",
+          "lib/mcp/client.ts",
+          "lib/platform/network-registry.ts",
+          "lib/platform/route-probes.ts"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/[...path]/route.ts",
+          "app/.well-known/agent.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/.well-known/trust.json/route.ts",
+          "app/api/docs/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/ai/analyze/route.ts",
+          "app/docs/page.tsx",
+          "app/llms-full.txt/route.ts",
+          "app/llms-index.json/route.ts",
+          "app/llms.txt/route.ts",
+          "app/network/components/site-details-panel.tsx",
+          "components/home/hero-panel.tsx",
+          "components/lcars/ai-panel.tsx",
+          "lib/db.ts",
+          "lib/env.ts",
+          "lib/network/spins.ts",
+          "lib/openapi/spec.ts",
+          "lib/platform/constants.ts",
+          "lib/platform/mcp-registry.ts"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/about/page.tsx",
+          "app/docs/page.tsx",
+          "app/faq/page.tsx",
+          "app/globals.css",
+          "app/layout.tsx",
+          "app/network/components/site-card.tsx",
+          "app/network/page.tsx",
+          "app/standards.txt/route.ts",
+          "app/status/page.tsx",
+          "components/about/about-content.tsx",
+          "components/faq/faq-content.tsx",
+          "components/home/feature-panel.tsx",
+          "components/home/right-sidebar.tsx",
+          "components/layout/header.tsx",
+          "components/layout/network-bar.tsx",
+          "components/lc3rs/index.tsx",
+          "components/lcars/index.tsx",
+          "components/live/live-feed.tsx",
+          "components/observatory/ai-analysis-panel.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/ethics.txt/route.ts",
+          "CODE_OF_CONDUCT.md",
+          "CONTRIBUTING.md",
+          "lib/icons.tsx",
+          "lib/network/site-catalog.ts",
+          "public/llms-full.txt",
+          "public/principles.txt",
+          "scripts/001-create-tables.sql"
+        ]
+      },
+      {
+        "name": "financial",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/ethics.txt/route.ts",
+          "lib/network/site-catalog.ts"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/telemetry/route.ts",
+          "app/api/v1/traces/[traceId]/annotations/route.ts",
+          "app/api/v1/traces/[traceId]/fork/route.ts",
+          "app/api/v1/traces/route.ts",
+          "lib/api/middleware.ts",
+          "lib/db.ts",
+          "lib/logging/index.ts",
+          "lib/platform/route-probe-tracing.ts",
+          "lib/redis.ts",
+          "lib/security/fingerprint.ts",
+          "lib/security/rate-limit.ts",
+          "lib/security/trust.ts",
+          "lib/trace/parser.ts",
+          "lib/trace/storage.ts",
+          "lib/trace/types.ts",
+          "middleware.ts",
+          "pr_body.md",
+          "public/ethics.txt",
+          "public/llms-full.txt",
+          "public/schemas/core.schema.json"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/agent.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/about/page.tsx",
+          "app/api/[...path]/route.ts",
+          "app/api/health/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/ai/analyze/route.ts",
+          "app/api/v1/health/route.ts",
+          "app/api/v1/live/route.ts",
+          "app/api/v1/network/route.ts",
+          "app/api/v1/sessions/[sessionId]/route.ts",
+          "app/api/v1/sessions/route.ts",
+          "app/api/v1/stats/route.ts",
+          "app/api/v1/traces/[traceId]/analyze/route.ts",
+          "app/api/v1/traces/[traceId]/export/route.ts",
+          "app/api/v1/traces/[traceId]/route.ts",
+          "app/api/v1/traces/compare/route.ts",
+          "app/api/v1/traces/route.ts",
+          "app/docs/page.tsx",
+          "app/ethics.txt/route.ts"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/api/v1/ai/analyze/route.ts",
+          "app/api/v1/sessions/[sessionId]/route.ts",
+          "app/ethics.txt/route.ts",
+          "app/jobs/page.tsx",
+          "deep-research-report-v2.md",
+          "lib/analysis/plain-english.ts",
+          "lib/platform/route-probes.ts",
+          "lib/security/headers.ts",
+          "methodology-section.tsx",
+          "scripts/publish-job.ts",
+          "standards-references.md",
+          "tests/well-known-llms.test.ts"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/mcp/route.ts",
+          "app/network/components/site-details-panel.tsx"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/ethics.txt"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package-lock.json",
+          "pnpm-lock.yaml",
+          "public/ethics.txt"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/telemetry/route.ts",
+          "app/api/v1/sessions/[sessionId]/route.ts",
+          "app/api/v1/sessions/route.ts",
+          "app/api/v1/traces/[traceId]/analyze/route.ts",
+          "app/api/v1/traces/[traceId]/export/route.ts",
+          "app/api/v1/traces/[traceId]/fork/route.ts",
+          "app/api/v1/traces/[traceId]/route.ts",
+          "app/api/v1/traces/[traceId]/spans/route.ts",
+          "app/api/v1/traces/route.ts",
+          "app/session/[sessionId]/page.tsx",
+          "app/standards.txt/route.ts",
+          "components/observatory/span-detail-panel.tsx",
+          "components/observatory/trace-observatory.tsx",
+          "components/session/session-observatory.tsx",
+          "lib/analysis/plain-english.ts",
+          "lib/db.ts",
+          "lib/env.ts",
+          "lib/openapi/spec.ts"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:21.576Z"
+}

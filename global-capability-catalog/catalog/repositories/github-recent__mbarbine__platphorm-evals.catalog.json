@@ -1,0 +1,4380 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-evals",
+    "name": "mbarbine__platphorm-evals",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-evals",
+    "remote_url": "git@github.com:mbarbine/platphorm-evals.git",
+    "description": "Platphorm Evals",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JSON",
+      "YAML",
+      "Markdown",
+      "Shell",
+      "SQL",
+      "CSS",
+      "JavaScript",
+      "Python"
+    ],
+    "frameworks": [
+      "Drizzle ORM",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Vitest"
+    ],
+    "package_manager": "pnpm",
+    "databases": [
+      "drizzle"
+    ],
+    "deployment": [
+      "github-actions",
+      "vercel"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__platphorm-evals.scan.json",
+    "analyzed_at": "2026-05-16T16:44:14.505Z"
+  },
+  "capabilities": [
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.openapi-docs",
+      "name": "OpenAPI Documentation",
+      "type": "api",
+      "summary": "Repository includes OpenAPI or Swagger documentation files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "platphorm_schemas/openapi.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "API contract files"
+        ],
+        "outputs": [
+          "machine-readable API documentation"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "API contract files"
+        ],
+        "writes": [
+          "machine-readable API documentation"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/api/docs/route.ts",
+        "app/api/health/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/v1/compare/route.ts",
+        "app/api/v1/datasets/[id]/route.ts",
+        "app/api/v1/datasets/route.ts",
+        "app/api/v1/evals/[id]/route.ts",
+        "app/api/v1/evals/route.ts",
+        "app/api/v1/gates/route.ts",
+        "app/api/v1/graders/[id]/route.ts",
+        "app/api/v1/graders/route.ts",
+        "app/api/v1/health/route.ts",
+        "app/api/v1/publish/route.ts",
+        "app/api/v1/registry/probe/route.ts",
+        "app/api/v1/registry/services/route.ts",
+        "app/api/v1/registry/sync/route.ts",
+        "app/api/v1/regressions/[id]/route.ts",
+        "app/api/v1/regressions/route.ts",
+        "app/api/v1/runs/[id]/route.ts",
+        "app/api/v1/runs/route.ts",
+        "app/api/v1/targets/import/route.ts",
+        "app/api/v1/templates/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /docs",
+          "GET /health",
+          "GET /mcp",
+          "GET /v1/compare",
+          "GET /v1/datasets",
+          "GET /v1/datasets/[id]",
+          "GET /v1/evals",
+          "GET /v1/evals/[id]",
+          "GET /v1/gates",
+          "GET /v1/graders",
+          "GET /v1/graders/[id]",
+          "GET /v1/health",
+          "GET /v1/publish",
+          "GET /v1/registry/probe",
+          "GET /v1/registry/services",
+          "GET /v1/registry/sync",
+          "GET /v1/regressions",
+          "GET /v1/regressions/[id]",
+          "GET /v1/runs",
+          "GET /v1/runs/[id]",
+          "GET /v1/targets/import",
+          "GET /v1/templates"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [
+          "zod dependency detected"
+        ],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-tabs",
+          "@tailwindcss/postcss",
+          "@tanstack/react-query",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vitejs/plugin-react",
+          "@vitest/coverage-v8",
+          "@xyflow/react",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "react-hook-form",
+          "recharts",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tsx",
+          "typescript",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": [
+          "API_KEY_SALT",
+          "BLOB_READ_WRITE_TOKEN",
+          "CLAWS_SDK_ENDPOINT",
+          "COSMIC_NETWORK_ID",
+          "DATABASE_URL",
+          "DATABASE_URL_UNPOOLED",
+          "EDGE_CONFIG",
+          "NEON_DATABASE_URL",
+          "NEXT_PUBLIC_",
+          "NEXT_PUBLIC_APP_NAME",
+          "NEXT_PUBLIC_APP_URL",
+          "NEXT_PUBLIC_DEFAULT_LOCALE",
+          "NEXT_PUBLIC_SUPPORTED_LOCALES",
+          "NODE_ENV",
+          "PLATPHORM_AGENTUI_URL",
+          "PLATPHORM_ALLOWED_ORIGINS",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_BROWSEROPS_URL",
+          "PLATPHORM_CLAWS_URL",
+          "PLATPHORM_DOCS_URL",
+          "PLATPHORM_EVALS_LOCAL_STORE",
+          "PLATPHORM_MCP_URL",
+          "PLATPHORM_NETWORK_GRAPH_URL",
+          "PLATPHORM_SANDBOX_URL",
+          "PLATPHORM_SPEC_URL",
+          "PLATPHORM_TRACE_URL",
+          "PLATPHORM_WEBHOOKLAB_URL",
+          "SERVICE_STATUS",
+          "SERVICE_VISIBILITY",
+          "TRACE_SDK_ENDPOINT",
+          "VERCEL_DEPLOYMENT_ID",
+          "VERCEL_ENV",
+          "VERCEL_GIT_COMMIT_REF",
+          "VERCEL_GIT_COMMIT_SHA"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/v1/compare/route.ts",
+            "app/api/v1/regressions/[id]/route.ts",
+            "app/feed.xml/route.ts",
+            "app/regressions/[id]/page.tsx",
+            "app/runs/[id]/compare/page.tsx",
+            "app/runs/[id]/page.tsx",
+            "app/runs/[id]/trace/page.tsx",
+            "app/targets/[service]/[capability]/page.tsx",
+            "lib/datasets/dataset-service.ts",
+            "lib/evals/run-orchestrator.ts",
+            "lib/evals/suite-service.ts",
+            "lib/gates/release-gate-service.ts",
+            "lib/graders/grader-service.ts",
+            "lib/registry/service-probing.ts",
+            "lib/registry/sync.ts",
+            "lib/scorecards/scorecard-service.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/api/auth.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".github/workflows/ci.yml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        ".github/workflows/ci.yml",
+        "app/api/docs/route.ts",
+        "app/api/health/route.ts",
+        "app/api/v1/publish/route.ts",
+        "app/docs/page.tsx",
+        "app/settings/page.tsx",
+        "BUILD_FIX_SUMMARY.md",
+        "BUILD_INDEX.md",
+        "COMMIT_MESSAGE.md",
+        "docs/API_SURFACE.md",
+        "docs/ARCHITECTURE.md",
+        "docs/BUILD_CHECKLIST.md",
+        "docs/BUILD_GUIDE.md",
+        "docs/DATA_MODEL.md",
+        "docs/IMPLEMENTATION_CHECKLIST.md",
+        "docs/IMPLEMENTATION_PLAN.md",
+        "docs/INTEGRATIONS.md",
+        "docs/ROADMAP.md",
+        "docs/TROUBLESHOOTING.md",
+        "lib/config/env.ts",
+        "lib/integrations/docs-client.ts",
+        "lib/neon/client.ts",
+        "lib/standards/network-manifest.ts",
+        "package.json",
+        "postcss.config.mjs",
+        "tests/integration/no-404-ui.test.tsx",
+        "tests/integration/regressions-ui-data-flow.test.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [
+          "health"
+        ],
+        "external_data_flows": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/dashboard/page.tsx",
+        "components/evals/suite-overview.tsx",
+        "components/status/honest-status-page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/.well-known/trust.json/route.ts",
+        "app/api/v1/targets/import/route.ts",
+        "package-lock.json",
+        "package.json",
+        "tsconfig.json",
+        "vercel.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "lib/neon/schema.ts",
+        "package.json",
+        "test-db-schema.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-tabs",
+          "@tailwindcss/postcss",
+          "@tanstack/react-query",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vitejs/plugin-react",
+          "@vitest/coverage-v8",
+          "@xyflow/react",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "react-hook-form",
+          "recharts",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tsx",
+          "typescript",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        ".github/workflows/ci.yml",
+        "vercel.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "AWS",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        ".env.example"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "token",
+          "user file contents"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "react-hook-form"
+        ],
+        "internal": [],
+        "external_services": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.aws",
+      "name": "AWS Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a AWS integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/api/health/route.ts",
+        "BUILD_INDEX.md",
+        "docs/IMPLEMENTATION_PLAN.md",
+        "lib/config/env.ts",
+        "lib/cosmic/claws-client.ts",
+        "lib/integrations/claws-client.ts",
+        "lib/registry/claws-sync.ts",
+        "lib/standards/network-manifest.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "AWS configuration or SDK inputs"
+        ],
+        "outputs": [
+          "AWS API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "AWS configuration or SDK inputs"
+        ],
+        "writes": [
+          "AWS API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "AWS"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS"
+        ],
+        "env_vars": [
+          "CLAWS_SDK_ENDPOINT",
+          "PLATPHORM_CLAWS_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.neon",
+      "name": "Neon Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Neon integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/neon/client.ts",
+        "package.json",
+        "tests/integration/no-404-ui.test.tsx",
+        "tests/integration/regressions-ui-data-flow.test.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Neon configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Neon API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Neon configuration or SDK inputs"
+        ],
+        "writes": [
+          "Neon API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "Neon"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@neondatabase/serverless"
+        ],
+        "internal": [],
+        "external_services": [
+          "Neon"
+        ],
+        "env_vars": [
+          "NEON_DATABASE_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.platphorm",
+      "name": "PlatPhorm Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a PlatPhorm integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/.well-known/trust.json/route.ts",
+        "app/api/health/route.ts",
+        "app/settings/page.tsx",
+        "app/usage/page.tsx",
+        "BUILD_INDEX.md",
+        "components/registry/registry-sync-button.tsx",
+        "docs/IMPLEMENTATION_PLAN.md",
+        "lib/api/auth.ts",
+        "lib/config/build-validation.ts",
+        "lib/config/env.ts",
+        "lib/config/policy.ts",
+        "lib/discovery/openapi.ts",
+        "lib/integrations/agentui-client.ts",
+        "lib/integrations/browserops-client.ts",
+        "lib/integrations/claws-client.ts",
+        "lib/integrations/docs-client.ts",
+        "lib/integrations/mcp-hub-client.ts",
+        "lib/integrations/network-graph-client.ts",
+        "lib/integrations/sandbox-client.ts",
+        "lib/integrations/spec-client.ts",
+        "lib/integrations/trace-client.ts",
+        "lib/integrations/webhooklab-client.ts",
+        "lib/local/persistent-store.ts",
+        "lib/registry/claws-sync.ts",
+        "lib/registry/mcp-sync.ts",
+        "lib/standards/llms.ts",
+        "lib/standards/network-manifest.ts",
+        "package.json",
+        "tests/policy.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "outputs": [
+          "PlatPhorm API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "writes": [
+          "PlatPhorm API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": [
+          "PLATPHORM_AGENTUI_URL",
+          "PLATPHORM_ALLOWED_ORIGINS",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_BROWSEROPS_URL",
+          "PLATPHORM_CLAWS_URL",
+          "PLATPHORM_DOCS_URL",
+          "PLATPHORM_EVALS_LOCAL_STORE",
+          "PLATPHORM_MCP_URL",
+          "PLATPHORM_NETWORK_GRAPH_URL",
+          "PLATPHORM_SANDBOX_URL",
+          "PLATPHORM_SPEC_URL",
+          "PLATPHORM_TRACE_URL",
+          "PLATPHORM_WEBHOOKLAB_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        ".github/workflows/ci.yml",
+        "app/settings/page.tsx",
+        "BUILD_FIX_SUMMARY.md",
+        "BUILD_INDEX.md",
+        "COMMIT_MESSAGE.md",
+        "docs/BUILD_CHECKLIST.md",
+        "docs/BUILD_GUIDE.md",
+        "docs/IMPLEMENTATION_PLAN.md",
+        "lib/config/env.ts",
+        "lib/neon/client.ts",
+        "package.json",
+        "tests/integration/no-404-ui.test.tsx",
+        "tests/integration/regressions-ui-data-flow.test.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/api/correlation.ts",
+        "lib/config/build-validation.ts",
+        "lib/config/service.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "tests/api-correlation.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "fingerprint",
+          "health",
+          "location",
+          "password",
+          "pii",
+          "secret-like environment variables",
+          "token",
+          "x-vercel-ja4-digest"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/analytics"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": [
+          "VERCEL_DEPLOYMENT_ID",
+          "VERCEL_ENV",
+          "VERCEL_GIT_COMMIT_REF",
+          "VERCEL_GIT_COMMIT_SHA"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "mcp.tool-server",
+      "name": "MCP Tool Server",
+      "type": "mcp",
+      "summary": "Repository contains MCP-related routes, manifests, files, or dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/mcp/route.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /mcp"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "outputs": [
+          "JSON-RPC responses or MCP metadata"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "writes": [
+          "JSON-RPC responses or MCP metadata"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/api/health/route.ts",
+        "app/api/v1/health/route.ts",
+        "app/changelog/page.tsx",
+        "app/methodology/page.tsx",
+        "app/runs/[id]/trace/page.tsx",
+        "lib/cosmic/trace-client.ts",
+        "lib/integrations/trace-client.ts",
+        "lib/standards/network-manifest.ts",
+        "lib/utils/logger.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "AWS",
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/v1/compare/route.ts",
+            "app/api/v1/regressions/[id]/route.ts",
+            "app/feed.xml/route.ts",
+            "app/regressions/[id]/page.tsx",
+            "app/runs/[id]/compare/page.tsx",
+            "app/runs/[id]/page.tsx",
+            "app/runs/[id]/trace/page.tsx",
+            "app/targets/[service]/[capability]/page.tsx",
+            "lib/datasets/dataset-service.ts",
+            "lib/evals/run-orchestrator.ts",
+            "lib/evals/suite-service.ts",
+            "lib/gates/release-gate-service.ts",
+            "lib/graders/grader-service.ts",
+            "lib/registry/service-probing.ts",
+            "lib/registry/sync.ts",
+            "lib/scorecards/scorecard-service.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/(public)/page.tsx",
+        "app/[...slug]/page.tsx",
+        "app/approvals/page.tsx",
+        "app/benchmarks/page.tsx",
+        "app/builder/datasets/[id]/page.tsx",
+        "app/builder/datasets/new/page.tsx",
+        "app/builder/evals/[id]/page.tsx",
+        "app/builder/evals/new/page.tsx",
+        "app/builder/gates/[id]/page.tsx",
+        "app/builder/gates/new/page.tsx",
+        "app/builder/graders/[id]/page.tsx",
+        "app/builder/graders/new/page.tsx",
+        "app/changelog/page.tsx",
+        "app/dashboard/page.tsx",
+        "app/datasets/page.tsx",
+        "app/docs/page.tsx",
+        "app/evals/page.tsx",
+        "app/features/page.tsx",
+        "app/gates/page.tsx",
+        "app/graders/page.tsx",
+        "app/methodology/page.tsx",
+        "app/registry/page.tsx",
+        "app/regressions/[id]/page.tsx",
+        "app/regressions/page.tsx",
+        "app/runs/[id]/browser/page.tsx",
+        "app/runs/[id]/compare/page.tsx",
+        "app/runs/[id]/page.tsx",
+        "app/runs/[id]/trace/page.tsx",
+        "app/runs/[id]/webhook/page.tsx",
+        "app/runs/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /(public)",
+          "GET /[...slug]",
+          "GET /approvals",
+          "GET /benchmarks",
+          "GET /builder/datasets/[id]",
+          "GET /builder/datasets/new",
+          "GET /builder/evals/[id]",
+          "GET /builder/evals/new",
+          "GET /builder/gates/[id]",
+          "GET /builder/gates/new",
+          "GET /builder/graders/[id]",
+          "GET /builder/graders/new",
+          "GET /changelog",
+          "GET /dashboard",
+          "GET /datasets",
+          "GET /docs",
+          "GET /evals",
+          "GET /features",
+          "GET /gates",
+          "GET /graders",
+          "GET /methodology",
+          "GET /registry",
+          "GET /regressions",
+          "GET /regressions/[id]",
+          "GET /runs",
+          "GET /runs/[id]",
+          "GET /runs/[id]/browser",
+          "GET /runs/[id]/compare",
+          "GET /runs/[id]/trace",
+          "GET /runs/[id]/webhook",
+          "GET /settings",
+          "GET /targets/[service]/[capability]",
+          "GET /templates",
+          "GET /usage"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-tabs",
+          "@tailwindcss/postcss",
+          "@tanstack/react-query",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vitejs/plugin-react",
+          "@vitest/coverage-v8",
+          "@xyflow/react",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "react-hook-form",
+          "recharts",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tsx",
+          "typescript",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/v1/compare/route.ts",
+            "app/api/v1/regressions/[id]/route.ts",
+            "app/feed.xml/route.ts",
+            "app/regressions/[id]/page.tsx",
+            "app/runs/[id]/compare/page.tsx",
+            "app/runs/[id]/page.tsx",
+            "app/runs/[id]/trace/page.tsx",
+            "app/targets/[service]/[capability]/page.tsx",
+            "lib/datasets/dataset-service.ts",
+            "lib/evals/run-orchestrator.ts",
+            "lib/evals/suite-service.ts",
+            "lib/gates/release-gate-service.ts",
+            "lib/graders/grader-service.ts",
+            "lib/registry/service-probing.ts",
+            "lib/registry/sync.ts",
+            "lib/scorecards/scorecard-service.ts"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "search.query-interface",
+      "name": "Search Query Interface",
+      "type": "search",
+      "summary": "Source evidence indicates search UI, indexing, or query behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "indexed content",
+          "query input"
+        ],
+        "outputs": [
+          "search results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "indexed content",
+          "query input"
+        ],
+        "writes": [
+          "search results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Neon",
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/api/health/route.ts",
+        "docs/TROUBLESHOOTING.md",
+        "lib/api/auth.ts",
+        "lib/api/correlation.ts",
+        "lib/config/build-validation.ts",
+        "lib/config/policy.ts",
+        "lib/config/service.ts",
+        "lib/cosmic/claws-client.ts",
+        "lib/cosmic/cuid.ts",
+        "lib/cosmic/key-generator.ts",
+        "lib/cosmic/trace-client.ts",
+        "lib/integrations/agentui-client.ts",
+        "lib/integrations/browserops-client.ts",
+        "lib/integrations/claws-client.ts",
+        "lib/integrations/docs-client.ts",
+        "lib/integrations/mcp-hub-client.ts",
+        "lib/integrations/network-graph-client.ts",
+        "lib/integrations/sandbox-client.ts",
+        "lib/integrations/spec-client.ts",
+        "lib/integrations/trace-client.ts",
+        "lib/integrations/webhooklab-client.ts",
+        "lib/local/persistent-store.ts",
+        "lib/neon/client.ts",
+        "lib/registry/claws-sync.ts",
+        "lib/registry/mcp-sync.ts",
+        "lib/standards/network-manifest.ts",
+        "lib/utils/logger.ts",
+        "scripts/seed-default-suites.ts",
+        "tests/api-correlation.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "API_KEY_SALT",
+          "BLOB_READ_WRITE_TOKEN",
+          "DATABASE_URL",
+          "DATABASE_URL_UNPOOLED",
+          "NEON_DATABASE_URL",
+          "PLATPHORM_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "API_KEY_SALT",
+          "BLOB_READ_WRITE_TOKEN",
+          "CLAWS_SDK_ENDPOINT",
+          "COSMIC_NETWORK_ID",
+          "DATABASE_URL",
+          "DATABASE_URL_UNPOOLED",
+          "EDGE_CONFIG",
+          "NEON_DATABASE_URL",
+          "NEXT_PUBLIC_",
+          "NEXT_PUBLIC_APP_NAME",
+          "NEXT_PUBLIC_APP_URL",
+          "NEXT_PUBLIC_DEFAULT_LOCALE",
+          "NEXT_PUBLIC_SUPPORTED_LOCALES",
+          "NODE_ENV",
+          "PLATPHORM_AGENTUI_URL",
+          "PLATPHORM_ALLOWED_ORIGINS",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_BROWSEROPS_URL",
+          "PLATPHORM_CLAWS_URL",
+          "PLATPHORM_DOCS_URL",
+          "PLATPHORM_EVALS_LOCAL_STORE",
+          "PLATPHORM_MCP_URL",
+          "PLATPHORM_NETWORK_GRAPH_URL",
+          "PLATPHORM_SANDBOX_URL",
+          "PLATPHORM_SPEC_URL",
+          "PLATPHORM_TRACE_URL",
+          "PLATPHORM_WEBHOOKLAB_URL",
+          "SERVICE_STATUS",
+          "SERVICE_VISIBILITY",
+          "TRACE_SDK_ENDPOINT",
+          "VERCEL_DEPLOYMENT_ID",
+          "VERCEL_ENV",
+          "VERCEL_GIT_COMMIT_REF",
+          "VERCEL_GIT_COMMIT_SHA"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "lib/integrations/spec-client.ts",
+        "lib/tests/registry/sync.test.ts",
+        "test-db-schema.ts",
+        "test-neon.ts",
+        "test-neon2.ts",
+        "test-neon3.ts",
+        "tests/api-auth.test.ts",
+        "tests/api-correlation.test.ts",
+        "tests/claws-client.test.ts",
+        "tests/cn.test.ts",
+        "tests/grader-service.test.ts",
+        "tests/graders-page.test.tsx",
+        "tests/integration/discovery.test.ts",
+        "tests/integration/health.test.ts",
+        "tests/integration/mcp.test.ts",
+        "tests/integration/no-404-ui.test.tsx",
+        "tests/integration/openapi.test.ts",
+        "tests/integration/regressions-ui-data-flow.test.tsx",
+        "tests/integration/service-probing.test.ts",
+        "tests/manifest.test.ts",
+        "tests/mcp-hub-client.test.ts",
+        "tests/mcp-route.test.ts",
+        "tests/mcp-tools.test.ts",
+        "tests/network-coverage-graph.test.ts",
+        "tests/network-graph-client.test.ts",
+        "tests/policy.test.ts",
+        "tests/registry-services.test.ts",
+        "tests/registry/sync.test.ts",
+        "tests/run-orchestrator.test.ts",
+        "tests/service-config.test.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@vitest/coverage-v8",
+          "vitest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/evals/suite-overview.tsx",
+        "components/layout/app-shell.tsx",
+        "components/registry/registry-sync-button.tsx",
+        "components/registry/service-grid.tsx",
+        "components/status/honest-status-page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "app-shell",
+          "honest-status-page",
+          "registry-sync-button",
+          "service-grid",
+          "suite-overview"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "pii",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-tabs",
+          "@tailwindcss/postcss",
+          "@tanstack/react-query",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vitejs/plugin-react",
+          "@vitest/coverage-v8",
+          "@xyflow/react",
+          "botid",
+          "class-variance-authority",
+          "clsx",
+          "drizzle-kit",
+          "drizzle-orm",
+          "eslint",
+          "eslint-config-next",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "postcss",
+          "react",
+          "react-dom",
+          "react-hook-form",
+          "recharts",
+          "swr",
+          "tailwind-merge",
+          "tailwindcss",
+          "tsx",
+          "typescript",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "webhooks.event-receiver",
+      "name": "Webhook Event Receiver",
+      "type": "webhooks",
+      "summary": "Source evidence indicates webhook receiving, event delivery, or signature validation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        ".env.example",
+        "app/api/health/route.ts",
+        "app/runs/[id]/webhook/page.tsx",
+        "lib/integrations/webhooklab-client.ts",
+        "lib/standards/network-manifest.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "outputs": [
+          "event handling responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "writes": [
+          "event handling responses"
+        ],
+        "sensitive_data": [
+          "health",
+          "webhook secrets"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [
+          "drizzle"
+        ],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": [
+          "PLATPHORM_WEBHOOKLAB_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "high",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            ".env.example",
+            "lib/api/auth.ts",
+            "lib/cosmic/key-generator.ts",
+            "lib/neon/client.ts",
+            "scripts/seed-default-suites.ts",
+            "tests/integration/no-404-ui.test.tsx",
+            "tests/integration/regressions-ui-data-flow.test.tsx"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "lib/integrations/spec-client.ts",
+          "lib/tests/registry/sync.test.ts",
+          "test-db-schema.ts",
+          "test-neon.ts",
+          "test-neon2.ts",
+          "test-neon3.ts",
+          "tests/api-auth.test.ts",
+          "tests/api-correlation.test.ts",
+          "tests/claws-client.test.ts",
+          "tests/cn.test.ts",
+          "tests/grader-service.test.ts",
+          "tests/graders-page.test.tsx",
+          "tests/integration/discovery.test.ts",
+          "tests/integration/health.test.ts",
+          "tests/integration/mcp.test.ts",
+          "tests/integration/no-404-ui.test.tsx",
+          "tests/integration/openapi.test.ts",
+          "tests/integration/regressions-ui-data-flow.test.tsx",
+          "tests/integration/service-probing.test.ts",
+          "tests/manifest.test.ts",
+          "tests/mcp-hub-client.test.ts",
+          "tests/mcp-route.test.ts",
+          "tests/mcp-tools.test.ts",
+          "tests/network-coverage-graph.test.ts",
+          "tests/network-graph-client.test.ts",
+          "tests/policy.test.ts",
+          "tests/registry-services.test.ts",
+          "tests/registry/sync.test.ts",
+          "tests/run-orchestrator.test.ts",
+          "tests/service-config.test.ts"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md",
+          "docs/API_SURFACE.md",
+          "docs/ARCHITECTURE.md",
+          "docs/BUILD_CHECKLIST.md",
+          "docs/BUILD_GUIDE.md",
+          "docs/DATA_MODEL.md",
+          "docs/IMPLEMENTATION_CHECKLIST.md",
+          "docs/IMPLEMENTATION_PLAN.md",
+          "docs/INTEGRATIONS.md",
+          "docs/ROADMAP.md",
+          "docs/TROUBLESHOOTING.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "app/api/v1/compare/route.ts",
+        "app/api/v1/regressions/[id]/route.ts",
+        "app/feed.xml/route.ts",
+        "app/regressions/[id]/page.tsx",
+        "app/runs/[id]/compare/page.tsx",
+        "app/runs/[id]/page.tsx",
+        "app/runs/[id]/trace/page.tsx",
+        "app/targets/[service]/[capability]/page.tsx",
+        "lib/datasets/dataset-service.ts",
+        "lib/evals/run-orchestrator.ts",
+        "lib/evals/suite-service.ts",
+        "lib/gates/release-gate-service.ts",
+        "lib/graders/grader-service.ts",
+        "lib/registry/service-probing.ts",
+        "lib/registry/sync.ts",
+        "lib/scorecards/scorecard-service.ts"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        ".env.example",
+        "lib/api/auth.ts",
+        "lib/cosmic/key-generator.ts",
+        "lib/neon/client.ts",
+        "scripts/seed-default-suites.ts",
+        "tests/integration/no-404-ui.test.tsx",
+        "tests/integration/regressions-ui-data-flow.test.tsx"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "LLMs context files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:14.538Z"
+  }
+}

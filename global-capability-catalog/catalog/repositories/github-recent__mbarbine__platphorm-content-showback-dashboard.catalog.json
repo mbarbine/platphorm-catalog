@@ -1,0 +1,4584 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-content-showback-dashboard",
+    "name": "mbarbine__platphorm-content-showback-dashboard",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-content-showback-dashboard",
+    "remote_url": "git@github.com:mbarbine/platphorm-content-showback-dashboard.git",
+    "description": "ECHO is a comprehensive content monitoring and analytics platform that helps creators, podcasters, and musicians track their content across streaming platforms, detect policy violations, monitor unauthorized usage, and recover lost revenue. Built with Next.js 15, NeonDB, and Stripe.",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "JSON",
+      "YAML",
+      "Markdown",
+      "SQL",
+      "CSS",
+      "XML",
+      "JavaScript"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Vitest"
+    ],
+    "package_manager": "pnpm",
+    "databases": [],
+    "deployment": [
+      "vercel"
+    ],
+    "maturity": "internal",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__platphorm-content-showback-dashboard.scan.json",
+    "analyzed_at": "2026-05-16T16:44:13.658Z"
+  },
+  "capabilities": [
+    {
+      "id": "accessibility.ui-a11y",
+      "name": "Accessibility UI Support",
+      "type": "accessibility",
+      "summary": "Source evidence indicates ARIA, accessibility, keyboard, or screen-reader oriented UI behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/keyboard-shortcuts.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "UI interaction state"
+        ],
+        "outputs": [
+          "accessible UI attributes or controls"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "UI interaction state"
+        ],
+        "writes": [
+          "accessible UI attributes or controls"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ai-confidence-indicator.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "card",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "ai"
+        ],
+        "internal": [],
+        "external_services": [
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/analytics/page.tsx",
+        "components/analytics-content.tsx",
+        "components/detailed-analytics.tsx",
+        "components/device-analytics-chart.tsx",
+        "components/devsecops-metrics.tsx",
+        "components/export-reporting-system.tsx",
+        "components/immediate-insights.tsx",
+        "components/live-analytics.tsx",
+        "components/metadata-aggregation.tsx",
+        "components/metrics-overview.tsx",
+        "components/miracle-insights-engine.tsx",
+        "components/miracle-insights-panel.tsx",
+        "components/platform-efficiency-score.tsx",
+        "components/platform-insights.tsx",
+        "components/smart-insights-panel.tsx",
+        "lib/analytics-tracker.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/api/docs/route.ts",
+        "app/api/errors/route.ts",
+        "app/api/health/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/notifications/route.ts",
+        "app/api/register-mcp/route.ts",
+        "app/api/register-network/route.ts",
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "app/api/signup/route.ts",
+        "app/api/track-event/route.ts",
+        "app/api/url/process/route.ts",
+        "app/api/url/status/[processingId]/route.ts",
+        "app/api/user/api-keys/route.ts",
+        "app/api/user/monitored-urls/route.ts",
+        "app/api/user/profile/route.ts",
+        "app/api/user/settings/route.ts",
+        "app/api/v1/artist/[artistId]/route.ts",
+        "app/api/v1/content/analyze/route.ts",
+        "app/api/v1/revenue/summary/route.ts",
+        "app/api/waitlist/route.ts",
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/stripe/route.ts",
+        "app/api/webhooks/subscribe/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "DELETE|GET|PATCH /notifications",
+          "DELETE|GET|PATCH|POST /user/monitored-urls",
+          "DELETE|GET|POST /user/api-keys",
+          "GET /docs",
+          "GET /health",
+          "GET /register-network",
+          "GET /url/status/[processingId]",
+          "GET /v1/artist/[artistId]",
+          "GET /v1/content/analyze",
+          "GET /v1/revenue/summary",
+          "GET|PATCH /user/profile",
+          "GET|POST /mcp",
+          "GET|POST /session/data",
+          "GET|PUT /user/settings",
+          "POST /errors",
+          "POST /register-mcp",
+          "POST /session/migrate",
+          "POST /signup",
+          "POST /track-event",
+          "POST /url/process",
+          "POST /waitlist",
+          "POST /webhooks/n8n",
+          "POST /webhooks/stripe",
+          "POST /webhooks/subscribe"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [
+          "zod dependency detected"
+        ],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@emotion/is-prop-valid",
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@stripe/react-stripe-js",
+          "@stripe/stripe-js",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/react",
+          "@types/d3",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "@vitejs/plugin-react",
+          "ai",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "d3",
+          "date-fns",
+          "embla-carousel-react",
+          "framer-motion",
+          "geist",
+          "input-otp",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "server-only",
+          "sonner",
+          "stripe",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vitest",
+          "web-vitals",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": [
+          "DATABASE_URL",
+          "ECHO_API_KEY",
+          "JA4DB_ENV",
+          "JA4DB_INGEST_TOKEN",
+          "JA4DB_INGEST_URL",
+          "JA4DB_SENSOR_NAME",
+          "N8N_WEBHOOK_SECRET",
+          "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+          "NODE_ENV",
+          "STRIPE_SECRET_KEY",
+          "STRIPE_WEBHOOK_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/notifications/route.ts",
+            "app/layout.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "components/auth-dialog.tsx",
+        "components/session-recovery-overlay.tsx",
+        "lib/auth.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "card",
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/jobs/page.tsx",
+        "app/workflows/page.tsx",
+        "components/workflow-status.tsx",
+        "components/workflows-content.tsx",
+        "components/workflows-overview.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/actions/stripe.ts",
+        "app/api-docs/page.tsx",
+        "app/api/docs/route.ts",
+        "app/api/errors/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/notifications/route.ts",
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "app/api/signup/route.ts",
+        "app/api/track-event/route.ts",
+        "app/api/v1/content/analyze/route.ts",
+        "components/analytics-content.tsx",
+        "components/api-docs-content.tsx",
+        "components/artist-detail-content.tsx",
+        "components/artist-tools-content.tsx",
+        "components/content-type-breakdown.tsx",
+        "components/home-content.tsx",
+        "components/pricing-content.tsx",
+        "components/stripe-checkout.tsx",
+        "components/workflows-content.tsx",
+        "package.json",
+        "postcss.config.mjs"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/notifications/route.ts",
+            "app/layout.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/url/status/[processingId]/route.ts",
+        "components/accountability-dashboard.tsx",
+        "components/bot-detection-dashboard.tsx",
+        "components/dashboard-header.tsx",
+        "components/devsecops-metrics.tsx",
+        "components/metrics-overview.tsx",
+        "components/showback-dashboard.tsx",
+        "components/signed-in-dashboard.tsx",
+        "components/workflow-status.tsx",
+        "components/workflows-overview.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/export-menu.tsx",
+        "components/export-reporting-system.tsx",
+        "package-lock.json",
+        "package.json",
+        "tsconfig.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "discovery.llms-files",
+      "name": "LLMs Discovery Files",
+      "type": "discovery",
+      "summary": "Repository provides local LLMs discovery/context files that can guide machine-readable understanding.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/llms-full.txt",
+        "public/llms-index.txt",
+        "public/llms.txt"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "repository-provided LLMs context"
+        ],
+        "outputs": [
+          "machine-readable discovery context"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "repository-provided LLMs context"
+        ],
+        "writes": [
+          "machine-readable discovery context"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Use as context for interpretation; verify behavioral claims against source files."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Use as context for interpretation; verify behavioral claims against source files."
+      ]
+    },
+    {
+      "id": "ecommerce.product-catalog",
+      "name": "Ecommerce Product Catalog",
+      "type": "ecommerce",
+      "summary": "Source evidence indicates products, cart, checkout, orders, Shopify, or commerce flows.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/stripe-checkout.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "product, cart, or order data"
+        ],
+        "outputs": [
+          "commerce UI or checkout/order responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "product, cart, or order data"
+        ],
+        "writes": [
+          "commerce UI or checkout/order responses"
+        ],
+        "sensitive_data": [
+          "payment data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Stripe"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Stripe"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "file.upload-handling",
+      "name": "File Upload Handling",
+      "type": "file-upload",
+      "summary": "Source evidence indicates upload, attachment, media, or multipart file handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/immediate-insights.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "uploaded files or media metadata"
+        ],
+        "outputs": [
+          "stored files or upload responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "uploaded files or media metadata"
+        ],
+        "writes": [
+          "stored files or upload responses"
+        ],
+        "sensitive_data": [
+          "user file contents"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "finance.financial-workflow",
+      "name": "Financial Workflow",
+      "type": "finance",
+      "summary": "Source evidence indicates finance, invoices, billing, payments, revenue, or market data behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/v1/revenue/summary/route.ts",
+        "components/d3-revenue-chart.tsx",
+        "components/revenue-flow-sankey.tsx",
+        "components/revenue-impact.tsx",
+        "components/revenue-opportunity-matrix.tsx",
+        "components/revenue-prediction-engine.tsx",
+        "components/revenue-recovery-chart.tsx",
+        "components/revenue-recovery.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "financial or billing data"
+        ],
+        "outputs": [
+          "financial reports or payment workflow outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "financial or billing data"
+        ],
+        "writes": [
+          "financial reports or payment workflow outputs"
+        ],
+        "sensitive_data": [
+          "financial data",
+          "payment data"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/d3-platform-chart.tsx",
+        "components/platform-efficiency-score.tsx",
+        "components/platform-insights.tsx",
+        "components/platform-network-3d.tsx",
+        "components/platform-targets.tsx",
+        "lib/performance-monitor.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "card",
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "react-hook-form"
+        ],
+        "internal": [],
+        "external_services": [
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "gameplay.browser-game",
+      "name": "Browser Gameplay",
+      "type": "gameplay",
+      "summary": "Source evidence indicates game, canvas, realtime, player, or gameplay implementation.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/platform-efficiency-score.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "player input or game state"
+        ],
+        "outputs": [
+          "rendered gameplay or score state"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "player input or game state"
+        ],
+        "writes": [
+          "rendered gameplay or score state"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/actions/stripe.ts",
+        "app/api/errors/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/notifications/route.ts",
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "app/api/signup/route.ts",
+        "app/api/track-event/route.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/notifications/route.ts",
+            "app/layout.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "__tests__/error-tracker.test.ts",
+        "app/layout.tsx",
+        "lib/analytics-tracker.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/analytics",
+          "@vercel/speed-insights"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/notifications/route.ts",
+            "app/layout.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "mcp.tool-server",
+      "name": "MCP Tool Server",
+      "type": "mcp",
+      "summary": "Repository contains MCP-related routes, manifests, files, or dependencies.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/mcp/route.ts",
+        "app/api/register-mcp/route.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET|POST /mcp",
+          "POST /register-mcp"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "outputs": [
+          "JSON-RPC responses or MCP metadata"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "writes": [
+          "JSON-RPC responses or MCP metadata"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/health/route.ts",
+        "app/api/user/monitored-urls/route.ts",
+        "components/auth-dialog.tsx",
+        "components/fingerprinting-technology.tsx",
+        "components/radial-monitoring-chart.tsx",
+        "components/technology-showcase.tsx",
+        "components/ui/dialog.tsx",
+        "lib/performance-monitor.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "card",
+          "fingerprint",
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "payments.stripe",
+      "name": "Stripe Integration",
+      "type": "payments",
+      "summary": "Repository has source-backed indicators for a Stripe integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/actions/stripe.ts",
+        "app/api/webhooks/stripe/route.ts",
+        "ARCHITECTURE.md",
+        "components/email-capture.tsx",
+        "components/pricing-modal.tsx",
+        "components/stripe-checkout.tsx",
+        "lib/stripe.ts",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "README.md"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Stripe configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Stripe API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Stripe configuration or SDK inputs"
+        ],
+        "writes": [
+          "Stripe API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "financial",
+          "fingerprint",
+          "health",
+          "ip address",
+          "location",
+          "oauth",
+          "password",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Stripe"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@stripe/react-stripe-js",
+          "@stripe/stripe-js",
+          "stripe"
+        ],
+        "internal": [],
+        "external_services": [
+          "Stripe"
+        ],
+        "env_vars": [
+          "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+          "STRIPE_SECRET_KEY",
+          "STRIPE_WEBHOOK_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/analytics/page.tsx",
+        "app/api-docs/page.tsx",
+        "app/artist-tools/page.tsx",
+        "app/artist/[slug]/page.tsx",
+        "app/creator-demo/page.tsx",
+        "app/faq/page.tsx",
+        "app/jobs/page.tsx",
+        "app/onboarding/page.tsx",
+        "app/pricing/page.tsx",
+        "app/workflows/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /analytics",
+          "GET /api-docs",
+          "GET /artist-tools",
+          "GET /artist/[slug]",
+          "GET /creator-demo",
+          "GET /faq",
+          "GET /jobs",
+          "GET /onboarding",
+          "GET /pricing",
+          "GET /workflows"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@emotion/is-prop-valid",
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@stripe/react-stripe-js",
+          "@stripe/stripe-js",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/react",
+          "@types/d3",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "@vitejs/plugin-react",
+          "ai",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "d3",
+          "date-fns",
+          "embla-carousel-react",
+          "framer-motion",
+          "geist",
+          "input-otp",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "server-only",
+          "sonner",
+          "stripe",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vitest",
+          "web-vitals",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/actions/stripe.ts",
+        "app/api/errors/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/notifications/route.ts",
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "app/api/signup/route.ts",
+        "app/api/track-event/route.ts",
+        "app/api/url/process/route.ts",
+        "app/api/url/status/[processingId]/route.ts",
+        "app/api/user/api-keys/route.ts",
+        "app/api/user/monitored-urls/route.ts",
+        "app/api/user/profile/route.ts",
+        "app/api/user/settings/route.ts",
+        "app/api/waitlist/route.ts",
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/stripe/route.ts",
+        "app/layout.tsx",
+        "components/api-integration-guide.tsx",
+        "components/stripe-checkout.tsx",
+        "lib/auth.ts",
+        "lib/error-tracker.ts",
+        "lib/performance-monitor.ts",
+        "lib/stripe.ts",
+        "middleware.ts",
+        "scripts/seed_data.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "DATABASE_URL",
+          "ECHO_API_KEY",
+          "JA4DB_INGEST_TOKEN",
+          "N8N_WEBHOOK_SECRET",
+          "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+          "STRIPE_SECRET_KEY",
+          "STRIPE_WEBHOOK_SECRET"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "DATABASE_URL",
+          "ECHO_API_KEY",
+          "JA4DB_ENV",
+          "JA4DB_INGEST_TOKEN",
+          "JA4DB_INGEST_URL",
+          "JA4DB_SENSOR_NAME",
+          "N8N_WEBHOOK_SECRET",
+          "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+          "NODE_ENV",
+          "STRIPE_SECRET_KEY",
+          "STRIPE_WEBHOOK_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            "app/api/notifications/route.ts",
+            "app/layout.tsx"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "seo.discovery-surface",
+      "name": "SEO and Discovery Surface",
+      "type": "seo",
+      "summary": "Repository includes crawlable discovery files such as sitemap, feeds, robots, or web manifest files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "public/robots.txt",
+        "public/sitemap.xml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "public content metadata"
+        ],
+        "outputs": [
+          "crawlable discovery documents"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "public content metadata"
+        ],
+        "writes": [
+          "crawlable discovery documents"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "low",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ui/label.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "card",
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Stripe",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Stripe",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "__tests__/api-docs.test.ts",
+        "__tests__/api-errors.test.ts",
+        "__tests__/api-notifications.test.ts",
+        "__tests__/api-register-mcp.test.ts",
+        "__tests__/api-session-migrate.test.ts",
+        "__tests__/api-session.test.ts",
+        "__tests__/api-signup.test.ts",
+        "__tests__/api-track-event.test.ts",
+        "__tests__/api-url.test.ts",
+        "__tests__/api-user.test.ts",
+        "__tests__/api-v1.test.ts",
+        "__tests__/api-waitlist.test.ts",
+        "__tests__/api-webhooks.test.ts",
+        "__tests__/api/health.test.ts",
+        "__tests__/error-tracker.test.ts",
+        "__tests__/faq/page.test.tsx",
+        "__tests__/mcp.test.ts",
+        "__tests__/middleware.test.ts",
+        "__tests__/mock-data.test.ts",
+        "__tests__/notification-service.test.ts",
+        "__tests__/performance-monitor.test.ts",
+        "__tests__/session-manager.test.ts",
+        "__tests__/utils.test.ts",
+        "__tests__/well-known.test.ts",
+        "components/automated-test-results.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@testing-library/dom",
+          "@testing-library/react",
+          "vitest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/accountability-dashboard.tsx",
+        "components/ad-analysis.tsx",
+        "components/ad-timeline.tsx",
+        "components/advanced-filtering-system.tsx",
+        "components/advertiser-accountability.tsx",
+        "components/ai-confidence-indicator.tsx",
+        "components/analysis-progress.tsx",
+        "components/analytics-content.tsx",
+        "components/anomaly-detection.tsx",
+        "components/api-architecture-diagram.tsx",
+        "components/api-docs-content.tsx",
+        "components/api-integration-guide.tsx",
+        "components/api-key-generator.tsx",
+        "components/api-key-manager.tsx",
+        "components/api-playground.tsx",
+        "components/artist-detail-content.tsx",
+        "components/artist-tools-content.tsx",
+        "components/artist-tools.tsx",
+        "components/auth-dialog.tsx",
+        "components/automated-test-results.tsx",
+        "components/big-bang-win-showcase.tsx",
+        "components/bot-detection-dashboard.tsx",
+        "components/breadcrumbs.tsx",
+        "components/channel-input.tsx",
+        "components/claim-your-data-banner.tsx",
+        "components/content-type-breakdown.tsx",
+        "components/creator-flow-hub.tsx",
+        "components/creator-transparency-overlay.tsx",
+        "components/cta-section.tsx",
+        "components/d3-platform-chart.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "accountability-dashboard",
+          "ad-analysis",
+          "ad-timeline",
+          "advanced-filtering-system",
+          "advertiser-accountability",
+          "ai-confidence-indicator",
+          "analysis-progress",
+          "analytics-content",
+          "anomaly-detection",
+          "api-architecture-diagram",
+          "api-docs-content",
+          "api-integration-guide",
+          "api-key-generator",
+          "api-key-manager",
+          "api-playground",
+          "artist-detail-content",
+          "artist-tools",
+          "artist-tools-content",
+          "auth-dialog",
+          "automated-test-results",
+          "badge",
+          "big-bang-win-showcase",
+          "bot-detection-dashboard",
+          "breadcrumbs",
+          "button",
+          "card",
+          "channel-input",
+          "claim-your-data-banner",
+          "content-type-breakdown",
+          "creator-flow-hub",
+          "creator-transparency-overlay",
+          "cta-section",
+          "d3-platform-chart",
+          "d3-revenue-chart",
+          "dashboard-header",
+          "data-accumulation-tracker",
+          "data-source-transparency",
+          "data-transparency-modal",
+          "demo-navigation",
+          "detailed-analytics",
+          "device-analytics-chart",
+          "devsecops-metrics",
+          "dialog",
+          "dropdown-menu",
+          "email-capture",
+          "enhanced-onboarding-flow",
+          "equity-distribution",
+          "export-menu",
+          "export-reporting-system",
+          "feature-countdown-timer",
+          "feature-toggle",
+          "fingerprinting-technology",
+          "forensic-analysis-engine",
+          "free-tier-banner",
+          "geographic-heatmap",
+          "hero-section",
+          "home-content",
+          "how-it-works",
+          "immediate-insights",
+          "info-tooltip",
+          "input",
+          "interactive-chart-wrapper",
+          "interactive-tooltip-system",
+          "keyboard-shortcuts",
+          "label",
+          "listener-impact-tracker",
+          "live-analytics",
+          "live-demo-banner",
+          "locked-feature-preview",
+          "metadata-aggregation",
+          "metrics-overview",
+          "miracle-insights-engine",
+          "miracle-insights-panel",
+          "money-flow-tracker",
+          "mysterious-teaser",
+          "navigation",
+          "nested-play-detection",
+          "notification-center",
+          "onboarding-hero",
+          "onboarding-orchestrator",
+          "onboarding-tour",
+          "opportunity-maximizer",
+          "phantom-costs-tracker",
+          "platform-efficiency-score",
+          "platform-insights",
+          "platform-network-3d",
+          "platform-targets",
+          "policy-violations",
+          "pricing-content",
+          "pricing-modal",
+          "process-section",
+          "processing-progress",
+          "progress",
+          "progressive-updates",
+          "radial-monitoring-chart",
+          "real-time-collaboration",
+          "revenue-flow-sankey",
+          "revenue-impact",
+          "revenue-opportunity-matrix",
+          "revenue-prediction-engine",
+          "revenue-recovery",
+          "revenue-recovery-chart",
+          "seamless-onboarding-flow",
+          "select",
+          "separator",
+          "session-recovery-overlay",
+          "showback-dashboard",
+          "signed-in-dashboard",
+          "smart-insights-panel",
+          "sonner",
+          "stripe-checkout",
+          "sunk-costs-visualization",
+          "tabs",
+          "technology-showcase",
+          "theme-provider",
+          "toast",
+          "tooltip",
+          "trust-section",
+          "url-entry-experience",
+          "user-menu",
+          "user-settings-panel",
+          "user-type-selection",
+          "user-type-selector",
+          "value-unlock-timeline",
+          "violation-timeline",
+          "violation-timeline-chart",
+          "welcome-experience",
+          "workflow-status",
+          "workflows-content",
+          "workflows-overview"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "password",
+          "payment",
+          "pii",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@emotion/is-prop-valid",
+          "@hookform/resolvers",
+          "@neondatabase/serverless",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@stripe/react-stripe-js",
+          "@stripe/stripe-js",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/react",
+          "@types/d3",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "@vitejs/plugin-react",
+          "ai",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "d3",
+          "date-fns",
+          "embla-carousel-react",
+          "framer-motion",
+          "geist",
+          "input-otp",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "server-only",
+          "sonner",
+          "stripe",
+          "tailwind-merge",
+          "tailwindcss",
+          "tailwindcss-animate",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vitest",
+          "web-vitals",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "webhooks.event-receiver",
+      "name": "Webhook Event Receiver",
+      "type": "webhooks",
+      "summary": "Source evidence indicates webhook receiving, event delivery, or signature validation behavior.",
+      "maturity": "internal",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/track-event/route.ts",
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/stripe/route.ts",
+        "app/api/webhooks/subscribe/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "outputs": [
+          "event handling responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "writes": [
+          "event handling responses"
+        ],
+        "sensitive_data": [
+          "webhook secrets"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Stripe"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Stripe"
+        ],
+        "env_vars": [
+          "N8N_WEBHOOK_SECRET",
+          "STRIPE_WEBHOOK_SECRET"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "low"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "app/actions/stripe.ts",
+            "app/api/errors/route.ts",
+            "app/api/mcp/route.ts",
+            "app/api/notifications/route.ts",
+            "app/api/session/data/route.ts",
+            "app/api/session/migrate/route.ts",
+            "app/api/signup/route.ts",
+            "app/api/track-event/route.ts",
+            "app/api/url/process/route.ts",
+            "app/api/url/status/[processingId]/route.ts",
+            "app/api/user/api-keys/route.ts",
+            "app/api/user/monitored-urls/route.ts",
+            "app/api/user/profile/route.ts",
+            "app/api/user/settings/route.ts",
+            "app/api/waitlist/route.ts",
+            "app/api/webhooks/n8n/route.ts",
+            "app/api/webhooks/stripe/route.ts",
+            "components/api-integration-guide.tsx",
+            "components/stripe-checkout.tsx",
+            "lib/stripe.ts",
+            "middleware.ts",
+            "scripts/seed_data.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/api-docs.test.ts",
+          "__tests__/api-errors.test.ts",
+          "__tests__/api-notifications.test.ts",
+          "__tests__/api-register-mcp.test.ts",
+          "__tests__/api-session-migrate.test.ts",
+          "__tests__/api-session.test.ts",
+          "__tests__/api-signup.test.ts",
+          "__tests__/api-track-event.test.ts",
+          "__tests__/api-url.test.ts",
+          "__tests__/api-user.test.ts",
+          "__tests__/api-v1.test.ts",
+          "__tests__/api-waitlist.test.ts",
+          "__tests__/api-webhooks.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/error-tracker.test.ts",
+          "__tests__/faq/page.test.tsx",
+          "__tests__/mcp.test.ts",
+          "__tests__/middleware.test.ts",
+          "__tests__/mock-data.test.ts",
+          "__tests__/notification-service.test.ts",
+          "__tests__/performance-monitor.test.ts",
+          "__tests__/session-manager.test.ts",
+          "__tests__/utils.test.ts",
+          "__tests__/well-known.test.ts",
+          "components/automated-test-results.tsx"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [
+          "public/llms-full.txt",
+          "public/llms-index.txt",
+          "public/llms.txt"
+        ],
+        "notes": [
+          "LLMs files are available as supplementary context."
+        ]
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        "app/api/notifications/route.ts",
+        "app/layout.tsx"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "app/actions/stripe.ts",
+        "app/api/errors/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/notifications/route.ts",
+        "app/api/session/data/route.ts",
+        "app/api/session/migrate/route.ts",
+        "app/api/signup/route.ts",
+        "app/api/track-event/route.ts",
+        "app/api/url/process/route.ts",
+        "app/api/url/status/[processingId]/route.ts",
+        "app/api/user/api-keys/route.ts",
+        "app/api/user/monitored-urls/route.ts",
+        "app/api/user/profile/route.ts",
+        "app/api/user/settings/route.ts",
+        "app/api/waitlist/route.ts",
+        "app/api/webhooks/n8n/route.ts",
+        "app/api/webhooks/stripe/route.ts",
+        "components/api-integration-guide.tsx",
+        "components/stripe-checkout.tsx",
+        "lib/stripe.ts",
+        "middleware.ts",
+        "scripts/seed_data.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": true
+    },
+    "missing_evidence": [
+      "CI workflows not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation.",
+      "Local LLMs files were included as context evidence, not treated as code behavior proof."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:13.688Z"
+  }
+}

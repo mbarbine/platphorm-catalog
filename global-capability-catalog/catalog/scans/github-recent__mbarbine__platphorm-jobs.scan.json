@@ -1,0 +1,1539 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-jobs",
+    "name": "mbarbine__platphorm-jobs",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-jobs",
+    "relative_path": "github-recent/mbarbine__platphorm-jobs",
+    "remote_url": "git@github.com:mbarbine/platphorm-jobs.git",
+    "default_branch": "main",
+    "current_commit": "282a4863b7b4f71a07e71a3450bb83a7f3b298e7"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 183,
+      "bytes": 644273
+    },
+    {
+      "language": "JSON",
+      "files": 5,
+      "bytes": 245345
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 186912
+    },
+    {
+      "language": "Markdown",
+      "files": 12,
+      "bytes": 34540
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 13410
+    },
+    {
+      "language": "JavaScript",
+      "files": 3,
+      "bytes": 948
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-project",
+        "version": "0.1.0",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "eslint .",
+          "test": "vitest run",
+          "test:watch": "vitest"
+        },
+        "dependencies": {
+          "@ai-sdk/xai": "^3.0.57",
+          "@hookform/resolvers": "^3.9.1",
+          "@radix-ui/react-accordion": "1.2.12",
+          "@radix-ui/react-alert-dialog": "1.1.15",
+          "@radix-ui/react-aspect-ratio": "1.1.8",
+          "@radix-ui/react-avatar": "1.1.11",
+          "@radix-ui/react-checkbox": "1.3.3",
+          "@radix-ui/react-collapsible": "1.1.12",
+          "@radix-ui/react-context-menu": "2.2.16",
+          "@radix-ui/react-dialog": "1.1.15",
+          "@radix-ui/react-dropdown-menu": "2.1.16",
+          "@radix-ui/react-hover-card": "1.1.15",
+          "@radix-ui/react-label": "2.1.8",
+          "@radix-ui/react-menubar": "1.1.16",
+          "@radix-ui/react-navigation-menu": "1.2.14",
+          "@radix-ui/react-popover": "1.1.15",
+          "@radix-ui/react-progress": "1.1.8",
+          "@radix-ui/react-radio-group": "1.3.8",
+          "@radix-ui/react-scroll-area": "1.2.10",
+          "@radix-ui/react-select": "2.2.6",
+          "@radix-ui/react-separator": "1.1.8",
+          "@radix-ui/react-slider": "1.3.6",
+          "@radix-ui/react-slot": "1.2.4",
+          "@radix-ui/react-switch": "1.2.6",
+          "@radix-ui/react-tabs": "1.1.13",
+          "@radix-ui/react-toast": "1.2.15",
+          "@radix-ui/react-toggle": "1.1.10",
+          "@radix-ui/react-toggle-group": "1.1.11",
+          "@radix-ui/react-tooltip": "1.2.8",
+          "@vercel/analytics": "1.6.1",
+          "ai": "^6.0.97",
+          "autoprefixer": "^10.4.20",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.1.1",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.6.0",
+          "input-otp": "1.4.2",
+          "lucide-react": "^0.564.0",
+          "next": "16.1.6",
+          "next-themes": "^0.4.6",
+          "react": "19.2.4",
+          "react-day-picker": "9.13.2",
+          "react-dom": "19.2.4",
+          "react-hook-form": "^7.54.1",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.1",
+          "swr": "^2.3.0",
+          "tailwind-merge": "^3.3.1",
+          "vaul": "^1.1.2",
+          "zod": "^3.24.1"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.2.0",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@testing-library/user-event": "^14.6.1",
+          "@types/node": "^22",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "@vitest/coverage-v8": "^4.0.18",
+          "jsdom": "^29.0.2",
+          "postcss": "^8.5",
+          "tailwindcss": "^4.2.0",
+          "tw-animate-css": "1.3.3",
+          "typescript": "5.7.3",
+          "vitest": "^4.0.18"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/events",
+        "source_path": "app/api/events/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/events",
+        "source_path": "app/api/v1/events/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/grok/parse-jd",
+        "source_path": "app/api/v1/grok/parse-jd/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/integrations/calendar/sync",
+        "source_path": "app/api/v1/integrations/calendar/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/integrations/kanban/sync",
+        "source_path": "app/api/v1/integrations/kanban/sync/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/integrations/status",
+        "source_path": "app/api/v1/integrations/status/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/archive",
+        "source_path": "app/api/v1/interviews/[id]/archive/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/debrief/generate",
+        "source_path": "app/api/v1/interviews/[id]/debrief/generate/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/debrief",
+        "source_path": "app/api/v1/interviews/[id]/debrief/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/export",
+        "source_path": "app/api/v1/interviews/[id]/export/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/invites",
+        "source_path": "app/api/v1/interviews/[id]/invites/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/observations",
+        "source_path": "app/api/v1/interviews/[id]/observations/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]/prep",
+        "source_path": "app/api/v1/interviews/[id]/prep/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews/[id]",
+        "source_path": "app/api/v1/interviews/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/interviews/ics",
+        "source_path": "app/api/v1/interviews/ics/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/interviews/import",
+        "source_path": "app/api/v1/interviews/import/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/interviews",
+        "source_path": "app/api/v1/interviews/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/invites/[token]/accept",
+        "source_path": "app/api/v1/invites/[token]/accept/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/invites/[token]/revoke",
+        "source_path": "app/api/v1/invites/[token]/revoke/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/invites/[token]",
+        "source_path": "app/api/v1/invites/[token]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/jd/parse",
+        "source_path": "app/api/v1/jd/parse/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/network/calendar",
+        "source_path": "app/api/v1/network/calendar/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/kanban",
+        "source_path": "app/api/v1/network/kanban/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/network/mcp",
+        "source_path": "app/api/v1/network/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/team/[id]",
+        "source_path": "app/api/v1/team/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/team",
+        "source_path": "app/api/v1/team/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/webhooks/test",
+        "source_path": "app/api/v1/webhooks/test/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/webhooks",
+        "source_path": "app/api/webhooks/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/dashboard/interviews/[id]",
+        "source_path": "app/dashboard/interviews/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/interviews/new",
+        "source_path": "app/dashboard/interviews/new/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/interviews",
+        "source_path": "app/dashboard/interviews/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/prep",
+        "source_path": "app/dashboard/prep/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/settings",
+        "source_path": "app/dashboard/settings/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard/team",
+        "source_path": "app/dashboard/team/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/join/[token]",
+        "source_path": "app/join/[token]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/join/team",
+        "source_path": "app/join/team/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/privacy",
+        "source_path": "app/privacy/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/terms",
+        "source_path": "app/terms/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "countdown-timer.test",
+      "kind": "ui-component",
+      "source_path": "__tests__/components/dashboard/countdown-timer.test.tsx"
+    },
+    {
+      "name": "join-team-form.test",
+      "kind": "ui-component",
+      "source_path": "__tests__/components/join-team-form.test.tsx"
+    },
+    {
+      "name": "theme-toggle.test",
+      "kind": "ui-component",
+      "source_path": "__tests__/components/theme-toggle.test.tsx"
+    },
+    {
+      "name": "api-docs-viewer",
+      "kind": "ui-component",
+      "source_path": "components/api-docs-viewer.tsx"
+    },
+    {
+      "name": "breadcrumbs",
+      "kind": "ui-component",
+      "source_path": "components/breadcrumbs.tsx"
+    },
+    {
+      "name": "command-palette",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/command-palette.tsx"
+    },
+    {
+      "name": "countdown-timer",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/countdown-timer.tsx"
+    },
+    {
+      "name": "dashboard-overview",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/dashboard-overview.tsx"
+    },
+    {
+      "name": "dashboard-shell",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/dashboard-shell.tsx"
+    },
+    {
+      "name": "dashboard-sidebar",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/dashboard-sidebar.tsx"
+    },
+    {
+      "name": "interview-detail",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/interview-detail.tsx"
+    },
+    {
+      "name": "interviews-list",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/interviews-list.tsx"
+    },
+    {
+      "name": "mobile-bottom-nav",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/mobile-bottom-nav.tsx"
+    },
+    {
+      "name": "new-interview-form",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/new-interview-form.tsx"
+    },
+    {
+      "name": "prep-room",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/prep-room.tsx"
+    },
+    {
+      "name": "settings-page",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/settings-page.tsx"
+    },
+    {
+      "name": "team-manager",
+      "kind": "ui-component",
+      "source_path": "components/dashboard/team-manager.tsx"
+    },
+    {
+      "name": "join-by-token-form",
+      "kind": "ui-component",
+      "source_path": "components/join-by-token-form.tsx"
+    },
+    {
+      "name": "join-team-form",
+      "kind": "ui-component",
+      "source_path": "components/join-team-form.tsx"
+    },
+    {
+      "name": "json-ld",
+      "kind": "ui-component",
+      "source_path": "components/json-ld.tsx"
+    },
+    {
+      "name": "cta-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/cta-section.tsx"
+    },
+    {
+      "name": "features-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/features-section.tsx"
+    },
+    {
+      "name": "hero-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/hero-section.tsx"
+    },
+    {
+      "name": "how-it-works-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/how-it-works-section.tsx"
+    },
+    {
+      "name": "network-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/network-section.tsx"
+    },
+    {
+      "name": "scenarios-section",
+      "kind": "ui-component",
+      "source_path": "components/landing/scenarios-section.tsx"
+    },
+    {
+      "name": "site-footer",
+      "kind": "ui-component",
+      "source_path": "components/site-footer.tsx"
+    },
+    {
+      "name": "site-header",
+      "kind": "ui-component",
+      "source_path": "components/site-header.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "theme-toggle",
+      "kind": "ui-component",
+      "source_path": "components/theme-toggle.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "alert-dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "aspect-ratio",
+      "kind": "ui-component",
+      "source_path": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/button-group.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "calendar",
+      "kind": "ui-component",
+      "source_path": "components/ui/calendar.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "carousel",
+      "kind": "ui-component",
+      "source_path": "components/ui/carousel.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "checkbox",
+      "kind": "ui-component",
+      "source_path": "components/ui/checkbox.tsx"
+    },
+    {
+      "name": "collapsible",
+      "kind": "ui-component",
+      "source_path": "components/ui/collapsible.tsx"
+    },
+    {
+      "name": "command",
+      "kind": "ui-component",
+      "source_path": "components/ui/command.tsx"
+    },
+    {
+      "name": "context-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/context-menu.tsx"
+    },
+    {
+      "name": "dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/dialog.tsx"
+    },
+    {
+      "name": "drawer",
+      "kind": "ui-component",
+      "source_path": "components/ui/drawer.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "empty",
+      "kind": "ui-component",
+      "source_path": "components/ui/empty.tsx"
+    },
+    {
+      "name": "field",
+      "kind": "ui-component",
+      "source_path": "components/ui/field.tsx"
+    },
+    {
+      "name": "form",
+      "kind": "ui-component",
+      "source_path": "components/ui/form.tsx"
+    },
+    {
+      "name": "hover-card",
+      "kind": "ui-component",
+      "source_path": "components/ui/hover-card.tsx"
+    },
+    {
+      "name": "input-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-group.tsx"
+    },
+    {
+      "name": "input-otp",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-otp.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "item",
+      "kind": "ui-component",
+      "source_path": "components/ui/item.tsx"
+    },
+    {
+      "name": "kbd",
+      "kind": "ui-component",
+      "source_path": "components/ui/kbd.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "menubar",
+      "kind": "ui-component",
+      "source_path": "components/ui/menubar.tsx"
+    },
+    {
+      "name": "navigation-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "name": "pagination",
+      "kind": "ui-component",
+      "source_path": "components/ui/pagination.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "components/ui/popover.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "radio-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/radio-group.tsx"
+    },
+    {
+      "name": "resizable",
+      "kind": "ui-component",
+      "source_path": "components/ui/resizable.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "components/ui/slider.tsx"
+    },
+    {
+      "name": "sonner",
+      "kind": "ui-component",
+      "source_path": "components/ui/sonner.tsx"
+    },
+    {
+      "name": "spinner",
+      "kind": "ui-component",
+      "source_path": "components/ui/spinner.tsx"
+    },
+    {
+      "name": "switch",
+      "kind": "ui-component",
+      "source_path": "components/ui/switch.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "toaster",
+      "kind": "ui-component",
+      "source_path": "components/ui/toaster.tsx"
+    },
+    {
+      "name": "toggle-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle-group.tsx"
+    },
+    {
+      "name": "toggle",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    },
+    {
+      "name": "use-mobile",
+      "kind": "ui-component",
+      "source_path": "components/ui/use-mobile.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "docs.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/docs.test.ts"
+    },
+    {
+      "name": "events.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/events.test.ts"
+    },
+    {
+      "name": "grok-parse-jd.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/grok-parse-jd.test.ts"
+    },
+    {
+      "name": "health.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/health.test.ts"
+    },
+    {
+      "name": "interviews-ics.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/interviews-ics.test.ts"
+    },
+    {
+      "name": "interviews.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/interviews.test.ts"
+    },
+    {
+      "name": "network-calendar.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/network-calendar.test.ts"
+    },
+    {
+      "name": "network-mcp.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/network-mcp.test.ts"
+    },
+    {
+      "name": "team.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/team.test.ts"
+    },
+    {
+      "name": "webhooks.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/webhooks.test.ts"
+    },
+    {
+      "name": "countdown-timer.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/components/dashboard/countdown-timer.test.tsx"
+    },
+    {
+      "name": "join-team-form.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/components/join-team-form.test.tsx"
+    },
+    {
+      "name": "theme-toggle.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/components/theme-toggle.test.tsx"
+    },
+    {
+      "name": "events.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/lib/events.test.ts"
+    },
+    {
+      "name": "ics.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/lib/ics.test.ts"
+    },
+    {
+      "name": "network.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/lib/network.test.ts"
+    },
+    {
+      "name": "store.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/lib/store.test.ts"
+    },
+    {
+      "name": "utils.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/lib/utils.test.ts"
+    },
+    {
+      "name": "route.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/v1/webhooks/test/route.ts"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "app/api/health/route.ts",
+          "lib/jobs-server-store.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "INTERNAL_API_KEY",
+        "source_paths": [
+          ".jules/sentinel.md"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_APP_URL",
+        "source_paths": [
+          "lib/events.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "lib/events.ts",
+          "lib/platform.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "VERCEL_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "XAI_API_KEY",
+        "source_paths": [
+          "app/api/v1/grok/parse-jd/route.ts",
+          "app/api/v1/integrations/status/route.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [
+      {
+        "path": "docs/integrations/calendar.md"
+      },
+      {
+        "path": "docs/integrations/grok.md"
+      },
+      {
+        "path": "docs/integrations/jitsi.md"
+      },
+      {
+        "path": "docs/integrations/kanban.md"
+      },
+      {
+        "path": "docs/integrations/mcp.md"
+      },
+      {
+        "path": "docs/integrations/sitemap.md"
+      }
+    ],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/agents.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "__tests__/api/events.test.ts",
+        "__tests__/api/grok-parse-jd.test.ts",
+        "__tests__/api/interviews.test.ts",
+        "__tests__/api/network-calendar.test.ts",
+        "__tests__/api/team.test.ts",
+        "__tests__/api/webhooks.test.ts",
+        "__tests__/lib/events.test.ts",
+        "app/.well-known/agents.json/route.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/events/route.ts",
+        "app/api/health/route.ts",
+        "app/api/v1/interviews/route.ts",
+        "app/api/v1/team/route.ts",
+        "lib/discovery.ts",
+        "lib/jobs-server-store.ts",
+        "package.json",
+        "README.md"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "app/layout.tsx",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/ai-plugin.json/route.ts",
+      "line": 13,
+      "text": "contact_email: \"security@platphormnews.com\","
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 5,
+      "text": "`Contact: mailto:security@platphormnews.com"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 7,
+      "text": "Canonical: ${SERVICE.baseUrl}/.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/api/v1/grok/parse-jd/route.ts",
+      "line": 68,
+      "text": "const seniorityTags = Array.from(new Set((text.match(/\\b(senior|staff|principal|lead|manager|frontend|backend|full-stack|platform|ai|ml|data|security|devops|design|product)\\b/gi) || []).map((tag) => tag.toLowerCase().replace(/\\s+/g, \"-\"))))"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/dashboard/new-interview-form.tsx",
+      "line": 28,
+      "text": "const tags = Array.from(new Set((text.match(/\\b(senior|staff|principal|lead|manager|frontend|backend|full-stack|platform|ai|ml|data|security|devops|design|product)\\b/gi) || []).map((tag) => tag.toLowerCase().replace(/\\s+/g, \"-\")))).slice(0,"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/landing/features-section.tsx",
+      "line": 21,
+      "text": "tag: \"SECURITY\","
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/discovery.ts",
+      "line": 97,
+      "text": "security: [],"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/discovery.ts",
+      "line": 325,
+      "text": "securityContact: \"security@platphormnews.com\","
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/discovery.ts",
+      "line": 348,
+      "text": "security: [{ PlatPhormApiKey: [] }],"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/platform.ts",
+      "line": 34,
+      "text": "\"/.well-known/security.txt\","
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 26,
+      "text": "- **Fingerprint awareness**: Browser fingerprint hashing for session security"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".jules/sentinel.md",
+          "components/json-ld.tsx",
+          "components/ui/chart.tsx"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/discovery.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/api-docs-viewer.tsx"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/events.test.ts",
+          "__tests__/api/grok-parse-jd.test.ts",
+          "__tests__/api/interviews.test.ts",
+          "__tests__/api/network-calendar.test.ts",
+          "__tests__/api/team.test.ts",
+          "__tests__/api/webhooks.test.ts",
+          "__tests__/lib/events.test.ts",
+          ".jules/sentinel.md",
+          "app/.well-known/agents.json/route.ts",
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/.well-known/mcp.json/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/grok/parse-jd/route.ts",
+          "app/api/v1/integrations/status/route.ts",
+          "app/api/v1/network/calendar/route.ts",
+          "app/faq/page.tsx",
+          "app/terms/page.tsx",
+          "components/dashboard/dashboard-overview.tsx",
+          "components/dashboard/interview-detail.tsx",
+          "components/dashboard/new-interview-form.tsx"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/lib/network.test.ts",
+          "app/api/v1/network/kanban/route.ts",
+          "app/faq/page.tsx",
+          "app/globals.css",
+          "app/layout.tsx",
+          "app/privacy/page.tsx",
+          "app/terms/page.tsx",
+          "components/api-docs-viewer.tsx",
+          "components/dashboard/countdown-timer.tsx",
+          "components/dashboard/dashboard-overview.tsx",
+          "components/dashboard/dashboard-sidebar.tsx",
+          "components/dashboard/interview-detail.tsx",
+          "components/dashboard/interviews-list.tsx",
+          "components/dashboard/new-interview-form.tsx",
+          "components/dashboard/prep-room.tsx",
+          "components/dashboard/settings-page.tsx",
+          "components/dashboard/team-manager.tsx",
+          "components/join-by-token-form.tsx",
+          "components/join-team-form.tsx",
+          "components/landing/cta-section.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/interviews-ics.test.ts",
+          "__tests__/api/team.test.ts",
+          "__tests__/components/join-team-form.test.tsx",
+          "__tests__/lib/events.test.ts",
+          "__tests__/lib/ics.test.ts",
+          "__tests__/lib/network.test.ts",
+          "__tests__/lib/store.test.ts",
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/api/v1/interviews/ics/route.ts",
+          "app/layout.tsx",
+          "app/privacy/page.tsx",
+          "components/dashboard/interview-detail.tsx",
+          "components/dashboard/settings-page.tsx",
+          "components/dashboard/team-manager.tsx",
+          "components/join-by-token-form.tsx",
+          "components/join-team-form.tsx",
+          "lib/ics.ts",
+          "lib/jobs-server-store.ts",
+          "lib/store.ts",
+          "README.md"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/components/join-team-form.test.tsx",
+          "components/dashboard/settings-page.tsx",
+          "components/join-by-token-form.tsx",
+          "components/join-team-form.tsx",
+          "lib/store.ts",
+          "README.md",
+          "ROADMAP.md"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/docs.test.ts",
+          "__tests__/api/health.test.ts",
+          "__tests__/lib/network.test.ts",
+          ".jules/bolt.md",
+          "app/.well-known/mcp.json/route.ts",
+          "app/api/v1/health/route.ts",
+          "components/dashboard/interview-detail.tsx",
+          "components/landing/network-section.tsx",
+          "components/site-footer.tsx",
+          "lib/discovery.ts",
+          "lib/network.ts",
+          "lib/platform.ts",
+          "pr_description.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/lib/ics.test.ts",
+          ".jules/bolt.md",
+          "app/api/v1/interviews/ics/route.ts",
+          "app/api/v1/network/calendar/route.ts",
+          "components/dashboard/dashboard-overview.tsx",
+          "components/dashboard/interview-detail.tsx",
+          "components/dashboard/new-interview-form.tsx",
+          "components/dashboard/settings-page.tsx",
+          "docs/integrations/calendar.md",
+          "lib/ics.ts",
+          "lib/network.ts",
+          "lib/store.ts",
+          "lib/utils.ts",
+          "vitest.setup.ts"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docs/integrations/jitsi.md"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/privacy/page.tsx",
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "__tests__/api/events.test.ts",
+          "__tests__/components/join-team-form.test.tsx",
+          "app/api/health/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/interviews/[id]/invites/route.ts",
+          "app/api/v1/invites/[token]/accept/route.ts",
+          "app/api/v1/invites/[token]/revoke/route.ts",
+          "app/api/v1/invites/[token]/route.ts",
+          "app/faq/page.tsx",
+          "app/join/[token]/page.tsx",
+          "components/dashboard/team-manager.tsx",
+          "components/join-by-token-form.tsx",
+          "components/join-team-form.tsx",
+          "docs/integrations/mcp.md",
+          "lib/discovery.ts",
+          "lib/jobs-server-store.ts",
+          "lib/platform.ts",
+          "lib/store.ts",
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:15.078Z"
+}

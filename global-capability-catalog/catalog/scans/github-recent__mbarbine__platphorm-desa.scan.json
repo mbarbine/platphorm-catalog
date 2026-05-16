@@ -1,0 +1,2480 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-desa",
+    "name": "mbarbine__platphorm-desa",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-desa",
+    "relative_path": "github-recent/mbarbine__platphorm-desa",
+    "remote_url": "git@github.com:mbarbine/platphorm-desa.git",
+    "default_branch": "main",
+    "current_commit": "43dd4496cff45f253ee2f319ab5b244bc989efbd"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 221,
+      "bytes": 1854035
+    },
+    {
+      "language": "YAML",
+      "files": 3,
+      "bytes": 259153
+    },
+    {
+      "language": "JSON",
+      "files": 7,
+      "bytes": 251049
+    },
+    {
+      "language": "Markdown",
+      "files": 23,
+      "bytes": 227175
+    },
+    {
+      "language": "SQL",
+      "files": 2,
+      "bytes": 24388
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 9576
+    },
+    {
+      "language": "JavaScript",
+      "files": 3,
+      "bytes": 917
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 700
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-project",
+        "version": "0.0.1",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "eslint .",
+          "test": "vitest",
+          "test:coverage": "vitest --coverage"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.10.0",
+          "@monaco-editor/react": "^4.7.0",
+          "@neondatabase/serverless": "^0.10.4",
+          "@radix-ui/react-accordion": "1.2.12",
+          "@radix-ui/react-alert-dialog": "1.1.15",
+          "@radix-ui/react-aspect-ratio": "1.1.8",
+          "@radix-ui/react-avatar": "1.1.11",
+          "@radix-ui/react-checkbox": "1.3.3",
+          "@radix-ui/react-collapsible": "1.1.12",
+          "@radix-ui/react-context-menu": "2.2.16",
+          "@radix-ui/react-dialog": "1.1.15",
+          "@radix-ui/react-dropdown-menu": "2.1.16",
+          "@radix-ui/react-hover-card": "1.1.15",
+          "@radix-ui/react-label": "2.1.8",
+          "@radix-ui/react-menubar": "1.1.16",
+          "@radix-ui/react-navigation-menu": "1.2.14",
+          "@radix-ui/react-popover": "1.1.15",
+          "@radix-ui/react-progress": "1.1.8",
+          "@radix-ui/react-radio-group": "1.3.8",
+          "@radix-ui/react-scroll-area": "1.2.10",
+          "@radix-ui/react-select": "2.2.6",
+          "@radix-ui/react-separator": "1.1.8",
+          "@radix-ui/react-slider": "1.3.6",
+          "@radix-ui/react-slot": "1.2.4",
+          "@radix-ui/react-switch": "1.2.6",
+          "@radix-ui/react-tabs": "1.1.13",
+          "@radix-ui/react-toast": "1.2.15",
+          "@radix-ui/react-toggle": "1.1.10",
+          "@radix-ui/react-toggle-group": "1.1.11",
+          "@radix-ui/react-tooltip": "1.2.8",
+          "@vercel/analytics": "1.6.1",
+          "autoprefixer": "^10.4.27",
+          "bcryptjs": "^2.4.3",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.1.1",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.6.0",
+          "input-otp": "1.4.2",
+          "jose": "^5.10.0",
+          "lucide-react": "^0.564.0",
+          "nanoid": "^5.1.6",
+          "next": "16.1.6",
+          "next-themes": "^0.4.6",
+          "openapi3-ts": "^4.5.0",
+          "react": "19.2.4",
+          "react-day-picker": "9.13.2",
+          "react-dom": "19.2.4",
+          "react-hook-form": "^7.71.2",
+          "react-resizable-panels": "^2.1.9",
+          "recharts": "2.15.0",
+          "sonner": "^1.7.4",
+          "swr": "^2.4.1",
+          "tailwind-merge": "^3.5.0",
+          "vaul": "^1.1.2",
+          "zod": "^3.25.76"
+        },
+        "dev_dependencies": {
+          "@eslint/js": "^10.0.1",
+          "@tailwindcss/postcss": "^4.2.1",
+          "@testing-library/dom": "^10.4.1",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@types/bcryptjs": "^2.4.6",
+          "@types/node": "^22.19.13",
+          "@types/react": "19.2.14",
+          "@types/react-dom": "19.2.3",
+          "eslint": "^10.0.3",
+          "eslint-plugin-react": "^7.37.5",
+          "eslint-plugin-react-hooks": "^7.0.1",
+          "jsdom": "^28.1.0",
+          "postcss": "^8.5.8",
+          "tailwindcss": "^4.2.1",
+          "tw-animate-css": "1.3.3",
+          "typescript": "5.7.3",
+          "typescript-eslint": "^8.57.0",
+          "vitest": "^3.2.4"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/cron/refresh",
+        "source_path": "app/api/cron/refresh/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/discovery",
+        "source_path": "app/api/discovery/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/docs/[slug]",
+        "source_path": "app/api/docs/[slug]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/api/docs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/api/faq/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/health",
+        "source_path": "app/api/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/mcp",
+        "source_path": "app/api/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/analyze-url",
+        "source_path": "app/api/v1/analyze-url/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/analyze",
+        "source_path": "app/api/v1/analyze/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/decode",
+        "source_path": "app/api/v1/decode/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/events",
+        "source_path": "app/api/v1/events/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/export",
+        "source_path": "app/api/v1/export/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/extract-iocs",
+        "source_path": "app/api/v1/extract-iocs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/health",
+        "source_path": "app/api/v1/health/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/history",
+        "source_path": "app/api/v1/history/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/v1/integrations/ascii",
+        "source_path": "app/api/v1/integrations/ascii/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/json",
+        "source_path": "app/api/v1/integrations/json/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/mcp",
+        "source_path": "app/api/v1/integrations/mcp/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/msi",
+        "source_path": "app/api/v1/integrations/msi/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations",
+        "source_path": "app/api/v1/integrations/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/svg",
+        "source_path": "app/api/v1/integrations/svg/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/virustotal",
+        "source_path": "app/api/v1/integrations/virustotal/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/integrations/xml",
+        "source_path": "app/api/v1/integrations/xml/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/iocs",
+        "source_path": "app/api/v1/iocs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/rules/[id]",
+        "source_path": "app/api/v1/rules/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "OPTIONS",
+          "PUT"
+        ]
+      },
+      {
+        "route": "/v1/rules",
+        "source_path": "app/api/v1/rules/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/samples",
+        "source_path": "app/api/v1/samples/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/scripts/[id]/analysis",
+        "source_path": "app/api/v1/scripts/[id]/analysis/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/scripts/[id]/export",
+        "source_path": "app/api/v1/scripts/[id]/export/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/scripts/[id]/iocs",
+        "source_path": "app/api/v1/scripts/[id]/iocs/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/scripts/[id]",
+        "source_path": "app/api/v1/scripts/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "DELETE",
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/scripts",
+        "source_path": "app/api/v1/scripts/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/url-preview",
+        "source_path": "app/api/v1/url-preview/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/virustotal/[id]",
+        "source_path": "app/api/v1/virustotal/[id]/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS"
+        ]
+      },
+      {
+        "route": "/v1/virustotal",
+        "source_path": "app/api/v1/virustotal/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "OPTIONS",
+          "POST"
+        ]
+      },
+      {
+        "route": "/v1/webhooks",
+        "source_path": "app/api/v1/webhooks/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "GET",
+          "OPTIONS",
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/analyze",
+        "source_path": "app/analyze/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/contributors",
+        "source_path": "app/contributors/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/docs",
+        "source_path": "app/docs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/faq",
+        "source_path": "app/faq/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/guidance",
+        "source_path": "app/guidance/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/history",
+        "source_path": "app/history/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/integrations",
+        "source_path": "app/integrations/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/iocs",
+        "source_path": "app/iocs/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/license",
+        "source_path": "app/license/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/privacy",
+        "source_path": "app/privacy/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap",
+        "source_path": "app/roadmap/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/roadmap/ux",
+        "source_path": "app/roadmap/ux/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/rules",
+        "source_path": "app/rules/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/script/[id]",
+        "source_path": "app/script/[id]/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/settings",
+        "source_path": "app/settings/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "results-panel.test",
+      "kind": "ui-component",
+      "source_path": "components/analysis/__tests__/results-panel.test.tsx"
+    },
+    {
+      "name": "threat-score.test",
+      "kind": "ui-component",
+      "source_path": "components/analysis/__tests__/threat-score.test.tsx"
+    },
+    {
+      "name": "virustotal-panel.test",
+      "kind": "ui-component",
+      "source_path": "components/analysis/__tests__/virustotal-panel.test.tsx"
+    },
+    {
+      "name": "results-panel",
+      "kind": "ui-component",
+      "source_path": "components/analysis/results-panel.tsx"
+    },
+    {
+      "name": "threat-score",
+      "kind": "ui-component",
+      "source_path": "components/analysis/threat-score.tsx"
+    },
+    {
+      "name": "virustotal-panel",
+      "kind": "ui-component",
+      "source_path": "components/analysis/virustotal-panel.tsx"
+    },
+    {
+      "name": "code-editor",
+      "kind": "ui-component",
+      "source_path": "components/editor/code-editor.tsx"
+    },
+    {
+      "name": "ioc-json-tree.test",
+      "kind": "ui-component",
+      "source_path": "components/ioc-viewer/__tests__/ioc-json-tree.test.tsx"
+    },
+    {
+      "name": "ioc-viewer.test",
+      "kind": "ui-component",
+      "source_path": "components/ioc-viewer/__tests__/ioc-viewer.test.tsx"
+    },
+    {
+      "name": "ioc-json-tree",
+      "kind": "ui-component",
+      "source_path": "components/ioc-viewer/ioc-json-tree.tsx"
+    },
+    {
+      "name": "ioc-viewer",
+      "kind": "ui-component",
+      "source_path": "components/ioc-viewer/ioc-viewer.tsx"
+    },
+    {
+      "name": "footer.test",
+      "kind": "ui-component",
+      "source_path": "components/layout/__tests__/footer.test.tsx"
+    },
+    {
+      "name": "footer",
+      "kind": "ui-component",
+      "source_path": "components/layout/footer.tsx"
+    },
+    {
+      "name": "topbar",
+      "kind": "ui-component",
+      "source_path": "components/layout/topbar.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/providers/theme-provider.tsx"
+    },
+    {
+      "name": "integration-grid",
+      "kind": "ui-component",
+      "source_path": "components/roadmap/integration-grid.tsx"
+    },
+    {
+      "name": "roadmap-hero",
+      "kind": "ui-component",
+      "source_path": "components/roadmap/roadmap-hero.tsx"
+    },
+    {
+      "name": "roadmap-stats",
+      "kind": "ui-component",
+      "source_path": "components/roadmap/roadmap-stats.tsx"
+    },
+    {
+      "name": "roadmap-timeline",
+      "kind": "ui-component",
+      "source_path": "components/roadmap/roadmap-timeline.tsx"
+    },
+    {
+      "name": "json-ld.test",
+      "kind": "ui-component",
+      "source_path": "components/seo/__tests__/json-ld.test.tsx"
+    },
+    {
+      "name": "json-ld",
+      "kind": "ui-component",
+      "source_path": "components/seo/json-ld.tsx"
+    },
+    {
+      "name": "roadmap-json-ld",
+      "kind": "ui-component",
+      "source_path": "components/seo/roadmap-json-ld.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "chart.test",
+      "kind": "ui-component",
+      "source_path": "components/ui/__tests__/chart.test.tsx"
+    },
+    {
+      "name": "accordion",
+      "kind": "ui-component",
+      "source_path": "components/ui/accordion.tsx"
+    },
+    {
+      "name": "alert-dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert-dialog.tsx"
+    },
+    {
+      "name": "alert",
+      "kind": "ui-component",
+      "source_path": "components/ui/alert.tsx"
+    },
+    {
+      "name": "aspect-ratio",
+      "kind": "ui-component",
+      "source_path": "components/ui/aspect-ratio.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "breadcrumb",
+      "kind": "ui-component",
+      "source_path": "components/ui/breadcrumb.tsx"
+    },
+    {
+      "name": "button-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/button-group.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "calendar",
+      "kind": "ui-component",
+      "source_path": "components/ui/calendar.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "carousel",
+      "kind": "ui-component",
+      "source_path": "components/ui/carousel.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "checkbox",
+      "kind": "ui-component",
+      "source_path": "components/ui/checkbox.tsx"
+    },
+    {
+      "name": "collapsible",
+      "kind": "ui-component",
+      "source_path": "components/ui/collapsible.tsx"
+    },
+    {
+      "name": "command",
+      "kind": "ui-component",
+      "source_path": "components/ui/command.tsx"
+    },
+    {
+      "name": "context-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/context-menu.tsx"
+    },
+    {
+      "name": "dialog",
+      "kind": "ui-component",
+      "source_path": "components/ui/dialog.tsx"
+    },
+    {
+      "name": "drawer",
+      "kind": "ui-component",
+      "source_path": "components/ui/drawer.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "empty",
+      "kind": "ui-component",
+      "source_path": "components/ui/empty.tsx"
+    },
+    {
+      "name": "field",
+      "kind": "ui-component",
+      "source_path": "components/ui/field.tsx"
+    },
+    {
+      "name": "form",
+      "kind": "ui-component",
+      "source_path": "components/ui/form.tsx"
+    },
+    {
+      "name": "hover-card",
+      "kind": "ui-component",
+      "source_path": "components/ui/hover-card.tsx"
+    },
+    {
+      "name": "input-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-group.tsx"
+    },
+    {
+      "name": "input-otp",
+      "kind": "ui-component",
+      "source_path": "components/ui/input-otp.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "item",
+      "kind": "ui-component",
+      "source_path": "components/ui/item.tsx"
+    },
+    {
+      "name": "kbd",
+      "kind": "ui-component",
+      "source_path": "components/ui/kbd.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "menubar",
+      "kind": "ui-component",
+      "source_path": "components/ui/menubar.tsx"
+    },
+    {
+      "name": "navigation-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/navigation-menu.tsx"
+    },
+    {
+      "name": "pagination",
+      "kind": "ui-component",
+      "source_path": "components/ui/pagination.tsx"
+    },
+    {
+      "name": "popover",
+      "kind": "ui-component",
+      "source_path": "components/ui/popover.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "radio-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/radio-group.tsx"
+    },
+    {
+      "name": "resizable",
+      "kind": "ui-component",
+      "source_path": "components/ui/resizable.tsx"
+    },
+    {
+      "name": "scroll-area",
+      "kind": "ui-component",
+      "source_path": "components/ui/scroll-area.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "slider",
+      "kind": "ui-component",
+      "source_path": "components/ui/slider.tsx"
+    },
+    {
+      "name": "sonner",
+      "kind": "ui-component",
+      "source_path": "components/ui/sonner.tsx"
+    },
+    {
+      "name": "spinner",
+      "kind": "ui-component",
+      "source_path": "components/ui/spinner.tsx"
+    },
+    {
+      "name": "switch",
+      "kind": "ui-component",
+      "source_path": "components/ui/switch.tsx"
+    },
+    {
+      "name": "table",
+      "kind": "ui-component",
+      "source_path": "components/ui/table.tsx"
+    },
+    {
+      "name": "tabs",
+      "kind": "ui-component",
+      "source_path": "components/ui/tabs.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "toaster",
+      "kind": "ui-component",
+      "source_path": "components/ui/toaster.tsx"
+    },
+    {
+      "name": "toggle-group",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle-group.tsx"
+    },
+    {
+      "name": "toggle",
+      "kind": "ui-component",
+      "source_path": "components/ui/toggle.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [
+      {
+        "path": "scripts/001-init-schema.sql"
+      }
+    ],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "__tests__/api/v1/integrations/json/route.test.ts"
+    },
+    {
+      "name": "results-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/analysis/__tests__/results-panel.test.tsx"
+    },
+    {
+      "name": "threat-score.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/analysis/__tests__/threat-score.test.tsx"
+    },
+    {
+      "name": "virustotal-panel.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/analysis/__tests__/virustotal-panel.test.tsx"
+    },
+    {
+      "name": "ioc-json-tree.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ioc-viewer/__tests__/ioc-json-tree.test.tsx"
+    },
+    {
+      "name": "ioc-viewer.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ioc-viewer/__tests__/ioc-viewer.test.tsx"
+    },
+    {
+      "name": "footer.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/layout/__tests__/footer.test.tsx"
+    },
+    {
+      "name": "json-ld.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/seo/__tests__/json-ld.test.tsx"
+    },
+    {
+      "name": "chart.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "components/ui/__tests__/chart.test.tsx"
+    },
+    {
+      "name": "analysis.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/analysis.test.ts"
+    },
+    {
+      "name": "api.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/api.test.ts"
+    },
+    {
+      "name": "c2-extractor.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/c2-extractor.test.ts"
+    },
+    {
+      "name": "db.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/db.test.ts"
+    },
+    {
+      "name": "decoders.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/decoders.test.ts"
+    },
+    {
+      "name": "engine.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/engine.test.ts"
+    },
+    {
+      "name": "exporters.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/exporters.test.ts"
+    },
+    {
+      "name": "integration.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/integration.test.ts"
+    },
+    {
+      "name": "ioc-extractor-categorization.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/ioc-extractor-categorization.test.ts"
+    },
+    {
+      "name": "ioc-extractor.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/ioc-extractor.test.ts"
+    },
+    {
+      "name": "mcp-client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/mcp-client.test.ts"
+    },
+    {
+      "name": "mcp-route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/mcp-route.test.ts"
+    },
+    {
+      "name": "patterns.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/patterns.test.ts"
+    },
+    {
+      "name": "rules-api.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/rules-api.test.ts"
+    },
+    {
+      "name": "rules-store.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/rules-store.test.ts"
+    },
+    {
+      "name": "utils.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/utils.test.ts"
+    },
+    {
+      "name": "vt-submissions-store.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/__tests__/vt-submissions-store.test.ts"
+    },
+    {
+      "name": "c2-extractor.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/analysis/__tests__/c2-extractor.test.ts"
+    },
+    {
+      "name": "helpers.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/api/__tests__/helpers.test.ts"
+    },
+    {
+      "name": "platphormnews.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/__tests__/platphormnews.test.ts"
+    },
+    {
+      "name": "virustotal.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/__tests__/virustotal.test.ts"
+    },
+    {
+      "name": "client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/platphormnews/__tests__/client.test.ts"
+    },
+    {
+      "name": "integration.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/platphormnews/__tests__/integration.test.ts"
+    },
+    {
+      "name": "utils.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/integrations/platphormnews/__tests__/utils.test.ts"
+    },
+    {
+      "name": "client.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/__tests__/client.test.ts"
+    },
+    {
+      "name": "discovery.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/__tests__/discovery.test.ts"
+    },
+    {
+      "name": "registry.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "lib/mcp/__tests__/registry.test.ts"
+    }
+  ],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/ci.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": ".env.example"
+      }
+    ],
+    "variables": [
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          ".env.example",
+          "docs/architecture/MAINTENANCE.md",
+          "lib/__tests__/db.test.ts",
+          "lib/db.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "DATABASE_URL_UNPOOLED",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "DESA_MODEL_PROVIDER_ENABLED",
+        "source_paths": [
+          "lib/model/adapter.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "MCP_SERVER_URL",
+        "source_paths": [
+          "lib/__tests__/mcp-client.test.ts",
+          "lib/mcp/__tests__/client.test.ts",
+          "lib/mcp/client.ts",
+          "lib/mcp/registry.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_BASE_URL",
+        "source_paths": [
+          "app/api/faq/route.ts",
+          "lib/mcp/discovery.ts",
+          "lib/mcp/registry.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NODE_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PGDATABASE",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PGHOST",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PGHOST_UNPOOLED",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PGPASSWORD",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PGUSER",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PLATPHORM_API_KEY",
+        "source_paths": [
+          "docs/architecture/API_SPECIFICATION.md",
+          "docs/testing/TESTING_GUIDE.md",
+          "lib/__tests__/mcp-client.test.ts",
+          "lib/integrations/platphormnews/client.ts",
+          "lib/mcp/client.ts",
+          "lib/platform/auth.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "PLATPHORM_REQUIRE_API_KEY",
+        "source_paths": [
+          "lib/platform/auth.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "POSTGRES_DATABASE",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_HOST",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_PASSWORD",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "POSTGRES_PRISMA_URL",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_URL",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_URL_NO_SSL",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_URL_NON_POOLING",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "POSTGRES_USER",
+        "source_paths": [
+          ".env.example"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VERCEL_ENV",
+        "source_paths": [
+          "app/api/health/route.ts"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "VIRUSTOTAL_API_KEY",
+        "source_paths": [
+          "app/api/v1/integrations/virustotal/route.ts"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "eslint.config.mjs"
+    },
+    {
+      "path": "lib/platform/vercel.ts"
+    },
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "pnpm-workspace.yaml"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo"
+    },
+    {
+      "path": "vercel.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [
+      {
+        "path": "docs/API_SPECIFICATION.md"
+      },
+      {
+        "path": "docs/API.md"
+      },
+      {
+        "path": "docs/ARCHITECTURE.md"
+      },
+      {
+        "path": "docs/architecture/API_SPECIFICATION.md"
+      },
+      {
+        "path": "docs/architecture/MAINTENANCE.md"
+      },
+      {
+        "path": "docs/architecture/SYSTEM_ARCHITECTURE.md"
+      },
+      {
+        "path": "docs/CONTRIBUTORS.md"
+      },
+      {
+        "path": "docs/DATA.md"
+      },
+      {
+        "path": "docs/GUIDANCE.md"
+      },
+      {
+        "path": "docs/MAINTENANCE.md"
+      },
+      {
+        "path": "docs/MCP.md"
+      },
+      {
+        "path": "docs/PLATPHORMNEWS.md"
+      },
+      {
+        "path": "docs/PRIVACY.md"
+      },
+      {
+        "path": "docs/PRODUCT_ROADMAP.md"
+      },
+      {
+        "path": "docs/ROADMAP.md"
+      },
+      {
+        "path": "docs/roadmap/INTEGRATION_ROADMAP.md"
+      },
+      {
+        "path": "docs/roadmap/UX_UI_ROADMAP.md"
+      },
+      {
+        "path": "docs/testing/TESTING_GUIDE.md"
+      }
+    ],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [
+      {
+        "path": "app/api/mcp/route.ts"
+      }
+    ],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "app/.well-known/agents.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/ai-plugin.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp.json/route.ts"
+      },
+      {
+        "path": "app/.well-known/mcp/route.ts"
+      },
+      {
+        "path": "app/.well-known/robots.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/security.txt/route.ts"
+      },
+      {
+        "path": "app/.well-known/trust.json/route.ts"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "PlatPhorm",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/.well-known/trust.json/route.ts",
+        "app/api/v1/integrations/mcp/route.ts",
+        "app/contributors/page.tsx",
+        "app/faq/page.tsx",
+        "app/page.tsx",
+        "docs/API.md",
+        "docs/architecture/API_SPECIFICATION.md",
+        "docs/architecture/SYSTEM_ARCHITECTURE.md",
+        "lib/platform/auth.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env.example",
+        "docs/architecture/MAINTENANCE.md",
+        "docs/architecture/SYSTEM_ARCHITECTURE.md",
+        "docs/MAINTENANCE.md",
+        "lib/__tests__/db.test.ts",
+        "lib/__tests__/rules-api.test.ts",
+        "lib/__tests__/rules-store.test.ts",
+        "lib/db.ts",
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/api/health/route.ts",
+        "app/layout.tsx",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE"
+      },
+      {
+        "path": "LICENSE.txt"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "unsafe",
+      "source_path": ".Jules/sentinel.md",
+      "line": 5,
+      "text": "## 2025-03-17 - Unsafe LocalStorage Usage for VirusTotal Submissions"
+    },
+    {
+      "kind": "security",
+      "source_path": ".Jules/sentinel.md",
+      "line": 7,
+      "text": "**Learning:** Even if data is not actively used in the UI, its presence in `localStorage` can be a security risk. API reports (like from VirusTotal) may contain sensitive metadata (e.g., `meaningful_name`) that should be sanitized before pe"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 2,
+      "text": "return new Response(`Contact: mailto:security@platphormnews.com"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/security.txt/route.ts",
+      "line": 5,
+      "text": "Canonical: https://desa.platphormnews.com/.well-known/security.txt"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/.well-known/trust.json/route.ts",
+      "line": 39,
+      "text": "securityContact: 'security@platphormnews.com',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/globals.css",
+      "line": 6,
+      "text": "/* DESA Theme - Cyber Security focused with teal/cyan accent */"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/integrations/layout.tsx",
+      "line": 8,
+      "text": "'security integrations', 'API integrations', 'DESA integrations',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/layout.tsx",
+      "line": 22,
+      "text": "'threat detection', 'IOC extraction', 'security research', 'MITRE ATT&CK',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/layout.tsx",
+      "line": 98,
+      "text": "category: 'security',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/license/page.tsx",
+      "line": 25,
+      "text": "DESA is provided for defensive security research, static script triage, and public-safe automation workflows. See the repository license files for full terms."
+    },
+    {
+      "kind": "security",
+      "source_path": "app/manifest.ts",
+      "line": 14,
+      "text": "categories: ['security', 'developer tools', 'utilities'],"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/roadmap/page.tsx",
+      "line": 17,
+      "text": "'SVG', 'MCP', 'platform roadmap', 'security tool roadmap',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/robots.ts",
+      "line": 14,
+      "text": "'/.well-known/security.txt',"
+    },
+    {
+      "kind": "security",
+      "source_path": "app/rules/layout.tsx",
+      "line": 8,
+      "text": "'threat detection patterns', 'malware rules', 'security rules',"
+    },
+    {
+      "kind": "security",
+      "source_path": "components/layout/footer.tsx",
+      "line": 50,
+      "text": "Dynamic Encoded Script Analysis for PowerShell security research and malware analysis."
+    },
+    {
+      "kind": "security",
+      "source_path": "components/roadmap/roadmap-timeline.tsx",
+      "line": 39,
+      "text": "{ title: 'Add authentication & security', completed: false },"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ARCHITECTURE.md",
+      "line": 5,
+      "text": "DESA (Dynamic Encoded Script Analysis) is a multi-tenant security analysis platform for detecting and deobfuscating malicious PowerShell scripts. The platform integrates with the PlatphormNews network for enhanced threat intelligence and co"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ARCHITECTURE.md",
+      "line": 121,
+      "text": "## Security Architecture"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 18,
+      "text": "8. [Security Maintenance](#security-maintenance)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 46,
+      "text": "| Security audit | Review access logs and API keys | Manual |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 309,
+      "text": "| P1 | High | < 1 hour | Major feature broken, security issue |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 456,
+      "text": "## Security Maintenance"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 458,
+      "text": "### Regular Security Tasks"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 467,
+      "text": "### Security Audit Queries"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/MAINTENANCE.md",
+      "line": 550,
+      "text": "| Security | security@company.com | Platform |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/SYSTEM_ARCHITECTURE.md",
+      "line": 14,
+      "text": "6. [Security Architecture](#security-architecture)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/SYSTEM_ARCHITECTURE.md",
+      "line": 77,
+      "text": "| Authentication | JWT, bcryptjs | Security |"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/SYSTEM_ARCHITECTURE.md",
+      "line": 385,
+      "text": "## Security Architecture"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/architecture/SYSTEM_ARCHITECTURE.md",
+      "line": 429,
+      "text": "### Security Measures"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/CONTRIBUTORS.md",
+      "line": 21,
+      "text": "- Label issues appropriately: `bug`, `enhancement`, `documentation`, `security`."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/CONTRIBUTORS.md",
+      "line": 101,
+      "text": "- `sentinel.md` — Security vulnerability learnings"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/GUIDANCE.md",
+      "line": 52,
+      "text": "DESA is part of the PlatphormNews network of security and developer tools:"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 187,
+      "text": "## Security Maintenance"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 200,
+      "text": "- Security vulnerability scan"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 212,
+      "text": "# Security audit"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 375,
+      "text": "- Run security scan"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 386,
+      "text": "- Security audit"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/MAINTENANCE.md",
+      "line": 400,
+      "text": "4. Security Team (if security-related)"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PLATPHORMNEWS.md",
+      "line": 9,
+      "text": "**DESA (Dynamic Encoded Script Analysis)** is a core service in the [PlatphormNews](https://platphormnews.com) network — a distributed platform of security and developer tools connected through shared protocols, discovery mechanisms, and th"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRIVACY.md",
+      "line": 49,
+      "text": "- **Logs:** Server logs are retained for up to 30 days for debugging and security purposes."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRIVACY.md",
+      "line": 51,
+      "text": "## Data Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRODUCT_ROADMAP.md",
+      "line": 14,
+      "text": "- Settings reflect a security-user mindset: deobfuscation depth, IOC extraction, rules, auto-analyze, theme, and VirusTotal enrichment"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRODUCT_ROADMAP.md",
+      "line": 54,
+      "text": "**Why first:** Security users will forgive missing features before they forgive inconsistency."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRODUCT_ROADMAP.md",
+      "line": 171,
+      "text": "**Goal:** Make DESA a first-class tool in agentic security workflows."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/PRODUCT_ROADMAP.md",
+      "line": 300,
+      "text": "That is the right product for security teams, and it fits what the live foundation is already hinting at."
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/ROADMAP.md",
+      "line": 44,
+      "text": "#### Week 3: Authentication & Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "docs/roadmap/INTEGRATION_ROADMAP.md",
+      "line": 544,
+      "text": "- [ ] Security review passed"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 834,
+      "text": "const script = 'Invoke-WebRequest http://169.254.169.254/latest/meta-data/iam/security-credentials/'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 845,
+      "text": "it('should detect security product enumeration', () => {"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 964,
+      "text": "const script = 'Invoke-WebRequest http://169.254.169.254/latest/meta-data/iam/security-credentials/my-role'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 1091,
+      "text": "Invoke-WebRequest http://169.254.169.254/latest/meta-data/iam/security-credentials/"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 1681,
+      "text": "const content = '[Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime]::new().RetrieveAll()'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/analysis.test.ts",
+      "line": 1890,
+      "text": "const result = extractCloudMetadataURLs('(New-Object Net.WebClient).DownloadString(\"http://169.254.169.254/latest/meta-data/iam/security-credentials/\")')"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/api.test.ts",
+      "line": 537,
+      "text": "const tagsRaw = 'test, demo , security'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/api.test.ts",
+      "line": 539,
+      "text": "expect(tags).toEqual(['test', 'demo', 'security'])"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/integration.test.ts",
+      "line": 506,
+      "text": "const s = 'wevtutil cl Security && wevtutil cl System'"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/__tests__/integration.test.ts",
+      "line": 624,
+      "text": "wevtutil cl Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 157,
+      "text": "description: 'Forcing PowerShell v2 disables AMSI, script-block logging, and other security features added in v3+.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 350,
+      "text": "pattern: /Windows\\.Security\\.Credentials|PasswordVault/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 386,
+      "text": "pattern: /reg\\s+save\\s+(?:HKLM\\\\SAM|HKLM\\\\SYSTEM|HKLM\\\\SECURITY)|reg\\s+export\\s+HKLM\\\\SAM/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 404,
+      "text": "pattern: /CryptUnprotectData|DPAPI|System\\.Security\\.Cryptography\\.ProtectedData|Unprotect\\s*\\(/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 512,
+      "text": "recommendation: 'ETW bypass is used to blind security monitoring – block execution.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 567,
+      "text": "recommendation: \"Heaven's Gate is used to bypass security hooks applied to 32-bit processes.\","
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 893,
+      "text": "description: 'Script uses known offensive security framework cmdlets.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 902,
+      "text": "description: 'Script references known offensive security frameworks.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1122,
+      "text": "pattern: /\\[System\\.Security\\.Principal\\.WindowsPrincipal\\]|IsInRole|whoami\\s+\\/groups/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1170,
+      "text": "title: 'Security product detection',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1171,
+      "text": "description: 'Script probes for installed security products.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1172,
+      "text": "recommendation: 'Security product enumeration enables targeted AV/EDR bypass.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1413,
+      "text": "pattern: /\\[System\\.Security\\.Cryptography\\]::(?:AES|RSACryptoServiceProvider|RijndaelManaged)|Encrypt-File|Get-ChildItem.*Encrypt/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 1883,
+      "text": "pattern: /169\\.254\\.169\\.254.*iam.*security-credentials|aws.*latest.*meta-data.*iam/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2126,
+      "text": "pattern: /[Rr]eg(?:\\.exe)?\\s+save\\s+HKLM\\\\SAM|[Rr]eg(?:\\.exe)?\\s+save\\s+HKLM\\\\SECURITY|[Rr]eg(?:\\.exe)?\\s+save\\s+HKLM\\\\SYSTEM|ntdsutil.*snapshot|ntdsutil.*activate/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2130,
+      "text": "description: 'Script dumps the SAM, SECURITY, or SYSTEM registry hives — used to extract local account and Active Directory credentials offline.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2225,
+      "text": "pattern: /[Ww]indows[Cc]redential[Ss]tore|[Vv]ault[Cc]md.*list|[Cc]redentialManager\\.[Rr]ead|[Pp]rotected[Dd]ata\\.[Uu]nprotect|[Pp]assword[Vv]ault.*RetrieveAll|Windows\\.Security\\.Credentials.*PasswordVault/gi,"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2279,
+      "text": "description: 'Script disables mailbox audit logging, blinding security teams to subsequent mailbox access.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2485,
+      "text": "description: 'Script connects to Exchange Online or Security & Compliance PowerShell remotely, enabling full Exchange administration.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/analysis/patterns.ts",
+      "line": 2850,
+      "text": "recommendation: 'Nighthawk is engineered for operational security — rely on network anomaly detection and process behaviour analysis.',"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/platform/constants.ts",
+      "line": 50,
+      "text": "{ path: '/.well-known/security.txt', title: 'Security Contact', description: 'DESA security disclosure contact.', changeFrequency: 'monthly', priority: 0.35, kind: 'well-known' },"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/platform/openapi.ts",
+      "line": 120,
+      "text": "'/api/v1/rules': { get: { tags: ['Rules'], summary: 'List detection rules', responses: { '200': jsonResponse() } }, post: { tags: ['Rules'], summary: 'Create a future protected custom rule', security: [{ PlatPhormApiKey: [] }], responses: {"
+    },
+    {
+      "kind": "security",
+      "source_path": "lib/vt-submissions-store.ts",
+      "line": 69,
+      "text": "// Math.random() is insecure and should not be used for security purposes."
+    },
+    {
+      "kind": "security",
+      "source_path": "License FAQ.md",
+      "line": 23,
+      "text": "Yes, if your use is non-commercial as defined by the license. Internal evaluation, research, development, testing, security review, accessibility work, and internal experimentation are generally allowed if you are not directly or indirectly"
+    },
+    {
+      "kind": "security",
+      "source_path": "LICENSE.txt",
+      "line": 13,
+      "text": "“Non-commercial purposes” include personal use by an individual, academic research and development, journalism, testing, evaluation, interoperability work, security review, accessibility work, and internal use by your own organization where"
+    },
+    {
+      "kind": "security",
+      "source_path": "public/manifest.json",
+      "line": 13,
+      "text": "\"categories\": [\"security\", \"developer tools\", \"utilities\"],"
+    }
+  ],
+  "security": {
+    "secret_risks": [
+      {
+        "kind": "github-token",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1815,
+        "redacted_sample": "const token = [REDACTED]"
+      },
+      {
+        "kind": "aws-access-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1853,
+        "redacted_sample": "const result = [REDACTED]"
+      },
+      {
+        "kind": "aws-access-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1854,
+        "redacted_sample": "expect(result.some(r = [REDACTED]"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1878,
+        "redacted_sample": "const result = [REDACTED]"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1879,
+        "redacted_sample": "expect(result).toContain('-----BEGIN RSA PRIVATE KEY-----')"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1883,
+        "redacted_sample": "const result = [REDACTED]"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 1884,
+        "redacted_sample": "expect(result).toContain('-----BEGIN OPENSSH PRIVATE KEY-----')"
+      },
+      {
+        "kind": "github-token",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 2085,
+        "redacted_sample": "expect(classifyIOC('[REDACTED_GITHUB_TOKEN]')).toBe('github_pat')"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 2093,
+        "redacted_sample": "expect(classifyIOC('-----BEGIN RSA PRIVATE KEY-----')).toBe('ssh_key')"
+      },
+      {
+        "kind": "private-key",
+        "source_path": "lib/__tests__/analysis.test.ts",
+        "line": 2094,
+        "redacted_sample": "expect(classifyIOC('-----BEGIN OPENSSH PRIVATE KEY-----')).toBe('ssh_key')"
+      },
+      {
+        "kind": "aws-access-key",
+        "source_path": "lib/__tests__/integration.test.ts",
+        "line": 734,
+        "redacted_sample": "const text = [REDACTED]"
+      },
+      {
+        "kind": "aws-access-key",
+        "source_path": "lib/__tests__/integration.test.ts",
+        "line": 736,
+        "redacted_sample": "expect(result).toContain('[REDACTED_AWS_KEY]')"
+      },
+      {
+        "kind": "aws-access-key",
+        "source_path": "lib/__tests__/integration.test.ts",
+        "line": 754,
+        "redacted_sample": "expect(classifyIOC('[REDACTED_AWS_KEY]')).toBe('aws_key')"
+      }
+    ],
+    "unsafe_patterns": [
+      {
+        "name": "child-process-exec",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/rules/page.tsx",
+          "lib/analysis/c2-extractor.ts",
+          "lib/analysis/decoders.ts",
+          "lib/analysis/engine.ts",
+          "lib/analysis/ioc-extractor.ts",
+          "lib/analysis/patterns.ts"
+        ]
+      },
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/sentinel.md"
+        ]
+      },
+      {
+        "name": "sql-injection-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/v1/scripts/[id]/export/route.ts",
+          "app/api/v1/scripts/[id]/route.ts",
+          "app/history/page.tsx",
+          "app/rules/page.tsx",
+          "lib/__tests__/rules-api.test.ts"
+        ]
+      },
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/v1/integrations/json/route.ts",
+          "app/api/v1/integrations/svg/route.ts",
+          "app/history/page.tsx",
+          "app/integrations/page.tsx",
+          "app/rules/page.tsx",
+          "app/script/[id]/page.tsx",
+          "lib/analysis/engine.ts",
+          "lib/integrations/platphormnews/client.ts"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env.example",
+          "app/.well-known/trust.json/route.ts",
+          "app/api/v1/integrations/mcp/route.ts",
+          "app/api/v1/integrations/virustotal/route.ts",
+          "app/contributors/page.tsx",
+          "app/faq/page.tsx",
+          "app/page.tsx",
+          "app/settings/page.tsx",
+          "docs/API.md",
+          "docs/architecture/API_SPECIFICATION.md",
+          "docs/architecture/MAINTENANCE.md",
+          "docs/architecture/SYSTEM_ARCHITECTURE.md",
+          "docs/MAINTENANCE.md",
+          "docs/PLATPHORMNEWS.md",
+          "docs/ROADMAP.md",
+          "docs/roadmap/INTEGRATION_ROADMAP.md",
+          "docs/testing/TESTING_GUIDE.md",
+          "lib/__tests__/mcp-client.test.ts",
+          "lib/integrations/platphormnews/client.ts",
+          "lib/mcp/client.ts"
+        ]
+      },
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/v1/analyze/route.ts",
+          "app/docs/page.tsx",
+          "app/faq/page.tsx",
+          "app/globals.css",
+          "app/history/page.tsx",
+          "app/integrations/page.tsx",
+          "app/iocs/page.tsx",
+          "app/layout.tsx",
+          "app/roadmap/page.tsx",
+          "app/roadmap/ux/page.tsx",
+          "app/rules/page.tsx",
+          "app/script/[id]/page.tsx",
+          "app/settings/page.tsx",
+          "components/analysis/__tests__/results-panel.test.tsx",
+          "components/analysis/results-panel.tsx",
+          "components/analysis/virustotal-panel.tsx",
+          "components/ioc-viewer/ioc-viewer.tsx",
+          "components/roadmap/integration-grid.tsx",
+          "components/roadmap/roadmap-timeline.tsx",
+          "components/ui/alert.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/.well-known/ai-plugin.json/route.ts",
+          "app/iocs/page.tsx",
+          "components/analysis/results-panel.tsx",
+          "components/ioc-viewer/ioc-viewer.tsx",
+          "docs/ARCHITECTURE.md",
+          "docs/architecture/MAINTENANCE.md",
+          "docs/architecture/SYSTEM_ARCHITECTURE.md",
+          "docs/DATA.md",
+          "lib/__tests__/analysis.test.ts",
+          "lib/__tests__/api.test.ts",
+          "lib/__tests__/db.test.ts",
+          "lib/__tests__/integration.test.ts",
+          "lib/__tests__/ioc-extractor-categorization.test.ts",
+          "lib/__tests__/ioc-extractor.test.ts",
+          "lib/analysis/engine.ts",
+          "lib/analysis/exporters.ts",
+          "lib/analysis/ioc-extractor.ts",
+          "lib/analysis/patterns.ts",
+          "lib/integrations/platphormnews/__tests__/utils.test.ts",
+          "lib/integrations/platphormnews/types.ts"
+        ]
+      },
+      {
+        "name": "fingerprint",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/settings/page.tsx",
+          "components/ioc-viewer/__tests__/ioc-json-tree.test.tsx",
+          "components/ioc-viewer/ioc-json-tree.tsx",
+          "components/ioc-viewer/ioc-viewer.tsx",
+          "lib/__tests__/analysis.test.ts",
+          "lib/__tests__/c2-extractor.test.ts",
+          "lib/__tests__/ioc-extractor-categorization.test.ts",
+          "lib/analysis/c2-extractor.ts",
+          "lib/analysis/ioc-extractor.ts",
+          "lib/analysis/patterns.ts",
+          "lib/mcp/discovery.ts"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/health/route.ts",
+          "app/api/mcp/route.ts",
+          "app/api/v1/health/route.ts",
+          "app/api/v1/integrations/ascii/route.ts",
+          "app/api/v1/integrations/json/route.ts",
+          "app/api/v1/integrations/mcp/route.ts",
+          "app/api/v1/integrations/msi/route.ts",
+          "app/api/v1/integrations/route.ts",
+          "app/api/v1/integrations/xml/route.ts",
+          "app/integrations/page.tsx",
+          "app/settings/page.tsx",
+          "components/roadmap/roadmap-timeline.tsx",
+          "docs/API_SPECIFICATION.md",
+          "docs/API.md",
+          "docs/ARCHITECTURE.md",
+          "docs/architecture/API_SPECIFICATION.md",
+          "docs/architecture/MAINTENANCE.md",
+          "docs/architecture/SYSTEM_ARCHITECTURE.md",
+          "docs/MAINTENANCE.md",
+          "docs/PLATPHORMNEWS.md"
+        ]
+      },
+      {
+        "name": "ip address",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docs/PRIVACY.md",
+          "docs/testing/TESTING_GUIDE.md",
+          "lib/__tests__/analysis.test.ts",
+          "lib/analysis/patterns.ts",
+          "lib/integrations/platphormnews/__tests__/utils.test.ts",
+          "lib/integrations/virustotal.ts"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "docs/roadmap/INTEGRATION_ROADMAP.md",
+          "lib/__tests__/analysis.test.ts",
+          "lib/__tests__/exporters.test.ts",
+          "lib/analysis/engine.ts",
+          "lib/analysis/exporters.ts",
+          "lib/analysis/ioc-extractor.ts",
+          "lib/analysis/patterns.ts",
+          "public/humans.txt"
+        ]
+      },
+      {
+        "name": "oauth",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/__tests__/analysis.test.ts",
+          "lib/analysis/patterns.ts"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env.example",
+          "app/settings/page.tsx",
+          "docs/ARCHITECTURE.md",
+          "docs/architecture/SYSTEM_ARCHITECTURE.md",
+          "lib/__tests__/analysis.test.ts",
+          "lib/__tests__/integration.test.ts",
+          "lib/analysis/decoders.ts",
+          "lib/analysis/patterns.ts",
+          "lib/platform/url-safety.ts",
+          "lib/types.ts",
+          "scripts/001-init-schema.sql",
+          "scripts/seed-data.sql"
+        ]
+      },
+      {
+        "name": "password_hash",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/types.ts",
+          "scripts/001-init-schema.sql"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package-lock.json",
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "session_token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "docs/architecture/API_SPECIFICATION.md",
+          "lib/analysis/patterns.ts"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/roadmap/ux/page.tsx",
+          "app/rules/page.tsx",
+          "components/editor/code-editor.tsx",
+          "components/ioc-viewer/ioc-json-tree.tsx",
+          "docs/API_SPECIFICATION.md",
+          "docs/ARCHITECTURE.md",
+          "docs/architecture/API_SPECIFICATION.md",
+          "docs/architecture/SYSTEM_ARCHITECTURE.md",
+          "docs/PRODUCT_ROADMAP.md",
+          "docs/roadmap/INTEGRATION_ROADMAP.md",
+          "docs/roadmap/UX_UI_ROADMAP.md",
+          "docs/testing/TESTING_GUIDE.md",
+          "lib/__tests__/analysis.test.ts",
+          "lib/__tests__/integration.test.ts",
+          "lib/__tests__/ioc-extractor-categorization.test.ts",
+          "lib/__tests__/ioc-extractor.test.ts",
+          "lib/__tests__/mcp-client.test.ts",
+          "lib/__tests__/rules-store.test.ts",
+          "lib/analysis/decoders.ts",
+          "lib/analysis/ioc-extractor.ts"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:13.955Z"
+}

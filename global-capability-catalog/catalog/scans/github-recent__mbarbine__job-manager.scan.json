@@ -1,0 +1,518 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__job-manager",
+    "name": "mbarbine__job-manager",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__job-manager",
+    "relative_path": "github-recent/mbarbine__job-manager",
+    "remote_url": "git@github.com:mbarbine/job-manager.git",
+    "default_branch": "main",
+    "current_commit": "e9094efb8847af93ae5e58a52d6495ec10ed7491"
+  },
+  "languages": [
+    {
+      "language": "JSON",
+      "files": 11,
+      "bytes": 460699
+    },
+    {
+      "language": "JavaScript",
+      "files": 56,
+      "bytes": 108407
+    },
+    {
+      "language": "YAML",
+      "files": 5,
+      "bytes": 11736
+    },
+    {
+      "language": "Markdown",
+      "files": 3,
+      "bytes": 4542
+    },
+    {
+      "language": "Prisma",
+      "files": 2,
+      "bytes": 1718
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 1310
+    },
+    {
+      "language": "SQL",
+      "files": 2,
+      "bytes": 815
+    },
+    {
+      "language": "TOML",
+      "files": 2,
+      "bytes": 254
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Jest",
+      "confidence": "high",
+      "evidence_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ]
+    },
+    {
+      "name": "Prisma",
+      "confidence": "high",
+      "evidence_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "leases/package.json",
+        "package.json",
+        "task-service/package.json",
+        "task-worker/package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "leases/package.json",
+        "name": "@job-manager/leases",
+        "version": "0.0.0",
+        "scripts": {
+          "dev": "next dev --turbopack",
+          "build": "npx prisma generate && next build",
+          "db:migrate": "npx prisma migrate dev",
+          "db:push": "npx prisma db push",
+          "start": "next start",
+          "lint": "next lint",
+          "test": "jest",
+          "test:watch": "jest --watch",
+          "test:detectOpenHandles": "jest --detectOpenHandles"
+        },
+        "dependencies": {
+          "@prisma/client": "^6.2.1",
+          "async-mutex": "^0.5.0",
+          "next": "15.1.4",
+          "react": "^19.0.0",
+          "react-dom": "^19.0.0",
+          "swr": "^2.3.0"
+        },
+        "dev_dependencies": {
+          "@eslint/eslintrc": "^3",
+          "@testing-library/dom": "^10.4.0",
+          "@testing-library/jest-dom": "^6.6.3",
+          "@testing-library/react": "^16.1.0",
+          "eslint": "^9",
+          "eslint-config-next": "15.1.4",
+          "jest": "^29.7.0",
+          "jest-environment-jsdom": "^29.7.0",
+          "postcss": "^8",
+          "prisma": "^6.2.1",
+          "tailwindcss": "^3.4.1",
+          "ts-node": "^10.9.2"
+        }
+      },
+      {
+        "path": "package.json",
+        "name": "job-manager",
+        "version": null,
+        "scripts": {
+          "build": "npm run build --workspaces ",
+          "test": "npm run test --workspaces "
+        },
+        "dependencies": {},
+        "dev_dependencies": {}
+      },
+      {
+        "path": "task-service/package.json",
+        "name": "task-service",
+        "version": "0.0.0",
+        "scripts": {
+          "dev": "next dev --turbopack",
+          "build": "npx prisma generate && next build",
+          "db:migrate": "npx prisma migrate dev",
+          "db:push": "npx prisma db push",
+          "start": "next start",
+          "lint": "next lint",
+          "test": "jest",
+          "test:watch": "jest --watch",
+          "test:detectOpenHandles": "jest --detectOpenHandles"
+        },
+        "dependencies": {
+          "@prisma/client": "^6.2.1",
+          "async-mutex": "^0.5.0",
+          "next": "15.1.4",
+          "react": "^19.0.0",
+          "react-dom": "^19.0.0",
+          "swr": "^2.3.0",
+          "@job-manager/leases": "0.0.0"
+        },
+        "dev_dependencies": {
+          "@eslint/eslintrc": "^3",
+          "@testing-library/dom": "^10.4.0",
+          "@testing-library/jest-dom": "^6.6.3",
+          "@testing-library/react": "^16.1.0",
+          "eslint": "^9",
+          "eslint-config-next": "15.1.4",
+          "jest": "^29.7.0",
+          "jest-environment-jsdom": "^29.7.0",
+          "postcss": "^8",
+          "prisma": "^6.2.1",
+          "tailwind-scrollbar": "^3.1.0",
+          "tailwindcss": "^3.4.1",
+          "ts-node": "^10.9.2"
+        }
+      },
+      {
+        "path": "task-worker/package.json",
+        "name": "task-worker",
+        "version": "0.0.0",
+        "scripts": {
+          "start": "node ./main.js"
+        },
+        "dependencies": {},
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [
+    {
+      "name": "migration",
+      "kind": "migration",
+      "source_path": "leases/prisma/migrations/20250114235748_initial/migration.sql"
+    },
+    {
+      "name": "schema",
+      "kind": "prisma-schema",
+      "source_path": "leases/prisma/schema.prisma"
+    },
+    {
+      "name": "migration",
+      "kind": "migration",
+      "source_path": "task-service/prisma/migrations/20250114235715_initial/migration.sql"
+    },
+    {
+      "name": "schema",
+      "kind": "prisma-schema",
+      "source_path": "task-service/prisma/schema.prisma"
+    }
+  ],
+  "database": {
+    "databases": [
+      "prisma"
+    ],
+    "schemas": [
+      {
+        "path": "leases/prisma/schema.prisma"
+      },
+      {
+        "path": "task-service/prisma/schema.prisma"
+      }
+    ],
+    "migrations": [
+      {
+        "path": "leases/prisma/migrations/20250114235748_initial/migration.sql"
+      },
+      {
+        "path": "task-service/prisma/migrations/20250114235715_initial/migration.sql"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "name": "leases-client.test.js",
+      "kind": "unit-or-integration",
+      "source_path": "leases/src/app/lib/leases-client.test.js"
+    },
+    {
+      "name": "PUT.test.js",
+      "kind": "unit-or-integration",
+      "source_path": "task-service/src/app/api/tasks/[id]/heartbeat/PUT.test.js"
+    },
+    {
+      "name": "worker-manager.test.js",
+      "kind": "unit-or-integration",
+      "source_path": "task-service/src/app/lib/worker-manager.test.js"
+    }
+  ],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/build-test.yaml"
+      },
+      {
+        "path": ".github/workflows/validate-app-spec.yaml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": "leases/.env"
+      },
+      {
+        "path": "task-service/.env"
+      },
+      {
+        "path": "task-worker/.env"
+      }
+    ],
+    "variables": [
+      {
+        "name": "DATABASE_URL",
+        "source_paths": [
+          "leases/.env",
+          "task-service/.env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "HEARTBEAT_INTERVAL",
+        "source_paths": [
+          "task-worker/main.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "HOSTNAME",
+        "source_paths": [
+          "task-service/src/app/lib/generator.js",
+          "task-worker/main.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_URL",
+        "source_paths": [
+          "leases/.env",
+          "task-service/.env",
+          "task-service/src/app/lib/generator.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PORT",
+        "source_paths": [
+          "leases/.env",
+          "task-service/.env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SERVICE_LEASES_URL",
+        "source_paths": [
+          "task-service/.env",
+          "task-service/src/app/lib/generator.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TASK_SERVICE_URL",
+        "source_paths": [
+          "task-service/.env",
+          "task-service/src/app/lib/tasks-client.js",
+          "task-worker/.env",
+          "task-worker/tasks-client.js"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "leases/eslint.config.mjs"
+    },
+    {
+      "path": "leases/jsconfig.json"
+    },
+    {
+      "path": "leases/next.config.mjs"
+    },
+    {
+      "path": "leases/package.json"
+    },
+    {
+      "path": "leases/postcss.config.mjs"
+    },
+    {
+      "path": "leases/tailwind.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "task-service/eslint.config.mjs"
+    },
+    {
+      "path": "task-service/jsconfig.json"
+    },
+    {
+      "path": "task-service/next.config.mjs"
+    },
+    {
+      "path": "task-service/package.json"
+    },
+    {
+      "path": "task-service/postcss.config.mjs"
+    },
+    {
+      "path": "task-service/tailwind.config.mjs"
+    },
+    {
+      "path": "task-worker/package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      },
+      {
+        "path": "task-service/README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Postgres",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".do/app.yaml",
+        "leases/.env",
+        "leases/package.json",
+        "leases/prisma/schema.prisma",
+        "package.json",
+        "task-service/.env",
+        "task-service/package.json",
+        "task-service/prisma/schema.prisma",
+        "task-worker/package.json"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": "Apache-2.0",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 7801,
+      "text": "\"ts-script\": \"dist/bin-script-deprecated.js\""
+    },
+    {
+      "kind": "unsafe",
+      "source_path": "task-service/src/app/api/tasks/[id]/complete/route.js",
+      "line": 64,
+      "text": "processedAt: lease.renewed_at, // dirty hack to use sql NOW(), is there another way?"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "ssrf-review-needed",
+        "confidence": "medium",
+        "evidence_paths": [
+          "leases/src/app/page.js",
+          "task-service/src/app/components/TaskGenerator.js",
+          "task-service/src/app/components/TasksView.js"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "leases/src/app/api/healthz/route.js",
+          "task-service/src/app/api/healthz/route.js"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".devcontainer/devcontainer.json"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/validate-app-spec.yaml",
+          "package-lock.json"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:09.752Z"
+}

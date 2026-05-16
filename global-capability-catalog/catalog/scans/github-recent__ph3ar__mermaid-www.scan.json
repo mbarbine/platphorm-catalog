@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__ph3ar__mermaid-www",
+    "name": "ph3ar__mermaid-www",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/ph3ar__mermaid-www",
+    "relative_path": "github-recent/ph3ar__mermaid-www",
+    "remote_url": "git@github.com:ph3ar/mermaid-www.git",
+    "default_branch": "main",
+    "current_commit": "ad1030c817cefefef8a406ad9a4e4a61c97b0bfe"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 13,
+      "bytes": 19841
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [
+    {
+      "name": "About",
+      "kind": "ui-component",
+      "source_path": "app/components/About.tsx"
+    },
+    {
+      "name": "Booking",
+      "kind": "ui-component",
+      "source_path": "app/components/Booking.tsx"
+    },
+    {
+      "name": "Contact",
+      "kind": "ui-component",
+      "source_path": "app/components/Contact.tsx"
+    },
+    {
+      "name": "Footer",
+      "kind": "ui-component",
+      "source_path": "app/components/Footer.tsx"
+    },
+    {
+      "name": "Header",
+      "kind": "ui-component",
+      "source_path": "app/components/Header.tsx"
+    },
+    {
+      "name": "Hero",
+      "kind": "ui-component",
+      "source_path": "app/components/Hero.tsx"
+    },
+    {
+      "name": "MermaidWorld",
+      "kind": "ui-component",
+      "source_path": "app/components/MermaidWorld.tsx"
+    },
+    {
+      "name": "Newsletter",
+      "kind": "ui-component",
+      "source_path": "app/components/Newsletter.tsx"
+    },
+    {
+      "name": "PerformanceShowcase",
+      "kind": "ui-component",
+      "source_path": "app/components/PerformanceShowcase.tsx"
+    },
+    {
+      "name": "SocialFeed",
+      "kind": "ui-component",
+      "source_path": "app/components/SocialFeed.tsx"
+    },
+    {
+      "name": "Testimonials",
+      "kind": "ui-component",
+      "source_path": "app/components/Testimonials.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": "MIT",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/components/Booking.tsx",
+          "app/components/Contact.tsx",
+          "app/components/Newsletter.tsx"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:31.236Z"
+}

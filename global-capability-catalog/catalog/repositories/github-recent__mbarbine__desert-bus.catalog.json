@@ -1,0 +1,3488 @@
+{
+  "schema_version": "1.0.0",
+  "repo": {
+    "id": "github-recent__mbarbine__desert-bus",
+    "name": "mbarbine__desert-bus",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__desert-bus",
+    "remote_url": "git@github.com:mbarbine/desert-bus.git",
+    "description": "**The most authentic browser recreation of the legendary Desert Bus game**, supporting children's hospitals through [Desert Bus for Hope](https://desertbus.org/).",
+    "primary_language": "TypeScript",
+    "languages": [
+      "TypeScript",
+      "YAML",
+      "Markdown",
+      "CSS",
+      "JavaScript",
+      "JSON",
+      "HTML",
+      "Dockerfile"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Vitest"
+    ],
+    "package_manager": "pnpm",
+    "databases": [],
+    "deployment": [
+      "docker",
+      "vercel"
+    ],
+    "maturity": "deprecated",
+    "confidence": "high",
+    "scan_artifact": "catalog/scans/github-recent__mbarbine__desert-bus.scan.json",
+    "analyzed_at": "2026-05-16T16:44:07.316Z"
+  },
+  "capabilities": [
+    {
+      "id": "ai.chat-or-generation",
+      "name": "AI Chat or Generation",
+      "type": "ai-model",
+      "summary": "Source evidence indicates AI model, chat, completion, prompt, or generation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/desert-bus/rotate-prompt.tsx",
+        "lib/model-adapter.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "prompts, messages, or generation inputs"
+        ],
+        "outputs": [
+          "model outputs or generated artifacts"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "prompts, messages, or generation inputs"
+        ],
+        "writes": [
+          "model outputs or generated artifacts"
+        ],
+        "sensitive_data": [
+          "API keys",
+          "user prompts"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": [
+          "PLATPHORM_MODEL_PROVIDER_CONFIGURED"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "analytics.metrics-reporting",
+      "name": "Metrics and Reporting",
+      "type": "analytics",
+      "summary": "Source evidence indicates analytics, metrics, reports, scores, or aggregation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "low",
+      "source_paths": [
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "events, metrics, or report inputs"
+        ],
+        "outputs": [
+          "aggregated reports or analytics views"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "events, metrics, or report inputs"
+        ],
+        "writes": [
+          "aggregated reports or analytics views"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "unknown",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "api.route-handlers",
+      "name": "API Route Handlers",
+      "type": "api",
+      "summary": "Repository exposes source-backed API route handlers discovered from framework route files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/api/cron/refresh/route.ts",
+        "app/api/docs/route.ts",
+        "app/api/events/route.ts",
+        "app/api/health/route.ts",
+        "app/api/leaderboard/route.ts",
+        "app/api/mcp/route.ts",
+        "app/api/rss/charity/route.ts",
+        "app/api/rss/leaderboard/route.ts",
+        "app/api/rss/stats/route.ts",
+        "app/api/v1/charity-links/route.ts",
+        "app/api/v1/events/route.ts",
+        "app/api/v1/game/route.ts",
+        "app/api/v1/game/rules/route.ts",
+        "app/api/v1/game/state-schema/route.ts",
+        "app/api/v1/health/route.ts",
+        "app/api/v1/integrations/games/route.ts",
+        "app/api/v1/integrations/status/route.ts",
+        "app/api/v1/leaderboard/route.ts",
+        "app/api/v1/milestones/route.ts",
+        "app/api/v1/polaroids/route.ts",
+        "app/api/v1/route/route.ts",
+        "app/api/v1/runs/local-schema/route.ts",
+        "app/api/v1/story/route.ts",
+        "app/api/v1/webhooks/route.ts",
+        "app/api/v1/webhooks/status/route.ts",
+        "app/api/webhooks/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /docs",
+          "GET /events",
+          "GET /health",
+          "GET /rss/charity",
+          "GET /rss/leaderboard",
+          "GET /rss/stats",
+          "GET /v1",
+          "GET /v1/charity-links",
+          "GET /v1/game",
+          "GET /v1/game/rules",
+          "GET /v1/game/state-schema",
+          "GET /v1/health",
+          "GET /v1/integrations/games",
+          "GET /v1/integrations/status",
+          "GET /v1/leaderboard",
+          "GET /v1/milestones",
+          "GET /v1/polaroids",
+          "GET /v1/runs/local-schema",
+          "GET /v1/story",
+          "GET /v1/webhooks/status",
+          "GET /webhooks",
+          "GET|POST /cron/refresh",
+          "GET|POST /leaderboard",
+          "GET|POST /mcp",
+          "GET|POST /v1/events",
+          "POST /v1/webhooks"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "HTTP requests"
+        ],
+        "outputs": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "HTTP requests"
+        ],
+        "writes": [
+          "HTTP responses",
+          "possible state changes from non-GET routes"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [
+          "zod dependency detected"
+        ],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dompurify",
+          "embla-carousel-react",
+          "input-otp",
+          "isomorphic-dompurify",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "sonner",
+          "tailwind-merge",
+          "tailwindcss",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vercel",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": [
+          "DATABASE_URL",
+          "NODE_ENV",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_MODEL_PROVIDER_CONFIGURED",
+          "PLATPHORM_REQUIRE_API_KEY",
+          "PLATPHORM_TRACE_EXPORT_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "auth.user-session",
+      "name": "User Authentication and Sessions",
+      "type": "authentication",
+      "summary": "Source evidence indicates authentication, login, session, token, or identity handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "lib/auth.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "outputs": [
+          "session or authentication responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "credentials, identity provider callbacks, or session state"
+        ],
+        "writes": [
+          "session or authentication responses"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "OAuth tokens",
+          "password",
+          "session_token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "automation.workflow-runner",
+      "name": "Workflow Runner",
+      "type": "automation",
+      "summary": "Source evidence indicates jobs, workflows, queues, cron tasks, or automation runs.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/cron/refresh/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "workflow inputs or queued jobs"
+        ],
+        "outputs": [
+          "workflow run state or task outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "workflow inputs or queued jobs"
+        ],
+        "writes": [
+          "workflow run state or task outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "content.publishing-workflow",
+      "name": "Content Publishing Workflow",
+      "type": "content-management",
+      "summary": "Source evidence indicates content, docs, posts, publishing, CMS, or markdown/MDX workflows.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/docs/route.ts",
+        "components/content/info-page.tsx",
+        "DEPLOYMENT.md",
+        "lib/discovery.ts",
+        "package.json",
+        "postcss.config.mjs"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "content source files or editorial metadata"
+        ],
+        "outputs": [
+          "published content pages or feeds"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "content source files or editorial metadata"
+        ],
+        "writes": [
+          "published content pages or feeds"
+        ],
+        "sensitive_data": [
+          "card"
+        ],
+        "external_data_flows": [
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "dashboard.operational-dashboard",
+      "name": "Operational Dashboard",
+      "type": "dashboard",
+      "summary": "Source evidence indicates dashboard, admin, status, or overview UI surfaces.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "__tests__/components/desert-bus/dashboard.test.tsx",
+        "app/api/v1/integrations/status/route.ts",
+        "app/api/v1/webhooks/status/route.ts",
+        "components/desert-bus/dashboard.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "status, metric, or summary data"
+        ],
+        "outputs": [
+          "rendered dashboard UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "status, metric, or summary data"
+        ],
+        "writes": [
+          "rendered dashboard UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "data.import-export",
+      "name": "Data Import and Export",
+      "type": "data-export",
+      "summary": "Source evidence indicates import, export, CSV, JSON, XML, or structured data transfer behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/json-ld.tsx",
+        "lib/discovery.ts",
+        "lib/trace.ts",
+        "package.json",
+        "tsconfig.json",
+        "vercel.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "structured data input"
+        ],
+        "outputs": [
+          "structured data output"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "structured data input"
+        ],
+        "writes": [
+          "structured data output"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Postgres",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".Jules/sentinel.md",
+            "components/json-ld.tsx",
+            "components/memories-polaroids.tsx",
+            "components/ui/chart.tsx",
+            "public/sw.js"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        },
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "database.schema-management",
+      "name": "Database Schema Management",
+      "type": "database",
+      "summary": "Repository includes database schemas, migrations, or database framework dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "lib/schema.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "database schema definitions"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "database schema definitions"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dompurify",
+          "embla-carousel-react",
+          "input-otp",
+          "isomorphic-dompurify",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "sonner",
+          "tailwind-merge",
+          "tailwindcss",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vercel",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "high",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "deployment.project-automation",
+      "name": "Deployment and Project Automation",
+      "type": "deployment",
+      "summary": "Repository includes CI workflows, deployment config, or containerization files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "Dockerfile",
+        "vercel.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "CI configuration",
+          "repository source"
+        ],
+        "outputs": [
+          "build artifacts or deployment outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "CI configuration",
+          "repository source"
+        ],
+        "writes": [
+          "build artifacts or deployment outputs"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "dictionary.lookup-tools",
+      "name": "Dictionary Lookup Tools",
+      "type": "dictionary",
+      "summary": "Source evidence indicates dictionary, glossary, lookup, or terminology tooling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/terms/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "terms or query input"
+        ],
+        "outputs": [
+          "definitions or lookup results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "terms or query input"
+        ],
+        "writes": [
+          "definitions or lookup results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "forms.submission-flow",
+      "name": "Form Submission Flow",
+      "type": "forms",
+      "summary": "Source evidence indicates forms, contact flows, submit endpoints, or validation-backed input handling.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "__tests__/lib/platform-contract.test.ts",
+        "app/api/leaderboard/route.ts",
+        "app/api/rss/leaderboard/route.ts",
+        "app/api/v1/leaderboard/route.ts",
+        "app/leaderboard/page.tsx",
+        "components/desert-bus/leaderboard-panel.tsx",
+        "components/ui/form.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "form input"
+        ],
+        "outputs": [
+          "submission records or responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "form input"
+        ],
+        "writes": [
+          "submission records or responses"
+        ],
+        "sensitive_data": [
+          "card",
+          "email",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "react-hook-form"
+        ],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "gameplay.browser-game",
+      "name": "Browser Gameplay",
+      "type": "gameplay",
+      "summary": "Source evidence indicates game, canvas, realtime, player, or gameplay implementation.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/v1/game/route.ts",
+        "app/api/v1/game/rules/route.ts",
+        "app/api/v1/game/state-schema/route.ts",
+        "app/api/v1/integrations/games/route.ts",
+        "components/desert-bus/game-canvas.tsx",
+        "components/desert-bus/game-error-boundary.tsx",
+        "components/desert-bus/game.tsx",
+        "components/home/game-section.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "player input or game state"
+        ],
+        "outputs": [
+          "rendered gameplay or score state"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "player input or game state"
+        ],
+        "writes": [
+          "rendered gameplay or score state"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "integration.platphorm",
+      "name": "PlatPhorm Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a PlatPhorm integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "__tests__/lib/platform-contract.test.ts",
+        "app/stats/page.tsx",
+        "lib/auth.ts",
+        "lib/desertbus-data.ts",
+        "lib/discovery.ts",
+        "lib/events.ts",
+        "lib/model-adapter.ts",
+        "lib/openapi.ts",
+        "lib/trace.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "outputs": [
+          "PlatPhorm API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "PlatPhorm configuration or SDK inputs"
+        ],
+        "writes": [
+          "PlatPhorm API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "PlatPhorm"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm"
+        ],
+        "env_vars": [
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_MODEL_PROVIDER_CONFIGURED",
+          "PLATPHORM_REQUIRE_API_KEY",
+          "PLATPHORM_TRACE_EXPORT_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.postgres",
+      "name": "Postgres Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Postgres integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "DEPLOYMENT.md",
+        "lib/discovery.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Postgres API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Postgres configuration or SDK inputs"
+        ],
+        "writes": [
+          "Postgres API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Postgres"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Postgres"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "integration.vercel",
+      "name": "Vercel Integration",
+      "type": "integration",
+      "summary": "Repository has source-backed indicators for a Vercel integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/layout.tsx",
+        "DEPLOYMENT.md",
+        "lib/discovery.ts",
+        "lib/model-adapter.ts",
+        "lib/trace.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "outputs": [
+          "Vercel API calls or integration outputs"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "Vercel configuration or SDK inputs"
+        ],
+        "writes": [
+          "Vercel API calls or integration outputs"
+        ],
+        "sensitive_data": [
+          "api_key",
+          "card",
+          "email",
+          "health",
+          "location",
+          "payment",
+          "pii",
+          "secret-like environment variables",
+          "token"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "vercel"
+        ],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "mcp.tool-server",
+      "name": "MCP Tool Server",
+      "type": "mcp",
+      "summary": "Repository contains MCP-related routes, manifests, files, or dependencies.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/mcp/route.ts",
+        "lib/mcp.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET|POST /mcp"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "outputs": [
+          "JSON-RPC responses or MCP metadata"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "JSON-RPC requests or MCP discovery metadata"
+        ],
+        "writes": [
+          "JSON-RPC responses or MCP metadata"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "observability.trace-logging",
+      "name": "Trace and Logging",
+      "type": "observability",
+      "summary": "Source evidence indicates trace, span, logging, monitoring, or OpenTelemetry behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/health/route.ts",
+        "app/api/v1/health/route.ts",
+        "components/ui/alert-dialog.tsx",
+        "components/ui/dialog.tsx",
+        "lib/discovery.ts",
+        "lib/logger.ts",
+        "lib/trace.ts",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "request or runtime metadata"
+        ],
+        "outputs": [
+          "logs, spans, health responses, or monitoring data"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "request or runtime metadata"
+        ],
+        "writes": [
+          "logs, spans, health responses, or monitoring data"
+        ],
+        "sensitive_data": [
+          "card",
+          "health",
+          "IP address",
+          "request fingerprints"
+        ],
+        "external_data_flows": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "PlatPhorm",
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "routing.application-pages",
+      "name": "Application Routes",
+      "type": "routing",
+      "summary": "Repository contains user-facing application page routes.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "app/about/page.tsx",
+        "app/charity/page.tsx",
+        "app/dateland/page.tsx",
+        "app/disclaimer/page.tsx",
+        "app/faq/page.tsx",
+        "app/history/page.tsx",
+        "app/how-to-play/page.tsx",
+        "app/leaderboard/page.tsx",
+        "app/play/page.tsx",
+        "app/polaroids/page.tsx",
+        "app/privacy/page.tsx",
+        "app/stats/page.tsx",
+        "app/story/page.tsx",
+        "app/terms/page.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [
+          "GET /about",
+          "GET /charity",
+          "GET /dateland",
+          "GET /disclaimer",
+          "GET /faq",
+          "GET /history",
+          "GET /how-to-play",
+          "GET /leaderboard",
+          "GET /play",
+          "GET /polaroids",
+          "GET /privacy",
+          "GET /stats",
+          "GET /story",
+          "GET /terms"
+        ],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "outputs": [
+          "HTML or client-rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "rendered application state",
+          "route parameters"
+        ],
+        "writes": [
+          "HTML or client-rendered UI"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dompurify",
+          "embla-carousel-react",
+          "input-otp",
+          "isomorphic-dompurify",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "sonner",
+          "tailwind-merge",
+          "tailwindcss",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vercel",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "security.env-configuration",
+      "name": "Environment Configuration",
+      "type": "security",
+      "summary": "Repository references environment variables; secret-like names are cataloged without values.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/layout.tsx",
+        "components/service-worker-registration.tsx",
+        "lib/auth.ts",
+        "lib/discovery.ts",
+        "lib/logger.ts",
+        "lib/model-adapter.ts",
+        "lib/trace.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "environment variable names"
+        ],
+        "outputs": []
+      },
+      "data_handling": {
+        "reads": [
+          "environment variable names"
+        ],
+        "writes": [],
+        "sensitive_data": [
+          "DATABASE_URL",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_REQUIRE_API_KEY"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [
+          "PLATPHORM_API_KEY"
+        ],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "Secret-like environment variables are referenced by name only."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": [
+          "DATABASE_URL",
+          "NODE_ENV",
+          "PLATPHORM_API_KEY",
+          "PLATPHORM_MODEL_PROVIDER_CONFIGURED",
+          "PLATPHORM_REQUIRE_API_KEY",
+          "PLATPHORM_TRACE_EXPORT_URL"
+        ]
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Catalog stores environment variable names only, never values."
+        ]
+      },
+      "risks": [
+        {
+          "id": "security.secret-env-vars",
+          "severity": "medium",
+          "summary": "Secret-like environment variable names are referenced.",
+          "evidence_paths": [
+            "lib/auth.ts",
+            "lib/discovery.ts"
+          ],
+          "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Catalog stores environment variable names only, never values."
+      ]
+    },
+    {
+      "id": "shipping.fulfillment-flow",
+      "name": "Shipping and Fulfillment Flow",
+      "type": "shipping",
+      "summary": "Source evidence indicates shipping, labels, postcards, fulfillment, or delivery-provider integration.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "components/ui/label.tsx",
+        "package.json"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "recipient or shipment details"
+        ],
+        "outputs": [
+          "shipping labels, postcards, or fulfillment requests"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "recipient or shipment details"
+        ],
+        "writes": [
+          "shipping labels, postcards, or fulfillment requests"
+        ],
+        "sensitive_data": [
+          "card",
+          "location data",
+          "user profile data"
+        ],
+        "external_data_flows": [
+          "Vercel"
+        ],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse.",
+          "External service flows require credential, privacy, and data-retention review."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [
+          "Vercel"
+        ],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project.",
+          "Verify external service credentials, webhook signatures, rate limits, and data-retention behavior."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    },
+    {
+      "id": "testing.automated-tests",
+      "name": "Automated Test Suite",
+      "type": "testing",
+      "summary": "Repository includes automated test files.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "high",
+      "source_paths": [
+        "__tests__/components/desert-bus/dashboard.test.tsx",
+        "__tests__/lib/achievements-enhanced.test.ts",
+        "__tests__/lib/achievements.test.ts",
+        "__tests__/lib/audio-engine.test.ts",
+        "__tests__/lib/game-engine.extended.test.ts",
+        "__tests__/lib/game-engine.test.ts",
+        "__tests__/lib/haptics.test.ts",
+        "__tests__/lib/leaderboard-enhanced.test.ts",
+        "__tests__/lib/leaderboard-store-enhanced.test.ts",
+        "__tests__/lib/leaderboard-store.test.ts",
+        "__tests__/lib/leaderboard.test.ts",
+        "__tests__/lib/logger.test.ts",
+        "__tests__/lib/platform-contract.test.ts",
+        "__tests__/lib/route-handlers.test.ts",
+        "__tests__/lib/schema-enhanced.test.ts",
+        "__tests__/lib/schema.test.ts",
+        "__tests__/lib/utils.test.ts",
+        "test_audio.js",
+        "test_perf.js"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "source code under test"
+        ],
+        "outputs": [
+          "test results"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "source code under test"
+        ],
+        "writes": [
+          "test results"
+        ],
+        "sensitive_data": [],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": []
+      },
+      "dependencies": {
+        "packages": [
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "vitest"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "pattern_only",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Reuse the implementation pattern after recreating it in the target project's framework and test harness.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "ui.component-library",
+      "name": "UI Component Library",
+      "type": "ui-component",
+      "summary": "Reusable UI components were found in component-oriented source paths.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "__tests__/components/desert-bus/dashboard.test.tsx",
+        "components/content/info-page.tsx",
+        "components/desert-bus/coach-marks.tsx",
+        "components/desert-bus/controls.tsx",
+        "components/desert-bus/dashboard.tsx",
+        "components/desert-bus/drag-steering.tsx",
+        "components/desert-bus/game-canvas.tsx",
+        "components/desert-bus/game-error-boundary.tsx",
+        "components/desert-bus/game.tsx",
+        "components/desert-bus/install-banner.tsx",
+        "components/desert-bus/leaderboard-panel.tsx",
+        "components/desert-bus/rotate-prompt.tsx",
+        "components/desert-bus/settings-panel.tsx",
+        "components/desert-bus/share-run-button.tsx",
+        "components/desert-bus/stats-card.tsx",
+        "components/desert-bus/throttle-stick.tsx",
+        "components/desert-bus/virtual-wheel.tsx",
+        "components/home/about-section.tsx",
+        "components/home/charity-cta.tsx",
+        "components/home/dateland-highlight.tsx",
+        "components/home/game-section.tsx",
+        "components/home/hero-section.tsx",
+        "components/home/site-footer.tsx",
+        "components/home/site-header.tsx",
+        "components/json-ld.tsx",
+        "components/memories-polaroids.tsx",
+        "components/service-worker-registration.tsx",
+        "components/theme-provider.tsx",
+        "components/ui/accordion.tsx",
+        "components/ui/alert-dialog.tsx"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [
+          "about-section",
+          "accordion",
+          "alert",
+          "alert-dialog",
+          "aspect-ratio",
+          "avatar",
+          "badge",
+          "breadcrumb",
+          "button",
+          "button-group",
+          "calendar",
+          "card",
+          "carousel",
+          "charity-cta",
+          "chart",
+          "checkbox",
+          "coach-marks",
+          "collapsible",
+          "command",
+          "container",
+          "context-menu",
+          "controls",
+          "dashboard",
+          "dashboard.test",
+          "dateland-highlight",
+          "dialog",
+          "drag-steering",
+          "drawer",
+          "dropdown-menu",
+          "empty",
+          "field",
+          "form",
+          "game",
+          "game-canvas",
+          "game-error-boundary",
+          "game-section",
+          "hero-section",
+          "hover-card",
+          "info-page",
+          "input",
+          "input-group",
+          "input-otp",
+          "install-banner",
+          "item",
+          "json-ld",
+          "kbd",
+          "label",
+          "leaderboard-panel",
+          "memories-polaroids",
+          "menubar",
+          "navigation-menu",
+          "pagination",
+          "popover",
+          "progress",
+          "radio-group",
+          "resizable",
+          "rotate-prompt",
+          "scroll-area",
+          "select",
+          "separator",
+          "service-worker-registration",
+          "settings-panel",
+          "share-run-button",
+          "sheet",
+          "sidebar",
+          "site-footer",
+          "site-header",
+          "skeleton",
+          "slider",
+          "sonner",
+          "spinner",
+          "stats-card",
+          "switch",
+          "table",
+          "tabs",
+          "textarea",
+          "theme-provider",
+          "throttle-stick",
+          "toast",
+          "toaster",
+          "toggle",
+          "toggle-group",
+          "tooltip",
+          "use-mobile",
+          "virtual-wheel"
+        ],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "application state",
+          "component props"
+        ],
+        "outputs": [
+          "rendered UI"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "application state",
+          "component props"
+        ],
+        "writes": [
+          "rendered UI"
+        ],
+        "sensitive_data": [
+          "email",
+          "payment",
+          "pii",
+          "token"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [
+          "@hookform/resolvers",
+          "@radix-ui/react-accordion",
+          "@radix-ui/react-alert-dialog",
+          "@radix-ui/react-aspect-ratio",
+          "@radix-ui/react-avatar",
+          "@radix-ui/react-checkbox",
+          "@radix-ui/react-collapsible",
+          "@radix-ui/react-context-menu",
+          "@radix-ui/react-dialog",
+          "@radix-ui/react-dropdown-menu",
+          "@radix-ui/react-hover-card",
+          "@radix-ui/react-label",
+          "@radix-ui/react-menubar",
+          "@radix-ui/react-navigation-menu",
+          "@radix-ui/react-popover",
+          "@radix-ui/react-progress",
+          "@radix-ui/react-radio-group",
+          "@radix-ui/react-scroll-area",
+          "@radix-ui/react-select",
+          "@radix-ui/react-separator",
+          "@radix-ui/react-slider",
+          "@radix-ui/react-slot",
+          "@radix-ui/react-switch",
+          "@radix-ui/react-tabs",
+          "@radix-ui/react-toast",
+          "@radix-ui/react-toggle",
+          "@radix-ui/react-toggle-group",
+          "@radix-ui/react-tooltip",
+          "@tailwindcss/postcss",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@vercel/analytics",
+          "@vercel/speed-insights",
+          "autoprefixer",
+          "class-variance-authority",
+          "clsx",
+          "cmdk",
+          "date-fns",
+          "dompurify",
+          "embla-carousel-react",
+          "input-otp",
+          "isomorphic-dompurify",
+          "jsdom",
+          "lucide-react",
+          "next",
+          "next-themes",
+          "postcss",
+          "react",
+          "react-day-picker",
+          "react-dom",
+          "react-hook-form",
+          "react-resizable-panels",
+          "recharts",
+          "sonner",
+          "tailwind-merge",
+          "tailwindcss",
+          "tw-animate-css",
+          "typescript",
+          "vaul",
+          "vercel",
+          "vitest",
+          "zod"
+        ],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": []
+      },
+      "risks": [
+        {
+          "id": "security.unsafe-patterns",
+          "severity": "medium",
+          "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+          "evidence_paths": [
+            ".Jules/sentinel.md",
+            "components/json-ld.tsx",
+            "components/memories-polaroids.tsx",
+            "components/ui/chart.tsx",
+            "public/sw.js"
+          ],
+          "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+        }
+      ],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": []
+    },
+    {
+      "id": "webhooks.event-receiver",
+      "name": "Webhook Event Receiver",
+      "type": "webhooks",
+      "summary": "Source evidence indicates webhook receiving, event delivery, or signature validation behavior.",
+      "maturity": "deprecated",
+      "reusable": true,
+      "confidence": "medium",
+      "source_paths": [
+        "app/api/events/route.ts",
+        "app/api/v1/events/route.ts",
+        "app/api/v1/webhooks/route.ts",
+        "app/api/v1/webhooks/status/route.ts",
+        "app/api/webhooks/route.ts"
+      ],
+      "interfaces": {
+        "api_routes": [],
+        "ui_components": [],
+        "cli_commands": [],
+        "events": [],
+        "exports": [],
+        "inputs": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "outputs": [
+          "event handling responses"
+        ]
+      },
+      "data_handling": {
+        "reads": [
+          "signature headers",
+          "webhook request payloads"
+        ],
+        "writes": [
+          "event handling responses"
+        ],
+        "sensitive_data": [
+          "webhook secrets"
+        ],
+        "external_data_flows": [],
+        "persistence_layer": [],
+        "validation": [],
+        "auth_requirements": [],
+        "privacy_security_notes": [
+          "Sensitive-data indicators require validation before reuse."
+        ]
+      },
+      "dependencies": {
+        "packages": [],
+        "internal": [],
+        "external_services": [],
+        "env_vars": []
+      },
+      "reuse": {
+        "reusable": "partial",
+        "extraction_difficulty": "medium",
+        "coupling": {
+          "framework": "medium",
+          "database": "low",
+          "external_services": "medium",
+          "auth": "medium"
+        },
+        "recommended_reuse_approach": "Extract the source-backed files with their dependencies, then add tests around the target integration boundary.",
+        "extraction_steps": [
+          "Review all listed source paths.",
+          "Copy only source-backed implementation files and required local dependencies.",
+          "Replace repository-specific configuration, routes, and environment variable handling.",
+          "Add tests that prove the capability in the target project."
+        ],
+        "notes": [
+          "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+        ]
+      },
+      "risks": [],
+      "tests": {
+        "has_tests": true,
+        "test_paths": [
+          "__tests__/components/desert-bus/dashboard.test.tsx",
+          "__tests__/lib/achievements-enhanced.test.ts",
+          "__tests__/lib/achievements.test.ts",
+          "__tests__/lib/audio-engine.test.ts",
+          "__tests__/lib/game-engine.extended.test.ts",
+          "__tests__/lib/game-engine.test.ts",
+          "__tests__/lib/haptics.test.ts",
+          "__tests__/lib/leaderboard-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store-enhanced.test.ts",
+          "__tests__/lib/leaderboard-store.test.ts",
+          "__tests__/lib/leaderboard.test.ts",
+          "__tests__/lib/logger.test.ts",
+          "__tests__/lib/platform-contract.test.ts",
+          "__tests__/lib/route-handlers.test.ts",
+          "__tests__/lib/schema-enhanced.test.ts",
+          "__tests__/lib/schema.test.ts",
+          "__tests__/lib/utils.test.ts",
+          "test_audio.js",
+          "test_perf.js"
+        ],
+        "notes": [
+          "Repository has test evidence; verify capability-specific coverage before extraction."
+        ]
+      },
+      "docs": {
+        "readme": true,
+        "docs_paths": [
+          "README.md"
+        ],
+        "llms_context_paths": [],
+        "notes": []
+      },
+      "related_capabilities": [],
+      "notes": [
+        "Pattern capability generated from deterministic file, route, dependency, or environment-name evidence."
+      ]
+    }
+  ],
+  "repository_risks": [
+    {
+      "id": "security.unsafe-patterns",
+      "severity": "medium",
+      "summary": "Unsafe-code or SSRF-review patterns were detected and need human review.",
+      "evidence_paths": [
+        ".Jules/sentinel.md",
+        "components/json-ld.tsx",
+        "components/memories-polaroids.tsx",
+        "components/ui/chart.tsx",
+        "public/sw.js"
+      ],
+      "recommendation": "Review input validation, sandboxing, escaping, and network allowlists before reuse."
+    },
+    {
+      "id": "security.secret-env-vars",
+      "severity": "medium",
+      "summary": "Secret-like environment variable names are referenced.",
+      "evidence_paths": [
+        "lib/auth.ts",
+        "lib/discovery.ts"
+      ],
+      "recommendation": "Preserve variable names only in catalog outputs and verify runtime secret handling before extraction."
+    }
+  ],
+  "catalog_quality": {
+    "coverage": {
+      "scan_artifact": true,
+      "readme": true,
+      "docs": true,
+      "routes": true,
+      "tests": true,
+      "llms_context": false
+    },
+    "missing_evidence": [
+      "CI workflows not detected",
+      "LLMs context files not detected"
+    ],
+    "uncertainty_notes": [
+      "Generated by evidence-bound bootstrap analyzer. Run with CATALOG_USE_CODEX=1 for schema-constrained Codex interpretation."
+    ],
+    "validation_status": "valid",
+    "validated_at": "2026-05-16T16:44:07.349Z"
+  }
+}

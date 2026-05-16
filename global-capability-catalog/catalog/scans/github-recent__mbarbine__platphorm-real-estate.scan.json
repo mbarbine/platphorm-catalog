@@ -1,0 +1,740 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__platphorm-real-estate",
+    "name": "mbarbine__platphorm-real-estate",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__platphorm-real-estate",
+    "relative_path": "github-recent/mbarbine__platphorm-real-estate",
+    "remote_url": "git@github.com:mbarbine/platphorm-real-estate.git",
+    "default_branch": "main",
+    "current_commit": "6bab4bb63675cd80a4f9b4ab51eaa750207a40d6"
+  },
+  "languages": [
+    {
+      "language": "TypeScript",
+      "files": 66,
+      "bytes": 300145
+    },
+    {
+      "language": "YAML",
+      "files": 1,
+      "bytes": 200773
+    },
+    {
+      "language": "CSS",
+      "files": 2,
+      "bytes": 11318
+    },
+    {
+      "language": "Markdown",
+      "files": 5,
+      "bytes": 4631
+    },
+    {
+      "language": "JSON",
+      "files": 4,
+      "bytes": 4188
+    },
+    {
+      "language": "SQL",
+      "files": 1,
+      "bytes": 3032
+    },
+    {
+      "language": "JavaScript",
+      "files": 2,
+      "bytes": 327
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Next.js",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Vitest",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "pnpm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "my-v0-project",
+        "version": "0.1.0",
+        "scripts": {
+          "build": "next build",
+          "dev": "next dev",
+          "lint": "eslint .",
+          "test": "vitest run",
+          "start": "next start"
+        },
+        "dependencies": {
+          "@hookform/resolvers": "^3.10.0",
+          "@radix-ui/react-accordion": "1.2.2",
+          "@radix-ui/react-alert-dialog": "1.1.4",
+          "@radix-ui/react-aspect-ratio": "1.1.1",
+          "@radix-ui/react-avatar": "latest",
+          "@radix-ui/react-checkbox": "latest",
+          "@radix-ui/react-collapsible": "1.1.2",
+          "@radix-ui/react-context-menu": "2.2.4",
+          "@radix-ui/react-dialog": "latest",
+          "@radix-ui/react-dropdown-menu": "latest",
+          "@radix-ui/react-hover-card": "1.1.4",
+          "@radix-ui/react-label": "latest",
+          "@radix-ui/react-menubar": "1.1.4",
+          "@radix-ui/react-navigation-menu": "1.2.3",
+          "@radix-ui/react-popover": "1.1.4",
+          "@radix-ui/react-progress": "1.1.1",
+          "@radix-ui/react-radio-group": "1.2.2",
+          "@radix-ui/react-scroll-area": "1.2.2",
+          "@radix-ui/react-select": "latest",
+          "@radix-ui/react-separator": "latest",
+          "@radix-ui/react-slider": "1.2.2",
+          "@radix-ui/react-slot": "latest",
+          "@radix-ui/react-switch": "1.1.2",
+          "@radix-ui/react-tabs": "1.1.2",
+          "@radix-ui/react-toast": "1.2.4",
+          "@radix-ui/react-toggle": "1.1.1",
+          "@radix-ui/react-toggle-group": "1.1.1",
+          "@radix-ui/react-tooltip": "latest",
+          "@supabase/ssr": "latest",
+          "@supabase/supabase-js": "latest",
+          "@vercel/analytics": "latest",
+          "ai": "latest",
+          "autoprefixer": "^10.4.20",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "1.0.4",
+          "date-fns": "4.1.0",
+          "embla-carousel-react": "8.5.1",
+          "input-otp": "1.4.1",
+          "lucide-react": "^0.454.0",
+          "next": "16.0.10",
+          "next-themes": "latest",
+          "react": "19.2.0",
+          "react-day-picker": "9.8.0",
+          "react-dom": "19.2.0",
+          "react-hook-form": "^7.60.0",
+          "react-resizable-panels": "^2.1.7",
+          "recharts": "latest",
+          "sonner": "^1.7.4",
+          "tailwind-merge": "^2.5.5",
+          "tailwindcss-animate": "^1.0.7",
+          "vaul": "^0.9.9",
+          "zod": "3.25.76"
+        },
+        "dev_dependencies": {
+          "@tailwindcss/postcss": "^4.1.9",
+          "@testing-library/jest-dom": "^6.9.1",
+          "@testing-library/react": "^16.3.2",
+          "@types/node": "^22",
+          "@types/react": "^19",
+          "@types/react-dom": "^19",
+          "@vitejs/plugin-react": "^6.0.1",
+          "jsdom": "^29.0.1",
+          "postcss": "^8.5",
+          "tailwindcss": "^4.1.9",
+          "tw-animate-css": "1.3.3",
+          "typescript": "^5",
+          "vitest": "^4.1.1"
+        }
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [
+      {
+        "route": "/ai/filter-properties",
+        "source_path": "app/api/ai/filter-properties/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      },
+      {
+        "route": "/ai/rank-buyers",
+        "source_path": "app/api/ai/rank-buyers/route.ts",
+        "kind": "next-app-api-route",
+        "methods": [
+          "POST"
+        ]
+      }
+    ],
+    "app_routes": [
+      {
+        "route": "/analytics",
+        "source_path": "app/(dashboard)/analytics/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/buyers/new",
+        "source_path": "app/(dashboard)/buyers/new/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/buyers",
+        "source_path": "app/(dashboard)/buyers/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/contracts",
+        "source_path": "app/(dashboard)/contracts/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dashboard",
+        "source_path": "app/(dashboard)/dashboard/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/deals",
+        "source_path": "app/(dashboard)/deals/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/dialer",
+        "source_path": "app/(dashboard)/dialer/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/email",
+        "source_path": "app/(dashboard)/email/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/properties/import",
+        "source_path": "app/(dashboard)/properties/import/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/properties/new",
+        "source_path": "app/(dashboard)/properties/new/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/properties",
+        "source_path": "app/(dashboard)/properties/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/settings",
+        "source_path": "app/(dashboard)/settings/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/sms",
+        "source_path": "app/(dashboard)/sms/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/support",
+        "source_path": "app/(dashboard)/support/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/login",
+        "source_path": "app/auth/login/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/sign-up-success",
+        "source_path": "app/auth/sign-up-success/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      },
+      {
+        "route": "/auth/sign-up",
+        "source_path": "app/auth/sign-up/page.tsx",
+        "kind": "next-app-page",
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "app-sidebar",
+      "kind": "ui-component",
+      "source_path": "components/app-sidebar.tsx"
+    },
+    {
+      "name": "buyers-table",
+      "kind": "ui-component",
+      "source_path": "components/buyers-table.tsx"
+    },
+    {
+      "name": "deals-table",
+      "kind": "ui-component",
+      "source_path": "components/deals-table.tsx"
+    },
+    {
+      "name": "onboarding-modal",
+      "kind": "ui-component",
+      "source_path": "components/onboarding-modal.tsx"
+    },
+    {
+      "name": "property-table",
+      "kind": "ui-component",
+      "source_path": "components/property-table.tsx"
+    },
+    {
+      "name": "theme-provider",
+      "kind": "ui-component",
+      "source_path": "components/theme-provider.tsx"
+    },
+    {
+      "name": "avatar",
+      "kind": "ui-component",
+      "source_path": "components/ui/avatar.tsx"
+    },
+    {
+      "name": "badge",
+      "kind": "ui-component",
+      "source_path": "components/ui/badge.tsx"
+    },
+    {
+      "name": "button",
+      "kind": "ui-component",
+      "source_path": "components/ui/button.tsx"
+    },
+    {
+      "name": "card",
+      "kind": "ui-component",
+      "source_path": "components/ui/card.tsx"
+    },
+    {
+      "name": "chart",
+      "kind": "ui-component",
+      "source_path": "components/ui/chart.tsx"
+    },
+    {
+      "name": "dropdown-menu",
+      "kind": "ui-component",
+      "source_path": "components/ui/dropdown-menu.tsx"
+    },
+    {
+      "name": "input",
+      "kind": "ui-component",
+      "source_path": "components/ui/input.tsx"
+    },
+    {
+      "name": "label",
+      "kind": "ui-component",
+      "source_path": "components/ui/label.tsx"
+    },
+    {
+      "name": "progress",
+      "kind": "ui-component",
+      "source_path": "components/ui/progress.tsx"
+    },
+    {
+      "name": "select",
+      "kind": "ui-component",
+      "source_path": "components/ui/select.tsx"
+    },
+    {
+      "name": "separator",
+      "kind": "ui-component",
+      "source_path": "components/ui/separator.tsx"
+    },
+    {
+      "name": "sheet",
+      "kind": "ui-component",
+      "source_path": "components/ui/sheet.tsx"
+    },
+    {
+      "name": "sidebar",
+      "kind": "ui-component",
+      "source_path": "components/ui/sidebar.tsx"
+    },
+    {
+      "name": "skeleton",
+      "kind": "ui-component",
+      "source_path": "components/ui/skeleton.tsx"
+    },
+    {
+      "name": "textarea",
+      "kind": "ui-component",
+      "source_path": "components/ui/textarea.tsx"
+    },
+    {
+      "name": "toast",
+      "kind": "ui-component",
+      "source_path": "components/ui/toast.tsx"
+    },
+    {
+      "name": "tooltip",
+      "kind": "ui-component",
+      "source_path": "components/ui/tooltip.tsx"
+    }
+  ],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/ai/filter-properties/route.test.ts"
+    },
+    {
+      "name": "route.test.ts",
+      "kind": "unit-or-integration",
+      "source_path": "app/api/ai/rank-buyers/route.test.ts"
+    },
+    {
+      "name": "page.test.tsx",
+      "kind": "unit-or-integration",
+      "source_path": "app/page.test.tsx"
+    }
+  ],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": ".env.local"
+      }
+    ],
+    "variables": [
+      {
+        "name": "NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL",
+        "source_paths": [
+          "app/auth/sign-up/page.tsx"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "source_paths": [
+          ".env.local",
+          "lib/supabase/client.ts",
+          "lib/supabase/middleware.ts",
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "NEXT_PUBLIC_SUPABASE_URL",
+        "source_paths": [
+          ".env.local",
+          "lib/supabase/client.ts",
+          "lib/supabase/middleware.ts",
+          "lib/supabase/server.ts"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "next.config.mjs"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "postcss.config.mjs"
+    },
+    {
+      "path": "tsconfig.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": [
+      {
+        "path": "public/.well-known/llms-index.txt"
+      },
+      {
+        "path": "public/.well-known/llms.txt"
+      }
+    ]
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [
+      {
+        "path": "public/.well-known/llms-index.txt"
+      },
+      {
+        "path": "public/.well-known/llms.txt"
+      }
+    ],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [
+      {
+        "path": "public/.well-known/llms-index.txt"
+      },
+      {
+        "path": "public/.well-known/llms.txt"
+      },
+      {
+        "path": "public/.well-known/mcp/manifest.json"
+      }
+    ],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "Supabase",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env.local",
+        "app/auth/sign-up/page.tsx",
+        "lib/supabase/client.ts",
+        "lib/supabase/middleware.ts",
+        "lib/supabase/server.ts",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": "medium",
+      "evidence_paths": [
+        "app/layout.tsx",
+        "package.json",
+        "pnpm-lock.yaml"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "ROADMAP.md",
+      "line": 25,
+      "text": "## Phase 4: Testing & Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "ROADMAP.md",
+      "line": 28,
+      "text": "- [ ] Conduct security audit (ensure RLS policies are correct in Supabase)"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_setup_database.sql",
+      "line": 23,
+      "text": "ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/001_setup_database.sql",
+      "line": 73,
+      "text": "$$ LANGUAGE plpgsql SECURITY DEFINER;"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "components/ui/chart.tsx"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/analytics/page.tsx",
+          "app/(dashboard)/buyers/loading.tsx",
+          "app/(dashboard)/buyers/new/page.tsx",
+          "app/(dashboard)/buyers/page.tsx",
+          "app/(dashboard)/contracts/page.tsx",
+          "app/(dashboard)/dashboard/page.tsx",
+          "app/(dashboard)/deals/page.tsx",
+          "app/(dashboard)/dialer/page.tsx",
+          "app/(dashboard)/email/page.tsx",
+          "app/(dashboard)/loading.tsx",
+          "app/(dashboard)/properties/import/page.tsx",
+          "app/(dashboard)/properties/loading.tsx",
+          "app/(dashboard)/properties/new/page.tsx",
+          "app/(dashboard)/properties/page.tsx",
+          "app/(dashboard)/settings/page.tsx",
+          "app/(dashboard)/sms/page.tsx",
+          "app/(dashboard)/support/page.tsx",
+          "app/auth/login/page.tsx",
+          "app/auth/sign-up-success/page.tsx",
+          "app/auth/sign-up/page.tsx"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/(dashboard)/analytics/page.tsx",
+          "app/(dashboard)/buyers/new/page.tsx",
+          "app/(dashboard)/buyers/page.tsx",
+          "app/(dashboard)/dashboard/page.tsx",
+          "app/(dashboard)/dialer/page.tsx",
+          "app/(dashboard)/email/page.tsx",
+          "app/(dashboard)/layout.tsx",
+          "app/(dashboard)/properties/new/page.tsx",
+          "app/(dashboard)/settings/page.tsx",
+          "app/auth/login/page.tsx",
+          "app/auth/sign-up-success/page.tsx",
+          "app/auth/sign-up/page.tsx",
+          "app/layout.tsx",
+          "app/page.test.tsx",
+          "app/page.tsx",
+          "app/sitemap.ts",
+          "components/app-sidebar.tsx",
+          "components/buyers-table.tsx",
+          "components/onboarding-modal.tsx",
+          "components/property-table.tsx"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".Jules/bolt.md",
+          "app/(dashboard)/contracts/page.tsx",
+          "app/(dashboard)/deals/page.tsx",
+          "app/(dashboard)/properties/page.tsx",
+          "app/auth/sign-up/page.tsx",
+          "components/buyers-table.tsx",
+          "components/deals-table.tsx",
+          "components/property-table.tsx"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/auth/login/page.tsx",
+          "app/auth/sign-up/page.tsx"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "lib/mock-data.ts"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "pnpm-lock.yaml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/api/ai/filter-properties/route.ts",
+          "pnpm-lock.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:20.071Z"
+}

@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__aws-lab",
+    "name": "mbarbine__aws-lab",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__aws-lab",
+    "relative_path": "github-recent/mbarbine__aws-lab",
+    "remote_url": "git@github.com:mbarbine/aws-lab.git",
+    "default_branch": "main",
+    "current_commit": "2e1ec0c0654b7037fdc19447688d94fd625d3bfc"
+  },
+  "languages": [
+    {
+      "language": "YAML",
+      "files": 16,
+      "bytes": 40735
+    },
+    {
+      "language": "Shell",
+      "files": 8,
+      "bytes": 23432
+    },
+    {
+      "language": "JSON",
+      "files": 4,
+      "bytes": 20869
+    },
+    {
+      "language": "Markdown",
+      "files": 3,
+      "bytes": 7191
+    },
+    {
+      "language": "Dockerfile",
+      "files": 5,
+      "bytes": 4514
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 1522
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "terraform/lambda/package.json",
+        "name": "burninglan-s3-trigger",
+        "version": "1.0.0",
+        "scripts": {},
+        "dependencies": {
+          "aws-sdk": "^2.1499.0",
+          "burninglan-s3-trigger": "file:"
+        },
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/build-deepstack.yml"
+      },
+      {
+        "path": ".github/workflows/build-portainer.yml"
+      },
+      {
+        "path": ".github/workflows/build-privatebin.yml"
+      },
+      {
+        "path": ".github/workflows/build-uptime-kuma.yml"
+      },
+      {
+        "path": ".github/workflows/deploy.yml"
+      },
+      {
+        "path": ".github/workflows/main.yml"
+      },
+      {
+        "path": ".github/workflows/static.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "docker/deepstack/Dockerfile"
+      },
+      {
+        "path": "docker/haproxy/Dockerfile"
+      },
+      {
+        "path": "docker/portainer/Dockerfile"
+      },
+      {
+        "path": "docker/privatebin/Dockerfile"
+      },
+      {
+        "path": "docker/uptime-kuma/Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [
+      {
+        "path": ".env"
+      }
+    ],
+    "variables": [
+      {
+        "name": "ARCH",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "AWS_ACCESS_KEY_ID",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "AWS_DEFAULT_REGION",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "AWS_SECRET_ACCESS_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "BACKUP_RETENTION_DAYS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "BACKUP_SCHEDULE",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CF_API_EMAIL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CF_API_KEY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "CF_SUBDOMAIN",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CF_ZONE",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CF_ZONE_ID",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "CONTAINER_RUNTIME",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DEEPSTACK_CPU_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "DEEPSTACK_MEMORY_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "ENABLE_ACCESS_LOGS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "ENABLE_ERROR_LOGS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "ENABLE_METRICS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "ENVIRONMENT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GITHUB_REPOSITORY",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GITHUB_RUNNER_CPU_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GITHUB_RUNNER_MEMORY_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "GITHUB_TOKEN",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "GRAFANA_ENABLED",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "HEALTH_CHECK_INTERVAL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "HEALTH_CHECK_RETRIES",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "HEALTH_CHECK_TIMEOUT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "LOG_LEVEL",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PORTAINER_CPU_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PORTAINER_MEMORY_LIMIT",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "PROMETHEUS_ENABLED",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "RUNNER_GROUP",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "RUNNER_LABELS",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "RUNNER_NAME",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "S3_BUCKET",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "TRAEFIK_BASIC_AUTH",
+        "source_paths": [
+          ".env"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    },
+    {
+      "path": "terraform/lambda/package.json"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "docker/haproxy/errors/README"
+      },
+      {
+        "path": "README.md"
+      },
+      {
+        "path": "tests/readme.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [
+    {
+      "name": "AWS",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "docker-compose.yml",
+        "README.md",
+        "run_all.sh",
+        "terraform/lambda/index.js",
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ]
+    },
+    {
+      "name": "S3",
+      "confidence": "medium",
+      "evidence_paths": [
+        ".env",
+        "backup/s3_backup.sh",
+        "docker-compose.yml",
+        "README.md",
+        "run_all.sh",
+        "terraform/lambda/package-lock.json",
+        "terraform/lambda/package.json"
+      ]
+    }
+  ],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".env",
+      "line": 31,
+      "text": "# 🔒 Traefik Security"
+    },
+    {
+      "kind": "security",
+      "source_path": ".github/workflows/main.yml",
+      "line": 40,
+      "text": "security-scan:"
+    },
+    {
+      "kind": "security",
+      "source_path": ".github/workflows/main.yml",
+      "line": 69,
+      "text": "needs: security-scan"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 111,
+      "text": "## Security"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 1,
+      "text": "# Security Policy"
+    },
+    {
+      "kind": "security",
+      "source_path": "SECURITY.md",
+      "line": 6,
+      "text": "currently being supported with security updates."
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "terraform/lambda/package-lock.json",
+      "line": 462,
+      "text": "\"deprecated\": \"The querystring API is considered Legacy. new code should use the URLSearchParams API instead.\","
+    }
+  ],
+  "security": {
+    "secret_risks": [
+      {
+        "kind": "aws-access-key",
+        "source_path": ".env",
+        "line": 9,
+        "redacted_sample": "AWS_ACCESS_KEY_ID= [REDACTED]"
+      },
+      {
+        "kind": "github-token",
+        "source_path": ".env",
+        "line": 22,
+        "redacted_sample": "GITHUB_TOKEN= [REDACTED]"
+      }
+    ],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "api_key",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          "docker-compose.yml",
+          "README.md",
+          "run_all.sh",
+          "traefik-compose.yml"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          "docker-compose.yml",
+          "README.md",
+          "run_all.sh",
+          "scripts/run_once_post_deploy.sh",
+          "traefik-compose.yml",
+          "traefik/traefik.yml"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          "docker/deepstack/Dockerfile",
+          "docker/privatebin/Dockerfile",
+          "docker/uptime-kuma/Dockerfile",
+          "provision/k8s/deepstack.yaml",
+          "provision/k8s/k8s-provision.sh",
+          "provision/k8s/portainer.yaml",
+          "provision/k8s/privatebin.yaml",
+          "provision/k8s/uptime-kuma.yaml",
+          "run_all.sh"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "traefik/config/middlewares.yml"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/main.yml"
+        ]
+      },
+      {
+        "name": "payment",
+        "confidence": "medium",
+        "evidence_paths": [
+          "traefik/config/middlewares.yml"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".env",
+          ".github/workflows/main.yml",
+          ".github/workflows/static.yml",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:05.845Z"
+}

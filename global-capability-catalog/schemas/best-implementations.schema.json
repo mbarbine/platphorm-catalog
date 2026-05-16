@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catalog.local/schemas/best-implementations.schema.json",
+  "title": "Best Capability Implementations",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "global_capabilities"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "global_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "implementations", "recommended_source"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "implementations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["repo_id", "score", "reason", "source_paths"],
+              "properties": {
+                "repo_id": { "type": "string" },
+                "score": { "type": "number", "minimum": 0, "maximum": 100 },
+                "reason": { "type": "string" },
+                "source_paths": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "recommended_source": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["repo_id", "score", "reason", "source_paths"],
+            "properties": {
+              "repo_id": { "type": "string" },
+              "score": { "type": "number", "minimum": 0, "maximum": 100 },
+              "reason": { "type": "string" },
+              "source_paths": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    }
+  }
+}

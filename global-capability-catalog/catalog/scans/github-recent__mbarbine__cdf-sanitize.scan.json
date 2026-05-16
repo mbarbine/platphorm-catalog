@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__cdf-sanitize",
+    "name": "mbarbine__cdf-sanitize",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__cdf-sanitize",
+    "relative_path": "github-recent/mbarbine__cdf-sanitize",
+    "remote_url": "git@github.com:mbarbine/cdf-sanitize.git",
+    "default_branch": "main",
+    "current_commit": "3a874e4cf8ac77d02f6374fa04668180201aa94b"
+  },
+  "languages": [
+    {
+      "language": "Python",
+      "files": 9,
+      "bytes": 26472
+    },
+    {
+      "language": "YAML",
+      "files": 9,
+      "bytes": 8159
+    },
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 4769
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 758
+    },
+    {
+      "language": "JSON",
+      "files": 1,
+      "bytes": 556
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [
+    {
+      "name": "test_cdf_redactor.py",
+      "kind": "unit-or-integration",
+      "source_path": "app/tests/test_cdf_redactor.py"
+    }
+  ],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/codeql.yml"
+      },
+      {
+        "path": ".github/workflows/docker-tests.yml"
+      },
+      {
+        "path": ".github/workflows/lint.yml"
+      },
+      {
+        "path": ".github/workflows/nightly-e2e.yml"
+      },
+      {
+        "path": ".github/workflows/release.yml"
+      },
+      {
+        "path": ".github/workflows/tests.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "IMAGE_NAME",
+        "source_paths": [
+          ".github/workflows/release.yml"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "REGISTRY",
+        "source_paths": [
+          ".github/workflows/release.yml"
+        ],
+        "likely_secret": false
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": ".github/workflows/codeql.yml",
+      "line": 12,
+      "text": "security-events: write"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/cdf_redactor/__init__.py",
+          "app/config.json",
+          "app/config/recognizers-config.yml",
+          "app/generators/cdf_gen.py",
+          "app/generators/cdf_real_gen.py",
+          "app/tests/test_cdf_redactor.py",
+          "README.md"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/cdf_redactor/__init__.py",
+          "app/config.json",
+          "README.md"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "README.md"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/cdf_redactor/__init__.py",
+          "app/config.json",
+          "README.md"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/release.yml",
+          "README.md"
+        ]
+      },
+      {
+        "name": "pii",
+        "confidence": "medium",
+        "evidence_paths": [
+          "app/cdf_redactor/__init__.py",
+          "app/config.json",
+          "app/generators/cdf_gen.py",
+          "app/generators/cdf_real_gen.py",
+          "app/tests/test_cdf_redactor.py",
+          "README.md"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/release.yml",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:06.852Z"
+}

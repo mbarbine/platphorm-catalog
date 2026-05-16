@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__ph3ar-web",
+    "name": "mbarbine__ph3ar-web",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__ph3ar-web",
+    "relative_path": "github-recent/mbarbine__ph3ar-web",
+    "remote_url": "git@github.com:mbarbine/ph3ar-web.git",
+    "default_branch": "main",
+    "current_commit": "afe5aa015dfa3944ffafa1c6d4b7a3e0b4595ac8"
+  },
+  "languages": [
+    {
+      "language": "JavaScript",
+      "files": 7,
+      "bytes": 173288
+    },
+    {
+      "language": "JSON",
+      "files": 2,
+      "bytes": 170371
+    },
+    {
+      "language": "CSS",
+      "files": 3,
+      "bytes": 164976
+    },
+    {
+      "language": "HTML",
+      "files": 10,
+      "bytes": 36038
+    },
+    {
+      "language": "Markdown",
+      "files": 6,
+      "bytes": 5187
+    },
+    {
+      "language": "YAML",
+      "files": 6,
+      "bytes": 3911
+    },
+    {
+      "language": "SCSS",
+      "files": 1,
+      "bytes": 2298
+    },
+    {
+      "language": "Shell",
+      "files": 3,
+      "bytes": 1337
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 621
+    },
+    {
+      "language": "TOML",
+      "files": 1,
+      "bytes": 157
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Express",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    },
+    {
+      "name": "Sequelize",
+      "confidence": "high",
+      "evidence_paths": [
+        "package.json"
+      ]
+    }
+  ],
+  "packages": {
+    "package_manager": "npm",
+    "manifests": [
+      {
+        "path": "package.json",
+        "name": "cloudflare-webapp",
+        "version": "1.0.0",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1",
+          "build": "echo \"No build step necessary\"",
+          "start": "node server.js"
+        },
+        "dependencies": {
+          "bcrypt": "^5.1.1",
+          "dotenv": "^16.4.5",
+          "express": "^4.19.2",
+          "jsonwebtoken": "^9.0.2",
+          "sequelize": "^6.37.3",
+          "sqlite3": "^5.1.7"
+        },
+        "dev_dependencies": {}
+      }
+    ]
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [
+    {
+      "name": "user",
+      "kind": "model-file",
+      "source_path": "models/user.js"
+    }
+  ],
+  "database": {
+    "databases": [
+      "sqlite"
+    ],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": [
+      {
+        "path": ".github/workflows/apply_changes.yml"
+      },
+      {
+        "path": ".github/workflows/ci-cd.yml"
+      }
+    ]
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": [
+      {
+        "path": "docker-compose.yml"
+      }
+    ]
+  },
+  "env": {
+    "example_files": [],
+    "variables": [
+      {
+        "name": "PORT",
+        "source_paths": [
+          "server.js"
+        ],
+        "likely_secret": false
+      },
+      {
+        "name": "SECRET_KEY",
+        "source_paths": [
+          "middleware/authenticateToken.js",
+          "routes/userRoutes.js"
+        ],
+        "likely_secret": true
+      },
+      {
+        "name": "SESSION_SECRET",
+        "source_paths": [
+          "server.js"
+        ],
+        "likely_secret": true
+      }
+    ]
+  },
+  "configs": [
+    {
+      "path": "docker-compose.yml"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "wrangler.toml"
+    }
+  ],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [
+      {
+        "path": "docs/community_guidance.md"
+      },
+      {
+        "path": "docs/style_guide.md"
+      }
+    ],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": "Apache-2.0",
+    "paths": [
+      {
+        "path": "LICENSE"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 49,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 62,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 82,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 104,
+      "text": "\"deprecated\": \"This functionality has been moved to @npmcli/fs\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 240,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 811,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 854,
+      "text": "\"deprecated\": \"Glob versions prior to v9 are no longer supported\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 1102,
+      "text": "\"deprecated\": \"This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 1613,
+      "text": "\"deprecated\": \"This package is no longer supported.\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "package-lock.json",
+      "line": 1847,
+      "text": "\"deprecated\": \"Rimraf versions prior to v4 are no longer supported\","
+    },
+    {
+      "kind": "deprecated",
+      "source_path": "public/js/bootstrap.bundle.min.js",
+      "line": 6,
+      "text": "!function(t,e){\"object\"==typeof exports&&\"undefined\"!=typeof module?e(exports,require(\"jquery\")):\"function\"==typeof define&&define.amd?define([\"exports\",\"jquery\"],e):e((t=\"undefined\"!=typeof globalThis?globalThis:t||self).bootstrap={},t.jQu"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [
+      {
+        "name": "child-process-exec",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/js/jquery.min.js"
+        ]
+      },
+      {
+        "name": "dangerously-set-html",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/js/jquery.min.js"
+        ]
+      }
+    ],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/css/bootstrap.min.css"
+        ]
+      },
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/apply_changes.yml",
+          "public/html/contact.html"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "public/index.html",
+          "public/js/jquery.min.js"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".gitlab-ci.yml",
+          "models/user.js",
+          "public/assets/index.html",
+          "public/html/signup.html",
+          "public/index.html",
+          "public/js/jquery.min.js",
+          "routes/userRoutes.js"
+        ]
+      },
+      {
+        "name": "secret-like environment variables",
+        "confidence": "medium",
+        "evidence_paths": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          ".github/workflows/apply_changes.yml",
+          ".github/workflows/ci-cd.yml",
+          "middleware/authenticateToken.js",
+          "package-lock.json",
+          "package.json",
+          "public/assets/index.html",
+          "public/index.html",
+          "public/js/jquery.min.js",
+          "routes/userRoutes.js",
+          "server.js"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:12.025Z"
+}

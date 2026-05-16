@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://catalog.local/schemas/repository.catalog.schema.json",
+  "title": "Repository Capability Catalog Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "repo", "capabilities", "repository_risks", "catalog_quality"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "repo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "path",
+        "remote_url",
+        "description",
+        "primary_language",
+        "languages",
+        "frameworks",
+        "package_manager",
+        "databases",
+        "deployment",
+        "maturity",
+        "confidence",
+        "scan_artifact",
+        "analyzed_at"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 },
+        "remote_url": { "type": ["string", "null"] },
+        "description": { "type": "string" },
+        "primary_language": { "type": ["string", "null"] },
+        "languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "frameworks": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "package_manager": { "type": ["string", "null"] },
+        "databases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "deployment": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "maturity": { "$ref": "#/$defs/maturity" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "scan_artifact": { "type": "string", "minLength": 1 },
+        "analyzed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/capability" }
+    },
+    "repository_risks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/risk" }
+    },
+    "catalog_quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coverage", "missing_evidence", "uncertainty_notes", "validation_status", "validated_at"],
+      "properties": {
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["scan_artifact", "readme", "docs", "routes", "tests", "llms_context"],
+          "properties": {
+            "scan_artifact": { "type": "boolean" },
+            "readme": { "type": "boolean" },
+            "docs": { "type": "boolean" },
+            "routes": { "type": "boolean" },
+            "tests": { "type": "boolean" },
+            "llms_context": { "type": "boolean" }
+          }
+        },
+        "missing_evidence": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "uncertainty_notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "validation_status": { "type": "string", "enum": ["valid", "invalid", "unvalidated", "repaired"] },
+        "validated_at": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  },
+  "$defs": {
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "maturity": { "type": "string", "enum": ["prototype", "experimental", "internal", "production", "deprecated", "unknown"] },
+    "capabilityType": {
+      "type": "string",
+      "enum": [
+        "authentication",
+        "authorization",
+        "user-management",
+        "organization-management",
+        "billing",
+        "payments",
+        "notifications",
+        "file-upload",
+        "document-processing",
+        "data-ingestion",
+        "data-export",
+        "search",
+        "semantic-search",
+        "agent-workflow",
+        "automation",
+        "dashboard",
+        "analytics",
+        "reporting",
+        "admin-tools",
+        "content-management",
+        "workflow-management",
+        "observability",
+        "logging",
+        "security",
+        "compliance",
+        "testing",
+        "deployment",
+        "devtools",
+        "api",
+        "cli",
+        "ui-component",
+        "integration",
+        "database",
+        "routing",
+        "forms",
+        "email",
+        "calendar",
+        "webhooks",
+        "mcp",
+        "ai-model",
+        "data-visualization",
+        "gameplay",
+        "ecommerce",
+        "shipping",
+        "finance",
+        "dictionary",
+        "discovery",
+        "seo",
+        "accessibility",
+        "i18n",
+        "other"
+      ]
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "summary",
+        "maturity",
+        "reusable",
+        "confidence",
+        "source_paths",
+        "interfaces",
+        "data_handling",
+        "dependencies",
+        "reuse",
+        "risks",
+        "tests",
+        "docs",
+        "related_capabilities",
+        "notes"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*\\.[a-z0-9][a-z0-9-]*(\\.[a-z0-9][a-z0-9-]*)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "$ref": "#/$defs/capabilityType" },
+        "summary": { "type": "string" },
+        "maturity": { "$ref": "#/$defs/maturity" },
+        "reusable": { "type": "boolean" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "source_paths": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "interfaces": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["api_routes", "ui_components", "cli_commands", "events", "exports", "inputs", "outputs"],
+          "properties": {
+            "api_routes": { "type": "array", "items": { "type": "string" } },
+            "ui_components": { "type": "array", "items": { "type": "string" } },
+            "cli_commands": { "type": "array", "items": { "type": "string" } },
+            "events": { "type": "array", "items": { "type": "string" } },
+            "exports": { "type": "array", "items": { "type": "string" } },
+            "inputs": { "type": "array", "items": { "type": "string" } },
+            "outputs": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "data_handling": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reads",
+            "writes",
+            "sensitive_data",
+            "external_data_flows",
+            "persistence_layer",
+            "validation",
+            "auth_requirements",
+            "privacy_security_notes"
+          ],
+          "properties": {
+            "reads": { "type": "array", "items": { "type": "string" } },
+            "writes": { "type": "array", "items": { "type": "string" } },
+            "sensitive_data": { "type": "array", "items": { "type": "string" } },
+            "external_data_flows": { "type": "array", "items": { "type": "string" } },
+            "persistence_layer": { "type": "array", "items": { "type": "string" } },
+            "validation": { "type": "array", "items": { "type": "string" } },
+            "auth_requirements": { "type": "array", "items": { "type": "string" } },
+            "privacy_security_notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "dependencies": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["packages", "internal", "external_services", "env_vars"],
+          "properties": {
+            "packages": { "type": "array", "items": { "type": "string" } },
+            "internal": { "type": "array", "items": { "type": "string" } },
+            "external_services": { "type": "array", "items": { "type": "string" } },
+            "env_vars": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "reuse": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reusable", "extraction_difficulty", "coupling", "recommended_reuse_approach", "extraction_steps", "notes"],
+          "properties": {
+            "reusable": { "type": "string", "enum": ["full", "partial", "pattern_only", "not_recommended", "unknown"] },
+            "extraction_difficulty": { "type": "string", "enum": ["low", "medium", "high", "unknown"] },
+            "coupling": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["framework", "database", "external_services", "auth"],
+              "properties": {
+                "framework": { "type": "string", "enum": ["low", "medium", "high", "unknown"] },
+                "database": { "type": "string", "enum": ["low", "medium", "high", "unknown"] },
+                "external_services": { "type": "string", "enum": ["low", "medium", "high", "unknown"] },
+                "auth": { "type": "string", "enum": ["low", "medium", "high", "unknown"] }
+              }
+            },
+            "recommended_reuse_approach": { "type": "string" },
+            "extraction_steps": { "type": "array", "items": { "type": "string" } },
+            "notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "risks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/risk" }
+        },
+        "tests": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["has_tests", "test_paths", "notes"],
+          "properties": {
+            "has_tests": { "type": "boolean" },
+            "test_paths": { "type": "array", "items": { "type": "string" } },
+            "notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "docs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["readme", "docs_paths", "llms_context_paths", "notes"],
+          "properties": {
+            "readme": { "type": "boolean" },
+            "docs_paths": { "type": "array", "items": { "type": "string" } },
+            "llms_context_paths": { "type": "array", "items": { "type": "string" } },
+            "notes": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "related_capabilities": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "severity", "summary", "evidence_paths", "recommendation"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+        "severity": { "type": "string", "enum": ["low", "medium", "high", "critical", "unknown"] },
+        "summary": { "type": "string" },
+        "evidence_paths": { "type": "array", "items": { "type": "string" } },
+        "recommendation": { "type": "string" }
+      }
+    }
+  }
+}

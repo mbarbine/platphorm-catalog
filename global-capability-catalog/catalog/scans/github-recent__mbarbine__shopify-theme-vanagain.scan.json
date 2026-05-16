@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__shopify-theme-vanagain",
+    "name": "mbarbine__shopify-theme-vanagain",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__shopify-theme-vanagain",
+    "relative_path": "github-recent/mbarbine__shopify-theme-vanagain",
+    "remote_url": "git@github.com:mbarbine/shopify-theme-vanagain.git",
+    "default_branch": "main",
+    "current_commit": "4bbb7933ae7b29761890eea5f1ad5b27299db5d9"
+  },
+  "languages": [
+    {
+      "language": "Python",
+      "files": 5,
+      "bytes": 28378
+    },
+    {
+      "language": "CSS",
+      "files": 1,
+      "bytes": 3048
+    },
+    {
+      "language": "JSON",
+      "files": 10,
+      "bytes": 2673
+    },
+    {
+      "language": "Markdown",
+      "files": 1,
+      "bytes": 1363
+    },
+    {
+      "language": "Shell",
+      "files": 1,
+      "bytes": 1035
+    },
+    {
+      "language": "JavaScript",
+      "files": 1,
+      "bytes": 385
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "card",
+        "confidence": "medium",
+        "evidence_paths": [
+          "assets/base.css"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:26.224Z"
+}

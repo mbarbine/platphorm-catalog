@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__aws-next-k8-cluster-deploy",
+    "name": "mbarbine__aws-next-k8-cluster-deploy",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__aws-next-k8-cluster-deploy",
+    "relative_path": "github-recent/mbarbine__aws-next-k8-cluster-deploy",
+    "remote_url": "git@github.com:mbarbine/aws-next-k8-cluster-deploy.git",
+    "default_branch": "main",
+    "current_commit": "365297eb1e76b971ae52c83aa1080d43a83e9579"
+  },
+  "languages": [
+    {
+      "language": "Shell",
+      "files": 22,
+      "bytes": 44636
+    },
+    {
+      "language": "Markdown",
+      "files": 4,
+      "bytes": 9243
+    },
+    {
+      "language": "YAML",
+      "files": 6,
+      "bytes": 5367
+    },
+    {
+      "language": "JSON",
+      "files": 2,
+      "bytes": 1808
+    },
+    {
+      "language": "Dockerfile",
+      "files": 1,
+      "bytes": 689
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [
+      {
+        "path": "Dockerfile"
+      }
+    ],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "infra/us-west-2/README.md"
+      },
+      {
+        "path": "README.md"
+      },
+      {
+        "path": "terraform/us-west-2/README.md"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 23,
+      "text": "- **Security Groups**: Secure public access using security groups for ALB, EKS, and Jenkins EC2."
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 89,
+      "text": "│   │   │   │   └── security_groups.tf    # Security groups for ALB, EKS, EC2"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 114,
+      "text": "modules: Contains Terraform modules for ALB, EKS, EC2, security groups, backups, logging, and tagging."
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 163,
+      "text": "Security Considerations"
+    },
+    {
+      "kind": "security",
+      "source_path": "README.md",
+      "line": 191,
+      "text": "This  README.md provides a comprehensive and detailed guide on how to deploy and manage the infrastructure, including updated sections for Kubernetes add-ons, autoscaling, and security best practices. The file tree has been updated with the"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/configure-jenkins.sh",
+      "line": 27,
+      "text": "import hudson.security.*"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 36,
+      "text": "# 3. Validate Security Groups for EKS, Jenkins, and ALB"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 37,
+      "text": "log \"Validating Security Groups for Ingress and Egress Rules...\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 39,
+      "text": "# Security Groups"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 44,
+      "text": "log \"Cluster Security Group: $CLUSTER_SECURITY_GROUP\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 45,
+      "text": "log \"Jenkins Security Group: $JENKINS_SECURITY_GROUP\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 46,
+      "text": "log \"ALB Security Group: $ALB_SECURITY_GROUP\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 51,
+      "text": "SG_INGRESS_RULES=$(aws ec2 describe-security-groups --group-ids \"$SG_ID\" --query 'SecurityGroups[0].IpPermissions' --output json --region \"$REGION\")"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 52,
+      "text": "SG_EGRESS_RULES=$(aws ec2 describe-security-groups --group-ids \"$SG_ID\" --query 'SecurityGroups[0].IpPermissionsEgress' --output json --region \"$REGION\")"
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 58,
+      "text": "log \"No ingress rules found for security group $SG_ID.\""
+    },
+    {
+      "kind": "security",
+      "source_path": "scripts/validate-eks-cluster.sh",
+      "line": 63,
+      "text": "log \"No egress rules found for security group $SG_ID.\""
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "scripts/deploy.sh"
+        ]
+      },
+      {
+        "name": "health",
+        "confidence": "medium",
+        "evidence_paths": [
+          "scripts/setup-dns.sh",
+          "scripts/validate-eks-cluster.sh"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "terraform/us-east-2/modules/ec2/jenkins/jenkins-casc.yaml"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "populate-vars.sh",
+          "scripts/configure-jenkins.sh",
+          "scripts/deploy-eks-monitoring.sh",
+          "scripts/populate-vars_DEV.sh",
+          "scripts/start-jenkins.sh",
+          "terraform/us-east-2/modules/ec2/jenkins/jenkins-casc.yaml"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:05.923Z"
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "scanner": {
+    "name": "global-capability-catalog",
+    "version": "0.1.0"
+  },
+  "repo": {
+    "id": "github-recent__mbarbine__jenkinsdb",
+    "name": "mbarbine__JenkinsDB",
+    "path": "/Users/bwm.barbinewarnermichael/Documents/github/repositories/github-recent/mbarbine__JenkinsDB",
+    "relative_path": "github-recent/mbarbine__JenkinsDB",
+    "remote_url": "git@github.com:mbarbine/JenkinsDB.git",
+    "default_branch": "1.0",
+    "current_commit": "6a7ac8f04b37e20da927cbba369b268acbfb1b52"
+  },
+  "languages": [
+    {
+      "language": "SQL",
+      "files": 18,
+      "bytes": 77607
+    },
+    {
+      "language": "XML",
+      "files": 3,
+      "bytes": 3466
+    }
+  ],
+  "frameworks": [],
+  "packages": {
+    "package_manager": null,
+    "manifests": []
+  },
+  "routes": {
+    "api_routes": [],
+    "app_routes": []
+  },
+  "components": [],
+  "data_models": [],
+  "database": {
+    "databases": [],
+    "schemas": [],
+    "migrations": []
+  },
+  "tests": [],
+  "ci": {
+    "workflows": []
+  },
+  "containers": {
+    "dockerfiles": [],
+    "compose_files": []
+  },
+  "env": {
+    "example_files": [],
+    "variables": []
+  },
+  "configs": [],
+  "docs": {
+    "readme_paths": [
+      {
+        "path": "Powershell Scripts, Files, and Tasks/Directory Structure/DATA (E DRIVE)/E-Colon-Slash XML/builds/README.txt"
+      },
+      {
+        "path": "Powershell Scripts, Files, and Tasks/Directory Structure/DATA (E DRIVE)/README.txt"
+      },
+      {
+        "path": "Powershell Scripts, Files, and Tasks/Scheduled Tasks/README.txt"
+      },
+      {
+        "path": "README.txt"
+      },
+      {
+        "path": "SQL/Jenkins/README.txt"
+      },
+      {
+        "path": "SQL/Jenkins/SQL Agent Jobs/README.txt"
+      },
+      {
+        "path": "SQL/Jenkins/StoredProcedures/README.txt"
+      },
+      {
+        "path": "SQL/Jenkins/Tables/README.txt"
+      },
+      {
+        "path": "SQL/Jenkins/Views/README.txt"
+      }
+    ],
+    "doc_paths": [],
+    "llms_context_paths": []
+  },
+  "discovery_files": {
+    "openapi": [],
+    "mcp": [],
+    "llms": [],
+    "sitemaps": [],
+    "feeds": [],
+    "well_known": [],
+    "robots": [],
+    "manifests": []
+  },
+  "integrations": [],
+  "license": {
+    "spdx": null,
+    "paths": []
+  },
+  "comments": [
+    {
+      "kind": "security",
+      "source_path": "SQL/Jenkins/SQL Agent Jobs/README.txt",
+      "line": 1,
+      "text": "SQL SERVER AGENT ACCOUNT MUST BE THE SAME ACCOUNT OR IN THE SAME SECURITY GROUP THAT EXECUTES THE TASK SCHEDULER JOBS"
+    }
+  ],
+  "security": {
+    "secret_risks": [],
+    "unsafe_patterns": [],
+    "sensitive_data_indicators": [
+      {
+        "name": "email",
+        "confidence": "medium",
+        "evidence_paths": [
+          "README.txt",
+          "SQL/Jenkins/README.txt",
+          "SQL/Jenkins/SQL Agent Jobs/Jenkins_ProcessBuildData.sql"
+        ]
+      },
+      {
+        "name": "location",
+        "confidence": "medium",
+        "evidence_paths": [
+          "SQL/Jenkins/SQL Agent Jobs/README.txt"
+        ]
+      },
+      {
+        "name": "password",
+        "confidence": "medium",
+        "evidence_paths": [
+          "Powershell Scripts, Files, and Tasks/Directory Structure/DATA (E DRIVE)/E-Colon-Slash XML/builds/README.txt",
+          "SQL/Jenkins/SQL Agent Jobs/Jenkins_ProcessBuildData.sql",
+          "SQL/Jenkins/StoredProcedures/USP_CREATEWORKLOAD.sql"
+        ]
+      },
+      {
+        "name": "token",
+        "confidence": "medium",
+        "evidence_paths": [
+          "SQL/Jenkins/SQL Agent Jobs/Jenkins_ProcessBuildData.sql",
+          "SQL/Jenkins/StoredProcedures/USP_CREATEWORKLOAD.sql"
+        ]
+      }
+    ]
+  },
+  "generated_at": "2026-05-16T16:44:09.668Z"
+}
