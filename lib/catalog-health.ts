@@ -2,13 +2,17 @@ import {
   loadCatalogSummary,
   loadDetailedComponents,
   loadGlobalCapabilityIndex,
+  loadVisionEvidencePack,
+  loadVisionToolSelection,
 } from "./data"
 
 export async function getCatalogHealthPayload() {
-  const [summary, globalIndex, componentData] = await Promise.all([
+  const [summary, globalIndex, componentData, visionSelection, visionEvidencePack] = await Promise.all([
     loadCatalogSummary(),
     loadGlobalCapabilityIndex(),
     loadDetailedComponents(),
+    loadVisionToolSelection(),
+    loadVisionEvidencePack(),
   ])
   const validationFailures = summary.validation_failures ?? 0
 
@@ -39,6 +43,11 @@ export async function getCatalogHealthPayload() {
       rssStatus: "ok",
       llmsStatus: "ok",
       openapiStatus: "ok",
+      visionToolSelectionStatus: visionSelection.ok ? "ok" : "degraded",
+      visionEvidencePackStatus: visionEvidencePack.ok ? "ok" : "degraded",
+      selectedOperatorTools: visionSelection.selected_tools.map((tool) => tool.plugin),
+      protectionControlsStatus: "scaffolded_not_enforced",
+      protectionEnforcementEnabled: visionSelection.protection_mode.enforcement_enabled,
       trustedDomainStatus: "ok",
       publicReadAccess: true,
       protectedActionsRequire: "PLATPHORM_API_KEY",

@@ -1,6 +1,8 @@
 import { promises as fs } from "node:fs"
 import path from "node:path"
 import { routeSlug } from "../lib/routing"
+import type { BestImplementationIndex, GlobalCapabilityIndex } from "../lib/types"
+import { buildVisionEvidencePack, buildVisionToolSelection } from "../lib/vision-tools"
 
 const root = process.cwd()
 const publicDir = path.join(root, "public")
@@ -83,10 +85,14 @@ async function main() {
     capabilities_extracted?: number
     global_capabilities?: number
   }>(path.join(generatedDir, "catalog-summary.json"))
-  const capabilitiesIndex = await readJson<{
-    capabilities: Array<{ id: string; name: string; implementations: unknown[]; reuse_score: number }>
-    repositories: Array<{ id: string; name: string }>
-  }>(path.join(generatedDir, "capabilities.json"))
+  const capabilitiesIndex = await readJson<GlobalCapabilityIndex>(
+    path.join(generatedDir, "capabilities.json")
+  )
+  const bestIndex = await readJson<BestImplementationIndex>(
+    path.join(generatedDir, "best-implementations.json")
+  )
+  const visionSelection = buildVisionToolSelection(capabilitiesIndex, bestIndex)
+  const visionEvidencePack = buildVisionEvidencePack(visionSelection)
   const componentIndex = await readJson<{
     component_count: number
     components: Array<{ id: string; name: string; repo: string; classification?: string }>
@@ -95,8 +101,11 @@ async function main() {
   const baseUrl = "https://catalog.platphormnews.com"
   const staticRoutes = [
     "",
+    "/vision",
     "/api/health",
     "/api/v1/health",
+    "/api/vision/capabilities",
+    "/api/vision/evidence-pack",
     "/repositories",
     "/capabilities",
     "/components",
@@ -148,6 +157,11 @@ async function main() {
       rssStatus: "ok",
       llmsStatus: "ok",
       openapiStatus: "ok",
+      visionToolSelectionStatus: visionSelection.ok ? "ok" : "degraded",
+      visionEvidencePackStatus: visionEvidencePack.ok ? "ok" : "degraded",
+      selectedOperatorTools: visionSelection.selected_tools.map((tool) => tool.plugin),
+      protectionControlsStatus: "scaffolded_not_enforced",
+      protectionEnforcementEnabled: visionSelection.protection_mode.enforcement_enabled,
       trustedDomainStatus: "ok",
       publicReadAccess: true,
       protectedActionsRequire: "PLATPHORM_API_KEY",
@@ -211,6 +225,10 @@ async function main() {
       "- /catalog/generated/best-implementations.json",
       "- /catalog/generated/graph.json",
       "- /catalog/docs/index.md",
+      "- /catalog/generated/vision-tool-selection.json",
+      "- /catalog/generated/vision-evidence-pack.json",
+      "- /api/vision/capabilities",
+      "- /api/vision/evidence-pack",
       "- /api/docs",
       "- /api/health",
       "- /rss.xml",
@@ -237,6 +255,8 @@ async function main() {
       "- /catalog/generated/graph.json",
       "- /catalog/generated/search-index.json",
       "- /catalog/generated/best-implementations.json",
+      "- /catalog/generated/vision-tool-selection.json",
+      "- /catalog/generated/vision-evidence-pack.json",
       "- /catalog/generated/validation-report.json",
       "- /artifacts/components-index.json",
       "- /artifacts/components.json",
@@ -251,12 +271,14 @@ async function main() {
       "- /capabilities",
       "- /components",
       "- /analysis",
+      "- /vision",
       "",
       "Source discipline:",
       "- Capabilities must have source paths.",
       "- Source paths must exist in deterministic scan evidence.",
       "- Secrets are redacted and environment values are not published.",
       "- Local LLMs files are treated as context evidence, not behavior proof.",
+      "- Protection controls are scaffolded only; enforcement is off while functionality is being proven.",
     ].join("\n"),
   )
 
@@ -282,6 +304,10 @@ async function main() {
       search_index: "/catalog/generated/search-index.json",
       graph: "/catalog/generated/graph.json",
       best_implementations: "/catalog/generated/best-implementations.json",
+      vision_tool_selection: "/catalog/generated/vision-tool-selection.json",
+      vision_capabilities_api: "/api/vision/capabilities",
+      vision_evidence_pack: "/catalog/generated/vision-evidence-pack.json",
+      vision_evidence_pack_api: "/api/vision/evidence-pack",
     },
     counts: {
       repositories: summary.repositories_discovered ?? capabilitiesIndex.repositories.length,
@@ -295,6 +321,28 @@ async function main() {
 
   await writeJson(path.join(publicDir, "api", "health.json"), health)
   await writeJson(path.join(publicDir, "api", "v1", "health.json"), health)
+  await writeJson(
+    path.join(publicDir, "api", "vision", "capabilities.json"),
+    {
+      ok: visionSelection.ok,
+      data: visionSelection,
+    },
+  )
+  await writeJson(
+    path.join(publicDir, "api", "vision", "evidence-pack.json"),
+    {
+      ok: visionEvidencePack.ok,
+      data: visionEvidencePack,
+    },
+  )
+  await writeJson(
+    path.join(publicDir, "catalog", "generated", "vision-tool-selection.json"),
+    visionSelection,
+  )
+  await writeJson(
+    path.join(publicDir, "catalog", "generated", "vision-evidence-pack.json"),
+    visionEvidencePack,
+  )
 
   const feedItems = topCapabilities.map((capability) => ({
     title: capability.name,
@@ -391,12 +439,47 @@ async function main() {
       "      responses:",
       "        '200':",
       "          description: Best reusable implementation candidates",
+      "  /catalog/generated/vision-tool-selection.json:",
+      "    get:",
+      "      summary: Vision tool selection",
+      "      responses:",
+      "        '200':",
+      "          description: Browser, PlatPhorm Content, and PlatPhorm Docs mapped to catalog capabilities",
+      "  /api/vision/capabilities:",
+      "    get:",
+      "      summary: Vision capability selection API",
+      "      responses:",
+      "        '200':",
+      "          description: Standard ok/data wrapper around the public vision selection artifact",
+      "  /api/vision/evidence-pack:",
+      "    get:",
+      "      summary: Vision evidence pack API",
+      "      responses:",
+      "        '200':",
+      "          description: Preview-only JSON and Markdown-ready evidence pack generated from catalog state",
+      "  /catalog/generated/vision-evidence-pack.json:",
+      "    get:",
+      "      summary: Static vision evidence pack",
+      "      responses:",
+      "        '200':",
+      "          description: Public read-only evidence pack artifact",
       "  /rss.xml:",
       "    get:",
       "      summary: Capability update feed",
       "      responses:",
       "        '200':",
       "          description: RSS feed of high-signal catalog capabilities",
+      "components:",
+      "  securitySchemes:",
+      "    PlatPhormApiKey:",
+      "      type: apiKey",
+      "      in: header",
+      "      name: X-PlatPhorm-API-Key",
+      "      description: Future protected catalog mutations use PLATPHORM_API_KEY. Public catalog reads require no auth.",
+      "    PlatPhormBearer:",
+      "      type: http",
+      "      scheme: bearer",
+      "      description: Future protected catalog mutations also accept Authorization: Bearer $PLATPHORM_API_KEY.",
     ].join("\n"),
   )
 
@@ -414,7 +497,7 @@ async function main() {
     ok: true,
     service: "platphorm-catalog",
     public_read_access: true,
-    protected_actions: ["catalog regeneration", "repository scanning", "manifest repair", "deployment"],
+    protected_actions: ["catalog regeneration", "repository scanning", "manifest repair", "deployment", "connector writes", "report publication"],
     auth: {
       shared_key: "PLATPHORM_API_KEY",
       accepted_headers: ["Authorization: Bearer $PLATPHORM_API_KEY", "X-PlatPhorm-API-Key: $PLATPHORM_API_KEY"],
@@ -426,7 +509,7 @@ async function main() {
     ok: true,
     service: "platphorm-catalog",
     purpose: "Public read-only software capability catalog.",
-    machine_routes: ["/llms.txt", "/llms-full.txt", "/llms-index.json", "/catalog/generated/search-index.json"],
+    machine_routes: ["/llms.txt", "/llms-full.txt", "/llms-index.json", "/catalog/generated/search-index.json", "/catalog/generated/vision-tool-selection.json", "/catalog/generated/vision-evidence-pack.json", "/api/vision/capabilities", "/api/vision/evidence-pack"],
   })
   await writeJson(path.join(publicDir, ".well-known", "mcp.json"), {
     ok: true,

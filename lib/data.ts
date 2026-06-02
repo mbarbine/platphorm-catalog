@@ -12,8 +12,11 @@ import type {
   CatalogRepositorySummary,
   RepositoryCatalogManifest,
   BestImplementationIndex,
+  VisionEvidencePack,
+  VisionToolSelection,
 } from "./types"
 import { routeSlugToId } from "./routing"
+import { buildVisionEvidencePack, buildVisionToolSelection } from "./vision-tools"
 
 const DATA_DIR = process.cwd()
 const CATALOG_DIR = path.join(DATA_DIR, "global-capability-catalog", "catalog")
@@ -98,6 +101,20 @@ export async function loadCatalogSummary(): Promise<{
 
 export async function loadBestImplementations(): Promise<BestImplementationIndex> {
   return readJson(path.join(GENERATED_DIR, "best-implementations.json"))
+}
+
+export async function loadVisionToolSelection(): Promise<VisionToolSelection> {
+  const [globalIndex, bestIndex] = await Promise.all([
+    loadGlobalCapabilityIndex(),
+    loadBestImplementations(),
+  ])
+
+  return buildVisionToolSelection(globalIndex, bestIndex)
+}
+
+export async function loadVisionEvidencePack(): Promise<VisionEvidencePack> {
+  const selection = await loadVisionToolSelection()
+  return buildVisionEvidencePack(selection)
 }
 
 export async function loadGeneratedRepositories(): Promise<CatalogRepositorySummary[]> {

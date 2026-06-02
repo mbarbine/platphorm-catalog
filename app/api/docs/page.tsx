@@ -36,6 +36,16 @@ const artifacts = [
     description: "Ranked candidate implementations for each global capability.",
   },
   {
+    href: "/catalog/generated/vision-tool-selection.json",
+    title: "Vision Tool Selection",
+    description: "Browser, PlatPhorm Content, and PlatPhorm Docs mapped to evidence-backed catalog capabilities and privacy-defense mission tracks.",
+  },
+  {
+    href: "/catalog/generated/vision-evidence-pack.json",
+    title: "Vision Evidence Pack",
+    description: "Preview-only JSON and Markdown-ready operator briefing generated from the tool selection and scaffolded controls.",
+  },
+  {
     href: "/catalog/generated/validation-report.json",
     title: "Validation Report",
     description: "Schema and evidence-path validation results for generated scans, manifests, and indexes.",
@@ -89,7 +99,7 @@ export default async function ApiDocsPage() {
                 Discovery Files
               </div>
               <div className="mt-4 grid gap-2 text-sm">
-                {["/api/health", "/api/v1/health", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
+                {["/api/health", "/api/v1/health", "/api/vision/capabilities", "/api/vision/evidence-pack", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
                   <a key={href} href={href} className="rounded bg-black/20 px-3 py-2 font-mono text-accent hover:underline">
                     {href}
                   </a>
@@ -104,6 +114,7 @@ export default async function ApiDocsPage() {
               <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <li>Public read-only catalog artifacts are served directly from the static Vercel output.</li>
                 <li>Mutating catalog generation and repair actions are not exposed by this deployment.</li>
+                <li>Protection controls are currently scaffolded for visibility only; enforcement is off while functionality is proven.</li>
                 <li>Source evidence is preserved as paths and summaries; secret values are not published.</li>
                 <li>Use `PLATPHORM_API_KEY` only for future protected catalog mutation endpoints.</li>
               </ul>

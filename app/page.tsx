@@ -10,22 +10,24 @@ import {
   loadCapabilities,
   loadGeneratedRepositories,
   loadBestImplementations,
+  loadVisionToolSelection,
   getUniqueRepositories,
   toRepositoryCards,
 } from "@/lib/data"
-import { Database, FolderGit2, Cpu, Layers, ShieldCheck, Network, Sparkles } from "lucide-react"
+import { Database, FolderGit2, Cpu, Layers, ShieldCheck, Network, Sparkles, Target } from "lucide-react"
 import Link from "next/link"
 import { FadeIn, StaggerChildren, StaggerItem } from "@/components/ui/fade-in"
 import { capabilityHref } from "@/lib/routing"
 
 export default async function HomePage() {
-  const [stats, componentData, capabilities, generatedRepos, bestIndex] =
+  const [stats, componentData, capabilities, generatedRepos, bestIndex, visionSelection] =
     await Promise.all([
       getCatalogStats(),
       loadComponentIndex(),
       loadCapabilities(),
       loadGeneratedRepositories(),
       loadBestImplementations(),
+      loadVisionToolSelection(),
     ])
 
   const uniqueRepos = getUniqueRepositories(componentData.components)
@@ -118,6 +120,47 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
+
+        <FadeIn className="border-b border-white/5 py-12">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid gap-6 lg:grid-cols-[1fr_420px] lg:items-center">
+              <div>
+                <div className="flex items-center gap-2 text-sm font-medium text-accent">
+                  <Target className="h-4 w-4" />
+                  Vision Tool Selection
+                </div>
+                <h2 className="mt-3 text-2xl font-bold tracking-tight text-white">
+                  Browser, PlatPhorm Content, and PlatPhorm Docs mapped to real catalog capabilities
+                </h2>
+                <p className="mt-3 max-w-3xl text-sm text-muted-foreground">
+                  The selector keeps this site as a public read-only catalog while
+                  showing which existing repository capabilities can support
+                  privacy-defense evidence capture, evidence vaulting, and
+                  briefing workflows.
+                </p>
+              </div>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {visionSelection.selected_tools.map((tool) => (
+                  <Link
+                    key={tool.id}
+                    href="/vision"
+                    className="glass rounded-lg p-4 hover:border-accent/40 hover:bg-card"
+                  >
+                    <p className="text-sm font-semibold text-foreground">
+                      {tool.plugin}
+                    </p>
+                    <p className="mt-2 text-2xl font-black text-white">
+                      {tool.capabilities.length}
+                    </p>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      capability matches
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </FadeIn>
 
         {/* Classification Breakdown */}
         <FadeIn className="border-b border-white/5 py-16">

@@ -3,11 +3,12 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Database, Layers, FolderGit2, Cpu, Menu, X } from "lucide-react"
+import { Database, Layers, FolderGit2, Cpu, Menu, Target, X } from "lucide-react"
 import { useState } from "react"
 
 const navigation = [
   { name: "Overview", href: "/", icon: Database },
+  { name: "Vision", href: "/vision", icon: Target },
   { name: "Repositories", href: "/repositories", icon: FolderGit2 },
   { name: "Capabilities", href: "/capabilities", icon: Cpu },
   { name: "Components", href: "/components", icon: Layers },

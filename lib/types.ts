@@ -238,3 +238,132 @@ export interface CatalogStats {
   duplicateCapabilities?: number
   generatedAt?: string
 }
+
+export interface VisionCapabilityMatch {
+  id: string
+  name: string
+  type: string
+  implementations: number
+  reuse_score: number
+  recommended_source: RecommendedSource | null
+}
+
+export interface VisionOperatorTool {
+  id: string
+  plugin: "Browser" | "PlatPhorm Content" | "PlatPhorm Docs"
+  title: string
+  platform_url?: string
+  selected: boolean
+  runtime_state: "available_to_codex_operator"
+  platform_fit: string
+  privacy_boundary: string
+  capability_ids: string[]
+  capabilities: VisionCapabilityMatch[]
+}
+
+export interface VisionMissionTrack {
+  id: string
+  title: string
+  vision_fit: string
+  phase_one_boundary: string
+  tool_ids: string[]
+  capability_ids: string[]
+  capabilities: VisionCapabilityMatch[]
+}
+
+export interface VisionDeferredCapability {
+  id: string
+  title: string
+  status: "deferred" | "research_only"
+  reason: string
+  required_controls: string[]
+}
+
+export interface VisionProtectionMode {
+  mode: "functionality_first"
+  enforcement_enabled: false
+  note: string
+}
+
+export interface VisionProtectionControl {
+  id: string
+  title: string
+  status: "scaffolded_not_enforced"
+  enforcement: "off"
+  scope: string
+  current_behavior: string
+  activation_requirements: string[]
+}
+
+export interface VisionToolSelection {
+  ok: boolean
+  generated_at: string
+  vision: {
+    id: string
+    title: string
+    source_context: string
+    site_purpose: string
+  }
+  source_catalog: {
+    generated_at: string
+    repositories: number
+    global_capabilities: number
+  }
+  auth_boundary: {
+    protected_actions_require: "PLATPHORM_API_KEY"
+    accepted_headers: string[]
+    public_read_only: boolean
+    rejected_platform_key_policy: string
+  }
+  selected_tools: VisionOperatorTool[]
+  mission_tracks: VisionMissionTrack[]
+  protection_mode: VisionProtectionMode
+  protection_controls: VisionProtectionControl[]
+  deferred_capabilities: VisionDeferredCapability[]
+  missing_capability_ids: string[]
+  claims_boundary: string[]
+}
+
+export interface VisionEvidencePack {
+  ok: boolean
+  generated_at: string
+  mode: "preview_only"
+  title: string
+  summary: string
+  source_routes: string[]
+  selected_tools: Array<{
+    id: string
+    plugin: VisionOperatorTool["plugin"]
+    title: string
+    capability_count: number
+  }>
+  mission_track_briefs: Array<{
+    id: string
+    title: string
+    tool_ids: string[]
+    capability_ids: string[]
+    recommended_sources: Array<{
+      capability_id: string
+      repo_id: string
+      score: number
+    }>
+  }>
+  protection_summary: {
+    mode: VisionProtectionMode["mode"]
+    enforcement_enabled: false
+    controls: Array<{
+      id: string
+      title: string
+      enforcement: "off"
+    }>
+  }
+  export_targets: Array<{
+    id: string
+    title: string
+    status: "available_now" | "future_operator_action"
+    route?: string
+    note: string
+  }>
+  not_executed: string[]
+  markdown: string
+}
