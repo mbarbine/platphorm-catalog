@@ -1,76 +1,74 @@
-﻿{
-    "name":  "v0-project",
-    "version":  "1.4.0",
-    "description":  "",
-    "main":  "index.js",
-    "scripts":  {
-                    "prebuild":  "tsx scripts/sync-public-catalog.ts",
-                    "dev":  "next dev",
-                    "build":  "next build",
-                    "start":  "next start",
-                    "lint":  "tsc --noEmit",
-                    "typecheck":  "tsc --noEmit",
-                    "test":  "vitest run",
-                    "discover":  "npm --prefix global-capability-catalog run discover",
-                    "scan":  "npm --prefix global-capability-catalog run scan",
-                    "analyze":  "npm --prefix global-capability-catalog run analyze",
-                    "validate":  "npm --prefix global-capability-catalog run validate",
-                    "validate:all":  "npm --prefix global-capability-catalog run validate:all",
-                    "repair":  "npm --prefix global-capability-catalog run repair",
-                    "build:index":  "npm --prefix global-capability-catalog run build:index",
-                    "normalize":  "npm --prefix global-capability-catalog run normalize",
-                    "select:best":  "npm --prefix global-capability-catalog run select:best",
-                    "docs":  "npm --prefix global-capability-catalog run docs",
-                    "catalog:subset":  "npm --prefix global-capability-catalog run catalog:subset",
-                    "catalog:all":  "npm --prefix global-capability-catalog run catalog:all",
-                    "sync:public":  "tsx scripts/sync-public-catalog.ts"
-                },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "git+https://github.com/mbarbine/platphorm-catalog.git"
-                   },
-    "keywords":  [
-
-                 ],
-    "author":  "",
-    "license":  "ISC",
-    "pnpm":  {
-                 "onlyBuiltDependencies":  [
-                                               "esbuild",
-                                               "sharp"
-                                           ]
-             },
-    "bugs":  {
-                 "url":  "https://github.com/mbarbine/platphorm-catalog/issues"
-             },
-    "homepage":  "https://github.com/mbarbine/platphorm-catalog#readme",
-    "dependencies":  {
-                         "@tailwindcss/postcss":  "^4.3.3",
-                         "ajv":  "^8.20.0",
-                         "ajv-formats":  "^3.0.1",
-                         "clsx":  "^2.1.1",
-                         "fast-glob":  "^3.3.3",
-                         "framer-motion":  "^12.42.2",
-                         "lucide-react":  "^1.25.0",
-                         "next":  "^16.2.10",
-                         "postcss":  "^8.5.19",
-                         "react":  "^19.2.7",
-                         "react-dom":  "^19.2.7",
-                         "react-markdown":  "^10.1.0",
-                         "remark-gfm":  "^4.0.1",
-                         "tailwindcss":  "^4.3.3",
-                         "yaml":  "^2.9.0"
-                     },
-    "devDependencies":  {
-                            "@testing-library/jest-dom":  "^6.9.1",
-                            "@testing-library/react":  "^16.3.2",
-                            "@testing-library/user-event":  "^14.6.1",
-                            "@types/node":  "^26.1.1",
-                            "@types/react":  "^19.2.17",
-                            "@types/react-dom":  "^19.2.3",
-                            "jsdom":  "^29.1.1",
-                            "tsx":  "^4.23.1",
-                            "typescript":  "^7.0.2",
-                            "vitest":  "^4.1.10"
-                        }
+{
+  "name": "v0-project",
+  "version": "1.5.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tsx scripts/sync-public-catalog.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "discover": "npm --prefix global-capability-catalog run discover",
+    "scan": "npm --prefix global-capability-catalog run scan",
+    "analyze": "npm --prefix global-capability-catalog run analyze",
+    "validate": "npm --prefix global-capability-catalog run validate",
+    "validate:all": "npm --prefix global-capability-catalog run validate:all",
+    "repair": "npm --prefix global-capability-catalog run repair",
+    "build:index": "npm --prefix global-capability-catalog run build:index",
+    "normalize": "npm --prefix global-capability-catalog run normalize",
+    "select:best": "npm --prefix global-capability-catalog run select:best",
+    "docs": "npm --prefix global-capability-catalog run docs",
+    "catalog:subset": "npm --prefix global-capability-catalog run catalog:subset",
+    "catalog:all": "npm --prefix global-capability-catalog run catalog:all",
+    "sync:public": "tsx scripts/sync-public-catalog.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbarbine/platphorm-catalog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/mbarbine/platphorm-catalog/issues"
+  },
+  "homepage": "https://github.com/mbarbine/platphorm-catalog#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "clsx": "^2.1.1",
+    "fast-glob": "^3.3.3",
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.25.0",
+    "next": "^16.2.10",
+    "postcss": "^8.5.19",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwindcss": "^4.3.3",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "jsdom": "^29.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
 }
