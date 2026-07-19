@@ -1,5 +1,4 @@
 const nextConfig = {
-  output: 'export',
   distDir: '.next',
   trailingSlash: true,
   images: {
