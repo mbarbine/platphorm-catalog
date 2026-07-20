@@ -3,6 +3,7 @@ import path from "node:path"
 import { routeSlug } from "../lib/routing"
 import type { BestImplementationIndex, GlobalCapabilityIndex } from "../lib/types"
 import { buildVisionEvidencePack, buildVisionToolSelection } from "../lib/vision-tools"
+import { parse as parseYaml } from "yaml"
 
 const root = process.cwd()
 const publicDir = path.join(root, "public")
@@ -104,6 +105,7 @@ async function main() {
     "/vision",
     "/api/health",
     "/api/v1/health",
+    "/api/mcp",
     "/api/vision/capabilities",
     "/api/vision/evidence-pack",
     "/repositories",
@@ -115,6 +117,7 @@ async function main() {
     "/llms-full.txt",
     "/llms-index.json",
     "/openapi.yaml",
+    "/openapi.json",
     "/robots.txt",
     "/sitemap.xml",
     "/sitemap-index.xml",
@@ -151,7 +154,14 @@ async function main() {
       capability_implementations: summary.capabilities_extracted ?? null,
       components: componentIndex.component_count,
       database: { status: "not_applicable", note: "Static catalog artifact deployment." },
-      mcp: { status: "unsupported", note: "This public catalog exposes static artifacts, not MCP tool execution." },
+      mcp: {
+        status: "active",
+        access: "public_read_only",
+        endpoint: "/api/mcp",
+        tools: 5,
+        resources: 5,
+        prompts: 3,
+      },
       discoveryStatus: "ok",
       sitemapStatus: "ok",
       rssStatus: "ok",
@@ -231,6 +241,8 @@ async function main() {
       "- /api/vision/evidence-pack",
       "- /api/docs",
       "- /api/health",
+      "- /api/mcp",
+      "- /.well-known/mcp.json",
       "- /rss.xml",
       "",
       "Top capabilities:",
@@ -262,6 +274,8 @@ async function main() {
       "- /artifacts/components.json",
       "- /api/health",
       "- /api/v1/health",
+      "- /api/mcp",
+      "- /.well-known/mcp.json",
       "- /rss.xml",
       "- /sitemap-index.xml",
       "",
@@ -292,6 +306,8 @@ async function main() {
       llms: "/llms.txt",
       llms_full: "/llms-full.txt",
       openapi: "/openapi.yaml",
+      openapi_json: "/openapi.json",
+      mcp: "/api/mcp",
       sitemap: "/sitemap.xml",
       sitemap_index: "/sitemap-index.xml",
       rss: "/rss.xml",
@@ -392,9 +408,7 @@ async function main() {
     ].join("\n"),
   )
 
-  await writeText(
-    path.join(publicDir, "openapi.yaml"),
-    [
+  const openApiYaml = [
       "openapi: 3.1.0",
       "info:",
       "  title: PlatPhorm Capability Catalog",
@@ -415,6 +429,23 @@ async function main() {
       "      responses:",
       "        '200':",
       "          description: Catalog health and generation status",
+      "  /api/mcp:",
+      "    get:",
+      "      summary: MCP server metadata and public read-only capability names",
+      "      responses:",
+      "        '200':",
+      "          description: MCP endpoint metadata",
+      "    post:",
+      "      summary: Public read-only JSON-RPC MCP transport",
+      "      requestBody:",
+      "        required: true",
+      "        content:",
+      "          application/json:",
+      "            schema:",
+      "              type: object",
+      "      responses:",
+      "        '200':",
+      "          description: JSON-RPC response",
       "  /catalog/generated/capabilities.json:",
       "    get:",
       "      summary: Global capability index",
@@ -479,9 +510,10 @@ async function main() {
       "    PlatPhormBearer:",
       "      type: http",
       "      scheme: bearer",
-      "      description: Future protected catalog mutations also accept Authorization: Bearer $PLATPHORM_API_KEY.",
-    ].join("\n"),
-  )
+      "      description: 'Future protected catalog mutations also accept Authorization: Bearer $PLATPHORM_API_KEY.'",
+    ].join("\n")
+  await writeText(path.join(publicDir, "openapi.yaml"), openApiYaml)
+  await writeJson(path.join(publicDir, "openapi.json"), parseYaml(openApiYaml))
 
   await writeJson(path.join(publicDir, "manifest.webmanifest"), {
     name: "PlatPhorm Capability Catalog",
@@ -509,15 +541,22 @@ async function main() {
     ok: true,
     service: "platphorm-catalog",
     purpose: "Public read-only software capability catalog.",
-    machine_routes: ["/llms.txt", "/llms-full.txt", "/llms-index.json", "/catalog/generated/search-index.json", "/catalog/generated/vision-tool-selection.json", "/catalog/generated/vision-evidence-pack.json", "/api/vision/capabilities", "/api/vision/evidence-pack"],
+    machine_routes: ["/api/mcp", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.json", "/catalog/generated/search-index.json", "/catalog/generated/vision-tool-selection.json", "/catalog/generated/vision-evidence-pack.json", "/api/vision/capabilities", "/api/vision/evidence-pack"],
   })
   await writeJson(path.join(publicDir, ".well-known", "mcp.json"), {
     ok: true,
     service: "platphorm-catalog",
     mcp: {
-      supported: false,
-      status: "static-export",
-      note: "This site publishes static catalog artifacts. MCP mutation or tool execution is not exposed by this static deployment.",
+      supported: true,
+      status: "active",
+      endpoint: `${baseUrl}/api/mcp`,
+      access: "public_read_only",
+      protocol: "JSON-RPC 2.0",
+      methods: ["initialize", "ping", "tools/list", "tools/call", "resources/list", "resources/read", "prompts/list", "prompts/get"],
+      tools: ["search_catalog", "get_catalog_summary", "get_capability", "get_repository", "recommend_implementation"],
+      resources: ["catalog://summary", "catalog://capabilities", "catalog://repositories", "catalog://best-implementations", "catalog://vision/tool-selection"],
+      prompts: ["find_reusable_capability", "evaluate_implementation", "plan_platform_contract_reuse"],
+      mutation_support: false,
     },
   })
   await writeJson(path.join(publicDir, ".well-known", "ai-plugin.json"), {

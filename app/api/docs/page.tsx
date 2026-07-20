@@ -6,6 +6,11 @@ import { Braces, Download, FileJson, Network } from "lucide-react"
 
 const artifacts = [
   {
+    href: "/api/mcp",
+    title: "MCP Catalog Server",
+    description: "Public read-only JSON-RPC tools, resources, and prompts backed by the generated catalog evidence.",
+  },
+  {
     href: "/api/health",
     title: "Health",
     description: "Public static health payload with generation status, validated manifests, discovery status, and route-contract status.",
@@ -66,7 +71,7 @@ export default async function ApiDocsPage() {
               Catalog API and Public Artifacts
             </h1>
             <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-              The catalog is a static, public read-only API. Every artifact below is generated from the same schema-validated local catalog used to render the UI.
+              The catalog is a public read-only API and MCP server. Every result is backed by the same schema-validated generated catalog used to render the UI, with its recorded generation timestamp preserved.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-4">
               <Metric label="Repositories" value={stats.totalRepositories} />
@@ -99,7 +104,7 @@ export default async function ApiDocsPage() {
                 Discovery Files
               </div>
               <div className="mt-4 grid gap-2 text-sm">
-                {["/api/health", "/api/v1/health", "/api/vision/capabilities", "/api/vision/evidence-pack", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
+                {["/api/health", "/api/v1/health", "/api/mcp", "/api/vision/capabilities", "/api/vision/evidence-pack", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/openapi.json", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
                   <a key={href} href={href} className="rounded bg-black/20 px-3 py-2 font-mono text-accent hover:underline">
                     {href}
                   </a>
@@ -113,10 +118,12 @@ export default async function ApiDocsPage() {
               </div>
               <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <li>Public read-only catalog artifacts are served directly from the static Vercel output.</li>
+                <li>MCP search, detail, recommendation, resources, and prompts are public and read-only.</li>
                 <li>Mutating catalog generation and repair actions are not exposed by this deployment.</li>
                 <li>Protection controls are currently scaffolded for visibility only; enforcement is off while functionality is proven.</li>
                 <li>Source evidence is preserved as paths and summaries; secret values are not published.</li>
-                <li>Use `PLATPHORM_API_KEY` only for future protected catalog mutation endpoints.</li>
+                <li>Generated timestamps remain visible; verify a source repository before adopting a recommendation.</li>
+                <li>Use <code>PLATPHORM_API_KEY</code> only for future protected catalog mutation endpoints.</li>
               </ul>
             </div>
           </div>
