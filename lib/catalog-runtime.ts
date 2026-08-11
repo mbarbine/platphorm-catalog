@@ -1,7 +1,7 @@
 import { promises as fs } from "node:fs"
 import path from "node:path"
 
-import type { GithubCensus } from "./catalog-evidence"
+import type { GithubCensus, PackageObservation } from "./catalog-evidence"
 import type { PublicationSummary } from "./catalog-store"
 import { listCatalogPublications } from "./catalog-store"
 
@@ -80,6 +80,91 @@ interface LocalPublisherState {
   observedAt: string | null
 }
 
+function normalizePackageName(name: string): string {
+  return name.toLowerCase()
+}
+
+function buildCurrentRepositoryImportState(
+  publications: PublicationSummary[],
+  repositoryFullName: string,
+  headSha: string | null,
+): Map<string, number> {
+  const targetRepo = repositoryFullName.toLowerCase()
+  const matching = publications
+    .filter((entry) => entry.fullName.toLowerCase() === targetRepo)
+    .filter((entry) => entry.status !== "not_persisted")
+    .sort((a, b) => Date.parse(b.runTimestamp) - Date.parse(a.runTimestamp))
+
+  if (!headSha) return new Map()
+
+  const currentPublication = matching.find((entry) => entry.sha === headSha.toLowerCase())
+  if (!currentPublication || !currentPublication.imports?.length) return new Map()
+
+  const imports = new Map<string, number>()
+  for (const entry of currentPublication.imports) {
+    const packageName = normalizePackageName(entry.package)
+    if (!packageName) continue
+    const current = imports.get(packageName) ?? 0
+    imports.set(packageName, Math.max(current, entry.count))
+  }
+  return imports
+}
+
+function buildCurrentRepositoryImportIndex(
+  repositories: GithubCensus["repositories"],
+  publicationSummaries: PublicationSummary[],
+): Map<string, Map<string, number>> {
+  const index = new Map<string, Map<string, number>>()
+  for (const repository of repositories) {
+    const state = buildCurrentRepositoryImportState(
+      publicationSummaries,
+      repository.fullName,
+      repository.headSha,
+    )
+    if (state.size > 0) {
+      index.set(repository.fullName.toLowerCase(), state)
+    }
+  }
+  return index
+}
+
+function enrichCatalogCensusWithPackageReachability(
+  census: GithubCensus,
+  publicationSummaries: PublicationSummary[],
+): GithubCensus {
+  const repositoryImportIndex = buildCurrentRepositoryImportIndex(census.repositories, publicationSummaries)
+
+  const updatedPackages = census.packages.map((pkg) => {
+    let importedRepositories = 0
+    let affectedCodeRepositories = 0
+    const packageName = normalizePackageName(pkg.name)
+
+    for (const repo of census.repositories) {
+      const imports = repositoryImportIndex.get(repo.fullName.toLowerCase())
+      if (!imports) continue
+      if (imports.has(packageName)) {
+        importedRepositories += 1
+        affectedCodeRepositories += 1
+      }
+    }
+
+    return {
+      ...pkg,
+      reachableUsage: {
+        ...pkg.reachableUsage,
+        importedRepositories,
+        affectedCodeRepositories,
+        evidenceLevel: importedRepositories > 0 ? "dependency_imported" : "dependency_present",
+      },
+    } as PackageObservation
+  })
+
+  return {
+    ...census,
+    packages: updatedPackages,
+  }
+}
+
 function parseRunTimestamp(timestamp: string | undefined): number {
   const parsed = timestamp ? Date.parse(timestamp) : NaN
   return Number.isNaN(parsed) ? 0 : parsed
@@ -147,9 +232,14 @@ export function enrichCatalogCensusWithLocalPublishers(
   census: GithubCensus,
   publicationSummaries: PublicationSummary[],
 ): GithubCensus {
+  const packageReachabilityEnriched = enrichCatalogCensusWithPackageReachability(
+    census,
+    publicationSummaries,
+  )
+
   return {
-    ...census,
-    repositories: census.repositories.map((repository) => ({
+    ...packageReachabilityEnriched,
+    repositories: packageReachabilityEnriched.repositories.map((repository) => ({
       ...repository,
       localPublisher: deriveLocalPublisherFromPublications(
         repository.fullName,

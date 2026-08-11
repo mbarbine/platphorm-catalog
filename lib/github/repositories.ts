@@ -116,11 +116,12 @@ async function getRepositoryHeadShaWithRate(owner: string, repo: string, branch:
 
 async function getRepositorySbomWithRate(owner: string, repo: string): Promise<{ sbom: GitHubSBOM | null; rateLimit: GitHubRateLimit }> {
   try {
-    const response = await githubRequest<GitHubSBOM>(
+    const response = await githubRequest<GitHubSBOM | { sbom: GitHubSBOM }>(
       `/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/dependency-graph/sbom`,
       { query: { format: "json" } },
     )
-    return { sbom: response.data, rateLimit: response.rateLimit }
+    const sbomPayload = "sbom" in response.data ? response.data.sbom : response.data
+    return { sbom: sbomPayload ?? null, rateLimit: response.rateLimit }
   } catch {
     return { sbom: null, rateLimit: { limit: null, remaining: null, resetAt: null } }
   }

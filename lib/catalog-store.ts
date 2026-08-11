@@ -17,6 +17,7 @@ export interface PublicationSummary {
   storageStatus: string
   sizeBytes: number
   rawBodySha256: string
+  imports?: Array<{ package: string; count: number }>
 }
 
 export interface PersistPublicationResult {
@@ -70,6 +71,17 @@ function summarizePublicationForApi(
   sizeBytes = 0,
   rawBodySha256?: string,
 ): PublicationSummary {
+  const observedImports = Array.isArray(publication.observations?.imports)
+    ? publication.observations.imports
+      .map((entry) => {
+        const packageName = typeof entry.package === "string" ? entry.package.trim().toLowerCase() : ""
+        const count = Number(entry.count)
+        if (!packageName || Number.isNaN(count) || !Number.isFinite(count)) return null
+        if (count <= 0) return null
+        return { package: packageName, count }
+      })
+      .filter((entry): entry is { package: string; count: number } => entry !== null)
+    : []
   return {
     fullName: publication.repository.fullName,
     sha: publication.repository.sha,
@@ -83,6 +95,7 @@ function summarizePublicationForApi(
     storageStatus,
     sizeBytes,
     rawBodySha256: rawBodySha256 ?? hashText(JSON.stringify(publication)),
+    imports: observedImports.length > 0 ? observedImports : undefined,
   }
 }
 
@@ -109,6 +122,9 @@ export async function persistCatalogPublication(
   const storage = parseCatalogPublicationConfig()
   const storageBranch = normalizeBranch(process.env.GITHUB_CATALOG_PUBLICATION_BRANCH)
   const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+    || process.env.github_pat_read
+    || process.env.github_pat_write
+    || process.env.github_pat
   const storageKey = publicationStorageKey(publication)
   const requestPath = `catalog/publications/${storageKey}`
   const requestBodyText = JSON.stringify(publication, null, 2)

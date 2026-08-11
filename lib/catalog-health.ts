@@ -57,7 +57,7 @@ export async function getCatalogHealthPayload() {
       protectionEnforcementEnabled: visionSelection.protection_mode.enforcement_enabled,
       trustedDomainStatus: "ok",
       publicReadAccess: true,
-      protectedActionsRequire: "PLATPHORM_API_KEY",
+      protectedActionsRequire: "PLATPHORM_API_KEY or trusted OIDC token",
     },
   }
 }

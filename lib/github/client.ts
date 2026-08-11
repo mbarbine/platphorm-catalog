@@ -32,6 +32,9 @@ const GITHUB_BASE = "https://api.github.com"
 
 function getToken(): string | null {
   const configured = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+    || process.env.github_pat_read
+    || process.env.github_pat_write
+    || process.env.github_pat
   return configured ? configured.trim() : null
 }
 

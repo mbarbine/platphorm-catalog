@@ -20,13 +20,14 @@ function authErrorResponse(reason: string, status: number, code: string) {
       message: reason,
       protected_by: [
         "Authorization: Bearer $PLATPHORM_API_KEY",
+        "Authorization: Bearer <GitHub/Vercel OIDC token>",
         "X-PlatPhorm-API-Key: $PLATPHORM_API_KEY",
       ],
     },
   }, { status })
 }
 
-function mapAuthStatus(status: ReturnType<typeof validatePlatphormAuth>): { status: number; code: string; message: string } {
+function mapAuthStatus(status: Awaited<ReturnType<typeof validatePlatphormAuth>>): { status: number; code: string; message: string } {
   if (status.status === "missing_key") return {
     status: 503,
     code: "PROTECTED_REQUIRED",
@@ -35,7 +36,7 @@ function mapAuthStatus(status: ReturnType<typeof validatePlatphormAuth>): { stat
   if (status.status === "missing_auth") return {
     status: 401,
     code: "AUTH_MISSING",
-    message: "PLATPHORM_API_KEY is required for publication writes.",
+    message: "A valid PLATPHORM_API_KEY or trusted OIDC bearer token is required for publication writes.",
   }
   return {
     status: 403,
@@ -95,7 +96,7 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   const requestId = request.headers.get("x-platphorm-request-id") ?? randomUUID()
-  const auth = validatePlatphormAuth(request)
+  const auth = await validatePlatphormAuth(request)
   if (!auth.authorized) {
     const mapped = mapAuthStatus(auth)
     return authErrorResponse(mapped.message, mapped.status, mapped.code)

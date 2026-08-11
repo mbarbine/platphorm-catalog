@@ -35,6 +35,63 @@ function buildCensus(repositories: GithubCensus["repositories"]): GithubCensus {
   }
 }
 
+function packageObservation(name: string): GithubCensus["packages"][number] {
+  return {
+    name,
+    repositories: 1,
+    repositoryIds: ["mbarbine/platphorm-catalog"],
+    productionRepositories: 1,
+    productionUsage: "measured",
+    versions: [{ version: "1.0.0", repositories: 1, repositoryIds: ["mbarbine/platphorm-catalog"] }],
+    dominantVersion: "1.0.0",
+    versionDrift: false,
+    securityStatus: "not_checked",
+    reachableUsage: {
+      importedRepositories: 0,
+      affectedCodeRepositories: 0,
+      evidenceLevel: "not_available",
+    },
+  }
+}
+
+function catalogWithPackages(packages: GithubCensus["packages"]) {
+  const census = buildCensus([baseRepository])
+  census.packages = packages
+  return census
+}
+
+function publicationWithImports({
+  fullName,
+  sha,
+  status,
+  runTimestamp,
+  imports,
+  scannerVersion = "1.0.0",
+}: {
+  fullName: string
+  sha: string
+  status: PublicationSummary["status"]
+  runTimestamp: string
+  imports: Array<{ package: string; count: number }>
+  scannerVersion?: string | null
+}): PublicationSummary {
+  return {
+    fullName,
+    sha,
+    scannerVersion,
+    runTimestamp,
+    filesAnalyzed: 11,
+    durationMs: 42,
+    warnings: 0,
+    route: `/api/v1/catalog/publications/${fullName.replace("/", "__")}.json`,
+    status,
+    storageStatus: "ok",
+    sizeBytes: 1200,
+    rawBodySha256: "hash",
+    imports,
+  }
+}
+
 function publication(
   fullName: string,
   sha: string,
@@ -146,6 +203,66 @@ describe("catalog runtime publication reconciliation", () => {
       sha: null,
       scannerVersion: null,
       observedAt: null,
+    })
+  })
+
+  it("reconciles package reachable usage with publication imports", () => {
+    const census = catalogWithPackages([
+      packageObservation("react"),
+      packageObservation("lucide-react"),
+    ])
+    const result = enrichCatalogCensusWithLocalPublishers(census, [
+      publicationWithImports({
+        fullName: "mbarbine/platphorm-catalog",
+        sha: "a1",
+        status: "stored",
+        runTimestamp: "2026-08-10T10:00:00Z",
+        imports: [
+          { package: "react", count: 3 },
+          { package: "zod", count: 1 },
+        ],
+      }),
+    ])
+
+    expect(result.packages).toHaveLength(2)
+    expect(result.packages.find((entry) => entry.name === "react")).toEqual(
+      expect.objectContaining({
+        reachableUsage: expect.objectContaining({
+          importedRepositories: 1,
+          affectedCodeRepositories: 1,
+          evidenceLevel: "dependency_imported",
+        }),
+      }),
+    )
+    expect(result.packages.find((entry) => entry.name === "lucide-react")).toEqual(
+      expect.objectContaining({
+        reachableUsage: expect.objectContaining({
+          importedRepositories: 0,
+          affectedCodeRepositories: 0,
+          evidenceLevel: "dependency_present",
+        }),
+      }),
+    )
+  })
+
+  it("does not mark import usage when publication does not match repo head SHA", () => {
+    const repoWithNewSha = { ...baseRepository, headSha: "new-sha" }
+    const census = catalogWithPackages([packageObservation("react")])
+    census.repositories[0] = repoWithNewSha
+    const result = enrichCatalogCensusWithLocalPublishers(census, [
+      publicationWithImports({
+        fullName: "mbarbine/platphorm-catalog",
+        sha: "old-sha",
+        status: "stored",
+        runTimestamp: "2026-08-10T10:00:00Z",
+        imports: [{ package: "react", count: 2 }],
+      }),
+    ])
+
+    expect(result.packages[0].reachableUsage).toEqual({
+      importedRepositories: 0,
+      affectedCodeRepositories: 0,
+      evidenceLevel: "dependency_present",
     })
   })
 })

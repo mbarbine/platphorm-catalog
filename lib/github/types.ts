@@ -110,7 +110,7 @@ export interface GitHubSbomPackage {
 }
 
 export interface GitHubSBOM {
-  metadata: {
+  metadata?: {
     name?: string
     SPDXID?: string
     created?: string
@@ -125,4 +125,8 @@ export interface GitHubSBOM {
     dependentPackage?: { purl?: string; externalRefs?: Array<{ type: string; locator: string }> }
     relationshipType?: string
   }>
+}
+
+export interface GitHubSBOMEnvelope {
+  sbom: GitHubSBOM
 }

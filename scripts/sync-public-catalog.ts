@@ -634,11 +634,11 @@ async function main() {
       "      type: apiKey",
       "      in: header",
       "      name: X-PlatPhorm-API-Key",
-      "      description: Future protected catalog mutations use PLATPHORM_API_KEY. Public catalog reads require no auth.",
+      "      description: Protected catalog mutations require PLATPHORM_API_KEY or trusted OIDC bearer tokens. Public reads require no auth.",
       "    PlatPhormBearer:",
       "      type: http",
       "      scheme: bearer",
-      "      description: 'Future protected catalog mutations also accept Authorization: Bearer $PLATPHORM_API_KEY.'",
+      "      description: \"Protected catalog mutations also accept Authorization: Bearer <PLATPHORM_API_KEY or trusted OIDC token>.\"",
     ].join("\n")
   await writeText(path.join(publicDir, "openapi.yaml"), openApiYaml)
   await writeJson(path.join(publicDir, "openapi.json"), parseYaml(openApiYaml))
@@ -660,10 +660,14 @@ async function main() {
     protected_actions: ["catalog regeneration", "repository scanning", "manifest repair", "deployment", "connector writes", "report publication"],
     auth: {
       shared_key: "PLATPHORM_API_KEY",
-      accepted_headers: ["Authorization: Bearer $PLATPHORM_API_KEY", "X-PlatPhorm-API-Key: $PLATPHORM_API_KEY"],
+      accepted_headers: [
+        "Authorization: Bearer $PLATPHORM_API_KEY",
+        "Authorization: Bearer <trusted OIDC token>",
+        "X-PlatPhorm-API-Key: $PLATPHORM_API_KEY",
+      ],
     },
     policy:
-      "Web dashboard, public-safe discovery, browser-based operations, trusted-domain discovery, standard route compliance, Vercel metadata capture, trace inspection, and agentic workflow discovery are intentionally supported for public read-only debugging and operator workflows. Mutating, administrative, ingestion, replay, fork, remediation, deployment, sync, test-triggering, reporting, and write actions require PLATPHORM_API_KEY.",
+      "Web dashboard, public-safe discovery, browser-based operations, trusted-domain discovery, standard route compliance, Vercel metadata capture, trace inspection, and agentic workflow discovery are intentionally supported for public read-only debugging and operator workflows. Mutating, administrative, ingestion, replay, fork, remediation, deployment, sync, test-triggering, reporting, and write actions require PLATPHORM_API_KEY or trusted OIDC.",
   })
   await writeJson(path.join(publicDir, ".well-known", "agents.json"), {
     ok: true,

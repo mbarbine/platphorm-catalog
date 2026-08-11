@@ -69,7 +69,7 @@ export async function GET() {
         {
           route: "/api/v1/catalog/publications",
           method: "POST",
-          authRequired: "PLATPHORM_API_KEY",
+          authRequired: "PLATPHORM_API_KEY or OIDC bearer token",
         },
       ],
     },

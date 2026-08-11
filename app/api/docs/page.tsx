@@ -139,11 +139,11 @@ export default async function ApiDocsPage() {
               <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                 <li>Public read-only catalog artifacts are served directly from the static Vercel output.</li>
                 <li>MCP search, detail, recommendation, resources, and prompts are public and read-only.</li>
-                <li>Mutating catalog generation and repair actions are not exposed by this deployment.</li>
-                <li>Protection controls are currently scaffolded for visibility only; enforcement is off while functionality is proven.</li>
+                <li>Catalog mutation endpoints are protected and require either API key auth or trusted OIDC tokens.</li>
+                <li>Protection controls now enforce auth before writes and trust checks are intentionally strict.</li>
                 <li>Source evidence is preserved as paths and summaries; secret values are not published.</li>
                 <li>Generated timestamps remain visible; verify a source repository before adopting a recommendation.</li>
-                <li>Use <code>PLATPHORM_API_KEY</code> only for future protected catalog mutation endpoints.</li>
+                <li>Use <code>PLATPHORM_API_KEY</code> for manual calls, or trusted OIDC from GitHub/Vercel workflows.</li>
               </ul>
             </div>
           </div>

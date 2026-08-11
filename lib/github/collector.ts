@@ -19,6 +19,65 @@ function normalizePackageScope(scope?: string | null): "production" | "developme
   return "unknown"
 }
 
+function safeToSet(value: unknown): string[] {
+  if (!Array.isArray(value)) return []
+  return value
+    .map((entry) => (typeof entry === "string" ? entry.trim().toLowerCase() : ""))
+    .filter((value) => value.length > 0)
+}
+
+function unwrapRepositorySbom(sbom: unknown): Record<string, unknown> | null {
+  if (!sbom || typeof sbom !== "object") return null
+  if (isSbomPayloadLike(sbom)) return sbom
+  const nested = (sbom as { sbom?: unknown }).sbom
+  return isSbomPayloadLike(nested) ? (nested as Record<string, unknown>) : null
+}
+
+function isSbomPayloadLike(value: unknown): value is Record<string, unknown> {
+  if (!value || typeof value !== "object") return false
+  const candidate = value as Record<string, unknown>
+  return (
+    typeof candidate.name === "string" ||
+    Array.isArray(candidate.packages) ||
+    typeof candidate.metadata === "object" ||
+    Array.isArray(candidate.relationships)
+  )
+}
+
+function normalizeSbomPackages(sbom: unknown): GitHubSbomPackage[] {
+  const payload = unwrapRepositorySbom(sbom)
+  if (!payload) return []
+  const rawPackages = payload.packages
+  if (!Array.isArray(rawPackages)) return []
+
+  const out: GitHubSbomPackage[] = []
+  for (const pkg of rawPackages) {
+    if (!pkg || typeof pkg !== "object") continue
+    const record = pkg as Record<string, unknown>
+    const name = typeof record.name === "string" ? record.name.trim() : ""
+    if (!name) continue
+    const version = typeof record.version === "string" ? record.version : null
+    const scope = typeof record.scope === "string" ? normalizePackageScope(record.scope) : "unknown"
+    const ecosystem = inferDependencyEcosystem({
+      id: typeof record.id === "string" ? record.id : "",
+      name,
+      version,
+      scope,
+    } as GitHubSbomPackage)
+
+    out.push({
+      id: typeof record.id === "string" ? record.id : `pkg:npm/${name}@${version ?? "unknown"}`,
+      name,
+      version,
+      scope,
+      ecosystem: ecosystem ?? null,
+      dependencies: safeToSet(record.dependsOn),
+    } as GitHubSbomPackage)
+  }
+
+  return out
+}
+
 export async function collectGithubCensus(options: CollectOptions = {}): Promise<GithubCensus> {
   const maxReposPerOwner = options.maxReposPerOwner ?? 15
   const results = await collectOwnerRepositoryContexts({
@@ -53,10 +112,11 @@ export async function collectGithubCensus(options: CollectOptions = {}): Promise
     }
 
     const treePaths = context.tree?.tree?.map((entry) => entry.path) ?? []
+    const normalizedSbom = normalizeSbomPackages(context.sbom)
     const repositoryObservation = toRepositoryObservation(
       repository,
       context.languages,
-      context.sbom,
+      normalizedSbom,
       context.workflows,
       treePaths,
       context.tree?.truncated ?? false,
@@ -79,7 +139,7 @@ export async function collectGithubCensus(options: CollectOptions = {}): Promise
       packageBuckets.set(packageName, bucket)
     }
 
-    for (const technology of inferRepositoryTechnologies(repository, context.sbom, context.languages, treePaths).categories) {
+    for (const technology of inferRepositoryTechnologies(repository, normalizedSbom, context.languages, treePaths).categories) {
       const bucket = technologyBuckets.get(technology) ?? new Set()
       bucket.add(repoId)
       technologyBuckets.set(technology, bucket)
@@ -172,7 +232,7 @@ export async function collectGithubCensus(options: CollectOptions = {}): Promise
 
 function inferRepositoryTechnologies(
   repo: GitHubRepository,
-  sbom: unknown,
+  sbomPackages: GitHubSbomPackage[],
   languages: Record<string, number>,
   treePaths: string[],
 ): { categories: string[]; packageNames: string[]; standardRoutes: string[] } {
@@ -190,7 +250,6 @@ function inferRepositoryTechnologies(
   if (files > 1000) technologies.add("LargeRepository")
   if (repo.size > 3000) technologies.add("LargeProject")
 
-  const sbomPackages = (sbom as { packages?: GitHubSbomPackage[] } | null)?.packages ?? []
   for (const packageEntry of sbomPackages) {
     if (packageEntry?.name) packages.add(packageEntry.name.toLowerCase())
     if (packageEntry?.name === "next") technologies.add("Next.js")
@@ -224,7 +283,7 @@ function inferDependencyEcosystem(pkg: GitHubSbomPackage): string | null {
 function toRepositoryObservation(
   repository: GitHubRepository,
   languages: Record<string, number>,
-  sbom: unknown,
+  sbomPackages: GitHubSbomPackage[],
   workflows: { name: string; path: string; state: string }[],
   treePaths: string[],
   treeTruncated: boolean,
@@ -235,7 +294,7 @@ function toRepositoryObservation(
     25,
   )
 
-  const inferred = inferRepositoryTechnologies(repository, sbom, languages, treePaths)
+  const inferred = inferRepositoryTechnologies(repository, sbomPackages, languages, treePaths)
 
   return {
     id: repository.full_name,
@@ -266,7 +325,7 @@ function toRepositoryObservation(
       strength: "authoritative",
       value: true,
     })),
-    dependencyEvidence: (sbom as { packages?: GitHubSbomPackage[] })?.packages?.map((entry) => ({
+    dependencyEvidence: sbomPackages.map((entry) => ({
       name: entry.name,
       version: entry.version,
       ecosystem: inferDependencyEcosystem(entry),
