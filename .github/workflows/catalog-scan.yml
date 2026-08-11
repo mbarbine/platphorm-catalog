@@ -1,0 +1,129 @@
+name: Catalog Repo Scan
+
+on:
+  workflow_call:
+    inputs:
+      catalog_api_url:
+        description: "Catalog API base URL."
+        required: false
+        type: string
+        default: "https://catalog.platphormnews.com"
+      publish:
+        description: "Whether to publish scan result."
+        required: false
+        type: string
+        default: "true"
+      max_files:
+        description: "Maximum source files to inspect."
+        required: false
+        type: string
+        default: "2400"
+      artifact_path:
+        description: "Where to write the publication artifact."
+        required: false
+        type: string
+        default: ".platphorm/catalog.json"
+      scanner_version:
+        description: "Scanner version for publication metadata."
+        required: false
+        type: string
+        default: "1.0.0"
+      owner:
+        description: "Optional repository owner override."
+        required: false
+        type: string
+        default: ""
+      repository:
+        description: "Optional repository name override."
+        required: false
+        type: string
+        default: ""
+    secrets:
+      PLATPHORM_API_KEY:
+        required: false
+  workflow_dispatch:
+    inputs:
+      catalog_api_url:
+        description: "Catalog API base URL."
+        required: false
+        type: string
+        default: "https://catalog.platphormnews.com"
+      publish:
+        description: "Whether to publish scan result."
+        required: false
+        type: string
+        default: "true"
+      max_files:
+        description: "Maximum source files to inspect."
+        required: false
+        type: string
+        default: "2400"
+      artifact_path:
+        description: "Where to write the publication artifact."
+        required: false
+        type: string
+        default: ".platphorm/catalog.json"
+      scanner_version:
+        description: "Scanner version for publication metadata."
+        required: false
+        type: string
+        default: "1.0.0"
+      owner:
+        description: "Optional repository owner override."
+        required: false
+        type: string
+        default: ""
+      repository:
+        description: "Optional repository name override."
+        required: false
+        type: string
+        default: ""
+  schedule:
+    - cron: "0 5 * * *"
+
+jobs:
+  scan:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run PlatPhorm catalog scan (reusable call)
+        if: ${{ github.event_name == 'workflow_call' }}
+        id: scan
+        uses: ./.github/actions/platphorm-catalog-scan
+        with:
+          catalog_api_url: ${{ inputs.catalog_api_url || 'https://catalog.platphormnews.com' }}
+          api_key: ${{ secrets.PLATPHORM_API_KEY }}
+          publish: ${{ inputs.publish || 'true' }}
+          max_files: ${{ inputs.max_files || '2400' }}
+          artifact_path: ${{ inputs.artifact_path || '.platphorm/catalog.json' }}
+          scanner_version: ${{ inputs.scanner_version || '1.0.0' }}
+          owner: ${{ inputs.owner || '' }}
+          repository: ${{ inputs.repository || '' }}
+
+      - name: Run PlatPhorm catalog scan (manual dispatch)
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        uses: ./.github/actions/platphorm-catalog-scan
+        with:
+          catalog_api_url: ${{ github.event.inputs.catalog_api_url || 'https://catalog.platphormnews.com' }}
+          api_key: ${{ secrets.PLATPHORM_API_KEY }}
+          publish: ${{ github.event.inputs.publish || 'true' }}
+          max_files: ${{ github.event.inputs.max_files || '2400' }}
+          artifact_path: ${{ github.event.inputs.artifact_path || '.platphorm/catalog.json' }}
+          scanner_version: ${{ github.event.inputs.scanner_version || '1.0.0' }}
+          owner: ${{ github.event.inputs.owner || '' }}
+          repository: ${{ github.event.inputs.repository || '' }}
+
+      - name: Run PlatPhorm catalog scan (schedule)
+        if: ${{ github.event_name == 'schedule' }}
+        uses: ./.github/actions/platphorm-catalog-scan
+        with:
+          catalog_api_url: https://catalog.platphormnews.com
+          api_key: ${{ secrets.PLATPHORM_API_KEY }}
+          publish: "true"
+          max_files: "2400"
+          artifact_path: ".platphorm/catalog.json"
+          scanner_version: "1.0.0"
+          owner: ""
+          repository: ""
