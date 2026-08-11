@@ -61,7 +61,6 @@ async function main() {
   await ensureDir(publicDir)
   await copyDirIfExists(generatedDir, path.join(publicDir, "catalog", "generated"))
   await copyDirIfExists(docsDir, path.join(publicDir, "catalog", "docs"))
-  await copyDirIfExists(path.join(root, "platform-analysis-output"), path.join(publicDir, "platform-analysis-output"))
 
   const rootArtifacts = [
     "components-index.json",
@@ -117,7 +116,6 @@ async function main() {
     "/repositories",
     "/capabilities",
     "/components",
-    "/analysis",
     "/api/docs",
     "/llms.txt",
     "/llms-full.txt",
@@ -305,7 +303,6 @@ async function main() {
       "- /repositories",
       "- /capabilities",
       "- /components",
-      "- /analysis",
       "- /dependencies",
       "- /technologies",
       "- /scans",

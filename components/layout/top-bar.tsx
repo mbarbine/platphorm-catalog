@@ -12,7 +12,6 @@ const navigation = [
   { name: "Repositories", href: "/repositories", icon: FolderGit2 },
   { name: "Capabilities", href: "/capabilities", icon: Cpu },
   { name: "Components", href: "/components", icon: Layers },
-  { name: "Analysis", href: "/analysis", icon: Menu },
   { name: "Dependencies", href: "/dependencies", icon: Package },
   { name: "Technologies", href: "/technologies", icon: Cpu },
   { name: "Scans", href: "/scans", icon: Radar },

@@ -40,3 +40,4 @@ github-recent/*
 github-recent
 /public/
 .env*
+platform-analysis-output/

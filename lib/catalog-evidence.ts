@@ -203,6 +203,6 @@ export function hashText(value: string): string {
 }
 
 export function readCatalogOwners(): string[] {
-  const configured = process.env.github_catalog_owners ?? process.env.GITHUB_CATALOG_OWNERS ?? process.env.github_user ?? process.env.GITHUB_REPOSITORY_OWNER ?? "mbarbine"
+  const configured = process.env.GITHUB_CATALOG_OWNERS ?? process.env.GITHUB_REPOSITORY_OWNER ?? "mbarbine"
   return [...new Set(configured.split(",").map((owner) => owner.trim()).filter((owner) => OWNER_RE.test(owner)))]
 }

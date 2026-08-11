@@ -2,6 +2,8 @@ import { promises as fs } from "node:fs"
 import path from "node:path"
 
 import type { GithubCensus } from "./catalog-evidence"
+import type { PublicationSummary } from "./catalog-store"
+import { listCatalogPublications } from "./catalog-store"
 
 const DATA_DIR = process.cwd()
 const CATALOG_DIR = path.join(DATA_DIR, "global-capability-catalog", "catalog")
@@ -69,6 +71,100 @@ async function statIfExists(filePath: string): Promise<{ bytes: number; lastModi
 
 export async function loadGithubCensus(): Promise<GithubCensus | null> {
   return readJsonIfExists<GithubCensus>(path.join(GENERATED_DIR, "github-census.json"))
+}
+
+interface LocalPublisherState {
+  status: "not_seen" | "current" | "stale" | "invalid"
+  sha: string | null
+  scannerVersion: string | null
+  observedAt: string | null
+}
+
+function parseRunTimestamp(timestamp: string | undefined): number {
+  const parsed = timestamp ? Date.parse(timestamp) : NaN
+  return Number.isNaN(parsed) ? 0 : parsed
+}
+
+function deriveLocalPublisherFromPublications(
+  repositoryFullName: string,
+  headSha: string | null,
+  publications: PublicationSummary[],
+): LocalPublisherState {
+  const normalizedFullName = repositoryFullName.toLowerCase()
+  const repoPublications = publications.filter(
+    (entry) => entry.fullName.toLowerCase() === normalizedFullName,
+  )
+
+  if (!repoPublications.length) {
+    return {
+      status: "not_seen",
+      sha: null,
+      scannerVersion: null,
+      observedAt: null,
+    }
+  }
+
+  const ordered = [...repoPublications].sort((a, b) => parseRunTimestamp(b.runTimestamp) - parseRunTimestamp(a.runTimestamp))
+  const latest = ordered[0]
+  if (headSha) {
+    const match = ordered.find((entry) => entry.sha === headSha)
+    if (match && match.status !== "not_persisted") {
+      return {
+        status: "current",
+        sha: match.sha,
+        scannerVersion: match.scannerVersion,
+        observedAt: match.runTimestamp,
+      }
+    }
+    if (match?.status === "not_persisted") {
+      return {
+        status: "invalid",
+        sha: match.sha,
+        scannerVersion: match.scannerVersion,
+        observedAt: match.runTimestamp,
+      }
+    }
+  }
+
+  if (latest.status === "not_persisted") {
+    return {
+      status: "invalid",
+      sha: latest.sha,
+      scannerVersion: latest.scannerVersion,
+      observedAt: latest.runTimestamp,
+    }
+  }
+
+  return {
+    status: "stale",
+    sha: latest.sha,
+    scannerVersion: latest.scannerVersion,
+    observedAt: latest.runTimestamp,
+  }
+}
+
+export function enrichCatalogCensusWithLocalPublishers(
+  census: GithubCensus,
+  publicationSummaries: PublicationSummary[],
+): GithubCensus {
+  return {
+    ...census,
+    repositories: census.repositories.map((repository) => ({
+      ...repository,
+      localPublisher: deriveLocalPublisherFromPublications(
+        repository.fullName,
+        repository.headSha,
+        publicationSummaries,
+      ),
+    })),
+  }
+}
+
+export async function loadGithubCensusWithPublicationState(): Promise<GithubCensus | null> {
+  const census = await loadGithubCensus()
+  if (!census) return null
+  const publicationSummaries = await listCatalogPublications()
+  return enrichCatalogCensusWithLocalPublishers(census, publicationSummaries)
 }
 
 export async function loadCatalogScanMeta(): Promise<ScanMeta | null> {

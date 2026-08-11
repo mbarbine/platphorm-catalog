@@ -38,7 +38,6 @@
   "exclude": [
     "node_modules",
     "global-capability-catalog",
-    "platform-analysis-output",
     ".vercel"
   ]
 }

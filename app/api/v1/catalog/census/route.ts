@@ -1,9 +1,9 @@
-import { loadGithubCensus } from "@/lib/catalog-runtime"
+import { loadGithubCensusWithPublicationState } from "@/lib/catalog-runtime"
 
 export const dynamic = "force-dynamic"
 
 export async function GET() {
-  const census = await loadGithubCensus()
+  const census = await loadGithubCensusWithPublicationState()
 
   if (!census) {
     return Response.json(

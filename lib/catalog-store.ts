@@ -108,7 +108,7 @@ export async function persistCatalogPublication(
 ): Promise<PersistPublicationResult> {
   const storage = parseCatalogPublicationConfig()
   const storageBranch = normalizeBranch(process.env.GITHUB_CATALOG_PUBLICATION_BRANCH)
-  const token = process.env.github_legacy_pat_write || process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+  const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
   const storageKey = publicationStorageKey(publication)
   const requestPath = `catalog/publications/${storageKey}`
   const requestBodyText = JSON.stringify(publication, null, 2)

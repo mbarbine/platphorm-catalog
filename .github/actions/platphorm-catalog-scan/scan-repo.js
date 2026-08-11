@@ -54,6 +54,7 @@ const SKIP_DIRS = new Set([
   "dist",
   "coverage",
   "platform-analysis-test",
+  "platform-analysis-output",
   ".codex-artifacts",
 ])
 

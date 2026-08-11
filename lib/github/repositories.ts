@@ -1,5 +1,7 @@
 import type { GitHubCommit, GitHubRepository, GitHubRateLimit, GitHubTree, GitHubWorkflowResponse, GitHubSBOM } from "./types"
 import { githubRequest, getConfiguredCatalogOwners } from "./rest"
+import { getRepositoryTreeWithRate } from "./repository-tree"
+import { getRepositoryWorkflowsWithRate } from "./workflows"
 
 export interface RepositoryListOptions {
   maxRepos?: number
@@ -97,39 +99,6 @@ async function getRepositoryLanguagesWithRate(owner: string, repo: string): Prom
     languages: languageData?.data ?? {},
     rateLimit: languageData?.rateLimit ?? { limit: null, remaining: null, resetAt: null },
     topics: topicData?.data.names ?? [],
-  }
-}
-
-async function getRepositoryTreeWithRate(owner: string, repo: string, branch: string): Promise<{ tree: GitHubTree | null; rateLimit: GitHubRateLimit }> {
-  try {
-    const response = await githubRequest<GitHubTree>(
-      `/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/git/trees/${encodeURIComponent(branch)}`,
-      {
-        query: {
-          recursive: 1,
-        },
-      },
-    )
-    return { tree: response.data, rateLimit: response.rateLimit }
-  } catch {
-    return { tree: null, rateLimit: { limit: null, remaining: null, resetAt: null } }
-  }
-}
-
-async function getRepositoryWorkflowsWithRate(owner: string, repo: string): Promise<{
-  workflows: GitHubWorkflowResponse["workflows"]
-  rateLimit: GitHubRateLimit
-}> {
-  try {
-    const response = await githubRequest<GitHubWorkflowResponse>(
-      `/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/actions/workflows`,
-      {
-        query: { per_page: 100 },
-      },
-    )
-    return { workflows: response.data.workflows, rateLimit: response.rateLimit }
-  } catch {
-    return { workflows: [], rateLimit: { limit: null, remaining: null, resetAt: null } }
   }
 }
 

@@ -78,6 +78,9 @@ on:
         required: false
         type: string
         default: ""
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 5 * * *"
 
@@ -114,6 +117,19 @@ jobs:
           scanner_version: ${{ github.event.inputs.scanner_version || '1.0.0' }}
           owner: ${{ github.event.inputs.owner || '' }}
           repository: ${{ github.event.inputs.repository || '' }}
+
+      - name: Run PlatPhorm catalog scan (push)
+        if: ${{ github.event_name == 'push' }}
+        uses: ./.github/actions/platphorm-catalog-scan
+        with:
+          catalog_api_url: https://catalog.platphormnews.com
+          api_key: ${{ secrets.PLATPHORM_API_KEY }}
+          publish: "true"
+          max_files: "2400"
+          artifact_path: ".platphorm/catalog.json"
+          scanner_version: "1.0.0"
+          owner: ""
+          repository: ""
 
       - name: Run PlatPhorm catalog scan (schedule)
         if: ${{ github.event_name == 'schedule' }}
