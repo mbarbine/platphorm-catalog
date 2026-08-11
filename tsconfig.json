@@ -39,7 +39,6 @@
     "node_modules",
     "global-capability-catalog",
     "platform-analysis-output",
-    "platform-analysis-test",
     ".vercel"
   ]
 }
