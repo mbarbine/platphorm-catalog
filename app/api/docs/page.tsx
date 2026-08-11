@@ -50,12 +50,32 @@ const artifacts = [
     title: "Vision Evidence Pack",
     description: "Preview-only JSON and Markdown-ready operator briefing generated from the tool selection and scaffolded controls.",
   },
-  {
-    href: "/catalog/generated/validation-report.json",
-    title: "Validation Report",
-    description: "Schema and evidence-path validation results for generated scans, manifests, and indexes.",
-  },
-]
+    {
+      href: "/catalog/generated/validation-report.json",
+      title: "Validation Report",
+      description: "Schema and evidence-path validation results for generated scans, manifests, and indexes.",
+    },
+    {
+      href: "/api/v1/catalog/dependencies",
+      title: "Dependency Census API",
+      description: "Evidence-backed npm dependency usage with repository and production-classification counts.",
+    },
+    {
+      href: "/api/v1/catalog/technologies",
+      title: "Technology Census API",
+      description: "Inferred language/framework technology signal inventory from GitHub artifacts.",
+    },
+    {
+      href: "/api/v1/scans",
+      title: "Catalog Scans API",
+      description: "Generated artifact and publication file inventory used by route contracts and artifact sync.",
+    },
+    {
+      href: "/api/v1/route-compliance",
+      title: "Route Compliance API",
+      description: "Platform contract route checklist and protected-action metadata for this deployment.",
+    },
+  ]
 
 export default async function ApiDocsPage() {
   const stats = await getCatalogStats()
@@ -104,7 +124,7 @@ export default async function ApiDocsPage() {
                 Discovery Files
               </div>
               <div className="mt-4 grid gap-2 text-sm">
-                {["/api/health", "/api/v1/health", "/api/mcp", "/api/vision/capabilities", "/api/vision/evidence-pack", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/openapi.json", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
+                {["/api/health", "/api/v1/health", "/api/mcp", "/api/vision/capabilities", "/api/vision/evidence-pack", "/api/v1/catalog/census", "/api/v1/catalog/dependencies", "/api/v1/catalog/technologies", "/api/v1/catalog/publications", "/api/v1/catalog/publications/[filename]", "/api/v1/scans", "/api/v1/route-compliance", "/llms.txt", "/llms-full.txt", "/llms-index.json", "/openapi.yaml", "/openapi.json", "/sitemap.xml", "/sitemap-index.xml", "/rss.xml", "/feed.xml", "/atom.xml", "/robots.txt", "/.well-known/trust.json", "/.well-known/agents.json", "/.well-known/mcp.json", "/.well-known/ai-plugin.json", "/.well-known/security.txt"].map((href) => (
                   <a key={href} href={href} className="rounded bg-black/20 px-3 py-2 font-mono text-accent hover:underline">
                     {href}
                   </a>

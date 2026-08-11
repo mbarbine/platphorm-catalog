@@ -20,10 +20,22 @@ export function Footer() {
               API
             </a>
             <a
-              href="/catalog/generated/search-index.json"
+              href="/dependencies"
               className="hover:text-foreground transition-colors"
             >
-              Search JSON
+              Dependencies
+            </a>
+            <a
+              href="/technologies"
+              className="hover:text-foreground transition-colors"
+            >
+              Technologies
+            </a>
+            <a
+              href="/changes"
+              className="hover:text-foreground transition-colors"
+            >
+              Changes
             </a>
             <a
               href="/llms.txt"
@@ -32,10 +44,16 @@ export function Footer() {
               llms.txt
             </a>
             <a
-              href="/sitemap.xml"
+              href="/scans"
               className="hover:text-foreground transition-colors"
             >
-              Sitemap
+              Scans
+            </a>
+            <a
+              href="/catalog/generated/search-index.json"
+              className="hover:text-foreground transition-colors"
+            >
+              Search JSON
             </a>
           </div>
         </div>

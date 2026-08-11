@@ -5,15 +5,18 @@ import {
   loadVisionEvidencePack,
   loadVisionToolSelection,
 } from "./data"
+import { loadCatalogScanMeta } from "./catalog-runtime"
 
 export async function getCatalogHealthPayload() {
-  const [summary, globalIndex, componentData, visionSelection, visionEvidencePack] = await Promise.all([
+  const [summary, globalIndex, componentData, visionSelection, visionEvidencePack, scanMeta] = await Promise.all([
     loadCatalogSummary(),
     loadGlobalCapabilityIndex(),
     loadDetailedComponents(),
     loadVisionToolSelection(),
     loadVisionEvidencePack(),
+    loadCatalogScanMeta().catch(() => null),
   ])
+  const generatedAt = scanMeta?.generatedAt ?? summary.generated_at
   const validationFailures = summary.validation_failures ?? 0
 
   return {
@@ -23,7 +26,7 @@ export async function getCatalogHealthPayload() {
       version: "1.0.0",
       environment: "static-export",
       status: validationFailures === 0 ? "ok" : "degraded",
-      timestamp: summary.generated_at,
+      timestamp: generatedAt,
       repositories: summary.repositories_discovered ?? globalIndex.repositories.length,
       manifests_validated: summary.manifests_validated,
       validation_failures: validationFailures,

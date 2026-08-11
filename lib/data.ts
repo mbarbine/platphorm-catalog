@@ -3,7 +3,6 @@ import path from "path"
 import type {
   Component,
   DetailedComponent,
-  Repository,
   CatalogStats,
   RepositoryCapability,
   Capability,
@@ -67,17 +66,6 @@ export async function loadDetailedComponents(): Promise<{
       usage: component.usage ?? component.import_usage_count ?? 0,
     })),
   }
-}
-
-// Load repositories from the manifest
-export async function loadRepositories(): Promise<Repository[]> {
-  const filePath = path.join(
-    DATA_DIR,
-    "github-recent-manifest",
-    "recent_repositories.json"
-  )
-  const parsed = await readJson<{ records?: Repository[] }>(filePath)
-  return parsed.records || []
 }
 
 export async function loadGlobalCapabilityIndex(): Promise<GlobalCapabilityIndex> {

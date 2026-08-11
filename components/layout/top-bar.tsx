@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Database, Layers, FolderGit2, Cpu, Menu, Target, X } from "lucide-react"
+import { Database, Cpu, FolderGit2, Layers, Menu, Package, Radar, RefreshCcw, Target, X } from "lucide-react"
 import { useState } from "react"
 
 const navigation = [
@@ -13,6 +13,10 @@ const navigation = [
   { name: "Capabilities", href: "/capabilities", icon: Cpu },
   { name: "Components", href: "/components", icon: Layers },
   { name: "Analysis", href: "/analysis", icon: Menu },
+  { name: "Dependencies", href: "/dependencies", icon: Package },
+  { name: "Technologies", href: "/technologies", icon: Cpu },
+  { name: "Scans", href: "/scans", icon: Radar },
+  { name: "Changes", href: "/changes", icon: RefreshCcw },
 ]
 
 export function TopBar() {
