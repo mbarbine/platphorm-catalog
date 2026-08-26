@@ -141,6 +141,11 @@ async function main() {
     ...componentIndex.components.map((component) => `/components/${routeSlug(component.id)}`),
   ]
   const sitemapUrls = [...staticRoutes, ...detailRoutes]
+  const sitemapChunkSize = 2500
+  const sitemapChunks = Array.from(
+    { length: Math.ceil(sitemapUrls.length / sitemapChunkSize) },
+    (_, index) => sitemapUrls.slice(index * sitemapChunkSize, (index + 1) * sitemapChunkSize),
+  )
   const generatedAt = scanMeta.generatedAt ?? summary.generated_at ?? new Date().toISOString()
   const status = summary.validation_failures ? "degraded" : "ok"
   const health = {
@@ -191,26 +196,35 @@ async function main() {
     ].join("\n"),
   )
 
+  for (const [index, routes] of sitemapChunks.entries()) {
+    await writeText(
+      path.join(publicDir, `sitemap-${index + 1}.xml`),
+      [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        ...routes.map((route) => {
+          const loc = route ? `${baseUrl}${route}` : baseUrl
+          return `  <url><loc>${xmlEscape(loc)}</loc><lastmod>${generatedAt}</lastmod></url>`
+        }),
+        "</urlset>",
+      ].join("\n"),
+    )
+  }
+  const sitemapIndex = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...sitemapChunks.map((_, index) =>
+      `  <sitemap><loc>${baseUrl}/sitemap-${index + 1}.xml</loc><lastmod>${generatedAt}</lastmod></sitemap>`,
+    ),
+    "</sitemapindex>",
+  ].join("\n")
   await writeText(
     path.join(publicDir, "sitemap.xml"),
-    [
-      '<?xml version="1.0" encoding="UTF-8"?>',
-      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-      ...sitemapUrls.map((route) => {
-        const loc = route ? `${baseUrl}${route}` : baseUrl
-        return `  <url><loc>${xmlEscape(loc)}</loc><lastmod>${generatedAt}</lastmod></url>`
-      }),
-      "</urlset>",
-    ].join("\n"),
+    sitemapIndex,
   )
   await writeText(
     path.join(publicDir, "sitemap-index.xml"),
-    [
-      '<?xml version="1.0" encoding="UTF-8"?>',
-      '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-      `  <sitemap><loc>${baseUrl}/sitemap.xml</loc><lastmod>${generatedAt}</lastmod></sitemap>`,
-      "</sitemapindex>",
-    ].join("\n"),
+    sitemapIndex,
   )
 
   const topCapabilities = capabilitiesIndex.capabilities
